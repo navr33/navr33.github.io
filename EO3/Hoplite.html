@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+    <title>EO3 Skill Data</title>
+    <link href="style.css" rel="stylesheet">
+    </head>
+    <body style="background-color:powderblue; ">
+        <div class="sidebar">
+            <h2>Classes</h2>
+            <a href="./Sovereign.html"><button class="page_link">Sovereign</button></a>
+            <a href="./Gladiator.html"><button class="page_link">Gladiator</button></a>
+            <a href="./Hoplite.html"><button class="page_link">Hoplite</button></a>
+            <a href="./Buccaneer.html"><button class="page_link">Buccaneer</button></a>
+            <a href="./Ninja.html"><button class="page_link">Ninja</button></a>
+            <a href="./Monk.html"><button class="page_link">Monk</button></a>
+            <a href="./Zodiac.html"><button class="page_link">Zodiac</button></a>
+            <a href="./Wildling.html"><button class="page_link">Wildling</button></a>
+            <a href="./Arbalist.html"><button class="page_link">Arbalist</button></a>
+            <a href="./Farmer.html"><button class="page_link">Farmer</button></a>
+            <a href="./Shogun.html"><button class="page_link">Shogun</button></a>
+            <a href="./Yggdroid.html"><button class="page_link">Yggdroid</button></a>
+        </div>
+        <div class="skill_list" style="overflow: auto; height:100%; width:85%;">
+            <h2 style="margin:20px;">Hoplite</h2>
+            <p style="margin-left:10px;">Knight of Shield and Spear who specialize in deflecting enemy attacks.</p>
+<!-- Start of table -->
+            <table class="skill_entry">
+                <tr onclick="toggle_data('t1')"><th class="skill_name" colspan="2">Guardian</th><tr>
+                <tr><td style="width: 30%;">Passive (Unique)</td><td>Unlock: N/A</td></tr>
+                <tr><td id="t1" class="hide_table" style="text-align:left;" colspan="2">
+                    <p>Decrease physical damage taken.</p>
+                    <table class="levels_table">
+                            <tr>
+                                <th>Level</th>
+                                <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+                                <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+                            </tr>
+                            <tr>
+                                <th>Damage Taken</th>
+                                <td>-10%</td><td>-13%</td><td>-16%</td><td>-19%</td><td>-21%</td>
+                                <td>-24%</td><td>-28%</td><td>-32%</td><td>-36%</td><td>-40%</td>
+                            </tr>
+                        </table>
+                </td><tr>
+            </table>
+<!-- End of table -->
+        </div>
+    <script src="data_viewer.js"></script>
+    </body>
+</html>
