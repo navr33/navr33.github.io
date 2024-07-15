@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+    <title>EO3</title>
+    <link href="style.css" rel="stylesheet">
+    </head>
+    <body style="background-color:powderblue; ">
+        <div class="sidebar">
+            <h2>Classes</h2>
+            <a href="./Sovereign.html"><button class="page_link">Sovereign</button></a>
+            <a href="./Gladiator.html"><button class="page_link">Gladiator</button></a>
+            <a href="./Hoplite.html"><button class="page_link">Hoplite</button></a>
+            <a href="./Buccaneer.html"><button class="page_link">Buccaneer</button></a>
+            <a href="./Ninja.html"><button class="page_link">Ninja</button></a>
+            <a href="./Monk.html"><button class="page_link">Monk</button></a>
+            <a href="./Zodiac.html"><button class="page_link">Zodiac</button></a>
+            <a href="./Wildling.html"><button class="page_link">Wildling</button></a>
+            <a href="./Arbalist.html"><button class="page_link">Arbalist</button></a>
+            <a href="./Farmer.html"><button class="page_link">Farmer</button></a>
+            <a href="./Shogun.html"><button class="page_link">Shogun</button></a>
+            <a href="./Yggdroid.html"><button class="page_link">Yggdroid</button></a>
+        </div>
+        <div class="skill_list" style="overflow: auto; height:100%; width:85%;">
+            <h2 style="margin:20px;">Ninja</h2>
+<!-- Start of table -->
+            <table class="skill_entry">
+                <tr onclick="toggle_data('t1')"><th class="skill_name" colspan="2">Keburi No Sue</th><tr>
+                <tr><td style="width: 30%;">Passive (Unique)</td><td>Unlock: N/A</td></tr>
+                <tr><td id="t1" class="hide_table" style="text-align:left;" colspan="2">
+                    <p>Decreases the TP cost of all skills. Removes the damage penalty for melee attacks from the back row.</p>
+                    <table class="levels_table">
+                            <tr>
+                                <th>Level</th>
+                                <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+                                <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+                            </tr>
+                            <tr>
+                                <th>TP Cost</th>
+                                <td>-0</td><td>-1</td><td>-2</td><td>-3</td><td>-4</td>
+                                <td>-5</td><td>-6</td><td>-7</td><td>-8</td><td>-9</td>
+                            </tr>
+                        </table>
+                </td><tr>
+            </table>
+<!-- End of table -->
+        </div>
+    <script src="data_viewer.js"></script>
+    </body>
+</html>
