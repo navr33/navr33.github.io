@@ -35,7 +35,7 @@ var data = {
     "Prevent Order":{
         "Usage": "Active (Head)",
         "Unlock": "Guard Order (Lv 3)",
-        "Description": "Place a buff on an ally row for 3 turns, which nullifies one ailment infliction received.",
+        "Description": "Place a buff on an ally row for 3 turns, which nullifies one ailment infliction received (disappears when activated).",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -70,72 +70,72 @@ var data = {
     "Attack Order":{
         "Usage": "Active (Head)",
         "Unlock": "N/A",
-        "Description":"Place a buff on an ally row for 3 turns, which increases physical damage dealt.",
+        "Description": "Place a buff on an ally row for 3 turns, which increases physical damage dealt.",
         "Starter": "1",
-        "Max Level":"10",
-        "Data":{
-            "TP Cost":["8", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
-            "Damage Dealt":["+20%", "+22%", "+24%", "+27%", "+30%", "+33%", "+36%", "+39%", "+42%", "+45%"],
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
+            "Damage Dealt": ["+20%", "+22%", "+24%", "+27%", "+30%", "+33%", "+36%", "+39%", "+42%", "+45%"],
             "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
         }
     },
     "Fire Arms":{
         "Usage": "Active (Head)",
         "Unlock": "Attack Order (Lv 1)",
-        "Description":"Place a buff on one ally for 3 turns, which decreases vulnerability to Fire and imbues their weapon with Fire damage.",
+        "Description": "Place a buff on one ally for 3 turns, which decreases vulnerability to Fire and imbues their weapon with Fire damage.",
         "Starter": "0",
-        "Max Level":"5",
-        "Data":{
-            "TP Cost":["6", "7", "8", "9", "10"],
-            "Vulnerability":["-10%", "-20%", "-30%", "-40%", "-50%"],
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10"],
+            "Vulnerability": ["-10%", "-20%", "-30%", "-40%", "-50%"],
             "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
         }
     },
     "Freeze Arms":{
         "Usage": "Active (Head)",
         "Unlock": "Attack Order (Lv 1)",
-        "Description":"Place a buff on one ally for 3 turns, which decreases vulnerability to Ice and imbues their weapon with Ice damage.",
+        "Description": "Place a buff on one ally for 3 turns, which decreases vulnerability to Ice and imbues their weapon with Ice damage.",
         "Starter": "0",
-        "Max Level":"5",
-        "Data":{
-            "TP Cost":["6", "7", "8", "9", "10"],
-            "Vulnerability":["-10%", "-20%", "-30%", "-40%", "-50%"],
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10"],
+            "Vulnerability": ["-10%", "-20%", "-30%", "-40%", "-50%"],
             "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
         }
     },
     "Shock Arms":{
         "Usage": "Active (Head)",
         "Unlock": "Attack Order (Lv 1)",
-        "Description":"Place a buff on one ally for 3 turns, which decreases vulnerability to Volt and imbues their weapon with Volt damage.",
+        "Description": "Place a buff on one ally for 3 turns, which decreases vulnerability to Volt and imbues their weapon with Volt damage.",
         "Starter": "0",
-        "Max Level":"5",
-        "Data":{
-            "TP Cost":["6", "7", "8", "9", "10"],
-            "Vulnerability":["-10%", "-20%", "-30%", "-40%", "-50%"],
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10"],
+            "Vulnerability": ["-10%", "-20%", "-30%", "-40%", "-50%"],
             "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
         }
     },
     "Regal Radiance":{
         "Usage": "Active (Head, STR)",
         "Unlock": "Attack Order (Lv 3)",
-        "Description":"Dispel an elemental imbue (Arms buff or Oil item) on one ally. If successful, deal ranged damage of that element to all enemies. This attack cannot miss.",
+        "Description": "Dispel an elemental imbue (Arms buff or Oil item) on one ally. If successful, deal ranged damage of that element to all enemies. This attack cannot miss.",
         "Starter": "0",
-        "Max Level":"10",
-        "Data":{
-            "TP Cost":["12", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
-            "Attack Power":["160%", "162%", "164%", "166%", "168%", "172%", "176%", "180%", "185%", "190%"],
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["12", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+            "Attack Power": ["160%", "162%", "164%", "166%", "168%", "172%", "176%", "180%", "185%", "190%"],
             "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
         }
     },
     "Ad Nihilo":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Guard Order (Lv 5), Attack Order (Lv 5)",
-        "Description":"Dispel all buffs on one enemy. If successful, deal ranged Almighty damage to that enemy. This attack cannot miss.",
+        "Description": "Dispel all buffs on one enemy. If successful, deal ranged Almighty damage to that enemy. This attack cannot miss.",
         "Starter": "1",
-        "Max Level":"10",
-        "Data":{
-            "TP Cost":["12", "12", "13", "13", "14", "14", "15", "15", "16", "16"],
-            "Damage Taken":["130%", "140%", "150%", "160%", "170%", "180%", "195%", "210%", "225%", "240%"],
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["12", "12", "13", "13", "14", "14", "15", "15", "16", "16"],
+            "Damage Taken": ["130%", "140%", "150%", "160%", "170%", "180%", "195%", "210%", "225%", "240%"],
             "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
         }
     },
@@ -214,8 +214,2552 @@ var data = {
         }
     },
 },
-
+"Gladiator":{
+    "Endless Battle":{
+        "Usage": "Passive (Unique)",
+        "Unlock": "N/A",
+        "Description": "Increase physical damage dealt.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+3%", "+5%", "+7%", "+9%", "+11%", "+13%", "+16%", "+19%", "+22%", "+25%"],
+        }
+    },
+    "Sword Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase damage dealt with Sword's normal attacks. Unlocks Sword skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%"],
+        }
+    },
+    "Break":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Sword Mastery (Lv 1)",
+        "Description": "Sword: Deal melee Cut damage to one enemy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "7", "7", "8", "8"],
+            "Attack Power": ["130%", "132%", "134%", "136%", "138%", "143%", "148%", "153%", "158%", "165%"],
+            "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+1", "+1", "+2", "+2", "+3"],
+            "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+        }
+    },
+    "Rush":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Sword Mastery (Lv 3)",
+        "Description": "Sword: Deal multiple hits of melee Cut damage to random enemies (max once each).",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["7", "7", "8", "8", "9", "9", "10", "10", "11", "12"],
+            "Attack Power": ["105%", "108%", "111%", "114%", "117%", "120%", "123%", "127%", "131%", "135%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3"],
+            "Max. Hits": ["3", "3", "4", "4", "4", "5", "5", "5", "6", "6"],
+        }
+    },
+    "Bind Cut":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Sword Mastery (Lv 3), Break (Lv 5)",
+        "Description": "Sword: Deal melee Cut damage to one enemy. Stronger if the target has a bind.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "8", "9", "9", "10", "10", "11", "11", "12", "12"],
+            "Attack Power\n(Normal)": ["140%", "143%", "146%", "149%", "152%", "155%", "160%", "165%", "170%", "175%"],
+            "Attack Power\n(Bind)": ["280%", "292%", "304%", "316%", "328%", "340%", "360%", "380%", "400%", "420%"],
+            "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+1", "+1", "+2", "+2", "+3"],
+            "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+        }
+    },
+    "Rampage":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Sword Mastery (Lv 7)",
+        "Description": "Sword: Deal melee Cut damage to all enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["12", "12", "13", "13", "14", "14", "15", "16", "17", "18"],
+            "Attack Power": ["110%", "113%", "116%", "119%", "122%", "125%", "128%", "131%", "135%", "140%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
+        }
+    },
+    "Blade Rave":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Sword Mastery (Lv 10), Rush (Lv 5)",
+        "Description": "Sword: Deal multiple hits of melee Cut damage to random enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["13", "14", "15", "17", "18", "19", "22", "23", "24", "27"],
+            "Attack Power": ["80%", "82%", "84%", "84%", "86%", "88%", "88%", "90%", "92%", "95%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9"],
+            "Min. Hits": ["3", "3", "3", "3", "3", "3", "3", "3", "3", "4"],
+            "Max. Hits": ["3", "3", "3", "4", "4", "4", "5", "5", "5", "5"],
+        }
+    },
+    "Club Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase damage dealt with Club's normal attacks. Unlocks Club skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%"],
+        }
+    },
+    "Crushing Blow":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Club Mastery (Lv 1)",
+        "Description": "Club: Deal melee Bash damage to one enemy, with a chance to inflict Panic.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "7", "7", "8", "8"],
+            "Attack Power": ["130%", "132%", "134%", "136%", "138%", "143%", "148%", "153%", "158%", "165%"],
+            "Infliction Chance": ["25%", "27%", "29%", "31%", "34%", "37%", "40%", "43%", "46%", "50%"],
+            "Accuracy": ["-3", "-3", "-3", "-3", "-2", "-2", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Arm Breaker":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Club Mastery (Lv 3)",
+        "Description": "Club: Deal melee Bash damage to one enemy, with a chance to inflict Arm Bind.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "8", "9", "9", "10", "10"],
+            "Attack Power": ["150%", "152%", "154%", "156%", "158%", "160%", "166%", "172%", "178%", "185%"],
+            "Infliction Chance": ["40%", "42%", "44%", "46%", "48%", "50%", "52%", "54%", "56%", "60%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Freezing Blow":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Club Mastery (Lv 3), Crushing Blow (Lv 5)",
+        "Description": "Club: Deal melee Bash+Ice damage to one enemy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "8", "9", "9", "10", "10", "11", "11", "12", "12"],
+            "Attack Power": ["150%", "155%", "160%", "165%", "170%", "175%", "180%", "185%", "190%", "200%"],
+            "Infliction Chance": ["40%", "42%", "44%", "46%", "48%", "50%", "52%", "54%", "56%", "60%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+        }
+    },
+    "Nine Smashes":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Club Mastery (Lv 10), Arm Breaker (Lv 5)",
+        "Description": "Club: Deal multiple hits of melee Bash damage to one enemy. Has very low accuracy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["10", "11", "12", "14", "15", "17", "18", "20", "22", "25"],
+            "Attack Power": ["80%", "82%", "84%", "84%", "86%", "86%", "88%", "88%", "90%", "90%"],
+            "Accuracy": ["-30", "-30", "-30", "-40", "-40", "-40", "-40", "-55", "-55", "-55"],
+            "Action Speed": ["-5", "-5", "-5", "-5", "-5", "-5", "-5", "-5", "-5", "-5"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            "Max. Hits": ["5", "5", "5", "6", "6", "7", "7", "8", "8", "9"],
+        }
+    },
+    "Wild Swings":{
+        "Usage": "Passive",
+        "Unlock": "Sword Mastery (Lv 5), Club Mastery (Lv 5)",
+        "Description": "Single-target skills have a chance to also hit to one of the sides of the target.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Activation chance": ["30%", "32%", "34%", "36%", "38%", "42%", "46%", "50%", "55%", "60%"],
+        }
+    },
+    "Wolf Howl":{
+        "Usage": "Active (Head)",
+        "Unlock": "N/A",
+        "Description": "Place a debuff on all enemies for 4 turns, which increases all damage taken. Stronger effect on enemies with an ailment.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["7", "7", "7", "8", "8", "8", "8", "9", "9", "10"],
+            "Damage Taken\n(Normal)": ["+10%", "+11%", "+11%", "+12%", "+12%", "+13%", "+13%", "+14%", "+14%", "+15%"],
+            "Damage Taken\n(Ailment)": ["+26%", "+29%", "+32%", "+35%", "+38%", "+41%", "+44%", "+47%", "+50%", "+55%"],
+            "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
+        }
+    },
+    "Berserker Vow":{
+        "Usage": "Active (Head)",
+        "Unlock": "N/A",
+        "Description": "Spend part of current HP to place a buff on yourself for 3 turns, which strongly increases all damage dealt.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            "HP Cost": ["30%", "35%", "45%", "50%", "55%", "60%", "65%", "70%", "80%", "90%"],
+            "Damage Dealt": ["+30%", "+36%", "+42%", "+48%", "+54%", "+60%", "+67%", "+74%", "+82%", "+90%"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Avenger":{
+        "Usage": "Passive",
+        "Unlock": "Berserker Vow (Lv 1)",
+        "Description": "Recover HP each time an ally dies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data":{
+            "HP Gain": ["50", "60", "70", "80", "90", "100", "120", "140", "160", "200"],
+        }
+    },
+    "Charge":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Avenger (Lv 3), Wolf Howl (Lv 3)",
+        "Description": "Enter a charge state until the end of next turn, which massively increases physical damage dealt for your next action.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["2", "3", "4", "5", "6"],
+            "Damage Dealt": ["+110%", "+120%", "+130%", "+140%", "+160%"],
+            "Action Speed": ["-100", "-100", "-100", "-100", "-100"],
+        }
+    },
+    "White Flame":{
+        "Usage": "Active (Head)",
+        "Unlock": "Berserker Vow (Lv 5)",
+        "Description": "Place a buff on yourself for 3 turns, which makes you immune to ailment inflictions.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["12", "10", "8", "6", "3"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Stun Attack":{
+        "Usage": "Passive",
+        "Unlock": "White Flame (Lv 3)",
+        "Description": "Normal attacks gain a chance to inflict Stun.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data":{
+            "Infliction Chance": ["20%", "23%", "27%", "31%", "35%", "39%", "43%", "47%", "51%", "55%"],
+        }
+    },
+},
+"Hoplite":{
+    "Guardian":{
+        "Usage": "Passive (Unique)",
+        "Unlock": "N/A",
+        "Description": "Decrease physical damage taken.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Damage Taken": ["-10%", "-13%", "-16%", "-19%", "-21%", "-24%", "-28%", "-32%", "-36%", "-40%"],
+        }
+    },
+    "Shield Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "If a Shield is equipped, decrease physical damage taken. Unlocks Shield skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Taken": ["-1%", "-2%", "-3%", "-4%", "-5%", "-6%", "-7%", "-8%", "-9%", "-10%"],
+        }
+    },
+    "Line Guard":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Shield Mastery (Lv 1)",
+        "Description": "Shield: Protect an ally row for this turn, which decreases physical damage taken. Stronger effect if used on your same row.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "6", "6", "7", "9"],
+            "Damage Taken\n(Same Row)": ["-23%", "-26%", "-29%", "-31%", "-34%", "-37%", "-40%", "-43%", "-46%", "-50%"],
+            "Damage Taken\n(Other Row)": ["-10%", "-11%", "-12%", "-13%", "-14%", "-16%", "-18%", "-20%", "-22%", "-25%"],
+            "Action Speed": ["+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30"],
+        }
+    },
+    "Bodyguard":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Shield Mastery (Lv 3)",
+        "Description": "Shield: Protect one ally for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "7", "7", "8", "8"],
+            "Damage Taken": ["-30%", "-33%", "-36%", "-39%", "-42%", "-45%", "-48%", "-52%", "-56%", "-60%"],
+            "Action Speed": ["+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30"],
+        }
+    },
+    "Antifire":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Shield Mastery (Lv 5)",
+        "Description": "Shield: Protect the whole party for this turn, which decreases Fire damage taken.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "7", "7", "8", "12"],
+            "Damage Taken": ["-10%", "-15%", "-20%", "-25%", "-30%", "-36%", "-42%", "-48%", "-55%", "-100%"],
+            "Action Speed": ["+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30"],
+        }
+    },
+    "Anticold":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Shield Mastery (Lv 5)",
+        "Description": "Shield: Protect the whole party for this turn, which decreases Ice damage taken.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "7", "7", "8", "12"],
+            "Damage Taken": ["-10%", "-15%", "-20%", "-25%", "-30%", "-36%", "-42%", "-48%", "-55%", "-100%"],
+            "Action Speed": ["+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30"],
+        }
+    },
+    "Antivolt":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Shield Mastery (Lv 5)",
+        "Description": "Shield: Protect the whole party for this turn, which decreases Volt damage taken.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "7", "7", "8", "12"],
+            "Damage Taken": ["-10%", "-15%", "-20%", "-25%", "-30%", "-36%", "-42%", "-48%", "-55%", "-100%"],
+            "Action Speed": ["+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30", "+30"],
+        }
+    },
+    "Overwatch":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Shield Mastery (Lv 8), Selflessness (Lv 3)",
+        "Description": "Shield: Protect one ally for this turn, which nullifies attacks to them that would've done more damage than your current HP.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["18", "15", "12", "9", "6"],
+            "Action Speed": ["+30", "+30", "+30", "+30", "+30"],
+        }
+    },
+    "Selflessness":{
+        "Usage": "Active (Head)",
+        "Unlock": "N/A",
+        "Description": "Spend 50% of current HP to place a buff on yourself for 3 turns, which strongly decreases physical damage taken.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["5", "5", "6", "6", "7", "7", "8", "8", "9", "10"],
+            "Damage Taken": ["-40%", "-43%", "-46%", "-49%", "-52%", "-55%", "-58%", "-62%", "-66%", "-70%"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Provoke":{
+        "Usage": "Active (Head)",
+        "Unlock": "N/A",
+        "Description": "Place a buff on yourself for 3 turns, which increases enemy aggro. Actual increase on each attack is a random value between 3 and this skill's bonus. (For reference, natural aggro is a random value from 0 to 4, plus a bonus from 0 to 6 to one random ally)",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "6", "6", "7", "7"],
+            "Max Aggro Bonus": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "15"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Parry":{
+        "Usage": "Passive",
+        "Unlock": "Provoke (Lv 5)",
+        "Description": "Gain a chance to nullify physical attacks received.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "Activation Chance": ["4%", "7%", "10%", "14%", "18%"],
+        }
+    },
+    "Magic Parry":{
+        "Usage": "Passive",
+        "Unlock": "Provoke (Lv 5)",
+        "Description": "Gain a chance to nullify elemental attacks received.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "Activation Chance": ["4%", "7%", "10%", "14%", "18%"],
+        }
+    },
+    "Spear Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase damage dealt with Spear's normal attacks. Unlocks Spear skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%"],
+        }
+    },
+    "Switch Stab":{
+        "Usage": "Active (Legs, STR)",
+        "Unlock": "Spear Mastery (Lv 1)",
+        "Description": "Spear: Deal ranged Stab damage to one enemy. If it lands, switch rows.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["5", "5", "6", "6", "7", "7", "8", "8", "9", "9"],
+            "Attack Power": ["110%", "113%", "116%", "122%", "128%", "136%", "142%", "148%", "154%", "160%"],
+            "Accuracy": ["-2", "-2", "-1", "-1", "+0", "+0", "+1", "+1", "+2", "+2"],
+            "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+        }
+    },
+    "Blitzritter":{
+        "Usage": "Active (Legs, STR)",
+        "Unlock": "Spear Mastery (Lv 5)",
+        "Description": "Spear: Deal ranged Stab+Volt damage to one enemy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["7", "7", "8", "8", "9", "9", "10", "10", "11", "11"],
+            "Attack Power": ["120%", "127%", "134%", "141%", "148%", "155%", "162%", "169%", "177%", "185%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+        }
+    },
+    "Long Stride":{
+        "Usage": "Active (Legs, STR)",
+        "Unlock": "Spear Mastery (Lv 7), Switch Stab (Lv 3)",
+        "Description": "Spear: Deal ranged Stab damage to all enemies. Stronger if you're in the back row.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["12", "12", "13", "13", "14", "14", "15", "15", "16", "16"],
+            "Attack Power\n(Front Row)": ["70%", "74%", "78%", "82%", "86%", "90%", "95%", "100%", "105%", "110%"],
+            "Attack Power\n(Back Row)": ["105%", "113%", "121%", "130%", "139%", "148%", "159%", "172%", "184%", "198%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", ],
+        }
+    },
+    "Shrug Off":{
+        "Usage": "Active (No parts)",
+        "Unlock": "N/A",
+        "Description": "Remove ailments and binds on yourself.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["12", "10", "8", "6", "4"],
+            "Action Speed": ["+0", "+0", "+0", "+0", "+0"],
+        }
+    },
+    "Recuperate":{
+        "Usage": "Passive",
+        "Unlock": "Shrug Off (Lv 3)",
+        "Description": "When you Defend, recover HP.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "HP Gain": ["10", "15", "20", "25", "30", "35", "40", "45", "50", "60"],
+        }
+    },
+    "Vigilance":{
+        "Usage": "Active (Field)",
+        "Unlock": "N/A",
+        "Description": "Temporarily decrease the encounter rate.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10"],
+            "Encounter Rate": ["x0.6", "x0.55", "x0.5", "x0.4", "x0.3"],
+            "Duration (Steps)": ["30", "40", "50", "60", "80"],
+        }
+    },
+},
+"Buccaneer":{
+    "Trickster":{
+        "Usage": "Passive (Unique)",
+        "Unlock": "N/A",
+        "Description": "When you use an attack skill, recover TP.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Gain": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        }
+    },
+    "Rapier Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase damage dealt with Rapier's normal attacks. Unlocks Rapier skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%"],
+        }
+    },
+    "Lights Out":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Rapier Mastery (Lv 1)",
+        "Description": "Rapier: Deal melee Stab damage to one enemy, with a chance to inflict Blind.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "8", "9", "10", "11", "12"],
+            "Attack Power": ["110%", "114%", "118%", "122%", "126%", "130%", "135%", "145%", "155%", "165%"],
+            "Infliction Chance": ["42%", "44%", "46%", "48%", "50%", "54%", "58%", "62%", "66%", "70%"],
+            "Accuracy": ["+1", "+1", "+2", "+2", "+3", "+3", "+4", "+4", "+5", "+5"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Chase Saber":{
+        "Usage": "Active (Legs, STR)",
+        "Unlock": "Rapier Mastery (Lv 3)",
+        "Description": "Rapier: Prepare to follow up after your allies' Cut attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "9", "10", "11", "12", "13"],
+            "Attack Power": ["100%", "107%", "114%", "122%", "130%", "138%", "146%", "154%", "162%", "170%"],
+            "Chance Decrease": ["-40%", "-37%", "-34%", "-31%", "-28%", "-25%", "-22%", "-19%", "-16%", "-13%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60"],
+        }
+    },
+    "Chase Blow":{
+        "Usage": "Active (Legs, STR)",
+        "Unlock": "Rapier Mastery (Lv 3)",
+        "Description": "Rapier: Prepare to follow up after your allies' Bash attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "9", "10", "11", "12", "13"],
+            "Attack Power": ["100%", "107%", "114%", "122%", "130%", "138%", "146%", "154%", "162%", "170%"],
+            "Chance Decrease": ["-40%", "-37%", "-34%", "-31%", "-28%", "-25%", "-22%", "-19%", "-16%", "-13%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60"],
+        }
+    },
+    "Chase Thrust":{
+        "Usage": "Active (Legs, STR)",
+        "Unlock": "Rapier Mastery (Lv 3)",
+        "Description": "Rapier: Prepare to follow up after your allies' Stab attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "9", "10", "11", "12", "13"],
+            "Attack Power": ["100%", "107%", "114%", "122%", "130%", "138%", "146%", "154%", "162%", "170%"],
+            "Chance Decrease": ["-40%", "-37%", "-34%", "-31%", "-28%", "-25%", "-22%", "-19%", "-16%", "-13%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60"],
+        }
+    },
+    "Hanging":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Rapier Mastery (Lv 5)",
+        "Description": "Rapier: Deal melee Stab damage to one enemy, with a chance to inflict Head Bind.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "9", "10", "11", "12", "13", "14", "15", "16", "17"],
+            "Attack Power": ["160%", "166%", "172%", "178%", "184%", "197%", "210%", "223%", "236%", "250%"],
+            "Infliction Chance": ["42%", "44%", "46%", "48%", "50%", "52%", "54%", "56%", "58%", "60%"],
+            "Accuracy": ["+1", "+1", "+2", "+2", "+3", "+3", "+4", "+4", "+5", "+5"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Gun Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase damage dealt with Gun's normal attacks. Unlocks Gun skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%"],
+        }
+    },
+    "Quick Draw":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Gun Mastery (Lv 1)",
+        "Description": "Gun: Deal multiple hits of ranged Stab damage to random enemies. Hits at the start of the turn.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["4", "5", "6", "7", "8", "9", "10", "11", "12", "14"],
+            "Attack Power": ["70%", "71%", "71%", "72%", "74%", "74%", "76%", "78%", "80%", "80%"],
+            "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            "Max. Hits": ["2", "2", "3", "3", "3", "4", "4", "4", "4", "5"],
+        }
+    },
+    "Chase Flame":{
+        "Usage": "Active (Legs, STR)",
+        "Unlock": "Gun Mastery (Lv 3)",
+        "Description": "Gun: Prepare to follow up after your allies' Fire attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "9", "10", "11", "12", "13"],
+            "Attack Power": ["100%", "107%", "114%", "122%", "130%", "138%", "146%", "154%", "162%", "170%"],
+            "Chance Decrease": ["-40%", "-37%", "-34%", "-31%", "-28%", "-25%", "-22%", "-19%", "-16%", "-13%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60"],
+        }
+    },
+    "Chase Ice":{
+        "Usage": "Active (Legs, STR)",
+        "Unlock": "Gun Mastery (Lv 3)",
+        "Description": "Gun: Prepare to follow up after your allies' Ice attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "9", "10", "11", "12", "13"],
+            "Attack Power": ["100%", "107%", "114%", "122%", "130%", "138%", "146%", "154%", "162%", "170%"],
+            "Chance Decrease": ["-40%", "-37%", "-34%", "-31%", "-28%", "-25%", "-22%", "-19%", "-16%", "-13%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60"],
+        }
+    },
+    "Chase Volt":{
+        "Usage": "Active (Legs, STR)",
+        "Unlock": "Gun Mastery (Lv 3)",
+        "Description": "Gun: Prepare to follow up after your allies' Volt attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "9", "10", "11", "12", "13"],
+            "Attack Power": ["100%", "107%", "114%", "122%", "130%", "138%", "146%", "154%", "162%", "170%"],
+            "Chance Decrease": ["-40%", "-37%", "-34%", "-31%", "-28%", "-25%", "-22%", "-19%", "-16%", "-13%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60"],
+        }
+    },
+    "Rapid Fire":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Gun Mastery (Lv 5)",
+        "Description": "Gun: Deal 3 hits of ranged Stab damage to one enemy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["10", "10", "11", "11", "12", "12", "13", "14", "15", "16"],
+            "Attack Power": ["60%", "63%", "66%", "69%", "72%", "75%", "82%", "90%", "98%", "105%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Swashbuckling":{
+        "Usage": "Passive",
+        "Unlock": "Rapier Mastery (Lv 8), Gun Mastery (Lv 8)",
+        "Description": "When using a normal attack there's a chance to perform multiple attacks at once.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Activation Chance": ["10%", "13%", "16%", "19%", "21%", "24%", "27%", "30%", "33%", "36%"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            "Max. Hits": ["2", "2", "2", "2", "2", "2", "2", "3", "3", "4"],
+        }
+    },
+    "Pincushion":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Rapier Mastery (Lv 10), Gun Mastery (Lv 10)",
+        "Description": "Rapier/Gun: Deal multiple hits of melee/ranged Stab damage to random enemies. Power gains +3% per point of AGI you have.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["19", "20", "21", "26", "27", "28", "29", "30", "31", "32"],
+            "Attack Power": ["110%", "113%", "117%", "121%", "125%", "129%", "133%", "137%", "141%", "145%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Min. Hits": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1"],
+            "Max. Hits": ["2", "2", "2", "3", "3", "3", "3", "3", "3", "3"],
+        }
+    },
+    "Eagle Eye":{
+        "Usage": "Active (Head)",
+        "Unlock": "N/A",
+        "Description": "Place a debuff on all enemies for 3 turns, which increases all damage taken.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["5", "6", "7", "8", "9"],
+            "Damage Taken": ["+10%", "+15%", "+20%", "+25%", "+35%"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Lady Luck":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase Critical Hit chance.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Crit Rate Up": ["+5%", "+6%", "+7%", "+8%", "+10%", "+12%", "+14%", "+16%", "+18%", "+20%"],
+        }
+    },
+    "Limit Boost":{
+        "Usage": "Passive",
+        "Unlock": "Eagle Eye (Lv 3), Lady Luck (Lv 3)",
+        "Description": "Increase minimum Limit Gauge gains. (For reference, normal gain is a random value from 5 to 15)",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "Limit Gain Up": ["+2", "+4", "+6", "+8", "+10"],
+        }
+    },
+    "Troublemaker":{
+        "Usage": "Active (Field)",
+        "Unlock": "N/A",
+        "Description": "Temporarily increase the encounter rate.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "3"],
+            "Encounter Rate": ["x2.0", "x2.2", "x2.4", "x2.7", "x3.0"],
+            "Duration (Steps)": ["30", "35", "40", "45", "50"],
+        }
+    },
+},
+"Ninja":{
+    "Mystic Calm":{
+        "Usage": "Passive (Unique)",
+        "Unlock": "N/A",
+        "Description": "Decrease the TP cost of all skills (to a minimum of 1). Removes the back row penalty for melee attacks.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["-0", "-1", "-2", "-3", "-4", "-5", "-6", "-7", "-8", "-9"],
+        }
+    },
+    "Ninpo: Mirage":{
+        "Usage": "Active (Head)",
+        "Unlock": "N/A",
+        "Description": "Summon a decoy copy of yourself. This copy cannot act and has a small aggro bonus.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["10", "9", "8", "7", "6"],
+            "Decoy's HP": ["1", "10", "20", "40", "80"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Otori":{
+        "Usage": "Active (Head)",
+        "Unlock": "Ninpo:Mirage (Lv 1)",
+        "Description": "Place a buff on one ally for 3 turns, which increases enemy aggro. Actual increase on each attack is a random value between 3 and this skill's bonus. (For reference, natural aggro is a random value from 0 to 4, plus a bonus from 0 to 6 to one random ally)",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["5", "5", "6", "6", "7", "7", "8", "8", "9", "9"],
+            "Max Aggro Bonus": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "15"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Ninpo: Double":{
+        "Usage": "Active (Head)",
+        "Unlock": "Ninpo:Mirage (Lv 3)",
+        "Description": "Spend 50% of current HP and TP, then summon a fully controllable clone of yourself.",
+        "Starter": "0",
+        "Max Level": "1",
+        "Data": {
+            "TP Cost": ["10"],
+            "Action Speed": ["+6"],
+        }
+    },
+    "Revenge Bomb":{
+        "Usage": "Passive (STR)",
+        "Unlock": "Otori (Lv 3), Ninpo:Double (Lv 1)",
+        "Description": "Upon dying, deal melee Fire damage to your killer. (Does not trigger for the decoy from Ninpo: Mirage)",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Attack Power": ["200%", "220%", "240%", "270%", "300%", "330%", "370%", "410%", "450%", "500%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+        }
+    },
+    "Knife Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase damage dealt with Knife's normal attacks. Unlocks Knife skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%"],
+        }
+    },
+    "Shadow Bind":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Knife Mastery (Lv 1)",
+        "Description": "Knife: Deal melee Cut damage to one enemy, with a chance to inflict Leg Bind.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "8", "9", "10", "11", "12"],
+            "Attack Power": ["140%", "145%", "150%", "155%", "160%", "166%", "172%", "178%", "184%", "190%"],
+            "Infliction Chance": ["33%", "36%", "39%", "42%", "45%", "48%", "51%", "54%", "57%", "60%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Izuna":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Knife Mastery (Lv 3), Shadow Bind (Lv 3)",
+        "Description": "Knife: Deal melee Cut damage to one enemy, with a chance to inflict Petrify.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
+            "Attack Power": ["140%", "147%", "154%", "161%", "168%", "181%", "194%", "207%", "221%", "235%"],
+            "Infliction Chance": ["25%", "27%", "29%", "31%", "33%", "35%", "37%", "39%", "42%", "45%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Hawk Strike":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Knife Mastery (Lv 5)",
+        "Description": "Knife: Deal multiple hits of melee Cut damage to random enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["7", "8", "10", "11", "12", "14", "16", "18", "20", "22"],
+            "Attack Power": ["80%", "85%", "85%", "90%", "95%", "95%", "100%", "105%", "105%", "110%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "3", "3"],
+            "Max. Hits": ["2", "2", "3", "3", "3", "4", "4", "4", "4", "4"],
+        }
+    },
+    "Drawing Slice":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Knife Mastery (Lv 10), Revenge Bomb (Lv 3)",
+        "Description": "Knife: Deal multiple hits of melee Cut damage to random enemies. Damage is doubled for each clone on the field, but dispels all clones. (Damage is divided by 4 if there's no clones)",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["18", "19", "20", "22", "24", "26", "29", "32", "36", "40"],
+            "Attack Power": ["100%", "105%", "110%", "117.5%", "125%", "132.5%", "140%", "147.5%", "155%", "165%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9"],
+            "Min. Hits": ["3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+            "Max. Hits": ["3", "3", "4", "4", "4", "4", "5", "5", "5", "5"],
+        }
+    },
+    "Ninpo: Daggers":{
+        "Usage": "Active (Head, STR)",
+        "Unlock": "N/A",
+        "Description": "Deal 3 hits of ranged stab damage to random enemies (max once each), with a chance to inflict Sleep.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "7", "7", "8", "8"],
+            "Attack Power": ["40%", "44%", "48%", "52%", "56%", "60%", "64%", "68%", "72%", "80%"],
+            "Infliction Chance": ["10%", "13%", "16%", "19%", "22%", "25%", "28%", "32%", "36%", "40%"],
+            "Accuracy": ["-2", "-2", "-1", "-1", "+0", "+0", "+1", "+1", "+2", "+2"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Ninpo: Mirror":{
+        "Usage": "Active (Head)",
+        "Unlock": "Ninpo:Daggers (Lv 1)",
+        "Description": "Target one enemy with an ailment, then attempt to inflict that ailment on all other enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "6", "6", "9", "9"],
+            "Infliction Chance": ["30%", "34%", "38%", "42%", "46%", "50%", "55%", "60%", "99%", "999%"],
+            "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+        }
+    },
+    "Ninpo: Caltrops":{
+        "Usage": "Active (Head)",
+        "Unlock": "Ninpo:Daggers (Lv 3)",
+        "Description": "Prepare to counter attack each time target ally row is hit this turn. Counters deal fixed melee Cut damage (cannot miss), with a chance to inflict Poison.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "7", "7", "8", "8"],
+            "Fixed Damage": ["20", "25", "30", "35", "40", "50", "60", "70", "80", "90"],
+            "Infliction Chance": ["40%", "42%", "44%", "46%", "48%", "50%", "52%", "54%", "56%", "60%"],
+            "Poison Damage": ["15", "18", "21", "24", "27", "30", "35", "40", "45", "50"],
+        }
+    },
+    "Beheading":{
+        "Usage": "Passive",
+        "Unlock": "Ninpo:Mirror (Lv 3), Ninpo:Caltrops (Lv 5)",
+        "Description": "Normal attacks gain a chance to inflict Instant Death.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Infliction Chance": ["7%", "8%", "9%", "10%", "11%", "12%", "14%", "16%", "18%", "20%"],
+        }
+    },
+    "Concealment":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase evasion.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Evasion Up": ["+10%", "+12%", "+14%", "+17%", "+20%", "+23%", "+26%", "+29%", "+32%", "+35%"],
+        }
+    },
+    "Ninpo: Flight":{
+        "Usage": "Active (Legs)",
+        "Unlock": "Concealment (Lv 1)",
+        "Description": "For this turn, gain a chance to nullify physical attacks received.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["3", "4", "5", "6", "7"],
+            "Activation Chance": ["50%", "60%", "70%", "80%", "100%"],
+            "Action Speed": ["+60", "+60", "+60", "+60", "+60"],
+        }
+    },
+    "Ninpo: Smoke":{
+        "Usage": "Active (Legs)",
+        "Unlock": "Concealment (Lv 3)",
+        "Description": "Spend 50% of current HP to place a buff on yourself for 3 turns, which strongly increases evasion.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["5", "5", "6", "6", "7", "7", "8", "8", "9", "10"],
+            "Evasion Up": ["+30%", "+35%", "+40%", "+45%", "+50%", "+55%", "+60%", "+65%", "+70%", "+75%"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Reflexes":{
+        "Usage": "Passive",
+        "Unlock": "Ninpo:Flight (Lv 3), Ninpo:Smoke (Lv 3)",
+        "Description": "Recover TP each time you evade an attack.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Gain": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        }
+    },
+    "Tonsou Jutsu":{
+        "Usage": "Active (Legs)",
+        "Unlock": "N/A",
+        "Description": "Chance to escape from battle and teleport to the point where you entered the floor.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["5", "4", "3", "2", "1"],
+            "Success Chance": ["40%", "50%", "60%", "70%", "80%"],
+            "Action Speed": ["-10", "-10", "-10", "-10", "-10"],
+        }
+    },
+},
+"Monk":{
+    "Form Qi":{
+        "Usage": "Passive (Unique)",
+        "Unlock": "N/A",
+        "Description": "Increase the effect of non-fixed healing skills.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "HP Restored": ["+20%", "+25%", "+30%", "+35%", "+40%", "+45%", "+50%", "+55%", "+60%", "+65%"],
+        }
+    },
+    "Healing":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "N/A",
+        "Description": "Restore HP to one ally.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["4", "5", "6", "7", "8", "9", "10", "11", "12", "13"],
+            "Healing Power": ["70%", "75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "120%"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Refresh":{
+        "Usage": "Active (Head)",
+        "Unlock": "Healing (Lv 2)",
+        "Description": "Remove ailments from target allies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "5", "4", "10", "8", "6", "16", "14", "12", "10"],
+            "Targets": ["Single", "Single", "Single", "Row", "Row", "Row", "All", "All", "All", "All"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Unbind":{
+        "Usage": "Active (Head)",
+        "Unlock": "Healing (Lv 2)",
+        "Description": "Remove binds from target allies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "5", "4", "10", "8", "6", "16", "14", "12", "10"],
+            "Targets": ["Single", "Single", "Single", "Row", "Row", "Row", "All", "All", "All", "All"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Resurrect":{
+        "Usage": "Active (Head)",
+        "Unlock": "Refresh (Lv 2), Unbind (Lv 2)",
+        "Description": "Revive one ally, restoring a fixed amount of HP.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["15", "16", "17", "18", "19", "20", "21", "22", "23", "24"],
+            "HP Gain": ["1", "10", "20", "40", "60", "100", "150", "200", "250", "All"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Full Heal":{
+        "Usage": "Active (Head)",
+        "Unlock": "Healing (Lv 5)",
+        "Description": "Restore full HP to one ally.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["34", "30", "26", "22", "18"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Line Heal":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Healing (Lv 5)",
+        "Description": "Restore HP to an ally row.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["10", "11", "12", "13", "15", "17", "19", "21", "23", "25"],
+            "Healing Power": ["60%", "65%", "70%", "75%", "80%", "85%", "90%", "95%", "100%", "110%"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Party Heal":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Line Heal (Lv 3)",
+        "Description": "Restore HP to the whole party.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["18", "19", "21", "23", "25", "27", "29", "31", "33", "35"],
+            "Healing Power": ["50%", "55%", "60%", "65%", "70%", "75%", "80%", "85%", "90%", "100%"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Waking Chakra":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase chance of ailments/binds on yourself being naturally healed at the end of turn.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Recovery Rate": ["+30%", "+34%", "+38%", "+42%", "+46%", "+50%", "+55%", "+60%", "+65%", "+70%"],
+        }
+    },
+    "Fist Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Removes the ATK penalty when using bare Fists, and instead applies an ATK increase. Unlocks Fist skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "ATK Up": ["+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%"],
+        }
+    },
+    "Kikouken":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Fist Mastery (Lv 1)",
+        "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to inflict Paralysis.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "8", "8", "10", "10"],
+            "Attack Power": ["140%", "145%", "150%", "155%", "160%", "166%", "172%", "178%", "184%", "190%"],
+            "Infliction Chance": ["30%", "32%", "34%", "36%", "38%", "40%", "42%", "44%", "46%", "50%"],
+            "Accuracy": ["-2", "-2", "-1", "-1", "+0", "+0", "+1", "+1", "+2", "+2"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Breakfire Fist":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Fist Mastery (Lv 3), Waking Chakra (Lv 3)",
+        "Description": "Fist: Deal multiple hits of melee Bash+Fire damage to random enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["10", "11", "12", "14", "15", "17", "18", "20", "22", "25"],
+            "Attack Power": ["70%", "75%", "75%", "80%", "85%", "85%", "90%", "90%", "100%", "100%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            "Max. Hits": ["2", "2", "3", "3", "3", "4", "4", "4", "4", "5"],
+        }
+    },
+    "Counter":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Fist Mastery (Lv 8)",
+        "Description": "Fist: Prepare to counter attack when you receive physical damage this turn. Counters deal melee Bash damage to the attacker.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["5", "5", "6", "6", "7", "7", "8", "8", "9", "9"],
+            "Attack Power": ["200%", "220%", "240%", "260%", "280%", "300%", "320%", "340%", "360%", "380%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["+7", "+7", "+7", "+7", "+7", "+7", "+7", "+7", "+7", "+7"],
+        }
+    },
+    "Retaliate":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Fist Mastery (Lv 8)",
+        "Description": "Fist: Prepare to counter attack when you receive elemental damage this turn. Counters deal melee Bash damage to the attacker.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["5", "5", "6", "6", "7", "7", "8", "8", "9", "9"],
+            "Attack Power": ["200%", "220%", "240%", "260%", "280%", "300%", "320%", "340%", "360%", "380%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["+7", "+7", "+7", "+7", "+7", "+7", "+7", "+7", "+7", "+7"],
+        }
+    },
+    "Darkness Fist":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Fist Mastery (Lv 10), Breakfire Fist (Lv 3)",
+        "Description": "Fist: Spend 25% of current HP to deal melee Bash damage to all enemies, with a chance to inflict Curse.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["13", "14", "15", "16", "17", "19", "21", "23", "25", "27"],
+            "Attack Power": ["130%", "135%", "140%", "145%", "150%", "162%", "174%", "186%", "198%", "210%"],
+            "Infliction Chance": ["30%", "33%", "36%", "39%", "42%", "45%", "48%", "51%", "55%", "60%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+        }
+    },
+    "Ascetic Reward":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Upon dying, restore HP to all allies.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "HP Gain": ["10", "20", "30", "40", "50", "60", "70", "80", "90", "100"],
+        }
+    },
+    "Blood Return":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "When an ally dies, recover TP.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Gain": ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"],
+        }
+    },
+    "Ascetic Deeds":{
+        "Usage": "Passive",
+        "Unlock": "Ascetic Reward (Lv 3), Blood Return (Lv 3)",
+        "Description": "Recover HP each time you use a skill.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "HP Gain": ["20", "25", "30", "35", "40", "50", "60", "70", "80", "90"],
+        }
+    },
+    "Fire Walk":{
+        "Usage": "Active (Field)",
+        "Unlock": "N/A",
+        "Description": "Temporarily decrease damage taken by the party from damaging floor.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["4", "5", "6", "7", "8"],
+            "Damage Taken": ["-20%", "-40%", "-60%", "-70%", "-90%"],
+            "Duration (Steps)": ["30", "40", "50", "60", "80"],
+        }
+    },
+},
+"Zodiac":{
+    "Ether Mastery":{
+        "Usage": "Passive (Unique)",
+        "Unlock": "N/A",
+        "Description": "Increase elemental damage dealt.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+3%", "+5%", "+7%", "+9%", "+11%", "+13%", "+16%", "+19%", "+22%", "+25%"],
+        }
+    },
+    "Fire Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase Fire damage dealt. Unlocks Fire skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%"],
+        }
+    },
+    "Fire Star":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Fire Mastery (Lv 1)",
+        "Description": "Deal ranged Fire damage to one enemy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "9", "10", "11", "12", "14", "16", "18", "20", "22"],
+            "Attack Power": ["40%", "44%", "48%", "52%", "56%", "60%", "64%", "68%", "72%", "80%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-1", "-1", "-1", "-1", "-1"],
+            "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+        }
+    },
+    "Binary Fire":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Fire Mastery (Lv 5)",
+        "Description": "Deal ranged Fire damage to all enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["16", "18", "20", "22", "24", "26", "28", "30", "32", "35"],
+            "Attack Power": ["30%", "32%", "34%", "36%", "38%", "41%", "44%", "47%", "50%", "55%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12"],
+        }
+    },
+    "Fire Prophecy":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Fire Star (Lv 5), Binary Fire (Lv 5)",
+        "Description": "Target one enemy for this turn, and nullify any Fire attack they might use. If this activates, perform a counter attack that deals ranged Fire damage (cannot miss) to the target.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["15", "16", "17", "18", "19"],
+            "Attack Power": ["50%", "60%", "75%", "90%", "105%"],
+            "Action Speed": ["+30", "+30", "+30", "+30", "+30"],
+        }
+    },
+    "Ice Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase Ice damage dealt. Unlocks Ice skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%"],
+        }
+    },
+    "Ice Star":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Ice Mastery (Lv 1)",
+        "Description": "Deal ranged Ice damage to one enemy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "9", "10", "11", "12", "14", "16", "18", "20", "22"],
+            "Attack Power": ["40%", "44%", "48%", "52%", "56%", "60%", "64%", "68%", "72%", "80%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-1", "-1", "-1", "-1", "-1"],
+            "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+        }
+    },
+    "Binary Ice":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Ice Mastery (Lv 5)",
+        "Description": "Deal ranged Ice damage to all enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["16", "18", "20", "22", "24", "26", "28", "30", "32", "35"],
+            "Attack Power": ["30%", "32%", "34%", "36%", "38%", "41%", "44%", "47%", "50%", "55%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12"],
+        }
+    },
+    "Ice Prophecy":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Ice Star (Lv 5), Binary Ice (Lv 5)",
+        "Description": "Target one enemy for this turn, and nullify any Ice attack they might use. If this activates, perform a counter attack that deals ranged Ice damage (cannot miss) to the target.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["15", "16", "17", "18", "19"],
+            "Attack Power": ["50%", "60%", "75%", "90%", "105%"],
+            "Action Speed": ["+30", "+30", "+30", "+30", "+30"],
+        }
+    },
+    "Volt Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase Volt damage dealt. Unlocks Volt skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%"],
+        }
+    },
+    "Volt Star":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Volt Mastery (Lv 1)",
+        "Description": "Deal ranged Volt damage to one enemy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "9", "10", "11", "12", "14", "16", "18", "20", "22"],
+            "Attack Power": ["40%", "44%", "48%", "52%", "56%", "60%", "64%", "68%", "72%", "80%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-1", "-1", "-1", "-1", "-1"],
+            "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+        }
+    },
+    "Binary Volt":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Volt Mastery (Lv 5)",
+        "Description": "Deal ranged Volt damage to all enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["16", "18", "20", "22", "24", "26", "28", "30", "32", "35"],
+            "Attack Power": ["30%", "32%", "34%", "36%", "38%", "41%", "44%", "47%", "50%", "55%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12"],
+        }
+    },
+    "Volt Prophecy":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Volt Star (Lv 5), Binary Volt (Lv 5)",
+        "Description": "Target one enemy for this turn, and nullify any Volt attack they might use. If this activates, perform a counter attack that deals ranged Volt damage (cannot miss) to the target.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["15", "16", "17", "18", "19"],
+            "Attack Power": ["50%", "60%", "75%", "90%", "105%"],
+            "Action Speed": ["+30", "+30", "+30", "+30", "+30"],
+        }
+    },
+    "Dark Ether":{
+        "Usage": "Active (Head)",
+        "Unlock": "N/A",
+        "Description": "Target one ally row, and for this turn their skills won't spend TP.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["18", "16", "14", "12", "10"],
+            "Action Speed": ["+30", "+30", "+30", "+30", "+30"],
+        }
+    },
+    "Singularity":{
+        "Usage": "Passive",
+        "Unlock": "Dark Ether (Lv 5)",
+        "Description": "Increase damage dealt when hitting an enemy's weakness.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "Damage Dealt": ["+10%", "+20%", "+30%", "+40%", "+50%"],
+        }
+    },
+    "Etheric Charge":{
+        "Usage": "Active (Head)",
+        "Unlock": "Dark Ether (Lv 5)",
+        "Description": "Enter a charge state until the end of next turn, which massively increases elemental damage dealt for your next action.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["8", "9", "10", "11", "12"],
+            "Damage Dealt": ["+120%", "+140%", "+160%", "+180%", "+200%"],
+        }
+    },
+    "Etheric Return":{
+        "Usage": "Passive",
+        "Unlock": "Singularity (Lv 5), Etheric Charge (Lv 5)",
+        "Description": "Recover TP each time you kill an enemy.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Gain": ["1", "2", "3", "4", "5"],
+        }
+    },
+    "Meteor":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Etheric Return (Lv 3), Horoscope (Lv 5)",
+        "Description": "Deal multiple hits of ranged Bash damage to random enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["30", "32", "34", "37", "40", "43", "47", "51", "55", "60"],
+            "Attack Power": ["35%", "38%", "38%", "41%", "41%", "44%", "44%", "47%", "47%", "50%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1", ],
+            "Action Speed": ["-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12"],
+            "Min. Hits": ["3", "3", "3", "3", "4", "4", "4", "4", "5", "5"],
+            "Max. Hits": ["4", "4", "5", "5", "5", "5", "6", "6", "6", "6"],
+        }
+    },
+    "Horoscope":{
+        "Usage": "Active (Field)",
+        "Unlock": "N/A",
+        "Description": "Temporarily show on the map the location of all FOEs within a certain radius.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8"],
+            "Radius (Tiles)": ["1", "3", "5", "7", "10"],
+            "Duration (Steps)": ["30", "40", "50", "70", "100"],
+        }
+    },
+},
+"Wildling":{
+    "Beast Soul":{
+        "Usage": "Passive (Unique)",
+        "Unlock": "N/A",
+        "Description": "Increase Max HP, damage dealt, and defense for your summoned Beasts.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Max HP Up": ["+10%", "+14%", "+18%", "+22%", "+26%", "+30%", "+35%", "+40%", "+45%", "+50%"],
+            "Damage Dealt": ["+20%", "+26%", "+32%", "+38%", "+44%", "+50%", "+56%", "+62%", "+68%", "+75%"],
+            "Defense Up": ["+5%", "+10%", "+15%", "+20%", "+25%", "+30%", "+35%", "+40%", "+45%", "+50%"],
+        }
+    },
+    "Wild Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase infliction chances of your summoned Beasts. This bonus is added after applying resistances. Unlocks Beast skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Infliction Chance": ["+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+12%", "+13%", "+15%"],
+        }
+    },
+    "Dismiss Beast":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Wild Mastery (Lv 1)",
+        "Description": "Removed a summoned Beast from battle, then recover the TP that was spent to summon it.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["8", "6", "4", "2", "1"],
+        }
+    },
+    "Call Bird":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Wild Mastery (Lv 1)",
+        "Description": "Summon a bird with 100% of your combat stats. When summoned, deals Stab damage and inflicts Head Bind to target enemy; on subsequent turns targets a random enemy instead.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["15", "15", "18", "18", "21", "21", "24", "24", "27", "27"],
+            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Beast HP": ["40", "45", "50", "55", "60", "66", "72", "78", "84", "90"],
+            "Attack Power": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "130%"],
+            "Infliction Chance": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+        }
+    },
+    "Call Snake":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Wild Mastery (Lv 1)",
+        "Description": "Summon a snake with 100% of your combat stats. When summoned, deals Bash damage and inflicts Arm Bind to target enemy; on subsequent turns targets a random enemy instead.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["15", "15", "18", "18", "21", "21", "24", "24", "27", "27"],
+            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Beast HP": ["40", "45", "50", "55", "60", "66", "72", "78", "84", "90"],
+            "Attack Power": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "130%"],
+            "Infliction Chance": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+        }
+    },
+    "Call Mole":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Wild Mastery (Lv 1)",
+        "Description": "Summon a mole with 100% of your combat stats. When summoned, deals Cut damage and inflicts Leg Bind to target enemy; on subsequent turns targets a random enemy instead.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["15", "15", "18", "18", "21", "21", "24", "24", "27", "27"],
+            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Beast HP": ["40", "45", "50", "55", "60", "66", "72", "78", "84", "90"],
+            "Attack Power": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "130%"],
+            "Infliction Chance": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+        }
+    },
+    "Call Insect":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Wild Mastery (Lv 3)",
+        "Description": "Summon a venomfly with 70% of your combat stats. When summoned, deals Cut damage and inflicts Poison to target enemy; on subsequent turns targets a random enemy instead.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["18", "18", "21", "21", "24", "24", "27", "27", "30", "30"],
+            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Beast HP": ["20", "22", "24", "26", "28", "30", "32", "34", "36", "40"],
+            "Attack Power": ["60%", "65%", "70%", "75%", "80%", "90%", "100%", "110%", "120%", "130%"],
+            "Infliction Chance": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
+            "Poison Damage": ["50", "80", "110", "140", "170", "200", "230", "270", "310", "350"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+        }
+    },
+    "Call Owl":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Wild Mastery (Lv 5)",
+        "Description": "Summon an owl with 100% of your combat stats. On every turn, attempts to inflict Sleep on all enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["18", "18", "21", "21", "24", "24", "27", "27", "30", "30"],
+            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Beast HP": ["70", "80", "88", "98", "105", "112", "119", "126", "133", "140"],
+            "Infliction Chance": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
+        }
+    },
+    "Call Ooze":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Wild Mastery (Lv 6), Nature Pact (Lv 10)",
+        "Description": "Summon a slime with 90% of your combat stats. When summoned, deals Cut damage and inflicts Plague to target enemy; on subsequent turns targets a random enemy instead.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["27", "27", "30", "30", "33", "33", "36", "36", "39", "39"],
+            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Beast HP": ["20", "22", "24", "26", "28", "30", "32", "34", "36", "40"],
+            "Attack Power": ["120%", "125%", "130%", "135%", "140%", "150%", "160%", "170%", "180%", "190%"],
+            "Infliction Chance": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
+            "Poison Damage": ["30", "60", "90", "120", "150", "180", "210", "240", "270", "300"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+        }
+    },
+    "Call Elephant":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Wild Mastery (Lv 7), Call Insect (Lv 4)",
+        "Description": "Summon an elephant with 120% of your combat stats. When summoned, deals Bash damage and inflicts Panic to all enemies; on subsequent turns it hits one random enemy instead.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["21", "21", "24", "24", "27", "27", "30", "30", "33", "33"],
+            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Beast HP": ["110", "125", "140", "155", "170", "185", "200", "215", "230", "250"],
+            "Attack Power": ["75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%"],
+            "Infliction Chance": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+        }
+    },
+    "Call Cow":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Wild Mastery (Lv 7), Call Owl (Lv 4)",
+        "Description": "Summon a bull with 120% of your combat stats. When summoned, deals multiple hits of Stab damage and inflicts Paralysis to random enemies; on subsequent turns it hits once and targets one random enemy instead.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["21", "21", "24", "24", "27", "27", "30", "30", "33", "33"],
+            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Beast HP": ["100", "115", "125", "140", "150", "160", "170", "180", "190", "200"],
+            "Attack Power": ["65%", "68%", "70%", "73%", "76%", "78%", "81%", "84%", "87%", "90%"],
+            "Infliction Chance": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            "Max. Hits": ["2", "2", "3", "3", "3", "4", "4", "4", "4", "5"],
+        }
+    },
+    "Call Lion":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Wild Mastery (Lv 10), Sacrifice 1 (Lv 5)",
+        "Description": "Summon a lion with 150% of your combat stats that's afflicted with Sleep. If it wakes up, deals Almighty damage with a chance to inflict Paralysis and Stun to all enemies, then goes back to Sleep. Stronger on enemies afflicted with an ailment.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["27", "27", "30", "30", "33", "33", "36", "36", "39", "39"],
+            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Beast HP": ["160", "184", "200", "224", "240", "256", "272", "288", "304", "320"],
+            "Attack Power\n(Normal)": ["130%", "135%", "140%", "145%", "150%", "160%", "170%", "180%", "190%", "200%"],
+            "Attack Power\n(Ailment)": ["208%", "230%", "252%", "275%", "300%", "336%", "374%", "414%", "456%", "500%"],
+            "Infliction Chance": ["30%", "33%", "36%", "39%", "42%", "45%", "48%", "51%", "54%", "57%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+        }
+    },
+    "Call Tiger":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Wild Mastery (Lv 10), Sacrifice 2 (Lv 5)",
+        "Description": "Summon a tiger with 150% of your combat stats. When summoned, attempts to inflict Instant Death on all enemies; on subsequent turns, it will prepare to counter attack against any attack received.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["27", "27", "30", "30", "33", "33", "36", "36", "39", "39"],
+            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Beast HP": ["160", "184", "200", "224", "240", "256", "272", "288", "304", "320"],
+            "Attack Power": ["120%", "125%", "130%", "140%", "150%", "160%", "170%", "180%", "190%", "200%"],
+            "Infliction Chance": ["5%", "6%", "7%", "8%", "10%", "12%", "14%", "16%", "18%", "20%"],
+        }
+    },
+    "Nature Pact":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Upon dying, there's a chance that your summoned Beast will sacrifice itself to revive you, restoring a fixed amount of HP.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Activation Chance": ["10%", "14%", "18%", "22%", "26%", "30%", "34%", "38%", "42%", "50%"],
+            "HP Gain": ["10", "20", "30", "50", "70", "100", "130", "160", "200", "All"],
+        }
+    },
+    "Sacrifice 1":{
+        "Usage": "Passive",
+        "Unlock": "Nature Pact (Lv 3)",
+        "Description": "Your summoned Beasts have a chance to take physical attacks in place of allies in their same row.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Activation Chance": ["10%", "12%", "14%", "16%", "18%", "22%", "26%", "30%", "35%", "40%"],
+        }
+    },
+    "Sacrifice 2":{
+        "Usage": "Passive",
+        "Unlock": "Nature Pact (Lv 3)",
+        "Description": "Your summoned Beasts have a chance to take elemental attacks in place of allies in their same row.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Activation Chance": ["10%", "12%", "14%", "16%", "18%", "22%", "26%", "30%", "35%", "40%"],
+        }
+    },
+    "Beast Roar":{
+        "Usage": "Active (Head)",
+        "Unlock": "N/A",
+        "Description": "Place a debuff on all enemies for 3 turns, which decreases physical damage dealt.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["8", "10", "12", "14", "16"],
+            "Damage Dealt": ["-5%", "-8%", "-12%", "-16%", "-20%"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Primal Drums":{
+        "Usage": "Active (Head)",
+        "Unlock": "N/A",
+        "Description": "Place a debuff on all enemies for 3 turns, which increases physical damage taken.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["8", "10", "12", "14", "16"],
+            "Damage Taken": ["+10%", "+15%", "+20%", "+25%", "+30%"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Alertness":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Chance to cancel out enemy ambushes.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "Activation Chance": ["30%", "35%", "40%", "45%", "50%"],
+        }
+    },
+},
+"Arbalist":{
+    "Giant Kill":{
+        "Usage": "Passive (Unique)",
+        "Unlock": "N/A",
+        "Description": "Increase damage dealt to enemies whose current HP is at least twice your own current HP.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+20%", "+23%", "+27%", "+31%", "+35%", "+39%", "+43%", "+47%", "+51%", "+55%"],
+        }
+    },
+    "Bolt Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase damage dealt with Crossbow's normal attacks. Unlocks Crossbow skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%"],
+        }
+    },
+    "Heavy Shot":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Bolt Mastery (Lv 1)",
+        "Description": "Crossbow: Deal ranged Stab damage to one enemy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["5", "5", "6", "6", "7", "7", "8", "8", "9", "9"],
+            "Attack Power": ["140%", "143%", "147%", "150%", "153%", "156%", "160%", "165%", "170%", "175%"],
+            "Accuracy": ["-7", "-7", "-7", "-7", "-7", "-6", "-6", "-6", "-6", "-6"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Front Mortar":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Heavy Shot (Lv 5)",
+        "Description": "Crossbow: Deal ranged Stab damage to one enemy. Stronger if you're in the front row.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["9", "12", "15", "18", "21", "24", "27", "30", "33", "36"],
+            "Attack Power\n(Front Row)": ["225%", "235%", "246%", "257%", "276%", "296%", "316%", "336%", "357%", "382%"],
+            "Attack Power\n(Back Row)": ["75%", "76%", "77%", "78%", "79%", "80%", "81%", "82%", "83%", "85%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Snipe":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Bolt Mastery (Lv 2)",
+        "Description": "Crossbow: At the end of turn, deal ranged Stab damage to all enemies afflicted with ailments.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "6", "6", "7", "7"],
+            "Attack Power": ["150%", "158%", "166%", "174%", "182%", "190%", "200%", "210%", "220%", "240%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+        }
+    },
+    "Sharpshooter":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Bolt Mastery (Lv 2)",
+        "Description": "Crossbow: At the end of turn, deal ranged Stab damage to all enemies afflicted with binds.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "6", "6", "7", "7"],
+            "Attack Power": ["150%", "158%", "166%", "174%", "182%", "190%", "200%", "210%", "220%", "240%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+        }
+    },
+    "Strafe":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Bolt Mastery (Lv 3)",
+        "Description": "Crossbow: Deal multiple hits of ranged Stab damage to random enemies (max once each).",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["7", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
+            "Attack Power": ["100%", "102%", "104%", "107%", "110%", "113%", "116%", "119%", "122%", "125%"],
+            "Accuracy": ["-20", "-20", "-20", "-20", "-20", "-20", "-20", "-20", "-20", "-20"],
+            "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "3", "3"],
+            "Max. Hits": ["3", "3", "3", "4", "4", "4", "5", "5", "5", "5"],
+        }
+    },
+    "Fire Barrage":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Bolt Mastery (Lv 5)",
+        "Description": "Crossbow: Deal ranged Stab+Fire damage to all enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "8", "9", "9", "10", "11", "12", "13", "14", "15"],
+            "Attack Power": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "125%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Ice Barrage":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Bolt Mastery (Lv 5)",
+        "Description": "Crossbow: Deal ranged Stab+Ice damage to all enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "8", "9", "9", "10", "11", "12", "13", "14", "15"],
+            "Attack Power": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "125%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Volt Barrage":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Bolt Mastery (Lv 5)",
+        "Description": "Crossbow: Deal ranged Stab+Volt damage to all enemies.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "8", "9", "9", "10", "11", "12", "13", "14", "15"],
+            "Attack Power": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "125%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Armor Piercer":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Bolt Mastery (Lv 7)",
+        "Description": "Crossbow: Deal ranged Stab damage to one enemy. Ignores all buffs on the target.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["11", "11", "12", "12", "13", "13", "14", "14", "15", "15"],
+            "Attack Power": ["170%", "175%", "180%", "185%", "190%", "195%", "200%", "205%", "210%", "215%"],
+            "Accuracy": ["-10", "-10", "-9", "-9", "-8", "-8", "-7", "-7", "-6", "-5"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Double Action":{
+        "Usage": "Passive",
+        "Unlock": "Front Mortar (Lv 4), Armor Piercer (Lv 4)",
+        "Description": "When using a single-target attack skill, there's a chance to perform it a second time.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Activation Chance": ["10%", "12%", "14%", "16%", "18%", "20%", "22%", "24%", "27%", "30%"],
+        }
+    },
+    "Cloudbuster":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Bolt Mastery (Lv 10)",
+        "Description": "Crossbow: Prepare an attack that will be performed at the end of next turn, which deals ranged Stab damage to all enemies.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["14", "16", "18", "20", "22"],
+            "Attack Power": ["140%", "160%", "190%", "230%", "250%"],
+            "Accuracy": ["-5", "-4", "-3", "-2", "-1"],
+        }
+    },
+    "Proper Form":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase accuracy.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "Accuracy Up": ["+5%", "+10%", "+15%", "+20%", "+25%"],
+        }
+    },
+    "Extend":{
+        "Usage": "Passive",
+        "Unlock": "Proper Form (Lv 3)",
+        "Description": "Recover HP each time you kill an enemy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "HP Gain": ["10", "20", "30", "40", "50", "60", "70", "80", "90", "100"],
+        }
+    },
+    "Pop Flares":{
+        "Usage": "Active (Arms)",
+        "Unlock": "N/A",
+        "Description": "Place a buff on the whole party for 3 turns, which increases accuracy.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10"],
+            "Accuracy Up": ["+5%", "+10%", "+15%", "+30%", "+50%"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Smoke Grenade":{
+        "Usage": "Active (Arms)",
+        "Unlock": "N/A",
+        "Description": "Attempt to inflict Blind on all enemies.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10"],
+            "Infliction Chance": ["30%", "40%", "50%", "65%", "80%"],
+            "Action Speed": ["+3", "+3", "+3", "+3", "+3"],
+        }
+    },
+    "Night Vision":{
+        "Usage": "Passive",
+        "Unlock": "Pop Flares (Lv 3), Smoke Grenade (Lv 3)",
+        "Description": "Increase Critical Hit chance during the night.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Crit Rate Up": ["+15%", "+17%", "+19%", "+22%", "+25%", "+28%", "+31%", "+34%", "+37%", "+40%"],
+        }
+    },
+    "Ambush":{
+        "Usage": "Active (Field)",
+        "Unlock": "N/A",
+        "Description": "Temporarily increase the chance of blindsiding enemies.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10"],
+            "Chance Up": ["+25%", "+30%", "+35%", "+40%", "+50%"],
+            "Duration (Steps)": ["40", "45", "50", "55", "60"],
+        }
+    },
+},
+"Farmer":{
+    "Earth's Bounty":{
+        "Usage": "Passive (Unique)",
+        "Unlock": "N/A",
+        "Description": "If you're alive at the end of a battle, increase the EXP gained by the party.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "EXP Gain": ["+10%", "+12%", "+14%", "+16%", "+18%", "+20%", "+22%", "+25%", "+27%", "+30%"],
+        }
+    },
+    "Lullaby":{
+        "Usage": "Active (Head)",
+        "Unlock": "N/A",
+        "Description": "Inflict Sleep on yourself, then attempt to inflict it on all enemies.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["2", "3", "4", "5", "6", "7", "8", "9", "10", "10"],
+            "Infliction Chance": ["15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%", "55%", "60%"],
+            "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+        }
+    },
+    "Play Possum":{
+        "Usage": "Active (Head)",
+        "Unlock": "Lullaby (Lv 1)",
+        "Description": "Place a buff on yourself for 3 turns, which decreases enemy aggro. Actual decrease on each attack is a random value between -3 and this skill's bonus. (For reference, base aggro is a random value from 0 to 4, plus a bonus from 0 to 6 to one random ally)",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "6", "6", "7", "7"],
+            "Max. Aggro Decrease": ["-5", "-6", "-7", "-8", "-9", "-10", "-12", "-14", "-16", "-20"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Strange Seeds":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Lullaby (Lv 3)",
+        "Description": "At the end of turn, attempt to inflict all 3 binds on all enemies. Has a chance to fail and not attempt the inflictions.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["3", "4", "4", "5", "5", "6", "6", "7", "7", "8"],
+            "Infliction Chance": ["20%", "24%", "28%", "32%", "36%", "40%", "44%", "48%", "52%", "60%"],
+            "Success Chance": ["70%", "70%", "80%", "80%", "90%", "90%", "95%", "95%", "100%", "100%"],
+        }
+    },
+    "Persistence":{
+        "Usage": "Passive",
+        "Unlock": "Play Possum (Lv 5), Strange Seeds (Lv 3)",
+        "Description": "Chance to automatically revive at the end of each turn (max once per battle). Revives with 20 HP.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Activation Chance": ["16%", "18%", "20%", "22%", "24%", "27%", "30%", "33%", "36%", "40%"],
+        }
+    },
+    "Rotten Egg":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Lullaby (Lv 3)",
+        "Description": "Place a debuff on all enemies for 4 turns, which decreases damage dealt. Stronger effect on enemies afflicted with ailments.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["5", "5", "6", "6", "7", "7", "8", "8", "9", "9"],
+            "Damage Dealt\n(Normal)": ["-5%", "-5%", "-6%", "-6%", "-6%", "-7%", "-7%", "-8%", "-8%", "-10%"],
+            "Damage Dealt\n(Ailment)": ["-20%", "-22%", "-26%", "-29%", "-32%", "-35%", "-38%", "-42%", "-46%", "-50%"],
+        }
+    },
+    "Sympathy Pain":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Rotten Egg (Lv 3)",
+        "Description": "If you're afflicted with an ailment, attempt to inflict it on an enemy. If successful, remove the ailment from yourself.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "6", "7", "8", "9", "10"],
+            "Infliction Chance": ["60%", "63%", "66%", "70%", "74%", "78%", "82%", "86%", "90%", "999%"],
+            "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
+        }
+    },
+    "Brave Heart":{
+        "Usage": "Passive",
+        "Unlock": "Sympathy Pain (Lv 5)",
+        "Description": "At the end of each turn, recover TP of your HP is full.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Gain": ["1", "2", "3", "4", "5"],
+        }
+    },
+    "Harvestry":{
+        "Usage": "Passive (Field)",
+        "Unlock": "N/A",
+        "Description": "Allows you to gather from Take, Chop and Mine spots a certain amount of times per day each. (Added to the effect of common gathering skills)",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "Gather Attempts": ["1", "2", "3", "4", "5"],
+        }
+    },
+    "Keen Nose":{
+        "Usage": "Passive (Field)",
+        "Unlock": "Harvestry (Lv 3)",
+        "Description": "Gain an additional chance of finding rare items when gathering.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Chance Up": ["+1%", "+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%"],
+        }
+    },
+    "Double Crop":{
+        "Usage": "Active (Field)",
+        "Unlock": "Harvestry (Lv 5)",
+        "Description": "Recharge the amount of times you can use gathering spots.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["10", "15", "20", "25", "30", "35", "40", "45", "50", "55"],
+            "Recharges": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        }
+    },
+    "Camp Mastery":{
+        "Usage": "Passive (Field)",
+        "Unlock": "N/A",
+        "Description": "Increase the HP and TP recovery from using Tents. Also makes Tents revive and remove Petrify.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "HP Gain Up": ["40", "80", "120", "160", "200", "240", "280", "320", "360", "500"],
+            "TP Gain Up": ["20", "40", "60", "80", "100", "120", "140", "160", "180", "250"],
+        }
+    },
+    "Waste Not":{
+        "Usage": "Passive",
+        "Unlock": "Camp Mastery (Lv 3)",
+        "Description": "Increase enemy drop rates.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Gain": ["+1%", "+2%", "+3%", "+4%", "+5%"],
+        }
+    },
+    "Slap Awake":{
+        "Usage": "Active (Field)",
+        "Unlock": "Camp Mastery (Lv 5)",
+        "Description": "Revive an ally, restoring a fixed amount of HP.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            "HP Gain": ["1", "30", "60", "100", "140", "180", "220", "260", "300", "500"],
+        }
+    },
+    "Keen Eye":{
+        "Usage": "Active (Field)",
+        "Unlock": "N/A",
+        "Description": "Temporarily show on the map the location of all FOEs.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "8", "9", "9", "10", "10"],
+            "Duration (Steps)": ["5", "10", "15", "20", "25", "30", "35", "40", "50", "60"],
+        }
+    },
+    "To Market":{
+        "Usage": "Active (Field)",
+        "Unlock": "Keen Eye (Lv 1)",
+        "Description": "Teleport back to town.",
+        "Starter": "0",
+        "Max Level": "1",
+        "Data": {
+            "TP Cost": ["13"],
+        }
+    },
+    "Rain or Shine":{
+        "Usage": "Active (Field)",
+        "Unlock": "Keen Eye (Lv 3)",
+        "Description": "Temporarily nullify the effect of damaging tiles and mud tiles.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["10", "10", "11", "11", "12", "12", "13", "13", "14", "14"],
+            "Duration (Steps)": ["10", "15", "20", "25", "30", "35", "40", "50", "60", "70"],
+        }
+    },
+    "Safe Stroll":{
+        "Usage": "Active (Field)",
+        "Unlock": "Keen Eye (Lv 5)",
+        "Description": "Temporarily prevent enemy encounters.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["12", "12", "13", "13", "14"],
+            "Duration (Steps)": ["15", "20", "25", "30", "40"],
+        }
+    },
+    "Horseplay":{
+        "Usage": "Active (Field)",
+        "Unlock": "N/A",
+        "Description": "Make the clock advance by 1 hour.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "TP Cost": ["2"],
+        }
+    },
+},
+"Shogun":{
+    "Second Sword":{
+        "Usage": "Passive (Unique)",
+        "Unlock": "N/A",
+        "Description": "Allows you to equip a second weapon (occupies an armor slot), and normal attacks will hit twice if you do. The second attack has reduced power.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Attack Power\n(Second Hit)": ["20%", "23%", "26%", "29%", "32%", "35%", "38%", "41%", "45%", "50%"],
+        }
+    },
+    "Katana Mastery":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase damage dealt with Katana's normal attacks. Unlocks Katana skills.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%"],
+        }
+    },
+    "Hilt Strike":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Katana Mastery (Lv 1)",
+        "Description": "Katana: Deal melee Bash damage to one enemy, with a chance to inflict Stun.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "8", "9", "9", "10", "10", "11", "11", "12", "12"],
+            "Attack Power": ["130%", "133%", "136%", "139%", "142%", "145%", "150%", "155%", "160%", "165%"],
+            "Infliction Chance": ["25%", "27%", "29%", "31%", "34%", "37%", "40%", "43%", "46%", "50%"],
+            "Accuracy": ["-5", "-4", "-3", "-2", "-1", "+0", "+0", "+0", "+0", "+0"],
+            "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
+        }
+    },
+    "Myoujou":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Katana Mastery (Lv 5)",
+        "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Stronger during the day.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["11", "12", "13", "14", "15", "17", "18", "19", "21", "23"],
+            "Attack Power\n(Day)": ["104%", "109%", "114%", "119%", "124%", "127%", "133%", "139%", "143%", "150%"],
+            "Attack Power\n(Night)": ["80%", "82%", "84%", "86%", "88%", "90%", "92%", "94%", "97%", "100%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            "Max. Hits": ["3", "3", "3", "3", "3", "4", "4", "4", "4", "4"],
+        }
+    },
+    "Magatoki":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Katana Mastery (Lv 5)",
+        "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Stronger during the night.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["11", "12", "13", "14", "15", "17", "18", "19", "21", "23"],
+            "Attack Power\n(Night)": ["104%", "109%", "114%", "119%", "124%", "127%", "133%", "139%", "143%", "150%"],
+            "Attack Power\n(Day)": ["80%", "82%", "84%", "86%", "88%", "90%", "92%", "94%", "97%", "100%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            "Max. Hits": ["3", "3", "3", "3", "3", "4", "4", "4", "4", "4"],
+        }
+    },
+    "5-Ring Sword":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Katana Mastery (Lv 10), Daifuhensha (Lv 3)",
+        "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Maximum hits are doubled if two weapons are equipped.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["15", "16", "17", "18", "20", "22", "24", "26", "28", "30"],
+            "Attack Power": ["70%", "72%", "74%", "76%", "78%", "80%", "82%", "84%", "86%", "90%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            "Max. Hits": ["3", "3", "3", "3", "4", "4", "4", "4", "5", "5"],
+        }
+    },
+    "Morale Boost":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "If you're revived during battle, restore HP to the whole party.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "HP Gain": ["10", "20", "30", "40", "50", "60", "70", "80", "90", "100"],
+        }
+    },
+    "Fore Honor":{
+        "Usage": "Active (Head)",
+        "Unlock": "Morale Boost (Lv 3)",
+        "Description": "Place a buff on one ally for 3 turns, which increases all damage dealt and makes them act first but also increases damage taken.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
+            "Damage Dealt": ["+10%", "+12%", "+14%", "+17%", "+20%", "+23%", "+26%", "+29%", "+32%", "+35%"],
+            "Damage Taken": ["+20%", "+23%", "+26%", "+29%", "+32%", "+35%", "+38%", "+42%", "+46%", "+50%"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Rear Dignity":{
+        "Usage": "Active (Head)",
+        "Unlock": "Morale Boost (Lv 3)",
+        "Description": "Place a buff on one ally for 3 turns, which decreases damage taken but also decreases damage dealt and makes them act last.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
+            "Damage Dealt": ["-20%", "-22%", "-24%", "-26%", "-28%", "-30%", "-32%", "-34%", "-36%", "-40%"],
+            "Damage Taken": ["-20%", "-23%", "-27%", "-31%", "-35%", "-39%", "-43%", "-47%", "-51%", "-55%"],
+            "Action Speed": ["-30", "-30", "-30", "-30", "-30", "-30", "-30", "-30", "-30", "-30"],
+        }
+    },
+    "Ambush Stance":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Fore Honor (Lv 3), Rear Dignity (Lv 3)",
+        "Description": "Command an ally row to prepare to counter attack against attacks received this turn. Counters deal weapon-based damage to the attacker.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["10", "10", "11", "12", "13", "14", "15", "16", "17", "18"],
+            "Attack Power": ["100%", "103%", "106%", "109%", "112%", "115%", "118%", "122%", "126%", "130%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
+        }
+    },
+    "Fusillade":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Morale Boost (Lv 5)",
+        "Description": "Command other allies equipped with a Gun or Crossbow to deal weapon-based damage to target enemy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "8", "9", "9", "10", "11", "12", "13", "14", "15"],
+            "Attack Power": ["100%", "104%", "108%", "112%", "116%", "120%", "125%", "130%", "135%", "140%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["+13", "+13", "+13", "+13", "+13", "+13", "+13", "+13", "+13", "+13"],
+        }
+    },
+    "Blitz Command":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Fusillade (Lv 3)",
+        "Description": "Command all allies to deal weapon-based damage to target enemy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["14", "15", "16", "17", "18", "19", "20", "22", "24", "26"],
+            "Attack Power": ["100%", "104%", "108%", "112%", "116%", "120%", "125%", "130%", "135%", "140%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
+        }
+    },
+    "Endure":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Chance to survive lethal damage with 1 HP (max once per battle).",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "Activation Chance": ["40%", "50%", "60%", "70%", "80%"],
+        }
+    },
+    "Kaishaku":{
+        "Usage": "Passive",
+        "Unlock": "Endure (Lv 1)",
+        "Description": "If another unit (ally or enemy) is below a certain HP threshold after being targetted by an action, there's a chance to inflict Instant Death on them. (Ignores Death resistance but not immunity)",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "HP Threshold": ["10%", "11%", "12%", "13%", "15%"],
+            "Infliction Chance": ["30%", "35%", "40%", "50%", "60%"],
+        }
+    },
+    "Bloody Lance":{
+        "Usage": "Passive",
+        "Unlock": "Endure (Lv 3)",
+        "Description": "Increase damage dealt each time an ally or enemy dies. Resets to 0 if you die.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+10%", "+13%", "+16%", "+19%", "+22%", "+25%", "+28%", "+31%", "+35%", "+40%"],
+        }
+    },
+    "Unified Spirit":{
+        "Usage": "Active (Head)",
+        "Unlock": "Endure (Lv 3)",
+        "Description": "Place a buff on yourself for 3 turns, which makes you immune to bind inflictions.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["12", "10", "8", "6", "4"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Warrior Might":{
+        "Usage": "Active (Legs, STR)",
+        "Unlock": "Bloody Lance (Lv 3), Unified Spirit (Lv 3)",
+        "Description": "Prepare to follow up after all of your allies' attacks for this turn, dealing weapon-based damage to the same targets. However, also increases damage taken for the turn.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["10", "11", "12", "13", "14", "16", "18", "20", "22", "24"],
+            "Attack Power": ["85%", "93%", "102%", "111%", "120%", "129%", "138%", "147%", "156%", "165%"],
+            "Damage Taken": ["+50%", "+58%", "+66%", "+74%", "+82%", "+90%", "+98%", "+107%", "+116%", "+125%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60"],
+        }
+    },
+    "Daifuhensha":{
+        "Usage": "Active (Head)",
+        "Unlock": "Endure (Lv 5)",
+        "Description": "Place a buff on an yourself for 3 turns, which increases physical damage dealt, decreases physical damage taken and increases enemy aggro. Actual aggro increase on each attack is a random value between 3 and this skill's bonus.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
+            "Damage Dealt": ["+15%", "+18%", "+21%", "+24%", "+27%", "+30%", "+33%", "+37%", "+41%", "+45%"],
+            "Damage Taken": ["-15%", "-17%", "-19%", "-22%", "-25%", "-28%", "-31%", "-34%", "-37%", "-40%"],
+            "Max Aggro Bonus": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "15"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Retreat":{
+        "Usage": "Active (Legs)",
+        "Unlock": "N/A",
+        "Description": "Chance to escape from battle.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "5"],
+            "Success Chance": ["40%", "50%", "60%", "70%", "80%"],
+        }
+    },
+},
+"Yggdroid":{
+    "Sleep Mode":{
+        "Usage": "Passive (Unique)",
+        "Unlock": "N/A",
+        "Description": "Recover TP each time you're afflicted with a bind.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Gain": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        }
+    },
+    "Defrag":{
+        "Usage": "Active (No parts)",
+        "Unlock": "N/A",
+        "Description": "Remove all binds on yourself.",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "TP Gain": ["5", "4", "3", "2", "1"],
+        }
+    },
+    "Rocket Punch":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Defrag (Lv 1)",
+        "Description": "Deal 2 hits of Bash damage to one enemy, then inflict Arm Bind on yourself.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["15", "16", "17", "18", "19", "20", "21", "22", "23", "25"],
+            "Attack Power": ["90%", "96%", "102%", "108%", "114%", "120%", "126%", "132%", "138%", "145%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Rocket Headbutt":{
+        "Usage": "Active (Head, STR)",
+        "Unlock": "Defrag (Lv 1)",
+        "Description": "Deal Stab damage to all enemies, then inflict Head Bind on yourself.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["15", "16", "17", "18", "19", "20", "21", "22", "23", "25"],
+            "Attack Power": ["90%", "98%", "106%", "114%", "122%", "130%", "138%", "146%", "155%", "165%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+    "Rocket Jump":{
+        "Usage": "Active (Legs)",
+        "Unlock": "Defrag (Lv 1)",
+        "Description": "Avoid all actions that target you (from allies and enemies) until the end of turn, then inflict Leg Bind on yourself.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["15", "14", "13", "12", "10"],
+            "Action Speed": ["+0", "+10", "+20", "+40", "+60"],
+        }
+    },
+    "Core Dump":{
+        "Usage": "Active (No parts)",
+        "Unlock": "Defrag (Lv 3)",
+        "Description": "Inflict all 3 binds on yourself.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Gain": ["5", "4", "3", "2", "1"],
+        }
+    },
+    "Overheat":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase damage dealt, but lose HP each time you act. (Warning: The HP loss cannot be disabled)",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt": ["+5%", "+8%", "+11%", "+14%", "+17%", "+20%", "+25%", "+30%", "+40%", "+50%"],
+            "HP Cost": ["1", "3", "5", "7", "11", "29", "47", "67", "89", "127"],
+        }
+    },
+    "EM Barrier":{
+        "Usage": "Passive (TEC)",
+        "Unlock": "Overheat (Lv 3)",
+        "Description": "Chance to automatically counter attack when hit. Deals ranged Volt damage with a chance to inflict Paralysis to the attacker.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "Activation Chance": ["30%", "32%", "34%", "36%", "38%", "40%", "42%", "44%", "47%", "50%"],
+            "Attack Power": ["40%", "43%", "46%", "49%", "52%", "55%", "58%", "62%", "66%", "70%"],
+            "Accuracy": ["-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1"],
+            "Infliction Chance": ["5%", "7%", "9%", "11%", "13%", "15%", "17%", "19%", "22%", "25%"],
+        }
+    },
+    "HP Cannon":{
+        "Usage": "Active (STR)",
+        "Unlock": "Overheat (Lv 10), Core Dump (Lv 5)",
+        "Description": "Can only be used if you're fully bound. Deal Almighty damage to one enemy. The damage is a fixed value that's multiplied by your amount of missing HP.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
+            "Damage per HP": ["1.55", "1.6", "1.65", "1.7", "1.75", "1.85", "1.95", "2.05", "2.15", "2.25"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "Virus Scanner":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase resistance to all ailments.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Resistance Up": ["+20%", "+28%", "+31%", "+34%", "+37%", "+40%", "+43%", "+46%", "+49%", "+52%"],
+        }
+    },
+    "Infravision":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase accuracy and evasion during the night.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Accuracy Up": ["+5%", "+8%", "+11%", "+14%", "+17%", "+20%", "+23%", "+26%", "+30%", "+40%"],
+            "Evasion Up": ["+10%", "+13%", "+16%", "+19%", "+22%", "+25%", "+28%", "+31%", "+34%", "+40%"],
+        }
+    },
+    "Data Mining":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase Critical Hit rate and the Critical damage bonus.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Crit Rate Up": ["+5%", "+5%", "+6%", "+6%", "+7%", "+7%", "+8%", "+8%", "+9%", "+10%"],
+            "Crit Bonus Up": ["-20%", "-15%", "-10%", "+0%", "+5%", "+10%", "+15%", "+20%", "+30%", "+40%"],
+        }
+    },
+    "Red Bot":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Data Mining (Lv 1)",
+        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Fire attacks, dealing ranged Fire damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["10", "11", "12", "13", "14", "15", "16", "17", "18", "20"],
+            "Action Speed\n(Summoning)": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            "Bot HP": ["40", "60", "80", "110", "140", "175", "210", "250", "290", "360"],
+            "Attack Power": ["80%", "90%", "100%", "110%", "120%", "130%", "140%", "150%", "160%", "170%"],
+            "Chance Decrease": ["-40%", "-37%", "-34%", "-31%", "-28%", "-25%", "-22%", "-19%", "-16%", "-13%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+        }
+    },
+    "Blue Bot":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Data Mining (Lv 1)",
+        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Ice attacks, dealing ranged Ice damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["10", "11", "12", "13", "14", "15", "16", "17", "18", "20"],
+            "Action Speed\n(Summoning)": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            "Bot HP": ["40", "60", "80", "110", "140", "175", "210", "250", "290", "360"],
+            "Attack Power": ["80%", "90%", "100%", "110%", "120%", "130%", "140%", "150%", "160%", "170%"],
+            "Chance Decrease": ["-40%", "-37%", "-34%", "-31%", "-28%", "-25%", "-22%", "-19%", "-16%", "-13%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+        }
+    },
+    "Yellow Bot":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Data Mining (Lv 1)",
+        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Volt attacks, dealing ranged Volt damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["10", "11", "12", "13", "14", "15", "16", "17", "18", "20"],
+            "Action Speed\n(Summoning)": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            "Bot HP": ["40", "60", "80", "110", "140", "175", "210", "250", "290", "360"],
+            "Attack Power": ["80%", "90%", "100%", "110%", "120%", "130%", "140%", "150%", "160%", "170%"],
+            "Chance Decrease": ["-40%", "-37%", "-34%", "-31%", "-28%", "-25%", "-22%", "-19%", "-16%", "-13%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+        }
+    },
+    "Resupply":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Data Mining (Lv 3)",
+        "Description": "Restore HP to all Bots.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
+            "Attack Power": ["70%", "80%", "90%", "100%", "110%", "120%", "140%", "160%", "180%", "200%"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+        }
+    },
+    "All Out":{
+        "Usage": "Active (Head, STR)",
+        "Unlock": "Data Mining (Lv 3)",
+        "Description": "Deal weapon-based damage to one enemy. If it lands, all Bots will attempt to perform their follow up against that enemy.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["15", "16", "17", "18", "20", "22", "25", "28", "31", "35"],
+            "Attack Power": ["100%", "105%", "110%", "115%", "120%", "125%", "135%", "145%", "155%", "165%"],
+            "Accuracy": ["-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2", "-2"],
+            "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+        }
+    },
+    "Reflector":{
+        "Usage": "Active (Head, TEC)",
+        "Unlock": "Resupply (Lv 3), All Out (Lv 3)",
+        "Description": "Command all Bots to nullify enemy attacks of their corresponding element. If it activates, the Bot will perform a counter attack that deals ranged damage of that element.",
+        "Starter": "0",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["14", "15", "16", "18", "20"],
+            "Attack Power": ["120%", "150%", "190%", "230%", "270%"],
+            "Action Speed": ["+30", "+30", "+30", "+30", "+30"],
+        }
+    },
+    "Shoot":{
+        "Usage": "Active (Head, STR)",
+        "Unlock": "Resupply (Lv 3), All Out (Lv 3)",
+        "Description": "Command all your Bots attack one enemy, dealing a single hit of damage their combined elements, then they are destroyed. Damage is doubled for each Bot beyond the first. Damage is tripled and becomes Almighty type if the 3 Bot types participate.",
+        "Starter": "0",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["25", "26", "28", "30", "32", "34", "36", "39", "42", "45"],
+            "Attack Power": ["143%", "160%", "178%", "197%", "218%", "238%", "260%", "283%", "306%", "330%"],
+            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+        }
+    },
+},
 }
+
+//End of database
 
 function toggle_data(table_id){
     document.getElementById(table_id).classList.toggle("show_table");
