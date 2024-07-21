@@ -2757,6 +2757,275 @@ var data = {
         }
     },
 },
+"Common Skills":{
+    "HP Up":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase Max HP.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "HP Up": ["10%", "13%", "16%", "19%", "22%", "25%", "30%", "35%", "40%", "48%"],
+        }
+    },
+    "TP Up":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increase Max TP.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "TP Up": ["10%", "13%", "16%", "19%", "22%", "25%", "30%", "35%", "40%", "48%"],
+        }
+    },
+    "Bandage":{
+        "Usage": "Active (Field)",
+        "Unlock": "N/A",
+        "Description": "Restore HP to one ally.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["2", "2", "2", "4", "4", "4", "8", "8", "8", "8"],
+            "HP Gain": ["10", "15", "20", "45", "50", "55", "120", "130", "140", "150"],
+        }
+    },
+    "Combat Study":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "If you're not in the active party, a percentage of the experience earned from battle is also gained by you.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "EXP Gain": ["1%", "2%", "3%", "4%", "5%", "6%", "7%", "8%", "9%", "10%"],
+        }
+    },
+    "Take":{
+        "Usage": "Passive (Field)",
+        "Unlock": "N/A",
+        "Description": "Allows you to gather from Take spots a certain amount of times per day.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Gather Attempts": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        }
+    },
+    "Chop":{
+        "Usage": "Passive (Field)",
+        "Unlock": "N/A",
+        "Description": "Allows you to gather from Chop spots a certain amount of times per day.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Gather Attempts": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        }
+    },
+    "Mine":{
+        "Usage": "Passive (Field)",
+        "Unlock": "N/A",
+        "Description": "Allows you to gather from Mine spots a certain amount of times per day.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Gather Attempts": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        }
+    },
+},
+"Limit Skills":{
+    "Cross Slash":{
+        "Usage": "2 Units (STR)",
+        "Unlock": "Initial",
+        "Description": "At the start of the turn, deal Cut damage to one enemy.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Attack Power": ["230%"],
+        }
+    },
+    "Indomitable":{
+        "Usage": "1 Unit",
+        "Unlock": "Initial",
+        "Description": "Survive one instance of lethal damage with 1 HP.",
+        "Starter": "1",
+        "Max Level": "0",
+        "Data": "",
+    },
+    "Charge Tactic":{
+        "Usage": "2 Units",
+        "Unlock": "Initial",
+        "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which increases physical/elemental damage dealt.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Damage Dealt": ["+25%"],
+        }
+    },
+    "Mumyouken":{
+        "Usage": "3 Units (STR)",
+        "Unlock": "?",
+        "Description": "At the start of the turn, deal 3 hits of Stab damage to random enemies.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Attack Power": ["140%"],
+        }
+    },
+    "Guard Tactic":{
+        "Usage": "2 Units",
+        "Unlock": "?",
+        "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which decreases physical/elemental damage taken.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Damage Taken": ["-25%"],
+        }
+    },
+    "Second Wind":{
+        "Usage": "1 Unit",
+        "Unlock": "?",
+        "Description": "At the end of the turn, fully restore your HP.",
+        "Starter": "1",
+        "Max Level": "0",
+        "Data": ""
+    },
+    "Lethal Tactic":{
+        "Usage": "2 Units",
+        "Unlock": "?",
+        "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which grants 100% Critical Hit chance.",
+        "Starter": "1",
+        "Max Level": "0",
+        "Data": ""
+    },
+    "Aegis Defense":{
+        "Usage": "3 Units",
+        "Unlock": "?",
+        "Description": "Nullify physical attacks received by the party this turn.",
+        "Starter": "1",
+        "Max Level": "0",
+        "Data": ""
+    },
+    "Hellfire":{
+        "Usage": "2 Units (TEC)",
+        "Unlock": "?",
+        "Description": "At the end of the turn, deal 3~5 hits of Fire damage to random enemies.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Attack Power": ["65%"],
+        }
+    },
+    "Wind Tactic":{
+        "Usage": "2 Units",
+        "Unlock": "?",
+        "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which increases evasion.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Evasion Up": ["+30%"],
+        }
+    },
+    "Absolute Zero":{
+        "Usage": "2 Units (TEC)",
+        "Unlock": "?",
+        "Description": "At the end of the turn, deal 3~5 hits of Ice damage to random enemies.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Attack Power": ["65%"],
+        }
+    },
+    "Aegis Barrier":{
+        "Usage": "3 Units",
+        "Unlock": "?",
+        "Description": "Nullify elemental attacks received by the party this turn.",
+        "Starter": "1",
+        "Max Level": "0",
+        "Data": ""
+    },
+    "Sungrazer":{
+        "Usage": "4 Units (TEC)",
+        "Unlock": "?",
+        "Description": "At the start of the turn, deal Almighty damage to one enemy.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Attack Power": ["500%"],
+        }
+    },
+    "Regroup Tactic":{
+        "Usage": "3 Units (TEC)",
+        "Unlock": "?",
+        "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which restores HP and removes ailments at the end of each turn.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Healing Power": ["30%"],
+        }
+    },
+    "Typhoon Bolt":{
+        "Usage": "2 Units (TEC)",
+        "Unlock": "?",
+        "Description": "At the end of the turn, deal 3~5 hits of Volt damage to random enemies.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Attack Power": ["65%"],
+        }
+    },
+    "Aegis Shield":{
+        "Usage": "4 Units",
+        "Unlock": "?",
+        "Description": "Nullify all attacks received by the party this turn.",
+        "Starter": "1",
+        "Max Level": "0",
+        "Data": ""
+    },
+    "Quintessence":{
+        "Usage": "5 Units (TEC)",
+        "Unlock": "?",
+        "Description": "At the end of the turn, deal Almighty damage to all enemies.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Attack Power": ["320%"],
+        }
+    },
+    "Star Smasher":{
+        "Usage": "5 Units (STR)",
+        "Unlock": "?",
+        "Description": "At the start of the turn, deal Bash damage to one enemy.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Attack Power": ["800%"],
+        }
+    },
+    "Lucky Hammer":{
+        "Usage": "1 Unit (STR)",
+        "Unlock": "?",
+        "Description": "At the end of the turn, deal Bash damage to one enemy. If it kills, obtain all of the target's item drops.",
+        "Starter": "1",
+        "Max Level": "1",
+        "Data": {
+            "Attack Power": ["130%"],
+        }
+    },
+    "Immortal":{
+        "Usage": "3 Units",
+        "Unlock": "?",
+        "Description": "At the end of the turn, revive, remove ailments/binds and fully restore HP and TP for the whole party.",
+        "Starter": "1",
+        "Max Level": "0",
+        "Data": ""
+    },
+    "Uroboros Guard":{
+        "Usage": "4 Units",
+        "Unlock": "?",
+        "Description": "For this turn, the whole party will absorb all attack damage taken.",
+        "Starter": "1",
+        "Max Level": "0",
+        "Data": ""
+    },
+},
 }
 
 //End of database
@@ -2821,9 +3090,11 @@ function populate(){
         levels_table.classList.add("levels_table")
         levels_row = document.createElement("tr")
         levels_table.appendChild(levels_row)
-        start_level = document.createElement("th")
-        start_level.innerText = "Level"
-        levels_row.appendChild(start_level)
+        if (current_skill["Data"] !== ""){
+            start_level = document.createElement("th")
+            start_level.innerText = "Level"
+            levels_row.appendChild(start_level)
+        }
         for (let i = 1; i <= current_skill["Max Level"]; i++){
             level = document.createElement("th")
             levels_row.appendChild(level)
