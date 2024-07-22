@@ -3030,14 +3030,43 @@ var data = {
 
 //End of database
 
+var descriptions = {
+    "Sovereign":"A support class that strenghtens and protects the party by granting and spending buffs.",
+    "Gladiator":"Frontline warriors focused on strong offense. Can use Swords for area attacks, or Clubs for status afflictions.",
+    "Hoplite":"Sturdy knights of Shield and Spear who specialize in deflecting enemy attacks.",
+    "Buccaneer":"Agile fighters who attack in tandem with their allies. Can use Rapiers for status infliction, or Guns for quick multi-hits.",
+    "Ninja":"A versatile class skilled in Knife-wielding, status affliction, and enemy diversion.",
+    "Monk":"A dual-purpose class that can support through healing skills or fight with their own Fists.",
+    "Zodiac":"A dual-purpose class that can support through healing skills or fight with their own Fists.",
+    "Wildling":"A support class who summons Beasts to attack and incapacitate the enemy.",
+    "Arbalist":"A ranged attacker who uses heavy Crossbows to deal strong damage from any distance.",
+    "Farmer":"A support class dedicated to improving exploration and resource gathering.",
+    "Shogun":"Generals who lead the party through buffs and attack commands, or by fighting directly with dual Katanas.",
+    "Yggdroid":"Combat androids who bolster the offensive with attack drones, or by treating their own bodies as weapons.",
+    "Common Skills":"Skills available to all classes.",
+    "Limit Skills":"Powerful skills only usable through the Limit system.",
+}
+
 function toggle_data(table_id){
     document.getElementById(table_id).classList.toggle("show_table");
 }
 
-function populate(){
+function populate(class_name){
     var skill_list = document.getElementById("skill_list")
-    var class_name = document.getElementById("class_name").innerText
+    while (skill_list.hasChildNodes()){
+        skill_list.removeChild(skill_list.firstChild)
+    }
     var current_class = data[class_name]
+    name_banner = document.createElement("h2")
+    name_banner.style.margin = "20px"
+    name_banner.innerText = class_name
+    skill_list.appendChild(name_banner)
+
+    class_decription = document.createElement("p")
+    class_decription.style.marginLeft = "10px"
+    class_decription.innerText = descriptions[class_name]
+    skill_list.appendChild(class_decription)
+
     for (const skill in current_class){
         var current_skill = current_class[skill]
         skill_table = document.createElement("table")
@@ -3125,6 +3154,7 @@ function populate(){
     }
 }
 
-populate()
+populate("Sovereign")
+
 
 

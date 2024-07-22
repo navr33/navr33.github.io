@@ -1,7 +1,7 @@
 .sidebar {
     background-color: white;
     height: 100%;
-    width: 15%;
+    width: 200px;
     padding: 0px;
     position: fixed;
     left: 0px;
@@ -11,18 +11,21 @@
 
 .skill_list {
     position: fixed;
-    left: 15%;
+
+    left: 200px;
     top: 0px;
     padding: 0px;
+    overflow: auto;
 }
 
 .page_link {
     background-color: #c4c4c4;
     color: black;
     cursor: pointer;
-    padding: 10px;
+    padding: 7px;
     margin-bottom: 1px;
-    width: 100%;
+    margin-left: 7%;
+    width: 86%;
     border: 1px solid black;
     text-align: center;
     outline: none;

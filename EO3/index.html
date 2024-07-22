@@ -7,25 +7,23 @@
     <body style="background-color:powderblue; ">
         <div id="sidebar" class="sidebar" style="overflow: auto;">
             <h2 style="text-align:center;">Classes</h2>
-            <a href="./Sovereign.html"><button class="page_link">Sovereign</button></a>
-            <a href="./Gladiator.html"><button class="page_link">Gladiator</button></a>
-            <a href="./Hoplite.html"><button class="page_link">Hoplite</button></a>
-            <a href="./Buccaneer.html"><button class="page_link">Buccaneer</button></a>
-            <a href="./Ninja.html"><button class="page_link">Ninja</button></a>
-            <a href="./Monk.html"><button class="page_link">Monk</button></a>
-            <a href="./Zodiac.html"><button class="page_link">Zodiac</button></a>
-            <a href="./Wildling.html"><button class="page_link">Wildling</button></a>
-            <a href="./Arbalist.html"><button class="page_link">Arbalist</button></a>
-            <a href="./Farmer.html"><button class="page_link">Farmer</button></a>
-            <a href="./Shogun.html"><button class="page_link">Shogun</button></a>
-            <a href="./Yggdroid.html"><button class="page_link">Yggdroid</button></a>
+            <button class="page_link" onclick="populate('Sovereign')">Sovereign</button>
+            <button class="page_link" onclick="populate('Gladiator')">Gladiator</button>
+            <button class="page_link" onclick="populate('Hoplite')">Hoplite</button>
+            <button class="page_link" onclick="populate('Buccaneer')">Buccaneer</button>
+            <button class="page_link" onclick="populate('Ninja')">Ninja</button>
+            <button class="page_link" onclick="populate('Monk')">Monk</button>
+            <button class="page_link" onclick="populate('Zodiac')">Zodiac</button>
+            <button class="page_link" onclick="populate('Wildling')">Wildling</button>
+            <button class="page_link" onclick="populate('Arbalist')">Arbalist</button>
+            <button class="page_link" onclick="populate('Farmer')">Farmer</button>
+            <button class="page_link" onclick="populate('Shogun')">Shogun</button>
+            <button class="page_link" onclick="populate('Yggdroid')">Yggdroid</button>
             <hr>
-            <a href="./Common.html"><button class="page_link">Common Skills</button></a>
-            <a href="./Limit.html"><button class="page_link">Limit Skills</button></a>
+            <button class="page_link" onclick="populate('Common Skills')">Common Skills</button>
+            <button class="page_link" onclick="populate('Limit Skills')">Limit Skills</button>
         </div>
         <div id="skill_list" class="skill_list" style="overflow: auto; height:100%; width:85%;">
-            <h2 id="class_name" style="margin:20px;">Common Skills</h2>
-            <p style="margin-left:10px;">Skills available to all classes.</p>
         </div>
     <script src="database.js"></script>
     </body>
