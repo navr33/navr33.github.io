@@ -3037,7 +3037,7 @@ var descriptions = {
     "Buccaneer":"Agile fighters who attack in tandem with their allies. Can use Rapiers for status infliction, or Guns for quick multi-hits.",
     "Ninja":"A versatile class skilled in Knife-wielding, status affliction, and enemy diversion.",
     "Monk":"A dual-purpose class that can support through healing skills or fight with their own Fists.",
-    "Zodiac":"A dual-purpose class that can support through healing skills or fight with their own Fists.",
+    "Zodiac":"A magical attacker who uses elemental skills to hit the enemy's weakness.",
     "Wildling":"A support class who summons Beasts to attack and incapacitate the enemy.",
     "Arbalist":"A ranged attacker who uses heavy Crossbows to deal strong damage from any distance.",
     "Farmer":"A support class dedicated to improving exploration and resource gathering.",
