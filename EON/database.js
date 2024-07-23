@@ -104,7 +104,7 @@ var data = {
         "Physical Shield":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Shield: Deal melee Bash damage to one enemy. Decrease physical damage taken by the party until the attack activates. (Damage is based on 3 times your Shield's DEF instead of your weapon)",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Decrease physical damage taken by the party until the attack activates. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -214,7 +214,7 @@ var data = {
         "Elemental Shield":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Physical Shield (Lv 2)",
-            "Description": "Shield: Deal melee Bash damage to one enemy. Decrease elemental damage taken by the party until the attack activates. (Damage is based on 3 times your Shield's DEF instead of your weapon)",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Decrease elemental damage taken by the party until the attack activates. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -317,14 +317,14 @@ var data = {
         "Guard Rush":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Elemental Shield (Lv 3)",
-            "Description": "Shield: Deal melee Bash damage to one enemy. Decrease all damage taken by the party until the attack activates, and this attack's damage increases by 20% each time the damage reduction triggers (max +200%), but the attack is cancelled if the reduction never triggers. If the attack lands, this skill becomes disabled for several turns. (Damage is based on 3 times your Shield's DEF instead of your weapon)",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Decrease all damage taken by the party until the attack activates, and this attack's damage increases by 20% each time the damage reduction triggers (max +200%), but the attack is cancelled if the reduction never triggers. If the attack lands, this skill becomes disabled for several turns. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25", "32", "32", "32", "32", "32", "40"],
                 "Attack Power": ["250%", "275%", "300%", "325%", "325%", "350%", "375%", "400%", "425%", "425%"],
                 "Damage Taken": ["-20%", "-22%", "-24%", "-26%", "-26%", "-28%", "-30%", "-32%", "-34%", "-34%"],
-                "Accuracy": ["+150%", "+150%", "+150%", "+150%", "+150%", "+150%", "+150%", "+150%", "+150%", "+150%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
                 "Action Speed": ["1%", "1%", "1%", "1%", "1%", "1%", "1%", "1%", "1%", "1%"],
                 "Cooldown": ["9", "9", "9", "9", "8", "8", "8", "8", "8", "6"],
             }
@@ -355,13 +355,282 @@ var data = {
         },
     },
     "Novice":{
-
+        "Front Guard":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Shield: Protect the front row for this turn, which decreases physical damage taken.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "4", "9"],
+                "Damage Taken": ["-30%", "-33%", "-36%", "-39%", "-42%", "-55%"],
+            }
+        },
+        "Rear Guard":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Front Guard (Lv 2)",
+            "Description": "Shield: Protect the back row for this turn, which decreases physical damage taken.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "6"],
+                "Damage Taken": ["-35%", "-42%", "-49%", "-65%"],
+            }
+        },
+        "Ally Shield":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Shield: Protect one ally for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "5", "5", "5", "5", "7"],
+                "Damage Taken": ["-5%", "-8%", "-11%", "-19%", "-22%", "-25%", "-28%", "-35%"],
+            }
+        },
+        "Fortify":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Ally Shield (Lv 2)",
+            "Description": "Place a buff on yourself for 3~5 turns, which decreases physical/elemental damage taken.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "12"],
+                "Damage Taken": ["-21%", "-24%", "-27%", "-27%", "-29%", "-31%", "-33%", "-33%"],
+                "Action Speed": ["100%", "100%", "100%", "130%", "130%", "130%", "130%", "160%"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+            }
+        },
+        "Shield Smite":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Shield: Deal melee Bash damage to one enemy, with a chance to inflict Arm Bind. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "16"],
+                "Attack Power": ["230%", "240%", "250%", "260%", "295%", "305%", "315%", "325%", "335%", "400%"],
+                "Infliction Chance": ["35%", "35%", "35%", "35%", "42%", "42%", "42%", "42%", "42%", "50%"],
+                "Accuracy": ["-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Taunt":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Place a buff on yourself for 3~5 turns, which increases enemy aggro and slightly decreases physical damage taken.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "5", "5", "5", "5", "9"],
+                "Aggro Bonus": ["+25%", "+30%", "+35%", "+35%", "+40%", "+45%", "+50%", "+50%"],
+                "Damage Taken": ["-3%", "-4%", "-6%", "-6%", "-7%", "-9%", "-10%", "-10%"],
+                "Action Speed": ["120%", "120%", "120%", "150%", "150%", "150%", "150%", "200%"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+            }
+        },
+        "Preemptive Taunt":{
+            "Usage": "Passive",
+            "Unlock": "Taunt (Lv 2)",
+            "Description": "Chance to automatically use Taunt at the start of battle.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "Activation chance": ["25%", "30%", "35%", "42%", "49%", "65%"],
+            }
+        },
+        "Healing Wall":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "When you Defend, restore HP to all allies in your row.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "HP Gain": ["7+4%", "8+5%", "9+6%", "10+7%", "11+8%", "15+12%"],
+            }
+        },
+        "Chop":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Chop Points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran":{
-
+        "Recovery Guard":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Rear Guard (Lv 1)",
+            "Description": "Shield: Protect an ally row for this turn, which removes binds and decreases physical damage taken.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "20"],
+                "Damage Taken": ["-25%", "-30%", "-35%", "-50%"],
+            }
+        },
+        "Aegis":{
+            "Usage": "Passive",
+            "Unlock": "Fortify (Lv 1)",
+            "Description": "Chance to survive lethal damage taken (max once per battle).",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["10%", "11%", "12%", "13%", "18%", "19%", "20%", "21%", "22%", "30%"],
+            }
+        },
+        "Shield bash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Shield Smite (Lv 3)",
+            "Description": "Shield: Deal melee Bash damage to all enemies. Places a debuff on the targets for 3 turns, which decreases physical damage dealt. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "15", "15", "15", "15", "15", "20"],
+                "Attack Power": ["180%", "187%", "194%", "201%", "226%", "233%", "240%", "247%", "254%", "300%"],
+                "Damage Dealt": ["-8%", "-8%", "-8%", "-8%", "-11%", "-11%", "-11%", "-11%", "-11%", "-15%"],
+                "Accuracy": ["-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Keep Guard":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Shield: Protect one ally until the end of next turn, which decreases physical/elemental damage taken. While active, you cannot use other protection skills.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "7"],
+                "Damage Taken": ["-25%", "-28%", "-31%", "-34%", "-37%", "-50%"],
+            }
+        },
+        "Phys DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Decrease physical damage taken.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Damage Taken": ["-4%", "-5%", "-6%", "-9%", "-10%", "-11%", "-12%", "-15%"],
+            }
+        },
+        "Elem DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Decrease physical damage taken.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "Damage Taken": ["-4%", "-5%", "-6%", "-9%", "-10%", "-11%", "-12%", "-15%"],
+            }
+        },
+        "Fire Wall":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Shield: Protect the whole party for this turn, which decreases Fire damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "13", "13", "13"],
+                "Damage Taken": ["-50%", "-65%", "-80%", "-100%", "N/A", "N/A"],
+                "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "40%", "150%"],
+            }
+        },
+        "Ice Wall":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Shield: Protect the whole party for this turn, which decreases Ice damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "13", "13", "13"],
+                "Damage Taken": ["-50%", "-65%", "-80%", "-100%", "N/A", "N/A"],
+                "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "40%", "150%"],
+            }
+        },
+        "Volt Wall":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Shield: Protect the whole party for this turn, which decreases Volt damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "13", "13", "13"],
+                "Damage Taken": ["-50%", "-65%", "-80%", "-100%", "N/A", "N/A"],
+                "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "40%", "150%"],
+            }
+        },
     },
     "Master":{
-
+        "HP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max HP.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "HP Up": ["+5%", "+6%", "+7%", "+11%", "+12%", "+13%", "+14%", "+20%"],
+            }
+        },
+        "Heal Guard":{
+            "Usage": "Active (Arms, WIS)",
+            "Unlock": "Recovery Guard (Lv 2)",
+            "Description": "Shield: Protect an ally row for this turn, which restores HP and decreases physical damage taken.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "20", "25"],
+                "Damage Taken": ["-25%", "-28%", "-31%", "-34%", "-37%", "-50%"],
+                "Healing Power": ["90%", "100%", "110%", "120%", "130%", "180%"],
+            }
+        },
+        "Line Shield":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Aegis (Lv 3)",
+            "Description": "Shield: Protect an ally row for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "11", "11", "11", "11", "15"],
+                "Damage Taken": ["-5%", "-8%", "-11%", "-19%", "-22%", "-25%", "-28%", "-35%"],
+            }
+        },
+        "En Garde":{
+            "Usage": "Passive",
+            "Unlock": "Line Shield (Lv 3)",
+            "Description": "Chance to automatically halve damage taken any time you're attacked.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["12%", "14%", "16%", "18%", "20%", "22%", "24%", "26%", "28%", "40%"],
+            }
+        },
+        "Shield Flare":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Shield Bash (Lv 3)",
+            "Description": "Shield: Prepare to counterattack each time you're hit until the end of next turn. Counters deal ranged Fire damage to the attacker. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "16"],
+                "Attack Power": ["250%", "265%", "280%", "295%", "310%", "400%"],
+                "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+                "Action Speed": ["1500%", "1500%", "1500%", "1500%", "1500%", "1500%"],
+            }
+        },
+        "Full Guard":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Fire Wall (Lv 2), Ice Wall (Lv 2), Volt Wall (Lv 2)",
+            "Description": "Shield: Protect the whole party for this turn, which decreases all attack damage taken. Afterwards, this skill becomes disabled for several turns.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "26", "26", "26", "26", "26", "35"],
+                "Damage Taken": ["-25%", "-29%", "-33%", "-37%", "-37%", "-41%", "-46%", "-50%", "-55%", "-55%"],
+                "Cooldown": ["6", "6", "6", "6", "5", "5", "5", "5", "5", "3"],
+            }
+        },
     },
 },
 "Medic":{
