@@ -336,7 +336,7 @@ var data = {
         "Shield Protect":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "When one of your protection skills decreases damage to a party member, apply an additional damage reduction.",
+            "Description": "When your class protection skills decrease damage to a party member, apply an additional damage reduction.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -371,7 +371,7 @@ var data = {
             "Unlock": "Front Guard (Lv 2)",
             "Description": "Shield: Protect the back row for this turn, which decreases physical damage taken.",
             "Starter": "0",
-            "Max Level": "6",
+            "Max Level": "4",
             "Data": {
                 "TP Cost": ["3", "3", "3", "6"],
                 "Damage Taken": ["-35%", "-42%", "-49%", "-65%"],
@@ -473,14 +473,14 @@ var data = {
         "Aegis":{
             "Usage": "Passive",
             "Unlock": "Fortify (Lv 1)",
-            "Description": "Chance to survive lethal damage taken (max once per battle).",
+            "Description": "Chance to survive lethal damage with 1 HP (max once per battle).",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["10%", "11%", "12%", "13%", "18%", "19%", "20%", "21%", "22%", "30%"],
             }
         },
-        "Shield bash":{
+        "Shield Bash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Shield Smite (Lv 3)",
             "Description": "Shield: Deal melee Bash damage to all enemies. Places a debuff on the targets for 3 turns, which decreases physical damage dealt. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
@@ -518,7 +518,7 @@ var data = {
         "Elem DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Decrease physical damage taken.",
+            "Description": "Decrease elemental damage taken.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -638,13 +638,13 @@ var data = {
         "Intensive Care":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "Increase HP restored and action speed for your healing skills, and decrease their TP costs. (Also powers up TP restoration from items)",
+            "Description": "Increase action speed, increase HP restored by your class healing skills and decrease their TP costs. (Also powers up TP restoration from items)",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "HP Restored": ["+70%"],
                 "Speed Up": ["+70%"],
+                "HP Restored": ["+70%"],
                 "TP Cost Down": ["-50%"],
             }
         },
@@ -661,13 +661,290 @@ var data = {
         },
     },
     "Novice":{
-
+        "Healing":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "N/A",
+            "Description": "Restore HP to one ally.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
+                "Healing Power": ["130%", "145%", "160%", "175%", "225%", "240%", "255%", "270%", "285%", "370%"],
+                "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+            }
+        },
+        "Line Heal":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "Healing (Lv 3)",
+            "Description": "Restore HP to an ally row.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "10", "10", "10", "10", "10", "15"],
+                "Healing Power": ["110%", "120%", "130%", "140%", "170%", "180%", "190%", "200%", "210%", "270%"],
+                "Action Speed": ["125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%"],
+            }
+        },
+        "Refresh":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Remove ailments from target allies.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["5", "2", "12", "6"],
+                "Targets": ["Single", "Single", "Row", "Row"],
+                "Action Speed": ["100%", "100%", "100%", "100%"],
+            }
+        },
+        "Revive":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Revive one ally, restoring a certain amount of HP.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "16"],
+                "HP Gain": ["1", "20", "40", "120", "145", "170", "200", "400"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Head Bash":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Staff: Deal melee Bash damage to one enemy, with a chance to inflict Head Bind.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "12"],
+                "Attack Power": ["200%", "210%", "220%", "255%", "265%", "275%", "285%", "330%"],
+                "Infliction Chance": ["35%", "35%", "35%", "42%", "42%", "42%", "42%", "50%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Patch Up":{
+            "Usage": "Passive (WIS)",
+            "Unlock": "N/A",
+            "Description": "Restore HP to the whole party after each battle. (Does not stack)",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Healing Power": ["45%", "55%", "65%", "75%", "85%", "95%", "105%", "150%"],
+            }
+        },
+        "Antibodies":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase chance of ailments/binds on yourself being naturally healed at the end of turn.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Recovery Rate": ["+15%", "+20%", "+25%", "+30%", "+35%", "+50%"],
+            }
+        },
+        "Scavenge":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase enemy drop rates.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "Drop Rate Up": ["+5%", "+8%", "+12%", "+20%"],
+            }
+        },
+        "Take":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Take Points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran":{
-
+        "Delayed Heal":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "Line Heal (Lv 2)",
+            "Description": "Prepare yourself to restore HP to the whole party at the start of the next turn. (Cannot use it again while it's in preparation)",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "14", "14", "14", "14", "18"],
+                "Healing Power": ["80%", "85%", "90%", "115%", "120%", "125%", "130%", "170%"],
+            }
+        },
+        "Unbind":{
+            "Usage": "Active (Head)",
+            "Unlock": "Refresh (Lv 2)",
+            "Description": "Remove all binds from target allies.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["5", "2", "12", "6"],
+                "Targets": ["Single", "Single", "Row", "Row"],
+                "Action Speed": ["100%", "100%", "100%", "100%"],
+            }
+        },
+        "Group Therapy":{
+            "Usage": "Active (Head)",
+            "Unlock": "Unbind (Lv 1)",
+            "Description": "Place a buff on yourself for 3~5 turns, which increases the area of effect (Single → Row → Party) of your class healing skills but decreases their action speed and HP restored.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "20", "20", "20", "20", "25"],
+                "Speed Down": ["-35%", "-29%", "-23%", "-23%", "-17%", "-11%", "-5%", "-5%"],
+                "HP Restored": ["-35%", "-29%", "-23%", "-23%", "-17%", "-11%", "-5%", "-5%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+            }
+        },
+        "Final Gift":{
+            "Usage": "Passive (WIS)",
+            "Unlock": "Revive (Lv 3)",
+            "Description": "Upon dying, restore HP to the whole party.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "Healing Power": ["100%", "140%", "180%", "350%"],
+            }
+        },
+        "Auto-Revive":{
+            "Usage": "Passive (Head)",
+            "Unlock": "Final Gift (Lv 2)",
+            "Description": "Chance to automatically revive allies when they die.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["4%", "5%", "6%", "7%", "8%", "9%", "10%", "11%", "12%", "16%"],
+                "HP Gain": ["1", "20", "40", "60", "80", "110", "140", "170", "200", "300"],
+            }
+        },
+        "Star Drop":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Head Bash (Lv 3)",
+            "Description": "Staff: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which increases physical damage taken.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "7", "13"],
+                "Attack Power": ["240%", "255%", "270%", "285%", "300%", "370%"],
+                "Damage Taken": ["+10%", "+12%", "+14%", "+16%", "+18%", "+25%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Medical Rod":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Star Drop (Lv 2)",
+            "Description": "Staff: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which increases elemental damage taken.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "7", "13"],
+                "Attack Power": ["240%", "255%", "270%", "285%", "300%", "370%"],
+                "Damage Taken": ["+10%", "+12%", "+14%", "+16%", "+18%", "+25%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Safe Passage":{
+            "Usage": "Active (Field)",
+            "Unlock": "N/A",
+            "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "10"],
+                "Duration (Steps)": ["60", "70", "80", "90", "100", "255"],
+            }
+        },
+        "Elem DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Decrease elemental damage taken.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Damage Taken": ["-4%", "-5%", "-6%", "-9%", "-10%", "-11%", "-12%", "-15%"],
+            }
+        },
     },
     "Master":{
-
+        "Heal-All":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "Delayed Heal (Lv 3)",
+            "Description": "Restore HP to the whole party.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "21", "21", "21", "21", "21", "30"],
+                "Healing Power": ["90%", "96%", "102%", "108%", "132%", "138%", "144%", "150%", "156%", "200%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Chase Heal":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "Delayed Heal (Lv 3)",
+            "Description": "Prepare to heal allies each time they're hit this turn. Activation chance starts at 100% but goes down with each activation. There's a limit on how many times it can activate on each ally.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "14", "14", "14", "14", "20"],
+                "Healing Power": ["60%", "72%", "84%", "84%", "96%", "108%", "120%", "120%"],
+                "Chance Decrease": ["-40%", "-40%", "-40%", "-25%", "-25%", "-25%", "-25%", "-15%"],
+                "Limit per Ally": ["2", "2", "2", "3", "3", "3", "3", "4"],
+                "Action Speed": ["300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%"],
+            }
+        },
+        "Overheal":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "During battle, excess healing from your class skills increases the target's Max HP (up to a certain cap) until the end of the turn.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Max Overheal": ["+10%", "+13%", "+16%", "+19%", "+22%", "+34%"],
+            }
+        },
+        "Deja Vu":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Place a buff on the whole party for 5~9 turns, which at the end of each turn repeats the effect (with decreased potency) of the last Medic healing skill they have received since this buff was applied.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "12", "12", "12", "12", "15"],
+                "HP Restored": ["-80%", "-74%", "-68%", "-68%", "-62%", "-56%", "-50%", "-50%"],
+                "Duration (Turns)": ["5", "5", "5", "7", "7", "7", "7", "9"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
+            }
+        },
+        "Heavy Strike":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Medical Rod (Lv 3)",
+            "Description": "Staff: Deal melee Bash damage to one enemy.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["25", "25", "25", "25", "35", "35", "35", "35", "35", "50"],
+                "Attack Power": ["350%", "365%", "380%", "395%", "455%", "480%", "505%", "530%", "555%", "700%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Staff Mastery":{
+            "Usage": "Passive",
+            "Unlock": "Heavy Strike (Lv 1)",
+            "Description": "If a Staff is equipped, increase Max TP and physical damage dealt.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Up": ["+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+15%"],
+                "Damage Dealt": ["+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+15%"],
+            }
+        },
     },
 },
 "Survivalist":{
@@ -1293,7 +1570,7 @@ var data = {
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "16"],
                 "Damage Dealt": ["+20%", "+22%", "+25%", "+27%", "+30%", "+40%"],
-                "Speed Up": ["x3.5", "x4.25", "x5.0", "x5.75", "x6.5", "x10.0"],
+                "Speed Up": ["+250%", "+325%", "+400%", "+475%", "+550%", "+900%"],
                 "Damage Taken": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
                 "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
             }
@@ -2401,7 +2678,7 @@ var data = {
 var descriptions = {
     "Hero":"Knights of Sword and Shield who leave afterimages as they move, letting them cover offense and defense simultaneously.",
     "Protector":"Durable knights who use their Shield to decrease damage dealt to the party.",
-    "Medic":"Experts in treating all kinds of injuries. Their Staff attacks lack power but leave the enemy vulnerable.",
+    "Medic":"Healers that effectively treat every kind of injury. Their Staff strikes assist by leaving the enemy vulnerable.",
     "Survivalist":"Rangers who fight with a Bow. Their agility and sharp senses safeguard the party in and out of battle.",
     "Ronin":"Katana-users who favor offense over defense. They adopt different Stances to adjust to the situation.",
     "War Magus":"A dual-purpose class that switches between treating the party's afflictions and aggravating the enemy's.",
