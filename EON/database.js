@@ -10,7 +10,7 @@ var data = {
             "Levels": ["1~79", "80~98", "99~117", "118~130"],
             "Data": {
                 "Creation Up": ["+50%", "+50%", "+50%", "+50%"],
-                "Damage Dealt": ["+130%", "+135%", "+140%", "+145%"],
+                "Damage Dealt": ["x1.3", "x1.35", "x1.4", "x1.45"],
             }
         },
         "Miracle Edge":{
@@ -98,7 +98,7 @@ var data = {
             "Data": {
                 "HP Threshold": ["90%", "88%", "86%", "84%", "82%", "75%"],
                 "Damage Dealt": ["+10%", "+11%", "+12%", "+13%", "+14%", "+20%"],
-                "Speed Up": ["+15%", "+17%", "+19%", "+21%", "+23%", "+35%"],
+                "Speed Up": ["x1.15", "x1.17", "x1.19", "x1.21", "x1.23", "x1.35"],
             }
         },
         "Physical Shield":{
@@ -145,7 +145,7 @@ var data = {
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "7"],
-                "Damage Dealt": ["+35%", "+38%", "+41%", "+45%", "+49%", "+70%"],
+                "Damage Dealt": ["x1.35", "x1.38", "x1.41", "x1.45", "x1.49", "x1.7"],
                 "Creation Up": ["+35%", "+38%", "+41%", "+45%", "+49%", "+70%"],
                 "Action Speed": ["200%", "150%", "100%", "70%", "40%", "1%"],
             }
@@ -643,7 +643,7 @@ var data = {
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Speed Up": ["+70%"],
+                "Speed Up": ["x1.7"],
                 "HP Restored": ["+70%"],
                 "TP Cost Down": ["-50%"],
             }
@@ -952,13 +952,13 @@ var data = {
         "Illusory Formation":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "Increase action speed and evasion for the whole party.",
+            "Description": "Increase evasion and action speed for the whole party.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Speed Up": ["+200%"],
                 "Evasion Up": ["+35%"],
+                "Speed Up": ["x3.0"],
             }
         },
         "Mirage Arrow":{
@@ -1178,7 +1178,7 @@ var data = {
             "Data": {
                 "Accuracy Up": ["+2.5%", "+3.1%", "+3.7%", "+5.7%", "+6.3%", "+6.9%", "+7.5%", "+10%"],
                 "Evasion Up": ["+2.5%", "+3.1%", "+3.7%", "+5.7%", "+6.3%", "+6.9%", "+7.5%", "+10%"],
-                "Speed Up": ["+6%", "+8%", "+10%", "+16%", "+18%", "+20%", "+22%", "+30%"],
+                "Speed Up": ["x1.06", "x1.08", "x1.10", "x1.16", "x1.18", "x1.2", "x1.22", "x1.30"],
             }
         },
         "Quick Step":{
@@ -1279,25 +1279,324 @@ var data = {
         "Issen":{
             "Usage": "Force Break (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Deal ranged Cut damage to all enemies, with a chance to inflict Instant Death. Drastically higher infliction chance on enemies at low HP.",
+            "Description": "Deal ranged Cut damage to all enemies, with a chance to inflict Instant Death. (Infliction chance allegedly higher on low-HP targets, but could not reproduce in testing)",
             "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
                 "Attack Power": ["450%", "900%", "1300%"],
-                "Infliction Chance\n(Normal)": ["65%", "65%", "65%"],
-                "Infliction Chance\n(Low HP)": ["999%", "999%", "999%"],
+                "Infliction Chance": ["65%", "65%", "65%"],
             }
         },
     },
     "Novice (Lv 1)":{
+        "Upper Stance":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Stance that increases damage dealt. If a Katana is equipped, trigger your highest-level Stance at the start of battle. (Ties for highest level will choose a Stance at random)",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Damage Dealt": ["x1.1", "x1.12", "x1.14", "x1.14", "x1.16", "x1.18", "x1.20", "x1.2"],
+                "Duration (Turns)": ["4", "4", "4", "5", "5", "5", "5", "6"],
+            }
+        },
+        "Upward Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Upper Stance (Lv 1)",
+            "Description": "Katana: Deal melee Cut damage to one enemy. Makes a Critical Hit if you're in Upper Stance. Activates/extends Upper Stance for a certain amount of turns.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "7"],
+                "Attack Power": ["105%", "108%", "111%", "125%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["50%", "50%", "50%", "50%"],
+                "Stance Duration": ["3", "3", "3", "4"],
+            }
+        },
+        "Clear Stance":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Stance that decreases damage taken and increases bind/ailment infliction rates for Ronin skills. If a Katana is equipped, trigger your highest-level Stance at the start of battle. (Ties for highest level will choose a Stance at random)",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Damage Taken": ["x0.9", "x0.87", "x0.84", "x0.84", "x0.81", "x0.78", "x0.75", "x0.75"],
+                "Infliction Up": ["x1.25", "x1.30", "x1.35", "x1.35", "x1.40", "x1.45", "x1.50", "x1.50"],
+                "Duration (Turns)": ["4", "4", "4", "5", "5", "5", "5", "6"],
+            }
+        },
+        "Charging Thrust":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Clear Stance (Lv 1)",
+            "Description": "Katana: Deal melee Stab damage to one enemy. Makes a Critical Hit if you're in Clear Stance. Activates/extends Clear Stance for a certain amount of turns.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "7"],
+                "Attack Power": ["105%", "108%", "111%", "125%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["50%", "50%", "50%", "50%"],
+                "Stance Duration": ["3", "3", "3", "4"],
+            }
+        },
+        "Swift Stance":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Stance that increases accuracy, evasion and action speed. If a Katana is equipped, trigger your highest-level Stance at the start of battle. (Ties for highest level will choose a Stance at random)",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Accuracy Up": ["+10%", "+12%", "+14%", "+14%", "+16%", "+18%", "+20%", "+20%"],
+                "Evasion Up": ["+10%", "+12%", "+14%", "+14%", "+16%", "+18%", "+20%", "+20%"],
+                "Speed Up": ["x1.3%", "x1.43", "x1.51", "x1.51", "x1.59", "x1.67", "x1.75", "x1.75"],
+                "Duration (Turns)": ["4", "4", "4", "5", "5", "5", "5", "6"],
+            }
+        },
+        "Sheath Strike":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Swift Stance (Lv 1)",
+            "Description": "Katana: Deal melee Bash damage to one enemy. Makes a Critical Hit if you're in Swift Stance. Activates/extends Swift Stance for a certain amount of turns.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "7"],
+                "Attack Power": ["105%", "108%", "111%", "125%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["50%", "50%", "50%", "50%"],
+                "Stance Duration": ["3", "3", "3", "4"],
+            }
+        },
+        "Air Blade":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Katana: Deal ranged Cut damage to one enemy. Makes a Critical Hit if you're in any Stance.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10"],
+                "Attack Power": ["140%", "145%", "150%", "155%", "170%", "176%", "182%", "188%", "194%", "230%"],
+                "Accuracy": ["-8%", "-8%", "-8%", "-8%", "-8%", "-8%", "-8%", "-8%", "-8%", "-8%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Arm Strike":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Katana: Deal melee Cut damage to one enemy, with a chance to inflict Arm Bind. Makes a Critical Hit if you're in any Stance.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "8", "8", "8", "8", "12"],
+                "Attack Power": ["120%", "124%", "128%", "143%", "147%", "151%", "155%", "180%"],
+                "Infliction Chance": ["25%", "25%", "25%", "30%", "30%", "30%", "30%", "35%"],
+                "Accuracy": ["-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Breath":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Restore HP to yourself and your adjacent allies. Healing is based on your Max HP.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "10"],
+                "HP Gain": ["20+12%", "25+14%", "30+16%", "35+18%", "40+20%", "60+25%"],
+                "Action Speed": ["75%", "75%", "75%", "75%", "75%", "75%"],
+            }
+        },
+        "Mine":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
 
     },
     "Veteran (Lv 20)":{
-
+        "Helm Splitter":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Upward Slash (Lv 1)",
+            "Description": "Katana: Deal melee Cut damage to one enemy. Low accuracy but ignores Cut resistance. Requires a Stance, and makes a Critical Hit during Upper Stance. Decreases remaining Stance duration by 2 turns.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "15", "15", "15", "15", "15", "20"],
+                "Attack Power": ["270%", "278%", "286%", "294%", "319%", "327%", "335%", "343%", "351%", "400%"],
+                "Accuracy": ["-50%", "-50%", "-50%", "-50%", "-50%", "-50%", "-50%", "-50%", "-50%", "-50%"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Flame Grater":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Helm Splitter (Lv 3)",
+            "Description": "Katana: Deal melee Cut+Fire damage to one enemy. Makes a Critical Hit if you're in Upper Stance.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "9", "9", "9", "9", "13"],
+                "Attack Power": ["110%", "114%", "118%", "133%", "137%", "141%", "145%", "175%"],
+                "Accuracy": ["-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%"],
+                "Action Speed": ["65%", "65%", "65%", "65%", "65%", "65%", "65%", "65%"],
+            }
+        },
+        "Haze Slash":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Charging Thrust (Lv 1)",
+            "Description": "Katana: Deal melee Cut damage to one enemy, with a chance to inflict Sleep. Requires a Stance, and makes a Critical Hit during Clear Stance. Decreases remaining Stance duration by 2 turns.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "9", "13", "13", "13", "13", "13", "18"],
+                "Attack Power": ["200%", "206%", "212%", "218%", "238%", "245%", "252%", "259%", "266%", "310%"],
+                "Infliction Chance": ["30%", "30%", "30%", "30%", "40%", "40%", "40%", "40%", "40%", "50%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%"],
+            }
+        },
+        "Lightning Stab":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Haze Slash (Lv 3)",
+            "Description": "Katana: Deal melee Stab+Volt damage to one enemy. Makes a Critical Hit if you're in Clear Stance.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "9", "9", "9", "9", "13"],
+                "Attack Power": ["110%", "114%", "118%", "133%", "137%", "141%", "145%", "175%"],
+                "Accuracy": ["-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%"],
+                "Action Speed": ["65%", "65%", "65%", "65%", "65%", "65%", "65%", "65%"],
+            }
+        },
+        "Horizontal Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Sheath Strike (Lv 1)",
+            "Description": "Katana: Deal melee Cut damage to an enemy row. Requires a Stance, and makes a Critical Hit during Swift Stance. Decreases remaining Stance duration by 2 turns.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "20", "20", "20", "20", "20", "27"],
+                "Attack Power": ["150%", "155%", "160%", "165%", "180%", "185%", "190%", "195%", "200%", "230%"],
+                "Accuracy": ["-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%"],
+                "Action Speed": ["65%", "65%", "65%", "65%", "65%", "65%", "65%", "65%", "65%", "65%"],
+            }
+        },
+        "Frigid Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Horizontal Slash (Lv 3)",
+            "Description": "Katana: Deal melee Cut+Ice damage to one enemy. Makes a Critical Hit if you're in Swift Stance.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "9", "9", "9", "9", "13"],
+                "Attack Power": ["110%", "114%", "118%", "133%", "137%", "141%", "145%", "175%"],
+                "Accuracy": ["-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%"],
+                "Action Speed": ["65%", "65%", "65%", "65%", "65%", "65%", "65%", "65%"],
+            }
+        },
+        "Duel":{
+            "Usage": "Passive",
+            "Unlock": "Air Blade (Lv 2), Arm Strike (Lv 2)",
+            "Description": "Increase damage dealt when attacking enemies that you also attacked on the previous turn.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Damage Dealt": ["+8%", "+10%", "+12%", "+14%", "+16%", "+25%"],
+            }
+        },
+        "Phys ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase physical damage dealt.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Damage Dealt": ["+4%", "+5%", "+6%", "+9%", "+10%", "+11%", "+12%", "+15%"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "Swallow Strike":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Flame Grater (Lv 3)",
+            "Description": "Katana: Deal multiple hits of melee Cut damage to one enemy. Requires a Stance, and makes a Critical Hit during Upper Stance. Removes your Stance and disables skills on the next turn.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "20", "28"],
+                "Attack Power": ["180%", "195%", "210%", "225%", "240%", "180%"],
+                "Hits": ["2", "2", "2", "2", "2", "3"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["75%", "75%", "75%", "75%", "75%", "75%"],
+            }
+        },
+        "Stone Thrust":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Lightning Stab (Lv 3)",
+            "Description": "Katana: Deal melee Stab damage to one enemy, with a chance to inflict Petrify. Requires a Stance, and makes a Critical Hit during Clear Stance. Removes your Stance and disables skills on the next turn.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["17", "17", "17", "17", "17", "24"],
+                "Attack Power": ["330%", "345%", "360%", "375%", "390%", "480%"],
+                "Infliction Chance": ["25%", "28%", "31%", "34%", "37%", "50%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["25%", "25%", "25%", "25%", "25%", "25%"],
+            }
+        },
+        "Petal Scatter":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Frigid Slash (Lv 3)",
+            "Description": "Katana: Deal ranged Slash damage to all enemies. Deals less damage the more enemies there are. Requires a Stance, and makes a Critical Hit during Swift Stance. Removes your Stance and disables skills on the next turn.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["25", "25", "25", "25", "25", "34"],
+                "Attack Power": ["270%", "285%", "300%", "315%", "330%", "410%"],
+                "Accuracy": ["-10%", "-10%", "-10%", "-10%", "-10%", "-10%"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%", "40%"],
+            }
+        },
+        "Full Proficiency":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increases the effect of Stances by applying a second modifier while they're active.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage (Upper)": ["x1.02", "x1.03", "x1.04", "x1.05", "x1.06", "x1.07", "x1.08", "x1.09", "x1.1", "x1.12"],
+                "Damage (Clear)": ["x0.98", "x0.97", "x0.96", "x0.95", "x0.94", "x0.93", "x0.92", "x0.91", "x0.9", "x0.88"],
+                "Infliction (Clear)": ["x1.04", "x1.05", "x1.07", "x1.08", "x1.1", "x1.11", "x1.13", "x1.14", "x1.16", "x1.20"],
+                "Accuracy (Swift)": ["+2%", "+2.4%", "+2.8%", "+3.2%", "+3.6%", "+4%", "+4.4%", "+4.8%", "+5.2%", "+7%"],
+                "Evasion (Swift)": ["+2%", "+2.4%", "+2.8%", "+3.2%", "+3.6%", "+4%", "+4.4%", "+4.8%", "+5.2%", "+7%"],
+                "Speed (Swift)": ["x1.04", "x1.05", "x1.07", "x1.08", "x1.1", "x1.11", "x1.13", "x1.14", "x1.16", "x1.20"],
+            }
+        },
+        "Rouse Spirits":{
+            "Usage": "Passive",
+            "Unlock": "Full Proficiency (Lv 2)",
+            "Description": "At the end of each turn, if you have a Stance (or Force Boost) active, recover TP.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "TP Gain": ["1", "2", "3", "5"],
+            }
+        },
+        "Speed Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase accuracy, evasion and action speed.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Accuracy Up": ["+2.5%", "+3.1%", "+3.7%", "+5.7%", "+6.3%", "+6.9%", "+7.5%", "+10%"],
+                "Evasion Up": ["+2.5%", "+3.1%", "+3.7%", "+5.7%", "+6.3%", "+6.9%", "+7.5%", "+10%"],
+                "Speed Up": ["x1.06", "x1.08", "x1.10", "x1.16", "x1.18", "x1.2", "x1.22", "x1.30"],
+            }
+        },
     },
 },
 "War Magus":{
@@ -1343,7 +1642,7 @@ var data = {
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Damage Dealt": ["+40%"],
+                "Damage Dealt": ["x1.4"],
                 "HP Drain": ["15%"],
             }
         },
@@ -1380,7 +1679,7 @@ var data = {
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Damage Dealt\n(Second Attack)": ["-60%"],
+                "Damage Dealt\n(Second Attack)": ["x0.4"],
             }
         },
         "Riot Gun":{
@@ -1484,7 +1783,7 @@ var data = {
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Damage Dealt": ["+40%"],
+                "Damage Dealt": ["x1.4"],
                 "TP Refund": ["50%"],
             }
         },
@@ -1552,7 +1851,7 @@ var data = {
             "Levels": ["1"],
             "Data": {
                 "HP Up": ["+40%"],
-                "Damage Dealt": ["+15%"],
+                "Damage Dealt": ["x1.15"],
             }
         },
         "Decoy Party":{
@@ -1585,9 +1884,9 @@ var data = {
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Damage Dealt": ["+40%"],
+                "Damage Dealt": ["x1.4"],
                 "Accuracy Up": ["+50%"],
-                "Speed Up": ["+200%"],
+                "Speed Up": ["x3.0"],
             }
         },
         "Full Charge":{
@@ -1598,8 +1897,8 @@ var data = {
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Damage Dealt": ["+230%"],
-                "Speed Up": ["+3900%"],
+                "Damage Dealt": ["x3.3"],
+                "Speed Up": ["x40.0"],
             }
         },
     },
@@ -1623,8 +1922,8 @@ var data = {
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Damage Dealt": ["+40%"],
-                "Infliction Up": ["+40%"],
+                "Damage Dealt": ["x1.4"],
+                "Infliction Up": ["x1.4"],
             }
         },
         "Disaster":{
@@ -1659,7 +1958,7 @@ var data = {
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Infliction Up": ["+40%"],
+                "Infliction Up": ["x1.4"],
             }
         },
         "Releasal Spell":{
@@ -1725,7 +2024,7 @@ var data = {
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Infliction Up": ["+30%"],
+                "Infliction Up": ["x1.3"],
                 "Attack Power\n(Follow Ups)": ["50%"],
             }
         },
@@ -1771,11 +2070,11 @@ var data = {
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Damage Dealt": ["-35%"],
-                "Damage Taken": ["+35%"],
+                "Damage Dealt": ["x0.65"],
+                "Damage Taken": ["x1.35"],
                 "Evasion Down": ["-100%"],
                 "Speed Down": ["-60000%"],
-                "Infliction Chance": ["+40%"],
+                "Infliction Vulnerability": ["x1.4"],
             }
         },
     },
@@ -1851,7 +2150,7 @@ var data = {
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "16"],
                 "Damage Dealt": ["+20%", "+22%", "+25%", "+27%", "+30%", "+40%"],
-                "Speed Up": ["+250%", "+325%", "+400%", "+475%", "+550%", "+900%"],
+                "Speed Up": ["x2.5", "x3.25", "x4.0", "x4.75", "x5.50", "x9.0"],
                 "Damage Taken": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
                 "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
             }
@@ -1995,7 +2294,7 @@ var data = {
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["25"],
-                "Infliction Resistance": ["-25%"],
+                "Bind Vulnerability": ["x1.25"],
                 "Infliction Chance": ["30%"],
                 "Action Speed": ["70%"],
             }
@@ -2346,7 +2645,7 @@ var data = {
         "Silver Thrust":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Gae Dearg",
-            "Description": "Deal ranged Stab damage to one enemy. Very low accuracy but ignores resistances.",
+            "Description": "Deal ranged Stab damage to one enemy. Low accuracy but ignores Stab resistance.",
             "Starter": "1",
             "Max Level": "1",
             "Data": {
@@ -2608,7 +2907,7 @@ var data = {
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "12"],
                 "Attack Power": ["240%", "255%", "270%", "285%", "300%"],
-                "Infliction Resistance": ["-15%", "-17%", "-20%", "-22%", "-25%"],
+                "Infliction Vulnerability": ["x1.15", "x1.17", "x1.2", "x1.22", "x1.25"],
                 "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["60%", "60%", "60%", "60%", "60%"],
             }
@@ -2757,7 +3056,7 @@ var data = {
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["8"],
-                "Infliction Resistance": ["-20%"],
+                "Infliction Vulnerability": ["x1.2"],
                 "Action Speed": ["100%"],
             }
         },
@@ -2960,7 +3259,7 @@ var descriptions = {
     "Hero":"Knights of Sword and Shield who leave afterimages as they move, letting them cover offense and defense simultaneously.",
     "Protector":"Durable knights who use their Shield to decrease damage dealt to the party.",
     "Medic":"Healers that effectively treat every kind of injury. Their Staff strikes assist by leaving the enemy vulnerable.",
-    "Survivalist":"Rangers who fight with a Bow. Their agility and sharp senses safeguard the party in and out of battle.",
+    "Survivalist":"Rangers who fight with Bows. Their agility and sharp senses safeguard the party in and out of battle.",
     "Ronin":"Katana-users who favor offense over defense. They adopt different Stances to adjust to the situation.",
     "War Magus":"A dual-purpose class that switches between treating the party's afflictions and aggravating the enemy's.",
     "Highlander":"Offensive specialists who fight with Spears. They sacrifice their life force to carry out powerful attacks.",
@@ -2974,8 +3273,8 @@ var descriptions = {
     "Nightseeker":"Assassins who throw poisoned daggers from the shadows, going for the kill once the enemy is weak.",
     "Arcanist":"Support casters that summon magic circles to restrain the enemy and protect the party.",
     "Imperial":"Knights who wield mechanical Drive Blades. Their attacks are devastating but put a heavy strain in the weapon and wielder.",
-    "Pugilist":"Brawlers who use combos of precise punches to quickly disable the enemy.",
-    "Harbinger":"Reapers who summon noxious Miasma to weaken the enemy with their attacks, or even use it as a barrier to protect the party.",
+    "Pugilist":"Brawlers who fight with their own Fists. They use combos of precise punches to quickly disable the enemy.",
+    "Harbinger":"Reapers who summon noxious Miasma, spreading it to weaken the enemy or to ward off their attacks.",
     "Weapon Skills":"Skills borrowed from certain weapons.",
 }
 
