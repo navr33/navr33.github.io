@@ -27,7 +27,7 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
         "Afterimage":{
             "Usage": "Passive",
             "Unlock": "N/A",
@@ -136,7 +136,7 @@ var data = {
             "Data": ""
         },
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
         "Charge Image":{
             "Usage": "Active (Head)",
             "Unlock": "Mirage Sword (Lv 2)",
@@ -251,7 +251,7 @@ var data = {
             }
         },
     },
-    "Master":{
+    "Master (Lv 40)":{
         "Dark Image":{
             "Usage": "Passive",
             "Unlock": "Graceful Image (Lv 3)",
@@ -354,7 +354,7 @@ var data = {
             "Data": ""
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
         "Front Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
@@ -458,7 +458,7 @@ var data = {
             "Data": ""
         },
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
         "Recovery Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "Rear Guard (Lv 1)",
@@ -562,7 +562,7 @@ var data = {
             }
         },
     },
-    "Master":{
+    "Master (Lv 40)":{
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
@@ -660,7 +660,7 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
         "Healing":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "N/A",
@@ -762,7 +762,7 @@ var data = {
             "Data": ""
         },
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
         "Delayed Heal":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Line Heal (Lv 2)",
@@ -871,7 +871,7 @@ var data = {
             }
         },
     },
-    "Master":{
+    "Master (Lv 40)":{
         "Heal-All":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Delayed Heal (Lv 3)",
@@ -974,7 +974,7 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
         "Power Shot":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
@@ -1080,7 +1080,7 @@ var data = {
             "Data": ""
         },
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
         "Flank Shot":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flame Arrow (Lv 3)",
@@ -1192,7 +1192,7 @@ var data = {
             }
         },
     },
-    "Master":{
+    "Master (Lv 40)":{
         "Disabling Shot":{
             "Usage": "Passive (LUC)",
             "Unlock": "Finishing Shot (Lv 1)",
@@ -1270,7 +1270,7 @@ var data = {
         "Musou":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "Gain the effect of the 3 stances at level 1 (affected by Full Proficiency). Your active stance's duration does not go down, and your skills don't decrease its duration nor dispell it.",
+            "Description": "Gain the effects of the 3 stances at level 1 (affected by Full Proficiency), on top of your active stance. Your active stance's duration does not go down, and your skills don't decrease its duration nor dispell it.",
             "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
@@ -1290,13 +1290,13 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1323,13 +1323,13 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1360,13 +1360,13 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1396,13 +1396,13 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1427,13 +1427,13 @@ var data = {
             "Data": ""
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1464,13 +1464,13 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1500,13 +1500,13 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1531,13 +1531,13 @@ var data = {
             "Data": ""
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1565,13 +1565,13 @@ var data = {
             "Data": ""
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1603,13 +1603,13 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1639,13 +1639,13 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1672,13 +1672,13 @@ var data = {
             "Data": ""
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1705,13 +1705,13 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1742,13 +1742,13 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
@@ -1779,13 +1779,13 @@ var data = {
             }
         },
     },
-    "Novice":{
+    "Novice (Lv 1)":{
 
     },
-    "Veteran":{
+    "Veteran (Lv 20)":{
 
     },
-    "Master":{
+    "Master (Lv 40)":{
 
     },
 },
