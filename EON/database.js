@@ -130,7 +130,7 @@ var data = {
         "Chop":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Chop Points.",
+            "Description": "Obtain additional materials when gathering from Chop points.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -425,8 +425,8 @@ var data = {
                 "TP Cost": ["3", "3", "3", "5", "5", "5", "5", "9"],
                 "Aggro Bonus": ["+25%", "+30%", "+35%", "+35%", "+40%", "+45%", "+50%", "+50%"],
                 "Damage Taken": ["-3%", "-4%", "-6%", "-6%", "-7%", "-9%", "-10%", "-10%"],
-                "Action Speed": ["120%", "120%", "120%", "150%", "150%", "150%", "150%", "200%"],
                 "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Action Speed": ["120%", "120%", "120%", "150%", "150%", "150%", "150%", "200%"],
             }
         },
         "Preemptive Taunt":{
@@ -452,7 +452,7 @@ var data = {
         "Chop":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Chop Points.",
+            "Description": "Obtain additional materials when gathering from Chop points.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -756,7 +756,7 @@ var data = {
         "Take":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Take Points.",
+            "Description": "Obtain additional materials when gathering from Take points.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -975,13 +975,294 @@ var data = {
         },
     },
     "Novice":{
-
+        "Power Shot":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Bow: Deal ranged Stab damage to one enemy, with pierce effect.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "9", "9", "9", "9", "14"],
+                "Attack Power": ["240%", "250%", "260%", "300%", "310%", "320%", "330%", "400%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Flame Arrow":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Power Shot (Lv 3)",
+            "Description": "Bow: Deal ranged Stab+Fire damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "9", "9", "9", "9", "13"],
+                "Attack Power": ["230%", "241%", "252%", "287%", "298%", "309%", "320%", "380%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Blind Arrow":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Bow: Deal ranged Stab damage to one enemy, with a chance to inflict Blind.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "10"],
+                "Attack Power": ["150%", "158%", "166%", "186%", "194%", "202%", "210%", "240%"],
+                "Infliction Chance": ["40%", "40%", "40%", "50%", "50%", "50%", "50%", "65%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Chain Dance":{
+            "Usage": "Active (Legs)",
+            "Unlock": "Blind Arrow (Lv 3)",
+            "Description": "Increase your evasion and enemy aggro until the end of the turn.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "9"],
+                "Evasion Up": ["+20%", "+20%", "+20%", "+20%", "+27%", "+27%", "+27%", "+27%", "+27%", "+35%"],
+                "Aggro Bonus": ["+25%", "+26.5%", "+28%", "+29.5%", "+35%", "+37%", "+39%", "+41%", "+43%", "+50%"],
+                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
+            }
+        },
+        "Safe Passage":{
+            "Usage": "Active (Field)",
+            "Unlock": "N/A",
+            "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "10"],
+                "Duration (Steps)": ["60", "70", "80", "90", "100", "255"],
+            }
+        },
+        "Risk Perception":{
+            "Usage": "Passive",
+            "Unlock": "Safe Passage (Lv 2)",
+            "Description": "Chance to nullify enemy ambushes.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "Activation Chance": ["35%", "41%", "47%", "53%", "59%", "75%"],
+            }
+        },
+        "Resuscitate":{
+            "Usage": "Active (Field)",
+            "Unlock": "N/A",
+            "Description": "Restore HP to one ally. From level 4 onward can also revive.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "2", "3"],
+                "HP Gain (Heal)": ["50", "60", "70", "80", "90", "200"],
+                "HP Gain (Revive)": ["N/A", "N/A", "N/A", "1", "50", "150"],
+            }
+        },
+        "Sorting Skill":{
+            "Usage": "Passive",
+            "Unlock": "Resuscitate (Lv 3)",
+            "Description": "Increase the size of the inventory.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Item Slots": ["+4", "+5", "+6", "+7", "+10", "+11", "+12", "+13", "+14", "+20"],
+            }
+        },
+        "Natural Instinct":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Take, Chop or Mine points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran":{
-
+        "Flank Shot":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Flame Arrow (Lv 3)",
+            "Description": "Bow: Deal ranged Stab damage to an enemy row.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "13", "13", "13", "13", "18"],
+                "Attack Power": ["215%", "223%", "231%", "266%", "274%", "282%", "290%", "350%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["75%", "75%", "75%", "75%", "75%", "75%", "75%", "75%"],
+            }
+        },
+        "Finishing Shot":{
+            "Usage": "Passive (STR)",
+            "Unlock": "Flank Shot (Lv 3)",
+            "Description": "After attacking an enemy, if their HP is below a certain threshold, perform a follow up attack.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "HP Threshold": ["10%", "12%", "14%", "16%", "18%", "20%", "22%", "30%"],
+                "Attack Power": ["70%", "73%", "76%", "79%", "82%", "85%", "88%", "100%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            }
+        },
+        "Multi-Shot":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Flame Arrow (Lv 3)",
+            "Description": "Bow: Deal 2 hits of ranged Stab damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "13", "13", "13", "13", "13", "20"],
+                "Attack Power": ["150%", "155%", "160%", "165%", "190%", "195%", "200%", "205%", "210%", "265%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["85%", "85%", "85%", "85%", "85%", "85%", "85%", "85%", "85%", "85%"],
+            }
+        },
+        "Drop Shot":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Multi-Shot (Lv 3)",
+            "Description": "Bow: Deal ranged Stab damage to one enemy. Deals triple damage against enemies in the back row.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "9", "9", "9", "9", "13"],
+                "Attack Power": ["180%", "188%", "196%", "221%", "231%", "241%", "251%", "300%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Trickery":{
+            "Usage": "Active (Legs)",
+            "Unlock": "Chain Dance (Lv 2)",
+            "Description": "Place a debuff on an enemy row for 3~5 turns, which decreases accuracy.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "11", "11", "11", "11", "11", "17"],
+                "Accuracy Down": ["-9.5%", "-11%", "-12.5%", "-14%", "-14%", "-15.5%", "-17%", "-18.5%", "-20%", "-20%"],
+                "Duration (Turns)": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["85%", "85%", "85%", "85%", "85%", "85%", "85%", "85%", "85%", "85%"],
+            }
+        },
+        "Cautious Steps":{
+            "Usage": "Active (Field)",
+            "Unlock": "Risk Perception (Lv 1)",
+            "Description": "Temporarily decrease the enemy encounter rate.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "8", "14"],
+                "Encounters Down": ["-50%", "-55%", "-60%", "-65%", "-70%", "-85%"],
+                "Duration (Steps)": ["80", "100", "120", "140", "160", "255"],
+            }
+        },
+        "Efficiency":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Place a buff on yourself for 5 turns, which increases the recovery of Medica-type items and makes them affect a full row.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "10"],
+                "HP Restored": ["+5%", "+10%", "+15%", "+100%"],
+                "Action Speed": ["90%", "90%", "90%", "90%"],
+            }
+        },
+        "Speed Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase accuracy, evasion and action speed.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Accuracy Up": ["+2.5%", "+3.1%", "+3.7%", "+5.7%", "+6.3%", "+6.9%", "+7.5%", "+10%"],
+                "Evasion Up": ["+2.5%", "+3.1%", "+3.7%", "+5.7%", "+6.3%", "+6.9%", "+7.5%", "+10%"],
+                "Speed Up": ["+6%", "+8%", "+10%", "+16%", "+18%", "+20%", "+22%", "+30%"],
+            }
+        },
+        "Quick Step":{
+            "Usage": "Active (Legs)",
+            "Unlock": "Speed Up (Lv 2)",
+            "Description": "Target one ally, make them act first this turn.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["35", "30", "25", "15"],
+            }
+        },
     },
     "Master":{
-
+        "Disabling Shot":{
+            "Usage": "Passive (LUC)",
+            "Unlock": "Finishing Shot (Lv 1)",
+            "Description": "Bow skills gain a chance to inflict Leg Bind.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Infliction Chance": ["+7%", "+9%", "+11%", "+13%", "+15%", "+17%", "+19%", "+25%"],
+            }
+        },
+        "Sagittarius Shot":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Drop Shot (Lv 3)",
+            "Description": "Bow: Prepare an attack that will hit in 2 more turns, at the start of the turn. Deals ranged Stab damage to one enemy, with a chance to inflict Stun. (Can't use again while preparing. Cancelled if you die while preparing)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "20", "20", "20", "20", "20", "27"],
+                "Attack Power": ["500%", "520%", "540%", "560%", "620%", "640%", "660%", "680%", "700%", "800%"],
+                "Infliction Chance": ["40%", "40%", "40%", "40%", "55%", "55%", "55%", "55%", "55%", "70%"],
+                "Accuracy": ["+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Hazy Arrow":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Trickery (Lv 3)",
+            "Description": "Bow: Deal ranged Stab damage to one enemy. Cannot miss. Only usable if you dodged an attack last turn.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "10"],
+                "Attack Power": ["600%", "660%", "720%", "780%", "840%", "1200%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Nature's Blessing":{
+            "Usage": "Passive (Field)",
+            "Unlock": "Cautious Steps (Lv 2)",
+            "Description": "Chance to get additional rare materials from gathering spots.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "Max. Extra Items": ["1", "2", "3", "4"],
+            }
+        },
+        "Scapegoat":{
+            "Usage": "Active (Legs)",
+            "Unlock": "N/A",
+            "Description": "Select one ally to protect the rest of the party for this turn, which makes the target take attacks in place of their allies a certain amount of times. Target takes decreased damage from those redirected attacks.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["7", "7", "12", "12", "12", "18"],
+                "Max. Activations": ["1", "1", "2", "2", "2", "3"],
+                "Damage Taken": ["-5%", "-7%", "-13%", "-15%", "-17%", "-25%"],
+            }
+        },
+        "Sneak Attack":{
+            "Usage": "Active (Field)",
+            "Unlock": "N/A",
+            "Description": "Temporarily increase the chance of ambushing enemies.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "15"],
+                "Ambush Up": ["+6%", "+7%", "+8%", "+9%", "+10%", "+20%"],
+                "Duration (Steps)": ["60", "70", "80", "90", "100", "255"],
+            }
+        },
     },
 },
 "Ronin":{
