@@ -82,7 +82,7 @@ var data = {
         "Encourage":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Restore HP tp the whole party each time you use an attack skill. Healing is based on your Max HP.",
+            "Description": "Restore HP to the whole party each time you use an attack skill. Healing is based on your Max HP.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -228,7 +228,7 @@ var data = {
         "Fervor":{
             "Usage": "Active (No parts)",
             "Unlock": "Clear Mind (Lv 1)",
-            "Description": "Transfer ailments and binds from allies in your row onto you. If successful, fill your Force Gauge.",
+            "Description": "Transfer ailments and binds from allies in your line onto you. If successful, fill your Force Gauge.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -293,7 +293,7 @@ var data = {
         "Force Gift":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Sword: Deal melee Cut damage to one enemy. If it lands, fill the Force Gauge of other allies in your row.",
+            "Description": "Sword: Deal melee Cut damage to one enemy. If it lands, restore Force to other allies in your line.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -307,7 +307,7 @@ var data = {
         "Retain Force":{
             "Usage": "Passive",
             "Unlock": "Force Gift (Lv 3)",
-            "Description": "If your Force Boost ends during battle, fill your Force Gauge.",
+            "Description": "If your Force Boost ends during battle, recover some Force.",
             "Starter": "0",
             "Max Level": "4",
             "Data": {
@@ -358,7 +358,7 @@ var data = {
         "Front Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Shield: Protect the front row for this turn, which decreases physical damage taken.",
+            "Description": "Shield: Protect the front line for this turn, which decreases physical damage taken.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -369,7 +369,7 @@ var data = {
         "Rear Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "Front Guard (Lv 2)",
-            "Description": "Shield: Protect the back row for this turn, which decreases physical damage taken.",
+            "Description": "Shield: Protect the back line for this turn, which decreases physical damage taken.",
             "Starter": "0",
             "Max Level": "4",
             "Data": {
@@ -442,7 +442,7 @@ var data = {
         "Healing Wall":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "When you Defend, restore HP to all allies in your row. Healing is based on your Max HP.",
+            "Description": "When you Defend, restore HP to all allies in your line. Healing is based on your Max HP.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -462,7 +462,7 @@ var data = {
         "Recovery Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "Rear Guard (Lv 1)",
-            "Description": "Shield: Protect an ally row for this turn, which removes binds and decreases physical damage taken.",
+            "Description": "Shield: Protect an ally line for this turn, which removes binds and decreases physical damage taken.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -576,7 +576,7 @@ var data = {
         "Heal Guard":{
             "Usage": "Active (Arms, WIS)",
             "Unlock": "Recovery Guard (Lv 2)",
-            "Description": "Shield: Protect an ally row for this turn, which restores HP and decreases physical damage taken.",
+            "Description": "Shield: Protect an ally line for this turn, which restores HP and decreases physical damage taken.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -588,7 +588,7 @@ var data = {
         "Line Shield":{
             "Usage": "Active (Arms)",
             "Unlock": "Aegis (Lv 3)",
-            "Description": "Shield: Protect an ally row for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
+            "Description": "Shield: Protect an ally line for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -676,7 +676,7 @@ var data = {
         "Line Heal":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Healing (Lv 3)",
-            "Description": "Restore HP to an ally row.",
+            "Description": "Restore HP to an ally line.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -693,7 +693,7 @@ var data = {
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "2", "12", "6"],
-                "Targets": ["Single", "Single", "Row", "Row"],
+                "Targets": ["Single", "Single", "Line", "Line"],
                 "Action Speed": ["100%", "100%", "100%", "100%"],
             }
         },
@@ -782,14 +782,14 @@ var data = {
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "2", "12", "6"],
-                "Targets": ["Single", "Single", "Row", "Row"],
+                "Targets": ["Single", "Single", "Line", "Line"],
                 "Action Speed": ["100%", "100%", "100%", "100%"],
             }
         },
         "Group Therapy":{
             "Usage": "Active (Head)",
             "Unlock": "Unbind (Lv 1)",
-            "Description": "Place a buff on yourself for 3~5 turns, which increases the area of effect (Single → Row → Party) of your class healing skills but decreases their action speed and HP restored.",
+            "Description": "Place a buff on yourself for 3~5 turns, which increases the area of effect (Single → Line → Party) of your class healing skills but decreases their action speed and HP restored.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -1084,7 +1084,7 @@ var data = {
         "Flank Shot":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flame Arrow (Lv 3)",
-            "Description": "Bow: Deal ranged Stab damage to an enemy row.",
+            "Description": "Bow: Deal ranged Stab damage to an enemy line.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1122,7 +1122,7 @@ var data = {
         "Drop Shot":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Multi-Shot (Lv 3)",
-            "Description": "Bow: Deal ranged Stab damage to one enemy. Deals triple damage against enemies in the back row.",
+            "Description": "Bow: Deal ranged Stab damage to one enemy. Deals triple damage against enemies in the back line.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -1135,7 +1135,7 @@ var data = {
         "Trickery":{
             "Usage": "Active (Legs)",
             "Unlock": "Chain Dance (Lv 2)",
-            "Description": "Place a debuff on an enemy row for 3~5 turns, which decreases accuracy.",
+            "Description": "Place a debuff on an enemy line for 3~5 turns, which decreases accuracy.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1160,7 +1160,7 @@ var data = {
         "Efficiency":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on yourself for 5 turns, which increases the recovery of Medica-type items and makes them affect a full row.",
+            "Description": "Place a buff on yourself for 5 turns, which increases the recovery of Medica-type items and makes them affect a full line.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -1474,7 +1474,7 @@ var data = {
         "Horizontal Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Sheath Strike (Lv 1)",
-            "Description": "Katana: Deal melee Cut damage to an enemy row. Requires a Stance, and makes a Critical Hit during Swift Stance. Decreases remaining Stance duration by 2 turns.",
+            "Description": "Katana: Deal melee Cut damage to an enemy line. Requires a Stance, and makes a Critical Hit during Swift Stance. Decreases remaining Stance duration by 2 turns.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1637,7 +1637,7 @@ var data = {
         "War Heal Line":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "War Heal (Lv 2)",
-            "Description": "Restore HP to an ally row at the start of the turn, then again at the end of the turn.",
+            "Description": "Restore HP to an ally line at the start of the turn, then again at the end of the turn.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1701,7 +1701,7 @@ var data = {
         "Vampire":{
             "Usage": "Passive (WIS)",
             "Unlock": "N/A",
-            "Description": "If you deal damage to an enemy with an ailment, restore HP to your row. (Max once per turn)",
+            "Description": "If you deal damage to an enemy with an ailment, restore HP to your line. (Max once per turn)",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -1879,7 +1879,7 @@ var data = {
         "Mind Drain":{
             "Usage": "Passive (WIS)",
             "Unlock": "Rouse (Lv 2)",
-            "Description": "If you damage an enemy afflicted by a bind and an ailment, restore TP to your row.",
+            "Description": "If you damage an enemy afflicted by a bind and an ailment, restore TP to your line.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -2395,7 +2395,7 @@ var data = {
         "Destructive Tusk":{
             "Usage": "Active (Head, STR)",
             "Unlock": "Seabeast's Tusk",
-            "Description": "Deal melee Stab damage to one enemy row. Place a debuff on the targets for 3 turns, which decreases all damage dealt.",
+            "Description": "Deal melee Stab damage to one enemy line. Place a debuff on the targets for 3 turns, which decreases all damage dealt.",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -2504,7 +2504,7 @@ var data = {
         "Thunder Wall":{
             "Usage": "Active (Head)",
             "Unlock": "Lightning Bow",
-            "Description": "Place a buff on an ally row for 3 turns, which increases Volt resistance.",
+            "Description": "Place a buff on an ally line for 3 turns, which increases Volt resistance.",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -2553,7 +2553,7 @@ var data = {
         "Calamity Arrows":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Infection Bow",
-            "Description": "Deal ranged Stab damage to an enemy row, with a chance to inflict Curse or Petrify.",
+            "Description": "Deal ranged Stab damage to an enemy line, with a chance to inflict Curse or Petrify.",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -2624,7 +2624,7 @@ var data = {
         "Foot Sweep":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Mikaeri",
-            "Description": "Deal melee Cut damage to an enemy row. Place a debuff on the targets for 3 turns, which decreases evasion.",
+            "Description": "Deal melee Cut damage to an enemy line. Place a debuff on the targets for 3 turns, which decreases evasion.",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -2817,7 +2817,7 @@ var data = {
         "Harsh Buzz":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "Butterfly Barrel",
-            "Description": "Attempt to inflict Head Bind to an enemy row.",
+            "Description": "Attempt to inflict Head Bind to an enemy line.",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -3002,7 +3002,7 @@ var data = {
         "Sleep Tail":{
             "Usage": "Active (Legs, STR, LUC)",
             "Unlock": "Rhongomyniad",
-            "Description": "Deal melee Bash damage to an enemy row, with a chance to inflict Sleep.",
+            "Description": "Deal melee Bash damage to an enemy line, with a chance to inflict Sleep.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -3098,7 +3098,7 @@ var data = {
         "Fear Glint":{
             "Usage": "Active (Arms)",
             "Unlock": "Gorm Glas",
-            "Description": "Place a buff on an ally row for 3 turns, which increases evasion.",
+            "Description": "Place a buff on an ally line for 3 turns, which increases evasion.",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -3110,7 +3110,7 @@ var data = {
         "Delta Block":{
             "Usage": "Active (Arms)",
             "Unlock": "Warped Mechablade",
-            "Description": "Place a buff on an ally row for 3 turns, which increases physical resistances.",
+            "Description": "Place a buff on an ally line for 3 turns, which increases physical resistances.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -3235,7 +3235,7 @@ var data = {
         "Darkness Rend":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Whirlwind",
-            "Description": "Deal melee Cut damage to an enemy row, with a chance to inflict Curse.",
+            "Description": "Deal melee Cut damage to an enemy line, with a chance to inflict Curse.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -3316,7 +3316,7 @@ var data = {
         "Boomerang Hook":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Loose Fist",
-            "Description": "Deal melee Bash damage to an enemy row.",
+            "Description": "Deal melee Bash damage to an enemy line.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -3380,7 +3380,7 @@ var data = {
         "Reverse Slash":{
             "Usage": "Active (Legs, STR)",
             "Unlock": "Demon Fist",
-            "Description": "Deal melee Cut damage to an enemy row.",
+            "Description": "Deal melee Cut damage to an enemy line.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -3438,7 +3438,7 @@ var data = {
         "Vine Grab: Arm":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Thorn Scythe",
-            "Description": "Deal melee Cut damage to an enemy row, with a chance to inflict Arm Bind.",
+            "Description": "Deal melee Cut damage to an enemy line, with a chance to inflict Arm Bind.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
