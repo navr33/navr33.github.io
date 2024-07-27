@@ -341,7 +341,7 @@ var data = {
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Damage Taken": ["-50%"],
+                "Damage Taken": ["x0.5"],
             }
         },
         "Painless":{
@@ -1297,7 +1297,7 @@ var data = {
             "Starter": "1",
             "Max Level": "8",
             "Data": {
-                "Damage Dealt": ["x1.1", "x1.12", "x1.14", "x1.14", "x1.16", "x1.18", "x1.20", "x1.2"],
+                "Damage Dealt": ["x1.1", "x1.12", "x1.14", "x1.14", "x1.16", "x1.18", "x1.2", "x1.2"],
                 "Duration (Turns)": ["4", "4", "4", "5", "5", "5", "5", "6"],
             }
         },
@@ -1604,7 +1604,7 @@ var data = {
         "War Edge Power":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "War Edge skills can apply their secondary effect even if the target doesn't have an ailment.",
+            "Description": "War Edge skills will apply their secondary effect even if the target doesn't have an ailment.",
             "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
@@ -1623,13 +1623,291 @@ var data = {
         },
     },
     "Novice (Lv 1)":{
-
+        "War Heal":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "N/A",
+            "Description": "Restore HP to one ally at the start of the turn, then again at the end of the turn.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
+                "Healing Power": ["45%", "49%", "53%", "57%", "75%", "80%", "85%", "90%", "95%", "125%"],
+            }
+        },
+        "War Heal Line":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "War Heal (Lv 2)",
+            "Description": "Restore HP to an ally row at the start of the turn, then again at the end of the turn.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "10", "10", "10", "10", "10", "15"],
+                "Healing Power": ["40%", "43%", "46%", "49%", "60%", "63%", "66%", "69%", "72%", "95%"],
+            }
+        },
+        "Random Disease":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "N/A",
+            "Description": "Attempt to inflict one of Blind, Poison, Paralysis, Sleep or Curse to one enemy",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "6", "6", "6", "6", "10"],
+                "Infliction Chance": ["45%", "46%", "48%", "53%", "54%", "56%", "57%", "65%"],
+                "Poison Damage": ["20", "23", "26", "35", "38", "41", "44", "55"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Strength Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Random Disease (Lv 1)",
+            "Description": "War Edge(Sword): Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, place a debuff on them for 7 turns, which decreases all damage dealt.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "10"],
+                "Attack Power": ["160%", "170%", "180%", "190%", "200%", "250%"],
+                "Damage Dealt": ["-10%", "-11%", "-12%", "-13%", "-14%", "-20%"],
+                "Accuracy": ["+15%", "+15%", "+15%", "+15%", "+15%", "+15%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Guard Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Random Disease (Lv 1)",
+            "Description": "War Edge(Sword): Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, place a debuff on them for 7 turns, which increases all damage taken.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "10"],
+                "Attack Power": ["160%", "170%", "180%", "190%", "200%", "250%"],
+                "Damage Taken": ["+15%", "+17%", "+19%", "+21%", "+23%", "+30%"],
+                "Accuracy": ["+15%", "+15%", "+15%", "+15%", "+15%", "+15%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Displace":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "N/A",
+            "Description": "Remove binds and ailments on one ally, then attempt to inflict them onto one enemy.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "12"],
+                "Infliction Chance": ["20%", "25%", "30%", "50%"],
+                "Action Speed": ["80%", "80%", "80%", "80%"],
+            }
+        },
+        "Vampire":{
+            "Usage": "Passive (WIS)",
+            "Unlock": "N/A",
+            "Description": "If you deal damage to an enemy with an ailment, restore HP to your row. (Max once per turn)",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Fixed HP Gain": ["11", "14", "17", "20", "23", "34"],
+                "Healing Power": ["50%", "55%", "60%", "65%", "70%", "100%"],
+            }
+        },
+        "War Edge Master":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Allows you to also use War Edge skills with a Staff. If a Sword is equipped, increase Max TP. If a Staff is equipped, increase damage dealt.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Up": ["+6%", "+8%", "+10%", "+12%", "+14%", "+16%", "+18%", "+25%"],
+                "Damage Dealt": ["+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+15%"],
+            }
+        },
+        "Take":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Take points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "War Revive":{
+            "Usage": "Active (Head)",
+            "Unlock": "War Heal Line (Lv 3)",
+            "Description": "Revive one ally at the start of the turn, then there's a chance to revive them again at the end of the turn.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "9", "16", "16", "16", "16", "16", "25"],
+                "HP Gain": ["1", "10", "20", "30", "70", "80", "90", "100", "110", "200"],
+                "Repeat Chance": ["25%", "29%", "33%", "37%", "52%", "57%", "62%", "67%", "72%", "100%"],
+            }
+        },
+        "Artery":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "War Revive (Lv 2)",
+            "Description": "Place a buff on all allies for 3 turns, which restores HP to them when they act (max once per turn).",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "8", "15"],
+                "Healing Power": ["25%", "27%", "30%", "32%", "35%", "50%"],
+                "Action Speed": ["40%", "60%", "80%", "100%", "120%", "200%"],
+            }
+        },
+        "War Response":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "War Revive (Lv 2)",
+            "Description": "Place a debuff on one enemy for 3 turns, which restores HP to the party when the target acts (max once per turn).",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "7", "13"],
+                "Healing Power": ["20%", "22%", "24%", "26%", "28%", "40%"],
+                "Action Speed": ["40%", "60%", "80%", "100%", "120%", "200%"],
+            }
+        },
+        "Headcut":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Strength Slash (Lv 2)",
+            "Description": "War Edge(Sword): Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, attempt to inflict Head Bind.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "11", "11", "11", "11", "16"],
+                "Attack Power": ["190%", "198%", "206%", "230%", "238%", "246%", "254%", "300%"],
+                "Infliction Chance": ["55%", "57%", "59%", "66%", "69%", "72%", "75%", "85%"],
+                "Accuracy": ["+15%", "+15%", "+15%", "+15%", "+15%", "+15%", "+15%", "+15%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Armcut":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Guard Slash (Lv 2)",
+            "Description": "War Edge(Sword): Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, attempt to inflict Arm Bind.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "11", "11", "11", "11", "16"],
+                "Attack Power": ["190%", "198%", "206%", "230%", "238%", "246%", "254%", "300%"],
+                "Infliction Chance": ["55%", "57%", "59%", "66%", "69%", "72%", "75%", "85%"],
+                "Accuracy": ["+15%", "+15%", "+15%", "+15%", "+15%", "+15%", "+15%", "+15%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Legcut":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Headcut (Lv 2), Armcut (Lv 2)",
+            "Description": "War Edge(Sword): Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, attempt to inflict Leg Bind.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "11", "11", "11", "11", "16"],
+                "Attack Power": ["190%", "198%", "206%", "230%", "238%", "246%", "254%", "300%"],
+                "Infliction Chance": ["55%", "57%", "59%", "66%", "69%", "72%", "75%", "85%"],
+                "Accuracy": ["+15%", "+15%", "+15%", "+15%", "+15%", "+15%", "+15%", "+15%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Rouse":{
+            "Usage": "Passive",
+            "Unlock": "Vampire (Lv 2)",
+            "Description": "Increase Force Gauge gains for each enemy afflicted with a bind.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "Force Up": ["+2%", "+3%", "+4%", "+6%"],
+            }
+        },
+        "HP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max HP.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "HP Up": ["+5%", "+6%", "+7%", "+11%", "+12%", "+13%", "+14%", "+20%"],
+            }
+        },
+        "Status DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Infliction Vulnerability": ["x0.92", "x0.91", "x0.9", "x0.85", "x0.84", "x0.83", "x0.82", "x0.75"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "War Heal All":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "Artery (Lv 2), War Response (Lv 2)",
+            "Description": "Restore HP to the whole party at the start of the turn, then again at the end of the turn.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "21", "21", "21", "21", "21", "30"],
+                "Healing Power": ["35%", "37%", "39%", "41%", "48%", "50%", "52%", "54%", "56%", "70%"],
+            }
+        },
+        "Barrier":{
+            "Usage": "Active (Arms)",
+            "Unlock": "War Heal All (Lv 3)",
+            "Description": "Chance to nullify bind/ailment/debuff inflictions to party members this turn.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20"],
+                "Activation Chance": ["70%", "71%", "72%", "73%", "79%", "81%", "82%", "84%", "85%", "90%"],
+                "Max. Activations": ["1", "1", "1", "1", "2", "2", "2", "2", "2", "3"],
+            }
+        },
+        "Ailing Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Legcut (Lv 3)",
+            "Description": "War Edge(Sword): Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, increase damage dealt by 150%.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "15", "24"],
+                "Attack Power": ["170%", "180%", "190%", "200%", "210%", "260%"],
+                "Accuracy": ["+15%", "+15%", "+15%", "+15%", "+15%", "+15%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Mind Drain":{
+            "Usage": "Passive (WIS)",
+            "Unlock": "Rouse (Lv 2)",
+            "Description": "If you damage an enemy afflicted by a bind and an ailment, restore TP to your row.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Fixed TP Gain": ["1", "2", "3", "4", "5", "6"],
+                "Healing Power": ["2%", "3%", "4%", "5%", "6%", "10%"],
+            }
+        },
+        "Epidemic":{
+            "Usage": "Passive (LUC)",
+            "Unlock": "Mind Drain (Lv 3)",
+            "Description": "Normal attacks gain a chance to inflict Blind, Poison, Paralysis, Sleep or Curse.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "Infliction Chance": ["1%", "2%", "3%", "4%"],
+                "Poison Damage": ["20", "25", "30", "45"],
+            }
+        },
+        "Phys ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase physical damage dealt.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Damage Dealt": ["+4%", "+5%", "+6%", "+9%", "+10%", "+11%", "+12%", "+15%"],
+            }
+        },
     },
 },
 "Highlander":{
