@@ -2372,7 +2372,7 @@ var data = {
             "Usage": "Active (Arms, LUC)",
             "Unlock": "Wyvern's Wing",
             "Description": "Attempt to inflict Leg Bind on all enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -2384,7 +2384,7 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Cheer Blade",
             "Description": "Place a buff on the whole party for 3 turns, which increases resistance against binds/ailments.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7"],
@@ -2396,7 +2396,7 @@ var data = {
             "Usage": "Active (Head, STR)",
             "Unlock": "Seabeast's Tusk",
             "Description": "Deal melee Stab damage to one enemy row. Place a debuff on the targets for 3 turns, which decreases all damage dealt.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "15"],
@@ -2410,7 +2410,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Lighting Blade",
             "Description": "Deal melee Cut+Volt damage to one enemy, with splash effect.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "12"],
@@ -2423,7 +2423,7 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Sapling Sword",
             "Description": "Place a buff on one ally for 3 turns, which increases physical damage dealt and action speed but also increases physical damage taken.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "16"],
@@ -2437,7 +2437,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Queen's Sabre",
             "Description": "Deal 4~6 hits of ranged Bash damage to random enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["18"],
@@ -2450,7 +2450,7 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Balmung",
             "Description": "Place a buff on the whole party for 3 turns, which increases physical/elemental damage dealt.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["14", "14", "14", "14", "14"],
@@ -2462,7 +2462,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Caladbolg",
             "Description": "Deal melee Bash damage to one enemy, with splash effect and a chance to inflict Arm Bind.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["22"],
@@ -2478,7 +2478,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Kamatha",
             "Description": "Deal ranged Stab damage to one enemy. Place a debuff on the target for 3 turns, which increases physical damage taken.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5"],
@@ -2492,7 +2492,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Reseph's Bow",
             "Description": "Deal ranged Stab+Volt damage to all enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["10"],
@@ -2505,7 +2505,7 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Lightning Bow",
             "Description": "Place a buff on an ally row for 3 turns, which increases Volt resistance.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5"],
@@ -2517,7 +2517,7 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Coral Bow",
             "Description": "Place a buff on the whole party for 3 turns, which increases accuracy.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "7"],
@@ -2529,7 +2529,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flamerat Bow",
             "Description": "Deal ranged Bash+Fire damage to one enemy, with splash effect.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["9", "9", "9", "9", "9"],
@@ -2542,7 +2542,7 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Leopardfrog Bow",
             "Description": "Place a debuff on all enemies for 3 turns, which increases physical/elemental damage taken.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["9"],
@@ -2554,7 +2554,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Infection Bow",
             "Description": "Deal ranged Stab damage to an enemy row, with a chance to inflict Curse or Petrify.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["14", "14", "14", "14", "14"],
@@ -2568,7 +2568,7 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Failnaught",
             "Description": "Place a debuff on all enemies for 3 turns, which decreases bind resistance. Also attempts to inflict Panic on all enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["25"],
@@ -2583,7 +2583,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Dangosashi",
             "Description": "Deal melee Cut damage to one enemy. Place a debuff on the target for 3 turns, which decreases all damage dealt.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -2597,7 +2597,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Mijinmaru",
             "Description": "Deal melee Bash damage to one enemy, with a chance to inflict Stun.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["7"],
@@ -2611,7 +2611,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Nikkari",
             "Description": "Deal melee Bash damage to one enemy, with splash effect and a chance to inflict Panic.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["9", "9", "9", "9", "9"],
@@ -2625,7 +2625,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Mikaeri",
             "Description": "Deal melee Cut damage to an enemy row. Place a debuff on the targets for 3 turns, which decreases evasion.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "12"],
@@ -2639,7 +2639,7 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Kamui Ranketam",
             "Description": "Deal melee Bash damage to one enemy, with splash effect.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["10"],
@@ -2652,7 +2652,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Nihil Youtou",
             "Description": "Deal melee Cut damage to all enemies. Recover HP based on damage dealt.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["8"],
@@ -2666,7 +2666,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Jizoumaru",
             "Description": "Deal 3~5 hits of melee Cut damage to random enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20"],
@@ -2679,7 +2679,7 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Kurikara",
             "Description": "Deal 4~6 hits of melee Bash damage to random enemies, with a chance to inflict Stun.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["21"],
@@ -2693,7 +2693,7 @@ var data = {
             "Usage": "Active (Legs, STR, LUC)",
             "Unlock": "Ameno Habakiri",
             "Description": "Deal melee Stab damage to one enemy, with pierce effect and a chance to inflict Sleep. Recover HP based on damage dealt.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["21"],
@@ -2710,7 +2710,7 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Owl Staff",
             "Description": "Deal ranged Volt damage to one enemy.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3"],
@@ -2723,7 +2723,7 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Palm Zhezl",
             "Description": "Deal ranged Fire damage to one enemy.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4"],
@@ -2736,7 +2736,7 @@ var data = {
             "Usage": "Active (Arms, INT)",
             "Unlock": "Aqua Mace",
             "Description": "Deal ranged Bash+Ice damage to one enemy.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5"],
@@ -2749,7 +2749,7 @@ var data = {
             "Usage": "Active (Head, INT, LUC)",
             "Unlock": "Serpentflame Staff",
             "Description": "Deal 2~5 hits of ranged Fire damage to random enemies, with a chance to inflict Blind.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["16"],
@@ -2763,7 +2763,7 @@ var data = {
             "Usage": "Active (Head, INT, LUC)",
             "Unlock": "Tanuki Staff",
             "Description": "Deal ranged Volt damage to one enemy, with pierce effect and a chance to inflict Leg Bing.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10"],
@@ -2776,7 +2776,7 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Madness Staff",
             "Description": "Deal ranged Fire damage to all enemies. Places a debuff on the targets for 3 turns, which increases physical/elemental damage taken.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["30"],
@@ -2790,7 +2790,7 @@ var data = {
             "Usage": "Active (Arms, LUC)",
             "Unlock": "Pumpkin Bat",
             "Description": "Attempt to inflict Head Bind and Arm Bind on all enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["12"],
@@ -2802,7 +2802,7 @@ var data = {
             "Usage": "Active (Head, STR)",
             "Unlock": "Kerykeion",
             "Description": "Deal melee Cut damage to one enemy, with pierce effect. Recover HP based on damage dealt.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["25"],
@@ -2818,7 +2818,7 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Butterfly Barrel",
             "Description": "Attempt to inflict Head Bind to an enemy row.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3"],
@@ -2830,7 +2830,7 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Flame Lance",
             "Description": "Place a buff on an ally line for 3 turns, which increases Fire resistance.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -2842,7 +2842,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Roar of the Sea",
             "Description": "Deal 3~8 hits of ranged Stab damage to one enemy.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["12"],
@@ -2855,7 +2855,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Shiyanqiang",
             "Description": "Deal 2~5 hits of ranged Stab damage to random enemies (max once each).",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10"],
@@ -2868,7 +2868,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Calamity Cannon",
             "Description": "Deal ranged Bash damage to one enemy, with a chance to inflict Petrify, Curse, Paralysis and Panic.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["13"],
@@ -2882,7 +2882,7 @@ var data = {
             "Usage": "Active (Head, INT, LUC)",
             "Unlock": "Halloween Barrel",
             "Description": "Deal ranged Fire damage to one enemy, with a chance to inflict Head, Arm and Leg Bind.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["25"],
@@ -2896,7 +2896,7 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Agneyastra",
             "Description": "Place a debuff on all enemies for 3 turns, which increases physical damage taken. Also attempts to inflict Sleep on all enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["20"],
@@ -2911,7 +2911,7 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Horn Spear",
             "Description": "Deal ranged Fire damage to one enemy, with pierce effect.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -2924,7 +2924,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Gae Dearg",
             "Description": "Deal ranged Stab damage to one enemy. Low accuracy but ignores Stab resistance.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -2937,7 +2937,7 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Leaf Javelin",
             "Description": "Deal 2~5 hits of ranged Stab damage to random enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "8"],
@@ -2950,7 +2950,7 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Snow Spear",
             "Description": "Place a buff on an ally line for 3 turns, which increases Ice resistance.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -2962,7 +2962,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Vertigo Pike",
             "Description": "Deal melee Cut damage to one enemy, with a chance to inflict Blind and Stun.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "8"],
@@ -2976,7 +2976,7 @@ var data = {
             "Usage": "Active (Head, STR, LUC)",
             "Unlock": "Sansageki",
             "Description": "Deal melee Stab damage to one enemy, with a chance to inflict Instant Death.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["10"],
@@ -2990,7 +2990,7 @@ var data = {
             "Usage": "Active (Head, STR)",
             "Unlock": "Fangtianhuaji",
             "Description": "Deal melee Cut damage to all enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20"],
@@ -3003,7 +3003,7 @@ var data = {
             "Usage": "Active (Legs, STR, LUC)",
             "Unlock": "Rhongomyniad",
             "Description": "Deal melee Bash damage to an enemy row, with a chance to inflict Sleep.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["18"],
@@ -3019,7 +3019,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Choking Rapier",
             "Description": "Deal melee Stab damage to one enemy, with a chance to inflict Head Bind.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6"],
@@ -3033,7 +3033,7 @@ var data = {
             "Usage": "Active (Head, STR, LUC)",
             "Unlock": "Piercing Tongue",
             "Description": "Deal melee Stab damage to one enemy, with pierce effect and a chance to inflict Blind.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["8"],
@@ -3047,7 +3047,7 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Moralltach",
             "Description": "Consume 40% of current HP to deal melee Stab damage to one enemy.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["17", "17", "17", "17", "17"],
@@ -3061,7 +3061,7 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Steelbug's Piercer",
             "Description": "Recover HP. Healing is based on your Max HP.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["2"],
@@ -3073,7 +3073,7 @@ var data = {
             "Usage": "Active (Head, STR)",
             "Unlock": "Sauro Pallasch",
             "Description": "Deal melee Bash damage to all enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "15"],
@@ -3086,7 +3086,7 @@ var data = {
             "Usage": "Active (Head, STR)",
             "Unlock": "Dune Needle",
             "Description": "Deal 4~6 hits of ranged Stab damage to random enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["15"],
@@ -3099,7 +3099,7 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Gorm Glas",
             "Description": "Place a buff on an ally row for 3 turns, which increases evasion.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "8"],
@@ -3111,7 +3111,7 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Warped Mechablade",
             "Description": "Place a buff on an ally row for 3 turns, which increases physical resistances.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["12"],
@@ -3123,7 +3123,7 @@ var data = {
             "Usage": "Active (Head, STR, LUC)",
             "Unlock": "The Answerer",
             "Description": "Deal melee Bash damage to one enemy, with splash effect and a chance to inflict Petrify.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["17"],
@@ -3139,7 +3139,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Cross Knife",
             "Description": "Deal melee Stab damage to one enemy, with a chance to inflict Panic.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5"],
@@ -3153,7 +3153,7 @@ var data = {
             "Usage": "Active (Legs)",
             "Unlock": "Rose Knife",
             "Description": "Place a debuff on all enemies for 3 turns, which decreases accuracy.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7"],
@@ -3165,7 +3165,7 @@ var data = {
             "Usage": "Active (Legs, STR, LUC)",
             "Unlock": "Shadow Piercer",
             "Description": "Deal melee Stab damage to one enemy, with pierce effect and a chance to inflict Poison.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["10"],
@@ -3180,7 +3180,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Phurba",
             "Description": "Deal melee Cut damage to one enemy. Places a debuff on the target for 3 turns, which decreases ailment resistance.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "12"],
@@ -3194,7 +3194,7 @@ var data = {
             "Usage": "Active (Legs, STR, LUC)",
             "Unlock": "Metalfoot Knife",
             "Description": "Deal melee Bash damage to one enemy, with splash effect and a chance to inflict Arm Bind and Leg Bind.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "12"],
@@ -3208,7 +3208,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Futsuno Mitama",
             "Description": "Deal melee Stab damage to one enemy, with pierce effect. Places a debuff on the targets for 3 turns, which decreases accuracy.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["20"],
@@ -3224,7 +3224,7 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Shiden",
             "Description": "Deal ranged Cut damage to one enemy. Activates at the start of the turn.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5"],
@@ -3236,7 +3236,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Whirlwind",
             "Description": "Deal melee Cut damage to an enemy row, with a chance to inflict Curse.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["7"],
@@ -3250,7 +3250,7 @@ var data = {
             "Usage": "Active (Legs, LUC)",
             "Unlock": "Snailblade",
             "Description": "Attempt to inflict Sleep on all enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7"],
@@ -3262,7 +3262,7 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Peacemaker",
             "Description": "Deal ranged Stab damage to all enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["14", "14", "14", "14", "14"],
@@ -3275,7 +3275,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Terminator",
             "Description": "Deal 3~5 hits of ranged Bash damage to random enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["15"],
@@ -3288,7 +3288,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Great Mountain",
             "Description": "Deal melee Bash damage to all enemies.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["30"],
@@ -3303,7 +3303,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Kakushu",
             "Description": "Deal melee Stab damage to one enemy, with a chance to inflict Blind.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["3"],
@@ -3317,7 +3317,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Loose Fist",
             "Description": "Deal melee Bash damage to an enemy row.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["9"],
@@ -3330,7 +3330,7 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Nicothoe Duster",
             "Description": "Place a debuff on all enemies for 3 turns, which decreases bind/ailment resistance.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["8"],
@@ -3342,7 +3342,7 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Zaftfaust",
             "Description": "Restore HP to yourself and your adjacent allies. Healing is based on your Max HP.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -3354,7 +3354,7 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "Jeweled Fist",
             "Description": "Start multiple enemy encounters in a row, with an increased chance of Rare Breeds appearing.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2", "2", "5"],
@@ -3367,7 +3367,7 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Gryphbreaker",
             "Description": "Deal melee Cut damage to all enemies. Places a debuff on the targets for 3 turns, which decreases physical damage dealt.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["21"],
@@ -3381,7 +3381,7 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Demon Fist",
             "Description": "Deal melee Cut damage to an enemy row.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["9"],
@@ -3394,7 +3394,7 @@ var data = {
             "Usage": "Active (Head, STR, LUC)",
             "Unlock": "Crawler Knuckles",
             "Description": "Deal 4~6 hits of melee Cut damage to random enemies (max once each), with a chance to inflict Poison.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["15"],
@@ -3409,7 +3409,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Blast Piledriver",
             "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Instant Death.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["13"],
@@ -3423,7 +3423,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Polydeuces",
             "Description": "Deal melee Bash damage to all enemies, with a chance to inflict Paralysis.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["25"],
@@ -3439,7 +3439,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Thorn Scythe",
             "Description": "Deal melee Cut damage to an enemy row, with a chance to inflict Arm Bind.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -3453,7 +3453,7 @@ var data = {
             "Usage": "Active (Legs)",
             "Unlock": "Fossil Scythe",
             "Description": "Place a buff on the whole party for 3 turns, which decreases physical damage taken.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7"],
@@ -3465,7 +3465,7 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Vogeljagd",
             "Description": "Deal melee Cut damage to one enemy. Has very low accuracy.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["7"],
@@ -3478,7 +3478,7 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Silent Scythe",
             "Description": "Deal melee Cut damage to one enemy, with a chance to inflict Petrify.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10"],
@@ -3492,7 +3492,7 @@ var data = {
             "Usage": "Active (Arms, INT)",
             "Unlock": "Frigid Scythe",
             "Description": "Deal 3~5 hits of ranged Ice damage to random enemies. Has very low accuracy.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["12"],
@@ -3505,7 +3505,7 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Lunar Scraper",
             "Description": "Place a buff on the whole party for 3 turns, which increases physical damage dealt.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10"],
@@ -3517,7 +3517,7 @@ var data = {
             "Usage": "Active (Legs, STR, LUC)",
             "Unlock": "Cradle Edge",
             "Description": "Deal 2~4 hits of melee Cut damage to random enemies (max once each), with a chance to inflict Head, Arm and Leg Bind.",
-            "Starter": "1",
+            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["28"],
@@ -3528,6 +3528,248 @@ var data = {
             }
         },
     },
+},
+"Battle Items":{
+    "Healing":{
+        "Medica / Medica II / Medica III / Medica IV":{
+            "Usage": "20 / 80 / 200 / 1.000 en",
+            "Unlock": "N/A / Mint / Crabapple / Milkvetch",
+            "Description": "Restores HP to one ally.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Levels": ["1", "2", "3", "4"],
+            "Data": {
+                "HP Gain": ["50", "100", "200", "500"],
+            }
+        },
+        "Soma / Soma Prime":{
+            "Usage": "800 / 4.000 en",
+            "Unlock": "Melted Ice Core / Madhuca",
+            "Description": "Restores HP to all allies.",
+            "Starter": "0",
+            "Max Level": "2",
+            "Levels": ["1", "2"],
+            "Data": {
+                "HP Gain": ["100", "200"],
+            }
+        },
+        "Amrita / Amrita II":{
+            "Usage": "1.200 / 8.000 en",
+            "Unlock": "Tranquilized Gel / Pineapple Syrup",
+            "Description": "Restores TP to one ally.",
+            "Starter": "0",
+            "Max Level": "2",
+            "Levels": ["1", "2"],
+            "Data": {
+                "TP Gain": ["40", "100"],
+            }
+        },
+        "Hamao / Hamao Prime":{
+            "Usage": "250 / 3.000 en",
+            "Unlock": "Anra Fruit / Grenada",
+            "Description": "Restores HP and TP to one ally.",
+            "Starter": "0",
+            "Max Level": "2",
+            "Levels": ["1", "2"],
+            "Data": {
+                "HP Gain": ["100", "250"],
+                "TP Gain": ["20", "50"],
+            }
+        },
+        "Nectar / Nectar II":{
+            "Usage": "300 / 5.000 en",
+            "Unlock": "Culantro / Ambrosia",
+            "Description": "Revives one ally.",
+            "Starter": "0",
+            "Max Level": "2",
+            "Levels": ["1", "2"],
+            "Data": {
+                "HP Gain": ["20", "200"],
+            }
+        },
+    },
+    "Status":{
+        "Theriaca α / Theriaca β":{
+            "Usage": "100 en",
+            "Unlock": "Forest Aloe / Small Flower",
+            "Description": "Respectively removes binds or ailments from one ally.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Laudanum":{
+            "Usage": "2.500 en",
+            "Unlock": "Nasturtium",
+            "Description": "Removes all buffs and debuffs on one enemy.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Unihorn":{
+            "Usage": "2.500 en",
+            "Unlock": "Matricaria",
+            "Description": "Removes all buffs and debuffs on the whole party.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+    },
+    "Power Up":{
+        "Bravant":{
+            "Usage": "350 en",
+            "Unlock": "Sweet Leaf",
+            "Description": "Places a buff on one ally for 5 turns, which increases physical damage dealt.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "Damage Dealt": ["+40%"],
+            }
+        },
+        "Stonard":{
+            "Usage": "350 en",
+            "Unlock": "Longan",
+            "Description": "Places a buff on one ally for 5 turns, which decreases physical damage taken.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "Damage Taken": ["-30%"],
+            }
+        },
+        "Axcela":{
+            "Usage": "2.000 en",
+            "Unlock": "Scarlet Sugar",
+            "Description": "Restores Force to one ally.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "Force Gain": ["25%"],
+            }
+        },
+        "Blaze/Freeze/Shock Oil":{
+            "Usage": "30 en",
+            "Unlock": "Burst Stink Gland",
+            "Description": "Places a buff on one ally for 5 turns, which imbues their weapon with Fire/Ice/Volt damage.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Fire/Ice/Volt Mist":{
+            "Usage": "800 en",
+            "Unlock": "Mist Flower",
+            "Description": "Places a buff on all allies for 5 turns, which increases resistance to Fire/Ice/Volt.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "Resistance Up": ["+35%"],
+            }
+        },
+        "All Mist":{
+            "Usage": "3.000 en",
+            "Unlock": "Oleander",
+            "Description": "Places a buff on all allies for 5 turns, which increases resistance to Fire, Ice and Volt.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "Resistance Up": ["+25%"],
+            }
+        },
+    },
+    "Attack (INT)":{
+        "Fire/Ice/Volt Talisman":{
+            "Usage": "200 en",
+            "Unlock": "Spewing Peapod",
+            "Description": "Deals ranged Fire/Ice/Volt damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "Attack Power": ["125%"],
+                "Action Speed": ["90%"],
+            }
+        },
+        "Flame/Freeze/Shock Talisman":{
+            "Usage": "1.000 en",
+            "Unlock": "Dried Stalk",
+            "Description": "Deals ranged Fire/Ice/Volt damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "Attack Power": ["140%"],
+                "Action Speed": ["90%"],
+            }
+        },
+        "Cut/Bash/Stab Talisman":{
+            "Usage": "700 en",
+            "Unlock": "Conical Fruit",
+            "Description": "Deals ranged Cut/Bash/Stab damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "Attack Power": ["140%"],
+                "Action Speed": ["80%"],
+            }
+        },
+    },
+    "Infliction (LUC)":{
+        "Poison/Blind/Stun/Sleep/Curse/Confuse/Petrify Gas":{
+            "Usage": "250 en",
+            "Unlock": "Poison Ferrule / Green Thorn / Big Shell / Sticky Goo /\nSpherical Bone / Caterpillar Fang / Cockatrice Tail",
+            "Description": "Respectively attempts to inflict Poison, Blind, Paralysis, Sleep, Curse, Panic or Petrify on all enemies.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["Poi", "Bli", "Par", "Sle", "Cur", "Pan", "Pet"],
+            "Data": {
+                "Infliction Chance": ["45%", "40%", "40%", "50%", "50%", "30%", "30%"],
+                "Poison Damage": ["50", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Head/Arm/Leg Binder":{
+            "Usage": "250 en",
+            "Unlock": "Faerie Wings",
+            "Description": "Respectively attempts to inflict Head Bind, Arm Bind or Leg Bind on all enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "Infliction Chance": ["30%"],
+                "Action Speed": ["80%"],
+            }
+        },
+    },
+    "Rewards":{
+        "Formaldehyde":{
+            "Usage": "5.000 en",
+            "Unlock": "Screaming Snout",
+            "Description": "Until the end of turn, enemies killed will drop all their materials.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Heavenly Gift":{
+            "Usage": "3.000 en",
+            "Unlock": "Sea Grapes",
+            "Description": "Increases EXP earned this battle. (Repeated uses do not stack)",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "EXP Up": ["+100%"],
+            }
+        },
+    }
 },
 }
 
@@ -3554,6 +3796,7 @@ var descriptions = {
     "Pugilist":"Brawlers who fight with their own Fists. They use combos of precise punches to quickly disable the enemy.",
     "Harbinger":"Reapers who summon noxious Miasma, spreading it to weaken the enemy or to ward off their attacks.",
     "Weapon Skills":"Skills borrowed from certain weapons.",
+    "Battle Items":"Consumable items meant to aid you in battle.",
 }
 
 function toggle_data(table_id){
@@ -3640,7 +3883,7 @@ function populate(class_name){
             for (let i = 1; i <= current_skill["Max Level"]; i++){
                 level = document.createElement("th")
                 levels_row.appendChild(level)
-                if (category == "Force"){
+                if (current_skill.hasOwnProperty("Levels")){
                     level.innerText = current_skill["Levels"][i-1]
                 }
                 else{
