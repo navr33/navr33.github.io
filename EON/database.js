@@ -2246,12 +2246,12 @@ var data = {
         "Double Action":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "Gun skills are performed twice. For attack skills, the second instance deals reduced damage.",
+            "Description": "Gun skills are performed twice. The second instance has decreased attack/healing power.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
-                "Damage Dealt\n(Second Attack)": ["x0.4"],
+                "Effect Down": ["x0.4"],
             }
         },
         "Riot Gun":{
@@ -2268,13 +2268,301 @@ var data = {
         },
     },
     "Novice (Lv 1)":{
-
+        "Rapid Fire":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Deal 3 hits of ranged Stab damage to one enemy.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "8", "8", "8", "8", "12"],
+                "Attack Power": ["75%", "79%", "83%", "95%", "99%", "103%", "107%", "130%"],
+                "Accuracy": ["-25%", "-25%", "-25%", "-25%", "-25%", "-25%", "-25%", "-25%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Splash Shot":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Rapid Fire (Lv 3)",
+            "Description": "Deal ranged Stab damage to one enemy, with splash effect.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "11", "11", "11", "11", "15"],
+                "Attack Power": ["180%", "188%", "196%", "226%", "234%", "242%", "250%", "300%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Leg Snipe":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Leg Bind. Cannot miss.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "13"],
+                "Attack Power": ["160%", "166%", "172%", "178%", "198%", "204%", "210%", "216%", "222%", "260%"],
+                "Infliction Chance": ["40%", "40%", "40%", "40%", "50%", "50%", "50%", "50%", "50%", "60%"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
+            }
+        },
+        "Arm Snipe":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Leg Snipe (Lv 2)",
+            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Arm Bind. Cannot miss.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "13"],
+                "Attack Power": ["160%", "166%", "172%", "178%", "198%", "204%", "210%", "216%", "222%", "260%"],
+                "Infliction Chance": ["40%", "40%", "40%", "40%", "50%", "50%", "50%", "50%", "50%", "60%"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
+            }
+        },
+        "Cover Support":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "When you Defend in the back line, restore HP to the front line.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "HP Gain": ["8+5%", "9+6%", "10+7%", "11+8%", "12+9%", "15+15%"],
+            }
+        },
+        "Shell Shock":{
+            "Usage": "Active (Arms, LUC)",
+            "Unlock": "Cover Support (Lv 2)",
+            "Description": "Weaken the enemy back line for this turn, which decreases their offense, defense, accuracy and evasion. Also attempts to inflict Stun.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "7"],
+                "Damage Dealt": ["-15%", "-17%", "-19%", "-25%"],
+                "Damage Taken": ["+15%", "+18%", "+21%", "+30%"],
+                "Accuracy": ["-10%", "-11%", "-12%", "-15%"],
+                "Evasion": ["-15%", "-18%", "-21%", "-30%"],
+                "Infliction Chance": ["40%", "45%", "50%", "65%"],
+                "Action Speed": ["300%", "300%", "300%", "300%"],
+            }
+        },
+        "Medic Bullet":{
+            "Usage": "Active (Arms, WIS)",
+            "Unlock": "N/A",
+            "Description": "Restore HP and remove ailments for one ally.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "6", "10"],
+                "Fixed HP Gain": ["15", "19", "23", "27", "31", "50"],
+                "Healing Power": ["10%", "14%", "18%", "22%", "26%", "40%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "250%"],
+            }
+        },
+        "Pop Flare":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Place a buff on the whole party for 3 turns, which increases accuracy.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "4", "7"],
+                "Accuracy Up": ["+15%", "+16.5%", "+18%", "+19.5%", "+21%", "+30%"],
+                "Action Speed": ["40%", "60%", "80%", "100%", "120%", "200%"],
+            }
+        },
+        "Mine":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "Feint Shot":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Splash Shot (Lv 2)",
+            "Description": "Deal ranged Stab damage to an enemy line. Places a debuff on the targets for 3 turns, which decreases evasion.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "17"],
+                "Attack Power": ["150%", "158%", "166%", "174%", "182%", "220%"],
+                "Evasion Down": ["-10%", "-11.5%", "-13%", "-14.5%", "-16%", "-25%"],
+                "Accuracy": ["+0%", "+15%", "+30%", "+45%", "+50%", "+100%"],
+                "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%"],
+            }
+        },
+        "Scattershot":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Feint Shot (Lv 2)",
+            "Description": "Deal ranged Stab damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "18", "18", "18", "18", "24"],
+                "Attack Power": ["170%", "178%", "186%", "211%", "219%", "227%", "235%", "275%"],
+                "Accuracy": ["-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Head Snipe":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Head Bind. Cannot miss.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "13"],
+                "Attack Power": ["160%", "166%", "172%", "178%", "198%", "204%", "210%", "216%", "222%", "260%"],
+                "Infliction Chance": ["40%", "40%", "40%", "40%", "50%", "50%", "50%", "50%", "50%", "60%"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
+            }
+        },
+        "Act Quick":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Enter a charge state until the end of next turn, which increases action speed and decreases TP costs.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2"],
+                "Speed Up": ["x10.0", "x10.0", "x10.0", "x10.0"],
+                "TP Costs Down": ["x0.9", "x0.6", "x0.45", "0.25"],
+                "Action Speed": ["50%", "50%", "50%", "50%"],
+            }
+        },
+        "Charged Shot":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Act Quick (Lv 2)",
+            "Description": "Deal ranged Stab damage to one enemy. Increase damage taken by 100% until it activates.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "19", "19", "19", "19", "19", "24"],
+                "Attack Power": ["500%", "515%", "530%", "545%", "605%", "625%", "645%", "665%", "685%", "820%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["30%", "30%", "30%", "30%", "30%", "30%", "30%", "30%", "30%", "30%"],
+            }
+        },
+        "Preemptive Fire":{
+            "Usage": "Passive",
+            "Unlock": "Shell Shock (Lv 1)",
+            "Description": "Chance to automatically activate Shell Shock at the start of battle.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Action Speed": ["20%", "26%", "32%", "38%", "44%", "67%"],
+            }
+        },
+        "Preemptive Flare":{
+            "Usage": "Passive",
+            "Unlock": "Pop Flare (Lv 2)",
+            "Description": "Chance to automatically activate Pop Flare at the start of battle.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Action Speed": ["15%", "20%", "25%", "30%", "35%", "50%"],
+            }
+        },
+        "Penetrator":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Single-hit, single-target attacks have a chance to gain pierce effect.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Action Speed": ["18%", "23%", "28%", "33%", "38%", "43%", "48%", "66%"],
+            }
+        },
+        "TP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max HP.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "HP Up": ["+7%", "+9%", "+11%", "+17%", "+19%", "+21%", "+23%", "+30%"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "Ricochet":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Scattershot (Lv 2)",
+            "Description": "Deal multiple hits of ranged Stab damage to random enemies. Very innacurate.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "27", "27", "27", "27", "27", "35"],
+                "Attack Power": ["134%", "140%", "146%", "152%", "152%", "159%", "166%", "173%", "180%", "180%"],
+                "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3"],
+                "Max. Hits": ["5", "5", "5", "5", "6", "6", "6", "6", "6", "7"],
+                "Accuracy": ["-60%", "-60%", "-60%", "-60%", "-60%", "-60%", "-60%", "-60%", "-60%", "-60%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Charged Fire":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Charged Shot (Lv 3)",
+            "Description": "Deal ranged Stab+Fire damage to one enemy. Increase damage taken by 100% until it activates.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["18", "18", "18", "18", "18", "30"],
+                "Attack Power": ["400%", "425%", "450%", "475%", "500%", "640%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["30%", "30%", "30%", "30%", "30%", "30%"],
+            }
+        },
+        "Charged Ice":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Charged Shot (Lv 3)",
+            "Description": "Deal ranged Stab+Ice damage to one enemy. Increase damage taken by 100% until it activates.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["18", "18", "18", "18", "18", "30"],
+                "Attack Power": ["400%", "425%", "450%", "475%", "500%", "640%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["30%", "30%", "30%", "30%", "30%", "30%"],
+            }
+        },
+        "Charged Volt":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Charged Shot (Lv 3)",
+            "Description": "Deal ranged Stab+Volt damage to one enemy. Increase damage taken by 100% until it activates.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["18", "18", "18", "18", "18", "30"],
+                "Attack Power": ["400%", "425%", "450%", "475%", "500%", "640%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["30%", "30%", "30%", "30%", "30%", "30%"],
+            }
+        },
+        "Phys ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase physical damage dealt.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Damage Dealt": ["+4%", "+5%", "+6%", "+9%", "+10%", "+11%", "+12%", "+15%"],
+            }
+        },
+        "Multi-Shot":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Chance for attack skills to be activated an additional time.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Activation Chance": ["4%", "5%", "6%", "7%", "8%", "9%", "10%", "15%"],
+            }
+        },
     },
 },
 "Sovereign":{
