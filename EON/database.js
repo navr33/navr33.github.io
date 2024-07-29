@@ -336,7 +336,7 @@ var data = {
         "Shield Protect":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "When your class protection skills decrease damage to a party member, apply an additional damage reduction.",
+            "Description": "When a Guard skill decreases damage to a party member, apply an additional damage reduction.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -358,7 +358,7 @@ var data = {
         "Front Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Shield: Protect the front line for this turn, which decreases physical damage taken.",
+            "Description": "(Guard) Shield: Protect the front line for this turn, which decreases physical damage taken.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -369,7 +369,7 @@ var data = {
         "Rear Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "Front Guard (Lv 2)",
-            "Description": "Shield: Protect the back line for this turn, which decreases physical damage taken.",
+            "Description": "(Guard) Shield: Protect the back line for this turn, which decreases physical damage taken.",
             "Starter": "0",
             "Max Level": "4",
             "Data": {
@@ -380,7 +380,7 @@ var data = {
         "Ally Shield":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Shield: Protect one ally for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
+            "Description": "(Guard) Shield: Protect one ally for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -462,7 +462,7 @@ var data = {
         "Recovery Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "Rear Guard (Lv 1)",
-            "Description": "Shield: Protect an ally line for this turn, which removes binds and decreases physical damage taken.",
+            "Description": "(Guard) Shield: Protect an ally line for this turn, which removes binds and decreases physical damage taken.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -497,7 +497,7 @@ var data = {
         "Keep Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Shield: Protect one ally until the end of next turn, which decreases physical/elemental damage taken. While active, you cannot use other protection skills.",
+            "Description": "(Guard) Shield: Protect one ally until the end of next turn, which decreases physical/elemental damage taken. While active, you cannot use other protection skills.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -528,7 +528,7 @@ var data = {
         "Fire Wall":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Shield: Protect the whole party for this turn, which decreases Fire damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
+            "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases Fire damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -540,7 +540,7 @@ var data = {
         "Ice Wall":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Shield: Protect the whole party for this turn, which decreases Ice damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
+            "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases Ice damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -552,7 +552,7 @@ var data = {
         "Volt Wall":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Shield: Protect the whole party for this turn, which decreases Volt damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
+            "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases Volt damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -576,7 +576,7 @@ var data = {
         "Heal Guard":{
             "Usage": "Active (Arms, WIS)",
             "Unlock": "Recovery Guard (Lv 2)",
-            "Description": "Shield: Protect an ally line for this turn, which restores HP and decreases physical damage taken.",
+            "Description": "(Guard) Shield: Protect an ally line for this turn, which restores HP and decreases physical damage taken.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -588,7 +588,7 @@ var data = {
         "Line Shield":{
             "Usage": "Active (Arms)",
             "Unlock": "Aegis (Lv 3)",
-            "Description": "Shield: Protect an ally line for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
+            "Description": "(Guard) Shield: Protect an ally line for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -622,7 +622,7 @@ var data = {
         "Full Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "Fire Wall (Lv 2), Ice Wall (Lv 2), Volt Wall (Lv 2)",
-            "Description": "Shield: Protect the whole party for this turn, which decreases all attack damage taken. Afterwards, this skill becomes disabled for several turns.",
+            "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases all attack damage taken. Afterwards, this skill becomes disabled for several turns.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -638,7 +638,7 @@ var data = {
         "Intensive Care":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "Increase action speed, increase HP restored by your class healing skills and decrease their TP costs. (Also powers up TP restoration from items)",
+            "Description": "Increase action speed, increase HP restored by First Aid skills and decrease their TP costs. (Also powers up TP restoration from items)",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -664,7 +664,7 @@ var data = {
         "Healing":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "N/A",
-            "Description": "Restore HP to one ally.",
+            "Description": "(First Aid) Restore HP to one ally.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -676,7 +676,7 @@ var data = {
         "Line Heal":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Healing (Lv 3)",
-            "Description": "Restore HP to an ally line.",
+            "Description": "(First Aid) Restore HP to an ally line.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -688,7 +688,7 @@ var data = {
         "Refresh":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Remove ailments from target allies.",
+            "Description": "(First Aid) Remove ailments from target allies.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -700,7 +700,7 @@ var data = {
         "Revive":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Revive one ally, restoring a certain amount of HP.",
+            "Description": "(First Aid) Revive one ally, restoring a certain amount of HP.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -766,7 +766,7 @@ var data = {
         "Delayed Heal":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Line Heal (Lv 2)",
-            "Description": "Prepare yourself to restore HP to the whole party at the start of the next turn. (Cannot use it again while it's in preparation)",
+            "Description": "(First Aid) Prepare yourself to restore HP to the whole party at the start of the next turn. (Cannot use it again while it's in preparation)",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -777,7 +777,7 @@ var data = {
         "Unbind":{
             "Usage": "Active (Head)",
             "Unlock": "Refresh (Lv 2)",
-            "Description": "Remove all binds from target allies.",
+            "Description": "(First Aid) Remove all binds from target allies.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -789,7 +789,7 @@ var data = {
         "Group Therapy":{
             "Usage": "Active (Head)",
             "Unlock": "Unbind (Lv 1)",
-            "Description": "Place a buff on yourself for 3~5 turns, which increases the area of effect (Single → Line → Party) of your class healing skills but decreases their action speed and HP restored.",
+            "Description": "Place a buff on yourself for 3~5 turns, which increases the area of effect (Single → Line → Party) of First Aid skills but decreases their action speed and HP restored.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -875,7 +875,7 @@ var data = {
         "Heal-All":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Delayed Heal (Lv 3)",
-            "Description": "Restore HP to the whole party.",
+            "Description": "(First Aid) Restore HP to the whole party.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -887,7 +887,7 @@ var data = {
         "Chase Heal":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Delayed Heal (Lv 3)",
-            "Description": "Prepare to heal allies each time they're hit this turn. Activation chance starts at 100% but goes down with each activation. There's a limit on how many times it can activate on each ally.",
+            "Description": "(First Aid) Prepare to heal allies each time they're hit this turn. Activation chance starts at 100% but goes down with each activation. There's a limit on how many times it can activate on each ally.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -901,7 +901,7 @@ var data = {
         "Overheal":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "During battle, excess healing from your class skills increases the target's Max HP (up to a certain cap) until the end of the turn.",
+            "Description": "During battle, excess healing from First Aid skills increases the target's Max HP (up to a certain cap) until the end of the turn.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -911,7 +911,7 @@ var data = {
         "Deja Vu":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on the whole party for 5~9 turns, which at the end of each turn repeats the effect (with decreased potency) of the last Medic healing skill they have received since this buff was applied.",
+            "Description": "Place a buff on the whole party for 5~9 turns, which at the end of each turn repeats the effect (with decreased potency) of the last First Aid skill they have received since this buff was applied.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1661,7 +1661,7 @@ var data = {
         "Strength Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Random Disease (Lv 1)",
-            "Description": "War Edge(Sword): Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, place a debuff on them for 7 turns, which decreases all damage dealt.",
+            "Description": "(War Edge) Sword: Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, place a debuff on them for 7 turns, which decreases all damage dealt.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -1675,7 +1675,7 @@ var data = {
         "Guard Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Random Disease (Lv 1)",
-            "Description": "War Edge(Sword): Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, place a debuff on them for 7 turns, which increases all damage taken.",
+            "Description": "(War Edge) Sword: Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, place a debuff on them for 7 turns, which increases all damage taken.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -1769,7 +1769,7 @@ var data = {
         "Headcut":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Strength Slash (Lv 2)",
-            "Description": "War Edge(Sword): Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, attempt to inflict Head Bind.",
+            "Description": "(War Edge) Sword: Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, attempt to inflict Head Bind.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1783,7 +1783,7 @@ var data = {
         "Armcut":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Guard Slash (Lv 2)",
-            "Description": "War Edge(Sword): Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, attempt to inflict Arm Bind.",
+            "Description": "(War Edge) Sword: Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, attempt to inflict Arm Bind.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -1797,7 +1797,7 @@ var data = {
         "Legcut":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Headcut (Lv 2), Armcut (Lv 2)",
-            "Description": "War Edge(Sword): Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, attempt to inflict Leg Bind.",
+            "Description": "(War Edge) Sword: Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, attempt to inflict Leg Bind.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -1811,7 +1811,7 @@ var data = {
         "Rouse":{
             "Usage": "Passive",
             "Unlock": "Vampire (Lv 2)",
-            "Description": "Increase Force Gauge gains for each enemy afflicted with a bind.",
+            "Description": "Increase Force Gauge gains for each enemy that's afflicted with a bind.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -1866,7 +1866,7 @@ var data = {
         "Ailing Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Legcut (Lv 3)",
-            "Description": "War Edge(Sword): Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, increase damage dealt by 150%.",
+            "Description": "(War Edge) Sword: Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, increase damage dealt by 150%.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -2271,7 +2271,7 @@ var data = {
         "Rapid Fire":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Deal 3 hits of ranged Stab damage to one enemy.",
+            "Description": "Deal 3 hits of ranged Stab damage to one enemy. Fast but inaccurate.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2297,7 +2297,7 @@ var data = {
         "Leg Snipe":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
-            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Leg Bind. Cannot miss.",
+            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Leg Bind. Slow but cannot miss.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2310,7 +2310,7 @@ var data = {
         "Arm Snipe":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Leg Snipe (Lv 2)",
-            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Arm Bind. Cannot miss.",
+            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Arm Bind. Slow but cannot miss.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2323,7 +2323,7 @@ var data = {
         "Cover Support":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "When you Defend in the back line, restore HP to the front line.",
+            "Description": "When you Defend in the back line, restore HP to the front line. Healing is based on each unit's Max HP.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -2349,7 +2349,7 @@ var data = {
         "Medic Bullet":{
             "Usage": "Active (Arms, WIS)",
             "Unlock": "N/A",
-            "Description": "Restore HP and remove ailments for one ally.",
+            "Description": "Gun: Restore HP and remove ailments for one ally.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -2411,7 +2411,7 @@ var data = {
         "Head Snipe":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
-            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Head Bind. Cannot miss.",
+            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Head Bind. Slow but cannot miss.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2587,13 +2587,292 @@ var data = {
         },
     },
     "Novice (Lv 1)":{
-
+        "Attack Order":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "(Order) Place a buff on an ally line for 3~5 turns, which increases damage dealt.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "8", "8", "8", "8", "13"],
+                "Damage Dealt": ["+17%", "+20%", "+23%", "+23%", "+27%", "+31%", "+35%", "+35%"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Action Speed": ["125%", "125%", "125%", "175%", "175%", "175%", "175%", "250%"],
+            }
+        },
+        "Fire Arms":{
+            "Usage": "Active (Head)",
+            "Unlock": "Attack Order (Lv 2)",
+            "Description": "Place a buff on an ally line for 3~5 turns, which increases Fire damage dealt and imbues their weapons with Fire damage.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "11", "11", "11", "11", "17"],
+                "Damage Dealt": ["x1.05", "x1.1", "x1.15", "x1.15", "x1.2", "x1.25", "x1.3", "x1.3"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Action Speed": ["125%", "125%", "125%", "175%", "175%", "175%", "175%", "250%"],
+            }
+        },
+        "Freeze Arms":{
+            "Usage": "Active (Head)",
+            "Unlock": "Attack Order (Lv 2)",
+            "Description": "Place a buff on an ally line for 3~5 turns, which increases Ice damage dealt and imbues their weapons with Ice damage.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "11", "11", "11", "11", "17"],
+                "Damage Dealt": ["x1.05", "x1.1", "x1.15", "x1.15", "x1.2", "x1.25", "x1.3", "x1.3"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Action Speed": ["125%", "125%", "125%", "175%", "175%", "175%", "175%", "250%"],
+            }
+        },
+        "Shock Arms":{
+            "Usage": "Active (Head)",
+            "Unlock": "Attack Order (Lv 2)",
+            "Description": "Place a buff on an ally line for 3~5 turns, which increases Volt damage dealt and imbues their weapons with Volt damage.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "11", "11", "11", "11", "17"],
+                "Damage Dealt": ["x1.05", "x1.1", "x1.15", "x1.15", "x1.2", "x1.25", "x1.3", "x1.3"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Action Speed": ["125%", "125%", "125%", "175%", "175%", "175%", "175%", "250%"],
+            }
+        },
+        "Guard Order":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "(Order) Place a buff on an ally line for 3~5 turns, which decreases damage taken.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "8", "8", "8", "8", "13"],
+                "Damage Taken": ["-15%", "-17%", "-19%", "-19%", "-21%", "-23%", "-25%", "-25%"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Action Speed": ["125%", "125%", "125%", "175%", "175%", "175%", "175%", "250%"],
+            }
+        },
+        "Reinforce":{
+            "Usage": "Passive (WIS)",
+            "Unlock": "Guard Order (Lv 2)",
+            "Description": "Restore HP to allies when you place a buff on them.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Healing Power": ["40%", "44%", "48%", "52%", "64%", "68%", "72%", "76%", "80%", "100%"],
+            }
+        },
+        "Royal Veil":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "At the end of each turn, if your HP is full, restore HP to all allies. Healing is based on each unit's Max HP. (Does not stack)",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "HP Gain": ["6+5%", "8+6%", "10+7%", "15+10%"],
+            }
+        },
+        "Monarch March":{
+            "Usage": "Passive (Field)",
+            "Unlock": "Royal Veil (Lv 2)",
+            "Description": "Restore HP to the whole party for every 3 steps taken.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "HP Gain": ["2", "3", "5", "10"],
+            }
+        },
+        "Negotiation":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Dispel 1 buff and 1 debuff from one ally. Restore HP and TP to them if one effect type was dispelled, doubled if both.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "2", "2"],
+                "HP Gain": ["45+22.5%", "52.5+30%", "60+37.5%", "67.5+45%", "75+52.5%", "112.5+90%"],
+                "TP Gain": ["1.5+1.5%", "3+1.5%", "4.5+1.5%", "6+1.5%", "7.5+1.5%", "12+4.5%"],
+                "Action Speed": ["300%", "300%", "300%", "300%", "300%", "300%"],
+            }
+        },
+        "Take":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Take points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "Royal Dignity":{
+            "Usage": "Passive (WIS)",
+            "Unlock": "N/A",
+            "Description": "Once per turn, if you have a buff, recover HP when attacked.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Healing Power": ["40%", "50%", "60%", "70%", "80%", "120%"],
+            }
+        },
+        "Royal Lineage":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Recover TP each time you receive a buff. (Does not activate if the buff cancelled a debuff)",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Gain": ["2", "3", "4", "5", "6", "8"],
+            }
+        },
+        "Element Bomb I":{
+            "Usage": "Active (Arms, INT)",
+            "Unlock": "Fire/Freeze/Shock Arms (Lv 1)",
+            "Description": "Dispel an elemental imbue on one ally. If successful, deal ranged damage of that element to all enemies.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "23"],
+                "Attack Power": ["150%", "155%", "160%", "165%", "180%", "186%", "192%", "198%", "204%", "235%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["75%", "75%", "75%", "75%", "75%", "75%", "75%", "75%", "75%", "75%"],
+            }
+        },
+        "Rally Order":{
+            "Usage": "Active (Head)",
+            "Unlock": "Reinforce (Lv 2)",
+            "Description": "(Order) Place a buff on an ally line for 3~5 turns, which increases Max HP.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "11", "11", "11", "11", "17"],
+                "HP Up": ["+20%", "+25%", "+30%", "+30%", "+35%", "+40%", "+45%", "+45%"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Action Speed": ["125%", "125%", "125%", "175%", "175%", "175%", "175%", "250%"],
+            }
+        },
+        "Protect Order":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "Reinforce (Lv 2)",
+            "Description": "(Order) Place a buff on an ally line for 3~5 turns, which restores HP at the end of each turn.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "13", "13", "13", "13", "20"],
+                "Healing Power": ["35%", "44%", "53%", "53%", "62%", "71%", "80%", "80%"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Prevent Order":{
+            "Usage": "Active (Head)",
+            "Unlock": "Rally Order (Lv 2), Protect Order (Lv 2)",
+            "Description": "(Order) Place a buff on an ally line for 3~5 turns, which has a chance to block bind/ailment inflictions. (Buff is consumed when activated)",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "17", "17", "17", "17", "24"],
+                "Activation Chance": ["60%", "62%", "64%", "71%", "73%", "75%", "77%", "85%"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Action Speed": ["125%", "125%", "125%", "175%", "175%", "175%", "175%", "250%"],
+            }
+        },
+        "Tactical Decree":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "For this turn, allies with buffs will recover TP based on their damage taken.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "4", "6"],
+                "Damage Drain": ["6%", "7%", "8%", "9%", "10%", "15%"],
+            }
+        },
+        "Healing Decree":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "For this turn, allies with buffs will recover HP based on their damage dealt.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "5"],
+                "Damage Drain": ["20%", "22%", "24%", "26%", "28%", "40%"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "Status DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Infliction Vulnerability": ["x0.92", "x0.91", "x0.9", "x0.85", "x0.84", "x0.83", "x0.82", "x0.75"],
+            }
+        },
+        "Element Bomb II":{
+            "Usage": "Active (Arms, INT)",
+            "Unlock": "Element Bomb I (Lv 3)",
+            "Description": "Dispel an elemental imbue on one ally. If successful, deal 3 ranged hits of that element to random enemies.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "23"],
+                "Attack Power": ["70%", "72%", "75%", "77%", "85%", "88%", "90%", "93%", "95%", "110%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["75%", "75%", "75%", "75%", "75%", "75%", "75%", "75%", "75%", "75%"],
+            }
+        },
+        "Clearance":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Dispel all ally buffs, ally debuffs, enemy buffs and enemy debuffs, then restore HP and TP to the whole party based on the amount of buffs/debuffs dispelled. (Base healing is multiplied by amount of dispells squared. This caps at x400 at 20 dispells, and each dispell beyond that instead adds 20 to this multiplier)",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20"],
+                "HP Gain": ["0.75", "1", "1.25", "2"],
+                "TP Gain": ["0.0375", "0.05", "0.0625", "0.1"],
+            }
+        },
+        "Dauntless Order":{
+            "Usage": "Active (Head)",
+            "Unlock": "Prevent Order (Lv 1)",
+            "Description": "(Order) Place a buff on an ally line for 3~5 turns, which gives them a chance to survive lethal damage, restoring HP if it activates. (Buff is consumed when activated)",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "22", "22", "22", "22", "30"],
+                "Activation Chance": ["40%", "43%", "46%", "53%", "56%", "59%", "62%", "70%"],
+                "HP Gain": ["1", "20", "40", "100", "120", "140", "160", "250"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Action Speed": ["125%", "125%", "125%", "175%", "175%", "175%", "175%", "250%"],
+            }
+        },
+        "Final Decree":{
+            "Usage": "Active (Head)",
+            "Unlock": "Tactical Decree (Lv 2), Healing Decree (Lv 2)",
+            "Description": "Can only be used if you have 3 buffs. Dispell all buffs on yourself, then increase damage dealt and decrease damage taken by the party this turn.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "20", "35"],
+                "Damage Dealt": ["x1.22", "x1.24", "x1.26", "x1.28", "x1.3", "x1.4"],
+                "Damage Taken": ["x0.78", "x0.76", "x0.74", "x0.72", "x0.7", "x0.6"],
+                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%"],
+            }
+        },
+        "Renew":{
+            "Usage": "Passive",
+            "Unlock": "Final Decree (Lv 3)",
+            "Description": "When you dispell buffs on yourself, they have a chance to be reapplied.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["12%", "14%", "16%", "18%", "20%", "22%", "24%", "26%", "28%", "40%"],
+            }
+        },
     },
 },
 "Ninja":{
@@ -4369,7 +4648,7 @@ var descriptions = {
     "Sovereign":"A support class that strenghtens and protects the party by granting and spending buffs.",
     "Ninja":"Stealthy assassins proficient in techniques of Knife-wielding, afflictions and diversion.",
     "Zodiac":"A magical attacker who uses elemental skills to hit the enemy's weakness.",
-    "Farmer":"Specialists in improving exploration and resource gathering. Their combat skills can be awkward but surprisingly effective.",
+    "Farmer":"Specialists in exploration and resource gathering. Their combat skills can be awkward but surprisingly effective.",
     "Shogun":"Generals who lead the party through buffs and attack commands, or by fighting directly with dual Katanas.",
     "Landsknecht":"Frontline warriors with solid offense and defense. They lead the charge, encouraging their allies to follow up.",
     "Nightseeker":"Assassins who throw poisoned daggers from the shadows, going for the kill once the enemy is weak.",
