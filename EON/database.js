@@ -497,7 +497,7 @@ var data = {
         "Keep Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "(Guard) Shield: Protect one ally until the end of next turn, which decreases physical/elemental damage taken. While active, you cannot use other protection skills.",
+            "Description": "(Guard) Shield: Protect one ally until the end of next turn, which decreases physical/elemental damage taken. While active, you cannot use other Guard skills.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -1915,7 +1915,7 @@ var data = {
         "Hero Battle":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt with Spears. The party recovers HP based on your damage dealt.",
+            "Description": "Increase damage dealt with Spear skills. Restore HP to the party based on your damage dealt.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -2880,7 +2880,7 @@ var data = {
         "Diversion Gambit":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "Increase evasion and enemy aggro.",
+            "Description": "Increase evasion and enemy aggro. (Cannot be used while Ninpo: Double is active, and vice versa)",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -2892,10 +2892,10 @@ var data = {
         "Ninpo: Toxic Mist":{
             "Usage": "Force Break (Head, LUC)",
             "Unlock": "N/A",
-            "Description": "Inflict Poison to all enemies.",
+            "Description": "Inflict Poison to all enemies. (For reference, <i>Final Poison Damage = (Base Poison Damage + Level/6 + Random1)*(1 + Level/25) + Random2</i>, where each Random is a number from 0 to 5)",
             "Starter": "0",
             "Max Level": "3",
-            "Levels": ["1", "60", "130"],
+            "Levels": ["1~59", "60~98", "99~130"],
             "Data": {
                 "Infliction Chance": ["1000%", "1000%", "1000%"],
                 "Poison Damage": ["100", "200", "300"],
@@ -2903,13 +2903,299 @@ var data = {
         },
     },
     "Novice (Lv 1)":{
-
+        "Ninpo: Daggers":{
+            "Usage": "Active (Head, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Deal 3~5 hits of ranged Stab damage to random enemies (max once each), with a chance to inflict Sleep.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10"],
+                "Attack Power": ["60%", "65%", "70%", "75%", "95%", "100%", "105%", "110%", "115%", "150%"],
+                "Infliction Chance": ["35%", "35%", "35%", "35%", "45%", "45%", "45%", "45%", "45%", "55%"],
+                "Hits": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Accuracy": ["-6%", "-6%", "-6%", "-6%", "-6%", "-6%", "-6%", "-6%", "-6%", "-6%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Ninpo: Caltrops":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Ninpo:Daggers (Lv 3)",
+            "Description": "Prepare to counterattack when target ally line takes physical damage. Deals ranged Cut damage, with a chance to inflict Poison.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "4", "9"],
+                "Attack Power": ["35%", "35%", "35%", "35%", "35%", "35%"],
+                "Infliction Chance": ["60%", "65%", "70%", "75%", "80%", "100%"],
+                "Poison Damage": ["25", "33", "41", "49", "57", "90"],
+                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%"],
+            }
+        },
+        "Shadow Bind":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Knife: Deal melee Cut damage to one enemy, with a chance to inflict Leg Bind.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "12"],
+                "Attack Power": ["150%", "155%", "160%", "185%", "190%", "195%", "200%", "230%"],
+                "Infliction Chance": ["45%", "45%", "45%", "55%", "55%", "55%", "55%", "70%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Bone Crusher":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Shadow Bind (Lv 3)",
+            "Description": "Knife: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which increases physical damage taken.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "8", "8", "8", "8", "13"],
+                "Attack Power": ["200%", "210%", "220%", "250%", "260%", "270%", "280%", "340%"],
+                "Damage Taken": ["+10%", "+10%", "+10%", "+17%", "+17%", "+17%", "+17%", "+25%"],
+                "Accuracy": ["-3%", "-3%", "-3%", "-3%", "-3%", "-3%", "-3%", "-3%"],
+                "Action Speed": ["75%", "75%", "75%", "75%", "75%", "75%", "75%", "75%"],
+            }
+        },
+        "Reflexes":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Recover TP each time you evade an attack.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Gain": ["2+1%", "3+1%", "4+1%", "5+2%"],
+            }
+        },
+        "Concealment":{
+            "Usage": "Passive",
+            "Unlock": "Reflexes (Lv 2)",
+            "Description": "Increase evasion.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Evasion Up": ["+5%", "+6%", "+7%", "+8%", "+11%", "+12%", "+13%", "+14%", "+15%", "+20%"],
+            }
+        },
+        "Ninpo: Mirage":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Summon a decoy copy of yourself with modified stats. This copy cannot act and has increased evasion and enemy aggro.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "4", "10"],
+                "Decoy HP": ["30%", "40%", "50%", "60%", "70%", "100%"],
+                "Decoy Stats": ["50%", "60%", "70%", "80%", "90%", "120%"],
+                "Evasion Up": ["+1%", "+4%", "+7%", "+10%", "+13%", "25%"],
+                "Aggro Bonus": ["+500%", "+500%", "+500%", "+500%", "+500%", "+500%"],
+                "Action Speed": ["75%", "75%", "75%", "75%", "75%", "75%"],
+            }
+        },
+       "Proficiency":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase physical/elemental damage dealt. At max level, removes the backline penalty for melee attacks.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "Damage Dealt": ["+4%", "+6%", "+8%", "+10%"],
+            }
+        },
+        "Chop":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Chop points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "Ninpo: Mirror":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Ninpo:Caltrops (Lv 2)",
+            "Description": "Target one enemy afflicted with an ailment, then attempt to inflict that ailment on all other enemies.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "6", "10"],
+                "Infliction Chance": ["40%", "44%", "48%", "52%", "56%", "70%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Izuna":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Bone Crusher (Lv 2)",
+            "Description": "Knife: Deal melee Cut damage to one enemy, with a chance to inflict Petrify.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "11", "11", "11", "11", "16"],
+                "Attack Power": ["170%", "178%", "186%", "211%", "219%", "227%", "235%", "280%"],
+                "Infliction Chance": ["25%", "25%", "25%", "32%", "32%", "32%", "32%", "40%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Hawk Strike":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Izuna (Lv 3)",
+            "Description": "Knife: Deal multiple hits of melee Cut damage to random enemies.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "13", "13", "13", "13", "20"],
+                "Attack Power": ["120%", "126%", "132%", "132%", "138%", "144%", "150%", "150%"],
+                "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "3"],
+                "Max. Hits": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Revenge Bomb":{
+            "Usage": "Active (STR)",
+            "Unlock": "N/A",
+            "Description": "Once per battle, upon dying, deal ranged Fire damage to your killer.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Attack Power": ["500%", "560%", "620%", "680%", "740%", "1000%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+            }
+        },
+        "Ninpo: Double":{
+            "Usage": "Active (Head)",
+            "Unlock": "Revenge Bomb (Lv 2)",
+            "Description": "Spend part of your current HP and TP, then summon a fully controllable clone of yourself. (Cannot be used while Force Boost is active, and vice versa)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "HP/TP Cost": ["70%", "69%", "68%", "67%", "63%", "62%", "61%", "60%", "59%", "55%"],
+                "Action Speed": ["300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%"],
+            }
+        },
+        "Beheading":{
+            "Usage": "Passive (LUC)",
+            "Unlock": "Concealment (Lv 3)",
+            "Description": "Normal attacks gain a chance to inflict Instant Death.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Infliction Chance": ["2%", "3%", "4%", "5%", "6%", "7%", "8%", "10%"],
+            }
+        },
+        "Ninpo: Flight":{
+            "Usage": "Active (Legs)",
+            "Unlock": "N/A",
+            "Description": "Drastically increase evasion against physical attacks until the end of turn. Bonus goes down each time you evade an attack.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "7", "7", "7", "7", "7", "13"],
+                "Evasion Up": ["+50%", "+55%", "+60%", "+65%", "+84%", "+90%", "+96%", "+102%", "+108%", "+140%"],
+                "Effect Down": ["-10%", "-11%", "-12%", "-13%", "-16.8%", "-18%", "-19.2%", "-20.4%", "-21.6%", "-28%"],
+                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
+            }
+        },
+        "Auto-Mirage":{
+            "Usage": "Passive",
+            "Unlock": "Ninpo:Mirage (Lv 2)",
+            "Description": "Chance to automatically activate Ninpo: Mirage at the start of battle.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Activation Chance": ["25%", "30%", "35%", "40%", "45%", "67%"],
+            }
+        },
+        "Status ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Infliction Up": ["x1.04", "x1.05", "x1.06", "x1.09", "x1.1", "x1.11", "x1.12", "x1.15"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "Ninpo: Panic":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Ninpo:Mirror (Lv 2)",
+            "Description": "Attempt to inflict Panic on all enemies.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["13", "13", "13", "13", "13", "20"],
+                "Infliction Chance": ["28%", "30%", "32%", "34%", "36%", "45%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Return Malice":{
+            "Usage": "Passive",
+            "Unlock": "Ninpo:Panic (Lv 2)",
+            "Description": "When you evade an attack, increase ailment infliction chance on the next turn.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "Infliction Up": ["x1.1", "x1.13", "x1.16", "x1.19", "x1.22", "x1.35"],
+            }
+        },
+        "Dominance":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Hawk Strike (Lv 2)",
+            "Description": "Knife: Deal melee Cut damage to one enemy. Cannot miss. If the target has an ailment, recover Force.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "17", "17", "17", "17", "24"],
+                "Attack Power": ["220%", "230%", "240%", "275%", "285%", "295%", "305%", "360%"],
+                "Force Gain": ["10%", "11%", "12%", "15%", "16%", "17%", "18%", "25%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Drawing Slice":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Dominance (Lv 2), Ninpo:Double (Lv 2)",
+            "Description": "Knife: Deal multiple hits of melee Cut damage to random enemies. Damage is doubled for each clone, but dispells all clones. (Damage is divided by 4 if there's no clones)",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "27", "27", "27", "27", "35"],
+                "Attack Power": ["120%", "126%", "132%", "132%", "138%", "144%", "150%", "150%"],
+                "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "3"],
+                "Max. Hits": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
+            }
+        },
+        "Ninpo: Smoke":{
+            "Usage": "Active (Legs)",
+            "Unlock": "Ninpo: Flight (Lv 2)",
+            "Description": "Spend part of current HP to place a buff on yourself for 3 turns, which increases evasion.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20"],
+                "HP Cost": ["10%", "10%", "10%", "10%", "30%", "30%", "30%", "30%", "30%", "50%"],
+                "Evasion Up": ["+20%", "+20.8%", "+21.6%", "+22.4%", "+27%", "+27.8%", "+28.6%", "+29.4%", "+30.2%", "+40%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Mystic Calm":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Decrease the TP cost of skills. (Costs have a minimum cap of 1)",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost Down": ["-1", "-2", "-3", "-4"],
+            }
+        },
     },
 },
 "Zodiac":{
@@ -4684,11 +4970,10 @@ function populate(class_name){
         category_name.innerText = category
         skill_list.appendChild(category_name)
         for (const skill in current_class[category]){
-            console.log("test")
             var current_skill = current_class[category][skill]
             skill_table = document.createElement("table")
             skill_table.classList.add("skill_entry")
-            if (current_skill["Starter"] == "1"){
+            if (current_skill["Starter"] == "2"){
                 skill_table.style.marginTop = "15px"
             }
             skill_list.appendChild(skill_table)
@@ -4729,7 +5014,7 @@ function populate(class_name){
 
             description = document.createElement("p")
             data_block.appendChild(description)
-            description.innerText = current_skill["Description"]
+            description.innerHTML = current_skill["Description"]
 
             levels_table = document.createElement("table")
             data_block.appendChild(levels_table)
