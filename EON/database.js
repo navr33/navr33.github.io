@@ -3823,13 +3823,304 @@ var data = {
         },
     },
     "Novice (Lv 1)":{
-
+        "Second Sword":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Allows you to equip a sub-weapon (uses an armor slot). Decrease damage taken if two weapons are equipped.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Taken": ["-5%", "-6%", "-7%", "-8%", "-12%", "-13%", "-14%", "-15%", "-16%", "-20%"],
+            }
+        },
+        "Echoing Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Second Sword (Lv 2)",
+            "Description": "Katana: Deal weapon-based damage to one enemy. After the target acts, perform a second hit based on your sub-weapon, if you have one.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "9"],
+                "Attack Power\n(First Hit)": ["120%", "123%", "126%", "129%", "141%", "145%", "149%", "153%", "157%", "180%"],
+                "Attack Power\n(Second Hit)": ["100%", "103%", "106%", "109%", "120%", "123%", "126%", "129%", "132%", "150%"],
+                "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
+            }
+        },
+        "Front Command":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Target one ally, and if they're hit this turn, all front line allies will counterattack with their weapons.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "4", "8"],
+                "Attack Power": ["125%", "133%", "141%", "149%", "157%", "200%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Bolt Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Katana: Deal melee Cut+Volt damage to one enemy.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "10", "10", "10", "10", "15"],
+                "Attack Power": ["160%", "168%", "176%", "196%", "204%", "212%", "220%", "260%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Avidya Sight":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase damage dealt if it's nighttime or you're afflicted by Blind.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "Damage Dealt": ["+8%", "+10%", "+12%", "+20%"],
+            }
+        },
+        "Great Warrior":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Place a buff on one ally for 3 turns, which increases physical damage dealt and enemy aggro.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "9"],
+                "Damage Dealt": ["+20%", "+25%", "+30%", "+35%", "+40%", "+60%"],
+                "Aggro Bonus": ["+200", "+220", "+240", "+260", "+280", "+400"],
+                "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%"],
+            }
+        },
+        "Taunt Assassins":{
+            "Usage": "Active (Field)",
+            "Unlock": "Great Warrior (Lv 2)",
+            "Description": "Temporarily increase the enemy encounter rate and EXP gained from battle.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "15"],
+                "Encounters Up": ["x2.5", "x3.25", "x4.0", "x4.75", "x5.5", "x10.0"],
+                "EXP Up": ["+20%", "+30%", "+40%", "+50%", "+60%", "+100%"],
+                "Duration (Steps)": ["100", "100", "100", "100", "100", "100"],
+            }
+        },
+        "Morale Boost":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "If you're revived during battle, restore HP to all allies.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "HP Gain": ["25", "30", "35", "50"],
+            }
+        },
+        "Take":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Take points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "Twin Swallows":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Echoing Slash (Lv 3)",
+            "Description": "Katana: Deal weapon-based damage to one enemy. If you have a sub-weapon, perform a second hit based on it.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "11", "11", "11", "11", "11", "17"],
+                "Attack Power": ["140%", "144%", "148%", "152%", "168%", "172%", "176%", "180%", "184%", "225%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Endure Command":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Front Command (Lv 2)",
+            "Description": "If you're hit this turn, all other allies will counterattack with their weapons.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "10"],
+                "Attack Power": ["110%", "116%", "123%", "129%", "136%", "175%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Blitz Command":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Endure Command (Lv 2)",
+            "Description": "Command all other allies to attack target enemy with their weapons.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "22"],
+                "Attack Power": ["75%", "78%", "81%", "84%", "93%", "96%", "99%", "102%", "105%", "120%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Morning Star":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Bolt Slash (Lv 3)",
+            "Description": "Deal melee Cut damage to an enemy line. Deals 50% more damage during daytime.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "12", "18"],
+                "Attack Power": ["130%", "138%", "146%", "154%", "162%", "200%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Twilight Hour":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Avidya Sight (Lv 2)",
+            "Description": "Deal melee Cut damage to one enemy. Deals 50% more damage during nighttime.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "7", "12"],
+                "Attack Power": ["160%", "172%", "184%", "196%", "208%", "265%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["125%", "125%", "125%", "125%", "125%", "125%"],
+            }
+        },
+        "Bloody Lance":{
+            "Usage": "Passive",
+            "Unlock": "Twilight Hour (Lv 2)",
+            "Description": "Increase damage dealt for each time you kill a unit. (Max 9 stacks. Resets if you die)",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "Damage Dealt": ["+6%", "+8%", "+10%", "+12%", "+14%", "+20%"],
+            }
+        },
+        "Reincarnation":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "At the end of a turn where you died, there's a chance to automatically revive with 1 HP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["5%", "6%", "7%", "8%", "11%", "12%", "13%", "14%", "15%", "20%"],
+            }
+        },
+        "Peerless Demon":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase damage dealt based on how many hits you have performed this turn.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt": ["+4%", "+4%", "+4%", "+4%", "+7%", "+7%", "+7%", "+7%", "+7%", "+10%"],
+                "Max. Stacks": ["2", "3", "4", "5", "5", "6", "7", "8", "9", "9"],
+            }
+        },
+        "Seppuku":{
+            "Usage": "Active (Arms, WIS)",
+            "Unlock": "N/A",
+            "Description": "User dies to restore HP to all other allies, with a chance to revive them. (<b>Bug</b>: Revive chance is rolled twice and must pass both to activate)",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "15", "25"],
+                "Healing Power": ["100%", "115%", "130%", "145%", "160%", "250%"],
+                "Revive Chance": ["34%", "38%", "42%", "46%", "50%", "67%"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%", "40%"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "5-Ring Sword":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Twin Swallows (Lv 4)",
+            "Description": "Katana: Deal multiple hits of weapon-based damage to random enemies. If you have a sub-weapon, the maximum hits are doubled and hits will alternate between both weapons.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "22", "22", "22", "22", "22", "30"],
+                "Attack Power": ["61%", "63%", "65%", "67%", "67%", "69%", "71%", "73%", "75%", "75%"],
+                "Min. Hits": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3"],
+                "Max. Hits": ["4", "4", "4", "4", "4", "4", "4", "4", "4", "5"],
+                "Accuracy": ["-7%", "-7%", "-7%", "-7%", "-7%", "-7%", "-7%", "-7%", "-7%", "-7%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Shot Command":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Blitz Command (Lv 3)",
+            "Description": "Target one ally line, and if they're hit this turn, all allies with a Bow or a Gun will counterattack with their weapons.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "7", "12"],
+                "Attack Power": ["125%", "133%", "141%", "149%", "157%", "200%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Warrior Might":{
+            "Usage": "Active (Legs, STR)",
+            "Unlock": "Shot Command (Lv 2)",
+            "Description": "Prepare to follow up all ally attacks this turn. Deals weapon-based damage, but costs HP for each hit.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20"],
+                "Attack Power": ["100%", "103%", "106%", "109%", "119%", "122%", "125%", "128%", "131%", "150%"],
+                "HP Cost": ["45", "45", "45", "45", "55", "55", "55", "55", "55", "70"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
+            }
+        },
+        "Curse Strike":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Bloody Lance (Lv 2)",
+            "Description": "Katana: Deal melee Bash damage to one enemy, with a chance to inflict Curse and Arm Bind.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "13", "13", "13", "13", "18"],
+                "Attack Power": ["220%", "230%", "240%", "270%", "280%", "290%", "300%", "350%"],
+                "Infliction Chance": ["25%", "25%", "25%", "32%", "32%", "32%", "32%", "40%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Execution":{
+            "Usage": "Passive (Arms)",
+            "Unlock": "Curse Strike (Lv 3)",
+            "Description": "Chance to automatically kill allies or enemies that are below a certain HP threshold after being hit. (Ignores Instant Death resistance and immunity, except on the final boss and superboss)",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "HP Threshold": ["5%", "7%", "9%", "15%"],
+                "Activation Chance": ["25%", "30%", "35%", "60%"],
+            }
+        },
+        "Swift Justice":{
+            "Usage": "Active (Head)",
+            "Unlock": "Reincarnation (Lv 2)",
+            "Description": "Place a buff on one ally for 3 turns, which increases physical damage dealt and action speed but also increases physical damage taken.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "16"],
+                "Damage Dealt": ["+20%", "+22%", "+25%", "+27%", "+30%", "+40%"],
+                "Speed Up": ["x3.5", "x4.25", "x5.0", "x5.75", "x6.50", "x10.0"],
+                "Damage Taken": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
     },
 },
 "Landsknecht":{
@@ -4108,7 +4399,7 @@ var data = {
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "16"],
                 "Damage Dealt": ["+20%", "+22%", "+25%", "+27%", "+30%", "+40%"],
-                "Speed Up": ["x2.5", "x3.25", "x4.0", "x4.75", "x5.50", "x9.0"],
+                "Speed Up": ["x3.5", "x4.25", "x5.0", "x5.75", "x6.50", "x10.0"],
                 "Damage Taken": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
                 "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
             }
