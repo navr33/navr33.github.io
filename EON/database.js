@@ -423,7 +423,7 @@ var data = {
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["3", "3", "3", "5", "5", "5", "5", "9"],
-                "Aggro Bonus": ["+25%", "+30%", "+35%", "+35%", "+40%", "+45%", "+50%", "+50%"],
+                "Aggro Bonus": ["+250", "+300", "+350", "+350", "+400", "+450", "+500", "+500"],
                 "Damage Taken": ["-3%", "-4%", "-6%", "-6%", "-7%", "-9%", "-10%", "-10%"],
                 "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
                 "Action Speed": ["120%", "120%", "120%", "150%", "150%", "150%", "150%", "200%"],
@@ -1024,7 +1024,7 @@ var data = {
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "9"],
                 "Evasion Up": ["+20%", "+20%", "+20%", "+20%", "+27%", "+27%", "+27%", "+27%", "+27%", "+35%"],
-                "Aggro Bonus": ["+25%", "+26.5%", "+28%", "+29.5%", "+35%", "+37%", "+39%", "+41%", "+43%", "+50%"],
+                "Aggro Bonus": ["+250", "+265", "+280", "+295", "+350", "+370", "+390", "+410", "+430", "+500"],
                 "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
             }
         },
@@ -1153,7 +1153,7 @@ var data = {
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "8", "14"],
-                "Encounters Down": ["-50%", "-55%", "-60%", "-65%", "-70%", "-85%"],
+                "Encounters Down": ["x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.15"],
                 "Duration (Steps)": ["80", "100", "120", "140", "160", "255"],
             }
         },
@@ -2480,7 +2480,7 @@ var data = {
         "TP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increase Max TP.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2886,7 +2886,7 @@ var data = {
             "Levels": ["1"],
             "Data": {
                 "Evasion Up": ["+65%"],
-                "Aggro Up": ["+40%"],
+                "Aggro Bonus": ["+400"],
             }
         },
         "Ninpo: Toxic Mist":{
@@ -2991,7 +2991,7 @@ var data = {
                 "Decoy HP": ["30%", "40%", "50%", "60%", "70%", "100%"],
                 "Decoy Stats": ["50%", "60%", "70%", "80%", "90%", "120%"],
                 "Evasion Up": ["+1%", "+4%", "+7%", "+10%", "+13%", "25%"],
-                "Aggro Bonus": ["+500%", "+500%", "+500%", "+500%", "+500%", "+500%"],
+                "Aggro Bonus": ["+500", "+500", "+500", "+500", "+500", "+500"],
                 "Action Speed": ["75%", "75%", "75%", "75%", "75%", "75%"],
             }
         },
@@ -3203,7 +3203,7 @@ var data = {
         "Divination":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt with Zodiac's attack skills, and recover part of their spent TP.",
+            "Description": "Increase damage dealt with Astrology skills, and recover part of their spent TP.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -3225,13 +3225,289 @@ var data = {
         },
     },
     "Novice (Lv 1)":{
-
+        "Etheric Gleam":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Place a buff on an ally line for 3~5 turns, which increases elemental damage dealt.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "10", "10", "10", "10", "16"],
+                "Damage Dealt": ["+15%", "+19%", "+23%", "+23%", "+27%", "+31%", "+35%", "+35%"],
+                "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Fire Star":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Etheric Gleam (Lv 1)",
+            "Description": "(Astrology) Deal ranged Fire damage to one enemy, with splash effect.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "13", "13", "13", "13", "13", "18"],
+                "Attack Power": ["100%", "103%", "106%", "109%", "118%", "121%", "124%", "127%", "130%", "150%"],
+                "Accuracy": ["+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Ice Star":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Etheric Gleam (Lv 1)",
+            "Description": "(Astrology) Deal ranged Ice damage to one enemy, with pierce effect.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "13", "13", "13", "13", "13", "18"],
+                "Attack Power": ["90%", "93%", "95%", "98%", "106%", "109%", "112%", "115%", "118%", "135%"],
+                "Accuracy": ["+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Volt Star":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Etheric Gleam (Lv 1)",
+            "Description": "(Astrology) Deal ranged Volt damage to an enemy line.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "13", "13", "13", "13", "13", "18"],
+                "Attack Power": ["80%", "82%", "84%", "86%", "92%", "95%", "98%", "101%", "104%", "120%"],
+                "Accuracy": ["+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Singularity":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase damage dealt when you hit an elemental weakness.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Damage Dealt": ["+6%", "+7%", "+9%", "+10%", "+12%", "+13%", "+15%", "+20%"],
+            }
+        },
+        "Etheric Charge":{
+            "Usage": "Active (Head)",
+            "Unlock": "Singularity (Lv 3)",
+            "Description": "Enter a charge state until the end of next turn, which increases damage dealt with Astrology skills but turns them into single-target attacks.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "15"],
+                "Damage Dealt": ["x1.8", "x1.9", "x2.0", "x2.15", "x2.3", "x3.0"],
+                "Action Speed": ["30%", "30%", "30%", "30%", "30%", "30%"],
+            }
+        },
+        "Etheric Return":{
+            "Usage": "Passive",
+            "Unlock": "Singularity (Lv 3)",
+            "Description": "Recover TP each time you kill an enemy.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "TP Gain": ["1%", "1+1%", "2+1%", "3+2%"],
+            }
+        },
+        "Horoscope":{
+            "Usage": "Active (Field)",
+            "Unlock": "N/A",
+            "Description": "Temporarily decrease the enemy encounter rate.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "6", "10"],
+                "Damage Dealt": ["x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.25"],
+                "Duration (Steps)": ["50", "75", "100", "125", "150", "255"],
+            }
+        },
+        "Mine":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "Ether Mastery":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase damage dealt Astrology skills.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Damage Dealt": ["+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+15%"],
+            }
+        },
+        "TP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max TP.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "HP Up": ["+7%", "+9%", "+11%", "+17%", "+19%", "+21%", "+23%", "+30%"],
+            }
+        },
+        "Binary Fire":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Fire Star (Lv 3)",
+            "Description": "(Astrology) Deal ranged Fire damage to all enemies.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "27", "27", "27", "27", "27", "35"],
+                "Attack Power": ["110%", "113%", "116%", "119%", "129%", "132%", "136%", "139%", "143%", "165%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Binary Ice":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Ice Star (Lv 3)",
+            "Description": "(Astrology) Deal ranged Ice damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "27", "27", "27", "27", "27", "35"],
+                "Attack Power": ["110%", "113%", "116%", "119%", "129%", "132%", "136%", "139%", "143%", "165%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Binary Volt":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Volt Star (Lv 3)",
+            "Description": "(Astrology) Deal ranged Volt damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "27", "27", "27", "27", "27", "35"],
+                "Attack Power": ["110%", "113%", "116%", "119%", "129%", "132%", "136%", "139%", "143%", "165%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Etheric Boon":{
+            "Usage": "Passive",
+            "Unlock": "Etheric Charge (Lv 2)",
+            "Description": "Increase damage dealt based on how much TP you spent last turn. This skill has a base damage bonus which is then multiplied by SpentTP<sup>1.5</sup>/100 and rounded down. (Cheat Sheet: 15TP → x0.58; 25TP → x1.25; 35TP → x2.07; 45TP → x3.01)",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Damage Dealt": ["+3%", "+4%", "+5%", "+6%", "+7%", "+10%"],
+            }
+        },
+        "Anti-Ether":{
+            "Usage": "Passive",
+            "Unlock": "Etheric Boon (Lv 2)",
+            "Description": "Chance to nullify elemental attacks against your line.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "Activation Chance": ["3%", "4%", "5%", "6%", "7%", "10%"],
+            }
+        },
+        "Dark Ether":{
+            "Usage": "Active (Head)",
+            "Unlock": "Etheric Return (Lv 2)",
+            "Description": "Target one ally line, decrease their TP spent for this turn.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "20", "30"],
+                "TP Use Down": ["x0.7", "x0.67", "x0.64", "x0.61", "x0.58", "x0.4"],
+                "Action Speed": ["300%", "300%", "300%", "300%", "300%", "300%"],
+            }
+        },
+        "Ether Shot":{
+            "Usage": "Active (Arms, INT)",
+            "Unlock": "Dark Ether (Lv 2)",
+            "Description": "(Astrology) Deal ranged weapon-based damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "4", "4", "4", "4", "7"],
+                "Attack Power": ["80%", "83%", "86%", "96%", "99%", "102%", "105%", "130%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "Fire Prophecy":{
+            "Usage": "Active (Head)",
+            "Unlock": "Binary Fire (Lv 2)",
+            "Description": "Target one enemy, and nullify any Fire attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases damage dealt.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["25", "25", "25", "25"],
+                "Damage Dealt": ["x1.1", "x1.35", "x1.6", "x2.5"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Ice Prophecy":{
+            "Usage": "Active (Head)",
+            "Unlock": "Binary Ice (Lv 2)",
+            "Description": "Target one enemy, and nullify any Ice attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases damage dealt.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["25", "25", "25", "25"],
+                "Damage Dealt": ["x1.1", "x1.35", "x1.6", "x2.5"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Volt Prophecy":{
+            "Usage": "Active (Head)",
+            "Unlock": "Binary Fire (Lv 2)",
+            "Description": "Target one enemy, and nullify any Volt attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases damage dealt.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["25", "25", "25", "25"],
+                "Damage Dealt": ["x1.1", "x1.35", "x1.6", "x2.5"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Free Energy":{
+            "Usage": "Passive",
+            "Unlock": "Fire/Ice/Volt Prophecy (Lv 1)",
+            "Description": "Chance to spend 0 TP when using skills.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "Activation Chance": ["10%", "12%", "14%", "16%", "18%", "25%"],
+            }
+        },
+        "Multi-Strike Ether":{
+            "Usage": "Active (Head)",
+            "Unlock": "Anti-Ether (Lv 2)",
+            "Description": "Enter a charge state until the end of next turn, which decreases damage dealt with Astrology skills but turns them into random-target multi-hit attacks (2~5 hits). In the case of Meteor, instead of changing target type it triples the minimum and maximum hits.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "35"],
+                "Damage Dealt": ["x0.6", "x0.64", "x0.68", "x0.72", "x0.76", "x0.95"],
+                "Action Speed": ["20%", "20%", "20%", "20%", "20%", "20%"],
+            }
+        },
+        "Meteor":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Ether Shot (Lv 2), Horoscope (Lv 3)",
+            "Description": "(Astrology) Deal 2~5 hits of ranged Bash damage to random enemies.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["27", "27", "27", "27", "35", "35", "35", "35", "35", "45"],
+                "Attack Power": ["50%", "52%", "53%", "55%", "61%", "62%", "64%", "65%", "67%", "80%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
     },
 },
 "Farmer":{
@@ -3256,13 +3532,270 @@ var data = {
         },
     },
     "Novice (Lv 1)":{
-
+        "Sympathy Pain":{
+            "Usage": "Active (Arms, LUC)",
+            "Unlock": "N/A",
+            "Description": "If you're afflicted with binds and/or an ailment, attempt to inflict them on all enemies.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "9"],
+                "Infliction Chance": ["40%", "42%", "45%", "47%", "50%", "60%"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Strange Seeds":{
+            "Usage": "Active (Arms, LUC)",
+            "Unlock": "Sympathy Pain (Lv 1)",
+            "Description": "Plant seeds on all enemies, which will attempt to inflict a random bind on each one at the end of turn.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "14"],
+                "Infliction Chance": ["25%", "27%", "28%", "30%", "35%", "36%", "38%", "39%", "41%", "50%"],
+                "Action Speed": ["300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%"],
+            }
+        },
+        "Play Possum":{
+            "Usage": "Active (Arms, LUC)",
+            "Unlock": "Sympathy Pain (Lv 1)",
+            "Description": "Place a buff on an ally for 3 turns, which decreases enemy aggro.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "5"],
+                "Aggro Down": ["-60", "-65", "-70", "-75", "-80", "-95"],
+                "Action Speed": ["300%", "300%", "300%", "300%", "300%", "300%"],
+            }
+        },
+        "Keen Eye":{
+            "Usage": "Active (Field)",
+            "Unlock": "N/A",
+            "Description": "Temporarily display treasure, shortcuts, stairs, FOEs and gathering points on the whole floor.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "4", "8"],
+                "Duration (Steps)": ["1", "5", "15", "30", "50", "255"],
+            }
+        },
+        "Excavation":{
+            "Usage": "Passive (Field)",
+            "Unlock": "Keen Eye (Lv 2)",
+            "Description": "Chance to obtain materials on every 20 steps taken. Maximum amount of items gained and the chance of obtaining higher amounts increases with skill level. Normal maximum level is 8, but gets added to other instances of this skill.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Flee":{
+            "Usage": "Active (Legs)",
+            "Unlock": "N/A",
+            "Description": "Attempt to escape the battle and teleport to the point where you entered the floor. If successful, spend part of the whole party's HP.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "7"],
+                "HP Cost": ["75%", "60%", "40%", "5%"],
+                "Success Chance": ["65%", "70%", "80%", "100%"],
+            }
+        },
+        "Slap Awake":{
+            "Usage": "Active (Field)",
+            "Unlock": "N/A",
+            "Description": "Revive an ally.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "10"],
+                "HP Gain": ["1", "20", "50", "300"],
+            }
+        },
+        "Earth's Bounty":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "If you're alive at the end of a battle, increase EXP earned by the party.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "EXP Up": ["+9%", "+10%", "+12%", "+13%", "+15%", "+16%", "+18%", "+19%", "+21%", "+30%"],
+            }
+        },
+        "Harvestry":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Take, Chop or Mine points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "Rotten Egg":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Strange Seeds (Lv 3), Play Possum (Lv 1)",
+            "Description": "Place a debuff on all enemies for 3 turns, which decreases damage dealt. Stronger while targets are afflicted with an ailment.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "6", "10"],
+                "Damage Dealt\n(Normal)": ["-4%", "-5%", "-6%", "-7%", "-8%", "-10%"],
+                "Damage Dealt\n(Ailment)": ["-11%", "-13%", "-15%", "-17%", "-19%", "-25%"],
+                "Action Speed": ["40%", "60%", "80%", "100%", "120%", "200%"],
+            }
+        },
+        "Persistence":{
+            "Usage": "Passive",
+            "Unlock": "Rotten Egg (Lv 2)",
+            "Description": "If you're dead, there's a chance to automatically revive with 1 HP at the end of each turn.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation chance": ["3%", "4%", "5%", "6%", "8%", "9%", "10%", "11%", "12%", "15%"],
+            }
+        },
+        "Waste Not":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase enemy drop rates.",
+            "Starter": "1", 
+            "Max Level": "4",
+            "Data": {
+                "Drop Rate Up": ["+5%", "+8%", "+12%", "+20%"],
+            }
+        },
+        "Godsend":{
+            "Usage": "Passive (Field)",
+            "Unlock": "Excavation (Lv 3)",
+            "Description": "Chance to obtain consumable items on every 20 steps taken. Maximum amount of items gained and the chance of obtaining higher amounts increases with skill level. Normal maximum level is 8, but gets added to other instances of this skill.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Rain or Shine":{
+            "Usage": "Active (Field)",
+            "Unlock": "Flee (Lv 1)",
+            "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "10"],
+                "Duration (Steps)": ["60", "70", "80", "90", "100", "255"],
+            }
+        },
+        "Safe Stroll":{
+            "Usage": "Active (Field)",
+            "Unlock": "Rain or Shine (Lv 2)",
+            "Description": "Temporarily decrease the enemy encounter rate.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "8", "14"],
+                "Encounters Down": ["x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.15"],
+                "Duration (Steps)": ["80", "100", "120", "140", "160", "255"],
+            }
+        },
+        "Share the Wealth":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Restore TP to other allies in your line.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["10", "14", "18", "22", "26", "30", "34", "50"],
+                "TP Gain": ["5", "7", "9", "11", "13", "15", "17", "25"],
+                "Activation Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Fearless":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "At the end of each turn, if you're in the front line and have full HP, recover TP.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Gain": ["1+1%", "2+1%", "3+1%", "4+2%"],
+            }
+        },
+        "Survival Wisdom":{
+            "Usage": "Passive (Field)",
+            "Unlock": "Earth's Bounty (Lv 3)",
+            "Description": "Restore HP and TP to the party when using a gathering spot. Healing is based on each unit's Max HP and Max TP.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "HP Gain": ["10+25%", "15+27%", "20+29%", "25+31%", "30+33%", "50+50%"],
+                "TP Gain": ["3+3%", "4+4%", "5+5%", "6+6%", "7+7%", "10+10%"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "Lullaby":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Persistence (Lv 2)",
+            "Description": "Inflict Sleep on yourself, then attempt to inflict it on all enemies.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "9", "9", "14"],
+                "Infliction Chance": ["50%", "52%", "55%", "57%", "60%", "75%"],
+                "Action Speed": ["20%", "20%", "20%", "20%", "20%", "200%"],
+            }
+        },
+        "Fruitful Song":{
+            "Usage": "Passive (Field)",
+            "Unlock": "Lullaby (Lv 3)",
+            "Description": "Restore TP to the party for every certain amount of steps taken. Healing is based on each unit's Max TP.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "Steps to Heal": ["12", "11", "10", "9", "8", "7", "6", "3"],
+                "TP Gain": ["1+1%", "1+1%", "1+1%", "1+1%", "1+1%", "1+1%", "1+1%", "1+1%"],
+            }
+        },
+        "Blessed Remains":{
+            "Usage": "Passive",
+            "Unlock": "Waste Not (Lv 2)",
+            "Description": "Restore Force to the whole party each time you kill an enemy.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Force Gain": ["3%", "4%", "5%", "6%", "7%", "10%"],
+            }
+        },
+        "Harvest Festival":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Deal melee Cut damage to all enemies. On targets with binds, increase damage dealt by 250% and attempt to inflict Instant Death.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "18", "18", "18", "18", "18", "28"],
+                "Attack Power": ["125%", "129%", "133%", "137%", "152%", "160%", "168%", "176%", "184%", "250%"],
+                "Infliction Chance": ["25%", "26%", "27%", "28%", "32%", "34%", "36%", "38%", "40%", "50%"],
+                "Accuracy": ["-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Nature's Blessing":{
+            "Usage": "Passive (Field)",
+            "Unlock": "Survival Wisdom (Lv 2)",
+            "Description": "Chance to get additional rare materials from gathering spots.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "Max. Extra Items": ["1", "2", "3", "4"],
+            }
+        },
+        "Double Crop":{
+            "Usage": "Passive (Field)",
+            "Unlock": "Nature's Blessing (Lv 2)",
+            "Description": "Chance to gather a second time when using a gathering spot. (Max once per gather, even with multiple instances of this skill)",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "Activation Chance": ["16%", "19%", "22%", "25%", "28%", "31%", "34%", "50%"],
+            }
+        },
     },
 },
 "Shogun":{
@@ -4932,7 +5465,7 @@ var descriptions = {
     "Highlander":"Offensive specialists who fight with Spears. They sacrifice their life force to carry out powerful attacks.",
     "Gunner":"A versatile backline class that uses Guns to cover offense, binding and support.",
     "Sovereign":"A support class that strenghtens and protects the party by granting and spending buffs.",
-    "Ninja":"Stealthy assassins proficient in techniques of Knife-wielding, afflictions and diversion.",
+    "Ninja":"Stealthy assassins skilled in combat, diversion and incapacitation. Can create clones to amplify their capabilities.",
     "Zodiac":"A magical attacker who uses elemental skills to hit the enemy's weakness.",
     "Farmer":"Specialists in exploration and resource gathering. Their combat skills can be awkward but surprisingly effective.",
     "Shogun":"Generals who lead the party through buffs and attack commands, or by fighting directly with dual Katanas.",
