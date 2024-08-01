@@ -4487,13 +4487,298 @@ var data = {
         },
     },
     "Novice (Lv 1)":{
-
+        "Sand Throw":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "(Throw) Deal ranged Cut damage to one enemy, with a chance to inflict Blind.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "5"],
+                "Attack Power": ["125%", "125%", "125%", "125%", "125%", "150%"],
+                "Infliction Chance": ["35%", "38%", "41%", "44%", "47%", "60%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Sleep Throw":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Sand Throw (Lv 2)",
+            "Description": "(Throw) Deal ranged Cut damage to one enemy, with a chance to inflict Sleep.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "5"],
+                "Attack Power": ["125%", "125%", "125%", "125%", "125%", "150%"],
+                "Infliction Chance": ["40%", "43%", "46%", "49%", "52%", "65%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Shadow Cloak":{
+            "Usage": "Active (Legs)",
+            "Unlock": "N/A",
+            "Description": "Enter the Shadow Cloak state for 3 turns, which gets consumed to nullify the next physical hit received.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4"],
+                "Action Speed": ["20%", "50%", "80%", "200%"],
+            }
+        },
+        "Biding Slice":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Shadow Cloak (Lv 1)",
+            "Description": "Sword/Knife: Deal melee Cut damage to one enemy. At the end of turn, if you were not hit, attack a second time.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "10"],
+                "Attack Power": ["165%", "171%", "177%", "197%", "203%", "209%", "215%", "250%"],
+                "Accuracy": ["+15%", "+15%", "+15%", "+15%", "+15%", "+15%", "+15%", "+15%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Ice Knife":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Sword/Knife: Deal melee Cut+Ice damage to one enemy.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "8", "8", "8", "8", "12"],
+                "Attack Power": ["160%", "167%", "174%", "199%", "206%", "213%", "220%", "260%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Proficiency":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase damage dealt to enemies with ailments.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt": ["+12%", "+14%", "+16%", "+18%", "+20%", "+23%", "+26%", "+29%", "+32%", "+50%"],
+            }
+        },
+        "Decoy Sign":{
+            "Usage": "Active (No Parts)",
+            "Unlock": "N/A",
+            "Description": "Place a buff on one ally for 3 turns, which increases enemy aggro.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "6"],
+                "Aggro Bonus": ["+200", "+250", "+300", "+500"],
+                "Action Speed": ["150%", "150%", "150%", "150%"],
+            }
+        },
+        "Blade Flurry":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If two weapons are equipped, normal attacks will perform a second hit with your sub-weapon.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Attack Power\n(Second Hit)": ["30%", "33%", "36%", "39%", "42%", "45%", "48%", "60%"],
+            }
+        },
+        "Chop":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Chop points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "Curse Throw":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Sleep Throw (Lv 3)",
+            "Description": "(Throw) Deal ranged Cut damage to one enemy, with a chance to inflict Curse.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "5"],
+                "Attack Power": ["125%", "125%", "125%", "125%", "125%", "150%"],
+                "Infliction Chance": ["40%", "44%", "48%", "52%", "56%", "70%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Nerve Throw":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Curse Throw (Lv 2)",
+            "Description": "(Throw) Deal ranged Cut damage to one enemy, with a chance to inflict Nerve.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "5"],
+                "Attack Power": ["125%", "125%", "125%", "125%", "125%", "150%"],
+                "Infliction Chance": ["35%", "38%", "41%", "44%", "47%", "60%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Shadow Bite":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Sleep Throw (Lv 3)",
+            "Description": "Sword/Knife: Deal melee Cut damage to one enemy. Deals double damage to enemies with ailments.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "16"],
+                "Attack Power": ["200%", "207%", "214%", "221%", "246%", "253%", "260%", "267%", "274%", "315%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Auto-Cloak":{
+            "Usage": "Passive",
+            "Unlock": "Biding Slice (Lv 2)",
+            "Description": "Chance to automatically activate Shadow Cloak at the start of battle.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Activation Chance": ["25%", "30%", "35%", "40%", "45%", "67%"],
+            }
+        },
+        "Backstab":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Auto-Cloak (Lv 3)",
+            "Description": "Sword/Knife: Deal melee Cut damage to one enemy, with a chance to inflict Head Bind. If Shadow Cloak is active, deals double damage and becomes Almighty type.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "15"],
+                "Attack Power": ["160%", "168%", "176%", "184%", "209%", "217%", "225%", "233%", "241%", "285%"],
+                "Infliction Chance": ["25%", "25%", "25%", "25%", "35%", "35%", "35%", "35%", "35%", "45%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Sneak Attack":{
+            "Usage": "Active (Field)",
+            "Unlock": "Proficiency (Lv 2)",
+            "Description": "Temporarily increase the chance of ambushing enemies.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "15"],
+                "Ambush Up": ["+6%", "+7%", "+8%", "+9%", "+10%", "+20%"],
+                "Duration (Steps)": ["60", "70", "80", "90", "100", "255"],
+            }
+        },
+        "Foul Mastery":{
+            "Usage": "Passive",
+            "Unlock": "Sneak Attack (Lv 2)",
+            "Description": "Increase damage dealt each time you inflict an ailment, up to a certain limit. (Resets upon dying)",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt": ["+4%", "+5%", "+6%", "+7%", "+8%", "+10%", "+11%", "+13%", "+14%", "+20%"],
+                "Max. Bonus": ["+10%", "+12%", "+15%", "+17%", "+20%", "+25%", "+27%", "+32%", "+35%", "+50%"],
+            }
+        },
+        "Speed Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase accuracy, evasion and action speed.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Accuracy Up": ["+2.5%", "+3.1%", "+3.7%", "+5.7%", "+6.3%", "+6.9%", "+7.5%", "+10%"],
+                "Evasion Up": ["+2.5%", "+3.1%", "+3.7%", "+5.7%", "+6.3%", "+6.9%", "+7.5%", "+10%"],
+                "Speed Up": ["x1.06", "x1.08", "x1.10", "x1.16", "x1.18", "x1.2", "x1.22", "x1.30"],
+            }
+        },
+        "Spread Throw":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Enter a charge state until the end of next turn, which makes Throw skills hit all enemies and increases their infliction rate.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "7"],
+                "Infliction Up": ["x1.05", "x1.1", "x1.15", "x1.35"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "Venom Throw":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Nerve Throw (Lv 2)",
+            "Description": "(Throw) Deal ranged Cut damage to one enemy, with a chance to inflict Poison.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "5"],
+                "Attack Power": ["125%", "125%", "125%", "125%", "125%", "150%"],
+                "Infliction Chance": ["35%", "38%", "41%", "44%", "47%", "60%"],
+                "Poison Damage": ["50", "60", "70", "80", "90", "130"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Swift Edge":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Shadow Bite (Lv 3)",
+            "Description": "Sword/Knife: Deal 3~5 hits of melee Cut damage to one enemy. Maximum hits are doubled against enemies with ailments.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["14", "14", "14", "14", "19", "19", "19", "19", "19", "25"],
+                "Attack Power": ["80%", "82%", "84%", "86%", "94%", "96%", "99%", "101%", "104%", "120%"],
+                "Accuracy": ["-20%", "-20%", "-20%", "-20%", "-20%", "-20%", "-20%", "-20%", "-20%", "-20%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Assassinate":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Backstab (Lv 3)",
+            "Description": "Sword/Knife: Deal melee Cut damage to one enemy. If Shadow Cloak is active, has a chance to inflict Instant Death.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "15", "15", "15", "15", "20"],
+                "Attack Power": ["310%", "320%", "330%", "380%", "390%", "400%", "410%", "500%"],
+                "Infliction Chance": ["25%", "25%", "25%", "32%", "32%", "32%", "32%", "40%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Enduring Cloak":{
+            "Usage": "Passive",
+            "Unlock": "Assassinate (Lv 3)",
+            "Description": "Chance to automatically reapply Shadow Cloak when it's consumed.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "Activation Chance": ["8%", "11%", "14%", "17%", "20%", "23%", "26%", "34%"],
+            }
+        },
+        "Follow Trace":{
+            "Usage": "Passive",
+            "Unlock": "Blade Flurry (Lv 4)",
+            "Description": "When using an attack skill against an enemy with an ailment, there's a chance to perform the attack a second time.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["6%", "8%", "10%", "12%", "14%", "17%", "20%", "23%", "26%", "35%"],
+            }
+        },
+        "Auto-Spread":{
+            "Usage": "Passive",
+            "Unlock": "Spread Throw (Lv 2)",
+            "Description": "Chance to automatically activate Spread Throw at the start of battle.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["6%", "8%", "10%", "12%", "14%", "17%", "20%", "23%", "26%", "35%"],
+            }
+        },
     },
 },
 "Arcanist":{
