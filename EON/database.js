@@ -3280,7 +3280,7 @@ var data = {
         "Singularity":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt when you hit an elemental weakness.",
+            "Description": "Increase damage dealt when you hit a weakness. (Additionally, attacks that hit a weakness will show a message and make a special sound effect)",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -4335,6 +4335,54 @@ var data = {
     },
     "Master (Lv 40)":{
 
+    },
+},
+"Vampire":{
+    "Force":{
+        "Undying Soul":{
+            "Usage": "Force Boost",
+            "Unlock": "N/A",
+            "Description": "Survive all lethal damage with 1 HP.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Ghastly March":{
+            "Usage": "Force Break (Head)",
+            "Unlock": "N/A",
+            "Description": "Revive all allies (with 1 HP), then deal 2 hits of ranged Almighty damage to one enemy, increased by 1 hit for every revived ally. (Damage does not depends on the user's stats or equipment, as this skill uses its own unknown stat values that scale with user level)",
+            "Starter": "0",
+            "Max Level": "3",
+            "Levels": ["1", "60", "130"],
+            "Data": {
+                "Attack Power": ["200%", "400%", "600%"],
+            }
+        },
+    },
+    "Innate Passives":{
+        "Sunlight Damage":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "During daytime, take damage at the end of each turn, and for every 10 steps taken. (This can kill during battle)",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "HP Loss": ["1+5%"],
+            }
+        },
+        "Night Heal":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "During nighttime, recover HP at the end of each turn, and for every 10 steps taken.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "HP Gain": ["1+5%"],
+            }
+        },
     },
 },
 "Weapon Skills":{
@@ -5748,7 +5796,7 @@ var data = {
 
 var descriptions = {
     "Hero":"Knights of Sword and Shield who leave afterimages as they move, letting them cover offense and defense simultaneously.",
-    "Protector":"Durable knights who use their Shield to decrease damage dealt to the party.",
+    "Protector":"Knights of unmatched durability who use their Shield to protect the party from harm.",
     "Medic":"Healers that effectively treat every kind of injury. Their Staff strikes assist by leaving the enemy vulnerable.",
     "Survivalist":"Rangers who fight with Bows. Their agility and sharp senses safeguard the party in and out of battle.",
     "Ronin":"Katana-users who favor offense over defense. They adopt different Stances to adjust to the situation.",
@@ -5761,11 +5809,12 @@ var descriptions = {
     "Farmer":"Specialists in exploration and resource gathering. Their combat skills can be awkward but surprisingly effective.",
     "Shogun":"Generals who lead the party through buffs and attack commands, or by fighting directly with dual Katanas.",
     "Landsknecht":"Frontline warriors with solid offense and defense. They lead the charge, encouraging their allies to follow up.",
-    "Nightseeker":"Assassins who throw poisoned daggers from the shadows, going for the kill once the enemy is weak.",
+    "Nightseeker":"Assassins who throw poisoned daggers from the shadows, going for the kill once the enemy is ailing.",
     "Arcanist":"Support casters that summon magic circles to restrain the enemy and protect the party.",
     "Imperial":"Knights who wield mechanical Drive Blades. Their attacks are devastating but put a heavy strain in the weapon and wielder.",
     "Pugilist":"Brawlers who fight with their own Fists. They use combos of precise punches to quickly disable the enemy.",
     "Harbinger":"Reapers who summon noxious Miasma, spreading it to weaken the enemy or to ward off their attacks.",
+    "Vampire":"Night-dwellers with control over life and death. This pseudo-class overrides another's Force and grants passive effects.",
     "Weapon Skills":"Skills borrowed from certain weapons.",
     "Battle Items":"Consumable items meant to aid you in battle.",
 }
