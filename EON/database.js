@@ -4152,13 +4152,312 @@ var data = {
         },
     },
     "Novice (Lv 1)":{
-
+        "Proficiency":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "After you attack, your allies deal more damage and have more accuracy against your targets.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "Damage Dealt": ["+3%", "+4%", "+5%", "+10%"],
+                "Accuracy Up": ["+5%", "+6%", "+7%", "+10%"],
+            }
+        },
+        "Falcon Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Sword/Rapier: Deal weapon-based damage to one enemy. Hits at the start of turn.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "15"],
+                "Attack Power": ["150%", "155%", "160%", "195%", "200%", "205%", "210%", "280%"],
+                "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            }
+        },
+        "Blazing Link":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab+Fire damage to one enemy and mark them with a Link for this turn. Subsequent hits by allies will activate the Link (max 4 times), dealing additional Fire damage. Activation chance starts at 100% and goes down with each activation.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "14"],
+                "Attack Power\n(Main Hit)": ["80%", "85%", "90%", "95%", "95%", "100%", "105%", "110%", "115%", "115%"],
+                "Attack Power\n(Link Hits)": ["30%", "31%", "33%", "34%", "34%", "36%", "37%", "39%", "40%", "40%"],
+                "Chance Decrease": ["30%", "30%", "30%", "30%", "25%", "25%", "25%", "25%", "25%", "20%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%"],
+            }
+        },
+        "Freezing Link":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab+Ice damage to one enemy and mark them with a Link for this turn. Subsequent hits by allies will activate the Link (max 4 times), dealing additional Ice damage. Activation chance starts at 100% and goes down with each activation.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "14"],
+                "Attack Power\n(Main Hit)": ["80%", "85%", "90%", "95%", "95%", "100%", "105%", "110%", "115%", "115%"],
+                "Attack Power\n(Link Hits)": ["30%", "31%", "33%", "34%", "34%", "36%", "37%", "39%", "40%", "40%"],
+                "Chance Decrease": ["30%", "30%", "30%", "30%", "25%", "25%", "25%", "25%", "25%", "20%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%"],
+            }
+        },
+        "Electric Link":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab+Volt damage to one enemy and mark them with a Link for this turn. Subsequent hits by allies will activate the Link (max 4 times), dealing additional Volt damage. Activation chance starts at 100% and goes down with each activation.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "14"],
+                "Attack Power\n(Main Hit)": ["80%", "85%", "90%", "95%", "95%", "100%", "105%", "110%", "115%", "115%"],
+                "Attack Power\n(Link Hits)": ["30%", "31%", "33%", "34%", "34%", "36%", "37%", "39%", "40%", "40%"],
+                "Chance Decrease": ["30%", "30%", "30%", "30%", "25%", "25%", "25%", "25%", "25%", "20%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%"],
+            }
+        },
+        "Vanguard":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Place a buff on yourself for 5 turns, which increases physical damage dealt and action speed but also increases physical damage taken.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "7"],
+                "Damage Dealt": ["+10%", "+12%", "+15%", "+17%", "+20%", "+30%"],
+                "Speed Up": ["x4", "x5", "x6", "x7", "x8", "x20"],
+                "Damage Taken": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Power Break":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Place a debuff on the target for 3 turns, which decreases damage dealt.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "10"],
+                "Attack Power": ["150%", "160%", "170%", "180%", "190%", "240%"],
+                "Damage Dealt": ["-7%", "-8%", "-9%", "-10%", "-11%", "-15%"],
+                "Accuracy": ["-8%", "-8%", "-8%", "-8%", "-8%", "-8%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Phys DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Decrease physical damage taken.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Damage Taken": ["-4%", "-5%", "-6%", "-9%", "-10%", "-11%", "-12%", "-15%"],
+            }
+        },
+        "Mine":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "Double Strike":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Falcon Slash (Lv 2)",
+            "Description": "Sword/Rapier: Deal 2 hits of weapon-based damage to one enemy.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "16"],
+                "Attack Power": ["140%", "145%", "150%", "165%", "170%", "175%", "180%", "210%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Spiral Slice":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Double Strike (Lv 3)",
+            "Description": "Sword: Deal melee Cut damage to one enemy, with splash effect.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "15", "15", "15", "15", "20"],
+                "Attack Power": ["240%", "248%", "256%", "286%", "294%", "302%", "310%", "360%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Penetrate":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Double Strike (Lv 3)",
+            "Description": "Rapier: Deal melee Stab damage to one enemy, with pierce effect.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "10", "10", "10", "10", "14"],
+                "Attack Power": ["255%", "264%", "273%", "303%", "312%", "321%", "330%", "385%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%"],
+            }
+        },
+        "Improved Link":{
+            "Usage": "Active (Head)",
+            "Unlock": "Blazing/Freezing/Electric Link (Lv 3)",
+            "Description": "Place a buff on yourself for 3 turns, which increases maximum Link activations and diminishes the chance decrease per activation.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "12"],
+                "Links Up": ["+3", "+3", "+3", "+5"],
+                "Decrease Down": ["-6%", "-8%", "-10%", "-15%"],
+                "Action Speed": ["80%", "80%", "80%", "80%"],
+            }
+        },
+        "Smash Link":{
+            "Usage": "Passive",
+            "Unlock": "Improved Link (Lv 1)",
+            "Description": "Link activations have a chance to become Critical Hits.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Crit. Chance": ["7%", "8%", "9%", "10%", "14%", "15%", "16%", "17%", "18%", "25%"],
+            }
+        },
+        "Guard Break":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Power Break (Lv 2)",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Place a debuff on the target for 3 turns, which increases damage taken.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "10"],
+                "Attack Power": ["150%", "160%", "170%", "180%", "190%", "240%"],
+                "Damage Taken": ["+10%", "+12%", "+14%", "+16%", "+18%", "+25%"],
+                "Accuracy": ["-8%", "-8%", "-8%", "-8%", "-8%", "-8%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Speed Break":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Guard Break (Lv 2)",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Place a debuff on the target for 3 turns, which decreases evasion and action speed.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "10"],
+                "Attack Power": ["150%", "158%", "166%", "174%", "182%", "220%"],
+                "Evasion Down": ["-10%", "-11%", "-12%", "-13%", "-14%", "-20%"],
+                "Speed Down": ["-15%", "-17.5%", "-20%", "-22.5%", "-25%", "-50%"],
+                "Accuracy": ["+0%", "+10%", "+25%", "+35%", "+45%", "+70%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Initiative":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase damage dealt and accuracy when you attack before any enemy has acted.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "Damage Dealt": ["+7%", "+10%", "+13%", "+20%"],
+                "Accuracy Up": ["+4%", "+5%", "+6%", "+10%"],
+            }
+        },
+        "Status DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Infliction Vulnerability": ["x0.92", "x0.91", "x0.9", "x0.85", "x0.84", "x0.83", "x0.82", "x0.75"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "Sword Tempest":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Spiral Slice (Lv 2)",
+            "Description": "Sword: Deal melee Cut damage to one enemy.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["13", "13", "13", "18", "18", "18", "18", "24"],
+                "Attack Power": ["350%", "363%", "376%", "426%", "439%", "452%", "465%", "560%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Swift Stab":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Penetrate (Lv 2)",
+            "Description": "Rapier: Deal multiple hits of melee Stab damage randomly to an enemy line.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "14", "14", "14", "14", "21"],
+                "Attack Power": ["135%", "141%", "147%", "147%", "153%", "159%", "165%", "165%"],
+                "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "3"],
+                "Max. Hits": ["3", "3", "3", "4", "4", "4", "4", "4"],
+                "Accuracy": ["-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Link Mastery":{
+            "Usage": "Passive",
+            "Unlock": "Smash Link (Lv 2)",
+            "Description": "Increase damage dealt by a Link's activations for each time it has been activated this turn. (Stacks up to +99%)",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt": ["+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+12%", "+15%"],
+            }
+        },
+        "Link Finale":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Link Mastery (Lv 2)",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab damage to one enemy. Increase damage dealt by 30% for each time your Link was activated last turn.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "16"],
+                "Attack Power": ["130%", "138%", "146%", "154%", "162%", "200%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Full Break":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Speed Break (Lv 2)",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Increase damage dealt by 125% if the target has a Break skill debuff.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "18"],
+                "Attack Power": ["160%", "170%", "180%", "190%", "200%", "250%"],
+                "Accuracy": ["-15%", "-15%", "-15%", "-15%", "-15%", "-15%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Single Devotion":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase damage dealt. Bonus is greater the less damage types the attack has.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Damage Dealt (1 Type)": ["+6%", "+8%", "+10%", "+12%", "+14%", "+20%"],
+                "Damage Dealt (2 Types)": ["+2%", "+3%", "+3%", "+4%", "+4%", "+6%"],
+                "Damage Dealt (3 Types)": ["+1%", "+1%", "+1%", "+1%", "+1%", "+2%"],
+            }
+        },
     },
 },
 "Nightseeker":{
