@@ -4805,13 +4805,288 @@ var data = {
         },
     },
     "Novice (Lv 1)":{
-
+        "Circle Boon":{
+            "Usage": "Passive (WIS)",
+            "Unlock": "N/A",
+            "Description": "At the end of each turn, restore HP to the whole party if a Circle is active.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "Healing Power": ["15%", "20%", "25%", "40%"],
+            }
+        },
+        "Dismiss Heal":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "Circle Boon (Lv 1)",
+            "Description": "Dismiss an active Circle to restore HP to the whole party.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "12", "12", "12", "12", "12", "24"],
+                "Healing Power": ["80%", "84%", "88%", "92%", "135%", "140%", "145%", "150%", "155%", "220%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Chain Circle":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "N/A",
+            "Description": "Place a Circle for 3 turns, which attempts to inflict Arm Bind on all enemies at the end of each turn. (Overrides other Circles)",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "18"],
+                "Infliction Chance": ["20%", "21%", "22%", "26%", "27%", "28%", "29%", "35%"],
+                "Action Speed": ["10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%"],
+            }
+        },
+        "Snare Circle":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Chain Circle (Lv 2)",
+            "Description": "Place a Circle for 3 turns, which attempts to inflict Leg Bind on all enemies at the end of each turn. (Overrides other Circles)",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "18"],
+                "Infliction Chance": ["20%", "21%", "22%", "26%", "27%", "28%", "29%", "35%"],
+                "Action Speed": ["10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%"],
+            }
+        },
+        "Nerve Circle":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "N/A",
+            "Description": "Place a Circle for 3 turns, which attempts to inflict Paralysis on all enemies at the end of each turn. (Overrides other Circles)",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "10", "10", "10", "10", "15"],
+                "Infliction Chance": ["25%", "26%", "27%", "31%", "32%", "33%", "34%", "40%"],
+                "Action Speed": ["10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%"],
+            }
+        },
+        "Curse Circle":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "N/A",
+            "Description": "Place a Circle for 3 turns, which attempts to inflict Curse on all enemies at the end of each turn. (Overrides other Circles)",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "10", "10", "10", "10", "15"],
+                "Infliction Chance": ["35%", "36%", "38%", "43%", "44%", "46%", "47%", "55%"],
+                "Action Speed": ["10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%"],
+            }
+        },
+        "Bracing Walk":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Restore HP to the whole party for every 3 steps taken.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "HP Gain": ["2", "3", "5", "10"],
+            }
+        },
+        "Proficiency":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Recover TP when one of your Circles wears off by time or is dismissed.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Gain": ["1+1%", "2+1%", "3+1%", "4+1%", "5+1%", "6+2%"],
+            }
+        },
+        "Chop":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Chop points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "Dismiss Revive":{
+            "Usage": "Active (Head)",
+            "Unlock": "Dismiss Heal (Lv 2)",
+            "Description": "Dismiss an active Circle for a chance to revive an ally line. (<b>Bug</b>: Revive chance is rolled twice and must pass both to activate)",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "20", "20", "20", "20", "20", "35"],
+                "Revive Chance": ["65%", "67%", "68%", "70%", "76%", "77%", "79%", "80%", "82%", "92%"],
+                "HP Gain": ["1", "10", "20", "30", "70", "80", "90", "100", "110", "200"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Dismiss Blow":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Dismiss Revive (Lv 3)",
+            "Description": "Dismiss an active Circle to deal ranged Almighty damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "13", "13", "13", "13", "13", "30"],
+                "Attack Power": ["250%", "260%", "270%", "280%", "350%", "360%", "370%", "380%", "390%", "500%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Hood Circle":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Snare Circle (Lv 2)",
+            "Description": "Place a Circle for 3 turns, which attempts to inflict Head Bind on all enemies at the end of each turn. (Overrides other Circles)",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "18"],
+                "Infliction Chance": ["20%", "21%", "22%", "26%", "27%", "28%", "29%", "35%"],
+                "Action Speed": ["10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%"],
+            }
+        },
+        "Sleep Circle":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Curse Circle (Lv 2)",
+            "Description": "Place a Circle for 3 turns, which attempts to inflict Sleep on all enemies at the end of each turn. (Overrides other Circles)",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "10", "10", "10", "10", "15"],
+                "Infliction Chance": ["30%", "31%", "33%", "38%", "39%", "41%", "42%", "50%"],
+                "Action Speed": ["10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%"],
+            }
+        },
+        "Charm Eye":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Place a debuff on all enemies for 3 turns, which decreases physical/elemental damage dealt.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "7", "12"],
+                "Damage Dealt": ["-8%", "-9%", "-10%", "-11%", "-12%", "-15%"],
+                "Action Speed": ["40%", "60%", "80%", "100%", "120%", "200%"],
+            }
+        },
+        "Atrophic Eye":{
+            "Usage": "Active (Head)",
+            "Unlock": "Charm Eye (Lv 2)",
+            "Description": "Place a debuff on all enemies for 3 turns, which increases physical/elemental damage taken.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "7", "12"],
+                "Damage Dealt": ["+10%", "+12%", "+14%", "+16%", "+18%", "+25%"],
+                "Action Speed": ["40%", "60%", "80%", "100%", "120%", "200%"],
+            }
+        },
+        "Status ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Infliction Up": ["x1.04", "x1.05", "x1.06", "x1.09", "x1.1", "x1.11", "x1.12", "x1.15"],
+            }
+        },
+        "Tame Ground":{
+            "Usage": "Active (Field)",
+            "Unlock": "N/A",
+            "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "10"],
+                "Duration (Steps)": ["60", "70", "80", "90", "100", "255"],
+            }
+        },
+        "Warding Mist":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Chance to nullify bind/ailment/stun inflictions towards your line.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "Activation Chance": ["4%", "5%", "6%", "10%"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "Dismiss Blast":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Dismiss Blow (Lv 2)",
+            "Description": "Dismiss an active Circle to deal ranged Almighty damage to all enemies.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "24", "24", "24", "24", "24", "40"],
+                "Attack Power": ["160%", "167%", "174%", "181%", "231%", "241%", "251%", "261%", "271%", "360%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Circle Mastery":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Dismiss Blast (Lv 3)",
+            "Description": "Increase the effect of Dismiss skils.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "Heal Up\n(D. Heal)": ["x1.08", "x1.11", "x1.14", "x1.17", "x1.2", "x1.3"],
+                "Heal Up\n(D. Revive)": ["+10", "+15", "+20", "+25", "+30", "+50"],
+                "Chance Up\n(D. Revive)": ["+2%", "+3%", "+4%", "+5%", "+6%", "+8%"],
+                "Damage Up\n(D. Blow)": ["x1.08", "x1.11", "x1.14", "x1.17", "x1.2", "x1.3"],
+                "Damage Up\n(D. Blast)": ["x1.08", "x1.11", "x1.14", "x1.17", "x1.2", "x1.3"],
+                "Infliction Up\n(D. Quake)": ["x1.08", "x1.11", "x1.14", "x1.17", "x1.2", "x1.3"],
+            }
+        },
+        "Poison Circle":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Sleep Circle (Lv 2)",
+            "Description": "Place a Circle for 3 turns, which attempts to inflict Poison on all enemies at the end of each turn. (Overrides other Circles)",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "15", "15", "15", "15", "21"],
+                "Infliction Chance": ["30%", "31%", "32%", "36%", "37%", "38%", "39%", "45%"],
+                "Poison Damage": ["40", "43", "46", "58", "61", "64", "67", "90"],
+                "Action Speed": ["10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%"],
+            }
+        },
+        "Chaos Circle":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Sleep Circle (Lv 2)",
+            "Description": "Place a Circle for 3 turns, which attempts to inflict Poison on all enemies at the end of each turn. (Overrides other Circles)",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "15", "15", "15", "15", "21"],
+                "Infliction Chance": ["14%", "15%", "16%", "18%", "19%", "20%", "21%", "25%"],
+                "Action Speed": ["10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%"],
+            }
+        },
+        "Dismiss Quake":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Poison/Chaos Circle (Lv 3)",
+            "Description": "Dismiss an active Circle to attempt to inflict Stun on all enemies.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "12", "12", "12", "12", "12", "20"],
+                "Infliction Chance": ["40%", "41%", "42%", "43%", "47%", "48%", "49%", "50%", "51%", "60%"],
+                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
+            }
+        },
+        "TP Return":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Recover TP when one of your skills inflicts a bind/ailment/stun on one or more enemies.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Gain": ["1+1%", "2+1%", "3+1%", "4+2%"],
+            }
+        },
     },
 },
 "Imperial":{
@@ -4819,7 +5094,7 @@ var data = {
         "Ignition":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "Drive Skills won't trigger the Overheated state.",
+            "Description": "Drive Skills won't trigger the Overheat state.",
             "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
@@ -4838,13 +5113,300 @@ var data = {
         },
     },
     "Novice (Lv 1)":{
-
+        "Sharp Edge":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "(Starter) Drive Blade: Deal melee Cut damage to one enemy. Decreases Overheat time by 1 turn.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "7"],
+                "Attack Power": ["120%", "130%", "140%", "180%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["100%", "100%", "100%", "100%"],
+            }
+        },
+        "Natural Edge":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "(Starter) Drive Blade: Deal weapon-based damage to one enemy.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "5", "5", "5", "5", "7"],
+                "Attack Power": ["155%", "161%", "167%", "187%", "193%", "199%", "205%", "240%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Blood Edge":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Sharp/Natural Edge (Lv 2)",
+            "Description": "(Combo) Drive Blade: Deal melee Cut damage to one enemy. Recover HP based on damage dealt. (Only usable right after a Starter skill)",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "12"],
+                "Attack Power": ["200%", "208%", "216%", "246%", "254%", "262%", "270%", "320%"],
+                "Damage Drain": ["35%", "35%", "35%", "35%", "35%", "35%", "35%", "35%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+            }
+        },
+        "Heavy Guard":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Place a buff on one ally for 3 turns, which decreases damage taken but makes them act last.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "7"],
+                "Damage Taken": ["-15%", "-18%", "-21%", "-24%", "-27%", "-40%"],
+                "Action Speed": ["250%", "250%", "250%", "250%", "250%", "250%"],
+            }
+        },
+        "Assault Drive":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "(Drive) Drive Blade: Deal melee Cut damage to one enemy, then enter Overheat state for 7 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "30", "30", "30", "30", "30", "40"],
+                "Attack Power": ["450%", "470%", "490%", "510%", "610%", "640%", "670%", "700%", "730%", "900%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%"],
+            }
+        },
+        "Heat Sink":{
+            "Usage": "Active (Head)",
+            "Unlock": "Assault Drive (Lv 3)",
+            "Description": "Decrease remaining Overheat time.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["10", "6", "3", "15", "10", "7", "25", "15"],
+                "Duration Down": ["2", "2", "2", "3", "3", "3", "4", "4"],
+                "Action Speed": ["30%", "30%", "30%", "30%", "30%", "30%", "30%", "30%"],
+            }
+        },
+        "Heat Shield":{
+            "Usage": "Passive",
+            "Unlock": "Assault Drive (Lv 3)",
+            "Description": "Decrease physical/elemental damage taken during Overheat.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "Damage Taken": ["-7%", "-9%", "-11%", "-13%", "-15%", "-20%"],
+            }
+        },
+        "Avenger":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Recover HP each time an ally dies.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "HP Gain": ["30+10%", "40+15%", "50+20%", "100+40%"],
+            }
+        },
+        "Mine":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "Massive Edge":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Blood Edge (Lv 3)",
+            "Description": "(Starter) Drive Blade: Deal melee Cut damage to one enemy, with splash effect.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "16"],
+                "Attack Power": ["170%", "177%", "184%", "209%", "216%", "223%", "230%", "280%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Cool Edge":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Massive Edge (Lv 2)",
+            "Description": "(Combo) Drive Blade: Deal melee Cut damage to one enemy. Decreases Overheat time by 2 turns. (Only usable right after a Starter skill)",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "14"],
+                "Attack Power": ["200%", "215%", "230%", "300%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["80%", "80%", "80%", "80%"],
+            }
+        },
+        "Trip Edge":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Blood Edge (Lv 3)",
+            "Description": "(Starter) Drive Blade: Deal melee Cut damage to one enemy, with a chance to inflict Leg Bind.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "9", "9", "9", "9", "12"],
+                "Attack Power": ["160%", "167%", "174%", "199%", "206%", "213%", "220%", "265%"],
+                "Infliction Chance": ["30%", "30%", "30%", "40%", "40%", "40%", "40%", "50%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Impulse Edge":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Trip Edge (Lv 2)",
+            "Description": "(Combo) Drive Blade: Deal melee Cut damage to one enemy, and recover TP. (Only usable right after a Starter skill)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+                "Attack Power": ["100%", "103%", "106%", "109%", "119%", "122%", "125%", "128%", "131%", "150%"],
+                "TP Gain": ["10", "11", "12", "13", "18", "19", "20", "21", "22", "30"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Intercooler":{
+            "Usage": "Passive",
+            "Unlock": "Heat Sink (Lv 1), Heat Shield (Lv 1)",
+            "Description": "Increase damage dealt with Drive skills and decrease Overheat duration.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt": ["+3%", "+4%", "+5%", "+6%", "+6%", "+7%", "+8%", "+9%", "+10%", "+10%"],
+                "Duration Down": ["0", "0", "0", "0", "1", "1", "1", "1", "1", "2"],
+            }
+        },
+        "Flame Drive":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Intercooler (Lv 3)",
+            "Description": "(Drive) Drive Blade: Deal melee Cut+Fire damage to one enemy, then enter Overheat state for 8 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["25", "25", "25", "37", "37", "37", "37", "50"],
+                "Attack Power": ["335%", "355%", "375%", "445%", "475%", "505%", "535%", "670%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%"],
+            }
+        },
+        "Freeze Drive":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Intercooler (Lv 3)",
+            "Description": "(Drive) Drive Blade: Deal melee Cut+Ice damage to one enemy, then enter Overheat state for 8 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["25", "25", "25", "37", "37", "37", "37", "50"],
+                "Attack Power": ["335%", "355%", "375%", "445%", "475%", "505%", "535%", "670%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%"],
+            }
+        },
+        "Shock Drive":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Intercooler (Lv 3)",
+            "Description": "(Drive) Drive Blade: Deal melee Cut+Volt damage to one enemy, then enter Overheat state for 8 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["25", "25", "25", "37", "37", "37", "37", "50"],
+                "Attack Power": ["335%", "355%", "375%", "445%", "475%", "505%", "535%", "670%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%"],
+            }
+        },
+        "Status DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Infliction Vulnerability": ["x0.92", "x0.91", "x0.9", "x0.85", "x0.84", "x0.83", "x0.82", "x0.75"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "Charge Edge":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Cool Edge (Lv 2)",
+            "Description": "(Final) Drive Blade: Deal melee Cut damage to one enemy. Enter a charge state until the end of next turn, which increases damage dealt. (Only usable right after a Starter or Combo skill)",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "20", "40"],
+                "Attack Power": ["145%", "165%", "185%", "205%", "225%", "225%"],
+                "Damage Dealt": ["x1.5", "x1.5", "x1.5", "x1.5", "x1.5", "x2.0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["30%", "30%", "30%", "30%", "30%", "30%"],
+            }
+        },
+        "Force Edge":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Impulse Edge (Lv 2)",
+            "Description": "(Final) Drive Blade: Deal melee Cut damage to one enemy, and gain Force. (Only usable right after a Starter or Combo skill)",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["14", "14", "14", "14", "14", "21"],
+                "Attack Power": ["220%", "235%", "250%", "265%", "280%", "350%"],
+                "Force Gain": ["10%", "10%", "10%", "10%", "10%", "20%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "HP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max HP.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "HP Up": ["+5%", "+6%", "+7%", "+11%", "+12%", "+13%", "+14%", "+20%"],
+            }
+        },
+        "Accel Drive":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Flame/Freeze/Shock Drive (Lv 1)",
+            "Description": "(Drive) Drive Blade: Deal melee Cut+Almighty damage to one enemy, then enter Overheat state for 9 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["30", "30", "30", "30", "45", "45", "45", "45", "45", "60"],
+                "Attack Power": ["600%", "630%", "660%", "690%", "820%", "855%", "890%", "925%", "960%", "1200%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%"],
+            }
+        },
+        "Absorber":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Recover TP when one of your attacks hit the weakness of at least one enemy.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Gain": ["2", "3", "4", "5+1%"],
+            }
+        },
+        "Element Boost":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase elemental damage dealt.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Damage Dealt": ["+4%", "+5%", "+6%", "+9%", "+10%", "+11%", "+12%", "+15%"],
+            }
+        },
     },
 },
 "Pugilist":{
