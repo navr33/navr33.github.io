@@ -140,7 +140,7 @@ var data = {
         "Charge Image":{
             "Usage": "Active (Head)",
             "Unlock": "Mirage Sword (Lv 2)",
-            "Description": "Dispell your Afterimages to enter a charge state until the end of next turn, which increases damage dealt and chance to create Afterimages.",
+            "Description": "Dispel your Afterimages to enter a charge state until the end of next turn, which increases damage dealt and chance to create Afterimages.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -1270,7 +1270,7 @@ var data = {
         "Musou":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "Gain the effects of the 3 stances at level 1 (affected by Full Proficiency), on top of your active stance. Your active stance's duration does not go down, and your skills don't decrease its duration nor dispell it.",
+            "Description": "Gain the effects of the 3 stances at level 1 (affected by Full Proficiency), on top of your active stance. Your active stance's duration does not go down, and your skills don't decrease its duration nor dispel it.",
             "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
@@ -2827,7 +2827,7 @@ var data = {
         "Clearance":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Dispel all ally buffs, ally debuffs, enemy buffs and enemy debuffs, then restore HP and TP to the whole party based on the amount of buffs/debuffs dispelled. (Base healing is multiplied by amount of dispells squared. This caps at x400 at 20 dispells, and each dispell beyond that instead adds 20 to this multiplier)",
+            "Description": "Dispel all ally buffs, ally debuffs, enemy buffs and enemy debuffs, then restore HP and TP to the whole party based on the amount of buffs/debuffs dispelled. (Base healing is multiplied by amount of dispels squared. This caps at x400 at 20 dispels, and each dispel beyond that instead adds 20 to this multiplier)",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -2853,7 +2853,7 @@ var data = {
         "Final Decree":{
             "Usage": "Active (Head)",
             "Unlock": "Tactical Decree (Lv 2), Healing Decree (Lv 2)",
-            "Description": "Can only be used if you have 3 buffs. Dispell all buffs on yourself, then increase damage dealt and decrease damage taken by the party this turn.",
+            "Description": "Can only be used if you have 3 buffs. Dispel all buffs on yourself, then increase damage dealt and decrease damage taken by the party this turn.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -2866,7 +2866,7 @@ var data = {
         "Renew":{
             "Usage": "Passive",
             "Unlock": "Final Decree (Lv 3)",
-            "Description": "When you dispell buffs on yourself, they have a chance to be reapplied.",
+            "Description": "When you dispel buffs on yourself, they have a chance to be reapplied.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3161,7 +3161,7 @@ var data = {
         "Drawing Slice":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Dominance (Lv 2), Ninpo:Double (Lv 2)",
-            "Description": "Knife: Deal multiple hits of melee Cut damage to random enemies. Damage is doubled for each clone, but dispells all clones. (Damage is divided by 4 if there's no clones)",
+            "Description": "Knife: Deal multiple hits of melee Cut damage to random enemies. Damage is doubled for each clone, but dispels all clones. (Damage is divided by 4 if there's no clones)",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -5741,7 +5741,7 @@ var data = {
         "Endless Armor":{
             "Usage": "Force Boost",
             "Unlock": "N/A",
-            "Description": "Miasma Armor's duration does not go down and your skills do not dispell it.",
+            "Description": "Miasma Armor's duration does not go down and your skills do not dispel it.",
             "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
@@ -5758,19 +5758,308 @@ var data = {
                 "Damage Dealt": ["x0.65"],
                 "Damage Taken": ["x1.35"],
                 "Evasion Down": ["-100%"],
-                "Speed Down": ["-60000%"],
+                "Speed Down": ["-6000%"],
                 "Infliction Vulnerability": ["x1.4"],
             }
         },
     },
     "Novice (Lv 1)":{
-
+        "Eroding Miasma":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Place a debuff on all enemies for 3~5 turns, which increases physical/elemental damage taken.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "15"],
+                "Damage Taken": ["+11%", "+13%", "+15%", "+17%", "+17%", "+19%", "+21%", "+23%", "+25%", "+25%"],
+                "Duration (Turns)": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Stifling Miasma":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Place a debuff on all enemies for 3~5 turns, which decreases physical/elemental damage dealt.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "15"],
+                "Damage Dealt": ["-8%", "-9%", "-10%", "-11%", "-11%", "-12%", "-13%", "-14%", "-15%", "-15%"],
+                "Duration (Turns)": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Sluggish Miasma":{
+            "Usage": "Active (Head)",
+            "Unlock": "Eroding/Stifling Miasma (Lv 2)",
+            "Description": "Place a debuff on all enemies for 3~5 turns, which decreases evasion and action speed.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10"],
+                "Evasion Down": ["-9%", "-12%", "-15%", "-18%", "-18%", "-21%", "-24%", "-27%", "-30%", "-30%"],
+                "Speed Down": ["-15%", "-20%", "-25%", "-30%", "-30%", "-35%", "-40%", "-45%", "-50%", "-50%"],
+                "Duration (Turns)": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Paralyzing Reap":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Scythe: Deal melee Cut damage to an enemy line. If Miasma Armor is active, has a chance to inflict Paralysis.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "6", "13"],
+                "Attack Power": ["180%", "190%", "200%", "210%", "220%", "280%"],
+                "Infliction Chance": ["30%", "30%", "30%", "30%", "30%", "40%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Toxic Reap":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Paralyzing Reap (Lv 2)",
+            "Description": "Scythe: Deal melee Cut damage to an enemy line. If Miasma Armor is active, has a chance to inflict Poison.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "6", "13"],
+                "Attack Power": ["180%", "190%", "200%", "210%", "220%", "280%"],
+                "Infliction Chance": ["35%", "35%", "35%", "35%", "35%", "45%"],
+                "Poison Damage": ["25", "30", "35", "40", "45", "75"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Miasma Armor":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Paralyzing Reap (Lv 2)",
+            "Description": "Enter the Miasma Armor state for 3 turns, which increases action speed. Miasma Armor will activate automatically at the start of battle.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "5"],
+                "Speed Up": ["x1.2", "x1.35", "x1.5", "x2.0"],
+                "Action Speed": ["50%", "50%", "50%", "50%"],
+            }
+        },
+        "Endless Shroud":{
+            "Usage": "Passive",
+            "Unlock": "Miasma Armor (Lv 2)",
+            "Description": "When you use a debuff skill, there's a chance to activate/extend Miasma Armor.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "Activation Speed": ["26%", "34%", "42%", "50%", "58%", "66%", "74%", "100%"],
+            }
+        },
+        "Atonement":{
+            "Usage": "Active (Head, WIS)",
+            "Unlock": "Miasma Armor (Lv 2)",
+            "Description": "Dispel your Miasma Armor to restore HP to all allies, with a chance to remove ailments.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "15", "15", "15", "15", "24"],
+                "Healing Power": ["100%", "105%", "110%", "140%", "145%", "150%", "155%", "200%"],
+                "Remove Chance": ["50%", "52%", "54%", "64%", "66%", "68%", "70%", "85%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Take":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Take points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "Wilting Miasma":{
+            "Usage": "Active (Head)",
+            "Unlock": "Sluggish Miasma (Lv 3)",
+            "Description": "Place a debuff on all enemies for 3~5 turns, which decreases ailment resistance and natural recovery rate.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "14", "14", "14", "14", "14", "20"],
+                "Infliction Vulnerability": ["x1.12", "x1.14", "x1.16", "x1.18", "x1.18", "x1.21", "x1.24", "x1.27", "x1.3", "x1.3"],
+                "Recovery Down": ["-7%", "-9%", "-11%", "-13%", "-13%", "-16%", "-19%", "-22%", "-25%", "-25%"],
+                "Duration (Turns)": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Binding Miasma":{
+            "Usage": "Active (Head)",
+            "Unlock": "Wilting Miasma (Lv 3)",
+            "Description": "Place a debuff on all enemies for 3~5 turns, which decreases bind resistance and natural recovery rate.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "14", "14", "14", "14", "14", "20"],
+                "Infliction Vulnerability": ["x1.12", "x1.14", "x1.16", "x1.18", "x1.18", "x1.21", "x1.24", "x1.27", "x1.3", "x1.3"],
+                "Recovery Down": ["-7%", "-9%", "-11%", "-13%", "-13%", "-16%", "-19%", "-22%", "-25%", "-25%"],
+                "Duration (Turns)": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Darkness Reap":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Toxic Reap (Lv 2)",
+            "Description": "Scythe: Deal melee Cut damage to an enemy line. If Miasma Armor is active, has a chance to inflict Blind.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "6", "13"],
+                "Attack Power": ["180%", "190%", "200%", "210%", "220%", "280%"],
+                "Infliction Chance": ["35%", "35%", "35%", "35%", "35%", "45%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Chaos Reap":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Darkness Reap (Lv 3)",
+            "Description": "Scythe: Deal melee Cut damage to an enemy line. If Miasma Armor is active, has a chance to inflict Panic.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "18"],
+                "Attack Power": ["200%", "215%", "230%", "245%", "260%", "340%"],
+                "Infliction Chance": ["23%", "23%", "23%", "23%", "23%", "30%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Black Shroud":{
+            "Usage": "Passive",
+            "Unlock": "Endless Shroud (Lv 1)",
+            "Description": "While Miasma Armor is active, decrease physical/elemental damage taken.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Damage Taken": ["-10%", "-11%", "-13%", "-14%", "-16%", "-17%", "-19%", "-25%"],
+            }
+        },
+        "Soul Transfer":{
+            "Usage": "Active (Head)",
+            "Unlock": "Atonement (Lv 3)",
+            "Description": "Dispel your Miasma Armor for a chance to revive all allies. (<b>Bug</b>: Revive chance is rolled twice and must pass both to activate)",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "25"],
+                "Revive Chance": ["50%", "53%", "56%", "59%", "62%", "75%"],
+                "HP Gain": ["1", "30", "60", "90", "120", "250"],
+                "Action Speed": ["20%", "20%", "20%", "20%", "20%", "20%"],
+            }
+        },
+        "Black Wave":{
+            "Usage": "Passive",
+            "Unlock": "Soul Transfer (Lv 1)",
+            "Description": "At the end of each turn, if Miasma Armor is active, recover TP.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "TP Gain": ["1", "2", "3", "5"],
+            }
+        },
+        "Spirit Absorb":{
+            "Usage": "Passive (WIS)",
+            "Unlock": "N/A",
+            "Description": "Recover HP each time you inflict a debuff on one or more targets. Excess healing increases your Max HP until the end of turn.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "Healing Power": ["80%", "95%", "110%", "125%", "140%", "220%"],
+                "Max. Overheal": ["+15%", "+18%", "+21%", "+24%", "+27%", "+40%"],
+            }
+        },
+        "Status ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Infliction Up": ["x1.04", "x1.05", "x1.06", "x1.09", "x1.1", "x1.11", "x1.12", "x1.15"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "Death Tolerance":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Chance to nullify debuffs and ailments received.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Activation Chance": ["7%", "9%", "11%", "13%", "15%", "17%", "19%", "25%"],
+            }
+        },
+        "Ephemeral Reap":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Scythe: Deal multiple hits of melee Cut damage to one enemy. Hits once per debuff on the target. Cannot miss.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["16", "16", "16", "16", "22", "22", "22", "22", "22", "30"],
+                "Attack Power": ["170%", "177%", "184%", "191%", "212%", "219%", "226%", "233%", "240%", "280%"],
+                "Action Speed": ["30%", "30%", "30%", "30%", "30%", "30%", "30%", "30%", "30%", "30%"],
+            }
+        },
+        "Fatal Reap":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Chaos Reap (Lv 2)",
+            "Description": "Scythe: Deal melee Cut damage to one enemy, with a chance to inflict Instant Death.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["13", "13", "13", "17", "17", "17", "17", "23"],
+                "Attack Power": ["320%", "330%", "340%", "380%", "395%", "410%", "425%", "500%"],
+                "Infliction Chance": ["15%", "15%", "15%", "20%", "20%", "20%", "20%", "25%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["30%", "30%", "30%", "30%", "30%", "30%", "30%", "30%"],
+            }
+        },
+        "Miasma Wall":{
+            "Usage": "Active (Head)",
+            "Unlock": "Black Wave (Lv 1)",
+            "Description": "Dispel your Miasma Armor for a chance to nullify bind/ailment inflictions to the party this turn.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "15", "30"],
+                "Activation Chance": ["75%", "77%", "80%", "82%", "85%", "95%"],
+                "Max. Activations": ["4", "4", "4", "4", "4", "5"],
+            }
+        },
+        "Spirit Barrier":{
+            "Usage": "Active (Head)",
+            "Unlock": "Black Wave (Lv 1)",
+            "Description": "Dispel your Miasma Armor for a chance to nullify Instant Deat/Stun/debuff inflictions to the party this turn.",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "15", "30"],
+                "Activation Chance": ["75%", "77%", "80%", "82%", "85%", "95%"],
+                "Max. Activations": ["4", "4", "4", "4", "4", "5"],
+            }
+        },
+        "Enduring Armor":{
+            "Usage": "Passive",
+            "Unlock": "Miasma Wall (Lv 2), Spirit Barrier (Lv 2)",
+            "Description": "Skills that dispel Miasma Armor will instead decrease its remaining duration.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "Duration Down": ["7", "6", "5", "3"],
+            }
+        },
     },
 },
 "Vampire":{
