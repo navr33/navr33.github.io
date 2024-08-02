@@ -3850,7 +3850,7 @@ var data = {
         "Front Command":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Target one ally, and if they're hit this turn, all front line allies will counterattack with their weapons.",
+            "Description": "Target one ally, and when they're first hit this turn, all front line allies will counterattack with their weapons.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -3945,7 +3945,7 @@ var data = {
         "Endure Command":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Front Command (Lv 2)",
-            "Description": "If you're hit this turn, all other allies will counterattack with their weapons.",
+            "Description": "When you're first hit this turn, all other allies will counterattack with their weapons.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -4058,7 +4058,7 @@ var data = {
         "Shot Command":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Blitz Command (Lv 3)",
-            "Description": "Target one ally line, and if they're hit this turn, all allies with a Bow or a Gun will counterattack with their weapons.",
+            "Description": "Target one ally line, and when it's first hit this turn, all allies with a Bow or a Gun will counterattack with their weapons.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -5390,7 +5390,7 @@ var data = {
         "Absorber":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Recover TP when one of your attacks hit the weakness of at least one enemy.",
+            "Description": "Recover TP when one of your attacks hits the weakness of at least one enemy.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -5437,13 +5437,303 @@ var data = {
         },
     },
     "Novice (Lv 1)":{
-
+        "Concussion":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to inflict Head Bind. If performed during One-Two Punch, there's a chance to follow up with Arm Breaker or Low Blow.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "6", "6", "6", "6", "10"],
+                "Attack Power": ["115%", "120%", "125%", "140%", "145%", "150%", "155%", "180%"],
+                "Infliction Chance": ["30%", "30%", "30%", "37%", "37%", "37%", "37%", "45%"],
+                "Follow Up Chance": ["40%", "43%", "46%", "55%", "58%", "61%", "64%", "75%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["65%", "65%", "65%", "65%", "65%", "65%", "65%", "65%"],
+            }
+        },
+        "Arm Breaker":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to inflict Arm Bind. If performed during One-Two Punch, there's a chance to follow up with Low Blow.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "6", "6", "6", "6", "10"],
+                "Attack Power": ["115%", "120%", "125%", "140%", "145%", "150%", "155%", "180%"],
+                "Infliction Chance": ["30%", "30%", "30%", "37%", "37%", "37%", "37%", "45%"],
+                "Follow Up Chance": ["40%", "43%", "46%", "55%", "58%", "61%", "64%", "75%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["65%", "65%", "65%", "65%", "65%", "65%", "65%", "65%"],
+            }
+        },
+        "Low Blow":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to inflict Leg Bind.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "6", "6", "6", "6", "10"],
+                "Attack Power": ["115%", "120%", "125%", "140%", "145%", "150%", "155%", "180%"],
+                "Infliction Chance": ["30%", "30%", "30%", "37%", "37%", "37%", "37%", "45%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["65%", "65%", "65%", "65%", "65%", "65%", "65%", "65%"],
+            }
+        },
+        "One-Two Punch":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Concussion (Lv 2), Arm Breaker (Lv 2), Low Blow (Lv 2)",
+            "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to follow up with Concussion, Arm Breaker and/or Low Blow (with decreased damage and infliction chance) if the target does not have the corresponding bind. (This skill's follow up chance is only for the first successful follow up, after which the chance will depend on the level of the latest follow up skill performed)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "16"],
+                "Attack Power": ["100%", "103%", "106%", "109%", "121%", "124%", "127%", "130%", "133%", "150%"],
+                "Follow Up Chance": ["40%", "42%", "44%", "46%", "54%", "56%", "58%", "60%", "62%", "75%"],
+                "Follow Up Effect": ["x0.5", "x0.5", "x0.5", "x0.5", "x0.5", "x0.5", "x0.5", "x0.5", "x0.5", "x0.5"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Corkscrew":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to inflict Paralysis.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "6", "6", "6", "6", "10"],
+                "Attack Power": ["115%", "120%", "125%", "140%", "145%", "150%", "155%", "180%"],
+                "Infliction Chance": ["30%", "30%", "30%", "37%", "37%", "37%", "37%", "45%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["65%", "65%", "65%", "65%", "65%", "65%", "65%", "65%"],
+            }
+        },
+        "Adrenaline":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Recover TP when one of your skills inflicts a bind/ailment/stun on one or more enemies.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Gain": ["1+1%", "2+1%", "3+1%", "4+2%"],
+            }
+        },
+        "Double Punch":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "When a single-hit Fist skill fails to inflict its bind/ailment, there's a chance to perform it a second time. (Works with Cross Counter despite the in-game description. Does not work on One-Two Punch follow ups. Does not work if infliction fails because the target was already afllicted)",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["13%", "16%", "19%", "22%", "25%", "28%", "31%", "34%", "37%", "50%"],
+            }
+        },
+        "HP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max HP.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "HP Up": ["+5%", "+6%", "+7%", "+11%", "+12%", "+13%", "+14%", "+20%"],
+            }
+        },
+        "Chop":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Obtain additional materials when gathering from Chop points.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
     "Veteran (Lv 20)":{
-
+        "Devil's Fist":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Fist: Spent part of your current HP to deal melee Bash damage to one enemy, with splash effect.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "16", "16", "16", "16", "20"],
+                "HP Cost": ["10%", "10%", "10%", "20%", "20%", "20%", "20%", "30%"],
+                "Attack Power": ["200%", "206%", "212%", "257%", "263%", "269%", "275%", "350%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
+            }
+        },
+        "Fighting Spirit":{
+            "Usage": "Passive",
+            "Unlock": "Devil's Fist (Lv 3)",
+            "Description": "Increase damage dealt if you lost HP on the previous turn.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "Damage Dealt": ["+10%", "+12%", "+14%", "+16%", "+18%", "+30%"],
+            }
+        },
+        "Following Strike":{
+            "Usage": "Passive (Arms)",
+            "Unlock": "One-Two Punch (Lv 2), Corkscrew (Lv 2)",
+            "Description": "Chance to follow up with Corkscrew when you inflict a bind.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["13%", "16%", "19%", "22%", "25%", "28%", "31%", "34%", "37%", "50%"],
+            }
+        },
+        "Leading Blow":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Following Strike (Lv 2)",
+            "Description": "Fist: Deal melee Bash damage to one enemy, then follow up with Concussion, Arm Breaker, Low Blow and/or Corkscrew (with decreased damage) if the target is afflicted by the corresponding bind/ailment. (Corkscrew activates for any ailment)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["14", "14", "14", "14", "19", "19", "19", "19", "19", "25"],
+                "Attack Power": ["100%", "103%", "106%", "109%", "121%", "124%", "127%", "130%", "133%", "150%"],
+                "Follow Up Effect": ["x0.65", "x0.67", "x0.69", "x0.71", "x0.79", "x0.81", "x0.83", "x0.85", "x0.87", "x1.0"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Breather":{
+            "Usage": "Active (No Parts)",
+            "Unlock": "N/A",
+            "Description": "Only usable if afflicted with a bind/ailment. Remove binds and ailment on yourself, then enter a charge state until the end of next turn, which increases damage dealt.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "8"],
+                "Binds Removed": ["1", "1", "1", "3"],
+                "Damage Dealt": ["x1.2", "x1.25", "x1.3", "x1.5"],
+                "Action Speed": ["30%", "30%", "30%", "30%"],
+            }
+        },
+        "Fault Blocker":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Place a buff on your line for 3 turns, which increases resistance against binds/ailments.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "14"],
+                "Infliction Vulnerability": ["x0.75", "x0.71", "x0.67", "x0.5"],
+                "Action Speed": ["30%", "30%", "30%", "30%"],
+            }
+        },
+        "Clinch":{
+            "Usage": "Active (No Parts, LUC)",
+            "Unlock": "Breather (Lv 1), Fault Blocker (Lv 1)",
+            "Description": "Attempt to inflict the 3 binds on one enemy and yourself.",
+            "Starter": "0",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "14", "14", "14"],
+                "Infliction Chance\n(Enemy)": ["20%", "22%", "24%", "26%", "28%", "35%"],
+                "Infliction Chance\n(Self)": ["50%", "50%", "50%", "50%", "50%", "50%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Status ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Infliction Up": ["x1.04", "x1.05", "x1.06", "x1.09", "x1.1", "x1.11", "x1.12", "x1.15"],
+            }
+        },
+        "Cross Counter":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Fist: Prepare to counterattack when your line is first hit by a physical attack this turn. Deals melee Bash damage, with a chance to bind the part that was used to attack. (For normal attacks, attempts to inflict Arm Bind)",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "9"],
+                "Attack Power": ["300%", "325%", "350%", "375%", "400%", "500%"],
+                "Infliction Chance": ["40%", "43%", "46%", "49%", "52%", "65%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%"],
+            }
+        },
     },
     "Master (Lv 40)":{
-
+        "Thunder Fist":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Fighting Spirit (Lv 2)",
+            "Description": "Fist: Deal melee Bash+Volt damage to one enemy. If it doesn't kill, lose part of your current HP.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "10", "10", "10", "10", "14"],
+                "Attack Power": ["200%", "210%", "220%", "270%", "280%", "290%", "300%", "400%"],
+                "HP Loss": ["20%", "20%", "20%", "35%", "35%", "35%", "35%", "50%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Lash Out":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Leading Blow (Lv 3)",
+            "Description": "Fist: Deal multiple hits of melee Bash damage to one enemy. Hits as many times as the amount of hits you landed last turn. (Max 9 hits. Counts itself as a single hit regardless of how many were performed)",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "10", "10", "10"],
+                "Attack Power": ["50%", "54%", "58%", "62%", "66%", "85%"],
+                "Accuracy": ["-10%", "-10%", "-10%", "-10%", "-10%", "-10%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Meditation":{
+            "Usage": "Active (Head)",
+            "Unlock": "Clinch (Lv 3)",
+            "Description": "Enter a charge state until the end of next turn, which increases bind/ailment infliction rate.",
+            "Starter": "1",
+            "Max Level": "4",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "10"],
+                "Infliction Up": ["x1.35", "x1.4", "x1.45", "x1.7"],
+                "Action Speed": ["30%", "30%", "30%", "30%"],
+            }
+        },
+        "Raging Billows":{
+            "Usage": "Passive",
+            "Unlock": "Meditation (Lv 2)",
+            "Description": "Increase damage dealt to enemies with binds/ailments. Stronger the more affictions the target has: Effect is multiplied by 2 for 2 afflictions, by 3 for 3 afflictions, and by 5 for 4 afflictions.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt": ["+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+12%", "+13%", "+14%", "+20%"],
+            }
+        },
+        "Million Rush":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If a sub-weapon is equipped, normal attacks have a chance to hit 2~4 times.",
+            "Starter": "1",
+            "Max Level": "8",
+            "Data": {
+                "Activation Chance": ["11%", "13%", "15%", "17%", "19%", "21%", "23%", "34%"],
+            }
+        },
+        "Resonance Blow":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Million Rush (Lv 3)",
+            "Description": "Fist: Deal multiple hits of melee Bash damage to one enemy. Starts at 1 hit, and increases by 1 with each turn that passes. (Max 9  extra hits. Resets to 1 hit upon use)",
+            "Starter": "1",
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["25", "25", "25", "25", "25", "35"],
+                "Attack Power": ["60%", "64%", "68%", "72%", "76%", "100%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
     },
 },
 "Harbinger":{
