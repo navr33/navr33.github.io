@@ -278,7 +278,7 @@ var data = {
         "Chain Killer":{
             "Usage": "Active (Legs, STR)",
             "Unlock": "Chain Boost (Lv 3), Chain Burst (Lv 3)",
-            "Description": "(Chain) Sword: Target one enemy and prepare to follow up after bind/ailment/stun inflictions to them this turn, dealing Cut/Stab damage.",
+            "Description": "(Chain) Sword: Target one enemy and prepare to follow up after bind/ailment/stun inflictions to them this turn, dealing Stab damage.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -337,7 +337,7 @@ var data = {
         "Multi-Stab":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Optic Thrust (Lv 3)",
-            "Description": "Sword: Deal multiple hits of melee Cut/Stab damage randomly to an enemy line.",
+            "Description": "Sword: Deal multiple hits of melee Stab damage randomly to an enemy line.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -352,7 +352,7 @@ var data = {
         "Resonance":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Multi-Stab (Lv 5)",
-            "Description": "Sword: Deal melee Cut/Stab damage to one enemy. Damage increases for each hit you landed last turn (max 9 stacks).",
+            "Description": "Sword: Deal melee Stab damage to one enemy. Damage increases for each hit you landed last turn (max 9 stacks).",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -749,13 +749,391 @@ var data = {
 },
 "Pugilist":{
     "Basic Skills":{
-    
+        "Brawl Mastery":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase physical damage dealt if a Cestus is equipped.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt": ["+2%", "+3%", "+4%", "+5%", "+8%", "+9%", "+10%", "+11%", "+12%", "+15%"],
+            }
+        },
+        "Phys ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase physical damage dealt.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt": ["+4%", "+5%", "+6%", "+7%", "+9%", "+10%", "+11%", "+12%", "+13%", "+15%"],
+            }
+        },
+        "Concussion":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Cestus: Deal melee Bash damage to one enemy, with a chance to inflict Head Bind. If performed during One-Two Punch, there's a chance to follow up with Arm Crusher or Low Blow.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
+                "Attack Power": ["150%", "159%", "168%", "177%", "177%", "189%", "201%", "213%", "225%", "225%"],
+                "Infliction Chance": ["30%", "30%", "30%", "30%", "40%", "40%", "40%", "40%", "40%", "50%"],
+                "Follow Up Chance": ["34%", "34%", "34%", "34%", "50%", "50%", "50%", "50%", "50%", "66%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Arm Crusher":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Cestus: Deal melee Bash damage to one enemy, with a chance to inflict Arm Bind. If performed during One-Two Punch, there's a chance to follow up with Low Blow.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
+                "Attack Power": ["150%", "159%", "168%", "177%", "177%", "189%", "201%", "213%", "225%", "225%"],
+                "Infliction Chance": ["30%", "30%", "30%", "30%", "40%", "40%", "40%", "40%", "40%", "50%"],
+                "Follow Up Chance": ["34%", "34%", "34%", "34%", "50%", "50%", "50%", "50%", "50%", "66%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Low Blow":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Cestus: Deal melee Bash damage to one enemy, with a chance to inflict Leg Bind.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
+                "Attack Power": ["150%", "159%", "168%", "177%", "177%", "189%", "201%", "213%", "225%", "225%"],
+                "Infliction Chance": ["30%", "30%", "30%", "30%", "40%", "40%", "40%", "40%", "40%", "50%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "One-Two Punch":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Concussion (Lv 3), Arm Breaker (Lv 3), Low Blow (Lv 3)",
+            "Description": "Cestus: Deal melee Bash damage to one enemy, with a chance to follow up with Concussion, Arm Crusher and/or Low Blow (with decreased damage) if the target does not have the corresponding bind. (This skill's follow up chance is only for the first successful follow up, after which the chance will depend on the level of the latest follow up skill performed)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "13"],
+                "Attack Power": ["100%", "103%", "106%", "109%", "119%", "123%", "127%", "131%", "135%", "150%"],
+                "Follow Up Chance": ["34%", "36%", "38%", "40%", "48%", "50%", "52%", "54%", "56%", "66%"],
+                "Follow Up Effect": ["x0.7", "x0.7", "x0.7", "x0.7", "x0.7", "x0.7", "x0.7", "x0.7", "x0.7", "x0.7"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Blood Wrath":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Each time you lose HP there's a chance to deal weapon-based damage to a random enemy.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["16%", "18%", "20%", "22%", "32%", "34%", "36%", "38%", "40%", "50%"],
+                "Attack Power": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Overexertion":{
+            "Usage": "Active (Head)",
+            "Unlock": "Blood Wrath (Lv 1)",
+            "Description": "Place a buff on one ally for 3 turns, which drastically increases physical damage dealt but makes them spend part of current HP when they act.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Damage Dealt": ["+40%", "+40%", "+40%", "+40%", "+65%", "+65%", "+65%", "+65%", "+65%", "+100%"],
+                "HP Loss": ["30%", "23%", "16%", "9%", "40%", "33%", "26%", "19%", "12%", "50%"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
+            }
+        },
+        "Thunder Fist":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Deal melee Bash+Volt damage to one enemy. If it doesn't kill, take recoil damage based on current HP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "10"],
+                "Attack Power": ["200%", "208%", "216%", "224%", "300%", "312%", "324%", "336%", "348%", "450%"],
+                "HP Loss": ["20%", "20%", "20%", "20%", "35%", "35%", "35%", "35%", "35%", "50%"],
+                "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+                "Action Speed": ["130%", "130%", "130%", "130%", "130%", "130%", "130%", "130%", "130%", "130%"],
+            }
+        },
+        "Devil's Fist":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Thunder Fist (Lv 2)",
+            "Description": "Spend part of current HP to deal melee Bash damage to one enemy, with splash effect.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "16"],
+                "HP Cost": ["35%", "35%", "35%", "35%", "20%", "20%", "20%", "20%", "20%", "5%"],
+                "Attack Power": ["180%", "190%", "200%", "210%", "210%", "225%", "240%", "255%", "270%", "270%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
     },
     "Barrage Brawler":{
-    
+        "Double Punch":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "When a single-hit Pugilist skill fails to inflict its bind/ailment, there's a chance to perform it a second time. (Does not work on One-Two Punch follow ups. Does not work if infliction fails because the target was already afllicted)",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["12%", "14%", "16%", "18%", "28%", "31%", "34%", "37%", "40%", "50%"],
+            }
+        },
+        "Status ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Infliction Up": ["x1.05", "x1.06", "x1.07", "x1.08", "x1.12", "x1.13", "x1.14", "x1.15", "x1.16", "x1.2"],
+            }
+        },
+        "Corkscrew":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "N/A",
+            "Description": "Cestus: Deal melee Bash damage to one enemy, with a chance to inflict Paralysis.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "10"],
+                "Attack Power": ["162%", "172%", "182%", "192%", "192%", "204%", "216%", "228%", "240%", "240%"],
+                "Infliction Chance": ["40%", "40%", "40%", "40%", "50%", "50%", "50%", "50%", "50%", "60%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Leading Blow":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Corkscrew (Lv 2), One-Two Punch (Lv 5)",
+            "Description": "Cestus: Deal melee Bash damage to one enemy, then follow up with Concussion, Arm Crusher, Low Blow and/or Corkscrew (with decreased damage) if the target is afflicted by the corresponding bind/ailment. (Corkscrew activates for any ailment)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "22", "22", "22", "22", "22", "30"],
+                "Attack Power": ["100%", "103%", "106%", "109%", "119%", "123%", "127%", "131%", "135%", "150%"],
+                "Follow Up Effect": ["x0.75", "x0.78", "x0.81", "x0.84", "x1.04", "x1.08", "x1.12", "x1.16", "x1.2", "x1.5"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Speed Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase accuracy, evasion and action speed.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Accuracy Up": ["+2.4%", "+2.8%", "+3.2%", "+3.6%", "+5.2%", "+5.8%", "+6.4%", "+7%", "+7.6%", "+10%"],
+                "Evasion Up": ["+2.4%", "+2.8%", "+3.2%", "+3.6%", "+5.2%", "+5.8%", "+6.4%", "+7%", "+7.6%", "+10%"],
+                "Speed Up": ["+11%", "+14%", "+17%", "+20%", "+24%", "+27%", "+30%", "+33%", "+36%", "+40%"],
+            }
+        },
+        "Lash Out":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Speed Up (Lv 5)",
+            "Description": "Fist: Deal multiple hits of melee Bash damage to one enemy. Hits as many times as the amount of hits you landed last turn. (Max 9 hits. Counts itself as a single hit regardless of how many were performed)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "7"],
+                "Attack Power": ["120%", "123%", "126%", "129%", "144%", "148%", "152%", "156%", "160%", "180%"],
+                "Accuracy": ["-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Cross Counter":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Overexertion (Lv 5)",
+            "Description": "Cestus: Prepare to counterattack when your line is first hit by a physical attack this turn. Deals melee Bash damage, with a chance to bind the part that was used to attack.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
+                "Attack Power": ["300%", "315%", "330%", "345%", "405%", "425%", "445%", "465%", "485%", "600%"],
+                "Infliction Chance": ["50%", "52%", "54%", "56%", "68%", "71%", "74%", "77%", "80%", "100%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["1500%", "1500%", "1500%", "1500%", "1500%", "1500%", "1500%", "1500%", "1500%", "1500%"],
+            }
+        },
+        "Breather":{
+            "Usage": "Active (No Parts)",
+            "Unlock": "N/A",
+            "Description": "Only usable if afflicted with a bind/ailment. Remove all binds and ailments on yourself, then enter a charge state until the end of next turn, which increases all damage dealt. (Does not strenghten Union skills)",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "8", "8", "8", "8", "8", "20"],
+                "Damage Dealt": ["x1.2", "x1.25", "x1.3", "x1.35", "x1.8", "x1.85", "x1.9", "x1.95", "x2.0", "x2.5"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Fault Blocker":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Place a buff on your line for 3~5 turns, which increases resistance against binds/ailments.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "12", "12", "12", "12", "12", "18"],
+                "Infliction Vulnerability": ["x0.68", "x0.63", "x0.58", "x0.53", "x0.53", "x0.48", "x0.43", "x0.38", "x0.33", "x0.33"],
+                "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Clinch":{
+            "Usage": "Active (No Parts, LUC)",
+            "Unlock": "Breather (Lv 3), Fault Blocker (Lv 3)",
+            "Description": "Attempt to inflict the 3 binds on one enemy and yourself.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "15"],
+                "Infliction Chance\n(Enemy)": ["20%", "22%", "24%", "26%", "38%", "41%", "44%", "47%", "50%", "67%"],
+                "Infliction Chance\n(Self)": ["20%", "22%", "24%", "26%", "34%", "36%", "38%", "40%", "42%", "50%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
     },
     "Impact Brawler":{
-    
+        "Fortitude":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase all damage dealt if HP is below a certain threshold.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "HP Threshold": ["30%", "31%", "32%", "33%", "39%", "40%", "41%", "42%", "43%", "50%"],
+                "Damage Dealt": ["+24%", "+25%", "+26%", "+27%", "+32%", "+34%", "+36%", "+38%", "+40%", "+50%"],
+            }
+        },
+        "HP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max HP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "HP Up": ["+5%", "+6%", "+7%", "+8%", "+12%", "+13%", "+14%", "+15%", "+16%", "+20%"],
+            }
+        },
+        "Vajra Stance":{
+            "Usage": "Active (Arms)",
+            "Unlock": "N/A",
+            "Description": "Place a buff on your line for 3~5 turns, which decreases physical damage taken.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "15"],
+                "Damage Taken↓": ["-11%", "-13%", "-15%", "-17%", "-17%", "-19%", "-21%", "-23%", "-25%", "-25%"],
+                "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Soul Crusher":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Cestus: Deal melee Bash damage to all enemies. Recover HP based on damage dealt.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "25"],
+                "Attack Power": ["125%", "131%", "137%", "143%", "173%", "181%", "189%", "197%", "205%", "250%"],
+                "Damage Drain": ["10%", "10%", "10%", "10%", "15%", "15%", "15%", "15%", "15%", "25%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Abyssal Killer":{
+            "Usage": "Active (Head)",
+            "Unlock": "Vajra Stance (Lv 5), Soul Crusher (Lv 5)",
+            "Description": "For this turn, you can survive one lethal attack with 1 HP. If this activates, enter a charge state until the end of next turn, which increases all damage dealt based on how much lethal damage you endured. The base damage increase is multiplied by (ExcessDamage/MaxHP)<sup>1/4</sup>. (Damage bonus is multiplicative. Does not work on Union skills)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "18", "18", "18", "18", "18", "24"],
+                "Damage Dealt↑": ["+40%", "+43%", "+46%", "+49%", "+80%", "+85%", "+90%", "+95%", "+100%", "+150%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Titan Killer":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "N/A",
+            "Description": "Cestus: Deal melee Bash damage to one enemy. Stronger if the target has higher HP% than you.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "7"],
+                "Attack Power": ["100%", "102%", "104%", "106%", "121%", "124%", "127%", "130%", "133%", "150%"],
+                "Damage Bonus": ["x3.0", "x3.05", "x3.1", "x3.15", "x3.58", "x3.66", "x3.74", "x3.82", "x3.9", "x4.5"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+            }
+        },
+        "Death's Edge":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Overexertion (Lv 3)",
+            "Description": "Cestus: Deal melee Bash damage to one enemy. Stronger the less HP the party has:<br>-Party's total missing HP grants a damage multiplier of [1 + MissingHP/100];<br>-Party's average missing HP% grants a damage multiplier of [MissingHP%*(1+MissingHP%)/2 + 0.01].",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "14"],
+                "Attack Power": ["150%", "154%", "158%", "162%", "180%", "185%", "190%", "195%", "200%", "225%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%"],
+            }
+        },
+        "Heavenly Aid":{
+            "Usage": "Active (Head)",
+            "Unlock": "Titan Killer (Lv 3), Death's Edge (Lv 3)",
+            "Description": "Enter a charge state until the end of next turn, which increases damage dealt based on how much HP is healed to you this turn. The base damage increase is multiplied by GainedHP/MaxHP. (Damage bonus is multiplicative. Does not work on Union skills)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "9", "9", "9", "9", "9", "20"],
+                "Damage Dealt↑": ["+170%", "+174%", "+178%", "+182%", "+220%", "+226%", "+232%", "+238%", "+244%", "+300%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Satan's Fist":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Devil's Fist (Lv 3)",
+            "Description": "Spend part of current HP to deal melee Bash damage to an enemy line.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "13", "13", "13", "13", "13", "20"],
+                "HP Cost": ["50%", "50%", "50%", "50%", "30%", "30%", "30%", "30%", "30%", "10%"],
+                "Attack Power": ["215%", "230%", "245%", "260%", "260%", "280%", "300%", "320%", "340%", "340%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Status DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Infliction Vulnerability": ["x0.92", "x0.9", "x0.88", "x0.86", "x0.82", "x0.8", "x0.78", "x0.76", "x0.74", "x0.7"],
+            }
+        },
     },
 },
 "Harbinger":{
@@ -930,7 +1308,7 @@ function populate(class_name){
 
             description = document.createElement("p")
             data_block.appendChild(description)
-            description.innerText = current_skill["Description"]
+            description.innerHTML = current_skill["Description"]
 
             levels_table = document.createElement("table")
             data_block.appendChild(levels_table)
