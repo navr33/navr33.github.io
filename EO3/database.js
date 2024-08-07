@@ -3026,6 +3026,175 @@ var data = {
         "Data": ""
     },
 },
+"Battle Items":{
+    "Healing":{
+        "Medica / Medica II / Medica III / Medica IV":{
+            "Usage": "20 / 60 / 400 / 1.000 en",
+            "Description": "Restores HP to one ally.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Levels": ["1", "2", "3", "4"],
+            "Data": {
+                "HP Gain": ["80", "160", "300", "All"],
+            }
+        },
+        "Madora / Madora II":{
+            "Usage": "400 / 5.000 en",
+            "Description": "Restores HP to an ally line.",
+            "Starter": "0",
+            "Max Level": "2",
+            "Levels": ["1", "2"],
+            "Data": {
+                "HP Gain": ["150", "300"],
+            }
+        },
+        "Amrita / Amrita II / Amrita III":{
+            "Usage": "150 / 500 / 2.000 en",
+            "Description": "Restores TP to one ally.",
+            "Starter": "0",
+            "Max Level": "3",
+            "Levels": ["1", "2", "3"],
+            "Data": {
+                "TP Gain": ["50", "100", "All"],
+            }
+        },
+        "Hamao / Hamao II":{
+            "Usage": "300 / 4.000 en",
+            "Description": "Restores HP and TP to one ally.",
+            "Starter": "0",
+            "Max Level": "2",
+            "Levels": ["1", "2"],
+            "Data": {
+                "HP Gain": ["50", "100"],
+                "TP Gain": ["25", "50"],
+            }
+        },
+        "Nectar / Nectar II":{
+            "Usage": "50 / 300 en",
+            "Description": "Revives and heals one ally.",
+            "Starter": "0",
+            "Max Level": "2",
+            "Levels": ["1", "2"],
+            "Data": {
+                "HP Gain": ["20", "100"],
+            }
+        },
+    },
+    "Status":{
+        "Theriaca A / Theriaca B":{
+            "Usage": "100 / 30 en",
+            "Description": "Respectively removes binds or ailments from one ally.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Metopon":{
+            "Usage": "1.000 en",
+            "Description": "Removes all buffs on one enemy.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Unihorn":{
+            "Usage": "500 en",
+            "Description": "Removes all debuffs on the party.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "Power Up":{
+        "Bravant":{
+            "Usage": "300 en",
+            "Description": "Places a buff on one ally for 3 turns, which increases physical damage dealt.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Damage Dealt↑": ["+45%"],
+            }
+        },
+        "Stonard":{
+            "Usage": "150 en",
+            "Description": "Places a buff on one ally for 3 turns, which decreases physical damage taken.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Damage Taken↓": ["-45%"],
+            }
+        },
+        "Blaze/Freeze/Shock Oil":{
+            "Usage": "75 en",
+            "Description": "Places a buff on one ally for 3 turns, which imbues their weapon with Fire/Ice/Volt damage.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Fire/Ice/Volt Mist":{
+            "Usage": "150 en",
+            "Description": "Places a buff on all allies for 3 turns, which increases resistance to Fire/Ice/Volt.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Resistance↑": ["+50%"],
+            }
+        },
+        "Cut/Bash/Stab Mist":{
+            "Usage": "300 en",
+            "Description": "Places a buff on all allies for 3 turns, which increases resistance to Cut/Bash/Stab.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Resistance↑": ["+50%"],
+            }
+        },
+    },
+    "Attack (TEC)":{
+        "Fire/Ice/Volt Jar":{
+            "Usage": "100 en",
+            "Description": "Deals ranged Fire/Ice/Volt damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["60%"],
+                "Accuracy": ["-2"],
+                "Action Speed": ["-9"],
+            }
+        },
+        "Flame/Frost/Storm Jar":{
+            "Usage": "500 en",
+            "Description": "Deals ranged Fire/Ice/Volt damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["70%"],
+                "Accuracy": ["-5"],
+                "Action Speed": ["-9"],
+            }
+        },
+    },
+    "Infliction (LUC)":{
+        "Poison/Blind/Stun/Sleep/Addle/Curse Gas":{
+            "Usage": "100 / 150 / 200 / 300 / 800 / 800 en",
+            "Description": "Respectively attempts to inflict Poison, Blind, Paralysis, Sleep, Panic or Curse on all enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Infliction Chance": ["40%"],
+                "Poison Damage": ["0"],
+                "Action Speed": ["-6"],
+            }
+        },
+    },
+    "Rewards":{
+        "Formaldehyde":{
+            "Usage": "500 en",
+            "Description": "Until the end of turn, enemies killed will drop all their materials regardless of conditions.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    }
+},
 }
 
 //End of database
@@ -3045,6 +3214,7 @@ var descriptions = {
     "Yggdroid":"Combat androids who bolster the offensive with attack drones, or by treating their own bodies as weapons.",
     "Common Skills":"Skills available to all classes.",
     "Limit Skills":"Powerful skills only usable through the Limit system.",
+    "Battle Items":"Consumable items meant to aid you in battle.",
 }
 
 function toggle_data(table_id){
@@ -3149,6 +3319,113 @@ function populate(class_name){
                 effect_value.innerText = current_effect[value]
                 effect_row.appendChild(effect_value)
                 latest = effect_value
+            }
+        }
+    }
+}
+
+function populate_item(class_name){
+    var skill_list = document.getElementById("skill_list")
+    while (skill_list.hasChildNodes()){
+        skill_list.removeChild(skill_list.firstChild)
+    }
+    var current_class = data[class_name]
+    name_banner = document.createElement("h2")
+    name_banner.style.margin = "20px"
+    name_banner.innerText = class_name
+    skill_list.appendChild(name_banner)
+
+    class_decription = document.createElement("p")
+    class_decription.style.marginLeft = "10px"
+    class_decription.innerText = descriptions[class_name]
+    skill_list.appendChild(class_decription)
+    for (const category in current_class){
+        category_name = document.createElement("h3")
+        category_name.innerText = category
+        skill_list.appendChild(category_name)
+        for (const skill in current_class[category]){
+            var current_skill = current_class[category][skill]
+            skill_table = document.createElement("table")
+            skill_table.classList.add("skill_entry")
+            if (current_skill["Starter"] == "2"){
+                skill_table.style.marginTop = "15px"
+            }
+            skill_list.appendChild(skill_table)
+            
+            first_row = document.createElement("tr")
+            skill_table.appendChild(first_row)
+
+            skill_name = document.createElement("th")
+            first_row.appendChild(skill_name)
+            skill_name.classList.add("skill_name")
+            skill_name.innerText = skill
+            skill_name.colSpan = 2
+
+            second_row = document.createElement("tr")
+            skill_table.appendChild(second_row)
+
+            usage = document.createElement("td")
+            second_row.appendChild(usage)
+            usage.innerText = current_skill["Usage"]
+            
+            third_row = document.createElement("tr")
+            skill_table.appendChild(third_row)
+
+            data_block = document.createElement("td")
+            third_row.appendChild(data_block)
+            data_block.classList.add("hide_table")
+            data_block.style.textAlign = "left"
+            data_block.colSpan = 2
+            data_block.id = skill
+            first_row.addEventListener("click", function(){
+                toggle_data(skill)
+            })
+
+            description = document.createElement("p")
+            data_block.appendChild(description)
+            description.innerHTML = current_skill["Description"]
+
+            levels_table = document.createElement("table")
+            data_block.appendChild(levels_table)
+            levels_table.classList.add("levels_table")
+            levels_row = document.createElement("tr")
+            levels_table.appendChild(levels_row)
+            if (current_skill["Data"] !== ""){
+                start_level = document.createElement("th")
+                start_level.innerText = "Level"
+                levels_row.appendChild(start_level)
+            }
+            for (let i = 1; i <= current_skill["Max Level"]; i++){
+                level = document.createElement("th")
+                levels_row.appendChild(level)
+                if (current_skill.hasOwnProperty("Levels")){
+                    level.innerText = current_skill["Levels"][i-1]
+                }
+                else{
+                    level.innerText = i
+                }
+                
+            }
+            for (const effect in current_skill["Data"]){
+                effect_row = document.createElement("tr")
+                levels_table.appendChild(effect_row)
+
+                effect_name = document.createElement("th")
+                effect_name.innerText = effect
+                effect_row.appendChild(effect_name)
+                current_effect = current_skill["Data"][effect]
+                latest = current_effect
+                var latest
+                for (const value in current_effect){
+                    if (current_effect[value] == latest.innerText) {
+                        latest.colSpan = latest.colSpan+1
+                        continue
+                    }
+                    effect_value = document.createElement("td")
+                    effect_value.innerText = current_effect[value]
+                    effect_row.appendChild(effect_value)
+                    latest = effect_value
+                }
             }
         }
     }
