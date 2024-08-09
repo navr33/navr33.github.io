@@ -2533,6 +2533,898 @@ var data = {
         },
     }
 },
+"Earthlain":{
+    "Common":{
+        "Analyze":{
+            "Usage": "Union (1 Unit)",
+            "Description": "Register an enemy's details into the Monstrous Codex.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Double Attack":{
+            "Usage": "Union (2 Units, STR)",
+            "Description": "Both participants will deal one hit of weapon-based damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "3",
+            "Levels": ["1", "40", "99"],
+            "Data": {
+                "Attack Power": ["150%", "275%", "400%"],
+            }
+        },
+        "Full Retreat":{
+            "Usage": "Union (3 Units)",
+            "Description": "Escape from battle and teleport to the point where you entered the floor.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Mana Heal":{
+            "Usage": "Union (4 Units)",
+            "Description": "Restore TP to the whole party. Healing is based on each unit's Max TP.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "TP Gain": ["6+3%"],
+            }
+        },
+    },
+    "Level 1":{
+        "Blessing":{
+            "Usage": "Union (1 Unit)",
+            "Description": "Restore HP to the whole party at the end of turn. Healing is based on each unit's Max HP.",
+            "Starter": "0",
+            "Max Level": "2",
+            "Levels": ["1~49", "50~99"],
+            "Data": {
+                "HP Gain": ["15%", "30%"],
+            }
+        },
+        "Gaia's Grace":{
+            "Usage": "Passive",
+            "Description": "Chance to recover TP when using a Basic skill. Healing is based on the skill's cost.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Activation Chance": ["30%"],
+                "TP Gain": ["1+20%"],
+            }
+        },
+        "Fishing":{
+            "Usage": "Passive (Field)",
+            "Description": "Allows you to gather from Fishing spots.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Forage Skill":{
+            "Usage": "Passive",
+            "Description": "Enables certain Labyrinth events. Increases AGI.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Levels": ["1~12", "13~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "AGI↑": ["+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+    },
+    "Level 5":{
+        "Resuscitate":{
+            "Usage": "Union (2 Units)",
+            "Description": "Revive and heal one ally.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Levels": ["1", "11", "21", "31", "41", "51", "61", "71", "81", "91"],
+            "Data": {
+                "HP Gain": ["1", "11", "21", "31", "90", "110", "130", "150", "170", "270"],
+            }
+        },
+        "Sorting Skill":{
+            "Usage": "Passive",
+            "Description": "Increases inventory size by 5. Increases VIT.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Levels": ["5~12", "13~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "VIT↑": ["+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Gathering Skill":{
+            "Usage": "Passive (Field)",
+            "Description": "Obtain additional materials when gathering from Take, Chop or Mine points.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Animal Care":{
+            "Usage": "Passive",
+            "Description": "Enables certain Labyrinth events.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "Level 10":{
+        "Tri-Shield":{
+            "Usage": "Union (3 Units)",
+            "Description": "Nullify the first 3 hits to allies this turn.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Nimble Arts":{
+            "Usage": "Passive",
+            "Description": "Increases resistance to all binds by 10%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Resilience":{
+            "Usage": "Passive",
+            "Description": "Increases resistance to all ailments by 10%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Bulwark":{
+            "Usage": "Passive",
+            "Description": "Increases resistance to physical damage by 5%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "Level 15":{
+        "Black Mist":{
+            "Usage": "Union (4 Units)",
+            "Description": "Double all enemies' chance to be afflicted with binds/ailments until the end of turn.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Bodybuilding":{
+            "Usage": "Passive",
+            "Description": "Increases STR and VIT.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["15~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "STR/VIT↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Cardio":{
+            "Usage": "Passive",
+            "Description": "Increases AGI and LUC.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["15~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "AGI/LUC↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Talent":{
+            "Usage": "Passive",
+            "Description": "Increases INT and WIS.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["15~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "INT/WIS↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+    },
+    "Level 20":{
+        "Determination":{
+            "Usage": "Union (5 Units)",
+            "Description": "For this turn, all allies become immune to bind/ailment inflictions and have a chance to survive lethal damage with 1HP. Chance starts at 50% and goes down by 10% with each activation.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Gaia's Gift":{
+            "Usage": "Passive",
+            "Description": "Chance to recover TP when using a Master skill. Healing is based on the skill's cost.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Activation Chance": ["30%"],
+                "TP Gain": ["1+20%"],
+            }
+        },
+        "Anatomy":{
+            "Usage": "Passive",
+            "Description": "Increases enemy drop rates by 10%. Increases INT.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["20~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "INT↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Gourmet":{
+            "Usage": "Passive",
+            "Description": "Doubles the HP and TP recovered when consuming food.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+},
+"Celestrian":{
+    "Common":{
+        "Analyze":{
+            "Usage": "Union (1 Unit)",
+            "Description": "Register an enemy's details into the Monstrous Codex.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Double Attack":{
+            "Usage": "Union (2 Units, STR)",
+            "Description": "Both participants will deal one hit of weapon-based damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "3",
+            "Levels": ["1", "40", "99"],
+            "Data": {
+                "Attack Power": ["150%", "275%", "400%"],
+            }
+        },
+        "Full Retreat":{
+            "Usage": "Union (3 Units)",
+            "Description": "Escape from battle and teleport to the point where you entered the floor.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Mana Heal":{
+            "Usage": "Union (4 Units)",
+            "Description": "Restore TP to the whole party. Healing is based on each unit's Max TP.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "TP Gain": ["6+3%"],
+            }
+        },
+    },
+    "Level 1":{
+        "Enchant":{
+            "Usage": "Union (1 Unit)",
+            "Description": "Imbue all ally weapons with Fire+Ice+Volt damage for this turn.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Lunar Grace":{
+            "Usage": "Passive",
+            "Description": "Chance to recover TP when using a Basic skill. Healing is based on the skill's cost.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Activation Chance": ["30%"],
+                "TP Gain": ["1+20%"],
+            }
+        },
+        "Chop":{
+            "Usage": "Passive (Field)",
+            "Description": "Obtain additional materials when gathering from Chop points.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Detect Mana":{
+            "Usage": "Passive",
+            "Description": "Enables certain Labyrinth events. Increases INT.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Levels": ["1~12", "13~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "INT↑": ["+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+    },
+    "Level 5":{
+        "Game Changer":{
+            "Usage": "Union (2 Units, LUC)",
+            "Description": "Remove the binds and ailments on one ally, then attempt to inflict them on all enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Infliction Chance": ["50%"],
+            }
+        },
+        "Anatomy":{
+            "Usage": "Passive",
+            "Description": "Increases enemy drop rates by 10%. Increases INT.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Levels": ["5~12", "13~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "INT↑": ["+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Night Vision":{
+            "Usage": "Passive",
+            "Description": "Enables certain Labyrinth events. Increases accuracy by 3%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Gourmet":{
+            "Usage": "Passive",
+            "Description": "Doubles the HP and TP recovered when consuming food.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "Level 10":{
+        "Hex":{
+            "Usage": "Union (3 Units, LUC)",
+            "Description": "For this turn, the party's elemental attacks gain a chance to inflict a random ailment.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Infliction Chance":["50%"],
+                "Poison Damage":["250"],
+            }
+        },
+        "Imbue":{
+            "Usage": "Passive",
+            "Description": "Increases damage dealt with attack items by 30%. Increases LUC.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Levels": ["10~12", "13~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "LUC↑": ["+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Resilience":{
+            "Usage": "Passive",
+            "Description": "Increases resistance to all ailments by 10%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Anatta Barrier":{
+            "Usage": "Passive",
+            "Description": "Increases resistance to elemental damage by 5%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "Level 15":{
+        "Tri-Magic":{
+            "Usage": "Union (4 Units, INT)",
+            "Description": "Deal 3 ranged hits of Fire, then Ice, then Volt damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "3",
+            "Levels": ["1", "40", "99"],
+            "Data": {
+                "Attack Power": ["100%", "150%", "200%"],
+            }
+        },
+        "Bodybuilding":{
+            "Usage": "Passive",
+            "Description": "Increases STR and VIT.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["15~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "STR/VIT↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Cardio":{
+            "Usage": "Passive",
+            "Description": "Increases AGI and LUC.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["15~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "AGI/LUC↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Talent":{
+            "Usage": "Passive",
+            "Description": "Increases INT and WIS.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["15~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "INT/WIS↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+    },
+    "Level 20":{
+        "Chain Blast":{
+            "Usage": "Union (5 Units, INT, LUC)",
+            "Description": "Deal ranged Almighty damage to all enemies, with a chance to inflict Head, Arm and Leg Bind.",
+            "Starter": "0",
+            "Max Level": "3",
+            "Levels": ["1", "40", "99"],
+            "Data": {
+                "Attack Power": ["100%", "200%", "300%"],
+                "Infliction Chance": ["150%", "150%", "150%"],
+            }
+        },
+        "Lunar Gift":{
+            "Usage": "Passive",
+            "Description": "Chance to recover TP when using a Master skill. Healing is based on the skill's cost.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Activation Chance": ["30%"],
+                "TP Gain": ["1+20%"],
+            }
+        },
+        "Animal Care":{
+            "Usage": "Passive",
+            "Description": "Enables certain Labyrinth events.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Focus":{
+            "Usage": "Passive",
+            "Description": "Increases resistance to Sleep by 15%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+},
+"Therian":{
+    "Common":{
+        "Analyze":{
+            "Usage": "Union (1 Unit)",
+            "Description": "Register an enemy's details into the Monstrous Codex.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Double Attack":{
+            "Usage": "Union (2 Units, STR)",
+            "Description": "Both participants will deal one hit of weapon-based damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "3",
+            "Levels": ["1", "40", "99"],
+            "Data": {
+                "Attack Power": ["150%", "275%", "400%"],
+            }
+        },
+        "Full Retreat":{
+            "Usage": "Union (3 Units)",
+            "Description": "Escape from battle and teleport to the point where you entered the floor.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Mana Heal":{
+            "Usage": "Union (4 Units)",
+            "Description": "Restore TP to the whole party. Healing is based on each unit's Max TP.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "TP Gain": ["6+3%"],
+            }
+        },
+    },
+    "Level 1":{
+        "Wide Swing":{
+            "Usage": "Union (1 Unit)",
+            "Description": "Deal weapon-based damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "3",
+            "Levels": ["1", "40", "99"],
+            "Data": {
+                "Attack Power": ["100%", "175%", "250%"],
+            }
+        },
+        "Ares' Grace":{
+            "Usage": "Passive",
+            "Description": "Chance to recover TP when using a Basic skill. Healing is based on the skill's cost.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Activation Chance": ["30%"],
+                "TP Gain": ["1+20%"],
+            }
+        },
+        "Hunting Skill":{
+            "Usage": "Passive",
+            "Description": "Enables certain Labyrinth events. Increases STR.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Levels": ["1~12", "13~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "STR↑": ["+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Mine":{
+            "Usage": "Passive (Field)",
+            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "Level 5":{
+        "Binding Force":{
+            "Usage": "Union (3 Units, LUC)",
+            "Description": "For this turn, the party's physical attacks gain a chance to inflict a random bind.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Infliction Chance":["40%"]
+            }
+        },
+        "Reflexes":{
+            "Usage": "Passive",
+            "Description": "Enables certain Labyrinth events. Increases evasion by 3%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Precaution":{
+            "Usage": "Passive",
+            "Description": "Increases chance of ambushing enemies by 3%. Increases WIS.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Levels": ["5~12", "13~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "WIS↑": ["+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Brute Strength":{
+            "Usage": "Passive",
+            "Description": "Enables certain Labyrinth events. Increases STR.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Levels": ["5~12", "13~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "STR↑": ["+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+    },
+    "Level 10":{
+        "Life Drain":{
+            "Usage": "Union (3 Units)",
+            "Description": "For this turn, each time an ally damages an enemy the whole party recovers HP based on the damage dealt.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Damage Drain": ["30%"],
+            }
+        },
+        "Forage Skill":{
+            "Usage": "Passive",
+            "Description": "Enables certain Labyrinth events. Increases AGI.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Levels": ["10~12", "13~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "AGI↑": ["+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Fishing":{
+            "Usage": "Passive (Field)",
+            "Description": "Allows you to gather from Fishing spots.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Third Eye":{
+            "Usage": "Passive",
+            "Description": "Increases resistance to Blind by 15%. Increases AGI.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Levels": ["10~12", "13~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "AGI↑": ["+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+    },
+    "Level 15":{
+        "Tri-Attack":{
+            "Usage": "Union (4 Units, STR)",
+            "Description": "Deal 3 ranged hits of Cut, then Bash, then Stab damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "3",
+            "Levels": ["1", "40", "99"],
+            "Data": {
+                "Attack Power": ["200%", "325%", "450%"],
+            }
+        },
+        "Bodybuilding":{
+            "Usage": "Passive",
+            "Description": "Increases STR and VIT.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["15~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "STR/VIT↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Cardio":{
+            "Usage": "Passive",
+            "Description": "Increases AGI and LUC.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["15~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "AGI/LUC↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Talent":{
+            "Usage": "Passive",
+            "Description": "Increases INT and WIS.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["15~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "INT/WIS↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+    },
+    "Level 20":{
+        "All-Out Attack":{
+            "Usage": "Union (5 Units, STR, LUC)",
+            "Description": "Command all allies to deal weapon-based damage to one enemy, with a chance to inflict Stun.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["1"],
+            "Data": {
+                "Attack Power": ["100%"],
+                "Infliction Chance": ["200%"],
+            }
+        },
+        "Ares' Gift":{
+            "Usage": "Passive",
+            "Description": "Chance to recover TP when using a Master skill. Healing is based on the skill's cost.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Activation Chance": ["30%"],
+                "TP Gain": ["1+20%"],
+            }
+        },
+        "Bulwark":{
+            "Usage": "Passive",
+            "Description": "Increases resistance to physical damage by 5%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Sorting Skill":{
+            "Usage": "Passive",
+            "Description": "Increases inventory size by 5. Increases VIT.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["20~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "VIT↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+    },
+},
+"Brouni":{
+    "Common":{
+        "Analyze":{
+            "Usage": "Union (1 Unit)",
+            "Description": "Register an enemy's details into the Monstrous Codex.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Double Attack":{
+            "Usage": "Union (2 Units, STR)",
+            "Description": "Both participants will deal one hit of weapon-based damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "3",
+            "Levels": ["1", "40", "99"],
+            "Data": {
+                "Attack Power": ["150%", "275%", "400%"],
+            }
+        },
+        "Full Retreat":{
+            "Usage": "Union (3 Units)",
+            "Description": "Escape from battle and teleport to the point where you entered the floor.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Levels": ["1"],
+            "Data": ""
+        },
+        "Mana Heal":{
+            "Usage": "Union (4 Units)",
+            "Description": "Restore TP to the whole party. Healing is based on each unit's Max TP.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "TP Gain": ["6+3%"],
+            }
+        },
+    },
+    "Level 1":{
+        "Guard Order":{
+            "Usage": "Union (2 Units)",
+            "Description": "Decrease all damage taken by the party this turn.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Damage Taken↓": ["-50%"],
+            }
+        },
+        "Zephyr's Grace":{
+            "Usage": "Passive",
+            "Description": "Chance to recover TP when using a Basic skill. Healing is based on the skill's cost.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Activation Chance": ["30%"],
+                "TP Gain": ["1+20%"],
+            }
+        },
+        "Take":{
+            "Usage": "Passive (Field)",
+            "Description": "Obtain additional materials when gathering from Take points.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Animal Care":{
+            "Usage": "Passive",
+            "Description": "Enables certain Labyrinth events.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "Level 5":{
+        "Superspeed":{
+            "Usage": "Union (3 Units)",
+            "Description": "For this turn, all party members will act at the start of the turn.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Resilience":{
+            "Usage": "Passive",
+            "Description": "Increases resistance to all ailments by 10%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Fishing":{
+            "Usage": "Passive (Field)",
+            "Description": "Allows you to gather from Fishing spots.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Herbology":{
+            "Usage": "Passive",
+            "Description": "Increases the effect of healing items used in battle by 50%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "Level 10":{
+        "Forbidden Rite":{
+            "Usage": "Union (3 Units)",
+            "Description": "Increase the duration of all buffs and debuffs in allies and enemies by 1 turn.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Sorting Skill":{
+            "Usage": "Passive",
+            "Description": "Increases inventory size by 5. Increases VIT.",
+            "Starter": "0",
+            "Max Level": "8",
+            "Levels": ["10~12", "13~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "VIT↑": ["+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Anatta Barrier":{
+            "Usage": "Passive",
+            "Description": "Increases resistance to elemental damage by 5%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Reflexes":{
+            "Usage": "Passive",
+            "Description": "Enables certain Labyrinth events. Increases evasion by 3%.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "Level 15":{
+        "Hygieia's Bowl":{
+            "Usage": "Union (4 Units)",
+            "Description": "Revive, fully restore HP, and remove binds/ailments for all allies.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Bodybuilding":{
+            "Usage": "Passive",
+            "Description": "Increases STR and VIT.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["15~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "STR/VIT↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Cardio":{
+            "Usage": "Passive",
+            "Description": "Increases AGI and LUC.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["15~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "AGI/LUC↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Talent":{
+            "Usage": "Passive",
+            "Description": "Increases INT and WIS.",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["15~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "INT/WIS↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+    },
+    "Level 20":{
+        "Aegis Shield":{
+            "Usage": "Union (5 Units)",
+            "Description": "Nullify all attacks to the party this turn.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Zephyr's Gift":{
+            "Usage": "Passive",
+            "Description": "Chance to recover TP when using a Master skill. Healing is based on the skill's cost.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Activation Chance": ["30%"],
+                "TP Gain": ["1+20%"],
+            }
+        },
+        "Haggle":{
+            "Usage": "Passive",
+            "Description": "Decrease the cost of items in the shop by 5%(doesn't stack). Increases WIS,",
+            "Starter": "0",
+            "Max Level": "7",
+            "Levels": ["20~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
+            "Data": {
+                "WIS↑": ["+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
+        },
+        "Gourmet":{
+            "Usage": "Passive",
+            "Description": "Doubles the HP and TP recovered when consuming food.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+},
 }
 
 //End of database
@@ -2549,6 +3441,10 @@ var descriptions = {
     "Shaman":["Support casters who manipulate buffs to strengthen the party.", "<b>Divine Punisher</b>: Dispels buffs to turn them into direct power.", "<b>Divine Herald</b>: Grants buffs to protect and heal allies."],
     "Botanist":["Healers that use herbal concoctions to cure allies or weaken enemies.", "<b>Merciful Healer</b>: Uses medicinal herbs to treat all kinds of injuries.", "<b>Graced Poisoner</b>: Uses poisonous herbs to make enemies susceptible to ailments."],
     "Battle Items":"Consumable items meant to aid you in battle.",
+    "Earthlain":"Common skills for characters of the Earthlain race.",
+    "Celestrian":"Common skills for characters of the Celestrian race.",
+    "Therian":"Common skills for characters of the Therian race.",
+    "Brouni":"Common skills for characters of the Brouni race.",
 }
 
 function toggle_data(table_id){
@@ -2727,6 +3623,116 @@ function populate2(class_name){
             unlock = document.createElement("td")
             second_row.appendChild(unlock)
             unlock.innerText = "Unlock: "+current_skill["Unlock"]
+            
+            third_row = document.createElement("tr")
+            skill_table.appendChild(third_row)
+
+            data_block = document.createElement("td")
+            third_row.appendChild(data_block)
+            data_block.classList.add("hide_table")
+            data_block.style.textAlign = "left"
+            data_block.colSpan = 2
+            data_block.id = skill
+            first_row.addEventListener("click", function(){
+                toggle_data(skill)
+            })
+
+            description = document.createElement("p")
+            data_block.appendChild(description)
+            description.innerHTML = current_skill["Description"]
+
+            levels_table = document.createElement("table")
+            data_block.appendChild(levels_table)
+            levels_table.classList.add("levels_table")
+            levels_row = document.createElement("tr")
+            levels_table.appendChild(levels_row)
+            if (current_skill["Data"] !== ""){
+                start_level = document.createElement("th")
+                start_level.innerText = "Level"
+                levels_row.appendChild(start_level)
+            }
+            for (let i = 1; i <= current_skill["Max Level"]; i++){
+                level = document.createElement("th")
+                levels_row.appendChild(level)
+                if (current_skill.hasOwnProperty("Levels")){
+                    level.innerText = current_skill["Levels"][i-1]
+                }
+                else{
+                    level.innerText = i
+                }
+                
+            }
+            for (const effect in current_skill["Data"]){
+                effect_row = document.createElement("tr")
+                levels_table.appendChild(effect_row)
+
+                effect_name = document.createElement("th")
+                effect_name.innerText = effect
+                effect_row.appendChild(effect_name)
+                current_effect = current_skill["Data"][effect]
+                latest = current_effect
+                var latest
+                for (const value in current_effect){
+                    if (current_effect[value] == latest.innerText) {
+                        latest.colSpan = latest.colSpan+1
+                        continue
+                    }
+                    effect_value = document.createElement("td")
+                    effect_value.innerText = current_effect[value]
+                    effect_row.appendChild(effect_value)
+                    latest = effect_value
+                }
+            }
+        }
+    }
+}
+
+function populate3(class_name){
+    var skill_list = document.getElementById("skill_list")
+    while (skill_list.hasChildNodes()){
+        skill_list.removeChild(skill_list.firstChild)
+    }
+    var current_class = data[class_name]
+    name_banner = document.createElement("h2")
+    name_banner.style.margin = "20px"
+    name_banner.innerText = class_name
+    skill_list.appendChild(name_banner)
+
+    class_decription = document.createElement("p")
+    class_decription.style.marginLeft = "10px"
+    class_decription.innerText = descriptions[class_name]
+    skill_list.appendChild(class_decription)
+
+    for (const category in current_class){
+        category_name = document.createElement("h3")
+        category_name.innerText = category
+        skill_list.appendChild(category_name)
+        for (const skill in current_class[category]){
+            console.log("test")
+            var current_skill = current_class[category][skill]
+            skill_table = document.createElement("table")
+            skill_table.classList.add("skill_entry")
+            if (current_skill["Starter"] == "2"){
+                skill_table.style.marginTop = "15px"
+            }
+            skill_list.appendChild(skill_table)
+            
+            first_row = document.createElement("tr")
+            skill_table.appendChild(first_row)
+
+            skill_name = document.createElement("th")
+            first_row.appendChild(skill_name)
+            skill_name.classList.add("skill_name")
+            skill_name.innerText = skill
+            skill_name.colSpan = 2
+
+            second_row = document.createElement("tr")
+            skill_table.appendChild(second_row)
+
+            usage = document.createElement("td")
+            second_row.appendChild(usage)
+            usage.innerText = current_skill["Usage"]
+
             
             third_row = document.createElement("tr")
             skill_table.appendChild(third_row)
