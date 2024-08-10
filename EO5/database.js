@@ -3425,6 +3425,710 @@ var data = {
         },
     },
 },
+"Weapon Skills":{
+    "Sword":{
+        "Unsealer":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Seal Greaves",
+            "Description": "Remove one bind on an ally.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "TP Cost": ["3"],
+                "Action Speed": ["50%"],
+            }
+        },
+        "Amateur Medic":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Healing Knife",
+            "Description": "Restore HP to one ally. Healing is based on the target's Max HP. (Only usable in battle)",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "TP Cost": ["1"],
+                "HP Gain": ["15+15%"],
+                "Action Speed": ["80%"],
+            }
+        },
+        "Cold Front":{
+            "Usage": "Active (Arms, INT)",
+            "Unlock": "Batfang Blade",
+            "Description": "Deal ranged Ice damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["1", "1", "1", "1", "4"],
+                "Attack Power": ["70%", "73%", "76%", "79%", "110%"],
+                "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Panic Assault":{
+            "Usage": "Active (Head, STR, LUC)",
+            "Unlock": "Jono",
+            "Description": "Deal melee Bash damage to one enemy, with a chance to inflict Panic.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "7"],
+                "Attack Power": ["120%", "123%", "126%", "129%", "150%"],
+                "Infliction Chance": ["30%", "31%", "32%", "33%", "40%"],
+                "Accuracy": ["-4%", "-4%", "-4%", "-4%", "-4%"],
+                "Action Speed": ["75%", "75%", "75%", "75%", "75%"],
+            }
+        },
+        "Seal Arms":{
+            "Usage": "Active (Arms, LUC)",
+            "Unlock": "Niabor",
+            "Description": "Attempt to inflict Arm Bind on an enemy line.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "8"],
+                "Infliction Chance": ["30%", "31%", "32%", "33%", "45%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Sting Barrage":{
+            "Usage": "Active (Head, STR)",
+            "Unlock": "Poignard",
+            "Description": "Deal 4~6 hits of melee Stab damage to random enemies.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "9", "16"],
+                "Attack Power": ["65%", "69%", "73%", "77%", "100%"],
+                "Accuracy": ["-50%", "-50%", "-50%", "-50%", "-50%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Snake Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Snake Sword",
+            "Description": "Deal melee Cut damage to all enemies. (Incorrectly called Bellows Cut in the weapon's description)",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["18", "18", "18", "18", "25"],
+                "Attack Power": ["180%", "185%", "190%", "195%", "250%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["130%", "130%", "130%", "130%", "130%"],
+            }
+        },
+        "Clawbinder":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "The Answerer",
+            "Description": "Deal melee Cut damage to an enemy line, with a chance to inflict Arm Bind.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "30"],
+                "Attack Power": ["200%", "210%", "220%", "230%", "300%"],
+                "Infliction Chance": ["50%", "50%", "50%", "50%", "75%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+    },
+    "Katana":{
+        "Knockout Blow":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Shell Tanto",
+            "Description": "Deal melee Bash damage to one enemy, with a chance to inflict Stun.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "4"],
+                "Attack Power": ["70%", "73%", "76%", "79%", "100%"],
+                "Infliction Chance": ["25%", "26%", "27%", "28%", "34%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Power Charge":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Shokudaikiri",
+            "Description": "Enter a charge state until the end of next turn, which increases damage dealt.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "7"],
+                "Damage Dealt↑": ["x1.5", "x1.55", "x1.6", "x1.65", "x2.0"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Claw Sever":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Karakashiwa",
+            "Description": "Deal melee Cut damage to one enemy. Places a debuff on the target for 3 turns, which decreases damage dealt. (Incorrectly called Claw Chip in the weapon's description)",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "12"],
+                "Attack Power": ["150%", "155%", "160%", "165%", "200%"],
+                "Damage Dealt↓": ["-10%", "-11%", "-12%", "-13%", "-20%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Fireblade Dance":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Sanshobo",
+            "Description": "Deal melee Cut+Fire damage to an enemy line.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["13", "13", "13", "13", "20"],
+                "Attack Power": ["120%", "125%", "130%", "135%", "165%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Goreblade":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Soboro",
+            "Description": "Deal 4~6 hits of melee Cut damage to random enemies. Places a buff on yourself for 3 turns, which increases physical damage dealt.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "30"],
+                "Attack Power": ["50%", "52%", "54%", "56%", "70%"],
+                "Damage Dealt↑": ["+7%", "+8%", "+9%", "+10%", "+15%"],
+                "Accuracy": ["-10%", "-10%", "-10%", "-10%", "-10%"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Sonic Mirage":{
+            "Usage": "Active (Legs)",
+            "Unlock": "Ameno-habakiri",
+            "Description": "Place a buff on the whole party for 3 turns, which increases evasion.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["40", "40", "40", "40", "70"],
+                "Evasion↑": ["+22%", "+23%", "+24%", "+25%", "+34%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+    },
+    "Scythe":{
+        "Vampiric Edge":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Revenant Faux",
+            "Description": "Deal melee Cut damage to one enemy. Recover HP based on damage dealt.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "15"],
+                "Attack Power": ["170%", "180%", "190%", "200%", "250%"],
+                "Damage Drain": ["15%", "16%", "17%", "18%", "25%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Neurotoxin":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Double Scythe",
+            "Description": "Attempt to inflict Head, Arm and Leg Bind on one enemy.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "12"],
+                "Infliction Chance": ["20%", "21%", "22%", "23%", "30%"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%"],
+            }
+        },
+        "Vicious Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Moon Sickle",
+            "Description": "Deal melee Cut damage to one enemy. Cannot miss.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "12"],
+                "Attack Power": ["135%", "140%", "145%", "150%", "230%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Ruinous Prayer":{
+            "Usage": "Active (Head)",
+            "Unlock": "Prayer Scythe",
+            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases damage dealt.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "16"],
+                "Damage Dealt↑": ["+21%", "+23%", "+25%", "+27%", "+27%"],
+                "Duration": ["3", "3", "3", "3", "4"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Explosion":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Cradle Edge",
+            "Description": "Deal ranged Fire damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["16", "16", "16", "16", "25"],
+                "Attack Power": ["200%", "210%", "220%", "230%", "300%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+    },
+    "Cestus":{
+        "Poison Jab":{
+            "Usage": "Active (Head, STR, LUC)",
+            "Unlock": "Crawler Knuckles",
+            "Description": "Deal melee Cut damage to one enemy, with a chance to inflict Poison.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "10"],
+                "Attack Power": ["130%", "135%", "140%", "145%", "170%"],
+                "Infliction Chance": ["45%", "45%", "45%", "45%", "60%"],
+                "Poison Damage": ["40", "60", "80", "100", "100"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Galvanic Finger":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Plasma Fist",
+            "Description": "Decrease Volt damage taken by the party this turn.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "6"],
+                "Damage Taken↓": ["-30%", "-33%", "-36%", "-39%", "-50%"],
+            }
+        },
+        "Rest":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Gryphbreaker",
+            "Description": "Recover HP. Healing is based on your Max HP. (Only usable in battle)",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "5"],
+                "HP Gain": ["30+25%", "34+26%", "38+27%", "42+28%", "70+35%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Insulator":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Mirage Fist",
+            "Description": "Decrease Fire damage taken by the party this turn.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "6"],
+                "Damage Taken↓": ["-30%", "-33%", "-36%", "-39%", "-50%"],
+            }
+        },
+        "Shell Guard EX":{
+            "Usage": "Active (Legs)",
+            "Unlock": "Tenouchi",
+            "Description": "Place a buff on yourself for 3 turns, which decreases damage taken.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "8"],
+                "Damage Taken↓": ["-20%", "-22%", "-24%", "-26%", "-34%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Death Spike":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Blast Piledriver",
+            "Description": "Deal melee Stab damage to one enemy, with a chance to inflict Instant Death.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "18"],
+                "Attack Power": ["180%", "185%", "190%", "195%", "250%"],
+                "Infliction Chance": ["25%", "27%", "29%", "31%", "40%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%"],
+            }
+        },
+        "Emperor Strike":{
+            "Usage": "Active (Legs, STR)",
+            "Unlock": "Polideuces",
+            "Description": "Deal melee Bash damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "35"],
+                "Attack Power": ["300%", "310%", "320%", "330%", "400%"],
+                "Accuracy": ["-60%", "-60%", "-60%", "-60%", "-60%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+    },
+    "Coffin":{
+        "Chill Ward":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Scarlet Coffin",
+            "Description": "Decrease Ice damage taken by the party this turn.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "6"],
+                "Damage Taken↓": ["-30%", "-33%", "-36%", "-39%", "-50%"],
+            }
+        },
+        "Hallowed Shield":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Golem Coffin",
+            "Description": "Decrease physical damage taken by the party this turn.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "9", "15"],
+                "Damage Taken↓": ["-20%", "-22%", "-24%", "-26%", "-34%"],
+            }
+        },
+        "Holy Flame":{
+            "Usage": "Passive (Field)",
+            "Unlock": "Karouto",
+            "Description": "Restore HP to the whole party for every 3 steps taken.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "HP Gain": ["4", "5", "6", "7", "12"],
+            }
+        },
+        "Split Spirits":{
+            "Usage": "Active (Head)",
+            "Unlock": "Le Cercuei",
+            "Description": "For this turn, allies with buffs recover HP based on their damage dealt.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "6"],
+                "Damage Drain": ["25%", "28%", "31%", "34%", "50%"],
+            }
+        },
+        "Clinch":{
+            "Usage": "Active (No Parts, LUC)",
+            "Unlock": "Iron Maiden",
+            "Description": "Attempt to inflict the 3 binds on one enemy and yourself.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "10"],
+                "Infliction Chance\n(Enemy)": ["20%", "22%", "24%", "26%", "38%"],
+                "Infliction Chance\n(Self)": ["20%", "22%", "24%", "26%", "34%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Mana Flow":{
+            "Usage": "Active (Head)",
+            "Unlock": "Reliquary",
+            "Description": "Place a buff on yourself for 3~4 turns, which grants a percentage of the TP you spend to a random ally. (Incorrectly called Magic Flow in the weapon's description)",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "3"],
+                "TP Gain": ["25%", "28%", "31%", "34%", "34%"],
+                "Duration": ["3", "3", "3", "3", "4"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Banefire Breath":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Brahmagiri",
+            "Description": "Deal ranged Fire damage to an enemy line. Places a debuff on the targets for 3 turns, which increases elemental damage taken.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["26", "26", "26", "26", "42"],
+                "Attack Power": ["200%", "210%", "220%", "230%", "300%"],
+                "Damage Taken↑": ["+25%", "+28%", "+31%", "+34%", "+50%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+    },
+    "Bow":{
+        "Gorgon Shot":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Gorgon Arrow",
+            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Petrify.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "TP Cost": ["3"],
+                "Attack Power": ["100%"],
+                "Infliction Chance": ["34%"],
+                "Accuracy": ["+5%"],
+                "Action Speed": ["75%"],
+            }
+        },
+        "Aegis Prayer":{
+            "Usage": "Active (Head)",
+            "Unlock": "Sequoian Bow",
+            "Description": "(Prayer) Place a buff on the whole party for 3~4 turns, which decreases damage taken.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "16"],
+                "Damage Taken↓": ["-11%", "-13%", "-15%", "-17%", "-17%"],
+                "Duration": ["3", "3", "3", "3", "4"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Wary Eye":{
+            "Usage": "Passive",
+            "Unlock": "Killing Shot",
+            "Description": "Chance to cancel out enemy ambushes.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "Activation Chance": ["34%", "40%", "46%", "52%", "75%"],
+            }
+        },
+        "Hellfire":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Phantom Arch",
+            "Description": "Deal ranged Fire damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "28"],
+                "Attack Power": ["140%", "147%", "154%", "161%", "200%"],
+                "Accuracy": ["+30%", "+30%", "+30%", "+30%", "+30%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Slaughtershot":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Blue Moon Bow",
+            "Description": "Deal ranged Stab damage to one enemy. Low accuracy but ignores Stab resistance.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "17"],
+                "Attack Power": ["400%", "420%", "440%", "460%", "600%"],
+                "Accuracy": ["-40%", "-40%", "-40%", "-40%", "-60%"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%"],
+            }
+        },
+        "Breather":{
+            "Usage": "Active (No Parts)",
+            "Unlock": "Demon's Arch",
+            "Description": "Only usable if afflicted with a bind/ailment. Remove all binds and ailments on yourself, then enter a charge state until the end of next turn, which increases all damage dealt.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "8"],
+                "Damage Dealt↑": ["x1.2", "x1.25", "x1.3", "x1.35", "x1.8"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Rain of Ruin":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Impulse Arrow",
+            "Description": "Deal ranged Stab damage to an enemy line. Places a debuff on the targets for 3 turns, which increases damage taken.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["25", "25", "25", "25", "34"],
+                "Attack Power": ["200%", "210%", "220%", "230%", "300%"],
+                "Damage Taken↑": ["+20%", "+21%", "+22%", "+23%", "+30%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Alluring Body":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Failnaught",
+            "Description": "Attempt to inflict Panic on all enemies. Also places a debuff on the targets for 3 turns, which decreases bind resistance.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["23", "23", "23", "23", "33"],
+                "Infliction Chance": ["30%", "31%", "32%", "33%", "40%"],
+                "Inflictions↑": ["x1.25", "x1.28", "x1.31", "x1.34", "x1.5"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+    },
+    "Cannon":{
+        "Biting Wind":{
+            "Usage": "Active (Legs, INT)",
+            "Unlock": "Scissors Cannon",
+            "Description": "Deal ranged Ice damage to an enemy line.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "10"],
+                "Attack Power": ["90%", "93%", "96%", "99%", "130%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Ion Cannonball":{
+            "Usage": "Active (Arms, INT)",
+            "Unlock": "Parrot Cannon",
+            "Description": "Deal ranged Volt damage to one enemy, with pierce effect.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "7"],
+                "Attack Power": ["80%", "85%", "90%", "95%", "130%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Stifling Miasma":{
+            "Usage": "Active (Head)",
+            "Unlock": "Mortar",
+            "Description": "Place a debuff on all enemies for 3~4 turns, which decreases physical/elemental damage dealt.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "11"],
+                "Damage Dealt↓": ["-10%", "-12%", "-14%", "-16%", "-16%"],
+                "Duration": ["3", "3", "3", "3", "4"],
+                "Action Speed": ["85%", "85%", "85%", "85%", "85%"],
+            }
+        },
+        "Rapid Cannonfire":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Troll Howitzer",
+            "Description": "Deal 3~8 hits of ranged Bash damage to random enemies.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "17"],
+                "Attack Power": ["60%", "62%", "64%", "66%", "80%"],
+                "Accuracy": ["-25%", "-25%", "-25%", "-25%", "-25%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "TP Traveler":{
+            "Usage": "Passive (Field)",
+            "Unlock": "Mana Cannon",
+            "Description": "Restore 1 TP to all party members for every certain amount of steps taken.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "Steps to Heal": ["10", "9", "8", "7", "4"],
+            }
+        },
+        "Vice Crush":{
+            "Usage": "Active (Head, STR, LUC)",
+            "Unlock": "Gustav",
+            "Description": "Deal melee Stab damage to one enemy, with a chance to inflict Head, Arm and Leg Bind.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["18", "18", "18", "18", "30"],
+                "Attack Power": ["300%", "320%", "340%", "360%", "450%"],
+                "Infliction Chance": ["25%", "25%", "25%", "25%", "33%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%"],
+            }
+        },
+    },
+    "Staff":{
+        "Unsealer":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Seal Breaker",
+            "Description": "Remove one bind on an ally.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "TP Cost": ["3"],
+                "Action Speed": ["50%"],
+            }
+        },
+        "Heat Wave":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Feather Staff",
+            "Description": "Deal ranged Fire damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["1", "1", "1", "1", "4"],
+                "Attack Power": ["70%", "73%", "76%", "79%", "110%"],
+                "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Bolt Smash":{
+            "Usage": "Active (Arms, INT)",
+            "Unlock": "Scorpio Rod",
+            "Description": "Deal ranged Volt damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "7"],
+                "Attack Power": ["90%", "95%", "100%", "105%", "145%"],
+                "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Cursed Flame":{
+            "Usage": "Active (Arms, INT, LUC)",
+            "Unlock": "Cursed Scepter",
+            "Description": "Deal ranged Fire damage to an enemy line, with a chance to inflict Curse.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "23"],
+                "Attack Power": ["100%", "105%", "110%", "115%", "150%"],
+                "Infliction Chance": ["30%", "32%", "34%", "36%", "50%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Cavalry Arrival":{
+            "Usage": "Active (Arms)",
+            "Unlock": "King's Rod",
+            "Description": "Chance to revive all dead allies. (Only usable during battle)",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["18", "18", "18", "18", "28"],
+                "Revive Chance": ["40%", "42%", "44%", "46%", "60%"],
+                "HP Gain": ["1", "6", "11", "15", "50"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Thunderbolt":{
+            "Usage": "Active (Head, INT, LUC)",
+            "Unlock": "Filia's Zhezl",
+            "Description": "Deal 3~6 hits of ranged Volt damage to random enemies, with a chance to inflict Stun.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["50", "50", "50", "50", "75"],
+                "Attack Power": ["100%", "105%", "110%", "115%", "150%"],
+                "Infliction Chance": ["20%", "20%", "20%", "20%", "30%"],
+                "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Heavy Strike":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Assault Wand",
+            "Description": "Deal melee Bash damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "TP Cost": ["50"],
+                "Attack Power": ["950%"],
+                "Accuracy": ["-10%"],
+                "Action Speed": ["30%"],
+            }
+        },
+    },
+},
 }
 
 //End of database
@@ -3440,11 +4144,14 @@ var descriptions = {
     "Masurao":["Frontline warriors specialized in strong offense with Katanas.", "<b>Blade Dancer</b>: Wields multiple Katanas at once, sacrificing all defense for overwhelming offense.", "<b>Blade Master</b>: Handles one Katana with presicion, serving as versatile and durable duelists."],
     "Shaman":["Support casters who manipulate buffs to strengthen the party.", "<b>Divine Punisher</b>: Dispels buffs to turn them into direct power.", "<b>Divine Herald</b>: Grants buffs to protect and heal allies."],
     "Botanist":["Healers that use herbal concoctions to cure allies or weaken enemies.", "<b>Merciful Healer</b>: Uses medicinal herbs to treat all kinds of injuries.", "<b>Graced Poisoner</b>: Uses poisonous herbs to make enemies susceptible to ailments."],
-    "Battle Items":"Consumable items meant to aid you in battle.",
-    "Earthlain":"Common skills for characters of the Earthlain race.",
-    "Celestrian":"Common skills for characters of the Celestrian race.",
-    "Therian":"Common skills for characters of the Therian race.",
-    "Brouni":"Common skills for characters of the Brouni race.",
+
+    "Earthlain":["Common skills for characters of the Earthlain race.", "", ""],
+    "Celestrian":["Common skills for characters of the Celestrian race.", "", ""],
+    "Therian":["Common skills for characters of the Therian race.", "", ""],
+    "Brouni":["Common skills for characters of the Brouni race.", "", ""],
+
+    "Weapon Skills":["Skills borrowed from certain weapons.", "", ""],
+    "Battle Items":["Consumable items meant to aid you in battle.", "", ""],
 }
 
 function toggle_data(table_id){
@@ -3466,15 +4173,16 @@ function populate(class_name){
     class_decription.style.marginLeft = "10px"
     class_decription.innerText = descriptions[class_name][0]
     skill_list.appendChild(class_decription)
-
-    mastery = document.createElement("ul")
-    skill_list.appendChild(mastery)
-    mastery1 = document.createElement("li")
-    mastery1.innerHTML = descriptions[class_name][1]
-    mastery.appendChild(mastery1)
-    mastery2 = document.createElement("li")
-    mastery2.innerHTML = descriptions[class_name][2]
-    mastery.appendChild(mastery2)
+    if (descriptions[class_name][1] != ""){
+        mastery = document.createElement("ul")
+        skill_list.appendChild(mastery)
+        mastery1 = document.createElement("li")
+        mastery1.innerHTML = descriptions[class_name][1]
+        mastery.appendChild(mastery1)
+        mastery2 = document.createElement("li")
+        mastery2.innerHTML = descriptions[class_name][2]
+        mastery.appendChild(mastery2)
+    }
     for (const category in current_class){
         category_name = document.createElement("h3")
         category_name.innerText = category
@@ -3503,12 +4211,14 @@ function populate(class_name){
 
             usage = document.createElement("td")
             second_row.appendChild(usage)
-            usage.width = "30%"
             usage.innerText = current_skill["Usage"]
 
-            unlock = document.createElement("td")
-            second_row.appendChild(unlock)
-            unlock.innerText = "Unlock: "+current_skill["Unlock"]
+            if (current_skill.hasOwnProperty("Unlock")){
+                usage.width = "30%"
+                unlock = document.createElement("td")
+                second_row.appendChild(unlock)
+                unlock.innerText = "Unlock: "+current_skill["Unlock"]
+            }
             
             third_row = document.createElement("tr")
             skill_table.appendChild(third_row)
