@@ -1629,10 +1629,245 @@ var data = {
         },
     },
     "Omnimancer":{
-    
+        "Reserve Magic":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "When using an attack skill, if you used a skill of a different damage type on the previous turn, add the previous skill's damage type and increase damage dealt.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt↑": ["+8%", "+9%", "+10%", "+11%", "+16%", "+17%", "+18%", "+19%", "+20%", "+25%"],
+            }
+        },
+        "TP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max TP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Max TP↑": ["+10%", "+11%", "+12%", "+13%", "+17%", "+19%", "+21%", "+23%", "+25%", "+30%"],
+            }
+        },
+        "Windstorm":{
+            "Usage": "Active (Head, INT, LUC)",
+            "Unlock": "Fireball (Lv 3), Icicle Lance (Lv 3), Lightning (Lv 3)",
+            "Description": "(Magi) Deal ranged Cut damage to all enemies, with a chance to inflict Arm Bind.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["14", "14", "14", "14", "20", "20", "20", "20", "20", "27"],
+                "Attack Power": ["90%", "95%", "100%", "105%", "125%", "131%", "137%", "143%", "149%", "180%"],
+                "Infliction Chance": ["20%", "20%", "20%", "20%", "25%", "25%", "25%", "25%", "25%", "30%"],
+                "Accuracy": ["+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Earthspike":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Fireball (Lv 3), Icicle Lance (Lv 3), Lightning (Lv 3)",
+            "Description": "(Magi) Deal ranged Stab damage to all enemies. Places a debuff on the targets for 2 turns, which decreases elemental damage dealt.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["14", "14", "14", "14", "20", "20", "20", "20", "20", "27"],
+                "Attack Power": ["90%", "95%", "100%", "105%", "125%", "131%", "137%", "143%", "149%", "180%"],
+                "Damage Dealt↓": ["-12%", "-13%", "-14%", "-15%", "-18%", "-19%", "-20%", "-21%", "-22%", "-25%"],
+                "Accuracy": ["+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Rockfall":{
+            "Usage": "Active (Head, INT, LUC)",
+            "Unlock": "Fireball (Lv 3), Icicle Lance (Lv 3), Lightning (Lv 3)",
+            "Description": "(Magi) Deal ranged Bash damage to all enemies, with a chance to inflict Stun.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["14", "14", "14", "14", "20", "20", "20", "20", "20", "27"],
+                "Attack Power": ["90%", "95%", "100%", "105%", "125%", "131%", "137%", "143%", "149%", "180%"],
+                "Infliction Chance": ["20%", "20%", "20%", "20%", "25%", "25%", "25%", "25%", "25%", "30%"],
+                "Accuracy": ["+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%"],
+                "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+            }
+        },
+        "Altar":{
+            "Usage": "Active (Head, INT, LUC)",
+            "Unlock": "Windstorm (Lv 5), Earthspike (Lv 5), Rockfall (Lv 5)",
+            "Description": "Prepare an attack that will hit in 3 more turns, at the start of the turn. Deals ranged Bash damage to one enemy, with a chance to inflict Petrify. Damage increases for each time the target's weakness is hit while preparing, up to 20 stacks. (Not a Magi skills despite the in-game description. Cancelled if you become incapable of acting while preparing)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "30", "30", "30", "30", "30", "40"],
+                "Attack Power": ["100%", "102%", "104%", "106%", "114%", "117%", "120%", "123%", "126%", "140%"],
+                "Damage Dealt↑": ["+30%", "+31%", "+32%", "+33%", "+37%", "+38%", "+39%", "+40%", "+41%", "+45%"],
+                "Infliction Chance": ["50%", "52%", "54%", "56%", "66%", "68%", "70%", "72%", "74%", "90%"],
+                "Accuracy": ["+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Anti-Magic":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Chance to nullify elemental attacks towards your line.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["4%", "5%", "6%", "7%", "9%", "10%", "11%", "12%", "13%", "15%"],
+            }
+        },
+        "Life Siphon":{
+            "Usage": "Passive",
+            "Unlock": "Anti-Magic (Lv 3)",
+            "Description": "Fill your Union Gauge if hit a weakness (max once per attack).",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "Union Gain": ["1%", "2%", "3%", "4%", "6%"],
+            }
+        },
+        "Spread Chant":{
+            "Usage": "Active (Head)",
+            "Unlock": "Focus Chant (Lv 5)",
+            "Description": "(Chant) Enter a charge state until the end of next turn, which decreases damage dealt with Magi skills but turns them into random-target multi-hit attacks (2~6 hits).",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "13", "11", "9", "20", "18", "16", "14", "12", "25"],
+                "Damage Dealt↓": ["x0.5", "x0.5", "x0.5", "x0.5", "x0.6", "x0.6", "x0.6", "x0.6", "x0.6", "x0.75"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Magic DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Decrease elemental damage taken.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Taken↓": ["-4%", "-5%", "-6%", "-7%", "-9%", "-10%", "-11%", "-12%", "-13%", "-15%"],
+            }
+        },
     },
     "Elemancer":{
-    
+        "Common Magic":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase damage dealt if another ally has already performed an INT-based skill this turn.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt↑": ["+20%", "+22%", "+24%", "+26%", "+34%", "+36%", "+38%", "+40%", "+42%", "+50%"],
+            }
+        },
+        "Status DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Inflictions↓": ["x0.92", "x0.9", "x0.88", "x0.86", "x0.82", "x0.8", "x0.78", "x0.76", "x0.74", "x0.7"],
+            }
+        },
+        "Explosion":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Fireball (Lv 5)",
+            "Description": "(Magi) Deal ranged Fire damage to all enemies.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["24", "24", "24", "24", "30", "30", "30", "30", "30", "40"],
+                "Attack Power": ["125%", "132%", "139%", "146%", "185%", "194%", "203%", "212%", "221%", "270%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Hailstorm":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Icicle Lance (Lv 5)",
+            "Description": "(Magi) Deal ranged Ice damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["24", "24", "24", "24", "30", "30", "30", "30", "30", "40"],
+                "Attack Power": ["125%", "132%", "139%", "146%", "185%", "194%", "203%", "212%", "221%", "270%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Thunderbreak":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Lightning (Lv 5)",
+            "Description": "(Magi) Deal ranged Volt damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["24", "24", "24", "24", "30", "30", "30", "30", "30", "40"],
+                "Attack Power": ["125%", "132%", "139%", "146%", "185%", "194%", "203%", "212%", "221%", "270%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Mana Flow":{
+            "Usage": "Active (Head)",
+            "Unlock": "Explosion (Lv 3), Hailstorm (Lv 3), Thunderbreak (Lv 3)",
+            "Description": "Place a buff on yourself for 3~5 turns, which grants a percentage of the TP you spend to a random ally.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "5"],
+                "TP Gain": ["25%", "28%", "31%", "34%", "34%", "38%", "42%", "46%", "50%", "50%"],
+                "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Cutting Costs":{
+            "Usage": "Passive",
+            "Unlock": "Explosion (Lv 3), Hailstorm (Lv 3), Thunderbreak (Lv 3)",
+            "Description": "Chance for skills to not spend TP when used.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["10%", "11%", "12%", "13%", "18%", "20%", "22%", "24%", "26%", "34%"],
+            }
+        },
+        "Clever Strike":{
+            "Usage": "Active (Arms, INT)",
+            "Unlock": "Magic Shield (Lv 3)",
+            "Description": "Deal melee weapon-based damage to one enemy.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "5", "5", "5", "5", "5", "10"],
+                "Attack Power": ["110%", "115%", "120%", "125%", "250%", "260%", "270%", "280%", "290%", "450%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+10%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Abating Chant":{
+            "Usage": "Active (Head)",
+            "Unlock": "Focus Chant (Lv 5)",
+            "Description": "(Chant) Enter a charge state until the end of next turn, which decreases damage dealt with Magi skills but also decreases their TP cost.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["1", "1", "1", "1", "3", "3", "3", "3", "3", "5"],
+                "Damage Dealt↓": ["x0.6", "x0.61", "x0.62", "x0.63", "x0.73", "x0.74", "x0.75", "x0.76", "x0.77", "x0.9"],
+                "TP Cost↓": ["-14", "-15", "-16", "-17", "-19", "-20", "-21", "-22", "-23", "-25"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Magic ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase elemental damage dealt.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt↑": ["+4%", "+5%", "+6%", "+7%", "+9%", "+10%", "+11%", "+12%", "+13%", "+15%"],
+            }
+        },
     },
 },
 "Necromancer":{
@@ -4127,6 +4362,24 @@ var data = {
                 "Action Speed": ["30%"],
             }
         },
+    },
+},
+"Food":{
+    "Ingredient":{
+        "Forest Wheat": ["3+15%", "-"],
+        "Skeleton Fish": ["1+5%", "-"],
+        "Moon Apple": ["5+25%", "-"],
+        "Egg": ["-", "1+2%"],
+        "Milk": ["-", "2+3%"],
+        "Forest Honey": ["-", "2+4%"],
+        "Olives": ["?", "?"],
+        "Forest Berries": ["?", "?"],
+        "Mandrapotato": ["-", "-"],
+        "Meat": ["6+30%", "-"],
+        "Forest Fish": ["4+20%", "-"],
+    },
+    "Cooked":{
+        "?": ["?", "?"],
     },
 },
 }
