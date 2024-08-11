@@ -230,7 +230,7 @@ var data = {
         "Revenge Thrust":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Deft Thrust (Lv 5)",
-            "Description": "Sword: Deal melee Stab+Volt damage to one enemy. Damage increases for each hit you have evaded, up to a certain limit. (Evade counter resets when used)",
+            "Description": "Sword: Deal melee Stab+Volt damage to one enemy. Damage dealt increases for each hit you have evaded, up to a certain limit. (Power bonus resets when used)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -352,7 +352,7 @@ var data = {
         "Resonance":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Multi-Stab (Lv 5)",
-            "Description": "Sword: Deal melee Stab damage to one enemy. Damage increases for each hit you landed last turn (max 9 stacks).",
+            "Description": "Sword: Deal melee Stab damage to one enemy. Damage dealt increases for each hit you landed last turn (max 9 stacks).",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1875,7 +1875,7 @@ var data = {
         "Wraith Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt and Paralysis infliction chance for all Wraith attacks. (Wraith's normal attack has 1% infliction chance by default)",
+            "Description": "Increase damage dealt and infliction chance for all Wraith attacks. (Wraith's normal attack has 1% infliction chance by default)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1993,10 +1993,244 @@ var data = {
         },
     },
     "Spirit Evoker":{
-    
+        "Necromancy":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Chance to summon a Wraith when an ally or enemy dies.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["15%", "16%", "17%", "18%", "27%", "28%", "29%", "30%", "31%", "40%"],
+            }
+        },
+        "HP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max HP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Max HP↑": ["+5%", "+6%", "+7%", "+8%", "+12%", "+13%", "+14%", "+15%", "+16%", "+20%"],
+            }
+        },
+        "Burden Shift":{
+            "Usage": "Passive",
+            "Unlock": "Life Exchange (Lv 5)",
+            "Description": "When you take lethal damage, there's a chance to sacrifice a Wraith to survive and recover HP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["20%", "22%", "24%", "26%", "34%", "36%", "38%", "40%", "42%", "50%"],
+                "HP Gain": ["1", "11", "21", "31", "91", "101", "111", "121", "131", "200"],
+            }
+        },
+        "Soul Trade":{
+            "Usage": "Passive",
+            "Unlock": "Burden Shift (Lv 5)",
+            "Description": "Sacrifice a Wraith for a chance to revive and heal all dead allies.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "25", "25", "25", "25", "25", "30"],
+                "Revive Chance": ["50%", "51%", "52%", "53%", "62%", "63%", "64%", "65%", "66%", "75%"],
+                "HP Gain": ["1", "11", "21", "31", "90", "100", "110", "120", "130", "200"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Grave":{
+            "Usage": "Active (Head)",
+            "Unlock": "Fierce Shield (Lv 3)",
+            "Description": "Target one ally, and each time they're hit this turn, all Wraiths will counterattack with a chance to inflict Paralysis. Counter chance starts at 100% and goes down by 9% with each activation.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "14"],
+                "Attack Power": ["300%", "310%", "320%", "330%", "410%", "425%", "440%", "455%", "470%", "600%"],
+                "Infliction Chance": ["30%", "32%", "34%", "36%", "42%", "44%", "46%", "48%", "50%", "60%"],
+                "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+                "Action Speed": ["300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%"],
+            }
+        },
+        "Wraith Dance":{
+            "Usage": "Active (Head)",
+            "Unlock": "Grave (Lv 5)",
+            "Description": "For this turn, Wraith attacks will deal 3 hits with modified damage.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["13", "13", "13", "13", "19", "19", "19", "19", "19", "24"],
+                "Damage Mod.": ["x0.6", "x0.63", "x0.66", "x0.69", "x0.84", "x0.88", "x0.92", "x0.96", "x1.0", "x1.2"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Status ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Inflictions↑": ["x1.05", "x1.06", "x1.07", "x1.08", "x1.12", "x1.13", "x1.14", "x1.15", "x1.16", "x1.2"],
+            }
+        },
+        "Curse Bomb":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Poison Bomb (Lv 3)",
+            "Description": "Sacrifice a Wraith to attempt to inflict Curse on all enemies.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "12", "12", "12", "12", "12", "20"],
+                "Infliction Chance": ["65%", "67%", "69%", "71%", "80%", "82%", "84%", "86%", "88%", "100%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Ice Bomb":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Flame Bomb (Lv 3)",
+            "Description": "Sacrifice a Wraith to deal ranged Ice damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "22", "22", "22", "22", "22", "30"],
+                "Attack Power": ["120%", "127%", "134%", "141%", "181%", "191%", "201%", "211%", "221%", "280%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Tombstone Vice":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Curse Bomb (Lv 3), Ice Bomb (Lv 3)",
+            "Description": "Sacrifice all Wraiths to attempt to inflict Petrify on one enemy. Higher chance the more Wraiths were sacrificed.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "12"],
+                "Infliction Chance\n(1 Wraith)": ["25%", "26%", "27%", "28%", "36%", "38%", "40%", "42%", "44%", "60%"],
+                "Infliction Chance\n(2 Wraiths)": ["40%", "42%", "44%", "46%", "66%", "70%", "74%", "78%", "82%", "110%"],
+                "Infliction Chance\n(3 Wraiths)": ["55%", "58%", "61%", "64%", "96%", "102%", "108%", "114%", "120%", "160%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
     },
     "Spirit Broker":{
-    
+        "Hell's Lure":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "At the end of each turn, there's a chance to summon a Wraith if your HP is below a certain threshold.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "HP Threshold": ["5%", "6%", "7%", "8%", "17%", "18%", "19%", "20%", "21%", "30%"],
+                "Activation Chance": ["50%", "53%", "56%", "59%", "73%", "76%", "79%", "82%", "85%", "100%"],
+            }
+        },
+        "TP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max TP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Max TP↑": ["+10%", "+11%", "+12%", "+13%", "+17%", "+19%", "+21%", "+23%", "+25%", "+30%"],
+            }
+        },
+        "Auto-Wraith":{
+            "Usage": "Passive",
+            "Unlock": "Life Exchange (Lv 3)",
+            "Description": "Chance to automatically summon a Wraith at the start of battle.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["30%", "33%", "36%", "39%", "59%", "63%", "67%", "71%", "75%", "100%"],
+            }
+        },
+        "Fair Trade":{
+            "Usage": "Active (Head)",
+            "Unlock": "Fierce Shield (Lv 3)",
+            "Description": "Sacrifice one Wraith to deal damage to one enemy. Damage is equal to a percentage of that Wraith's remaining HP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "5", "5", "5", "5", "5", "9"],
+                "HP as Damage": ["50%", "52%", "54%", "56%", "68%", "71%", "74%", "77%", "80%", "100%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Wraith Explosion":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Fair Trade (Lv 5)",
+            "Description": "Sacrifice all Wraiths to deal ranged Bash+Fire damage to all enemies. Damage dealt increases for each Wraith that was sacrificed.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "30", "30", "30", "30", "30", "45"],
+                "Attack Power": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+                "Damage Bonus": ["+100%", "+103%", "+106%", "+109%", "+139%", "+143%", "+147%", "+151%", "+155%", "+200%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Sacrifice":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Sacrifice a Wraith to enter a charge state until the end of next turn, which increases damage dealt.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "10", "10", "10", "10", "10", "25"],
+                "Damage Dealt↑": ["x1.5", "x1.55", "x1.6", "x1.65", "x1.8", "x1.85", "x1.9", "x1.95", "x2.0", "x2.5"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Negative Energy":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Sacrifice (Lv 3)",
+            "Description": "Deal ranged Almighty damage to one enemy. Damage dealt increases by 150% for each time a unit has died (inclucing sacrifices) this turn. Cannot miss.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12"],
+                "Attack Power": ["100%", "104%", "108%", "112%", "144%", "149%", "154%", "159%", "164%", "200%"],
+                "Action Speed": ["-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%", "-100%"],
+            }
+        },
+        "Magic ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase elemental damage dealt.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt↑": ["+4%", "+5%", "+6%", "+7%", "+9%", "+10%", "+11%", "+12%", "+13%", "+15%"],
+            }
+        },
+        "Gates of Hell":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Fair Trade (Lv 5)",
+            "Description": "Deal ranged Bash damage to one enemy, then summon a Wraith with Max HP equal to the damage dealt.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["16", "16", "16", "16", "24", "24", "24", "24", "24", "34"],
+                "Attack Power": ["140%", "146%", "152%", "158%", "202%", "209%", "216%", "223%", "230%", "280%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Zombie Powder":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Fair Trade (Lv 5)",
+            "Description": "Attempt to inflict Instant Death to one enemy. If successful, summon a Wraith with Max HP equal to the target's remaining HP. (Max HP is capped at 9999)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "9", "14", "14", "14", "14", "14", "19"],
+                "Infliction Chance": ["40%", "42%", "44%", "46%", "59%", "61%", "63%", "65%", "67%", "80%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
     },
 },
 "Rover":{
