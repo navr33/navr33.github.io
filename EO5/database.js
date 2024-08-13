@@ -555,7 +555,7 @@ var data = {
         "Full Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "Recovery/Counter/Divide Guard (Lv 3)",
-            "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases all attack damage taken. Afterwards, this skill becomes disabled for several turns.",
+            "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases physical/elemental damage taken. Afterwards, this skill becomes disabled for several turns.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -723,15 +723,17 @@ var data = {
         "Decoy Turret":{
             "Usage": "Active (Arms)",
             "Unlock": "Defense Form (Lv 3)",
-            "Description": "Summon a Turret. The Turret cannot act, but has increased enemy aggro and counterattacks when hit. Disappears at the end of battle.",
+            "Description": "Summon a Turret. The Turret cannot act, but has increased enemy aggro and counterattacks when hit. Counters deal ranged Bash damage. Disappears at the end of battle.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "16"],
-                "Bunker HP": ["10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
-                "Bunker ATK": ["205", "230", "255", "280", "280", "335", "390", "445", "500", "500"],
-                "Bunker DEF/MDF": ["75", "90", "105", "120", "120", "140", "160", "180", "200", "200"],
-                "Bunker Vulnerability": ["6%", "6%", "6%", "6%", "4%", "4%", "4%", "4%", "4%", "1%"],
+                "Turret HP": ["10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+                "Turret ATK": ["205", "230", "255", "280", "280", "335", "390", "445", "500", "500"],
+                "Turret DEF/MDF": ["75", "90", "105", "120", "120", "140", "160", "180", "200", "200"],
+                "Turret Vulnerability": ["6%", "6%", "6%", "6%", "4%", "4%", "4%", "4%", "4%", "1%"],
+                "Attack Power": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+                "Accuracy": ["-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%"],
                 "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
             }
         },
@@ -1875,7 +1877,7 @@ var data = {
         "Wraith Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt and infliction chance for all Wraith attacks. (Wraith's normal attack has 1% infliction chance by default)",
+            "Description": "Increase damage dealt and infliction chance for all Wraith attacks.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1886,7 +1888,7 @@ var data = {
         "Summon Wraith":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Spend part of current HP to summon a Wraith with increased Max HP. (Can be used on the field)",
+            "Description": "Spend part of current HP to summon a Wraith, with a bonus to Max HP. (Can be used on the field)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1894,6 +1896,18 @@ var data = {
                 "HP Cost": ["15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%"],
                 "Max HP↑": ["+5%", "+8%", "+11%", "+14%", "+39%", "+43%", "+47%", "+51%", "+55%", "+80%"],
                 "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Extra: Wraith's Normal Attack":{
+            "Usage": "Active (STR, LUC)",
+            "Description": "Deals melee Bash damage to one enemy, with a chance to inflict Paralysis. Wraiths only have a ~66% chance to act, increased to 100% during Wraith Dance. (<b>Warning</b>: Damage dealt is always reduced by melee backline penalty)",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["100%"],
+                "Infliction Chance": ["1%"],
+                "Accuracy": ["-5%"],
+                "Action Speed": ["60%"],
             }
         },
         "Life Exchange":{
@@ -2040,7 +2054,7 @@ var data = {
         "Grave":{
             "Usage": "Active (Head)",
             "Unlock": "Fierce Shield (Lv 3)",
-            "Description": "Target one ally, and each time they're hit this turn, all Wraiths will counterattack with a chance to inflict Paralysis. Counter chance starts at 100% and goes down by 9% with each activation.",
+            "Description": "Target one ally, and each time they're hit this turn, all Wraiths will counterattack with a chance to inflict Paralysis. Counter chance starts at 100% and goes down by 9% with each activation. (<b>Warning</b>: Damage dealt is always reduced by melee backline penalty)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2258,13 +2272,25 @@ var data = {
         "Hawk Whistle":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Summon a Hawk. Level up this skill to increase its stats. (Can be used on the field)",
+            "Description": "Summon a Hawk, with a bonus to its stats. (Can be used on the field)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25", "45", "45", "45", "45", "45", "75"],
                 "Stats↑": ["x1.0", "x1.03", "x1.06", "x1.09", "x1.19", "x1.23", "x1.27", "x1.31", "x1.35", "x1.5"],
                 "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Extra: Hawk's Normal Attack":{
+            "Usage": "Active (STR, LUC)",
+            "Description": "Only used if Hawk is not commanded. Deals ranged Cut damage to one enemy, with a chance to inflict Head Bind.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["60%"],
+                "Infliction Chance": ["7%"],
+                "Accuracy": ["-1%"],
+                "Action Speed": ["60%"],
             }
         },
         "Hawk Arrow":{
@@ -2299,13 +2325,35 @@ var data = {
         "Hound Whistle":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Summon a Hound. Level up this skill to increase its stats. (Can be used on the field)",
+            "Description": "Summon a Hound, with a bonus to its stats. (Can be used on the field)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25", "45", "45", "45", "45", "45", "75"],
                 "Stats↑": ["x1.0", "x1.03", "x1.06", "x1.09", "x1.19", "x1.23", "x1.27", "x1.31", "x1.35", "x1.5"],
                 "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Extra: Hound's Lick Wounds":{
+            "Usage": "Active",
+            "Description": "Only used if Hound is not commanded and Target Arrow is not active. Restores HP to the ally with the most missing HP.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "HP Gain": ["5+15%"],
+                "Action Speed": ["50%"],
+            }
+        },
+        "Extra: Hound's Normal Attack":{
+            "Usage": "Active (STR, LUC)",
+            "Description": "Only used if Hound is not commanded and Target Arrow is active. Deals melee Bash damage to one enemy, with a chance to inflict Leg Bind. (<b>Warning</b>: Damage dealt is always reduced by melee backline penalty)",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["100%"],
+                "Infliction Chance": ["8%"],
+                "Accuracy": ["-1%"],
+                "Action Speed": ["100%"],
             }
         },
         "Aid Command":{
@@ -2347,7 +2395,7 @@ var data = {
         "Target Arrow":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Bow: Deal ranged Stab damage to one enemy. Places a debuff on the target for 3~5 turns, which increases physical damage taken. Hawk/Hound's normal attack will prioritize enemies with this debuff.",
+            "Description": "Bow: Deal ranged Stab damage to one enemy. Places a debuff on the target for 3~5 turns, which increases physical damage taken. Hawk/Hound/Wraith's normal attacks will prioritize enemies with this debuff.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2372,11 +2420,12 @@ var data = {
         "Finishing Shot":{
             "Usage": "Active (STR)",
             "Unlock": "N/A",
-            "Description": "After attacking an enemy, if their HP is below a certain threshold, perform a normal attack as a follow up.",
+            "Description": "After attacking an enemy, if their HP is below a certain threshold, perform a weapon-based follow up attack.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "HP Threshold": ["10%", "11%", "12%", "13%", "19%", "20%", "21%", "22%", "23%", "30%"],
+                "Attack Power": ["100%", "103%", "106%", "109%", "119%", "123%", "127%", "131%", "135%", "150%"],
             }
         },
         "Aerial Talons":{
@@ -2551,7 +2600,7 @@ var data = {
         "Foot Pierce":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Hunter Shot (Lv 3)",
-            "Description": "Bow+Hound: Deal ranged Stab damage to an enemy line, with a chance to inflict Leg Bind. Afterward, the Hound will deal melee Bash damage to targets with Leg Bind.",
+            "Description": "Bow+Hound: Deal ranged Stab damage to an enemy line, with a chance to inflict Leg Bind. Afterward, the Hound will deal ranged Bash damage to targets with Leg Bind.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2566,7 +2615,7 @@ var data = {
         "Medicinal Lick":{
             "Usage": "Active (Head)",
             "Unlock": "Guard Command (Lv 5), Foot Pierce (Lv 5)",
-            "Description": "Hound: Command the Hound to restore HP multiple times to random allies (max 2 times each).",
+            "Description": "Hound: Command the Hound to restore HP multiple times to random allies (max 2 times each). (Only usable in battle)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2767,7 +2816,7 @@ var data = {
         "Ruinous Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases damage dealt.",
+            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases physical/elemental damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2780,7 +2829,7 @@ var data = {
         "Aegis Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which decreases damage taken.",
+            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which decreases physical/elemental damage taken.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -4577,7 +4626,7 @@ var data = {
         "Aegis Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "Sequoian Bow",
-            "Description": "(Prayer) Place a buff on the whole party for 3~4 turns, which decreases damage taken.",
+            "Description": "(Prayer) Place a buff on the whole party for 3~4 turns, which decreases physical/elemental damage taken.",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
