@@ -1694,13 +1694,13 @@ var data = {
         "Altar":{
             "Usage": "Active (Head, INT, LUC)",
             "Unlock": "Windstorm (Lv 5), Earthspike (Lv 5), Rockfall (Lv 5)",
-            "Description": "Prepare an attack that will hit in 3 more turns, at the start of the turn. Deals ranged Bash damage to one enemy, with a chance to inflict Petrify. Damage increases for each time the target's weakness is hit while preparing, up to 20 stacks. (Not a Magi skills despite the in-game description. Cancelled if you become incapable of acting while preparing)",
+            "Description": "Prepare an attack that will hit in 3 more turns, at the start of the turn. Deals ranged Bash damage to one enemy, with a chance to inflict Petrify. Damage dealt increases for each time the target's weakness is hit while preparing, up to 20 stacks. (Not a Magi skills despite the in-game description. Cancelled if you become incapable of acting while preparing)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "30", "30", "30", "30", "30", "40"],
                 "Attack Power": ["100%", "102%", "104%", "106%", "114%", "117%", "120%", "123%", "126%", "140%"],
-                "Damage Dealt↑": ["+30%", "+31%", "+32%", "+33%", "+37%", "+38%", "+39%", "+40%", "+41%", "+45%"],
+                "Damage Bonus": ["+30%", "+31%", "+32%", "+33%", "+37%", "+38%", "+39%", "+40%", "+41%", "+45%"],
                 "Infliction Chance": ["50%", "52%", "54%", "56%", "66%", "68%", "70%", "72%", "74%", "90%"],
                 "Accuracy": ["+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%"],
                 "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
@@ -2187,7 +2187,7 @@ var data = {
         "Negative Energy":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Sacrifice (Lv 3)",
-            "Description": "Deal ranged Almighty damage to one enemy. Damage dealt increases by 150% for each time a unit has died (inclucing sacrifices) this turn. Cannot miss.",
+            "Description": "Deal ranged Almighty damage to one enemy. Damage dealt increases by 150% for each time a unit has died (including sacrifices) this turn. Cannot miss.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2361,10 +2361,248 @@ var data = {
         },
     },
     "Flying Falcon":{
-    
+        "Sky Patrol":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "If the Hawk is summoned, there's a chance to receive ingredients as you walk.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Finishing Shot":{
+            "Usage": "Active (STR)",
+            "Unlock": "N/A",
+            "Description": "After attacking an enemy, if their HP is below a certain threshold, perform a normal attack as a follow up.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "HP Threshold": ["10%", "11%", "12%", "13%", "19%", "20%", "21%", "22%", "23%", "30%"],
+            }
+        },
+        "Aerial Talons":{
+            "Usage": "Active (Head)",
+            "Unlock": "Hawk Arrow (Lv 3)",
+            "Description": "Hawk: Command the Hawk to deal ranged Cut damage to one enemy, with a chance to inflict Head Bind.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "12", "12", "12", "12", "12", "17"],
+                "Attack Power": ["200%", "209%", "218%", "227%", "282%", "294%", "306%", "318%", "330%", "400%"],
+                "Infliction Chance": ["25%", "26%", "27%", "28%", "37%", "38%", "39%", "40%", "41%", "50%"],
+                "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Ice Peck":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Wing Thrash (Lv 3)",
+            "Description": "Bow+Hawk: Deal ranged Stab damage to all enemies, then the Hawk will deal ranged Ice damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "17", "17", "17", "17", "17", "24"],
+                "Attack Power\n(Bow)": ["50%", "53%", "56%", "59%", "70%", "74%", "78%", "82%", "86%", "100%"],
+                "Attack Power\n(Hawk)": ["120%", "124%", "128%", "132%", "150%", "155%", "160%", "165%", "170%", "200%"],
+                "Accuracy\n(Bow)": ["-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%"],
+                "Accuracy\n(Hawk)": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Sky Dive":{
+            "Usage": "Active (Head)",
+            "Unlock": "Aerial Talons (Lv 5), Ice Peck (Lv 5)",
+            "Description": "Hawk: Command the Hawk to leave the battle, then return to attack in 3 more turns, at the start of the turn. Deals ranged Cut damage to one enemy, with a chance to inflict Head Bind. (If the battle ends or the user dies while preparing, the Hawk does not return)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["16", "16", "16", "16", "23", "23", "23", "23", "23", "32"],
+                "Attack Power": ["650%", "680%", "710%", "740%", "870%", "920%", "970%", "1020%", "1070%", "1300%"],
+                "Infliction Chance": ["65%", "68%", "71%", "74%", "84%", "88%", "92%", "96%", "100%", "120%"],
+                "Accuracy": ["+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Phys ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase physical damage dealt.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt↑": ["+4%", "+5%", "+6%", "+7%", "+9%", "+10%", "+11%", "+12%", "+13%", "+15%"],
+            }
+        },
+        "Speed Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase accuracy, evasion and action speed.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Accuracy↑": ["+2.4%", "+2.8%", "+3.2%", "+3.6%", "+5.2%", "+5.8%", "+6.4%", "+7%", "+7.6%", "+10%"],
+                "Evasion↑": ["+2.4%", "+2.8%", "+3.2%", "+3.6%", "+5.2%", "+5.8%", "+6.4%", "+7%", "+7.6%", "+10%"],
+                "Speed↑": ["+11%", "+14%", "+17%", "+20%", "+24%", "+27%", "+30%", "+33%", "+36%", "+40%"],
+            }
+        },
+        "Power Shot":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Target Arrow (Lv 5)",
+            "Description": "Bow: Deal ranged Stab damage to one enemy, with pierce effect.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "9", "15", "15", "15", "15", "15", "21"],
+                "Attack Power": ["200%", "205%", "210%", "215%", "250%", "260%", "270%", "280%", "290%", "340%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Million Arrows":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Power Shot (Lv 5)",
+            "Description": "Bow: Prepare an attack that will hit on the next turn, at the start of the turn. Deals multiple hits of ranged Stab damage to random enemies (max 4 hits each). (Can't use again while preparing. Cancelled if you die while preparing)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["13", "13", "13", "13", "19", "19", "19", "19", "19", "27"],
+                "Attack Power": ["100%", "112%", "124%", "136%", "136%", "152%", "168%", "184%", "200%", "200%"],
+                "Min. Hits": ["4", "4", "4", "4", "6", "6", "6", "6", "6", "8"],
+                "Max. Hits": ["16", "16", "16", "16", "16", "16", "16", "16", "16", "16"],
+                "Accuracy": ["-50%", "-50%", "-50%", "-50%", "-50%", "-50%", "-50%", "-50%", "-50%", "-50%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Feather Storm":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Hawk: Command the Hawk to attempt to inflict Blind on an enemy line.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "9"],
+                "Infliction Chance": ["40%", "41%", "42%", "43%", "50%", "52%", "54%", "56%", "58%", "70%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%"],
+            }
+        },
     },
     "Hunting Hound":{
-    
+        "Ground Patrol":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "If the Hound is summoned, there's a chance to receive materials as you walk.",
+            "Starter": "1",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Healing Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase the effect of the Hound's healing actions.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "HP Gain↑": ["6+2%", "9+2%", "12+2%", "15+2%", "19+4%", "22+4%", "25+4%", "28+4%", "31+4%", "35+7%"],
+            }
+        },
+        "Status ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase chance to successfully inflict binds/ailments. (Also applies to your summons)",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Inflictions↑": ["x1.05", "x1.06", "x1.07", "x1.08", "x1.12", "x1.13", "x1.14", "x1.15", "x1.16", "x1.2"],
+            }
+        },
+        "TP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max TP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Max TP↑": ["+10%", "+11%", "+12%", "+13%", "+17%", "+19%", "+21%", "+23%", "+25%", "+30%"],
+            }
+        },
+        "Menacing Howl":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "Hound: Command the Hound to attempt to inflict Panic on an enemy line.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "9", "9", "9", "9", "9", "13"],
+                "Infliction Chance": ["25%", "26%", "27%", "28%", "32%", "33%", "34%", "35%", "36%", "40%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Guard Command":{
+            "Usage": "Active (Head)",
+            "Unlock": "Aid Command (Lv 3)",
+            "Description": "Hound: Command the Hound to take attacks in place of one ally, then at the end of turn restore HP to that ally. Hound takes increased damage from redirected attacks.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "10"],
+                "Damage Mod.": ["x1.5", "x1.46", "x1.42", "x1.38", "x1.25", "x1.22", "x1.19", "x1.16", "x1.13", "x1.0"],
+                "HP Gain": ["45+14%", "45+15%", "45+16%", "45+17%", "60+19%", "60+20%", "60+21%", "60+22%", "60+23%", "80+25%"],
+            }
+        },
+        "Foot Pierce":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Hunter Shot (Lv 3)",
+            "Description": "Bow+Hound: Deal ranged Stab damage to an enemy line, with a chance to inflict Leg Bind. Afterward, the Hound will deal melee Bash damage to targets with Leg Bind.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20"],
+                "Attack Power\n(Bow)": ["100%", "106%", "112%", "118%", "118%", "126%", "134%", "142%", "150%", "150%"],
+                "Infliction Chance": ["25%", "25%", "25%", "25%", "35%", "35%", "35%", "35%", "35%", "50%"],
+                "Attack Power\n(Hound)": ["300%", "340%", "380%", "420%", "420%", "465%", "510%", "555%", "600%", "600%"],
+                "Accuracy\n(Bow)": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Medicinal Lick":{
+            "Usage": "Active (Head)",
+            "Unlock": "Guard Command (Lv 5), Foot Pierce (Lv 5)",
+            "Description": "Hound: Command the Hound to restore HP multiple times to random allies (max 2 times each).",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "17", "17", "17", "17", "17", "25"],
+                "Heal Times": ["5", "5", "5", "5", "7", "7", "7", "7", "7", "9"],
+                "HP Gain": ["45+9%", "48+10%", "51+11%", "54+12%", "54+12%", "58+14%", "62+16%", "66+18%", "70+20%", "70+20%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Arc Shot":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Target Arrow (Lv 5)",
+            "Description": "Bow: Deal ranged Stab damage to one enemy. Deals 150% more damage against enemies in the back line.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "12", "12", "12", "12", "12", "18"],
+                "Attack Power": ["160%", "165%", "170%", "175%", "215%", "220%", "225%", "230%", "235%", "280%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Stun Shot":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Arc Shot (Lv 5)",
+            "Description": "Bow+Hound: Deal ranged Stab damage to one enemy, then the Hound will attempt to inflict Stun on it.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "9", "13", "13", "13", "13", "13", "18"],
+                "Attack Power": ["200%", "220%", "240%", "260%", "260%", "285%", "310%", "335%", "360%", "360%"],
+                "Infliction Chance": ["35%", "35%", "35%", "35%", "50%", "50%", "50%", "50%", "50%", "65%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
     },
 },
 "Masurao":{
