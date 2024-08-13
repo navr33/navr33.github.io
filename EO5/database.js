@@ -2262,7 +2262,7 @@ var data = {
         "Animal Therapy":{
             "Usage": "Passive (WIS)",
             "Unlock": "N/A",
-            "Description": "If there's a Hawk or Hound in the battle, restore HP to the whole part at the end of each turn.",
+            "Description": "If there's a Hawk or Hound in the battle, restore HP to the whole party at the end of each turn.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2690,14 +2690,13 @@ var data = {
         "Swallow Soar":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Duel (Lv 3)",
-            "Description": "Katana: Deal melee Cut damage to one enemy. After the target acts, perform a second hit.",
+            "Description": "Katana: Deal melee Cut damage to one enemy at the start of the turn. After the target acts, perform a second hit.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "17"],
                 "Attack Power": ["100%", "103%", "106%", "109%", "124%", "128%", "132%", "136%", "140%", "160%"],
                 "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
-                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
             }
         },
         "Armor Pierce":{
@@ -2784,10 +2783,251 @@ var data = {
         },
     },
     "Blade Dancer":{
-    
+        "Multi-Katana":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Allows you to equip weapons in armor slots. If you have multiple weapons equipped, normal attacks have a chance to hit once per weapon, with decreased power on subsequent hits: 80% power on the second hit, 65% on the third, and 50% on the fourth. (All multi-hit attacks will rotate through your equipped weapons on each hit)",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["15%", "17%", "19%", "21%", "28%", "31%", "34%", "37%", "40%", "50%"],
+            }
+        },
+        "HP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max HP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Max HP↑": ["+5%", "+6%", "+7%", "+8%", "+12%", "+13%", "+14%", "+15%", "+16%", "+20%"],
+            }
+        },
+        "Reincarnation":{
+            "Usage": "Passive",
+            "Unlock": "HP Up (Lv 3)",
+            "Description": "Chance to automatically revive (with 1 HP) at the end of a turn where you died.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["10%", "11%", "12%", "13%", "17%", "18%", "19%", "20%", "21%", "25%"],
+            }
+        },
+        "Hell Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Swallow Soar (Lv 3)",
+            "Description": "Katana: Prepare to follow up after all attacks performed by allies or enemies this turn. Maximum amount of follow ups is multiplied by your number of equipped Katana.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "12", "12", "12", "12", "12", "35"],
+                "Attack Power\n(To Enemies)": ["100%", "105%", "110%", "115%", "138%", "145%", "152%", "159%", "166%", "200%"],
+                "Attack Power\n(To Allies)": ["300%", "270%", "240%", "210%", "100%", "93%", "86%", "79%", "72%", "34%"],
+                "Max. Per Katana": ["1", "1", "1", "1", "2", "2", "2", "2", "2", "3"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["1000%", "1000%", "1000%", "1000%", "1000%", "1000%", "1000%", "1000%", "1000%", "1000%"],
+            }
+        },
+        "Reblossom":{
+            "Usage": "Passive",
+            "Unlock": "Hell Slash (Lv 3)",
+            "Description": "Chance to perform Katana skills an second time. Chance is multiplied by your number of equipped Katana minus one.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["15%", "16%", "17%", "18%", "24%", "25%", "26%", "27%", "28%", "34%"],
+            }
+        },
+        "Sacred Tetrad":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Whirlwind (Lv 3)",
+            "Description": "Katana: Deal multiple hits of melee Cut damage to one enemy. Hits once per equipped Katana.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "10"],
+                "Attack Power": ["60%", "61%", "62%", "63%", "73%", "74%", "75%", "76%", "77%", "90%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Layered Bloom":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Whirlwind (Lv 3)",
+            "Description": "Katana: Deal 2~8 hits of melee Cut damage to random enemies in a line. Deals 25% more damage per equipped Katana.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "9", "14", "14", "14", "14", "14", "21"],
+                "Attack Power": ["30%", "31%", "32%", "33%", "39%", "40%", "41%", "42%", "43%", "50%"],
+                "Accuracy": ["-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Vast Flourish":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Sacred Tetrad (Lv 3), Layered Bloom (Lv 3)",
+            "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Hits equal to number of enemies times number of equipped Katana.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["14", "14", "14", "14", "21", "21", "21", "21", "21", "30"],
+                "Attack Power": ["25%", "26%", "27%", "28%", "31%", "32%", "33%", "34%", "35%", "40%"],
+                "Accuracy": ["-8%", "-8%", "-8%", "-8%", "-8%", "-8%", "-8%", "-8%", "-8%", "-8%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+            }
+        },
+        "Phys ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase physical damage dealt.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt↑": ["+4%", "+5%", "+6%", "+7%", "+9%", "+10%", "+11%", "+12%", "+13%", "+15%"],
+            }
+        },
+        "Meteor Rain":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Phys ATK Up (Lv 3)",
+            "Description": "Katana: Deal multiple melee hits of a random damage type each to random enemies. Hits once per equipped Katana.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "16"],
+                "Attack Power": ["80%", "82%", "84%", "86%", "95%", "98%", "101%", "104%", "107%", "120%"],
+                "Accuracy": ["-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
     },
     "Blade Master":{
-    
+        "Sword God":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Critical Hit chance and damage. Allows Katana skills to perform Critical Hits.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Crit Rate↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"],
+                "Crit Damage↑": ["x1.15", "x1.16", "x1.17", "x1.18", "x1.24", "x1.25", "x1.26", "x1.27", "x1.28", "x1.35"],
+            }
+        },
+        "Speed Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase accuracy, evasion and action speed.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Accuracy↑": ["+2.4%", "+2.8%", "+3.2%", "+3.6%", "+5.2%", "+5.8%", "+6.4%", "+7%", "+7.6%", "+10%"],
+                "Evasion↑": ["+2.4%", "+2.8%", "+3.2%", "+3.6%", "+5.2%", "+5.8%", "+6.4%", "+7%", "+7.6%", "+10%"],
+                "Speed↑": ["+11%", "+14%", "+17%", "+20%", "+24%", "+27%", "+30%", "+33%", "+36%", "+40%"],
+            }
+        },
+        "TP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max TP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Max TP↑": ["+10%", "+11%", "+12%", "+13%", "+17%", "+19%", "+21%", "+23%", "+25%", "+30%"],
+            }
+        },
+        "Bolt Slash":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "TP Up (Lv 5)",
+            "Description": "Katana: Deal melee Cut+Volt damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "24"],
+                "Attack Power": ["220%", "225%", "230%", "235%", "270%", "276%", "282%", "288%", "294%", "340%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Mirror Moon":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "TP Up (Lv 5)",
+            "Description": "Katana: Chance to nullify physical attacks received, then counterattack with melee weapon-based damage. Activation chance goes down with each activation.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "15", "15", "15", "15", "15", "22"],
+                "Attack Power": ["300%", "310%", "320%", "330%", "380%", "390%", "400%", "410%", "420%", "500%"],
+                "Activation Chance": ["67%", "70%", "73%", "76%", "100%", "103%", "106%", "109%", "112%", "135%"],
+                "Chance Fadeout": ["35%", "35%", "35%", "35%", "35%", "35%", "35%", "35%", "35%", "35%"],
+                "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+                "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+            }
+        },
+        "Foot Sweep":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Haze Slash (Lv 3)",
+            "Description": "Katana: Deal melee Cut damage to an enemy line. Places a debuff on the targets for 2~4 turns, which decreases evasion.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "16", "16", "16", "16", "16", "22"],
+                "Attack Power": ["111%", "119%", "127%", "135%", "135%", "145%", "155%", "165%", "175%", "175%"],
+                "Evasion↓": ["-16%", "-18%", "-20%", "-22%", "-22%", "-24%", "-26%", "-28%", "-30%", "-30%"],
+                "Duration": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "4"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Helm Splitter":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Foot Sweep (Lv 5)",
+            "Description": "Katana: Deal melee Cut damage to one enemy. Low accuracy but ignores Cut resistance.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "12", "12", "12", "12", "12", "17"],
+                "Attack Power": ["260%", "270%", "280%", "290%", "390%", "405%", "420%", "435%", "450%", "600%"],
+                "Accuracy": ["-20%", "-20%", "-20%", "-20%", "-40%", "-40%", "-40%", "-40%", "-40%", "-60%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Spirit Sword":{
+            "Usage": "Passive",
+            "Unlock": "High Ground (Lv 3)",
+            "Description": "When you select a single-target attack, decrease damage taken from attacks by the target during the whole turn.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Taken↓": ["-5%", "-6%", "-7%", "-8%", "-12%", "-13%", "-14%", "-15%", "-16%", "-20%"],
+            }
+        },
+        "Triple Strike":{
+            "Usage": "Active (Arms, STR, LUC)",
+            "Unlock": "Spirit Sword (Lv 5)",
+            "Description": "Katana: Deal 3 hits of melee Cut damage to one enemy. Hits have a chance to inflict Head Bind, then Arm Bind, then Leg Bind. Stops hitting if it lands a bind.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "16", "16", "16", "16", "16", "24"],
+                "Attack Power": ["65%", "67%", "69%", "71%", "81%", "83%", "85%", "87%", "89%", "100%"],
+                "Infliction Chance": ["6%", "6%", "6%", "6%", "9%", "9%", "9%", "9%", "9%", "12%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Petal Scatter":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Spirit Sword (Lv 5)",
+            "Description": "Katana: Deal ranged Cut damage to all enemies. Deals less damage the more enemies there are: 65% damage for 2 enemies, 45% damage for 3, and 35% damage for 4 or more.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["16", "16", "16", "16", "24", "24", "24", "24", "24", "34"],
+                "Attack Power": ["240%", "247%", "254%", "261%", "320%", "330%", "340%", "350%", "360%", "450%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
     },
 },
 "Shaman":{
@@ -4915,7 +5155,7 @@ var descriptions = {
     "Warlock":["Elemental casters that strike the enemy's weakness.", "<b>Omnimancer</b>: Learns physical magic to cripple the enemy and continuously hit their weak points.", "<b>Elemancer</b>: Expands their elemental magic and improves control on their use of energy."],
     "Necromancer":["Summoners who call forth Wraiths to assist the party.", "<b>Spirit Evoker</b>: Works alongside Wraiths to cover offense, defense and ailments.", "<b>Spirit Broker</b>: Uses attacks that summon Wraiths, then sacrifices them for more power."],
     "Rover":["Archers who chase and restrain enemies alongside animal companions.", "<b>Flying Falcon</b>: Hunts with a Hawk that attacks multiple enemies.", "<b>Hunting Hound</b>: Hunts with a Hound that protects and heals allies."],
-    "Masurao":["Frontline warriors specialized in strong offense with Katanas.", "<b>Blade Dancer</b>: Wields multiple Katanas at once, sacrificing all defense for overwhelming offense.", "<b>Blade Master</b>: Handles one Katana with presicion, serving as versatile and durable duelists."],
+    "Masurao":["Frontline warriors specialized in strong offense with Katanas.", "<b>Blade Dancer</b>: Wields multiple Katanas at once, sacrificing all defense for overwhelming offense.", "<b>Blade Master</b>: Versatile duelists with attacks that combine power and utility."],
     "Shaman":["Support casters who manipulate buffs to strengthen the party.", "<b>Divine Punisher</b>: Dispels buffs to turn them into direct power.", "<b>Divine Herald</b>: Grants buffs to protect and heal allies."],
     "Botanist":["Healers that use herbal concoctions to cure allies or weaken enemies.", "<b>Merciful Healer</b>: Uses medicinal herbs to treat all kinds of injuries.", "<b>Graced Poisoner</b>: Uses poisonous herbs to make enemies susceptible to ailments."],
 
@@ -4927,6 +5167,7 @@ var descriptions = {
     "Weapon Skills":["Skills borrowed from certain weapons.", "", ""],
     "Battle Items":["Consumable items meant to aid you in battle.", "", ""],
 }
+
 
 function toggle_data(table_id){
     document.getElementById(table_id).classList.toggle("show_table");
@@ -4993,230 +5234,6 @@ function populate(class_name){
                 second_row.appendChild(unlock)
                 unlock.innerText = "Unlock: "+current_skill["Unlock"]
             }
-            
-            third_row = document.createElement("tr")
-            skill_table.appendChild(third_row)
-
-            data_block = document.createElement("td")
-            third_row.appendChild(data_block)
-            data_block.classList.add("hide_table")
-            data_block.style.textAlign = "left"
-            data_block.colSpan = 2
-            data_block.id = skill
-            first_row.addEventListener("click", function(){
-                toggle_data(skill)
-            })
-
-            description = document.createElement("p")
-            data_block.appendChild(description)
-            description.innerHTML = current_skill["Description"]
-
-            levels_table = document.createElement("table")
-            data_block.appendChild(levels_table)
-            levels_table.classList.add("levels_table")
-            levels_row = document.createElement("tr")
-            levels_table.appendChild(levels_row)
-            if (current_skill["Data"] !== ""){
-                start_level = document.createElement("th")
-                start_level.innerText = "Level"
-                levels_row.appendChild(start_level)
-            }
-            for (let i = 1; i <= current_skill["Max Level"]; i++){
-                level = document.createElement("th")
-                levels_row.appendChild(level)
-                if (current_skill.hasOwnProperty("Levels")){
-                    level.innerText = current_skill["Levels"][i-1]
-                }
-                else{
-                    level.innerText = i
-                }
-                
-            }
-            for (const effect in current_skill["Data"]){
-                effect_row = document.createElement("tr")
-                levels_table.appendChild(effect_row)
-
-                effect_name = document.createElement("th")
-                effect_name.innerText = effect
-                effect_row.appendChild(effect_name)
-                current_effect = current_skill["Data"][effect]
-                latest = current_effect
-                var latest
-                for (const value in current_effect){
-                    if (current_effect[value] == latest.innerText) {
-                        latest.colSpan = latest.colSpan+1
-                        continue
-                    }
-                    effect_value = document.createElement("td")
-                    effect_value.innerText = current_effect[value]
-                    effect_row.appendChild(effect_value)
-                    latest = effect_value
-                }
-            }
-        }
-    }
-}
-
-function populate2(class_name){
-    var skill_list = document.getElementById("skill_list")
-    while (skill_list.hasChildNodes()){
-        skill_list.removeChild(skill_list.firstChild)
-    }
-    var current_class = data[class_name]
-    name_banner = document.createElement("h2")
-    name_banner.style.margin = "20px"
-    name_banner.innerText = class_name
-    skill_list.appendChild(name_banner)
-
-    class_decription = document.createElement("p")
-    class_decription.style.marginLeft = "10px"
-    class_decription.innerText = descriptions[class_name]
-    skill_list.appendChild(class_decription)
-
-    for (const category in current_class){
-        category_name = document.createElement("h3")
-        category_name.innerText = category
-        skill_list.appendChild(category_name)
-        for (const skill in current_class[category]){
-            console.log("test")
-            var current_skill = current_class[category][skill]
-            skill_table = document.createElement("table")
-            skill_table.classList.add("skill_entry")
-            if (current_skill["Starter"] == "2"){
-                skill_table.style.marginTop = "15px"
-            }
-            skill_list.appendChild(skill_table)
-            
-            first_row = document.createElement("tr")
-            skill_table.appendChild(first_row)
-
-            skill_name = document.createElement("th")
-            first_row.appendChild(skill_name)
-            skill_name.classList.add("skill_name")
-            skill_name.innerText = skill
-            skill_name.colSpan = 2
-
-            second_row = document.createElement("tr")
-            skill_table.appendChild(second_row)
-
-            usage = document.createElement("td")
-            second_row.appendChild(usage)
-            usage.width = "30%"
-            usage.innerText = current_skill["Usage"]
-
-            unlock = document.createElement("td")
-            second_row.appendChild(unlock)
-            unlock.innerText = "Unlock: "+current_skill["Unlock"]
-            
-            third_row = document.createElement("tr")
-            skill_table.appendChild(third_row)
-
-            data_block = document.createElement("td")
-            third_row.appendChild(data_block)
-            data_block.classList.add("hide_table")
-            data_block.style.textAlign = "left"
-            data_block.colSpan = 2
-            data_block.id = skill
-            first_row.addEventListener("click", function(){
-                toggle_data(skill)
-            })
-
-            description = document.createElement("p")
-            data_block.appendChild(description)
-            description.innerHTML = current_skill["Description"]
-
-            levels_table = document.createElement("table")
-            data_block.appendChild(levels_table)
-            levels_table.classList.add("levels_table")
-            levels_row = document.createElement("tr")
-            levels_table.appendChild(levels_row)
-            if (current_skill["Data"] !== ""){
-                start_level = document.createElement("th")
-                start_level.innerText = "Level"
-                levels_row.appendChild(start_level)
-            }
-            for (let i = 1; i <= current_skill["Max Level"]; i++){
-                level = document.createElement("th")
-                levels_row.appendChild(level)
-                if (current_skill.hasOwnProperty("Levels")){
-                    level.innerText = current_skill["Levels"][i-1]
-                }
-                else{
-                    level.innerText = i
-                }
-                
-            }
-            for (const effect in current_skill["Data"]){
-                effect_row = document.createElement("tr")
-                levels_table.appendChild(effect_row)
-
-                effect_name = document.createElement("th")
-                effect_name.innerText = effect
-                effect_row.appendChild(effect_name)
-                current_effect = current_skill["Data"][effect]
-                latest = current_effect
-                var latest
-                for (const value in current_effect){
-                    if (current_effect[value] == latest.innerText) {
-                        latest.colSpan = latest.colSpan+1
-                        continue
-                    }
-                    effect_value = document.createElement("td")
-                    effect_value.innerText = current_effect[value]
-                    effect_row.appendChild(effect_value)
-                    latest = effect_value
-                }
-            }
-        }
-    }
-}
-
-function populate3(class_name){
-    var skill_list = document.getElementById("skill_list")
-    while (skill_list.hasChildNodes()){
-        skill_list.removeChild(skill_list.firstChild)
-    }
-    var current_class = data[class_name]
-    name_banner = document.createElement("h2")
-    name_banner.style.margin = "20px"
-    name_banner.innerText = class_name
-    skill_list.appendChild(name_banner)
-
-    class_decription = document.createElement("p")
-    class_decription.style.marginLeft = "10px"
-    class_decription.innerText = descriptions[class_name]
-    skill_list.appendChild(class_decription)
-
-    for (const category in current_class){
-        category_name = document.createElement("h3")
-        category_name.innerText = category
-        skill_list.appendChild(category_name)
-        for (const skill in current_class[category]){
-            console.log("test")
-            var current_skill = current_class[category][skill]
-            skill_table = document.createElement("table")
-            skill_table.classList.add("skill_entry")
-            if (current_skill["Starter"] == "2"){
-                skill_table.style.marginTop = "15px"
-            }
-            skill_list.appendChild(skill_table)
-            
-            first_row = document.createElement("tr")
-            skill_table.appendChild(first_row)
-
-            skill_name = document.createElement("th")
-            first_row.appendChild(skill_name)
-            skill_name.classList.add("skill_name")
-            skill_name.innerText = skill
-            skill_name.colSpan = 2
-
-            second_row = document.createElement("tr")
-            skill_table.appendChild(second_row)
-
-            usage = document.createElement("td")
-            second_row.appendChild(usage)
-            usage.innerText = current_skill["Usage"]
-
             
             third_row = document.createElement("tr")
             skill_table.appendChild(third_row)
