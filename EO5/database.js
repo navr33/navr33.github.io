@@ -3095,7 +3095,7 @@ var data = {
         "Heaven's Gift":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Ruinous/Aegis/Focus Prayer (Lv 2)",
-            "Description": "Dispel 1 buff and/or 1 debuff from one ally. If successful, restore HP and increase their action speed for this turn. Healing is doubled is both buff and debuff are dispelled.",
+            "Description": "Dispel one buff and debuff from an ally. Restore HP and increase their action speed for this turn if one modifier type was removed, with double healing effect if both.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3160,10 +3160,229 @@ var data = {
         },
     },
     "Divine Punisher":{
-    
+        "Ancient Memory":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "When one of your buffs is dispelled, there's a chance to reapply it.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["15%", "16.5%", "18%", "19.5%", "29%", "31%", "33%", "35%", "37%", "50%"],
+            }
+        },
+        "HP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max HP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Max HP↑": ["+5%", "+6%", "+7%", "+8%", "+12%", "+13%", "+14%", "+15%", "+16%", "+20%"],
+            }
+        },
+        "Soul Grace":{
+            "Usage": "Passive",
+            "Unlock": "Heaven's Gift (Lv 3)",
+            "Description": "If you have buffs, there's a chance to survive lethal damage (with 1 HP) in exchange for losing a buff.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["5%", "6%", "7%", "8%", "12%", "13%", "14%", "15%", "16%", "20%"],
+            }
+        },
+        "Offering":{
+            "Usage": "Active (Head)",
+            "Unlock": "Heaven's Gift (Lv 3)",
+            "Description": "Dispel one buff and debuff on yourself. Restore TP to other allies in your line if one modifier type was dispelled, doubled if both.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["40", "40", "40", "40", "40", "40", "40", "40", "40", "40"],
+                "TP Gain": ["10", "11", "12", "13", "19", "20", "21", "22", "23", "30"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Purification":{
+            "Usage": "Active (Head)",
+            "Unlock": "Soul Grace (Lv 5), Offering (Lv 5)",
+            "Description": "Dispel all ally buffs, ally debuffs, enemy buffs and enemy debuffs. Recover TP for each modifier type that was dispelled.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["40", "40", "40", "40", "40"],
+                "TP Gain": ["10", "12", "14", "16", "20"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Magic ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase elemental damage dealt.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Dealt↑": ["+4%", "+5%", "+6%", "+7%", "+9%", "+10%", "+11%", "+12%", "+13%", "+15%"],
+            }
+        },
+        "TP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max TP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Max TP↑": ["+10%", "+11%", "+12%", "+13%", "+17%", "+19%", "+21%", "+23%", "+25%", "+30%"],
+            }
+        },
+        "Mana Oracle":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Dance Oracle (Lv 3)",
+            "Description": "Dispel a Blaze/Hail/Bolt Prayer on the whole party to deal 5 ranged hits of the corresponding element to random enemies.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "24"],
+                "Attack Power": ["100%", "105%", "110%", "115%", "140%", "146%", "152%", "158%", "164%", "200%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+            }
+        },
+        "Aureole Oracle":{
+            "Usage": "Active (Head)",
+            "Unlock": "Dance Oracle (Lv 3)",
+            "Description": "Dispel a Blaze/Hail/Bolt Prayer on the whole party to make them absorb attacks of the corresponding element for this turn.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "20"],
+                "Damage Drain": ["1%", "34%", "67%", "100%", "250%"],
+            }
+        },
+        "Invoke Gods":{
+            "Usage": "Active (Head, STR)",
+            "Unlock": "Mana Oracle (Lv 5), Aureole Oracle (Lv 3)",
+            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself to deal weapon-based damage to one enemy. Decreases damage dealt by target this turn.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "32", "32", "32", "32", "32", "45"],
+                "Attack Power": ["750%", "790%", "830%", "870%", "1050%", "1100%", "1150%", "1200%", "1250%", "1500%"],
+                "Damage Dealt↓": ["x0.5", "x0.48", "x0.46", "x0.44", "x0.34", "x0.33", "x0.32", "x0.31", "x0.3", "x0.2"],
+            }
+        },
     },
     "Divine Herald":{
-    
+        "Appease Spirits":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "If you're alive, allies with buffs recover HP when they act.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Healing Power": ["5%", "6%", "7%", "8%", "12%", "14%", "16%", "18%", "20%", "25%"],
+            }
+        },
+        "Status DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Inflictions↓": ["x0.92", "x0.9", "x0.88", "x0.86", "x0.82", "x0.8", "x0.78", "x0.76", "x0.74", "x0.7"],
+            }
+        },
+        "Exorcism Prayer":{
+            "Usage": "Active (Head)",
+            "Unlock": "Heaven's Gift (Lv 3)",
+            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases bind/ailment resistance.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "28", "28", "28", "28", "28", "40"],
+                "Inflictions↓": ["x0.75", "x0.7", "x0.65", "x0.6", "x0.6", "x0.56", "x0.52", "x0.48", "x0.44", "x0.44"],
+                "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Haste Prayer":{
+            "Usage": "Active (Head)",
+            "Unlock": "Heaven's Gift (Lv 3)",
+            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases evasion.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "18", "18", "18", "18", "18", "24"],
+                "Evasion↑": ["+10.5%", "+12%", "+13.5%", "+15%", "+15%", "+16.5%", "+18%", "+19.5%", "+21%", "+21%"],
+                "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Vitality Prayer":{
+            "Usage": "Active (Head)",
+            "Unlock": "Heaven's Gift (Lv 3)",
+            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases Max HP.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["16", "16", "16", "16", "24", "24", "24", "24", "24", "32"],
+                "Max HP↑": ["+19%", "+22%", "+25%", "+28%", "+28%", "+31%", "+34%", "+37%", "+40%", "+40%"],
+                "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Sanctuary":{
+            "Usage": "Active (Head)",
+            "Unlock": "Exorcism/Haste/Vitality Prayer (Lv 5)",
+            "Description": "For this turn, allies with buffs have a chance to nullify bind/ailment inflictions received in exchange for losing a buff.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
+                "Activation Chance": ["60%", "63%", "66%", "69%", "80%", "82%", "84%", "86%", "88%", "95%"],
+                "Max. Activations": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "10"],
+            }
+        },
+        "Holy Flame":{
+            "Usage": "Passive (Field)",
+            "Unlock": "N/A",
+            "Description": "Restore HP to the party for every 3 steps taken.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "HP Gain": ["4", "5", "6", "7", "12", "14", "16", "18", "20", "30"],
+            }
+        },
+        "Split Spirits":{
+            "Usage": "Active (Head)",
+            "Unlock": "N/A",
+            "Description": "For this turn, allies with buffs recover HP based on their damage dealt.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10"],
+                "Damage Drain": ["25%", "28%", "31%", "34%", "50%", "54%", "58%", "62%", "66%", "100%"],
+            }
+        },
+        "Benevolence":{
+            "Usage": "Passive",
+            "Unlock": "Holy Flame (Lv 2), Split Spirits (Lv 2)",
+            "Description": "If you're alive, allies with buffs recover HP upon taking damage (once per turn per ally).",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "HP Gain": ["10+2%", "12+2%", "14+2%", "16+2%", "16+4%", "18+4%", "20+4%", "22+4%", "24+4%", "25+6%"],
+            }
+        },
+        "Magic DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Decrease elemental damage taken.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Damage Taken↓": ["-4%", "-5%", "-6%", "-7%", "-9%", "-10%", "-11%", "-12%", "-13%", "-15%"],
+            }
+        },
     },
 },
 "Botanist":{
