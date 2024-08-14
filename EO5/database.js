@@ -20,7 +20,7 @@ var data = {
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "12"],
                 "Attack Power": ["150%", "156%", "162%", "168%", "168%", "176%", "184%", "192%", "200%", "200%"],
-                "Chance Fadeout": ["-22%", "-22%", "-22%", "-22%", "-15%", "-15%", "-15%", "-15%", "-15%", "-10%"],
+                "Chance Fadeout": ["22%", "22%", "22%", "22%", "15%", "15%", "15%", "15%", "15%", "10%"],
                 "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
                 "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
             }
@@ -34,7 +34,7 @@ var data = {
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "12"],
                 "Attack Power": ["150%", "156%", "162%", "168%", "168%", "176%", "184%", "192%", "200%", "200%"],
-                "Chance Fadeout": ["-22%", "-22%", "-22%", "-22%", "-15%", "-15%", "-15%", "-15%", "-15%", "-10%"],
+                "Chance Fadeout": ["22%", "22%", "22%", "22%", "15%", "15%", "15%", "15%", "15%", "10%"],
                 "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
                 "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
             }
@@ -48,7 +48,7 @@ var data = {
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "12"],
                 "Attack Power": ["150%", "156%", "162%", "168%", "168%", "176%", "184%", "192%", "200%", "200%"],
-                "Chance Fadeout": ["-22%", "-22%", "-22%", "-22%", "-15%", "-15%", "-15%", "-15%", "-15%", "-10%"],
+                "Chance Fadeout": ["22%", "22%", "22%", "22%", "15%", "15%", "15%", "15%", "15%", "10%"],
                 "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
                 "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
             }
@@ -124,7 +124,7 @@ var data = {
             "Data": {
                 "Attack Power": ["50%", "53%", "56%", "59%", "59%", "63%", "67%", "71%", "75%", "75%"],
                 "Initial Chance": ["60%", "65%", "70%", "75%", "100%", "105%", "110%", "115%", "120%", "150%"],
-                "Chance Fadeout": ["-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%"],
+                "Chance Fadeout": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
                 "Max. Activations": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "4"],
                 "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
             }
@@ -537,7 +537,7 @@ var data = {
                 "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "18"],
                 "Damage Taken↓": ["-20%", "-22%", "-24%", "-26%", "-26%", "-28%", "-30%", "-32%", "-34%", "-34%"],
                 "Attack Power": ["200%", "205%", "210%", "215%", "245%", "250%", "255%", "260%", "265%", "300%"],
-                "Chance Fadeout": ["-25%", "-25%", "-25%", "-25%", "-15%", "-15%", "-15%", "-15%", "-15%", "-0%"],
+                "Chance Fadeout": ["25%", "25%", "25%", "25%", "15%", "15%", "15%", "15%", "15%", "0%"],
                 "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
             }
         },
@@ -3040,7 +3040,7 @@ var data = {
             "Max Level": "10",
             "Data": {
                 "Speed↑": ["x1.0", "x1.05", "x1.1", "x1.15", "x1.15", "x1.2", "x1.25", "x1.3", "x1.35", "x1.35"],
-                "TP Cost↓": ["1", "1", "1", "1", "2+10%", "2+10%", "2+10%", "2+10%", "2+10%", "3+20%"],
+                "Cost Reduction": ["1", "1", "1", "1", "2+10%", "2+10%", "2+10%", "2+10%", "2+10%", "3+20%"],
             }
         },
         "Gospel":{
@@ -3354,7 +3354,7 @@ var data = {
         },
         "Split Spirits":{
             "Usage": "Active (Head)",
-            "Unlock": "N/A",
+            "Unlock": "Dance Oracle (Lv 3)",
             "Description": "For this turn, allies with buffs recover HP based on their damage dealt.",
             "Starter": "0",
             "Max Level": "10",
@@ -3469,7 +3469,7 @@ var data = {
         "Toxic Smoke":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "N/A",
-            "Description": "(Smoke) Attempt to inflict Poison on an enemy line. Place a debuff on the targets for 3~5 turns, which decreases Poison resistance.",
+            "Description": "(Smoke) Attempt to inflict Poison on an enemy line. Places a debuff on the targets for 3~5 turns, which decreases Poison resistance.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3484,7 +3484,7 @@ var data = {
         "Dark Smoke":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "N/A",
-            "Description": "(Smoke) Attempt to inflict Blind on an enemy line. Place a debuff on the targets for 3~5 turns, which decreases Blind resistance.",
+            "Description": "(Smoke) Attempt to inflict Blind on an enemy line. Places a debuff on the targets for 3~5 turns, which decreases Blind resistance.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3511,10 +3511,250 @@ var data = {
         },
     },
     "Merciful Healer":{
-    
+        "Herb Boost":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "During battle, excess healing from Herb skills increases the target's Max HP (up to a certain cap) until the end of the turn.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Max. Overheal": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+33%"],
+            }
+        },
+        "HP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max HP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Max HP↑": ["+5%", "+6%", "+7%", "+8%", "+12%", "+13%", "+14%", "+15%", "+16%", "+20%"],
+            }
+        },
+        "Bountiful Herb":{
+            "Usage": "Active (Arms, WIS)",
+            "Unlock": "Sweeping Herb (Lv 5)",
+            "Description": "(Herb) Restore HP to the whole party.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "22", "22", "22", "22", "22", "30"],
+                "Healing Power": ["80%", "84%", "88%", "92%", "142%", "147%", "152%", "157%", "162%", "220%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Freeing Herb":{
+            "Usage": "Active (Arms)",
+            "Unlock": "Revival Herb (Lv 3)",
+            "Description": "(Herb) Remove binds from the targets.",
+            "Starter": "0",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["10", "7", "7", "4", "15"],
+                "Binds Removed": ["1", "1", "2", "2", "3"],
+                "Targets": ["Single", "Single", "Single", "Single", "Line"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Auto-Revive":{
+            "Usage": "Passive",
+            "Unlock": "Freeing Herb (Lv 3)",
+            "Description": "Chance to automatically revive allies when they die.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Activation Chance": ["2%", "3%", "4%", "5%", "8%", "9%", "10%", "11%", "12%", "15%"],
+                "HP Gain": ["10", "16", "22", "28", "68", "76", "84", "92", "100", "150"],
+            }
+        },
+        "Status DEF Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Inflictions↓": ["x0.92", "x0.9", "x0.88", "x0.86", "x0.82", "x0.8", "x0.78", "x0.76", "x0.74", "x0.7"],
+            }
+        },
+        "Shared Nostrum":{
+            "Usage": "Active (Head)",
+            "Unlock": "Herb Foraging (Lv 5)",
+            "Description": "Place a buff on yourself for 3~5 turns, which increases the area of effect (Single → Line → Party) of Herb skills but decreases their action speed and HP restored.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "30", "30", "30", "30", "30", "40"],
+                "Speed↓": ["-33%", "-29%", "-25%", "-21%", "-21%", "-17%", "-13%", "-9%", "-5%", "-5%"],
+                "Healing↓": ["-33%", "-29%", "-25%", "-21%", "-21%", "-17%", "-13%", "-9%", "-5%", "-5%"],
+                "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Reflex Herb":{
+            "Usage": "Active (Arms, WIS)",
+            "Unlock": "N/A",
+            "Description": "(Herb) Prepare to heal allies each time they're hit this turn. Activation chance starts at 100% but goes down with each activation. There's a limit on how many times it can activate on each ally.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "12"],
+                "Healing Power": ["65%", "72%", "79%", "86%", "86%", "97%", "108%", "119%", "130%", "130%"],
+                "Chance Fadeout": ["50%", "50%", "50%", "50%", "25%", "25%", "25%", "25%", "25%", "10%"],
+                "Limit per Ally": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "4"],
+                "Action Speed": ["300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%"],
+            }
+        },
+        "Delayed Herb":{
+            "Usage": "Active (Arms, WIS)",
+            "Unlock": "N/A",
+            "Description": "(Herb) Prepare to restore HP to the whole party at the start of the next turn. (Cannot use it again while it's in preparation).",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20"],
+                "Healing Power": ["60%", "64%", "68%", "72%", "112%", "117%", "122%", "127%", "132%", "180%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Lingering Scent":{
+            "Usage": "Active (No Parts)",
+            "Unlock": "Reflex/Delayed Herb (Lv 3)",
+            "Description": "Place a buff on the whole party for 5~9 turns, which at the end of each turn repeats the effect (with decreased potency) of the last Herb skill they have received since this buff was applied.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "7", "7", "7", "7", "7", "9"],
+                "Healing↓": ["-85%", "-82%", "-79%", "-76%", "-76%", "-72%", "-68%", "-64%", "-60%", "-60%"],
+                "Duration": ["5", "5", "5", "5", "7", "7", "7", "7", "7", "9"],
+                "Action Speed": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
+            }
+        },
     },
     "Graced Poisoner":{
-    
+        "Smoke Boost":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase action speed and decrease TP cost for Smoke skills.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Speed↑": ["x1.1", "x1.16", "x1.22", "x1.28", "x1.28", "x1.36", "x1.44", "x1.52", "x1.6", "x1.6"],
+                "Cost Reduction": ["1", "1", "1", "1", "2+15%", "2+15%", "2+15%", "2+15%", "2+15%", "3+30%"],
+            }
+        },
+        "TP Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase Max TP.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Max TP↑": ["+10%", "+11%", "+12%", "+13%", "+17%", "+19%", "+21%", "+23%", "+25%", "+30%"],
+            }
+        },
+        "Status ATK Up":{
+            "Usage": "Passive",
+            "Unlock": "N/A",
+            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Starter": "1",
+            "Max Level": "10",
+            "Data": {
+                "Inflictions↑": ["x1.05", "x1.06", "x1.07", "x1.08", "x1.12", "x1.13", "x1.14", "x1.15", "x1.16", "x1.2"],
+            }
+        },
+        "Numbing Smoke":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Antibodies (Lv 3)",
+            "Description": "(Smoke) Attempt to inflict Paralysis on an enemy line. Places a debuff on the targets for 3~5 turns, which decreases Paralysis resistance.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "14"],
+                "Infliction Chance": ["35%", "35%", "35%", "35%", "44%", "44%", "44%", "44%", "44%", "55%"],
+                "Inflictions↑": ["x1.19", "x1.22", "x1.25", "x1.28", "x1.28", "x1.31", "x1.34", "x1.37", "x1.4", "x1.4"],
+                "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Chaos Smoke":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Antibodies (Lv 3)",
+            "Description": "(Smoke) Attempt to inflict Panic on an enemy line. Places a debuff on the targets for 3~5 turns, which decreases Panic resistance.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "9", "15", "15", "15", "15", "15", "21"],
+                "Infliction Chance": ["27%", "27%", "27%", "27%", "33%", "33%", "33%", "33%", "33%", "40%"],
+                "Inflictions↑": ["x1.16", "x1.18", "x1.2", "x1.22", "x1.22", "x1.24", "x1.26", "x1.28", "x1.3", "x1.3"],
+                "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Smoke Bomb":{
+            "Usage": "Active (Head, INT)",
+            "Unlock": "Numbing/Chaos Smoke (Lv 3)",
+            "Description": "Deal ranged Fire damage to one enemy, but dispel a debuff on them. Only effective if target has an ailment and a debuff.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "28", "28", "28", "28", "28", "36"],
+                "Attack Power": ["600%", "630%", "660%", "690%", "840%", "880%", "920%", "960%", "1000%", "1200%"],
+                "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Smokestone":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Smokeblight (Lv 5)",
+            "Description": "Attempt to inflict Petrify on one enemy. Only effective if target has a Smoke debuff.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "12"],
+                "Infliction Chance": ["45%", "46%", "47%", "48%", "54%", "56%", "58%", "60%", "62%", "75%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Smokeflash":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Smokeblight (Lv 5)",
+            "Description": "Attempt to inflict Stun on one enemy. Only effective if target has a Smoke debuff.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "7"],
+                "Infliction Chance": ["50%", "52%", "54%", "56%", "65%", "67%", "69%", "71%", "73%", "85%"],
+                "Action Speed": ["300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%"],
+            }
+        },
+        "Passing Scent":{
+            "Usage": "Active (Head)",
+            "Unlock": "Smokestone (Lv 3), Smokeflash (Lv 3)",
+            "Description": "Place a debuff on all enemies for 5~9 turns, which at the end of each turn attempts to inflict an ailment matching the Smoke debuffs on each target. (Infliction chance and Poison damage depends on the target's stats and level)",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "7", "7", "7", "7", "7", "9"],
+                "Infliction Chance": ["22%", "23%", "24%", "25%", "25%", "27%", "29%", "31%", "33%", "33%"],
+                "Poison Damage": ["40", "60", "80", "100", "100", "145", "190", "235", "280", "280"],
+                "Duration": ["5", "5", "5", "5", "7", "7", "7", "7", "7", "9"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Auto-Smoke":{
+            "Usage": "Passive",
+            "Unlock": "Smokestone (Lv 3), Smokeflash (Lv 3)",
+            "Description": "Chance to automatically use a random Smoke skill on the enemy front line at the start of battle. Chance depends on the amount of Smoke skills you have unlocked.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "Chance (1 Skill)": ["7%", "8%", "9%", "10%", "15%", "16%", "17%", "18%", "19%", "25%"],
+                "Chance (2 Skills)": ["14%", "16%", "18%", "20%", "30%", "32%", "34%", "36%", "38%", "50%"],
+                "Chance (3 Skills)": ["24%", "26%", "28%", "30%", "45%", "48%", "51%", "54%", "57%", "75%"],
+                "Chance (4 Skills)": ["30%", "33%", "36%", "39%", "59%", "63%", "67%", "71%", "75%", "100%"],
+            }
+        },
     },
 },
 "Battle Items":{
@@ -5376,7 +5616,7 @@ var descriptions = {
     "Rover":["Archers who chase and restrain enemies alongside animal companions.", "<b>Flying Falcon</b>: Hunts with a Hawk that attacks multiple enemies.", "<b>Hunting Hound</b>: Hunts with a Hound that protects and heals allies."],
     "Masurao":["Frontline warriors specialized in strong offense with Katanas.", "<b>Blade Dancer</b>: Wields multiple Katanas at once, sacrificing all defense for overwhelming offense.", "<b>Blade Master</b>: Versatile duelists with attacks that combine power and utility."],
     "Shaman":["Support casters who manipulate buffs to strengthen the party.", "<b>Divine Punisher</b>: Dispels buffs to turn them into direct power.", "<b>Divine Herald</b>: Grants buffs to protect and heal allies."],
-    "Botanist":["Healers that use herbal concoctions to cure allies or weaken enemies.", "<b>Merciful Healer</b>: Uses medicinal herbs to treat all kinds of injuries.", "<b>Graced Poisoner</b>: Uses poisonous herbs to make enemies susceptible to ailments."],
+    "Botanist":["Healers that use herbal concoctions to take care of afflictions.", "<b>Merciful Healer</b>: Uses medicinal herbs to treat all kinds of injuries.", "<b>Graced Poisoner</b>: Uses poisonous herbs to make enemies susceptible to ailments."],
 
     "Earthlain":["Common skills for characters of the Earthlain race.", "", ""],
     "Celestrian":["Common skills for characters of the Celestrian race.", "", ""],
