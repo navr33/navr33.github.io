@@ -209,7 +209,6 @@ var data = {
                 "TP Cost": ["15", "15", "15", "15", "21", "21", "21", "21", "21", "30"],
                 "Evasion↑": ["+50%", "+53%", "+56%", "+59%", "+70%", "+74%", "+78%", "+82%", "+86%", "+105%"],
                 "Evasion Fadeout": ["-25%", "-25%", "-25%", "-25%", "-30%", "-30%", "-30%", "-30%", "-30%", "-35%"],
-                "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
             }
         },
         "Deft Thrust":{
@@ -969,7 +968,6 @@ var data = {
                 "Attack Power": ["300%", "315%", "330%", "345%", "405%", "425%", "445%", "465%", "485%", "600%"],
                 "Infliction Chance": ["50%", "52%", "54%", "56%", "68%", "71%", "74%", "77%", "80%", "100%"],
                 "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
-                "Action Speed": ["1500%", "1500%", "1500%", "1500%", "1500%", "1500%", "1500%", "1500%", "1500%", "1500%"],
             }
         },
         "Breather":{
@@ -1063,7 +1061,7 @@ var data = {
         "Abyssal Killer":{
             "Usage": "Active (Head)",
             "Unlock": "Vajra Stance (Lv 5), Soul Crusher (Lv 5)",
-            "Description": "For this turn, you can survive one lethal attack with 1 HP. If this activates, enter a charge state until the end of next turn, which increases all damage dealt based on how much lethal damage you endured. The base damage increase is multiplied by (ExcessDamage/MaxHP)<sup>1/2</sup>. (Damage bonus is multiplicative. Does not work on Union skills)",
+            "Description": "For this turn, you can survive one lethal attack with 1 HP. If this activates, enter a charge state until the end of next turn, which increases all damage dealt based on how much lethal damage you endured. The base damage increase is multiplied by (ExcessDamage/MaxHP)<sup>1/2</sup>.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1101,7 +1099,7 @@ var data = {
         "Heavenly Aid":{
             "Usage": "Active (Head)",
             "Unlock": "Titan Killer (Lv 3), Death's Edge (Lv 3)",
-            "Description": "Enter a charge state until the end of next turn, which increases damage dealt based on how much HP is healed to you this turn. The base damage increase is multiplied by (GainedHP/MaxHP)<sup>3/4</sup>. (Damage bonus is multiplicative. Does not work on Union skills)",
+            "Description": "Enter a charge state until the end of next turn, which increases damage dealt based on how much HP is healed to you this turn. The base damage increase is multiplied by (GainedHP/MaxHP)<sup>3/4</sup>.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1496,7 +1494,7 @@ var data = {
         "Soul Transfer":{
             "Usage": "Active (Head)",
             "Unlock": "Eroding/Masking Miasma (Lv 5)",
-            "Description": "Dispel all debuffs on one enemy. If the target had at least 1 debuff, all allies will get a chance to automatically revive (with 1 HP) if killed this turn. (Max once per ally. Max 3 times)",
+            "Description": "Dispel all debuffs on one enemy at the start of turn. If the target had at least 1 debuff, all allies will get a chance to automatically revive (with 1 HP) if killed this turn. (Max once per ally. Max 3 activations)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2588,7 +2586,7 @@ var data = {
         "Guard Command":{
             "Usage": "Active (Head)",
             "Unlock": "Aid Command (Lv 3)",
-            "Description": "Hound: Command the Hound to take attacks in place of one ally, then at the end of turn restore HP to that ally. Hound takes increased damage from redirected attacks.",
+            "Description": "Hound: Command the Hound to take attacks in place of one ally for this turn, then at the end of turn restore HP to that ally. Hound takes increased damage from redirected attacks.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3095,7 +3093,7 @@ var data = {
         "Heaven's Gift":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Ruinous/Aegis/Focus Prayer (Lv 2)",
-            "Description": "Dispel one buff and debuff from an ally. Restore HP and increase their action speed for this turn if one modifier type was removed, with double healing effect if both.",
+            "Description": "Dispel one buff and debuff from an ally at the start of turn. Restore HP and increase their action speed for this turn if one modifier type was removed, with double healing effect if both.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3147,7 +3145,7 @@ var data = {
         "Dance Oracle":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Blaze/Hail/Bolt Prayer (Lv 3)",
-            "Description": "Dispel a Blaze/Hail/Bolt Prayer on yourself to deal ranged damage of the corresponding element to all enemies. Targets take more damage of that element until the end of turn.",
+            "Description": "Only usable if you're under Blaze/Hail/Bolt Prayer. Dispel an elemental Prayer on yourself to deal ranged damage of the corresponding element to all enemies. Targets take more damage of that element until the end of turn.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3163,7 +3161,7 @@ var data = {
         "Ancient Memory":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "When one of your buffs is dispelled, there's a chance to reapply it.",
+            "Description": "When you dispel a buff on yourself, there's a chance to reapply it.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3237,19 +3235,20 @@ var data = {
         "Mana Oracle":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Dance Oracle (Lv 3)",
-            "Description": "Dispel a Blaze/Hail/Bolt Prayer on the whole party to deal 5 ranged hits of the corresponding element to random enemies.",
+            "Description": "Only usable if you're under Blaze/Hail/Bolt Prayer. Dispel an elemental Prayer on the whole party (only you need to have it) to deal 5 ranged hits of the corresponding element to random enemies.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "24"],
                 "Attack Power": ["100%", "105%", "110%", "115%", "140%", "146%", "152%", "158%", "164%", "200%"],
                 "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
             }
         },
         "Aureole Oracle":{
             "Usage": "Active (Head)",
             "Unlock": "Dance Oracle (Lv 3)",
-            "Description": "Dispel a Blaze/Hail/Bolt Prayer on the whole party to make them absorb attacks of the corresponding element for this turn.",
+            "Description": "Only usable if you're under Blaze/Hail/Bolt Prayer. Dispel an elemental Prayer on the whole party (only you need to have it) to make them absorb attacks of the corresponding element for this turn.",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -3260,7 +3259,7 @@ var data = {
         "Invoke Gods":{
             "Usage": "Active (Head, STR)",
             "Unlock": "Mana Oracle (Lv 5), Aureole Oracle (Lv 3)",
-            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself to deal weapon-based damage to one enemy. Decreases damage dealt by target this turn.",
+            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself to deal weapon-based damage to one enemy at the start of turn. Decreases damage dealt by target this turn.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3602,7 +3601,6 @@ var data = {
                 "Healing Power": ["65%", "72%", "79%", "86%", "86%", "97%", "108%", "119%", "130%", "130%"],
                 "Chance Fadeout": ["50%", "50%", "50%", "50%", "25%", "25%", "25%", "25%", "25%", "10%"],
                 "Limit per Ally": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "4"],
-                "Action Speed": ["300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%"],
             }
         },
         "Delayed Herb":{
