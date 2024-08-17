@@ -3,7 +3,6 @@ var data = {
     "Force":{
         "Brave Heart":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Increase Afterimage creation chance, and increase the damage dealt by Afterimages.",
             "Starter": "0",
             "Max Level": "4",
@@ -15,7 +14,6 @@ var data = {
         },
         "Miracle Edge":{
             "Usage": "Force Break (Arms, STR, WIS)",
-            "Unlock": "N/A",
             "Description": "Deal melee Cut damage to all enemies, then restore HP to the whole party. Excess healing increases Max HP until the end of the turn.",
             "Starter": "0",
             "Max Level": "3",
@@ -335,7 +333,6 @@ var data = {
     "Force":{
         "Shield Protect":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "When a Guard skill decreases damage to a party member, apply an additional damage reduction.",
             "Starter": "0",
             "Max Level": "1",
@@ -346,7 +343,6 @@ var data = {
         },
         "Painless":{
             "Usage": "Force Break (Arms)",
-            "Unlock": "N/A",
             "Description": "Nullify all attacks to the party for this turn.",
             "Starter": "0",
             "Max Level": "0",
@@ -636,7 +632,6 @@ var data = {
     "Force":{
         "Intensive Care":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Increase action speed, increase HP restored by First Aid skills and decrease their TP costs. (Also powers up TP restoration from items)",
             "Starter": "0",
             "Max Level": "1",
@@ -649,7 +644,6 @@ var data = {
         },
         "Healing Touch":{
             "Usage": "Force Break (Head, WIS)",
-            "Unlock": "N/A",
             "Description": "Restore HP, revive, and remove binds/ailments/debuffs for the whole party.",
             "Starter": "0",
             "Max Level": "3",
@@ -949,7 +943,6 @@ var data = {
     "Force":{
         "Illusory Formation":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Increase evasion and action speed for the whole party.",
             "Starter": "0",
             "Max Level": "1",
@@ -961,7 +954,6 @@ var data = {
         },
         "Mirage Arrow":{
             "Usage": "Force Break (Arms, STR)",
-            "Unlock": "N/A",
             "Description": "Deal ranged Stab damage to one enemy. Places a debuff on the target for 3 turns, which decreases accuracy and makes them act last.",
             "Starter": "0",
             "Max Level": "3",
@@ -1267,7 +1259,6 @@ var data = {
     "Force":{
         "Musou":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Gain the effects of the 3 stances at level 1 (affected by Full Proficiency), on top of your active stance. Your active stance's duration does not go down, and your skills don't decrease its duration nor dispel it.",
             "Starter": "0",
             "Max Level": "0",
@@ -1276,7 +1267,6 @@ var data = {
         },
         "Issen":{
             "Usage": "Force Break (Arms, STR)",
-            "Unlock": "N/A",
             "Description": "Deal ranged Cut damage to all enemies, with a chance to inflict Instant Death. (Infliction chance allegedly higher on low-HP targets, but could not reproduce in testing)",
             "Starter": "0",
             "Max Level": "3",
@@ -1601,7 +1591,6 @@ var data = {
     "Force":{
         "War Edge Power":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "War Edge skills will apply their secondary effect even if the target doesn't have an ailment.",
             "Starter": "0",
             "Max Level": "0",
@@ -1610,7 +1599,6 @@ var data = {
         },
         "Fairy Robe":{
             "Usage": "Force Break (Head, WIS)",
-            "Unlock": "N/A",
             "Description": "Restore HP and remove binds/ailments for the whole party. Until the end of turn, prevent all types of negative inflictions (bind/ailment/stun/instakill/debuff) to the party.",
             "Starter": "0",
             "Max Level": "3",
@@ -1912,7 +1900,6 @@ var data = {
     "Force":{
         "Hero Battle":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Increase damage dealt with Spear skills. Restore HP to the party based on your damage dealt.",
             "Starter": "0",
             "Max Level": "1",
@@ -1924,7 +1911,6 @@ var data = {
         },
         "Gae Bolg":{
             "Usage": "Force Break (Arms, STR)",
-            "Unlock": "N/A",
             "Description": "Deal ranged Stab damage to all enemies. Recover TP based on your damage dealt.",
             "Starter": "0",
             "Max Level": "3",
@@ -2243,7 +2229,6 @@ var data = {
     "Force":{
         "Double Action":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Gun skills are performed twice. The second instance has decreased attack/healing power.",
             "Starter": "0",
             "Max Level": "1",
@@ -2254,7 +2239,6 @@ var data = {
         },
         "Riot Gun":{
             "Usage": "Force Break (Arms, STR)",
-            "Unlock": "N/A",
             "Description": "Deal ranged Stab damage and inflict Stun to one enemy.",
             "Starter": "0",
             "Max Level": "3",
@@ -2567,7 +2551,6 @@ var data = {
     "Force":{
         "Victory Vow":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Order skills affect the whole party, and their TP cost is cut in half.",
             "Starter": "0",
             "Max Level": "0",
@@ -2576,7 +2559,6 @@ var data = {
         },
         "Proof of Nobility":{
             "Usage": "Force Break (Head)",
-            "Unlock": "N/A",
             "Description": "For this turn, buffs cannot be lost and their effect is doubled.",
             "Starter": "0",
             "Max Level": "0",
@@ -2876,7 +2858,6 @@ var data = {
     "Force":{
         "Diversion Gambit":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Increase evasion and enemy aggro.",
             "Starter": "0",
             "Max Level": "1",
@@ -2888,7 +2869,6 @@ var data = {
         },
         "Ninpo: Toxic Mist":{
             "Usage": "Force Break (Head, LUC)",
-            "Unlock": "N/A",
             "Description": "Inflict Poison to all enemies. (For reference, <i>Final Poison Damage = (Base Poison Damage + Level/6 + Random1)*(1 + Level/25) + Random2</i>, where each Random is a number from 0 to 5)",
             "Starter": "0",
             "Max Level": "3",
@@ -3199,7 +3179,6 @@ var data = {
     "Force":{
         "Divination":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Increase damage dealt with Astrology skills, and recover part of their spent TP.",
             "Starter": "0",
             "Max Level": "1",
@@ -3211,7 +3190,6 @@ var data = {
         },
         "Astrosign":{
             "Usage": "Force Break (Head, INT)",
-            "Unlock": "N/A",
             "Description": "Deal ranged Fire+Ice+Volt damage to all enemies. For this turn, skills from your allies spend 0 TP.",
             "Starter": "0",
             "Max Level": "3",
@@ -3511,7 +3489,6 @@ var data = {
     "Force":{
         "Item Echo":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Items used activate their effect twice.",
             "Starter": "0",
             "Max Level": "0",
@@ -3520,7 +3497,6 @@ var data = {
         },
         "Final Secret":{
             "Usage": "Force Break (Head)",
-            "Unlock": "N/A",
             "Description": "Fill the Force Gauges of the whole party to 100%. Also has a 33% chance to restore broken Force Gauges.",
             "Starter": "0",
             "Max Level": "0",
@@ -3799,7 +3775,6 @@ var data = {
     "Force":{
         "Unified Effort":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Increase Max HP and all damage dealt for the whole party.",
             "Starter": "0",
             "Max Level": "1",
@@ -3811,7 +3786,6 @@ var data = {
         },
         "Decoy Party":{
             "Usage": "Force Break (Head)",
-            "Unlock": "N/A",
             "Description": "For this turn, each ally will block the first enemy action (attack or any infliction type) that targets them.",
             "Starter": "0",
             "Max Level": "0",
@@ -4122,7 +4096,6 @@ var data = {
     "Force":{
         "Trinity":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Increase all damage dealt, accuracy and action speed.",
             "Starter": "0",
             "Max Level": "1",
@@ -4135,7 +4108,6 @@ var data = {
         },
         "Full Charge":{
             "Usage": "Force Break (Arms)",
-            "Unlock": "N/A",
             "Description": "Become immune to attacks and inflictions until the end of this turn, and enter a charge state until the end of the next turn, which drastically increases all damage dealt and action speed.",
             "Starter": "0",
             "Max Level": "1",
@@ -4459,7 +4431,6 @@ var data = {
     "Force":{
         "Killing Intent":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Increase all damage dealt and ailment infliction chances.",
             "Starter": "0",
             "Max Level": "1",
@@ -4471,7 +4442,6 @@ var data = {
         },
         "Disaster":{
             "Usage": "Force Break (Arms, STR)",
-            "Unlock": "N/A",
             "Description": "Deal melee Cut damage to one enemy. If the target has an ailment, force it to last 1 more turn.",
             "Starter": "0",
             "Max Level": "3",
@@ -4780,7 +4750,6 @@ var data = {
     "Force":{
         "Circle Paradise":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Increase bind/ailment infliction chances. Circle duration does not go down, and they don't get dispelled by your skills.",
             "Starter": "0",
             "Max Level": "1",
@@ -4791,7 +4760,6 @@ var data = {
         },
         "Releasal Spell":{
             "Usage": "Force Break (Head)",
-            "Unlock": "N/A",
             "Description": "Remove all buffs on one enemy and reset their accumulative resistance.",
             "Starter": "0",
             "Max Level": "0",
@@ -5088,7 +5056,6 @@ var data = {
     "Force":{
         "Ignition":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Drive Skills won't trigger the Overheat state.",
             "Starter": "0",
             "Max Level": "0",
@@ -5097,7 +5064,6 @@ var data = {
         },
         "Conversion":{
             "Usage": "Force Break (Head, WIS)",
-            "Unlock": "N/A",
             "Description": "Recover a massive amount of TP. Excess healing increases Max TP until you die or the battle ends.",
             "Starter": "0",
             "Max Level": "3",
@@ -5408,7 +5374,6 @@ var data = {
     "Force":{
         "Bind Rush":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Increase bind infliction chance. For each attack you land against an enemy afflicted by a bind/ailment/stun, perform a follow up attack.",
             "Starter": "0",
             "Max Level": "1",
@@ -5420,7 +5385,6 @@ var data = {
         },
         "Final Blow":{
             "Usage": "Force Break (Arms, STR)",
-            "Unlock": "N/A",
             "Description": "Deal melee Bash damage to one enemy, with a chance to inflict Head Bind, Arm Bind and Leg Bind.",
             "Starter": "0",
             "Max Level": "3",
@@ -5734,7 +5698,6 @@ var data = {
     "Force":{
         "Endless Armor":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Miasma Armor's duration does not go down and your skills do not dispel it.",
             "Starter": "0",
             "Max Level": "0",
@@ -5743,7 +5706,6 @@ var data = {
         },
         "Miasma Tsunami":{
             "Usage": "Force Break (Head)",
-            "Unlock": "N/A",
             "Description": "Weaken all enemies for this turn, which decreases all offense, all defense, evasion, speed, and bind/ailment resistance.",
             "Starter": "0",
             "Max Level": "1",
@@ -6060,7 +6022,6 @@ var data = {
     "Force":{
         "Undying Soul":{
             "Usage": "Force Boost",
-            "Unlock": "N/A",
             "Description": "Survive all lethal damage with 1 HP.",
             "Starter": "0",
             "Max Level": "0",
@@ -6069,7 +6030,6 @@ var data = {
         },
         "Ghastly March":{
             "Usage": "Force Break (Head)",
-            "Unlock": "N/A",
             "Description": "Revive all allies (with 1 HP), then deal 2 hits of ranged Almighty damage to one enemy, increased by 1 hit for every revived ally. (Damage does not depends on the user's stats or equipment, as this skill uses its own ATK value that scales from 36 to 350 based on user's level)",
             "Starter": "0",
             "Max Level": "2",
@@ -7583,12 +7543,14 @@ function populate(class_name){
 
             usage = document.createElement("td")
             second_row.appendChild(usage)
-            usage.width = "30%"
             usage.innerText = current_skill["Usage"]
 
-            unlock = document.createElement("td")
-            second_row.appendChild(unlock)
-            unlock.innerText = "Unlock: "+current_skill["Unlock"]
+            if (current_skill.hasOwnProperty("Unlock")){
+                usage.width = "30%"
+                unlock = document.createElement("td")
+                second_row.appendChild(unlock)
+                unlock.innerText = "Unlock: "+current_skill["Unlock"]
+            }
             
             third_row = document.createElement("tr")
             skill_table.appendChild(third_row)
