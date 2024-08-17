@@ -48,15 +48,15 @@ var data = {
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "7"],
                 "Attack Power": ["180%", "187%", "194%", "201%", "208%", "245%"],
+                "Creation Rate↑": ["+40%", "+40%", "+40%", "+40%", "+40%", "+65%"],
                 "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["110%", "110%", "110%", "110%", "110%", "110%"],
-                "Creation Rate↑": ["+40%", "+40%", "+40%", "+40%", "+40%", "+65%"],
             }
         },
         "Wide Bravery":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Sword: Deal melee Cut damage to one enemy. If this is performed before the target acts (or their action was prevented), hit all enemies instead.",
+            "Description": "Sword: Deal melee Cut damage to one enemy. If this is performed before the target acts (or if their action was prevented), hit all enemies instead.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -616,7 +616,6 @@ var data = {
                 "TP Cost": ["10", "10", "10", "10", "10", "16"],
                 "Attack Power": ["250%", "265%", "280%", "295%", "310%", "400%"],
                 "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
-                "Action Speed": ["1500%", "1500%", "1500%", "1500%", "1500%", "1500%"],
             }
         },
         "Full Guard":{
@@ -895,7 +894,6 @@ var data = {
                 "Healing Power": ["60%", "72%", "84%", "84%", "96%", "108%", "120%", "120%"],
                 "Chance Fadeout": ["-40%", "-40%", "-40%", "-25%", "-25%", "-25%", "-25%", "-15%"],
                 "Limit per Ally": ["2", "2", "2", "3", "3", "3", "3", "4"],
-                "Action Speed": ["300%", "300%", "300%", "300%", "300%", "300%", "300%", "300%"],
             }
         },
         "Overheal":{
@@ -1165,7 +1163,7 @@ var data = {
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "10"],
-                "Healing↑↓": ["+5%", "+10%", "+15%", "+100%"],
+                "Healing↑": ["+5%", "+10%", "+15%", "+100%"],
                 "Action Speed": ["90%", "90%", "90%", "90%"],
             }
         },
@@ -2860,7 +2858,6 @@ var data = {
                 "TP Cost": ["20", "20", "20", "20", "20", "35"],
                 "Damage Dealt↑": ["x1.22", "x1.24", "x1.26", "x1.28", "x1.3", "x1.4"],
                 "Damage Taken↓": ["x0.78", "x0.76", "x0.74", "x0.72", "x0.7", "x0.6"],
-                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%"],
             }
         },
         "Renew":{
@@ -3836,7 +3833,7 @@ var data = {
         "Echoing Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Second Sword (Lv 2)",
-            "Description": "Katana: Deal weapon-based damage to one enemy. After the target acts, perform a second hit based on your sub-weapon, if you have one.",
+            "Description": "Katana: Deal weapon-based damage to one enemy at the start of turn. After the target acts, perform a second hit based on your sub-weapon, if you have one.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3844,7 +3841,6 @@ var data = {
                 "Attack Power\n(First Hit)": ["120%", "123%", "126%", "129%", "141%", "145%", "149%", "153%", "157%", "180%"],
                 "Attack Power\n(Second Hit)": ["100%", "103%", "106%", "109%", "120%", "123%", "126%", "129%", "132%", "150%"],
                 "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
-                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
             }
         },
         "Front Command":{
@@ -4079,7 +4075,6 @@ var data = {
                 "Attack Power": ["100%", "103%", "106%", "109%", "119%", "122%", "125%", "128%", "131%", "150%"],
                 "HP Loss": ["45", "45", "45", "45", "55", "55", "55", "55", "55", "70"],
                 "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
-                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
             }
         },
         "Curse Strike":{
@@ -5657,7 +5652,6 @@ var data = {
                 "Attack Power": ["300%", "325%", "350%", "375%", "400%", "500%"],
                 "Infliction Chance": ["40%", "43%", "46%", "49%", "52%", "65%"],
                 "Accuracy": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
-                "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%"],
             }
         },
     },
@@ -6436,7 +6430,7 @@ var data = {
         "Black Flash":{
             "Usage": "Active (Legs, STR, LUC)",
             "Unlock": "Ameno Habakiri",
-            "Description": "Deal melee Stab damage to one enemy, with pierce effect and a chance to inflict Sleep. Recover HP based on damage dealt.",
+            "Description": "Deal melee Stab damage to one enemy at the start of turn, with pierce effect and a chance to inflict Sleep. Recover HP based on damage dealt.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -6445,7 +6439,6 @@ var data = {
                 "Infliction Chance": ["35%"],
                 "Damage Drain": ["15%"],
                 "Accuracy": ["+20%"],
-                "Action Speed": ["1000%"],
             }
         },
     },
