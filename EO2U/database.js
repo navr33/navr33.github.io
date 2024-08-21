@@ -3773,7 +3773,248 @@ var data = {
 
 },
 "Battle Items":{
-
+    "Healing":{
+        "Medica / Medica II / Medica III / Medica IV":{
+            "Usage": "20 / 100 / 800 / 5.000 en",
+            "Description": "Restores HP to one ally.",
+            "Starter": "0",
+            "Max Level": "4",
+            "Data": {
+                "HP Gain": ["50", "100", "200", "500"],
+            }
+        },
+        "Soma / Soma Prime":{
+            "Usage": "1.600 / 5.000 en",
+            "Description": "Restores HP to the whole party.",
+            "Starter": "0",
+            "Max Level": "2",
+            "Data": {
+                "HP Gain": ["80", "160"],
+            }
+        },
+        "Amrita / Amrita II":{
+            "Usage": "1.500 / ? en",
+            "Description": "Restores TP to one ally.",
+            "Starter": "0",
+            "Max Level": "3",
+            "Data": {
+                "TP Gain": ["50", "100"],
+            }
+        },
+        "Hamao / Hamao Prime":{
+            "Usage": "2.000 / 5.000 en",
+            "Description": "Restores HP and TP to one ally.",
+            "Starter": "0",
+            "Max Level": "2",
+            "Data": {
+                "HP Gain": ["100", "200"],
+                "TP Gain": ["20", "40"],
+            }
+        },
+        "Nectar / Nectar II":{
+            "Usage": "300 / 6.500 en",
+            "Description": "Revives one dead ally.",
+            "Starter": "0",
+            "Max Level": "2",
+            "Data": {
+                "HP Gain": ["20", "200"],
+            }
+        },
+    },
+    "Status":{
+        "Theriaca A / Theriaca B":{
+            "Usage": "150 / 250 en",
+            "Description": "Respectively removes binds or ailments from one ally.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Metopon":{
+            "Usage": "2.500 en",
+            "Description": "Removes all buffs and debuffs on one enemy.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Unihorn":{
+            "Usage": "2.500 en",
+            "Description": "Removes all buffs and debuffs on the party.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "Power Up":{
+        "Bravant":{
+            "Usage": "500 en",
+            "Description": "Places a buff on one ally for 5 turns, which increases physical damage dealt.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Damage Dealt↑": ["+30%"],
+            }
+        },
+        "Stonard":{
+            "Usage": "500 en",
+            "Description": "Places a buff on one ally for 5 turns, which decreases physical damage taken.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Damage Taken↓": ["-30%"],
+            }
+        },
+        "Axcela":{
+            "Usage": "800 en",
+            "Description": "Restores Force to one ally.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Force Gain": ["10%"],
+            }
+        },
+        "Blaze/Freeze/Shock Oil":{
+            "Usage": "200 en",
+            "Description": "Places a buff on one ally for 5 turns, which imbues their weapon with Fire/Ice/Volt damage.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Fire/Ice/Volt Mist":{
+            "Usage": "1.000 en",
+            "Description": "Places a buff on all allies for 5 turns, which increases resistance to Fire/Ice/Volt.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Resistance↑": ["+35%"],
+            }
+        },
+        "All Mist":{
+            "Usage": "3.000 en",
+            "Description": "Places a buff on all allies for 5 turns, which increases resistance to Fire, Ice and Volt.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Resistance↑": ["+20%"],
+            }
+        },
+    },
+    "Attack (TEC)":{
+        "Fire/Ice/Volt Jar":{
+            "Usage": "200 en",
+            "Description": "Deals ranged Fire/Ice/Volt damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["180%"],
+                "Action Speed": ["90%"],
+            }
+        },
+        "Flame/Frost/Storm Jar":{
+            "Usage": "1.200 en",
+            "Description": "Deals ranged Fire/Ice/Volt damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["220%"],
+                "Action Speed": ["90%"],
+            }
+        },
+        "Cut/Bash/Stab Jar":{
+            "Usage": "1.200 en",
+            "Description": "Deals ranged Cut/Bash/Stab damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["100%"],
+                "Action Speed": ["200%"],
+            }
+        },
+    },
+    "Infliction (LUC)":{
+        "Blind/Poison/Stun/Addle/Curse/Sleep/Fear/Petrify Gas":{
+            "Usage": "250 / 950 / 250 / 650 / 1.250 / 650 / 1.250 / 1.750 en",
+            "Description": "Respectively attempts to inflict Blind, Poison, Paralysis, Panic, Curse, Sleep, Fear or Petrify on all enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Infliction Chance": ["40%"],
+                "Poison Damage": ["50"],
+                "Action Speed": ["80%"],
+            }
+        },
+        "Head/Arm/Leg Liberator":{
+            "Usage": "400 en",
+            "Description": "Respectively attempts to inflict Head Bind, Arm Bind or Leg Bind on all enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Infliction Chance": ["40%"],
+                "Action Speed": ["80%"],
+            }
+        },
+    },
+    "Action Cancel":{
+        "Flash Grenade":{
+            "Usage": "20 en",
+            "Description": "Prevents nearby FOEs from moving for 1 turn.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Blast Grenade":{
+            "Usage": "100 en",
+            "Description": "Stun an enemy that's preparing an attack.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "Rewards":{
+        "Formaldehyde":{
+            "Usage": "4.000 en",
+            "Description": "Until the end of turn, enemies killed will drop all their materials regardless of conditions.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Holy Gift":{
+            "Usage": "2.800 en",
+            "Description": "Increases EXP earned this battle.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "EXP Gain↑": ["+40%"],
+            }
+        },
+        "Fortune Scarab":{
+            "Usage": "1.000 en",
+            "Description": "If used during a Grimoire chance, grants 100% chance to create a Grimoire Stone.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Wisdom Horn":{
+            "Usage": "3.500 en",
+            "Description": "Grants a chance to create a Grimoire Stone.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Four-Leaf Clover":{
+            "Usage": "10.000 en",
+            "Description": "If you create a Grimoire Stone this turn, increase the chance of it being high level.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Return Flute":{
+            "Usage": "200 en",
+            "Description": "Escape from battle and teleport to the point where you entered the floor.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    }
 },
 }
 
