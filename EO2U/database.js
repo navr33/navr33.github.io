@@ -300,7 +300,7 @@ var data = {
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
-            "Crit Rate↑": ["x1.1", "x1.4", "x1.7", "x2.0", "x2.4", "x2.8", "x3.2", "x3.6", "x4.0", "x4.5", "x5.0", "x5.5", "x6.0", "x6.5", "x7.0", "x7.5", "x8.0", "x8.5", "x9.0", "x10.0"],
+            "Crit Rate↑": ["+11%", "+14%", "+17%", "+20%", "+24%", "+28%", "+32%", "+36%", "+40%", "+45%", "+50%", "+55%", "+60%", "+65%", "+70%", "+75%", "+80%", "+85%", "+90%", "+100%"],
             "Damage Dealt↑": ["x1.05", "x1.05", "x1.05", "x1.05", "x1.05", "x1.05", "x1.05", "x1.05", "x1.05", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1", "x1.15"],
         }
     },
@@ -343,7 +343,7 @@ var data = {
     "Mine":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -389,7 +389,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "18", "18", "18", "18", "18", "21", "21", "21", "21", "21", "26"],
+            "Attack Power": ["100%", "105%", "110%", "115%", "145%", "150%", "155%", "160%", "165%", "205%", "208%", "211%", "214%", "217%", "235%", "238%", "241%", "244%", "247%", "270%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+30%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Blind Arrow":{
         "Usage": "Active (Arms, AGI, LUC)",
@@ -398,7 +403,13 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "14", "14", "14", "14", "14", "16"],
+            "Attack Power": ["120%", "127%", "134%", "141%", "149%", "156%", "163%", "170%", "177%", "185%", "189%", "193%", "197%", "201%", "205%", "209%", "213%", "217%", "221%", "225%"],
+            "Infliction Rate": ["40%", "40%", "40%", "40%", "50%", "50%", "50%", "50%", "50%", "60%", "60%", "60%", "60%", "60%", "70%", "70%", "70%", "70%", "70%", "80%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Sleep Arrow":{
         "Usage": "Active (Arms, AGI, LUC)",
@@ -407,7 +418,13 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "14", "14", "14", "14", "14", "16"],
+            "Attack Power": ["120%", "127%", "134%", "141%", "149%", "156%", "163%", "170%", "177%", "185%", "189%", "193%", "197%", "201%", "205%", "209%", "213%", "217%", "221%", "225%"],
+            "Infliction Rate": ["40%", "40%", "40%", "40%", "50%", "50%", "50%", "50%", "50%", "60%", "60%", "60%", "60%", "60%", "70%", "70%", "70%", "70%", "70%", "80%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Paralysis Arrow":{
         "Usage": "Active (Arms, AGI, LUC)",
@@ -416,16 +433,27 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "14", "14", "14", "14", "14", "16"],
+            "Attack Power": ["120%", "127%", "134%", "141%", "149%", "156%", "163%", "170%", "177%", "185%", "189%", "193%", "197%", "201%", "205%", "209%", "213%", "217%", "221%", "225%"],
+            "Infliction Rate": ["40%", "40%", "40%", "40%", "50%", "50%", "50%", "50%", "50%", "60%", "60%", "60%", "60%", "60%", "70%", "70%", "70%", "70%", "70%", "80%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Drop Shot":{
         "Usage": "Active (Arms, AGI)",
         "Unlock": "Bow Mastery (Lv 5)",
-        "Description": "Bow: Deal ranged Stab damage to one enemy. Deals more damage if the target is in the back line.",
+        "Description": "Bow: Deal ranged Stab damage to one enemy. Deals double damage if the target is in the back line.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "17", "17", "17", "17", "17", "19", "19", "19", "19", "19", "21"],
+            "Attack Power": ["140%", "145%", "150%", "155%", "180%", "185%", "190%", "195%", "200%", "230%", "234%", "238%", "242%", "246%", "260%", "264%", "268%", "272%", "276%", "295%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Sagittarius Shot":{
         "Usage": "Active (Arms, AGI, LUC)",
@@ -434,7 +462,13 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["14", "14", "14", "14", "18", "18", "18", "18", "18", "23", "23", "23", "23", "23", "27", "27", "27", "27", "27", "35"],
+            "Attack Power": ["330%", "340%", "350%", "360%", "405%", "415%", "425%", "435%", "445%", "510%", "515%", "520%", "525%", "530%", "570%", "575%", "580%", "585%", "590%", "690%"],
+            "Infliction Rate": ["20%", "20%", "20%", "20%", "30%", "30%", "30%", "30%", "30%", "40%", "40%", "40%", "40%", "40%", "45%", "45%", "45%", "45%", "45%", "50%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Multi-Shot":{
         "Usage": "Active (Arms, AGI)",
@@ -443,7 +477,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "16", "16", "16", "16", "16", "22", "22", "22", "22", "22", "25", "25", "25", "25", "25", "28"],
+            "Attack Power": ["110%", "114%", "118%", "122%", "140%", "144%", "148%", "152%", "156%", "180%", "182%", "184%", "186%", "188%", "200%", "202%", "204%", "206%", "208%", "220%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Disabling Shot":{
         "Usage": "Passive (LUC)",
@@ -452,7 +491,9 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Infliction Rate": ["7%", "9%", "11%", "13%", "15%", "17%", "19%", "21%", "23%", "25%", "26%", "27%", "28%", "29%", "30%", "31%", "32%", "33%", "34%", "35%"],
+        }
     },
     "Hazy Arrow":{
         "Usage": "Active (Arms, AGI)",
@@ -461,7 +502,11 @@ var data = {
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "21", "21", "21", "21", "21", "25", "25", "25", "25", "25", "32"],
+            "Attack Power": ["420%", "431%", "442%", "453%", "505%", "516%", "527%", "538%", "549%", "620%", "626%", "632%", "638%", "644%", "710%", "716%", "722%", "728%", "734%", "850%"],
+            "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "Speed Up":{
         "Usage": "Passive",
@@ -470,7 +515,11 @@ var data = {
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Accuracy↑": ["+5%", "+6.2%", "+7.5%", "+8.7%", "+10%", "+11%", "+12%", "+13%", "+14%", "+15%", "+15.5%", "+16%", "+16.5%", "+17%", "+17.5%", "+18%", "+18.5%", "+19%", "+19.5%", "+20%"],
+            "Evasion↑": ["+5%", "+6.2%", "+7.5%", "+8.7%", "+10%", "+11%", "+12%", "+13%", "+14%", "+15%", "+15.5%", "+16%", "+16.5%", "+17%", "+17.5%", "+18%", "+18.5%", "+19%", "+19.5%", "+20%"],
+            "Speed↑": ["x1.07", "x1.10", "x1.12", "x1.15", "x1.17", "x1.20", "x1.22", "x1.25", "x1.27", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.35", "x1.36", "x1.37", "x1.38", "x1.39", "x1.4"],
+        }
     },
     "Trick Step":{
         "Usage": "Active (Legs)",
@@ -479,7 +528,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "7", "7", "7", "7", "7", "7", "7", "7", "7", "7", "10"],
+            "Accuracy↓": ["-18%", "-19%", "-20%", "-21%", "-21%", "-22%", "-23%", "-24%", "-25%", "-25%", "-25.5%", "-26%", "-26.5%", "-27%", "-27.5%", "-28%", "-28.5%", "-29%", "-29.5%", "-30%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Chain Dance":{
         "Usage": "Active (Legs)",
@@ -488,7 +542,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "7", "7", "7", "7", "7", "7", "7", "7", "7", "7", "10"],
+            "Evasion↑": ["+40%", "+40%", "+40%", "+40%", "+45%", "+45%", "+45%", "+45%", "+45%", "+50%", "+50.5%", "+51%", "+51.5%", "+52%", "+54.5%", "+55%", "+55.5%", "+56%", "+56.5%", "+60%"],
+            "Aggro↑": ["+250", "+257", "+264", "+271", "+300", "+307", "+314", "+321", "+328", "+385", "+385", "+385", "+385", "+385", "+410", "+410", "+410", "+410", "+410", "+440"],
+            "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "Scapegoat":{
         "Usage": "Active (Legs)",
@@ -497,16 +556,23 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "16", "16", "16", "16", "16", "20"],
+            "Max. Activations": ["1", "1", "1", "1", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "4"],
+            "Damage Taken↓": ["-15%", "-17%", "-19%", "-21%", "-23%", "-25%", "-27%", "-29%", "-31%", "-35%", "-36%", "-37%", "-38%", "-39%", "-40%", "-41%", "-42%", "-43%", "-44%", "-45%"],
+        }
     },
     "Swap Step":{
         "Usage": "Active (Legs)",
         "Unlock": "Speed Up (Lv 10)",
-        "Description": "Target one ally, make them act first this turn.",
+        "Description": "Chance to make target ally act at the start of this turn.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "5",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "25", "23", "21", "19", "17", "12"],
+            "Success Chance": ["70%", "75%", "80%", "85%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Risk Perception":{
         "Usage": "Passive",
@@ -515,16 +581,22 @@ var data = {
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["25%", "30%", "35%", "40%", "45%", "49%", "53%", "57%", "61%", "65%", "68%", "72%", "75%", "79%", "82%", "86%", "89%", "93%", "96%", "100%"],
+        }
     },
     "Owl-Eye":{
         "Usage": "Active (Field)",
         "Unlock": "Risk Perception (Lv 1)",
-        "Description": "Temporarily show FOEs/chests/shortcuts/stairs/gathering spots within a certain radius.",
+        "Description": "Temporarily show FOEs/chests/shortcuts/stairs/gathering spots within a square centered around you.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "8"],
+            "Duration (Steps)": ["16", "18", "20", "22", "30", "32", "34", "36", "38", "50", "52", "54", "56", "58", "60", "62", "64", "66", "68", "99"],
+            "Square Side": ["23", "23", "23", "23", "27", "27", "27", "27", "27", "31", "31", "31", "31", "31", "31", "31", "31", "31", "31", "35"],
+        }
     },
     "Sneak Attack":{
         "Usage": "Active (Field)",
@@ -533,7 +605,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "14", "14", "14", "14", "14", "18"],
+            "Ambush↑": ["x1.5", "x1.5", "x1.5", "x1.5", "x2.0", "x2.0", "x2.0", "x2.0", "x2.0", "x2.5", "x2.5", "x2.5", "x2.5", "x2.5", "x2.5", "x2.5", "x2.5", "x2.5", "x2.5", "x3.0"],
+            "Duration (Steps)": ["50", "55", "60", "65", "70", "75", "80", "85", "90", "100", "103", "106", "109", "112", "125", "128", "131", "134", "137", "150"],
+        }
     },
     "Stalker":{
         "Usage": "Active (Field)",
@@ -542,7 +618,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "9", "9", "9", "9", "9", "12", "12", "12", "12", "12", "13", "13", "13", "13", "13", "14"],
+            "Encounters↓": ["x0.8", "x0.77", "x0.74", "x0.71", "x0.57", "x0.54", "x0.51", "x0.48", "x0.45", "x0.3", "x0.29", "x0.28", "x0.27", "x0.26", "x0.22", "x0.21", "x0.2", "x0.19", "x0.18", "x0.15"],
+            "Duration (Steps)": ["30", "30", "30", "30", "60", "60", "60", "60", "60", "100", "100", "100", "100", "100", "120", "120", "120", "120", "120", "150"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -562,16 +642,25 @@ var data = {
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "5",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "7", "7", "7", "7", "7", "9"],
+            "HP Gain (Heal)": ["50", "70", "100", "140", "250", "300", "370", "460", "560", "900"],
+            "HP Gain (Revive)": ["N/A", "N/A", "N/A", "N/A", "1", "10", "50", "100", "200", "500"],
+        }
     },
     "Efficiency":{
         "Usage": "Active (Head)",
         "Unlock": "Resuscitate (Lv 3)",
-        "Description": "Place a buff on yourself for several turns, which increases the effect of HP/TP restoring items.",
+        "Description": "Place a buff on yourself for several turns, which increases the effect of Medica, Soma and Nectar type items and increases their area of effect (Single → Line).",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "16"],
+            "HP Gain↑": ["+5%", "+10%", "+15%", "+20%", "+20%", "+25%", "+30%", "+35%", "+40%", "+40%", "+43%", "+45%", "+48%", "+50%", "+53%", "+55%", "+58%", "+60%", "+63%", "+65%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
@@ -587,16 +676,18 @@ var data = {
     "Curb ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase bind/ailment infliction rate.",
+        "Description": "Increase bind/ailment infliction rates.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Inflictions↑": ["x1.07", "x1.09", "x1.11", "x1.13", "x1.15", "x1.17", "x1.19", "x1.21", "x1.23", "x1.25", "x1.26", "x1.27", "x1.28", "x1.29", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.35"],
+        }
     },
     "Natural Instinct":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points.",
+        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -846,7 +937,7 @@ var data = {
     "Mine":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -1076,11 +1167,13 @@ var data = {
     "Curb ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase bind/ailment infliction rate.",
+        "Description": "Increase bind/ailment infliction rates.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Inflictions↑": ["x1.07", "x1.09", "x1.11", "x1.13", "x1.15", "x1.17", "x1.19", "x1.21", "x1.23", "x1.25", "x1.26", "x1.27", "x1.28", "x1.29", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.35"],
+        }
     },
     "Snake Eyes":{
         "Usage": "Active (Head)",
@@ -1103,7 +1196,7 @@ var data = {
     "Chop":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -1358,7 +1451,7 @@ var data = {
     "Take":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -1615,7 +1708,7 @@ var data = {
     "Chop":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -1799,7 +1892,11 @@ var data = {
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Accuracy↑": ["+5%", "+6.2%", "+7.5%", "+8.7%", "+10%", "+11%", "+12%", "+13%", "+14%", "+15%", "+15.5%", "+16%", "+16.5%", "+17%", "+17.5%", "+18%", "+18.5%", "+19%", "+19.5%", "+20%"],
+            "Evasion↑": ["+5%", "+6.2%", "+7.5%", "+8.7%", "+10%", "+11%", "+12%", "+13%", "+14%", "+15%", "+15.5%", "+16%", "+16.5%", "+17%", "+17.5%", "+18%", "+18.5%", "+19%", "+19.5%", "+20%"],
+            "Speed↑": ["x1.07", "x1.10", "x1.12", "x1.15", "x1.17", "x1.20", "x1.22", "x1.25", "x1.27", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.35", "x1.36", "x1.37", "x1.38", "x1.39", "x1.4"],
+        }
     },
     "Alluring Ballad":{
         "Usage": "Active (Field)",
@@ -1862,7 +1959,7 @@ var data = {
     "Take":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -2117,7 +2214,7 @@ var data = {
     "Mine":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -2325,11 +2422,13 @@ var data = {
     "Curb ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increase bind/ailment infliction rates.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Inflictions↑": ["x1.07", "x1.09", "x1.11", "x1.13", "x1.15", "x1.17", "x1.19", "x1.21", "x1.23", "x1.25", "x1.26", "x1.27", "x1.28", "x1.29", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.35"],
+        }
     },
     "Chained Benefit":{
         "Usage": "Active (No Parts)",
@@ -2363,7 +2462,7 @@ var data = {
     "Chop":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -2617,7 +2716,7 @@ var data = {
     "Take":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -2866,7 +2965,7 @@ var data = {
     "Chop":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -3121,7 +3220,7 @@ var data = {
     "Natural Instinct":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points.",
+        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -3249,7 +3348,7 @@ var data = {
     "Morale Boost":{
         "Usage": "Passive",
         "Unlock": "Order Mastery (Lv 10)",
-        "Description": "Increase Force gains of allies with buffs. (Does not stack)",
+        "Description": "Increase Force gains of allies with buffs while you're alive. (Does not stack)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3370,7 +3469,7 @@ var data = {
     "Take":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -3641,7 +3740,7 @@ var data = {
     "Force Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Force Gauge gains. (Automatically unlocks other skills that require this one)",
+        "Description": "Increase Force Gauge gains. (Automatically unlocks other skills that require this one)<br>-For reference, normal Force gain is 5 to 15 per action.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3682,7 +3781,7 @@ var data = {
     "Absorb":{
         "Usage": "Active (No Parts)",
         "Unlock": "Force Mastery (Lv 3)",
-        "Description": "Remove binds and ailments on yourself and recover Force.",
+        "Description": "Remove binds and ailments on yourself. If this removed an affliction, recover Force.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "5",
@@ -3690,7 +3789,7 @@ var data = {
             "TP Cost": ["4", "6", "9", "11", "16", "16", "16", "16", "16", "18"],
             "Binds Removed": ["1", "2", "3", "3", "3", "3", "3", "3", "3", "3"],
             "Ailments Removed": ["0", "0", "0", "0", "1", "1", "1", "1", "1", "1"],
-            "Force Gain": ["13%", "13%", "13%", "16%", "18%", "19%", "20%", "21%", "22%", "30%"],
+            "Force Gain": ["13", "13", "13", "16", "18", "19", "20", "21", "22", "30"],
             "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
         }
     },
@@ -3735,24 +3834,24 @@ var data = {
     "Force Reset":{
         "Usage": "Active (Head)",
         "Unlock": "Force Mastery (Lv 10)",
-        "Description": "Only usable during Force Boost. End your Force Boost and recover Force.",
+        "Description": "Only usable during Force Boost. End your Force Boost at the start of turn, but conserve some Force.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["2", "2", "2", "2", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "18"],
-            "Force Gain": ["20%", "21%", "22%", "23%", "26%", "27%", "28%", "29%", "30%", "35%", "36%", "37%", "38%", "39%", "40%", "41%", "42%", "43%", "44%", "50%"],
+            "Force Kept": ["20", "21", "22", "23", "26", "27", "28", "29", "30", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "50"],
         }
     },
     "Limit Break":{
         "Usage": "Passive",
         "Unlock": "Force Reset (Lv 5)",
-        "Description": "During battle, your Force Gauge can go above 100%. (Excess is lost after battle)",
+        "Description": "During battle, your Force Gauge can go above 100. (Excess is lost after battle unless Force Boost was active)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
-            "Max. Force": ["105%", "110%", "115%", "120%", "125%", "130%", "135%", "140%", "145%", "150%", "155%", "160%", "165%", "170%", "175%", "180%", "185%", "190%", "195%", "200%"],
+            "Max. Force": ["105", "110", "115", "120", "125", "130", "135", "140", "145", "150", "155", "160", "165", "170", "175", "180", "185", "190", "195", "200"],
         }
     },
     "Phys ATK Up":{
@@ -3813,7 +3912,7 @@ var data = {
     "Mine":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -4069,7 +4168,7 @@ var data = {
     "Mine":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -4102,7 +4201,7 @@ var data = {
             "Usage": "1.500 / ? en",
             "Description": "Restores TP to one ally.",
             "Starter": "0",
-            "Max Level": "3",
+            "Max Level": "2",
             "Data": {
                 "TP Gain": ["50", "100"],
             }
@@ -4171,11 +4270,11 @@ var data = {
         },
         "Axcela":{
             "Usage": "800 en",
-            "Description": "Restores Force to one ally.",
+            "Description": "Restores Force to one ally. Not affected by Force gain modifiers.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
-                "Force Gain": ["10%"],
+                "Force Gain": ["10"],
             }
         },
         "Blaze/Freeze/Shock Oil":{
