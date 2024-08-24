@@ -717,7 +717,9 @@ var data = {
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["1%", "2%", "3%", "4%", "5%", "6%", "7%", "8%", "9%", "10%", "10%", "11%", "11%", "12%", "12%", "13%", "13%", "14%", "14%", "15%"],
+        }
     },
     "Front Guard":{
         "Usage": "Active (Arms)",
@@ -726,7 +728,10 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "17"],
+            "Damage Taken↓": ["-30%", "-33%", "-36%", "-38%", "-45%", "-47%", "-49%", "-50%", "-51%", "-55%", "-56%", "-57%", "-58%", "-59%", "-60%", "-61%", "-62%", "-63%", "-64%", "-70%"],
+        }
     },
     "Rear Guard":{
         "Usage": "Active (Arms)",
@@ -735,7 +740,10 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "17"],
+            "Damage Taken↓": ["-30%", "-33%", "-36%", "-38%", "-45%", "-47%", "-49%", "-50%", "-51%", "-55%", "-56%", "-57%", "-58%", "-59%", "-60%", "-61%", "-62%", "-63%", "-64%", "-70%"],
+        }
     },
     "Keep Guard":{
         "Usage": "Active (Arms)",
@@ -744,34 +752,49 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "14"],
+            "Damage Taken↓": ["-30%", "-33%", "-36%", "-38%", "-45%", "-47%", "-49%", "-50%", "-51%", "-55%", "-56%", "-57%", "-58%", "-59%", "-60%", "-61%", "-62%", "-63%", "-64%", "-70%"],
+        }
     },
     "Fire Wall":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 3)",
-        "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases Fire damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it.",
+        "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases Fire damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 5 onward it nullifies secondary effects from attacks)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "16", "14", "12", "10", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
+            "Damage Taken↓": ["-30%", "-55%", "-75%", "-15%", "-100%", "-100%", "-100%", "-100%", "-100%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "10%", "15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%", "55%", "70%"],
+        }
     },
     "Ice Wall":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 3)",
-        "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases Ice damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it.",
+        "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases Ice damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "16", "14", "12", "10", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
+            "Damage Taken↓": ["-30%", "-55%", "-75%", "-15%", "-100%", "-100%", "-100%", "-100%", "-100%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "10%", "15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%", "55%", "70%"],
+        }
     },
     "Volt Wall":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 3)",
-        "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases Volt damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it.",
+        "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases Volt damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "16", "14", "12", "10", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
+            "Damage Taken↓": ["-30%", "-55%", "-75%", "-15%", "-100%", "-100%", "-100%", "-100%", "-100%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "10%", "15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%", "55%", "70%"],
+        }
     },
     "Heal Guard":{
         "Usage": "Active (Arms)",
@@ -780,7 +803,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "16", "16", "16", "16", "16", "19", "19", "19", "19", "19", "23"],
+            "Healing Power": ["90%", "93%", "96%", "99%", "123%", "127%", "131%", "135%", "139%", "180%", "183%", "186%", "189%", "192%", "210%", "214%", "218%", "222%", "226%", "250%"],
+            "Damage Taken↓": ["-30%", "-33%", "-36%", "-38%", "-45%", "-47%", "-49%", "-50%", "-51%", "-55%", "-56%", "-57%", "-58%", "-59%", "-60%", "-61%", "-62%", "-63%", "-64%", "-70%"],
+        }
     },
     "Shield Smite":{
         "Usage": "Active (Arms, STR+VIT, LUC)",
@@ -789,25 +816,41 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "22", "22", "22", "22", "22", "25", "25", "25", "25", "25", "30"],
+            "Attack Power": ["220%", "225%", "230%", "235%", "275%", "280%", "285%", "290%", "295%", "350%", "354%", "358%", "362%", "366%", "400%", "404%", "408%", "412%", "416%", "465%"],
+            "Infliction Rate": ["25%", "25%", "25%", "25%", "35%", "35%", "35%", "35%", "35%", "45%", "45%", "45%", "45%", "45%", "50%", "50%", "50%", "50%", "50%", "55%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "Shield Rush":{
         "Usage": "Active (Arms, STR+VIT)",
         "Unlock": "Shield Smite (Lv 5)",
-        "Description": "Shield: Deal melee Bash damage to all enemies. Places a debuff on the targets for 3 turns, which decreases physical damage dealt. (Damage is based on your Shield's DEF instead of your weapon's ATK).",
+        "Description": "Shield: Deal melee Bash damage to all enemies. Places a debuff on the targets for several turns, which decreases physical damage dealt. (Damage is based on your Shield's DEF instead of your weapon's ATK).",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["15", "15", "15", "15", "21", "21", "21", "21", "21", "27", "27", "27", "27", "27", "29", "29", "29", "29", "29", "34"],
+            "Attack Power": ["200%", "205%", "210%", "215%", "230%", "235%", "240%", "245%", "250%", "270%", "273%", "276%", "279%", "282%", "290%", "293%", "296%", "299%", "302%", "310%"],
+            "Damage Dealt↓": ["-15%", "-15%", "-15%", "-15%", "-20%", "-20%", "-20%", "-20%", "-20%", "-25%", "-25%", "-25%", "-25%", "-25%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%"],
+            "Duration": ["3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "4"],
+            "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "Sentinel Guard":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 10)",
-        "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases all attack damage taken. While active, attacks against your allies use your defensive stats for the damage calculation.",
+        "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases all attack damage taken. While active, attacks against your allies use your defensive stats (including modifiers) for the damage calculation. Guard skills will be disabled on the next turn.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["30", "30", "30", "30", "35", "35", "35", "35", "35", "40", "40", "40", "40", "40", "40", "40", "40", "40", "40", "50"],
+            "Damage Taken↓": ["-5%", "-7%", "-8%", "-10%", "-15%", "-17%", "-18%", "-20%", "-21%", "-25%", "-26%", "-27%", "-28%", "-29%", "-30%", "-31%", "-32%", "-33%", "-34%", "-40%"],
+        }
     },
     "Phys DEF Up":{
         "Usage": "Passive",
@@ -827,7 +870,13 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "5", "5", "5", "5", "5", "9", "9", "9", "9", "9", "9", "9", "9", "9", "9", "12"],
+            "Aggro↑": ["+150", "+155", "+160", "+165", "+190", "+195", "+200", "+205", "+210", "+250", "+255", "+260", "+265", "+270", "+275", "+280", "+285", "+290", "+295", "+350"],
+            "Damage Taken↓": ["-0%", "-0%", "-0%", "-0%", "-5%", "-5%", "-5%", "-5%", "-5%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-15%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
+        }
     },
     "Pre-Provoke":{
         "Usage": "Passive",
@@ -836,7 +885,9 @@ var data = {
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "5",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["15%", "25%", "35%", "45%", "60%", "67%", "74%", "81%", "88%", "100%"],
+        }
     },
     "Fortify":{
         "Usage": "Active (Arms)",
@@ -845,7 +896,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "10"],
+            "Damage Taken↓": ["-28%", "-30%", "-32%", "-33%", "-33%", "-35%", "-37%", "-39%", "-40%", "-40%", "-41%", "-42%", "-43%", "-44%", "-45%", "-46%", "-47%", "-48%", "-49%", "-50%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "Parry":{
         "Usage": "Passive (Arms)",
@@ -854,7 +910,9 @@ var data = {
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "5",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["2%", "3%", "4%", "5%", "6%", "7%", "8%", "9%", "10%", "11%"],
+        }
     },
     "Elem DEF Up":{
         "Usage": "Passive",
@@ -874,7 +932,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "14", "14", "14", "14", "14", "16"],
+            "Healing Power": ["90%", "93%", "96%", "99%", "130%", "135%", "140%", "145%", "150%", "195%", "198%", "200%", "203%", "205%", "230%", "234%", "237%", "240%", "243%", "275%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "125%", "125%", "125%", "125%", "125%", "150%", "150%", "150%", "150%", "150%", "175%", "175%", "175%", "175%", "175%", "200%"],
+        }
     },
     "Line Heal":{
         "Usage": "Active (Head, TEC+VIT)",
@@ -883,7 +945,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["15", "15", "15", "15", "19", "19", "19", "19", "19", "23", "23", "23", "23", "23", "25", "25", "25", "25", "25", "27"],
+            "Healing Power": ["160%", "165%", "169%", "174%", "220%", "225%", "230%", "235%", "240%", "295%", "298%", "301%", "304%", "307%", "325%", "329%", "333%", "337%", "341%", "370%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Aegis":{
         "Usage": "Passive",
@@ -892,7 +958,9 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["10%", "12%", "13%", "15%", "16%", "18%", "19%", "21%", "22%", "24%", "25%", "26%", "27%", "28%", "29%", "30%", "31%", "32%", "33%", "35%"],
+        }
     },
     "Armor of Light":{
         "Usage": "Active (Head)",
@@ -901,7 +969,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "15", "15", "15", "15", "15", "15", "15", "15", "15", "15", "20"],
+            "Activation Chance": ["35%", "38%", "41%", "44%", "50%", "52%", "54%", "56%", "58%", "60%", "61%", "63%", "64%", "66%", "67%", "69%", "70%", "72%", "73%", "75%"],
+            "Duration": ["3", "3", "3", "3", "3", "3", "3", "3", "3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "5"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "100%", "100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "200%"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -917,11 +990,15 @@ var data = {
     "Flee":{
         "Usage": "Active (Legs)",
         "Unlock": "HP Up (Lv 3)",
-        "Description": "Attempt to escape the battle and teleport to the point where you entered the floor. If successful, spend part of the whole party's HP.",
+        "Description": "Attempt to escape the battle at the start of the turn and teleport to the point where you entered the floor. If successful, spend part of the whole party's HP.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "7", "7", "7", "7", "7", "8", "8", "8", "8", "8", "9"],
+            "Success Chance": ["45%", "50%", "55%", "60%", "65%", "70%", "75%", "80%", "85%", "90%", "90%", "90%", "90%", "90%", "95%", "95%", "95%", "95%", "95%", "100%"],
+            "HP Loss": ["50%", "50%", "50%", "50%", "40%", "40%", "40%", "40%", "40%", "30%", "26%", "22%", "19%", "16%", "14%", "12%", "10%", "8%", "6%", "1%"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
@@ -3019,7 +3096,7 @@ var data = {
         "Data": ""
     },
     "Protect":{
-        "Usage": "Passive (Arms)",
+        "Usage": "Active (Arms)",
         "Unlock": "Loyalty Mastery (Lv 3)",
         "Description": "Protect one ally for this turn, which makes you take attacks in their place. Decrease damage taken from those reditected attacks.",
         "Starter": "0",
@@ -3190,7 +3267,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Decrease physical damage taken.",
-        "Starter": "1",
+        "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
