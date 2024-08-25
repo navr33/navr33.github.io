@@ -1307,7 +1307,7 @@ var data = {
     "Attack Bait":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Phys ATK Up (Lv 10)",
-        "Description": "Sword/Whip: Prepare to counterattack each time you or your adjacent allies are hit with physical damage this turn. Stronger when countering attacks against yourself. Activation chance starts at 100% and goes down with each activation.",
+        "Description": "Sword/Whip: Prepare to counterattack each time you or your adjacent allies are hit with physical damage this turn, dealing weapon-based damage to the attacker. Stronger when countering attacks against yourself. Activation chance starts at 100% and goes down with each activation.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1323,7 +1323,7 @@ var data = {
     "Elemental Bait":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Phys ATK Up (Lv 10)",
-        "Description": "Sword/Whip: Prepare to counterattack each time you or your adjacent allies are hit with elemental damage this turn. Stronger when countering attacks against yourself. Activation chance starts at 100% and goes down with each activation.",
+        "Description": "Sword/Whip: Prepare to counterattack each time you or your adjacent allies are hit with elemental damage this turn, dealing weapon-based damage to the attacker. Stronger when countering attacks against yourself. Activation chance starts at 100% and goes down with each activation.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1357,7 +1357,7 @@ var data = {
         "Data": {
             "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "12"],
             "Damage Taken↑\n(Normal)": ["+20%", "+22%", "+23%", "+25%", "+25%", "+27%", "+28%", "+29%", "+30%", "+30%", "+31%", "+32%", "+33%", "+34%", "+35%", "+36%", "+37%", "+38%", "+39%", "+40%"],
-            "Damage Taken↑\n(Increased)": ["+30%", "+32%", "+33%", "+35%", "+35%", "+37%", "+38%", "+39%", "+40%", "+40%", "+41%", "+42%", "+43%", "+44%", "+45%", "+46%", "+47%", "+48%", "+49%", "+40%"],
+            "Damage Taken↑\n(Increased)": ["+30%", "+32%", "+33%", "+35%", "+35%", "+37%", "+38%", "+39%", "+40%", "+40%", "+41%", "+42%", "+43%", "+44%", "+45%", "+46%", "+47%", "+48%", "+49%", "+50%"],
             "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
             "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
         }
@@ -1411,7 +1411,9 @@ var data = {
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Healing↑": ["+2%", "+3%", "+5%", "+6%", "+8%", "+9%", "+11%", "+12%", "+14%", "+15%", "+16%", "+17%", "+18%", "+19%", "+20%", "+21%", "+22%", "+23%", "+24%", "+25%"],
+        }
     },
     "Cure":{
         "Usage": "Active (Head, TEC+VIT)",
@@ -1420,7 +1422,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "6", "6", "6", "6", "6", "7", "7", "7", "7", "7", "8"],
+            "Healing Power": ["110%", "114%", "118%", "122%", "170%", "176%", "182%", "188%", "194%", "280%", "283%", "286%", "289%", "292%", "330%", "334%", "338%", "342%", "346%", "390%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "125%", "125%", "125%", "125%", "125%", "150%", "150%", "150%", "150%", "150%", "175%", "175%", "175%", "175%", "175%", "200%"],
+        }
     },
     "Salve":{
         "Usage": "Active (Head, TEC+VIT)",
@@ -1429,7 +1435,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "16", "16", "16", "16", "16", "24", "24", "24", "24", "24", "28", "28", "28", "28", "28", "32"],
+            "Healing Power": ["80%", "82%", "85%", "87%", "110%", "114%", "118%", "122%", "125%", "155%", "157%", "159%", "161%", "163%", "173%", "175%", "177%", "179%", "181%", "195%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "125%", "125%", "125%", "125%", "125%", "150%", "150%", "150%", "150%", "150%", "175%", "175%", "175%", "175%", "175%", "200%"],
+        }
     },
     "Unbind":{
         "Usage": "Active (Head)",
@@ -1438,7 +1448,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "5", "10", "5", "20", "10", "20", "15", "10", "35", "33", "31", "29", "27", "25", "23", "21", "19", "17", "12"],
+            "Binds Removed": ["1", "1", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+            "Targets": ["Single", "Single", "Single", "Single", "Line", "Line", "Line", "Line", "Line", "Party", "Party", "Party", "Party", "Party", "Party", "Party", "Party", "Party", "Party", "Party"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Refresh":{
         "Usage": "Active (Head)",
@@ -1447,7 +1462,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "7", "4", "2", "20", "17", "14", "12", "10", "35", "33", "31", "29", "27", "25", "23", "21", "19", "17", "12"],
+            "Targets": ["Single", "Single", "Single", "Single", "Line", "Line", "Line", "Line", "Line", "Party", "Party", "Party", "Party", "Party", "Party", "Party", "Party", "Party", "Party", "Party"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Revive":{
         "Usage": "Active (Head)",
@@ -1456,16 +1475,26 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "18", "18", "18", "18", "18", "25", "25", "25", "25", "25", "27", "27", "27", "27", "27", "30"],
+            "HP Gain": ["1", "5", "10", "20", "80", "90", "102", "115", "130", "270", "280", "290", "300", "310", "350", "360", "370", "380", "390", "800"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "High Regen":{
         "Usage": "Active (Head, TEC+VIT)",
         "Unlock": "Revive (Lv 2)",
-        "Description": "Place a buff on one ally for several turns, which restores HP at the end of each turn.",
+        "Description": "Place a buff on one ally for several turns, which restores HP at the end of each turn and increases natural bind/ailment recovery rate.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "9", "9", "9", "9", "9", "13", "13", "13", "13", "13", "13", "13", "13", "13", "13", "16"],
+            "Healing Power": ["40%", "45%", "50%", "55%", "55%", "60%", "65%", "70%", "75%", "75%", "77%", "78%", "80%", "81%", "83%", "84%", "86%", "87%", "89%", "90%"],
+            "Recovery Rate↑": ["+15%", "+16%", "+17%", "+18%", "+18%", "+19%", "+21%", "+23%", "+25%", "+25%", "+27%", "+28%", "+30%", "+31%", "+33%", "+34%", "+36%", "+37%", "+39%", "+40%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Healing":{
         "Usage": "Active (Head, TEC+VIT)",
@@ -1474,7 +1503,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "10", "10", "10", "10", "10", "12", "12", "12", "12", "12", "13", "13", "13", "13", "13", "14"],
+            "Healing Power": ["200%", "206%", "212%", "218%", "300%", "308%", "316%", "324%", "332%", "420%", "424%", "428%", "432%", "436%", "465%", "470%", "475%", "480%", "485%", "540%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Line Heal":{
         "Usage": "Active (Head, TEC+VIT)",
@@ -1483,7 +1516,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["15", "15", "15", "15", "19", "19", "19", "19", "19", "23", "23", "23", "23", "23", "25", "25", "25", "25", "25", "27"],
+            "Healing Power": ["160%", "165%", "169%", "174%", "220%", "225%", "230%", "235%", "240%", "295%", "298%", "301%", "304%", "307%", "325%", "329%", "333%", "337%", "341%", "370%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Salve 2":{
         "Usage": "Active (Head, TEC+VIT)",
@@ -1492,16 +1529,25 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["30", "30", "30", "30", "38", "38", "38", "38", "38", "46", "46", "46", "46", "46", "50", "50", "50", "50", "50", "54"],
+            "Healing Power": ["140%", "144%", "148%", "152%", "180%", "184%", "188%", "192%", "196%", "230%", "232%", "234%", "236%", "238%", "250%", "253%", "256%", "259%", "262%", "280%"],
+            "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+        }
     },
     "Chase Heal":{
         "Usage": "Active (Head, TEC+VIT)",
         "Unlock": "Heal Mastery (Lv 7)",
-        "Description": "Prepare to heal target ally each time they're hit this turn.",
+        "Description": "Prepare to heal target ally each time they're hit this turn. Activation chance starts at 100% and goes down with each activation.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10", "10", "10", "10", "10", "12", "12", "12", "12", "12", "14"],
+            "Healing Power": ["100%", "106%", "112%", "118%", "118%", "125%", "132%", "139%", "145%", "145%", "151%", "158%", "164%", "171%", "177%", "184%", "190%", "197%", "203%", "210%"],
+            "Max. Activations": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "5"],
+            "Chance Fadeout": ["80%", "70%", "60%", "50%", "35%", "30%", "25%", "20%", "15%", "10%", "10%", "10%", "10%", "10%", "5%", "5%", "5%", "5%", "5%", "0%"],
+        }
     },
     "Delayed Heal":{
         "Usage": "Active (Head, TEC+VIT)",
@@ -1510,7 +1556,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["18", "18", "18", "18", "23", "23", "23", "23", "23", "32", "32", "32", "32", "32", "37", "37", "37", "37", "37", "42"],
+            "Healing Power": ["100%", "104%", "108%", "112%", "140%", "144%", "148%", "152%", "156%", "190%", "192%", "193%", "195%", "196%", "205%", "207%", "209%", "211%", "213%", "230%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Overheal":{
         "Usage": "Active (Head)",
@@ -1519,17 +1569,23 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["1", "1", "1", "1", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "4"],
+            "Healing↑": ["x1.45", "x1.47", "x1.49", "x1.52", "x1.55", "x1.59", "x1.63", "x1.68", "x1.73", "x1.8", "x1.81", "x1.83", "x1.84", "x1.86", "x1.87", "x1.89", "x1.9", "x1.92", "x1.93", "x2.0"],
+            "Max. Overheal": ["+25%", "+25%", "+25%", "+25%", "+50%", "+50%", "+50%", "+50%", "+50%", "+75%", "+75%", "+75%", "+75%", "+75%", "+75%", "+75%", "+75%", "+75%", "+75%", "+100%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Staff Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt if a Staff is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increase physical damage dealt and Max TP if a Staff is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
             "Damage Dealt↑": ["+1%", "+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+10%", "+11%", "+11%", "+12%", "+12%", "+13%", "+13%", "+14%", "+14%", "+15%"],
+            "Max TP↑": ["+1%", "+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+12%", "+13%", "+14%", "+15%", "+16%", "+17%", "+18%", "+19%", "+20%"],
         }
     },
     "Heavy Strike":{
@@ -1539,7 +1595,13 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "20", "20", "20", "20", "20", "24", "24", "24", "24", "24", "30", ],
+            "Attack Power": ["150%", "155%", "160%", "165%", "210%", "217%", "224%", "231%", "238%", "315%", "319%", "323%", "327%", "331%", "370%", "374%", "378%", "382%", "386%", "480%"],
+            "Infliction Rate": ["25%", "25%", "25%", "25%", "35%", "35%", "35%", "35%", "35%", "50%", "50%", "50%", "50%", "50%", "55%", "55%", "55%", "55%", "55%", "60%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "100%", "100%", "100%", "100%", "100%", "150%", "150%", "150%", "150%", "150%", "200%", "200%", "200%", "200%", "200%", "250%"],
+        }
     },
     "Medical Rod":{
         "Usage": "Active (Arms, TEC)",
@@ -1548,16 +1610,28 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "18", "18", "18", "18", "18", "21", "21", "21", "21", "21", "24"],
+            "Attack Power": ["135%", "139%", "143%", "147%", "185%", "190%", "195%", "200%", "205%", "275%", "278%", "281%", "284%", "287%", "320%", "323%", "326%", "329%", "332%", "370%"],
+            "Damage Taken↑": ["+20%", "+20%", "+20%", "+20%", "+25%", "+25%", "+25%", "+25%", "+25%", "+30%", "+30%", "+30%", "+30%", "+30%", "+35%", "+35%", "+35%", "+35%", "+35%", "+40%"],
+            "Duration": ["3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "4"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Vital Hit":{
         "Usage": "Active (Arms, TEC+VIT)",
         "Unlock": "Staff Mastery (Lv 10)",
-        "Description": "Staff: Deal melee Bash damage to one enemy. Deals more damage the more HP the party has.",
+        "Description": "Staff: Deal melee Bash damage to one enemy. Damage dealt is multiplied by the party's [SumOfCurrentHP/SumOfMaxHP]. (Party's Max HP count ignores Overheal and Force Boosts)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "19", "19", "19", "19", "19", "23", "23", "23", "23", "23", "27"],
+            "Attack Power": ["210%", "216%", "222%", "228%", "290%", "297%", "304%", "311%", "318%", "390%", "394%", "398%", "402%", "406%", "455%", "459%", "463%", "467%", "471%", "535%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -1577,7 +1651,10 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["50%", "50%", "50%", "50%", "65%", "65%", "65%", "65%", "65%", "80%", "80%", "80%", "80%", "80%", "90%", "90%", "90%", "90%", "90%", "100%"],
+            "Healing Power": ["20%", "21%", "22%", "23%", "23%", "25%", "27%", "29%", "32%", "32%", "33%", "34%", "35%", "36%", "36%", "37%", "38%", "39%", "40%", "40%"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
@@ -1597,7 +1674,9 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Drop Rate↑": ["+3%", "+5%", "+7%", "+9%", "+11%", "+12%", "+13%", "+14%", "+15%", "+16%", "+17%", "+18%", "+19%", "+20%", "+21%", "+22%", "+23%", "+24%", "+25%", "+26%"],
+        }
     },
     "Elem DEF Up":{
         "Usage": "Passive",
@@ -1613,20 +1692,26 @@ var data = {
     "Safe Passage":{
         "Usage": "Active (Field)",
         "Unlock": "Elem DEF Up (Lv 3)",
-        "Description": "Temporarily nullify the effect of damaging floors.",
+        "Description": "Temporarily decrease damage taken from damaging floors.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
+            "Damage Taken↓": ["x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15", "x0.1", "x0.01", "x0.01", "x0.01", "x0.01", "x0.01", "x0.01", "x0.01", "x0.01", "x0.01", "x0.01", "x0.01"],
+            "Duration (Steps)": ["25", "25", "25", "25", "45", "45", "45", "45", "45", "70", "72", "74", "76", "78", "80", "82", "84", "86", "88", "100"],
+        }
     },
-    "Phys ATK Up Up":{
+    "Phys ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increase physical damage dealt.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+3%", "+5%", "+6%", "+8%", "+10%", "+11%", "+12%", "+14%", "+15%", "+15%", "+16%", "+16%", "+17%", "+17%", "+18%", "+18%", "+19%", "+19%", "+20%"],
+        }
     },
     "Take":{
         "Usage": "Passive",
@@ -4252,7 +4337,7 @@ var data = {
     "Stigmata":{
         "Usage": "Active (No Parts, LUC)",
         "Unlock": "Phys ATK Up (Lv 5)",
-        "Description": "Attempt to inflict multiple binds on yourself and one enemy. If you have an ailment, remove it and attempt to inflict it on the target.",
+        "Description": "Attempt to inflict multiple binds on yourself, then attempt to inflict any binds and ailments on yourself onto one enemy.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4613,7 +4698,7 @@ var descriptions = {
     "Medic": "Healers that effectively treat any injury or affliction.",
     "Alchemist": "Elemental casters that strike the enemy's weakness.",
     "Troubadour": "Musicians that grant buffs to bolster and energize allies.",
-    "Ronin": "Katana users who change stances to adapt to the situation.",
+    "Ronin": "Offensive specialists who change stances to adapt to the situation.",
     "Hexer": "Support casters that weaken, incapacitate and control the enemy.",
     "Gunner": "Versatile Gun users that can cover damage, binds or healing.",
     "War Magus": "Witch doctors who can treat ally injuries or worsen the enemy's.",
