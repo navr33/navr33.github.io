@@ -1365,7 +1365,7 @@ var data = {
     "Perseverance":{
         "Usage": "Passive",
         "Unlock": "Snake Eyes (Lv 5)",
-        "Description": "Increase bind/ailment/Stun/Instant Death infliction chance if you failed an infliction last turn.",
+        "Description": "Increase bind/ailment/Stun/Instant Kill infliction chance if you failed an infliction last turn.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2242,7 +2242,7 @@ var data = {
     },
     "Issen":{
         "Usage": "Force Break (Arms, STR, LUC)",
-        "Description": "Deal ranged Cut damage to all enemies, with a chance to inflict Instant Death. Higher infliction chance on targets below 20% HP.",
+        "Description": "Deal ranged Cut damage to all enemies, with a chance to inflict Instant Kill. Higher infliction chance on targets below 20% HP.",
         "Starter": "0",
         "Max Level": "3",
         "Levels": ["1", "60", "99"],
@@ -2374,7 +2374,7 @@ var data = {
     "Beheading Cut":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Drawing Stance (Lv 3)",
-        "Description": "Katana: Requires Drawing Stance. Deal melee Cut damage to one enemy, with a chance to inflict Instant Death.",
+        "Description": "Katana: Requires Drawing Stance. Deal melee Cut damage to one enemy, with a chance to inflict Instant Kill.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2488,7 +2488,7 @@ var data = {
 "Hexer":{
     "Creeping Curse":{
         "Usage": "Force Boost",
-        "Description": "Drastically increase bind/ailment infliction chance. Remaining duration of debuffs on enemies does not go down.",
+        "Description": "Drastically increase bind/ailment infliction rates. Remaining duration of debuffs on enemies does not go down.",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -4263,7 +4263,7 @@ var data = {
     "Head Pierce":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Spear Mastery (Lv 3)",
-        "Description": "Spear: Deal melee Stab damage to one enemy, with a chance to inflict Head Bind or Instant Death.",
+        "Description": "Spear: Deal melee Stab damage to one enemy, with a chance to inflict Head Bind or Instant Kill.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4463,7 +4463,7 @@ var data = {
             }
         },
         "Amrita / Amrita II":{
-            "Usage": "1.500 / ? en",
+            "Usage": "1.500 / 10.000 en",
             "Description": "Restores TP to one ally.",
             "Starter": "0",
             "Max Level": "2",
@@ -4568,10 +4568,10 @@ var data = {
             }
         },
     },
-    "Attack (TEC)":{
+    "Attack":{
         "Fire/Ice/Volt Jar":{
             "Usage": "200 en",
-            "Description": "Deals ranged Fire/Ice/Volt damage to one enemy.",
+            "Description": "Deals TEC-based ranged Fire/Ice/Volt damage to one enemy.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -4581,7 +4581,7 @@ var data = {
         },
         "Flame/Frost/Storm Jar":{
             "Usage": "1.200 en",
-            "Description": "Deals ranged Fire/Ice/Volt damage to all enemies.",
+            "Description": "Deals TEC-based ranged Fire/Ice/Volt damage to all enemies.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -4591,7 +4591,7 @@ var data = {
         },
         "Cut/Bash/Stab Jar":{
             "Usage": "1.200 en",
-            "Description": "Deals ranged Cut/Bash/Stab damage to all enemies.",
+            "Description": "Deals STR-based ranged Cut/Bash/Stab damage to all enemies.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -4686,6 +4686,254 @@ var data = {
         },
     }
 },
+"Food Effects": {
+    "Western Dishes (Stats, healing and rewards)":{
+        "Western Food 1":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Escargot Citron": ["Increases ingredients obtained from enemies and gathering by 100%."],
+                "Hi Lagaar Coffee": ["The party recovers 15% max HP for every 10 steps taken."],
+                "Walnut Rye Bread": ["Increases the party's base Max TP by 30%."],
+                "Deer Steak": ["The party recovers 5% max HP at the end of each turn."],
+            }
+        },
+        "Western Food 2":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Fanged Sandwich": ["When gathering materials, party members have a chance to activate a gathering skill they don't have."],
+                "Autumn Pot-au-feu": ["The party recovers 10 Force for every 10 steps taken."],
+                "Permisson Pudding": ["Increases chance of encountering Rare Breeds."],
+                "Gibier Curry Rice": ["Increases the party's base Max HP by 20%."],
+            }
+        },
+        "Western Food 3":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Monster Fish Panino": ["Increases experience earned from battle by 20%."],
+                "Apple Sauce Bison Steak": ["Chance of randomly ambushing or being ambushed by enemies becomes 0."],
+                "Crab Cream Croquette": ["Increases the party's LUC stat by 10."],
+                "Forest Paella": ["The party recovers 2% max TP at the end of each turn."],
+            }
+        },
+        "Western Food 4":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Scorpion Green Pasta": ["Increases chance of successfully escaping from battle."],
+                "Honey German Potato": ["Increases the party's AGI stat by 10."],
+                "Strawberry-Jam Loin Steak": ["Increases the party's VIT stat by 10."],
+                "Rhino Meat Stew": ["Increases enemy drop rates."],
+            }
+        },
+        "Western Food 5":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Ominous Aspic": ["The party recovers 2% max TP for every 10 steps taken."],
+                "Triple Salisbury": ["The party recovers 3% max HP and 1% max TP at the end of each turn."],
+                "Steak Tartare": ["Increases the party's STR stat by 10."],
+                "Stone Gallete": ["Increases the party's TEC stat by 10."],
+            }
+        },
+        "Western Food 6":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Caterpillar Casserole": ["When defeated in battle, you can retry from the moment before it started. (Only once)"],
+                "Orange Sauce Kaiju Steak": ["Increases all of the party's stats by 5."],
+                "Bamboo Sarmale": ["When using a normal attack, recover HP equal to 5% of damage dealt."],
+                "Pumpkin Pie": ["When attacked, recover TP equal to 3% of damage taken."],
+            }
+        },
+    },
+    "Japanese Dishes (Battle boosts and Grimoires)":{
+        "Japanese Food 1":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Butterfly Tsukudani": ["Multiply damage dealt with Poison by 2."],
+                "Owl Cartilage Karaage": ["At the start of battle places a buff on the party for 1 turn, which imbues their weapon with Volt."],
+                "Walnut Yokan": ["Increases the chance of a Grimoire Chance happening."],
+                "Forest Deer Sukiyaki": ["At the start of battle places a buff on the party for 1 turn, which increases action speed by 100%."],
+            }
+        },
+        "Japanese Food 2":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Odd Ishiyaki Pot": ["Makes Bravant and Stonard target a full line."],
+                "Boar Tonjiru": ["At the start of battle places a buff on the party for 1 turn, which imbues their weapon with Ice."],
+                "Chestnut Chakin Shibori": ["Increases the chance of an Active Grimoire Chance happening."],
+                "Autumn Dango": ["Multiply damage dealt with Curse by 3."],
+            }
+        },
+        "Japanese Food 3":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Traditional Kabutoyaki": ["When attacking an enemy afflicted with Sleep, there's a chance to not wake it up."],
+                "Snow Egg Oden": ["At the start of battle places a buff on the party for 1 turn, which imbues their weapon with Fire."],
+                "Crab Chazuke": ["Increases the chance of an Enemy Grimoire Chance happening."],
+                "Apple Matcha Shaved Ice": ["Increases the accuracy reduction caused by Blind on enemies."],
+            }
+        },
+        "Japanese Food 4":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Shell Yakiniku": ["Enemies afflicted with Paralysis have a 100% chance of being unable to act."],
+                "Strawberry Daifuku": ["Multiply damage dealt with attack items by 3."],
+                "Sakura Tea": ["Increases the chance of a Passive Grimoire Chance happening."],
+                "Stone Bird Nikujaga": ["Increase the chance of created Grimoires having an additional effect."],
+            }
+        },
+        "Japanese Food 5":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Tortoise Takikomi Gohan": ["Strongly increase the chance of created Grimoires being very high level or very low level."],
+                "Horse Shabu Shabu": ["Chance of Rare Breeds appearing becomes 0."],
+                "Sky Chawanmushi": ["Increase the chance of created Grimores having higher-level skills."],
+                "Gem Nikogori": ["Increase the bind/ailment infliction rates of infliction items."],
+            }
+        },
+        "Japanese Food 6":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Hermit Sugata-zukuri": ["Single-target attack items are not consumed when used."],
+                "Black Osuimono": ["Increases the chance of a Grimoire Fever happening/continuing."],
+                "Sumo Chanko Pot": ["Increases the level of equipped Grimoires by 2."],
+                "Eastern Nishime": ["FOE encounters will always be a preemptive strike."],
+            }
+        },
+    },
+    "Chinese Dishes (Bind/ailment resilience)":{
+        "Chinese Food 1":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Stir-Fried Roller": ["Increases natural bind/ailment recovery rate."],
+                "Citron Owl Bowl": ["Increases Poison resistance by 50%."],
+                "Seared Deer": ["At the start of battle places a buff on the party for 3 turns, which nullifies one bind infliction received."],
+                "Black Tea": ["Increases Blind resistance by 50%."],
+            }
+        },
+        "Chinese Food 2":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Mala Inferno Pot": ["Decrease damage taken from Poison, Curse and Fear by 50%."],
+                "Sweet and Sour Moa": ["At the start of battle places a buff on the party for 3 turns, which nullifies one ailment infliction received."],
+                "Chestnut Moon Cake": ["Increases Leg Bind resistance by 50%."],
+                "Dragon Jelly": ["Increases Paralysis resistance by 50%."],
+            }
+        },
+        "Chinese Food 3":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Apple Blue Aiyu Jelly": ["Makes Theriaca items target a full line."],
+                "Bison Lamian": ["Party members recover 25% max HP when inflicted with a bind/ailment."],
+                "Horse Bao": ["Increases Sleep resistance by 50%."],
+                "Snow Crab Foo Young": ["Increases Arm Bind resistance by 50%."],
+            }
+        },
+        "Chinese Food 4":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Fried Whole Spider": ["At the start of battle places a buff on the party for 3 turns, which lets them survive lethal damage (with 1 HP) once."],
+                "Forest Fried Rice": ["Party members recover 5% max TP when inflicted with a bind/ailment."],
+                "Stewed Rhino": ["Increases Panic resistance by 50%."],
+                "Pepper Cockatrice": ["Increases Curse resistance by 50%."],
+            }
+        },
+        "Chinese Food 5":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Nozuchi Soup": ["Binds/ailments on party members are guaranteed to be naturally healed after 3 turns."],
+                "Nest and Mushroom Soup": ["Party members recover 20 Force when inflicted with a bind/ailment."],
+                "Zhulongbao": ["Increases Head Bind resistance by 50%."],
+                "Beggar's Fowl": ["Increases Fear resistance by 50%."],
+            }
+        },
+        "Chinese Food 6":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Dangerous Flowering Tea": ["Binds/ailments on enemies are guaranteed to last 3 turns."],
+                "Shumai": ["Increases Petrify resistance by 50%."],
+                "Twice-Cooked Meat": ["Dead party members have a 5% chance to revive (with 20 HP) at the end of each turn."],
+                "BBQ Lizard": ["Increases Instant Kill resistance by 50%."],
+            }
+        },
+    },
+    "Special Menu":{
+        "Tea Brewing":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Yggdrasil-Bud Tea": ["Strongly increases drop rates. When gathering, grants rare items."],
+                "Yggdrasil-Sprout Tea": ["Strongly increases chance of a Premium Grimoire Chance happening."],
+                "Yggdrasil-Clover Tea": ["Multiply experience earned from battle by 3. Non-active guild members will also gain some experience."],
+            }
+        },
+        "Ultimate Dishes":{
+            "Description": "",
+            "Starter": "0",
+            "Max Level": "1",
+            "Levels": ["Effect"],
+            "Data": {
+                "Court Haute Cuisine": ["Low chance to restore all broken Force Gauges at the end of each battle."],
+                "Traditional Osechi": ["Prevents random enemy encounters."],
+                "Imperial Manhan Quanxi": ["If the whole party dies in battle, all members will revive with 1 HP. (Only once)"],
+            }
+        },
+    },
+},
 }
 
 //End of database
@@ -4708,6 +4956,7 @@ var descriptions = {
     "Fafnir": "A swordsman with high control of Force. He can transform to increase his capabilities.",
     "Enemy Grimoires": "Enemy skills available for use through Grimoire Stones.",
     "Battle Items": "Consumable items that can be used in battle.",
+    "Food Effects": "Bonuses granted by food in the Cafe.",
 }
 
 function toggle_data(table_id){
@@ -4867,12 +5116,15 @@ function populate_item(class_name){
             skill_name.innerText = skill
             skill_name.colSpan = 2
 
-            second_row = document.createElement("tr")
-            skill_table.appendChild(second_row)
 
-            usage = document.createElement("td")
-            second_row.appendChild(usage)
-            usage.innerText = current_skill["Usage"]
+            if (current_skill.hasOwnProperty("Usage")){
+                second_row = document.createElement("tr")
+                skill_table.appendChild(second_row)
+
+                usage = document.createElement("td")
+                second_row.appendChild(usage)
+                usage.innerText = current_skill["Usage"]
+            }
             
             third_row = document.createElement("tr")
             skill_table.appendChild(third_row)
@@ -4887,9 +5139,11 @@ function populate_item(class_name){
                 toggle_data(skill)
             })
 
-            description = document.createElement("p")
-            data_block.appendChild(description)
-            description.innerHTML = current_skill["Description"]
+            if (current_skill.hasOwnProperty("Usage")){
+                description = document.createElement("p")
+                data_block.appendChild(description)
+                description.innerHTML = current_skill["Description"]
+            }
 
             levels_table = document.createElement("table")
             data_block.appendChild(levels_table)
@@ -4899,6 +5153,9 @@ function populate_item(class_name){
             if (current_skill["Data"] !== ""){
                 start_level = document.createElement("th")
                 start_level.innerText = "Level"
+                if (class_name == "Food Effects"){
+                    start_level.innerText = "Name"
+                }
                 levels_row.appendChild(start_level)
             }
             for (let i = 1; i <= current_skill["Max Level"]; i++){
@@ -4929,6 +5186,9 @@ function populate_item(class_name){
                     }
                     effect_value = document.createElement("td")
                     effect_value.innerText = current_effect[value]
+                    if (class_name == "Food Effects"){
+                        effect_value.style.textAlign = "left"
+                    }
                     effect_row.appendChild(effect_value)
                     latest = effect_value
                 }
