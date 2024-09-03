@@ -954,7 +954,7 @@ var data = {
     "Aegis":{
         "Usage": "Passive",
         "Unlock": "Elem DEF Up (Lv 5)",
-        "Description": "Chance to survive lethal damage with 1 HP.",
+        "Description": "Chance to survive lethal damage with 1 HP. (Counts as the same skill as Beast's Deadly Resolve)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3806,7 +3806,7 @@ var data = {
     },
     "True Endurance":{
         "Usage": "Force Break (Arms, STR, VIT)",
-        "Description": "For this turn, nullify all bind/ailment/stun inflictions received, survive all lethal damage with 1 HP, and take all attacks in place of your allies. At the end of turn, if your HP is not full, deal melee Stab damage to all enemies.",
+        "Description": "For this turn, nullify all bind/ailment/stun inflictions received, survive all lethal damage with 1 HP, and take all attacks in place of your allies. At the end of turn, if you received damage, deal melee Stab damage to all enemies.",
         "Starter": "0",
         "Max Level": "3",
         "Levels": ["1", "60", "99"],
@@ -3821,7 +3821,9 @@ var data = {
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["6%", "7%", "9%", "10%", "12%", "13%", "15%", "16%", "18%", "20%", "21%", "23%", "24%", "26%", "27%", "29%", "30%", "32%", "33%", "35%"],
+        }
     },
     "Lick Wounds":{
         "Usage": "Passive (Head, TEC+VIT)",
@@ -3830,7 +3832,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "7", "7", "7", "7", "7", "10", "10", "10", "10", "10", "12", "12", "12", "12", "12", "15"],
+            "Healing Power": ["100%", "103%", "106%", "109%", "140%", "144%", "148%", "152%", "156%", "200%", "208%", "216%", "224%", "232%", "300%", "308%", "316%", "324%", "332%", "420%"],
+            "Binds Removed": ["1", "1", "1", "1", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Auto-Lick":{
         "Usage": "Passive",
@@ -3839,7 +3846,9 @@ var data = {
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "5",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["10%", "12%", "13%", "15%", "16%", "18%", "19%", "21%", "22%", "24%"],
+        }
     },
     "Protect":{
         "Usage": "Active (Arms)",
@@ -3848,7 +3857,10 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "8"],
+            "Damage Taken↓": ["-15%", "-17%", "-19%", "-21%", "-30%", "-32%", "-34%", "-36%", "-38%", "-50%", "-51%", "-52%", "-53%", "-54%", "-55%", "-56%", "-57%", "-58%", "-59%", "-65%"],
+        }
     },
     "Hit-Taker":{
         "Usage": "Active (Arms)",
@@ -3857,16 +3869,27 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "5", "5", "5", "5", "5", "10", "10", "10", "10", "10", "12", "12", "12", "12", "12", "14"],
+            "Damage Taken↓": ["-15%", "-17%", "-19%", "-21%", "-23%", "-25%", "-27%", "-29%", "-31%", "-35%", "-36%", "-37%", "-38%", "-39%", "-40%", "-41%", "-42%", "-43%", "-44%", "-45%"],
+            "Max. Protects": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "5", "5", "5", "5", "5", "6", "6", "6", "6", "6", "8"],
+        }
     },
     "Protection Vow":{
         "Usage": "Active (Arms)",
         "Unlock": "Protect (Lv 3), Hit Taker (Lv 3)",
-        "Description": "Place a buff on yourself for several turns, which makes you take attacks in place of party members below 50% HP. Decrease damage taken from those redirected attacks.",
+        "Description": "Place a buff on yourself for several turns, which makes you take attacks in place of party members below 50% HP. Decrease damage taken from those redirected attacks. Activation chance per turn starts at 100% and goes down with each activation.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "18", "18", "18", "18", "18", "18", "18", "18", "18", "18", "24"],
+            "Damage Taken↓": ["-15%", "-17%", "-19%", "-21%", "-23%", "-25%", "-27%", "-29%", "-31%", "-35%", "-36%", "-37%", "-38%", "-39%", "-40%", "-41%", "-42%", "-43%", "-44%", "-45%"],
+            "Max. Protects": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Chance Fadeout": ["15%", "15%", "15%", "15%", "12%", "12%", "12%", "12%", "12%", "10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%", "10%", "8%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Self-Defense":{
         "Usage": "Active (Head)",
@@ -3875,7 +3898,13 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "10"],
+            "Damage Dealt↓": ["-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%", "-30%"],
+            "Damage Taken↓": ["-25%", "-27%", "-29%", "-30%", "-30%", "-32%", "-33%", "-34%", "-35%", "-35%", "-36%", "-37%", "-38%", "-39%", "-40%", "-41%", "-42%", "-43%", "-44%", "-45%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "Beast Roar":{
         "Usage": "Active (Head)",
@@ -3884,7 +3913,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "13", "13", "13", "13", "13", "13", "13", "13", "13", "13", "16"],
+            "Damage Dealt↓": ["-15%", "-17%", "-19%", "-20%", "-20%", "-22%", "-23%", "-24%", "-25%", "-25%", "-26%", "-27%", "-28%", "-29%", "-30%", "-31%", "-32%", "-33%", "-34%", "-35%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "Preemptive Roar":{
         "Usage": "Passive",
@@ -3893,7 +3927,9 @@ var data = {
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "5",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["25%", "30%", "35%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"],
+        }
     },
     "Claw Mastery":{
         "Usage": "Passive",
@@ -3909,11 +3945,16 @@ var data = {
     "Tiger Blow":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Claw Mastery (Lv 1)",
-        "Description": "Claw: Deal melee Bash damage to one enemy. Recover HP based on damage dealt.",
+        "Description": "Claw: Deal melee Bash damage to one enemy. Recover HP equal to 50% of damage dealt.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "13", "13", "13", "13", "13", "15"],
+            "Attack Power": ["120%", "126%", "132%", "138%", "155%", "161%", "167%", "173%", "179%", "200%", "202%", "205%", "207%", "210%", "235%", "237%", "240%", "242%", "245%", "280%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Wolf Fang":{
         "Usage": "Active (Arms, STR)",
@@ -3922,7 +3963,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "19", "19", "19", "19", "19", "22", "22", "22", "22", "22", "25"],
+            "Attack Power": ["75%", "77%", "78%", "80%", "95%", "97%", "98%", "99%", "100%", "120%", "121%", "122%", "123%", "124%", "140%", "141%", "142%", "143%", "144%", "165%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Comet Drop":{
         "Usage": "Active (Legs, STR)",
@@ -3931,7 +3977,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "11", "11", "11", "11", "11", "15", "15", "15", "15", "15", "16", "16", "16", "16", "16", "18"],
+            "Attack Power": ["170%", "175%", "180%", "185%", "215%", "220%", "225%", "230%", "235%", "280%", "283%", "286%", "289%", "292%", "320%", "323%", "326%", "329%", "332%", "370%"],
+            "Accuracy": ["-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Wildblow":{
         "Usage": "Active (Arms, STR)",
@@ -3940,7 +3991,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "19", "19", "19", "19", "19", "22", "22", "22", "22", "22", "25"],
+            "Attack Power": ["270%", "278%", "286%", "294%", "350%", "358%", "366%", "374%", "382%", "445%", "451%", "457%", "463%", "469%", "515%", "521%", "527%", "533%", "539%", "585%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Beast Dance":{
         "Usage": "Active (Legs, STR)",
@@ -3949,7 +4005,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "20", "20", "20", "20", "20", "22", "22", "22", "22", "22", "24"],
+            "Attack Power": ["160%", "165%", "170%", "175%", "195%", "200%", "205%", "210%", "215%", "240%", "242%", "244%", "246%", "248%", "270%", "272%", "274%", "276%", "278%", "300%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+        }
     },
     "Savage Rush":{
         "Usage": "Active (Arms, STR)",
@@ -3958,25 +4019,40 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "20", "20", "20", "20", "20", "23", "23", "23", "23", "23", "26"],
+            "Attack Power": ["60%", "61%", "62%", "63%", "70%", "71%", "72%", "73%", "74%", "85%", "86%", "87%", "88%", "89%", "100%", "101%", "102%", "103%", "104%", "115%"],
+            "Accuracy": ["-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%", "-40%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Berserk":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Beast Dance (Lv 3), Savage Rush (Lv 3)",
-        "Description": "Claw: Deal 5 hits of ranged Cut damage to random allies or enemies.",
+        "Description": "Claw: Deal 5 hits of ranged Cut damage to random allies or enemies. Hits allies at half the power.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "14", "14", "14", "14", "14", "16", "16", "16", "16", "16", "17", "17", "17", "17", "17", "18"],
+            "Attack Power": ["100%", "102%", "103%", "105%", "120%", "122%", "123%", "125%", "126%", "145%", "147%", "148%", "150%", "151%", "170%", "172%", "173%", "175%", "176%", "200%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Endurance":{
         "Usage": "Active (Arms, STR+VIT)",
         "Unlock": "Loyalty Mastery (Lv 10), Claw Mastery (Lv 10)",
-        "Description": "Decrease damage taken for this turn. At the end of turn, deal melee Cut damage to all enemies.",
+        "Description": "Decrease damage taken for this turn. At the end of turn, deal melee Cut damage to all enemies. Damage dealt increases by 25% per hit received (max +200%).",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "14", "14", "14", "14", "14", "22", "22", "22", "22", "22", "24", "24", "24", "24", "24", "26"],
+            "Attack Power": ["125%", "128%", "132%", "135%", "150%", "154%", "157%", "161%", "164%", "185%", "187%", "189%", "191%", "193%", "210%", "212%", "214%", "216%", "218%", "240%"],
+            "Damage Taken↓": ["-5%", "-5%", "-5%", "-5%", "-10%", "-10%", "-10%", "-10%", "-10%", "-15%", "-15%", "-15%", "-15%", "-15%", "-17%", "-17%", "-17%", "-17%", "-17%", "-20%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -3992,11 +4068,13 @@ var data = {
     "Deadly Resolve":{
         "Usage": "Passive",
         "Unlock": "HP Up (Lv 5)",
-        "Description": "Chance to survive lethal damage with 1 HP.",
+        "Description": "Chance to survive lethal damage with 1 HP. (Counts as the same skill as Protector's Aegis)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["10%", "12%", "13%", "15%", "16%", "18%", "19%", "21%", "22%", "24%", "25%", "26%", "27%", "28%", "29%", "30%", "31%", "32%", "33%", "35%"],
+        }
     },
     "Phys ATK Up":{
         "Usage": "Passive",
@@ -4027,7 +4105,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10", "10", "10", "10", "10", "12", "12", "12", "12", "12", "14"],
+            "Damage Dealt↑": ["x1.4", "x1.43", "x1.46", "x1.5", "x1.53", "x1.56", "x1.6", "x1.63", "x1.66", "x1.7", "x1.71", "x1.72", "x1.73", "x1.74", "x1.75", "x1.76", "x1.77", "x1.78", "x1.79", "x1.8"],
+            "Damage Taken↓": ["x0.85", "x0.85", "x0.85", "x0.85", "x0.8", "x0.8", "x0.8", "x0.8", "x0.8", "x0.75", "x0.75", "x0.75", "x0.75", "x0.75", "x0.7", "x0.7", "x0.7", "x0.7", "x0.7", "x0.65"],
+            "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
@@ -4171,7 +4254,7 @@ var data = {
     "Morale Boost":{
         "Usage": "Passive",
         "Unlock": "Order Mastery (Lv 10)",
-        "Description": "Increase Force gains of allies with buffs while you're alive. (Does not stack)",
+        "Description": "Increase natural Force gain of allies with buffs while you're alive. (Does not stack)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4565,7 +4648,7 @@ var data = {
     "Force Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Force Gauge gains. (Automatically unlocks other skills that require this one)<br>-For reference, normal Force gain is 5 to 15 per action.",
+        "Description": "Increase natural Force gain. (Automatically unlocks other skills that require this one)<br>-For reference, normal Force gain is 5 to 15 per action.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4621,7 +4704,7 @@ var data = {
     "Force Charge":{
         "Usage": "Active (Head)",
         "Unlock": "Absorb (Lv 5)",
-        "Description": "Enter a charge state until the end of next turn, which increases damage dealt and Force gains.",
+        "Description": "Enter a charge state until the end of next turn, which increases damage dealt and natural Force gain.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5506,9 +5589,9 @@ var descriptions = {
     "Medic": "Healers that effectively treat any injury or affliction.",
     "Alchemist": "Elemental casters that strike the enemy's weakness.",
     "Troubadour": "Musicians that grant buffs to bolster and energize allies.",
-    "Ronin": "Offensive specialists who change stances to adapt to the situation.",
+    "Ronin": "Katana users who change their stance to adapt to the situation.",
     "Hexer": "Support casters that weaken, incapacitate and control the enemy.",
-    "Gunner": "Versatile Gun users that can cover damage, binds or healing.",
+    "Gunner": "Versatile Gun users that can provide damage, binding or healing.",
     "War Magus": "Witch doctors who can treat ally injuries or worsen the enemy's.",
     "Beast": "Fierce but loyal animals that protect allies with their own body.",
     "Sovereign": "Support casters that manage buffs to strengthen the party.",
