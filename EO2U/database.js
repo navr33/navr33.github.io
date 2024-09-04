@@ -4159,7 +4159,10 @@ var data = {
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "HP Gain (Fixed)": ["7", "10", "13", "16", "17", "19", "22", "26", "29", "32", "34", "36", "38", "40", "42", "44", "49", "52", "55", "70"],
+            "HP Gain (Max HP)": ["2%", "2%", "2%", "2%", "5%", "5%", "5%", "5%", "5%", "8%", "8%", "8%", "8%", "8%", "8%", "8%", "8%", "8%", "8%", "12%"],
+        }
     },
     "Attack Order":{
         "Usage": "Active (Head)",
@@ -4168,7 +4171,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "30"],
+            "Damage Dealt↑": ["+20%", "+22%", "+24%", "+25%", "+25%", "+27%", "+28%", "+29%", "+30%", "+30%", "+31%", "+32%", "+33%", "+34%", "+35%", "+36%", "+37%", "+38%", "+39%", "+40%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "Guard Order":{
         "Usage": "Active (Head)",
@@ -4177,7 +4185,12 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "30"],
+            "Damage Taken↓": ["-15%", "-17%", "-19%", "-20%", "-20%", "-22%", "-23%", "-24%", "-25%", "-25%", "-26%", "-27%", "-28%", "-29%", "-30%", "-31%", "-32%", "-33%", "-34%", "-35%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "Dauntless Order":{
         "Usage": "Active (Head)",
@@ -4186,16 +4199,27 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "25"],
+            "Activation Chance": ["50%", "50%", "50%", "50%", "60%", "60%", "60%", "60%", "60%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "80%"],
+            "HP Gain": ["1", "5", "10", "20", "30", "40", "55", "75", "100", "125", "135", "145", "155", "165", "175", "185", "195", "205", "215", "250"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "Holy Crown":{
         "Usage": "Active (Head)",
         "Unlock": "Order Mastery (Lv 3)",
-        "Description": "Place a buff on one ally or several turns, which increases the effect of healing skills received.",
+        "Description": "Place a buff on one ally for several turns, which increases the effect of healing skills received.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "14"],
+            "Healing↑": ["+35%", "+37%", "+38%", "+40%", "+40%", "+42%", "+45%", "+47%", "+50%", "+50%", "+52%", "+53%", "+55%", "+56%", "+58%", "+59%", "+61%", "+62%", "+64%", "+65%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "Protect Order":{
         "Usage": "Active (Head, TEC+VIT)",
@@ -4204,16 +4228,25 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "14", "14", "14", "14", "14", "24", "24", "24", "24", "24", "24", "24", "24", "24", "24", "28"],
+            "Healing Power": ["40%", "45%", "50%", "55%", "55%", "60%", "65%", "70%", "75%", "75%", "77%", "78%", "80%", "81%", "83%", "84%", "86%", "87%", "89%", "90%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "Ad Nihilo":{
         "Usage": "Active (Arms, TEC)",
         "Unlock": "Order Mastery (Lv 5)",
-        "Description": "Dispel one buff and debuff from an enemy. Deal Almighty damage to the target if at least one modifier was removed.",
+        "Description": "Dispel one buff and debuff from an enemy. Deal Almighty damage to the target if at least one modifier was removed. Cannot miss.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "16", "16", "16", "16", "16", "22", "22", "22", "22", "22", "26", "26", "26", "26", "26", "32"],
+            "Attack Power": ["100%", "110%", "120%", "130%", "170%", "180%", "190%", "200%", "210%", "270%", "278%", "286%", "294%", "302%", "335%", "343%", "351%", "359%", "367%", "410%"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "Negotiation":{
         "Usage": "Active (Head)",
@@ -4222,16 +4255,28 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "14", "14", "14", "14", "14", "16"],
+            "HP Gain (Fixed)": ["30", "33", "36", "39", "80", "85", "90", "95", "100", "180", "185", "190", "195", "200", "270", "275", "280", "285", "290", "360"],
+            "HP Gain (Max HP)": ["20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%"],
+            "Force Gain": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20", "20", "20", "20", "20", "25", "25", "25", "25", "25", "30"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "White Noble":{
         "Usage": "Active (Head)",
         "Unlock": "Negotiation (Lv 5)",
-        "Description": "Dispel one buff and one debuff from all allies. Restore HP and Force to the targets where at least one modifier was removed, doubled if both.",
+        "Description": "Dispel one buff and one debuff from all allies. Restore HP and Force to targets where at least one modifier was removed, doubled if both.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "10", "10", "10", "10", "10", "22", "22", "22", "22", "22", "25", "25", "25", "25", "25", "28"],
+            "HP Gain (Fixed)": ["30", "33", "36", "39", "80", "85", "90", "95", "100", "180", "185", "190", "195", "200", "270", "275", "280", "285", "290", "360"],
+            "HP Gain (Max HP)": ["20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%"],
+            "Force Gain": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20", "20", "20", "20", "20", "25", "25", "25", "25", "25", "30"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Clearance":{
         "Usage": "Active (Head)",
@@ -4240,16 +4285,24 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20"],
+            "TP Gain": ["10", "11", "12", "13", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Prevent Order":{
         "Usage": "Active (Head)",
         "Unlock": "Order Mastery (Lv 7)",
         "Description": "Place a buff on an ally line for several turns, which nullifies ailment inflictions received. (Buff is consumed when activated)",
         "Starter": "0",
-        "Max Level": "20",
-        "Natural Level": "10",
-        "Data": ""
+        "Max Level": "10",
+        "Natural Level": "5",
+        "Data": {
+            "TP Cost": ["14", "12", "9", "6", "14", "12", "9", "6", "4", "14"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "Morale Boost":{
         "Usage": "Passive",
@@ -4258,7 +4311,9 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Force Gain↑": ["+3%", "+5%", "+8%", "+10%", "+13%", "+16%", "+19%", "+23%", "+26%", "+30%", "+31%", "+33%", "+34%", "+36%", "+37%", "+39%", "+40%", "+42%", "+43%", "+45%"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
@@ -4274,20 +4329,28 @@ var data = {
     "Link Order":{
         "Usage": "Active (Arms, TEC)",
         "Unlock": "TP Up (Lv 1)",
-        "Description": "Target one enemy and prepare to follow up after the first elemental attack to them this turn. Deals ranged damage of the same element to the target. Up to 40% of the triggering attack's damage is added to this attacks own calculated damage.",
+        "Description": "Target one enemy and prepare to follow up after the first elemental attack to them this turn. Deals ranged damage of the same element to the target. A percentage of the triggering attack's damage is added to this attack's own calculated damage, but this bonus cannot exceed said calculated damage. Cannot miss.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "20", "20", "20", "20", "20", "22", "22", "22", "22", "22", "24"],
+            "Attack Power": ["100%", "104%", "108%", "112%", "160%", "164%", "168%", "172%", "176%", "230%", "232%", "234%", "236%", "238%", "255%", "257%", "259%", "261%", "263%", "290%"],
+            "Inherited Damage": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "50%"],
+        }
     },
     "Link Order II":{
         "Usage": "Active (Arms, TEC)",
         "Unlock": "Link Order (Lv 5)",
-        "Description": "Target one enemy and prepare to follow up after the first elemental attack to them this turn. Deals ranged damage of the same element to all enemies. Up to 40% of the triggering attack's damage is added to this attacks own calculated damage.",
+        "Description": "Target one enemy and prepare to follow up after the first elemental attack to them this turn. Deals ranged damage of the same element to all enemies. A percentage of the triggering attack's damage is added to this attack's own calculated damage, but this bonus cannot exceed said calculated damage. Cannot miss.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "20", "20", "20", "20", "20", "40", "40", "40", "40", "40", "44", "44", "44", "44", "44", "48"],
+            "Attack Power": ["100%", "104%", "108%", "112%", "160%", "164%", "168%", "172%", "176%", "230%", "232%", "234%", "236%", "238%", "255%", "257%", "259%", "261%", "263%", "290%"],
+            "Inherited Damage": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "50%"],
+        }
     },
     "Fire Circle":{
         "Usage": "Active (Arms)",
@@ -4296,7 +4359,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
+            "Damage Taken↓\n(Allies)": ["x0.85", "x0.83", "x0.8", "x0.78", "x0.7", "x0.68", "x0.67", "x0.65", "x0.64", "x0.6", "x0.59", "x0.58", "x0.57", "x0.56", "x0.55", "x0.54", "x0.53", "x0.52", "x0.51", "x0.5"],
+            "Damage Taken↑\n(Enemies)": ["x1.15", "x1.15", "x1.15", "x1.15", "x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.3"],
+        }
     },
     "Freeze Circle":{
         "Usage": "Active (Arms)",
@@ -4305,7 +4372,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
+            "Damage Taken↓\n(Allies)": ["x0.85", "x0.83", "x0.8", "x0.78", "x0.7", "x0.68", "x0.67", "x0.65", "x0.64", "x0.6", "x0.59", "x0.58", "x0.57", "x0.56", "x0.55", "x0.54", "x0.53", "x0.52", "x0.51", "x0.5"],
+            "Damage Taken↑\n(Enemies)": ["x1.15", "x1.15", "x1.15", "x1.15", "x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.3"],
+        }
     },
     "Shock Circle":{
         "Usage": "Active (Arms)",
@@ -4314,7 +4385,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
+            "Damage Taken↓\n(Allies)": ["x0.85", "x0.83", "x0.8", "x0.78", "x0.7", "x0.68", "x0.67", "x0.65", "x0.64", "x0.6", "x0.59", "x0.58", "x0.57", "x0.56", "x0.55", "x0.54", "x0.53", "x0.52", "x0.51", "x0.5"],
+            "Damage Taken↑\n(Enemies)": ["x1.15", "x1.15", "x1.15", "x1.15", "x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.3"],
+        }
     },
     "Cheer":{
         "Usage": "Active (Head)",
@@ -4323,7 +4398,11 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["30", "30", "30", "30", "60", "60", "60", "60", "60", "90", "90", "90", "90", "90", "120", "120", "120", "120", "120", "150"],
+            "TP Gain": ["30", "32", "34", "36", "60", "63", "66", "69", "72", "100", "103", "106", "109", "112", "145", "148", "152", "156", "160", "200"],
+            "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -4339,20 +4418,26 @@ var data = {
     "Royal Veil":{
         "Usage": "Passive",
         "Unlock": "HP Up (Lv 5)",
-        "Description": "At the end of turn, if your HP is full, restore HP to the whole party.",
+        "Description": "At the end of turn, if your HP is full, restore HP to the whole party. Healing is based on each unit's Max HP.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "HP Gain (Fixed)": ["4", "6", "8", "11", "14", "17", "21", "25", "29", "33", "35", "37", "40", "43", "46", "50", "54", "58", "62", "72"],
+            "HP Gain (Max HP)": ["1%", "1%", "1%", "1%", "4%", "4%", "4%", "4%", "4%", "7%", "7%", "7%", "7%", "7%", "7%", "7%", "7%", "7%", "7%", "8%"],
+        }
     },
     "Triumphant Cry":{
         "Usage": "Passive",
         "Unlock": "HP Up (Lv 10)",
-        "Description": "Restore HP to the whole party at the end of battle.",
+        "Description": "Restore HP to the whole party at the end of battle. Healing is based on each unit's Max HP.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "HP Gain (Fixed)": ["7", "9", "11", "13", "15", "17", "19", "21", "23", "25", "27", "29", "31", "33", "37", "41", "45", "50", "55", "65"],
+            "HP Gain (Max HP)": ["6%", "7%", "8%", "9%", "10%", "11%", "12%", "13%", "14%", "15%", "15%", "16%", "16%", "17%", "17%", "18%", "18%", "19%", "19%", "20%"],
+        }
     },
     "Monarch March":{
         "Usage": "Passive (Field)",
@@ -4361,7 +4446,9 @@ var data = {
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "HP Gain": ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20", "21", "23", "24", "26", "27", "29", "30", "32", "33", "35"],
+        }
     },
     "Curb DEF Up":{
         "Usage": "Passive",
