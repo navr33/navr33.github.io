@@ -3004,7 +3004,7 @@ var data = {
     "Sacrifice":{
         "Usage": "Active (Head, TEC, LUC)",
         "Unlock": "HP Up (Lv 5)",
-        "Description": "Kill one ally to deal ranged Almighty damage to all enemies, with a chance to inflict any bind/ailment the ally had. Deals more damage the more HP the sacrificed ally had.",
+        "Description": "Kill one ally to deal ranged Almighty damage to all enemies, with a chance to inflict any bind/ailment the ally had. Becomes stronger the more HP the sacrificed ally had: Damage dealt is multiplied by [1+√(CurrentHP/1000)].",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
