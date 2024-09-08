@@ -1696,7 +1696,7 @@ var data = {
         "Altar":{
             "Usage": "Active (Head, INT, LUC)",
             "Unlock": "Windstorm (Lv 5), Earthspike (Lv 5), Rockfall (Lv 5)",
-            "Description": "Prepare an attack that will hit in 3 more turns, at the start of the turn. Deals ranged Bash damage to one enemy, with a chance to inflict Petrify. Damage dealt increases for each time the target's weakness is hit while preparing, up to 20 stacks. (Not a Magi skills despite the in-game description. Cancelled if you become incapable of acting while preparing)",
+            "Description": "Prepare an attack that will hit in 3 more turns, at the start of the turn. Deals ranged Bash damage to one enemy, with a chance to inflict Petrify. Damage dealt increases for each time the target's weakness is hit while preparing, up to 20 stacks. (Not a Magi skill despite the in-game description. Cancelled if you become incapable of acting while preparing)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -4088,7 +4088,7 @@ var data = {
         },
         "Gathering Skill":{
             "Usage": "Passive (Field)",
-            "Description": "Obtain additional materials when gathering from Take, Chop or Mine points.",
+            "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield grows from 1 to 3 based on user's level.",
             "Starter": "0",
             "Max Level": "0",
             "Data": ""
@@ -4265,7 +4265,7 @@ var data = {
         },
         "Chop":{
             "Usage": "Passive (Field)",
-            "Description": "Obtain additional materials when gathering from Chop points.",
+            "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "0",
             "Max Level": "0",
             "Data": ""
@@ -4503,7 +4503,7 @@ var data = {
         },
         "Mine":{
             "Usage": "Passive (Field)",
-            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "0",
             "Max Level": "0",
             "Data": ""
@@ -4728,7 +4728,7 @@ var data = {
         },
         "Take":{
             "Usage": "Passive (Field)",
-            "Description": "Obtain additional materials when gathering from Take points.",
+            "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "0",
             "Max Level": "0",
             "Data": ""
