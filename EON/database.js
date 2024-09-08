@@ -29,7 +29,7 @@ var data = {
         "Afterimage":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Attack skills gain a chance to create an Afterimage if they hit. Afterimages are clones of you with your same stats and passives, but decreased HP and without your buffs/debuffs. After the turn where they were created, Afterimages use the skill that created them then vanish at the end of the turn.",
+            "Description": "Attack skills gain a chance to create an Afterimage when they hit. Afterimages are clones of the user with their same stats and passive skills, but decreased HP and without their buffs/debuffs. After the turn where they are created, Afterimages use the skill that created them then vanish at the end of the turn.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -128,7 +128,7 @@ var data = {
         "Chop":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Chop points.",
+            "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -263,7 +263,7 @@ var data = {
         "Act Breaker":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Burst Blade (Lv 2)",
-            "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Stun. Infliction chance depends on the target's remaining HP: Chance is multiplied by (CurrentHP/MaxHP)<sup>2</sup>.",
+            "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Stun. Infliction chance depends on the target's remaining HP: Chance is multiplied by [(CurrentHP/MaxHP)<sup>2</sup>].",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -448,7 +448,7 @@ var data = {
         "Chop":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Chop points.",
+            "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -749,7 +749,7 @@ var data = {
         "Take":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Take points.",
+            "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -1064,7 +1064,7 @@ var data = {
         "Natural Instinct":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Take, Chop or Mine points.",
+            "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield grows from 1 to 3 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -1259,7 +1259,7 @@ var data = {
     "Force":{
         "Musou":{
             "Usage": "Force Boost",
-            "Description": "Gain the effects of the 3 stances at level 1 (affected by Full Proficiency), on top of your active stance. Your active stance's duration does not go down, and your skills don't decrease its duration nor dispel it.",
+            "Description": "Gain the effects of the 3 Stances at level 1, on top of your active Stance. Your active Stance's duration does not go down, and your skills don't decrease its duration nor dispel it.",
             "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
@@ -1281,7 +1281,7 @@ var data = {
         "Upper Stance":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Stance that increases all damage dealt. If a Katana is equipped, activate your highest-level Stance at the start of battle. (Ties for highest level will choose a Stance at random)",
+            "Description": "Stance that increases all damage dealt. Activated by Upward Slash. (If a Katana is equipped, activate your highest-level Stance at the start of battle. Ties for highest level will choose a Stance at random)",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1306,7 +1306,7 @@ var data = {
         "Clear Stance":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Stance that decreases all damage taken and increases bind/ailment infliction rates for Ronin skills. If a Katana is equipped, activate your highest-level Stance at the start of battle. (Ties for highest level will choose a Stance at random)",
+            "Description": "Stance that decreases all damage taken and increases bind/ailment infliction rates for Ronin skills. Activated by Charging Thrust. (If a Katana is equipped, activate your highest-level Stance at the start of battle. Ties for highest level will choose a Stance at random)",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1332,7 +1332,7 @@ var data = {
         "Swift Stance":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Stance that increases accuracy, evasion and action speed. If a Katana is equipped, activate your highest-level Stance at the start of battle. (Ties for highest level will choose a Stance at random)",
+            "Description": "Stance that increases accuracy, evasion and action speed. Activated by Sheath Strike. (If a Katana is equipped, activate your highest-level Stance at the start of battle. Ties for highest level will choose a Stance at random)",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1398,7 +1398,7 @@ var data = {
         "Mine":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -1409,7 +1409,7 @@ var data = {
         "Helm Splitter":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Upward Slash (Lv 1)",
-            "Description": "Katana: Deal melee Cut damage to one enemy. Low accuracy but ignores Cut resistance. Requires a Stance, and makes a Critical Hit during Upper Stance. Decreases remaining Stance duration by 2 turns.",
+            "Description": "Katana: Deal melee Cut damage to one enemy. Low accuracy but ignores Cut vulnerability. Requires a Stance, and makes a Critical Hit during Upper Stance. Decreases remaining Stance duration by 2 turns.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1538,7 +1538,7 @@ var data = {
         "Petal Scatter":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Frigid Slash (Lv 3)",
-            "Description": "Katana: Deal ranged Slash damage to all enemies. Deals less damage the more enemies there are. Requires a Stance, and makes a Critical Hit during Swift Stance. Removes your Stance and disables skills on the next turn.",
+            "Description": "Katana: Deal ranged Slash damage to all enemies. Damage dealt is divided by [√Targets]. Requires a Stance, and makes a Critical Hit during Swift Stance. Removes your Stance and disables skills on the next turn.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -1709,7 +1709,7 @@ var data = {
         "Take":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Take points.",
+            "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -2021,7 +2021,7 @@ var data = {
         "Mine":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -2356,7 +2356,7 @@ var data = {
         "Mine":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -2678,7 +2678,7 @@ var data = {
         "Take":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Take points.",
+            "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -2985,7 +2985,7 @@ var data = {
         "Chop":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Chop points.",
+            "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -3299,7 +3299,7 @@ var data = {
         "Mine":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -3596,7 +3596,7 @@ var data = {
         "Harvestry":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Take, Chop or Mine points.",
+            "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield grows from 1 to 3 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -3892,7 +3892,7 @@ var data = {
         "Take":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Take points.",
+            "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -4228,7 +4228,7 @@ var data = {
         "Mine":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -4552,7 +4552,7 @@ var data = {
         "Chop":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Chop points.",
+            "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -4750,7 +4750,7 @@ var data = {
     "Force":{
         "Circle Paradise":{
             "Usage": "Force Boost",
-            "Description": "Increase bind/ailment infliction chances. Circle duration does not go down, and they don't get dispelled by your skills.",
+            "Description": "Increase bind/ailment infliction chances. Circle duration does not go down, and they don't get removed by Dismiss skills.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -4828,7 +4828,7 @@ var data = {
         },
         "Curse Circle":{
             "Usage": "Active (Head, LUC)",
-            "Unlock": "N/A",
+            "Unlock": "Nerve Circle (Lv 2)",
             "Description": "Place a Circle for 3 turns, which attempts to inflict Curse on all enemies at the end of each turn. (Overrides other Circles)",
             "Starter": "1",
             "Max Level": "8",
@@ -4861,7 +4861,7 @@ var data = {
         "Chop":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Chop points.",
+            "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -5056,7 +5056,7 @@ var data = {
     "Force":{
         "Ignition":{
             "Usage": "Force Boost",
-            "Description": "Drive Skills won't trigger the Overheat state.",
+            "Description": "Drive skills won't trigger the Overheat state.",
             "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
@@ -5174,7 +5174,7 @@ var data = {
         "Mine":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Mine points.",
+            "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -5502,7 +5502,7 @@ var data = {
         "Chop":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Chop points.",
+            "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -5827,7 +5827,7 @@ var data = {
         "Take":{
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
-            "Description": "Obtain additional materials when gathering from Take points.",
+            "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield grows from 4 to 8 based on user's level.",
             "Starter": "1",
             "Max Level": "0",
             "Data": ""
@@ -6620,7 +6620,7 @@ var data = {
         "Silver Thrust":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Gae Dearg",
-            "Description": "Deal ranged Stab damage to one enemy. Low accuracy but ignores Stab resistance.",
+            "Description": "Deal ranged Stab damage to one enemy. Low accuracy but ignores Stab vulnerability.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -7477,12 +7477,12 @@ var descriptions = {
     "Protector":"Knights of unmatched durability who use their Shield to protect the party from harm.",
     "Medic":"Healers that effectively treat every kind of injury. Their Staff strikes assist by leaving the enemy vulnerable.",
     "Survivalist":"Archers skilled in exploration. Their agility and sharp senses safeguard the party in and out of battle.",
-    "Ronin":"Katana-users who favor offense over defense. They adopt different Stances to adjust to the situation.",
+    "Ronin":"Katana users who favor offense over defense. They adopt different Stances to adjust to the situation.",
     "War Magus":"Witch doctors that switch between treating the party's afflictions and aggravating the enemy's.",
     "Highlander":"Offensive specialists who fight with Spears. They sacrifice their life force to carry out powerful attacks.",
-    "Gunner":"A versatile backline class that uses Guns to cover offense, binding and support.",
-    "Sovereign":"A support class that strenghtens and protects the party by granting and spending buffs.",
-    "Ninja":"Stealthy assassins skilled in combat, diversion and incapacitation. Can create clones to amplify their capabilities.",
+    "Gunner":"Versatile backline class that uses Guns. Capable of providing offense, binding and healing.",
+    "Sovereign":"Support casters that grant and manage buffs to strenghten and protect the party.",
+    "Ninja":"Stealthy assassins skilled in combat, diversion and incapacitation. They can create clones to amplify their capabilities.",
     "Zodiac":"Offensive casters with high control of energy. They use elemental attacks to hit the enemy's weakness.",
     "Farmer":"Specialists in exploration and resource gathering. Their combat skills can be awkward but surprisingly effective.",
     "Shogun":"Generals who lead the party through buffs and attack commands, or by fighting directly with dual Katanas.",
