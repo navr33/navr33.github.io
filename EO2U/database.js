@@ -2,7 +2,7 @@ var data = {
 "Landsknecht":{
     "Full Charge":{
         "Usage": "Force Boost",
-        "Description": "All your Sword/Axe attacks will be Critical Hits.",
+        "Description": "All Sword/Axe attacks will make a Critical Hit.",
         "Starter": "0",
         "Max Level": "0",
         "Data": ""
@@ -129,7 +129,7 @@ var data = {
     "Head Bash":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Axe Mastery (Lv 3)",
-        "Description": "Axe: Deal melee Bash damage to one enemy, with a chance to inflict Head Bash.",
+        "Description": "Axe: Deal melee Bash damage to one enemy, with a chance to inflict Head Bind.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -343,7 +343,7 @@ var data = {
     "Mine":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -352,7 +352,7 @@ var data = {
 "Survivalist":{
     "Illusion Step":{
         "Usage": "Force Boost",
-        "Description": "Drastically increase evasion, and perform a follow up after Bow attacks.",
+        "Description": "Drastically increase evasion. Perform follow up hits after Bow attacks.",
         "Starter": "0",
         "Max Level": "3",
         "Levels": ["1", "60", "99"],
@@ -498,7 +498,7 @@ var data = {
     "Hazy Arrow":{
         "Usage": "Active (Arms, AGI)",
         "Unlock": "Multi-Shot (Lv 2), Chain Dance (Lv 4)",
-        "Description": "Bow: Deal ranged Stab damage to one enemy. Cannot miss. Only usable if you dodged an attack last turn.",
+        "Description": "Bow: Deal ranged Stab damage to one enemy. Cannot miss. Only usable if you dodged an attack on the previous turn.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -687,7 +687,7 @@ var data = {
     "Natural Instinct":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -799,7 +799,7 @@ var data = {
     "Heal Guard":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 5)",
-        "Description": "(Guard) Shield: Protect one ally for this turn, which restores HP and decreases physical damage taken.",
+        "Description": "(Guard) Shield: Protect one ally for this turn, which restores HP at the start of the turn and decreases physical damage taken.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -812,7 +812,7 @@ var data = {
     "Shield Smite":{
         "Usage": "Active (Arms, STR+VIT, LUC)",
         "Unlock": "Shield Mastery (Lv 7)",
-        "Description": "Shield: Deal melee Bash damage to one enemy, with a chance to inflict Arm Bind. (Damage is based on your Shield's DEF instead of your weapon's ATK)",
+        "Description": "Shield: Deal melee Bash damage to one enemy, with a chance to inflict Arm Bind. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -827,7 +827,7 @@ var data = {
     "Shield Rush":{
         "Usage": "Active (Arms, STR+VIT)",
         "Unlock": "Shield Smite (Lv 5)",
-        "Description": "Shield: Deal melee Bash damage to all enemies. Places a debuff on the targets for several turns, which decreases physical damage dealt. (Damage is based on your Shield's DEF instead of your weapon's ATK).",
+        "Description": "Shield: Deal melee Bash damage to all enemies. Places a debuff on the targets for several turns, which decreases physical damage dealt. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK).",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -996,7 +996,7 @@ var data = {
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "7", "7", "7", "7", "7", "8", "8", "8", "8", "8", "9"],
-            "Success Chance": ["45%", "50%", "55%", "60%", "65%", "70%", "75%", "80%", "85%", "90%", "90%", "90%", "90%", "90%", "95%", "95%", "95%", "95%", "95%", "100%"],
+            "Base Success Rate": ["45%", "50%", "55%", "60%", "65%", "70%", "75%", "80%", "85%", "90%", "90%", "90%", "90%", "90%", "95%", "95%", "95%", "95%", "95%", "100%"],
             "HP Loss": ["50%", "50%", "50%", "50%", "40%", "40%", "40%", "40%", "40%", "30%", "26%", "22%", "19%", "16%", "14%", "12%", "10%", "8%", "6%", "1%"],
         }
     },
@@ -1014,7 +1014,7 @@ var data = {
     "Mine":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -1357,7 +1357,7 @@ var data = {
         "Data": {
             "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "12"],
             "Damage Taken↑\n(Normal)": ["+20%", "+22%", "+23%", "+25%", "+25%", "+27%", "+28%", "+29%", "+30%", "+30%", "+31%", "+32%", "+33%", "+34%", "+35%", "+36%", "+37%", "+38%", "+39%", "+40%"],
-            "Damage Taken↑\n(Increased)": ["+30%", "+32%", "+33%", "+35%", "+35%", "+37%", "+38%", "+39%", "+40%", "+40%", "+41%", "+42%", "+43%", "+44%", "+45%", "+46%", "+47%", "+48%", "+49%", "+50%"],
+            "Damage Taken↑\n(Bind/Ailment)": ["+30%", "+32%", "+33%", "+35%", "+35%", "+37%", "+38%", "+39%", "+40%", "+40%", "+41%", "+42%", "+43%", "+44%", "+45%", "+46%", "+47%", "+48%", "+49%", "+50%"],
             "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
             "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
         }
@@ -1376,7 +1376,7 @@ var data = {
     "Chop":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -1389,9 +1389,9 @@ var data = {
         "Starter": "0",
         "Max Level": "1",
         "Data": {
-            "HP Gain↑": ["+70%"],
+            "HP Gain↑": ["x1.7"],
             "Speed↑": ["x5.0"],
-            "TP Cost↓": ["-50%"],
+            "TP Cost↓": ["x0.5"],
         }
     },
     "Medical Miracle":{
@@ -1606,7 +1606,7 @@ var data = {
     "Medical Rod":{
         "Usage": "Active (Arms, TEC)",
         "Unlock": "Staff Mastery (Lv 5)",
-        "Description": "Staff: Deal melee Bash damage to one enemy. Places a debuff on the target for several turns, which increases elemental damage taken.",
+        "Description": "Staff: Deal melee Bash damage to one enemy. Places a debuff on the target for several turns, which increases elemental damage taken. (Uses the STR damage formula but with the user's TEC instead of STR)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1622,7 +1622,7 @@ var data = {
     "Vital Hit":{
         "Usage": "Active (Arms, TEC+VIT)",
         "Unlock": "Staff Mastery (Lv 10)",
-        "Description": "Staff: Deal melee Bash damage to one enemy. Damage dealt is multiplied by the party's [SumOfCurrentHP/SumOfMaxHP]. (Party's Max HP count ignores Overheal and Force Boosts)",
+        "Description": "Staff: Deal melee Bash damage to one enemy. Damage dealt is multiplied by the party's [SumOfCurrentHP/SumOfMaxHP]. (Party's Max HP count ignores Overheal and Force Boosts. Uses the STR damage formula but with the user's average of TEC and VIT instead of STR)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1716,7 +1716,7 @@ var data = {
     "Take":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -1985,7 +1985,7 @@ var data = {
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
-            "Activation Chance": ["50%", "53%", "55%", "58%", "60%", "63%", "66%", "69%", "72%", "75%", "78%", "80%", "83%", "85%", "88%", "90%", "93%", "95%", "98%", "105%"],
+            "Activation Chance": ["50%", "53%", "55%", "58%", "60%", "63%", "66%", "69%", "72%", "75%", "78%", "80%", "83%", "85%", "88%", "90%", "93%", "95%", "98%", "100%"],
             "Splash Damage": ["25%", "28%", "30%", "33%", "35%", "38%", "41%", "44%", "47%", "50%", "52%", "53%", "55%", "56%", "58%", "59%", "61%", "62%", "64%", "65%"],
         }
     },
@@ -2059,7 +2059,7 @@ var data = {
     "Chop":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -2068,7 +2068,7 @@ var data = {
 "Troubadour":{
     "War Song":{
         "Usage": "Force Boost",
-        "Description": "Buffs on the party will maintain their remaining duration and cannot be cancelled by enemies.",
+        "Description": "Remaining duration of buffs on the party will not go down. Buffs on the party cannot be cancelled by opposing debuffs.",
         "Starter": "0",
         "Max Level": "0",
         "Data": ""
@@ -2198,8 +2198,8 @@ var data = {
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["10", "10", "10", "10", "18", "18", "18", "18", "18", "30", "30", "30", "30", "30", "30", "30", "30", "30", "30", "35"],
-            "Resistance↑": ["+20%", "+22%", "+23%", "+25%", "+25%", "+27%", "+28%", "+29%", "+30%", "+30%", "+31%", "+32%", "+33%", "+34%", "+35%", "+36%", "+37%", "+38%", "+39%", "+40%"],
-            "Resistance↓": ["-20%", "-22%", "-23%", "-25%", "-25%", "-27%", "-28%", "-29%", "-30%", "-30%", "-31%", "-32%", "-33%", "-34%", "-35%", "-36%", "-37%", "-38%", "-39%", "-40%"],
+            "Resistance↑\n(Allies)": ["+20%", "+22%", "+23%", "+25%", "+25%", "+27%", "+28%", "+29%", "+30%", "+30%", "+31%", "+32%", "+33%", "+34%", "+35%", "+36%", "+37%", "+38%", "+39%", "+40%"],
+            "Resistance↓\n(Enemies)": ["-20%", "-22%", "-23%", "-25%", "-25%", "-27%", "-28%", "-29%", "-30%", "-30%", "-31%", "-32%", "-33%", "-34%", "-35%", "-36%", "-37%", "-38%", "-39%", "-40%"],
             "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
             "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
         }
@@ -2227,8 +2227,8 @@ var data = {
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["10", "10", "10", "10", "18", "18", "18", "18", "18", "30", "30", "30", "30", "30", "30", "30", "30", "30", "30", "35"],
-            "Resistance↑": ["+20%", "+22%", "+23%", "+25%", "+25%", "+27%", "+28%", "+29%", "+30%", "+30%", "+31%", "+32%", "+33%", "+34%", "+35%", "+36%", "+37%", "+38%", "+39%", "+40%"],
-            "Resistance↓": ["-20%", "-22%", "-23%", "-25%", "-25%", "-27%", "-28%", "-29%", "-30%", "-30%", "-31%", "-32%", "-33%", "-34%", "-35%", "-36%", "-37%", "-38%", "-39%", "-40%"],
+            "Resistance↑\n(Allies)": ["+20%", "+22%", "+23%", "+25%", "+25%", "+27%", "+28%", "+29%", "+30%", "+30%", "+31%", "+32%", "+33%", "+34%", "+35%", "+36%", "+37%", "+38%", "+39%", "+40%"],
+            "Resistance↓\n(Enemies)": ["-20%", "-22%", "-23%", "-25%", "-25%", "-27%", "-28%", "-29%", "-30%", "-30%", "-31%", "-32%", "-33%", "-34%", "-35%", "-36%", "-37%", "-38%", "-39%", "-40%"],
             "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
             "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
         }
@@ -2256,8 +2256,8 @@ var data = {
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["10", "10", "10", "10", "18", "18", "18", "18", "18", "30", "30", "30", "30", "30", "30", "30", "30", "30", "30", "35"],
-            "Resistance↑": ["+20%", "+22%", "+23%", "+25%", "+25%", "+27%", "+28%", "+29%", "+30%", "+30%", "+31%", "+32%", "+33%", "+34%", "+35%", "+36%", "+37%", "+38%", "+39%", "+40%"],
-            "Resistance↓": ["-20%", "-22%", "-23%", "-25%", "-25%", "-27%", "-28%", "-29%", "-30%", "-30%", "-31%", "-32%", "-33%", "-34%", "-35%", "-36%", "-37%", "-38%", "-39%", "-40%"],
+            "Resistance↑\n(Allies)": ["+20%", "+22%", "+23%", "+25%", "+25%", "+27%", "+28%", "+29%", "+30%", "+30%", "+31%", "+32%", "+33%", "+34%", "+35%", "+36%", "+37%", "+38%", "+39%", "+40%"],
+            "Resistance↓\n(Enemies)": ["-20%", "-22%", "-23%", "-25%", "-25%", "-27%", "-28%", "-29%", "-30%", "-30%", "-31%", "-32%", "-33%", "-34%", "-35%", "-36%", "-37%", "-38%", "-39%", "-40%"],
             "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "6"],
             "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
         }
@@ -2401,7 +2401,7 @@ var data = {
     "Take":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -2410,11 +2410,11 @@ var data = {
 "Ronin":{
     "Immovable":{
         "Usage": "Force Boost",
-        "Description": "Decrease the TP cost of skills that require a Stance. Remaining Stance duration does not go down, and Peerless Stance is not removed by Peerless Combo.",
+        "Description": "Decrease the TP cost of Katana skills. Stance duration does not go down, and Peerless Stance is not removed by Peerless Combo.",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
-            "TP Cost↓": ["-50%"],
+            "TP Cost↓": ["x0.5"],
         }
     },
     "Issen":{
@@ -2655,7 +2655,7 @@ var data = {
     "Peerless Stance":{
         "Usage": "Active (No Parts)",
         "Unlock": "Swallow Strike (Lv 1), Moon Shadow (Lv 1), Ground Strike (Lv 1)",
-        "Description": "Requires Upper, Clear or Drawing Stance. Enter a special Stance that improves offense, defense, accuracy, evasion and speed, and enables all other skills that require a Stance. The bonuses of the other Stances are added to this one's but at half effectiveness. (Cannot recast to extend duration)",
+        "Description": "Katana: Requires Upper, Clear or Drawing Stance. Enter a special Stance that improves offense, defense, accuracy, evasion and speed, and enables all other skills that require a Stance. The bonuses of the other Stances are added to this one's but at half effectiveness. (Cannot recast to extend duration)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2759,7 +2759,7 @@ var data = {
     "Mine":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -2777,7 +2777,7 @@ var data = {
     },
     "Black Mist":{
         "Usage": "Force Break (Head)",
-        "Description": "Force binds/ailments on enemies to last 1 more turn.",
+        "Description": "Prevent binds/ailments on enemies from being naturally healed this turn.",
         "Starter": "0",
         "Max Level": "0",
         "Data": ""
@@ -2838,7 +2838,7 @@ var data = {
     "Blinding Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 3)",
-        "Description": "Attempt to inflict Blind on an enemy line.",
+        "Description": "(Curse) Attempt to inflict Blind on an enemy line.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2851,7 +2851,7 @@ var data = {
     "Venom Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 3)",
-        "Description": "Attempt to inflict Poison on an enemy line.",
+        "Description": "(Curse) Attempt to inflict Poison on an enemy line.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2865,7 +2865,7 @@ var data = {
     "Madness Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 3)",
-        "Description": "Attempt to inflict Panic on an enemy line.",
+        "Description": "(Curse) Attempt to inflict Panic on an enemy line.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2878,7 +2878,7 @@ var data = {
     "Torpor Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Blinding/Venom Curse (Lv 2)",
-        "Description": "Attempt to inflict Sleep on an enemy line.",
+        "Description": "(Curse) Attempt to inflict Sleep on an enemy line.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2891,7 +2891,7 @@ var data = {
     "Corrupt Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Venom/Madness Curse (Lv 2)",
-        "Description": "Attempt to inflict Curse on an enemy line.",
+        "Description": "(Curse) Attempt to inflict Curse on an enemy line.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2904,7 +2904,7 @@ var data = {
     "Cranial Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 5)",
-        "Description": "Attempt to inflict Head Bind on one enemy.",
+        "Description": "(Curse) Attempt to inflict Head Bind on one enemy.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2916,7 +2916,7 @@ var data = {
     },
     "Abdomen Curse":{
         "Usage": "Active (Head, LUC)",
-        "Unlock": "Curse Mastery (Lv 5)",
+        "Unlock": "(Curse) Curse Mastery (Lv 5)",
         "Description": "Attempt to inflict Arm Bind on one enemy.",
         "Starter": "0",
         "Max Level": "20",
@@ -2930,7 +2930,7 @@ var data = {
     "Immobile Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 5)",
-        "Description": "Attempt to inflict Leg Bind on one enemy.",
+        "Description": "(Curse) Attempt to inflict Leg Bind on one enemy.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2943,7 +2943,7 @@ var data = {
     "Evil Eye":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 10)",
-        "Description": "Attempt to inflict Fear on an enemy line.",
+        "Description": "(Curse) Attempt to inflict Fear on an enemy line.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3091,7 +3091,7 @@ var data = {
     "Chop":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -3110,7 +3110,7 @@ var data = {
     },
     "Supreme Bolt":{
         "Usage": "Force Break (Arms, AGI)",
-        "Description": "Deal ranged Stab damage and inflict Stun to one enemy.",
+        "Description": "Deal ranged Stab damage and inflict Stun to one enemy. (Ignores Stun resistance but not immunity)",
         "Starter": "0",
         "Max Level": "3",
         "Levels": ["1", "60", "99"],
@@ -3380,7 +3380,7 @@ var data = {
     "Penetrator":{
         "Usage": "Passive",
         "Unlock": "Phys ATK Up (Lv 5)",
-        "Description": "All single-target attacks gain pierce effect. For single-target attacks against the back row or with natural pierce effect, increases damage dealt instead.",
+        "Description": "Normal attacks and single-target attack/infliction skills gain pierce effect, with decreased pierce damage. For attacks with natural pierce effect, increase pierce damage dealt.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3442,7 +3442,7 @@ var data = {
     "Take":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -3733,7 +3733,7 @@ var data = {
     "Vampire":{
         "Usage": "Passive",
         "Unlock": "Ailing Slash (Lv 5)",
-        "Description": "If you deal damage to an enemy with an ailment, restore HP to your line. Healing is based on damage dealt. (Max once per turn)",
+        "Description": "If you deal damage to an enemy with an ailment, restore HP to your line based on damage dealt. (Max once per turn)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3788,7 +3788,7 @@ var data = {
     "Chop":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -4043,7 +4043,7 @@ var data = {
     "Endurance":{
         "Usage": "Active (Arms, STR+VIT)",
         "Unlock": "Loyalty Mastery (Lv 10), Claw Mastery (Lv 10)",
-        "Description": "Decrease damage taken for this turn. At the end of turn, deal melee Cut damage to all enemies. Damage dealt increases by 25% per hit received (max +200%).",
+        "Description": "Decrease damage taken for this turn. At the end of turn, deal melee Cut damage to all enemies. Damage dealt increases by 25% per hit received this turn (max +200%).",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4126,7 +4126,7 @@ var data = {
     "Natural Instinct":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -4139,7 +4139,7 @@ var data = {
         "Starter": "0",
         "Max Level": "1",
         "Data": {
-            "TP Cost↓": ["-50%"],
+            "TP Cost↓": ["x0.5"],
         }
     },
     "Proof of Nobility":{
@@ -4167,7 +4167,7 @@ var data = {
     "Attack Order":{
         "Usage": "Active (Head)",
         "Unlock": "Order Mastery (Lv 1)",
-        "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt.",
+        "Description": "(Order) Place a buff on an ally line for several turns, which increases physical/elemental damage dealt.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4181,7 +4181,7 @@ var data = {
     "Guard Order":{
         "Usage": "Active (Head)",
         "Unlock": "Order Mastery (Lv 1)",
-        "Description": "Place a buff on an ally line for several turns, which decreases physical/elemental damage taken.",
+        "Description": "(Order) Place a buff on an ally line for several turns, which decreases physical/elemental damage taken.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4195,7 +4195,7 @@ var data = {
     "Dauntless Order":{
         "Usage": "Active (Head)",
         "Unlock": "Attack/Guard Order (Lv 3)",
-        "Description": "Place a buff on an ally line for several turns, which gives them a chance to survive lethal damage, restoring HP if it activates.",
+        "Description": "(Order) Place a buff on an ally line for several turns, which gives them a chance to survive lethal damage, restoring HP if it activates.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4224,7 +4224,7 @@ var data = {
     "Protect Order":{
         "Usage": "Active (Head, TEC+VIT)",
         "Unlock": "Holy Crown (Lv 3)",
-        "Description": "Place a buff on an ally line for several turns, which restores HP at the end of each turn.",
+        "Description": "(Order) Place a buff on an ally line for several turns, which restores HP at the end of each turn.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4294,7 +4294,7 @@ var data = {
     "Prevent Order":{
         "Usage": "Active (Head)",
         "Unlock": "Order Mastery (Lv 7)",
-        "Description": "Place a buff on an ally line for several turns, which nullifies ailment inflictions received. (Buff is consumed when activated)",
+        "Description": "(Order) Place a buff on an ally line for several turns, which nullifies one ailment infliction received. (Buff is consumed when activated)",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "5",
@@ -4355,7 +4355,7 @@ var data = {
     "Fire Circle":{
         "Usage": "Active (Arms)",
         "Unlock": "TP Up (Lv 5)",
-        "Description": "For this turn, increase the Fire resistance of all allies and decrease the Fire resistance of all enemies.",
+        "Description": "For this turn, decrease Fire damage taken by allies and increase Fire damage taken by enemies. (Doesn't stack)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4368,7 +4368,7 @@ var data = {
     "Freeze Circle":{
         "Usage": "Active (Arms)",
         "Unlock": "TP Up (Lv 5)",
-        "Description": "For this turn, increase the Ice resistance of all allies and decrease the Ice resistance of all enemies.",
+        "Description": "For this turn, decrease Ice damage taken by allies and increase Ice damage taken by enemies. (Doesn't stack)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4381,7 +4381,7 @@ var data = {
     "Shock Circle":{
         "Usage": "Active (Arms)",
         "Unlock": "TP Up (Lv 5)",
-        "Description": "For this turn, increase the Volt resistance of all allies and decrease the Volt resistance of all enemies.",
+        "Description": "For this turn, decrease Volt damage taken by allies and increase Volt damage taken by enemies. (Doesn't stack)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4464,7 +4464,7 @@ var data = {
     "Take":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -4483,7 +4483,7 @@ var data = {
     },
     "Ignition Ray / Akashic Nova":{
         "Usage": "Force Break (Head, TEC)",
-        "Description": "Deal ranged Fire+Ice+Volt damage to one enemy/all enemies. (Upgraded during the story)",
+        "Description": "Deal ranged Fire+Ice+Volt damage to one enemy/all enemies. (Upgraded during Ruins BF4 Boss fight)",
         "Starter": "0",
         "Max Level": "3",
         "Levels": ["1", "60", "99"],
@@ -4493,7 +4493,7 @@ var data = {
     },
     "Meteor Smash":{
         "Usage": "Active (Arms, STR)",
-        "Unlock": "Story",
+        "Unlock": "Defeat 1st Stratum Boss",
         "Description": "Transform: Deal melee Bash damage to one enemy. Power scales with the user's level. Only usable once per transformation.",
         "Starter": "1",
         "Max Level": "3",
@@ -4507,7 +4507,7 @@ var data = {
     },
     "Power Cell":{
         "Usage": "Passive",
-        "Unlock": "Story",
+        "Unlock": "Defeat Ruins BF1 Boss",
         "Description": "Transform: Survive lethal damage with 1 HP. Can only activate once per transformation.",
         "Starter": "0",
         "Max Level": "0",
@@ -4515,7 +4515,7 @@ var data = {
     },
     "Extend":{
         "Usage": "Active (Head)",
-        "Unlock": "Story",
+        "Unlock": "Defeat 2nd Stratum Boss",
         "Description": "Transform: Reset the duration of your Force Boost back to 3 turns. Only usable once per transformation.",
         "Starter": "0",
         "Max Level": "1",
@@ -4525,7 +4525,7 @@ var data = {
     },
     "Self-Regenerate":{
         "Usage": "Passive",
-        "Unlock": "Story",
+        "Unlock": "Defeat Ruins BF2 Boss",
         "Description": "Transform: Recover HP at the end of each turn. Healing is based on your Max HP.",
         "Starter": "0",
         "Max Level": "1",
@@ -4535,7 +4535,7 @@ var data = {
     },
     "Accelerate":{
         "Usage": "Active (Head)",
-        "Unlock": "Story",
+        "Unlock": "Defeat 3rd Stratum Boss",
         "Description": "Transform: Enter a charge state for next turn, which lets you choose 3 actions to perform and makes you act at the start of the turn. Only usable once per transformation.",
         "Starter": "0",
         "Max Level": "1",
@@ -4907,7 +4907,7 @@ var data = {
     "Mine":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -5115,7 +5115,7 @@ var data = {
     "Bloodlust":{
         "Usage": "Passive",
         "Unlock": "Turning Tide (Lv 3), Bloody Offense (Lv 3)",
-        "Description": "Chance to attack a random enemy each time you lose HP. (Max once per turn)",
+        "Description": "Chance to attack a random enemy when you lose HP. (Max once per turn)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5250,7 +5250,7 @@ var data = {
     "Mine":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum amount is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -5473,6 +5473,8 @@ var data = {
                 "EXP Gain↑": ["+40%"],
             }
         },
+    },
+    "Grimoires":{
         "Fortune Scarab":{
             "Usage": "1.000 en",
             "Description": "If used during a Grimoire chance, grants 100% chance to create a Grimoire Stone.",
@@ -5494,14 +5496,8 @@ var data = {
             "Max Level": "0",
             "Data": ""
         },
-        "Return Flute":{
-            "Usage": "200 en",
-            "Description": "Escape from battle and teleport to the point where you entered the floor.",
-            "Starter": "0",
-            "Max Level": "0",
-            "Data": ""
-        },
-    }
+    },
+    
 },
 "Food Effects": {
     "Western Dishes (Stats, healing and rewards)":{
@@ -5535,7 +5531,7 @@ var data = {
             "Max Level": "1",
             "Levels": ["Effect"],
             "Data": {
-                "Monster Fish Panino": ["Increases experience earned from battle by 20%."],
+                "Monster Fish Panino": ["Multiplies experience earned from battle by 1.2."],
                 "Apple Sauce Bison Steak": ["Chance of randomly ambushing or being ambushed by enemies becomes 0."],
                 "Crab Cream Croquette": ["Increases the party's LUC stat by 10."],
                 "Forest Paella": ["The party recovers 2% max TP at the end of each turn."],
