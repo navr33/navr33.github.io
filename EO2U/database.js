@@ -20,7 +20,7 @@ var data = {
     "Sword Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt if a Sword is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if a Sword is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -104,7 +104,7 @@ var data = {
     "Axe Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt if an Axe is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if an Axe is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -187,7 +187,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -213,7 +213,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -284,7 +284,7 @@ var data = {
     "Phys ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt.",
+        "Description": "Increases physical damage dealt.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -295,7 +295,7 @@ var data = {
     "Fencer":{
         "Usage": "Passive",
         "Unlock": "Phys ATK Up (Lv 5)",
-        "Description": "Increase Critical rate and damage dealt with Critical Hits.",
+        "Description": "Increases Critical rate and damage dealt with Critical Hits.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -318,7 +318,7 @@ var data = {
     "Phys DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Decrease physical damage taken.",
+        "Description": "Decreases physical damage taken.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -341,7 +341,7 @@ var data = {
         }
     },
     "Mine":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -352,7 +352,7 @@ var data = {
 "Survivalist":{
     "Illusion Step":{
         "Usage": "Force Boost",
-        "Description": "Drastically increase evasion. Perform follow up hits after Bow attacks.",
+        "Description": "Drastically increases evasion. Perform follow up hits after Bow attacks.",
         "Starter": "0",
         "Max Level": "3",
         "Levels": ["1", "60", "99"],
@@ -374,7 +374,7 @@ var data = {
     "Bow Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt if a Bow is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if a Bow is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -511,7 +511,7 @@ var data = {
     "Speed Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase accuracy, evasion and action speed.",
+        "Description": "Increases accuracy, evasion and action speed.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -627,7 +627,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -665,7 +665,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -676,7 +676,7 @@ var data = {
     "Curb ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase bind/ailment infliction rates.",
+        "Description": "Increases bind/ailment infliction rates.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -685,7 +685,7 @@ var data = {
         }
     },
     "Natural Instinct":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -855,7 +855,7 @@ var data = {
     "Phys DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Decrease physical damage taken.",
+        "Description": "Decreases physical damage taken.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -906,7 +906,7 @@ var data = {
     "Parry":{
         "Usage": "Passive (Arms)",
         "Unlock": "Phys DEF Up (Lv 5)",
-        "Description": "Chance to nullify physical attacks against your line.",
+        "Description": "Chance to nullify physical attacks against party members in your line.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "5",
@@ -917,7 +917,7 @@ var data = {
     "Elem DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Decrease elemental damage taken.",
+        "Description": "Decreases elemental damage taken.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -979,7 +979,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1003,7 +1003,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1012,7 +1012,7 @@ var data = {
         }
     },
     "Mine":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -1023,7 +1023,7 @@ var data = {
 "Dark Hunter":{
     "Trance":{
         "Usage": "Force Boost",
-        "Description": "Increase damage dealt if the target has a bind/ailment.",
+        "Description": "Increases damage dealt if the target has a bind/ailment.",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -1045,7 +1045,7 @@ var data = {
     "Whip Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt if a Whip is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if a Whip is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1146,7 +1146,7 @@ var data = {
     "Sword Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt if a Sword is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if a Sword is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1246,7 +1246,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1271,7 +1271,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1296,7 +1296,7 @@ var data = {
     "Phys ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt.",
+        "Description": "Increases physical damage dealt.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1339,7 +1339,7 @@ var data = {
     "Curb ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase bind/ailment infliction rates.",
+        "Description": "Increases bind/ailment infliction rates.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1365,7 +1365,7 @@ var data = {
     "Perseverance":{
         "Usage": "Passive",
         "Unlock": "Snake Eyes (Lv 5)",
-        "Description": "Increase bind/ailment/Stun/Instant Kill infliction chance if you failed an infliction last turn.",
+        "Description": "Increases bind/ailment/Stun/Instant Kill infliction chance if you failed an infliction last turn.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1374,7 +1374,7 @@ var data = {
         }
     },
     "Chop":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -1385,7 +1385,7 @@ var data = {
 "Medic":{
     "Steady Hands":{
         "Usage": "Force Boost",
-        "Description": "Increase HP restored and action speed for healing skills, and decrease their TP cost.",
+        "Description": "Increases HP restored and action speed for healing skills, and decreases their TP cost.",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -1395,7 +1395,7 @@ var data = {
         }
     },
     "Medical Miracle":{
-        "Usage": "Force Break (Head, TEC, VIT)",
+        "Usage": "Force Break (Head, TEC+VIT)",
         "Description": "Restore HP, revive, and remove binds/ailments/debuffs for the whole party.",
         "Starter": "0",
         "Max Level": "3",
@@ -1407,7 +1407,7 @@ var data = {
     "Heal Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase HP restored with healing skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases HP restored with healing skills. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1579,7 +1579,7 @@ var data = {
     "Staff Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt and Max TP if a Staff is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt and Max TP if a Staff is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1636,7 +1636,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1659,7 +1659,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1670,7 +1670,7 @@ var data = {
     "Scavenge":{
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 3)",
-        "Description": "Increase enemy drop rates.",
+        "Description": "Increases enemy drop rates.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1681,7 +1681,7 @@ var data = {
     "Elem DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Decrease elemental damage taken.",
+        "Description": "Decreases elemental damage taken.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1705,7 +1705,7 @@ var data = {
     "Phys ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt.",
+        "Description": "Increases physical damage dealt.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1714,7 +1714,7 @@ var data = {
         }
     },
     "Take":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -1725,7 +1725,7 @@ var data = {
 "Alchemist":{
     "Analysis":{
         "Usage": "Force Boost",
-        "Description": "Increase damage dealt when you hit an enemy's damage weakness.",
+        "Description": "Increases damage dealt when you hit an enemy's damage weakness.",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -1745,7 +1745,7 @@ var data = {
     "Formula Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt with Formula skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt with Formula skills. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1924,7 +1924,7 @@ var data = {
     "Palm Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt with Palm skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt with Palm skills. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2003,7 +2003,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2026,7 +2026,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2037,7 +2037,7 @@ var data = {
     "Elem ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase elemental damage dealt.",
+        "Description": "Increases elemental damage dealt.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2048,7 +2048,7 @@ var data = {
     "Elem DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Decrease elemental damage taken.",
+        "Description": "Decreases elemental damage taken.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2057,7 +2057,7 @@ var data = {
         }
     },
     "Chop":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -2086,7 +2086,7 @@ var data = {
     "Song Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase action speed and decrease TP cost for Song skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases action speed and decreases TP cost for Song skills. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2318,7 +2318,7 @@ var data = {
     "Speed Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase accuracy, evasion and action speed.",
+        "Description": "Increases accuracy, evasion and action speed.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2357,7 +2357,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2379,7 +2379,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2390,7 +2390,7 @@ var data = {
     "Holy Gift":{
         "Usage": "Active (Head)",
         "Unlock": "TP Up (Lv 10)",
-        "Description": "Increase EXP earned by the team at the end of battle.",
+        "Description": "Increases EXP earned by the team at the end of battle.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2399,7 +2399,7 @@ var data = {
         }
     },
     "Take":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -2410,7 +2410,7 @@ var data = {
 "Ronin":{
     "Immovable":{
         "Usage": "Force Boost",
-        "Description": "Decrease the TP cost of Katana skills. Stance duration does not go down, and Peerless Stance is not removed by Peerless Combo.",
+        "Description": "Decreases the TP cost of Katana skills. Stance duration will not go down, and Peerless Stance is not removed by Peerless Combo.",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -2432,7 +2432,7 @@ var data = {
     "Katana Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt if a Katana is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if a Katana is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2714,7 +2714,7 @@ var data = {
     "Phys ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt.",
+        "Description": "Increases physical damage dealt.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2725,7 +2725,7 @@ var data = {
     "Pre-Initiative":{
         "Usage": "Passive",
         "Unlock": "Phys ATK Up (Lv 8)",
-        "Description": "Increase damage dealt and accuracy against enemies that haven't acted yet this turn.",
+        "Description": "Increases damage dealt and accuracy against enemies that haven't acted yet this turn.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2737,7 +2737,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2748,7 +2748,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2757,7 +2757,7 @@ var data = {
         }
     },
     "Mine":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -2768,7 +2768,7 @@ var data = {
 "Hexer":{
     "Creeping Curse":{
         "Usage": "Force Boost",
-        "Description": "Drastically increase bind/ailment infliction rates. Remaining duration of debuffs on enemies does not go down.",
+        "Description": "Drastically increases bind/ailment infliction rates. Remaining duration of debuffs on enemies will not go down.",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -2785,7 +2785,7 @@ var data = {
     "Curse Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase bind/ailment infliction rate of Curse skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases bind/ailment infliction rate of Curse skills. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2993,7 +2993,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3045,7 +3045,7 @@ var data = {
     "Curb ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase bind/ailment infliction rates.",
+        "Description": "Increases bind/ailment infliction rates.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3069,7 +3069,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3080,7 +3080,7 @@ var data = {
     "Curb DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase resistance to bind/ailment inflictions.",
+        "Description": "Increases resistance to bind/ailment inflictions.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3089,7 +3089,7 @@ var data = {
         }
     },
     "Chop":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -3101,7 +3101,7 @@ var data = {
 "Gunner":{
     "Action Boost":{
         "Usage": "Force Boost",
-        "Description": "Gun skills are performed twice. The second instance has decreased attack/healing power.",
+        "Description": "Gun skills will be performed twice. The second instance has decreased attack/healing power.",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -3121,7 +3121,7 @@ var data = {
     "Gun Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt if a Gun is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if a Gun is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3318,7 +3318,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3369,7 +3369,7 @@ var data = {
     "Phys ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt.",
+        "Description": "Increases physical damage dealt.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3406,7 +3406,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3431,7 +3431,7 @@ var data = {
     "Double Action":{
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 10)",
-        "Description": "Chance for attack skills to be activated an additional time.",
+        "Description": "Chance for attack skills to be activated an additional time. (Max once per turn)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3440,7 +3440,7 @@ var data = {
         }
     },
     "Take":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -3469,7 +3469,7 @@ var data = {
     "War Lore Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase the effect of War Lore skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases the effect of War Lore skills. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3629,7 +3629,7 @@ var data = {
     "War Edge Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Allows you to also use War Edge skills with a Staff. If a Sword is equipped, increase Max TP. If a Staff is equipped, increase all damage dealt. (Automatically unlocks other skills that require this one)",
+        "Description": "Enables using War Edge skills with a Staff. If a Sword is equipped, increases Max TP. If a Staff is equipped, increases all damage dealt. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3744,7 +3744,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3755,7 +3755,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3766,7 +3766,7 @@ var data = {
     "Phys ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt.",
+        "Description": "Increases physical damage dealt.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3777,7 +3777,7 @@ var data = {
     "Curb DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase resistance to bind/ailment inflictions.",
+        "Description": "Increases resistance to bind/ailment inflictions.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3786,7 +3786,7 @@ var data = {
         }
     },
     "Chop":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -3797,7 +3797,7 @@ var data = {
 "Beast":{
     "Desperation":{
         "Usage": "Force Boost",
-        "Description": "Drastically increase Max HP. (When activated, also fully restores your HP)",
+        "Description": "Drastically increases Max HP. (When activated, also fully restores your HP)",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -3805,7 +3805,7 @@ var data = {
         }
     },
     "True Endurance":{
-        "Usage": "Force Break (Arms, STR, VIT)",
+        "Usage": "Force Break (Arms, STR+VIT)",
         "Description": "For this turn, nullify all bind/ailment/stun inflictions received, survive all lethal damage with 1 HP, and take all attacks in place of your allies. At the end of turn, if you received damage, deal melee Stab damage to all enemies.",
         "Starter": "0",
         "Max Level": "3",
@@ -3934,7 +3934,7 @@ var data = {
     "Claw Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt if a Claw is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if a Claw is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4057,7 +4057,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4079,7 +4079,7 @@ var data = {
     "Phys ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt.",
+        "Description": "Increases physical damage dealt.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4090,7 +4090,7 @@ var data = {
     "Phys DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Decrease physical damage taken.",
+        "Description": "Decreases physical damage taken.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4115,7 +4115,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4124,7 +4124,7 @@ var data = {
         }
     },
     "Natural Instinct":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -4135,7 +4135,7 @@ var data = {
 "Sovereign":{
     "Victory Vow":{
         "Usage": "Force Boost",
-        "Description": "Order skills affect the whole party, and their TP cost is decreased.",
+        "Description": "Order skills will target the whole party, and their TP cost is decreased.",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -4307,7 +4307,7 @@ var data = {
     "Morale Boost":{
         "Usage": "Passive",
         "Unlock": "Order Mastery (Lv 10)",
-        "Description": "Increase natural Force gain of allies with buffs while you're alive. (Does not stack)",
+        "Description": "Increases natural Force gains of allies with buffs while you're alive. (Does not stack)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4318,7 +4318,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4407,7 +4407,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4453,7 +4453,7 @@ var data = {
     "Curb DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase resistance to bind/ailment inflictions.",
+        "Description": "Increases resistance to bind/ailment inflictions.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4462,7 +4462,7 @@ var data = {
         }
     },
     "Take":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -4473,7 +4473,7 @@ var data = {
 "Fafnir":{
     "Transform":{
         "Usage": "Force Boost",
-        "Description": "Increase damage dealt and Max HP. Changes your elemental skills, and enables additional skills that are unlocked throughout the story. (When activated, also fully restores your HP)",
+        "Description": "Increases damage dealt and Max HP. Changes your elemental skills, and enables additional skills that are unlocked throughout the story. (When activated, also fully restores your HP)",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -4546,7 +4546,7 @@ var data = {
     "Blade Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt if a Sword or Katana is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt if a Sword or Katana is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4735,7 +4735,7 @@ var data = {
     "Force Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase natural Force gain. (Automatically unlocks other skills that require this one)<br>-For reference, normal Force gain is 5 to 15 per action.",
+        "Description": "Increases natural Force gains. (Automatically unlocks other skills that require this one)<br>-For reference, normal Force gain is 5 to 15 per action.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4852,7 +4852,7 @@ var data = {
     "Phys ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt.",
+        "Description": "Increases physical damage dealt.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4863,7 +4863,7 @@ var data = {
     "Elem ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase elemental damage dealt.",
+        "Description": "Increases elemental damage dealt.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4885,7 +4885,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4896,7 +4896,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4905,7 +4905,7 @@ var data = {
         }
     },
     "Mine":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
@@ -4916,7 +4916,7 @@ var data = {
 "Highlander":{
     "Hero Battle":{
         "Usage": "Force Boost",
-        "Description": "Increase damage dealt with Spear skills. Restore HP to the party based on your damage dealt.",
+        "Description": "Increases damage dealt with Spear skills. Restore HP to the party based on your damage dealt.",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -4937,7 +4937,7 @@ var data = {
     "Spear Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt if a Spear is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if a Spear is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5078,7 +5078,7 @@ var data = {
     "Phys ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt.",
+        "Description": "Increases physical damage dealt.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5142,7 +5142,7 @@ var data = {
     "Phys DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Decrease physical damage taken.",
+        "Description": "Decreases physical damage taken.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5203,7 +5203,7 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5239,7 +5239,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5248,7 +5248,7 @@ var data = {
         }
     },
     "Mine":{
-        "Usage": "Passive",
+        "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
