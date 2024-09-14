@@ -15,6 +15,7 @@ var data = {
         "Levels": ["1", "60", "99"],
         "Data": {
             "Attack Power": ["800%", "1700%", "2700%"],
+            "Action Speed": ["70%", "70%", "70%"],
         }
     },
     "Sword Mastery":{
@@ -369,6 +370,7 @@ var data = {
         "Levels": ["1", "60", "99"],
         "Data": {
             "Attack Power": ["150%", "320%", "500%"],
+            "Action Speed": ["70%", "70%", "70%"],
         }
     },
     "Bow Mastery":{
@@ -1040,6 +1042,7 @@ var data = {
             "Attack Power": ["250%", "500%", "700%"],
             "Infliction Chance": ["120%", "120%", "120%"],
             "Poison Damage": ["60", "500", "750"],
+            "Action Speed": ["80%", "80%", "80%"],
         }
     },
     "Whip Mastery":{
@@ -1402,6 +1405,7 @@ var data = {
         "Levels": ["1", "60", "99"],
         "Data": {
             "Healing Power": ["300%", "600%", "900%"],
+            "Action Speed": ["500%", "500%", "500%"],
         }
     },
     "Heal Mastery":{
@@ -1740,6 +1744,7 @@ var data = {
         "Levels": ["1", "60", "99"],
         "Data": {
             "Attack Power": ["600%", "1700%", "2600%"],
+            "Action Speed": ["50%", "50%", "50%"],
         }
     },
     "Formula Mastery":{
@@ -2427,6 +2432,7 @@ var data = {
             "Attack Power": ["400%", "800%", "1200%"],
             "Infliction Chance\n(Normal)": ["100%", "100%", "100%"],
             "Infliction Chance\n(Low HP)": ["999%", "999%", "999%"],
+            "Action Speed": ["90%", "90%", "90%"],
         }
     },
     "Katana Mastery":{
@@ -3116,6 +3122,7 @@ var data = {
         "Levels": ["1", "60", "99"],
         "Data": {
             "Attack Power": ["600%", "1300%", "2100%"],
+            "Action Speed": ["200%", "200%", "200%"],
         }
     },
     "Gun Mastery":{
@@ -4150,6 +4157,7 @@ var data = {
         "Data": {
             "HP Gain": ["20+30%"],
             "TP Gain": ["10+30%"],
+            "Action Speed": ["100%"],
         }
     },
     "Order Mastery":{
@@ -4489,6 +4497,7 @@ var data = {
         "Levels": ["1", "60", "99"],
         "Data": {
             "Attack Power": ["1000%", "1600%", "2100%"],
+            "Action Speed": ["50%", "50%", "50%"],
         }
     },
     "Meteor Smash":{
@@ -4932,6 +4941,7 @@ var data = {
         "Levels": ["1", "60", "99"],
         "Data": {
             "Attack Power": ["600%", "1200%", "1800%"],
+            "Action Speed": ["150%", "150%", "150%"],
         }
     },
     "Spear Mastery":{
