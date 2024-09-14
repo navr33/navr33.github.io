@@ -3,7 +3,7 @@ var data = {
     "Force":{
         "Brave Heart":{
             "Usage": "Force Boost",
-            "Description": "Increase Afterimage creation chance, and increase the damage dealt by Afterimages.",
+            "Description": "Increases Afterimage creation chance, and increases the damage dealt by Afterimages.",
             "Starter": "0",
             "Max Level": "4",
             "Levels": ["1~79", "80~98", "99~117", "118~130"],
@@ -90,7 +90,7 @@ var data = {
         "Heroic Bonds":{
             "Usage": "Passive",
             "Unlock": "Encourage (Lv 1)",
-            "Description": "When the HP of every party member is above a certain threshold, increase all damage dealt and action speed.",
+            "Description": "When the HP of every party member is above a certain threshold, increases all damage dealt and action speed.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -189,7 +189,7 @@ var data = {
         "Heroic Steel":{
             "Usage": "Passive",
             "Unlock": "Heroic Bonds (Lv 2)",
-            "Description": "When the HP of every party member is below a certain threshold, decrease your damage taken and increase enemy aggro.",
+            "Description": "When the HP of every party member is below a certain threshold, decreases your damage taken and increases enemy aggro.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -428,7 +428,7 @@ var data = {
         "Preemptive Taunt":{
             "Usage": "Passive",
             "Unlock": "Taunt (Lv 2)",
-            "Description": "Chance to automatically use Taunt at the start of battle.",
+            "Description": "Chance to automatically cast Taunt at the start of battle.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -469,7 +469,7 @@ var data = {
         "Aegis":{
             "Usage": "Passive",
             "Unlock": "Fortify (Lv 1)",
-            "Description": "Chance to survive lethal damage with 1 HP (max once per battle).",
+            "Description": "Chance to survive lethal damage with 1 HP. (Max once per battle)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -504,7 +504,7 @@ var data = {
         "Phys DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Decrease physical damage taken.",
+            "Description": "Decreases physical damage taken.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -514,7 +514,7 @@ var data = {
         "Elem DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Decrease elemental damage taken.",
+            "Description": "Decreases elemental damage taken.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -562,7 +562,7 @@ var data = {
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increases base Max HP.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -632,7 +632,7 @@ var data = {
     "Force":{
         "Intensive Care":{
             "Usage": "Force Boost",
-            "Description": "Increase action speed, increase HP restored by First Aid skills and decrease their TP costs. (Also powers up TP restoration from items)",
+            "Description": "Increases action speed, increases HP restored by First Aid skills and decreases their TP costs. (Also powers up TP restoration from items)",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -729,7 +729,7 @@ var data = {
         "Antibodies":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase chance of ailments/binds on yourself being naturally healed at the end of turn.",
+            "Description": "Increases natural bind/ailment recovery rate.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -739,7 +739,7 @@ var data = {
         "Scavenge":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase enemy drop rates.",
+            "Description": "Increases enemy drop rates.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -856,7 +856,7 @@ var data = {
         "Elem DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Decrease elemental damage taken.",
+            "Description": "Decreases elemental damage taken.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -929,7 +929,7 @@ var data = {
         "Staff Mastery":{
             "Usage": "Passive",
             "Unlock": "Heavy Strike (Lv 1)",
-            "Description": "If a Staff is equipped, increase Max TP and physical damage dealt.",
+            "Description": "If a Staff is equipped, increases Max TP and physical damage dealt.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -943,7 +943,7 @@ var data = {
     "Force":{
         "Illusory Formation":{
             "Usage": "Force Boost",
-            "Description": "Increase evasion and action speed for the whole party.",
+            "Description": "Increases evasion and action speed for the whole party.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -1054,7 +1054,7 @@ var data = {
         "Sorting Skill":{
             "Usage": "Passive",
             "Unlock": "Resuscitate (Lv 3)",
-            "Description": "Increase the size of the inventory.",
+            "Description": "Increases the size of the inventory.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1150,7 +1150,7 @@ var data = {
         "Efficiency":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on yourself for 5 turns, which increases the recovery of Medica-type items and makes them affect a full line.",
+            "Description": "Place a buff on yourself for 5 turns, which increases the effect of Medica-type items and makes them affect a full line.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -1162,7 +1162,7 @@ var data = {
         "Speed Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase accuracy, evasion and action speed.",
+            "Description": "Increases accuracy, evasion and action speed.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1259,7 +1259,7 @@ var data = {
     "Force":{
         "Musou":{
             "Usage": "Force Boost",
-            "Description": "Gain the effects of the 3 Stances at level 1, on top of your active Stance. Your active Stance's duration does not go down, and your skills don't decrease its duration nor dispel it.",
+            "Description": "Grants the effects of the 3 Stances at level 1, on top of your active Stance. Your active Stance's duration does not go down, and your skills don't decrease its duration nor remove it.",
             "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
@@ -1286,7 +1286,7 @@ var data = {
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["x1.1", "x1.12", "x1.14", "x1.14", "x1.16", "x1.18", "x1.2", "x1.2"],
-                "Duration": ["4", "4", "4", "5", "5", "5", "5", "6"],
+                "Duration (Start)": ["4", "4", "4", "5", "5", "5", "5", "6"],
             }
         },
         "Upward Slash":{
@@ -1312,7 +1312,7 @@ var data = {
             "Data": {
                 "Damage Taken↓": ["x0.9", "x0.87", "x0.84", "x0.84", "x0.81", "x0.78", "x0.75", "x0.75"],
                 "Infliction↑": ["x1.25", "x1.30", "x1.35", "x1.35", "x1.40", "x1.45", "x1.50", "x1.50"],
-                "Duration": ["4", "4", "4", "5", "5", "5", "5", "6"],
+                "Duration (Start)": ["4", "4", "4", "5", "5", "5", "5", "6"],
             }
         },
         "Charging Thrust":{
@@ -1339,7 +1339,7 @@ var data = {
                 "Accuracy↑": ["+10%", "+12%", "+14%", "+14%", "+16%", "+18%", "+20%", "+20%"],
                 "Evasion↑": ["+10%", "+12%", "+14%", "+14%", "+16%", "+18%", "+20%", "+20%"],
                 "Speed↑": ["x1.3%", "x1.43", "x1.51", "x1.51", "x1.59", "x1.67", "x1.75", "x1.75"],
-                "Duration": ["4", "4", "4", "5", "5", "5", "5", "6"],
+                "Duration (Start)": ["4", "4", "4", "5", "5", "5", "5", "6"],
             }
         },
         "Sheath Strike":{
@@ -1403,7 +1403,6 @@ var data = {
             "Max Level": "0",
             "Data": ""
         },
-
     },
     "Veteran (Lv 20)":{
         "Helm Splitter":{
@@ -1488,7 +1487,7 @@ var data = {
         "Duel":{
             "Usage": "Passive",
             "Unlock": "Air Blade (Lv 2), Arm Strike (Lv 2)",
-            "Description": "Increase all damage dealt when attacking enemies that you also attacked on the previous turn.",
+            "Description": "Increases all damage dealt when attacking enemies that you also attacked on the previous turn.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -1498,7 +1497,7 @@ var data = {
         "Phys ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt.",
+            "Description": "Increases physical damage dealt.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1576,7 +1575,7 @@ var data = {
         "Speed Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase accuracy, evasion and action speed.",
+            "Description": "Increases accuracy, evasion and action speed.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1698,7 +1697,7 @@ var data = {
         "War Edge Master":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Allows you to also use War Edge skills with a Staff. If a Sword is equipped, increase Max TP. If a Staff is equipped, increase all damage dealt.",
+            "Description": "Enables using War Edge skills with a Staff. If a Sword is equipped, increases Max TP. If a Staff is equipped, increases all damage dealt.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1797,17 +1796,17 @@ var data = {
         "Rouse":{
             "Usage": "Passive",
             "Unlock": "Vampire (Lv 2)",
-            "Description": "Increase Force Gauge gains for each enemy that's afflicted with a bind.",
+            "Description": "Increases Force gains for each enemy that's afflicted with a bind.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
-                "Force Gains↑": ["+2%", "+3%", "+4%", "+6%"],
+                "Force Gain↑": ["+2%", "+3%", "+4%", "+6%"],
             }
         },
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increases base Max HP.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1817,7 +1816,7 @@ var data = {
         "Status DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Description": "Increases resistance to bind/ailment inflictions.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1887,7 +1886,7 @@ var data = {
         "Phys ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt.",
+            "Description": "Increases physical damage dealt.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1900,7 +1899,7 @@ var data = {
     "Force":{
         "Hero Battle":{
             "Usage": "Force Boost",
-            "Description": "Increase damage dealt with Spear skills. Restore HP to the party based on your damage dealt.",
+            "Description": "Increases damage dealt with Spear skills. Restore HP to the party based on your damage dealt.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -2011,7 +2010,7 @@ var data = {
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increases base Max HP.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2102,7 +2101,7 @@ var data = {
         "Battle Instinct":{
             "Usage": "Passive",
             "Unlock": "Blood Fortune (Lv 2)",
-            "Description": "At the start of battle there's a chance to place a buff on the whole party for 3 turns, which nullifies one ailment infliction. (Buff is consumed when activated)",
+            "Description": "At the start of battle there's a chance to place a buff on the whole party for 3 turns, which nullifies one ailment infliction received. (Buff is consumed when activated)",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -2138,7 +2137,7 @@ var data = {
         "Phys DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Decrease physical damage taken.",
+            "Description": "Decreases physical damage taken.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2216,7 +2215,7 @@ var data = {
         "Phys ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt.",
+            "Description": "Increases physical damage dealt.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2432,21 +2431,21 @@ var data = {
         "Preemptive Fire":{
             "Usage": "Passive",
             "Unlock": "Shell Shock (Lv 1)",
-            "Description": "Chance to automatically activate Shell Shock at the start of battle.",
+            "Description": "Chance to automatically cast Shell Shock at the start of battle.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
-                "Action Speed": ["20%", "26%", "32%", "38%", "44%", "67%"],
+                "Activation Chance": ["20%", "26%", "32%", "38%", "44%", "67%"],
             }
         },
         "Preemptive Flare":{
             "Usage": "Passive",
             "Unlock": "Pop Flare (Lv 2)",
-            "Description": "Chance to automatically activate Pop Flare at the start of battle.",
+            "Description": "Chance to automatically cast Pop Flare at the start of battle.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
-                "Action Speed": ["15%", "20%", "25%", "30%", "35%", "50%"],
+                "Activation Chance": ["15%", "20%", "25%", "30%", "35%", "50%"],
             }
         },
         "Penetrator":{
@@ -2456,13 +2455,13 @@ var data = {
             "Starter": "1",
             "Max Level": "8",
             "Data": {
-                "Action Speed": ["18%", "23%", "28%", "33%", "38%", "43%", "48%", "66%"],
+                "Activation Chance": ["18%", "23%", "28%", "33%", "38%", "43%", "48%", "66%"],
             }
         },
         "TP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max TP.",
+            "Description": "Increases base Max TP.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2528,7 +2527,7 @@ var data = {
         "Phys ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt.",
+            "Description": "Increases physical damage dealt.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2538,7 +2537,7 @@ var data = {
         "Multi-Shot":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Chance for attack skills to be activated an additional time.",
+            "Description": "Chance for attack skills to be activated an additional time. (Max once per turn)",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2784,7 +2783,7 @@ var data = {
         "Status DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Description": "Increases resistance to bind/ailment inflictions.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2858,7 +2857,7 @@ var data = {
     "Force":{
         "Diversion Gambit":{
             "Usage": "Force Boost",
-            "Description": "Increase evasion and enemy aggro.",
+            "Description": "Increases evasion and enemy aggro.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -2950,7 +2949,7 @@ var data = {
         "Concealment":{
             "Usage": "Passive",
             "Unlock": "Reflexes (Lv 2)",
-            "Description": "Increase evasion.",
+            "Description": "Increases evasion.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2975,7 +2974,7 @@ var data = {
        "Proficiency":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase all damage dealt. At max level, removes the backline penalty for melee attacks.",
+            "Description": "Increases all damage dealt. At max level, removes the backline penalty for melee attacks.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -3034,9 +3033,9 @@ var data = {
             }
         },
         "Revenge Bomb":{
-            "Usage": "Active (STR)",
+            "Usage": "Passive (STR)",
             "Unlock": "N/A",
-            "Description": "Once per battle, upon dying, deal ranged Fire damage to your killer.",
+            "Description": "Once per battle, when killed, deal ranged Fire damage to your attacker.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -3091,7 +3090,7 @@ var data = {
         "Status ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Description": "Increases bind/ailment infliction rates.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -3115,7 +3114,7 @@ var data = {
         "Return Malice":{
             "Usage": "Passive",
             "Unlock": "Ninpo:Panic (Lv 2)",
-            "Description": "When you evade an attack, increase ailment infliction chance on the next turn.",
+            "Description": "When you evade an attack, increase ailment infliction rates on the next turn.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -3166,7 +3165,7 @@ var data = {
         "Mystic Calm":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Decrease the TP cost of skills. (Costs have a minimum cap of 1)",
+            "Description": "Decreases the TP cost of skills. (Costs have a minimum cap of 1)",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -3179,7 +3178,7 @@ var data = {
     "Force":{
         "Divination":{
             "Usage": "Force Boost",
-            "Description": "Increase damage dealt with Astrology skills, and recover part of their spent TP.",
+            "Description": "Increases damage dealt with Astrology skills, and refunds part of their spent TP.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -3255,7 +3254,7 @@ var data = {
         "Singularity":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt when you hit a weakness. (Additionally, attacks that hit a weakness will show a message and make a special sound effect)",
+            "Description": "Increases damage dealt when you hit a weakness. (Additionally, attacks that hit a weakness will show a message and make a special sound effect)",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -3309,7 +3308,7 @@ var data = {
         "Ether Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt Astrology skills.",
+            "Description": "Increases damage dealt with Astrology skills.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -3319,7 +3318,7 @@ var data = {
         "TP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max TP.",
+            "Description": "Increases base Max TP.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -3368,7 +3367,7 @@ var data = {
         "Etheric Boon":{
             "Usage": "Passive",
             "Unlock": "Etheric Charge (Lv 2)",
-            "Description": "Increase all damage dealt based on how much TP you spent last turn. This skill has a base damage bonus which is then multiplied by SpentTP<sup>1.5</sup>/100 and rounded down. (Cheat Sheet: 15TP → x0.58; 25TP → x1.25; 35TP → x2.07; 45TP → x3.01)",
+            "Description": "Increases all damage dealt based on how much TP you spent last turn. This skill has a base damage bonus which is then multiplied by SpentTP<sup>1.5</sup>/100 and rounded down. (Cheat Sheet: 15TP → x0.58; 25TP → x1.25; 35TP → x2.07; 45TP → x3.01)",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -3378,7 +3377,7 @@ var data = {
         "Anti-Ether":{
             "Usage": "Passive",
             "Unlock": "Etheric Boon (Lv 2)",
-            "Description": "Chance to nullify elemental attacks against your line.",
+            "Description": "Chance to nullify elemental attacks against party members in your line.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -3451,7 +3450,7 @@ var data = {
         "Free Energy":{
             "Usage": "Passive",
             "Unlock": "Fire/Ice/Volt Prophecy (Lv 1)",
-            "Description": "Chance to spend 0 TP when using skills.",
+            "Description": "Chance to not spend TP when using skills.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -3489,7 +3488,7 @@ var data = {
     "Force":{
         "Item Echo":{
             "Usage": "Force Boost",
-            "Description": "Items used activate their effect twice.",
+            "Description": "Items used will activate their effect twice.",
             "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
@@ -3569,7 +3568,7 @@ var data = {
             "Data": {
                 "TP Cost": ["3", "3", "3", "7"],
                 "HP Cost": ["75%", "60%", "40%", "5%"],
-                "Success Chance": ["65%", "70%", "80%", "100%"],
+                "Base Success Rate": ["65%", "70%", "80%", "100%"],
             }
         },
         "Slap Awake":{
@@ -3586,7 +3585,7 @@ var data = {
         "Earth's Bounty":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "If you're alive at the end of a battle, increase EXP earned by the party.",
+            "Description": "If you're alive at the end of a battle, increases EXP earned by the party.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3629,7 +3628,7 @@ var data = {
         "Waste Not":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase enemy drop rates.",
+            "Description": "Increases enemy drop rates.",
             "Starter": "1", 
             "Max Level": "4",
             "Data": {
@@ -3775,7 +3774,7 @@ var data = {
     "Force":{
         "Unified Effort":{
             "Usage": "Force Boost",
-            "Description": "Increase Max HP and all damage dealt for the whole party.",
+            "Description": "Increases Max HP and all damage dealt for the whole party.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -3797,7 +3796,7 @@ var data = {
         "Second Sword":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Allows you to equip a sub-weapon (uses an armor slot). Decrease damage taken if two weapons are equipped.",
+            "Description": "Allows you to equip a sub-weapon (uses an armor slot). Decreases damage taken if two weapons are equipped.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3846,7 +3845,7 @@ var data = {
         "Avidya Sight":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase all damage dealt if it's nighttime or you're afflicted by Blind.",
+            "Description": "Increases all damage dealt if it's nighttime or you're afflicted by Blind.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -3967,7 +3966,7 @@ var data = {
         "Bloody Lance":{
             "Usage": "Passive",
             "Unlock": "Twilight Hour (Lv 2)",
-            "Description": "Increase all damage dealt for each time you have killed a unit. (Max 9 stacks. Resets if you die)",
+            "Description": "Increases all damage dealt for each time you have killed a unit. (Max 9 stacks. Resets if you die)",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -3987,7 +3986,7 @@ var data = {
         "Peerless Demon":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt based on how many hits you have performed this turn.",
+            "Description": "Increases damage dealt based on how many hits you have performed this turn.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -4096,7 +4095,7 @@ var data = {
     "Force":{
         "Trinity":{
             "Usage": "Force Boost",
-            "Description": "Increase all damage dealt, accuracy and action speed.",
+            "Description": "Increases all damage dealt, accuracy and action speed.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -4122,7 +4121,7 @@ var data = {
         "Proficiency":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "After you attack, your allies deal more damage and have more accuracy against your targets.",
+            "Description": "After you attack, other allies deal more damage and have more accuracy against your targets until the end of turn.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -4218,7 +4217,7 @@ var data = {
         "Phys DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Decrease physical damage taken.",
+            "Description": "Decreases physical damage taken.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -4329,7 +4328,7 @@ var data = {
         "Initiative":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase all damage dealt and accuracy when you attack before any enemy has acted.",
+            "Description": "Increases all damage dealt and accuracy when you attack before any enemy has acted.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -4340,7 +4339,7 @@ var data = {
         "Status DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Description": "Increases resistance to bind/ailment inflictions.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -4380,7 +4379,7 @@ var data = {
         "Link Mastery":{
             "Usage": "Passive",
             "Unlock": "Smash Link (Lv 2)",
-            "Description": "Increase damage dealt by a Link's activations for each time it has been activated this turn. (Stacks up to +99%)",
+            "Description": "Increases damage dealt by a Link's activations for each time it has been activated this turn. (Stacks up to +99%)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -4416,7 +4415,7 @@ var data = {
         "Single Devotion":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase all damage dealt. Bonus is greater the less damage types the attack has.",
+            "Description": "Increases all damage dealt. Bonus is greater the less damage types the attack has.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -4431,7 +4430,7 @@ var data = {
     "Force":{
         "Killing Intent":{
             "Usage": "Force Boost",
-            "Description": "Increase all damage dealt and ailment infliction chances.",
+            "Description": "Increases all damage dealt and ailment infliction rates.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -4520,7 +4519,7 @@ var data = {
         "Proficiency":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase all damage dealt to enemies with ailments.",
+            "Description": "Increases all damage dealt to enemies with ailments.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -4603,7 +4602,7 @@ var data = {
         "Auto-Cloak":{
             "Usage": "Passive",
             "Unlock": "Biding Slice (Lv 2)",
-            "Description": "Chance to automatically activate Shadow Cloak at the start of battle.",
+            "Description": "Chance to automatically cast Shadow Cloak at the start of battle.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -4639,7 +4638,7 @@ var data = {
         "Foul Mastery":{
             "Usage": "Passive",
             "Unlock": "Sneak Attack (Lv 2)",
-            "Description": "Increase all damage dealt for each time you have inflicted an ailment, up to a certain limit. (Resets upon dying)",
+            "Description": "Increases all damage dealt for each time you have inflicted an ailment, up to a certain limit. (Resets upon dying)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -4650,7 +4649,7 @@ var data = {
         "Speed Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase accuracy, evasion and action speed.",
+            "Description": "Increases accuracy, evasion and action speed.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -4737,7 +4736,7 @@ var data = {
         "Auto-Spread":{
             "Usage": "Passive",
             "Unlock": "Spread Throw (Lv 2)",
-            "Description": "Chance to automatically activate Spread Throw at the start of battle.",
+            "Description": "Chance to automatically cast Spread Throw at the start of battle.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -4750,7 +4749,7 @@ var data = {
     "Force":{
         "Circle Paradise":{
             "Usage": "Force Boost",
-            "Description": "Increase bind/ailment infliction chances. Circle duration does not go down, and they don't get removed by Dismiss skills.",
+            "Description": "Increases bind/ailment infliction chances. Circle duration does not go down, and they don't get removed by Dismiss skills.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -4781,7 +4780,7 @@ var data = {
         "Dismiss Heal":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Circle Boon (Lv 1)",
-            "Description": "Dismiss an active Circle to restore HP to the whole party.",
+            "Description": "(Dismiss) Remove an active Circle to restore HP to the whole party.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -4871,7 +4870,7 @@ var data = {
         "Dismiss Revive":{
             "Usage": "Active (Head)",
             "Unlock": "Dismiss Heal (Lv 2)",
-            "Description": "Dismiss an active Circle for a chance to revive an ally line. (<b>Bug</b>: Revive chance is rolled twice and must pass both to activate)",
+            "Description": "(Dismiss) Remove an active Circle for a chance to revive an ally line. (<b>Bug</b>: Revive chance is rolled twice and must pass both to activate)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -4884,7 +4883,7 @@ var data = {
         "Dismiss Blow":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Dismiss Revive (Lv 3)",
-            "Description": "Dismiss an active Circle to deal ranged Almighty damage to one enemy.",
+            "Description": "(Dismiss) Remove an active Circle to deal ranged Almighty damage to one enemy.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -4945,7 +4944,7 @@ var data = {
         "Status ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Description": "Increases bind/ailment infliction rates.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -4978,7 +4977,7 @@ var data = {
         "Dismiss Blast":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Dismiss Blow (Lv 2)",
-            "Description": "Dismiss an active Circle to deal ranged Almighty damage to all enemies.",
+            "Description": "(Dismiss) Remove an active Circle to deal ranged Almighty damage to all enemies.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -4991,7 +4990,7 @@ var data = {
         "Circle Mastery":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Dismiss Blast (Lv 3)",
-            "Description": "Increase the effect of Dismiss skills.",
+            "Description": "Increases the effect of Dismiss skills.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -5031,7 +5030,7 @@ var data = {
         "Dismiss Quake":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Poison/Chaos Circle (Lv 3)",
-            "Description": "Dismiss an active Circle to attempt to inflict Stun on all enemies.",
+            "Description": "(Dismiss) Remove an active Circle to attempt to inflict Stun on all enemies.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -5154,7 +5153,7 @@ var data = {
         "Heat Shield":{
             "Usage": "Passive",
             "Unlock": "Assault Drive (Lv 3)",
-            "Description": "Decrease physical/elemental damage taken during Overheat.",
+            "Description": "Decreases physical/elemental damage taken during Overheat.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -5238,7 +5237,7 @@ var data = {
         "Intercooler":{
             "Usage": "Passive",
             "Unlock": "Heat Sink (Lv 1), Heat Shield (Lv 1)",
-            "Description": "Increase damage dealt with Drive skills and decrease Overheat duration.",
+            "Description": "Increases damage dealt with Drive skills and decreases Overheat duration.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -5288,7 +5287,7 @@ var data = {
         "Status DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Description": "Increases resistance to bind/ailment inflictions.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -5328,7 +5327,7 @@ var data = {
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increases base Max HP.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -5361,7 +5360,7 @@ var data = {
         "Element Boost":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase elemental damage dealt.",
+            "Description": "Increases elemental damage dealt.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -5374,7 +5373,7 @@ var data = {
     "Force":{
         "Bind Rush":{
             "Usage": "Force Boost",
-            "Description": "Increase bind infliction chance. For each attack you land against an enemy afflicted by a bind/ailment/stun, perform a follow up attack.",
+            "Description": "Increases bind infliction rate. For each attack you land against an enemy afflicted by a bind/ailment/stun, perform a follow up attack.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -5492,7 +5491,7 @@ var data = {
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increases base Max HP.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -5526,7 +5525,7 @@ var data = {
         "Fighting Spirit":{
             "Usage": "Passive",
             "Unlock": "Devil's Fist (Lv 3)",
-            "Description": "Increase all damage dealt if you lost HP on the previous turn.",
+            "Description": "Increases all damage dealt if you lost HP on the previous turn.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -5598,7 +5597,7 @@ var data = {
         "Status ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Description": "Increases bind/ailment infliction rates.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -5662,7 +5661,7 @@ var data = {
         "Raging Billows":{
             "Usage": "Passive",
             "Unlock": "Meditation (Lv 2)",
-            "Description": "Increase all damage dealt to enemies with binds/ailments. Stronger the more afflictions the target has: Bonus is multiplied by 2 for 2 afflictions, by 3 for 3 afflictions, and by 5 for 4 afflictions.",
+            "Description": "Increases all damage dealt to enemies with binds/ailments. Stronger the more afflictions the target has: Bonus is multiplied by 2 for 2 afflictions, by 3 for 3 afflictions, and by 5 for 4 afflictions.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -5698,7 +5697,7 @@ var data = {
     "Force":{
         "Endless Armor":{
             "Usage": "Force Boost",
-            "Description": "Miasma Armor's duration does not go down and your skills do not dispel it.",
+            "Description": "Miasma Armor's duration does not go down and your skills do not remove it.",
             "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
@@ -5893,7 +5892,7 @@ var data = {
         "Black Shroud":{
             "Usage": "Passive",
             "Unlock": "Endless Shroud (Lv 1)",
-            "Description": "While Miasma Armor is active, decrease physical/elemental damage taken.",
+            "Description": "While Miasma Armor is active, decreases physical/elemental damage taken.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -5937,7 +5936,7 @@ var data = {
         "Status ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Description": "Increases bind/ailment infliction rates.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
