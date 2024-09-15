@@ -4,7 +4,7 @@ var data = {
         "Rapier Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt if a Sword is equipped. Sword's damage type changes from Cut to Stab.",
+            "Description": "Increases physical damage dealt if a Sword is equipped. Sword's damage type changes from Cut to Stab.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -56,7 +56,7 @@ var data = {
         "Chain Boost":{
             "Usage": "Passive",
             "Unlock": "Chain Flame/Freeze/Shock (Lv 2)",
-            "Description": "Increase damage dealt with Chain attacks based on how many you have performed this turn. (Stacks up to +99%)",
+            "Description": "Increases damage dealt with Chain attacks based on how many you have performed this turn. (Stacks up to +99%)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -134,7 +134,7 @@ var data = {
         "Ray of Light":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase enemy aggro and decrease all damage taken for each time you evade an attack. Effect resets if you're hit.",
+            "Description": "Increases enemy aggro and decreases all damage taken for each time you evade an attack. Effect resets if you're hit.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -146,7 +146,7 @@ var data = {
         "Lightweight":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase evasion if you have empty equipment slots. Effect is multiplied by 2.5 for 2 slots, by 5 for 3 slots, and by 7.5 for all 4 slots.",
+            "Description": "Increases evasion if you have empty equipment slots. Effect is multiplied by 2.5 for 2 slots, by 5 for 3 slots, and by 7.5 for all 4 slots.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -267,7 +267,7 @@ var data = {
         "Phys ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt.",
+            "Description": "Increases physical damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -325,7 +325,7 @@ var data = {
         "Sylphscreen":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase evasion and decrease damage taken for each hit you have landed this turn.",
+            "Description": "Increases evasion and decreases damage taken for each hit you have landed this turn.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -365,7 +365,7 @@ var data = {
         "Speed Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase accuracy, evasion and action speed.",
+            "Description": "Increases accuracy, evasion and action speed.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -381,7 +381,7 @@ var data = {
         "Shield Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Decrease physical damage taken if a Shield is equipped.",
+            "Description": "Decreases physical damage taken if a Shield is equipped.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -391,7 +391,7 @@ var data = {
         "Cannon Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt if a Cannon is equipped.",
+            "Description": "Increases physical damage dealt if a Cannon is equipped.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -507,7 +507,7 @@ var data = {
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increases base Max HP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -624,7 +624,7 @@ var data = {
         "Gun Revenge":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt with Cannon skills for each time a Guard skill activates or a Bunker/Turret is hit. Resets to 0 upon using a Cannon skill.",
+            "Description": "Increases damage dealt with Cannon skills for each time a Guard skill activates or a Bunker/Turret is hit. Resets to 0 upon using a Cannon skill.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -635,7 +635,7 @@ var data = {
         "Phys ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt.",
+            "Description": "Increases physical damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -645,7 +645,7 @@ var data = {
         "TP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max TP.",
+            "Description": "Increases base Max TP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -655,7 +655,7 @@ var data = {
         "Prep Artillery":{
             "Usage": "Active (Head)",
             "Unlock": "TP Up (Lv 3)",
-            "Description": "Enter a charge state until the end of next turn, which increases damage dealt, accuracy, and action speed for Cannon skills used.",
+            "Description": "Enter a charge state until the end of next turn, which increases damage dealt, accuracy, and action speed for Cannon skills.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -755,7 +755,7 @@ var data = {
         "Brawl Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt if a Cestus is equipped.",
+            "Description": "Increases physical damage dealt if a Cestus is equipped.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -765,7 +765,7 @@ var data = {
         "Phys ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt.",
+            "Description": "Increases physical damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -899,7 +899,7 @@ var data = {
         "Status ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Description": "Increases bind/ailment infliction rates.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -937,7 +937,7 @@ var data = {
         "Speed Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase accuracy, evasion and action speed.",
+            "Description": "Increases accuracy, evasion and action speed.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1015,7 +1015,7 @@ var data = {
         "Fortitude":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase all damage dealt if HP is below a certain threshold.",
+            "Description": "Increases all damage dealt if HP is below a certain threshold.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1026,7 +1026,7 @@ var data = {
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increases base Max HP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1126,7 +1126,7 @@ var data = {
         "Status DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Description": "Increases resistance to bind/ailment inflictions.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1140,7 +1140,7 @@ var data = {
         "Scythe Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt if a Scythe is equipped.",
+            "Description": "Increases physical damage dealt if a Scythe is equipped.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1285,7 +1285,7 @@ var data = {
         "TP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max TP.",
+            "Description": "Increases base Max TP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1295,7 +1295,7 @@ var data = {
         "Status ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Description": "Increases bind/ailment infliction rates.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1403,7 +1403,7 @@ var data = {
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increases base Max HP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1413,7 +1413,7 @@ var data = {
         "Magic DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Decrease elemental damage taken.",
+            "Description": "Decreases elemental damage taken.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1512,7 +1512,7 @@ var data = {
         "Magi Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt with Magi skills.",
+            "Description": "Increases damage dealt with Magi skills.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1644,7 +1644,7 @@ var data = {
         "TP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max TP.",
+            "Description": "Increases base Max TP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1711,7 +1711,7 @@ var data = {
         "Anti-Magic":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Chance to nullify elemental attacks towards your line.",
+            "Description": "Chance to nullify elemental damage against party members in your line.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1721,7 +1721,7 @@ var data = {
         "Life Siphon":{
             "Usage": "Passive",
             "Unlock": "Anti-Magic (Lv 3)",
-            "Description": "Fill your Union Gauge if hit a weakness (max once per attack).",
+            "Description": "Fill your Union Gauge if you hit a weakness (max once per attack).",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -1743,7 +1743,7 @@ var data = {
         "Magic DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Decrease elemental damage taken.",
+            "Description": "Decreases elemental damage taken.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1755,7 +1755,7 @@ var data = {
         "Common Magic":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt if another ally has already performed an INT-based skill this turn.",
+            "Description": "Increases damage dealt if another ally has already performed an INT-based attack this turn.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1863,7 +1863,7 @@ var data = {
         "Magic ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase elemental damage dealt.",
+            "Description": "Increases elemental damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1877,7 +1877,7 @@ var data = {
         "Wraith Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt and infliction chance for all Wraith attacks.",
+            "Description": "Increases damage dealt and infliction rate for all Wraith attacks.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2020,7 +2020,7 @@ var data = {
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increases base Max HP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2039,7 +2039,7 @@ var data = {
             }
         },
         "Soul Trade":{
-            "Usage": "Passive",
+            "Usage": "Active (Head)",
             "Unlock": "Burden Shift (Lv 5)",
             "Description": "Sacrifice a Wraith for a chance to revive and heal all dead allies.",
             "Starter": "0",
@@ -2080,7 +2080,7 @@ var data = {
         "Status ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Description": "Increases bind/ailment infliction rates.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2142,7 +2142,7 @@ var data = {
         "TP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max TP.",
+            "Description": "Increases base Max TP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2213,7 +2213,7 @@ var data = {
         "Magic ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase elemental damage dealt.",
+            "Description": "Increases elemental damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2252,7 +2252,7 @@ var data = {
         "Bow Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt if a Bow is equipped.",
+            "Description": "Increases physical damage dealt if a Bow is equipped.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2410,7 +2410,7 @@ var data = {
     },
     "Flying Falcon":{
         "Sky Patrol":{
-            "Usage": "Passive",
+            "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "If the Hawk is summoned, there's a chance to receive ingredients as you walk.",
             "Starter": "1",
@@ -2474,7 +2474,7 @@ var data = {
         "Phys ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt.",
+            "Description": "Increases physical damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2484,7 +2484,7 @@ var data = {
         "Speed Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase accuracy, evasion and action speed.",
+            "Description": "Increases accuracy, evasion and action speed.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2536,7 +2536,7 @@ var data = {
     },
     "Hunting Hound":{
         "Ground Patrol":{
-            "Usage": "Passive",
+            "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "If the Hound is summoned, there's a chance to receive materials as you walk.",
             "Starter": "1",
@@ -2546,7 +2546,7 @@ var data = {
         "Healing Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase the effect of the Hound's healing actions.",
+            "Description": "Increases the effect of the Hound's healing actions.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2556,7 +2556,7 @@ var data = {
         "Status ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase chance to successfully inflict binds/ailments. (Also applies to your summons)",
+            "Description": "Increases bind/ailment infliction rates. (Also applies to your summons)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2566,7 +2566,7 @@ var data = {
         "TP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max TP.",
+            "Description": "Increases base Max TP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2659,7 +2659,7 @@ var data = {
         "Katana Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt if a Katana is equipped.",
+            "Description": "Increases physical damage dealt if a Katana is equipped.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2669,7 +2669,7 @@ var data = {
         "Peerless Demon":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt with a multi-hit attack for each hit it has landed this turn.",
+            "Description": "Increases damage dealt with a multi-hit attack for each hit it has landed this turn.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2680,7 +2680,7 @@ var data = {
         "Duel":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase damage dealt when attacking enemies that you also attacked on the previous turn.",
+            "Description": "Increases damage dealt when attacking enemies that you also attacked on the previous turn.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2796,7 +2796,7 @@ var data = {
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increases base Max HP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2880,7 +2880,7 @@ var data = {
         "Phys ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase physical damage dealt.",
+            "Description": "Increases physical damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2905,7 +2905,7 @@ var data = {
         "Sword God":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Critical Hit chance and damage. Allows Katana skills to perform Critical Hits.",
+            "Description": "Increases Critical Hit chance and damage. Allows Katana skills to perform Critical Hits.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2916,7 +2916,7 @@ var data = {
         "Speed Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase accuracy, evasion and action speed.",
+            "Description": "Increases accuracy, evasion and action speed.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2928,7 +2928,7 @@ var data = {
         "TP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max TP.",
+            "Description": "Increases base Max TP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3035,7 +3035,7 @@ var data = {
         "Prayer Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase action speed and decrease TP cost for Prayer skills.",
+            "Description": "Increases action speed and decreases TP cost for Prayer skills.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3173,7 +3173,7 @@ var data = {
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increases base Max HP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3217,7 +3217,7 @@ var data = {
         "Magic ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase elemental damage dealt.",
+            "Description": "Increases elemental damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3227,7 +3227,7 @@ var data = {
         "TP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max TP.",
+            "Description": "Increases base Max TP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3285,7 +3285,7 @@ var data = {
         "Status DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Description": "Increases resistance to bind/ailment inflictions.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3377,7 +3377,7 @@ var data = {
         "Magic DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Decrease elemental damage taken.",
+            "Description": "Decreases elemental damage taken.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3391,7 +3391,7 @@ var data = {
         "Herb Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase healing from Herb skills used in battle.",
+            "Description": "Increases healing from Herb skills used in battle.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3449,7 +3449,7 @@ var data = {
         "Antibodies":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase natural bind/ailment recovery rate.",
+            "Description": "Increases natural bind/ailment recovery rate.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3515,7 +3515,7 @@ var data = {
         "Herb Boost":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "During battle, excess healing from Herb skills increases the target's Max HP (up to a certain cap) until the end of the turn.",
+            "Description": "During battle, excess healing from Herb skills will increase the target's Max HP (up to a certain cap) until the end of the turn.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3525,7 +3525,7 @@ var data = {
         "HP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max HP.",
+            "Description": "Increases base Max HP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3571,7 +3571,7 @@ var data = {
         "Status DEF Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase resistance to bind/ailment inflictions.",
+            "Description": "Increases resistance to bind/ailment inflictions.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3635,7 +3635,7 @@ var data = {
         "Smoke Boost":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase action speed and decrease TP cost for Smoke skills.",
+            "Description": "Increases action speed and decreases TP cost for Smoke skills.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3646,7 +3646,7 @@ var data = {
         "TP Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase Max TP.",
+            "Description": "Increases base Max TP.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3656,7 +3656,7 @@ var data = {
         "Status ATK Up":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase chance to successfully inflict binds/ailments.",
+            "Description": "Increases bind/ailment infliction rates.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -4104,7 +4104,7 @@ var data = {
     "Level 10":{
         "Tri-Shield":{
             "Usage": "Union (3 Units)",
-            "Description": "Nullify the first 3 hits to allies this turn.",
+            "Description": "Nullify the first 3 hits against party members this turn.",
             "Starter": "0",
             "Max Level": "0",
             "Data": ""
