@@ -845,7 +845,7 @@ var data = {
         "Safe Passage":{
             "Usage": "Active (Field)",
             "Unlock": "N/A",
-            "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles.",
+            "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles. Additionally, damage taken from attacks out of battle is decreased to 1.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -886,7 +886,7 @@ var data = {
             "Data": {
                 "TP Cost": ["10", "10", "10", "14", "14", "14", "14", "20"],
                 "Healing Power": ["60%", "72%", "84%", "84%", "96%", "108%", "120%", "120%"],
-                "Chance Fadeout": ["-40%", "-40%", "-40%", "-25%", "-25%", "-25%", "-25%", "-15%"],
+                "Chance Fadeout": ["40%", "40%", "40%", "25%", "25%", "25%", "25%", "15%"],
                 "Limit per Ally": ["2", "2", "2", "3", "3", "3", "3", "4"],
             }
         },
@@ -1021,7 +1021,7 @@ var data = {
         "Safe Passage":{
             "Usage": "Active (Field)",
             "Unlock": "N/A",
-            "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles.",
+            "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles. Additionally, damage taken from attacks out of battle is decreased to 1.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -1697,7 +1697,7 @@ var data = {
         "War Edge Master":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Enables using War Edge skills with a Staff. If a Sword is equipped, increases Max TP. If a Staff is equipped, increases all damage dealt.",
+            "Description": "Enables using Sword skills with a Staff (they will still do Cut damage). If a Sword is equipped, increases Max TP. If a Staff is equipped, increases all damage dealt.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -3646,7 +3646,7 @@ var data = {
         "Rain or Shine":{
             "Usage": "Active (Field)",
             "Unlock": "Flee (Lv 1)",
-            "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles.",
+            "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles. Additionally, damage taken from attacks out of battle is decreased to 1.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -4121,7 +4121,7 @@ var data = {
         "Proficiency":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "After you attack, other allies deal more damage and have more accuracy against your targets until the end of turn.",
+            "Description": "After you perform an attack, all party members deal more damage and have more accuracy against its targets until the end of turn.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -4144,7 +4144,7 @@ var data = {
         "Blazing Link":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Sword/Rapier: Deal melee Cut/Stab+Fire damage to one enemy and mark them with a Link for this turn. Subsequent hits by allies will activate the Link (max 4 times), dealing additional Fire damage. Activation chance starts at 100% and goes down with each activation.",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab+Fire damage to one enemy and mark them with a Link for this turn. Subsequent hits by allies will activate the Link (max 4 times), dealing additional Cut/Stab+Fire damage. Activation chance starts at 100% and goes down with each activation.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -4159,7 +4159,7 @@ var data = {
         "Freezing Link":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Sword/Rapier: Deal melee Cut/Stab+Ice damage to one enemy and mark them with a Link for this turn. Subsequent hits by allies will activate the Link (max 4 times), dealing additional Ice damage. Activation chance starts at 100% and goes down with each activation.",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab+Ice damage to one enemy and mark them with a Link for this turn. Subsequent hits by allies will activate the Link (max 4 times), dealing additional Cut/Stab+Ice damage. Activation chance starts at 100% and goes down with each activation.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -4174,7 +4174,7 @@ var data = {
         "Electric Link":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Sword/Rapier: Deal melee Cut/Stab+Volt damage to one enemy and mark them with a Link for this turn. Subsequent hits by allies will activate the Link (max 4 times), dealing additional Volt damage. Activation chance starts at 100% and goes down with each activation.",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab+Volt damage to one enemy and mark them with a Link for this turn. Subsequent hits by allies will activate the Link (max 4 times), dealing additional Cut/Stab+Volt damage. Activation chance starts at 100% and goes down with each activation.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -4289,11 +4289,11 @@ var data = {
         "Smash Link":{
             "Usage": "Passive",
             "Unlock": "Improved Link (Lv 1)",
-            "Description": "Link activations have a chance to become Critical Hits.",
+            "Description": "Link activations can make Critical Hits, with increased Critical rate. (If a multi-hit attack triggers multiple Links, when one become Critical the remaining ones will also be Critical)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
-                "Crit. Chance": ["7%", "8%", "9%", "10%", "14%", "15%", "16%", "17%", "18%", "25%"],
+                "Crit Rate↑": ["+7%", "+8%", "+9%", "+10%", "+14%", "+15%", "+16%", "+17%", "+18%", "+25%"],
             }
         },
         "Guard Break":{
@@ -4389,7 +4389,7 @@ var data = {
         "Link Finale":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Link Mastery (Lv 2)",
-            "Description": "Sword/Rapier: Deal melee Cut/Stab damage to one enemy. Increase damage dealt by 30% for each time your Link was activated last turn.",
+            "Description": "Sword/Rapier: Deal weapon-based damage to one enemy. Increase damage dealt by 30% for each time your Link was activated last turn.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -4954,7 +4954,7 @@ var data = {
         "Tame Ground":{
             "Usage": "Active (Field)",
             "Unlock": "N/A",
-            "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles.",
+            "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles. Additionally, damage taken from attacks out of battle is decreased to 1.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {

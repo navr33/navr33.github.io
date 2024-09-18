@@ -3980,7 +3980,7 @@ var data = {
     "Comet Drop":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Claw Mastery (Lv 3)",
-        "Description": "Claw: Deal melee Bash damage to an enemy line. Also hits yourself, but at half the power.",
+        "Description": "Claw: Deal melee Bash damage to an enemy line. Also hits yourself, but at half the power. (Does not perform the self hit if it kills all enemies)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
