@@ -1959,6 +1959,177 @@ var data = {
         },
     },
 },
+"Burst Skills":{
+    "1 Gauge":{
+        "Calm Breath":{
+            "Description": "Recover 50% of max HP.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Analyze":{
+            "Description": "Register an enemy's details into the Monstrous Codex.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "2 Gauges":{
+        "Double Slash":{
+            "Description": "Deal 2 hits of STR-based ranged Cut damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["135%"],
+            }
+        },
+        "Flame Wall":{
+            "Description": "Deal TEC-based ranged Fire damage to an enemy line.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["90%"],
+            }
+        },
+        "Superspeed":{
+            "Description": "Makes the whole party act at the start of turn for this turn.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Black Mist":{
+            "Description": "Prevent binds/ailments on enemies from being naturally healed this turn. Cannot repeatedly affect the same instance of an affliction.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "3 Gauges":{
+        "Full Retreat":{
+            "Description": "Escape from battle and teleport to the point where you entered the floor.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Holy Gift":{
+            "Description": "Increase experience gained by 50%. Only usable once per battle.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Charge Order":{
+            "Description": "Increase all damage dealt by the party for this turn.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Damage Dealt↑": ["+40%"],
+            }
+        },
+        "Guard Order":{
+            "Description": "Decrease all damage taken by the party for this turn.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Damage Taken↓": ["-40%"],
+            }
+        },
+        "Ice Coffin":{
+            "Description": "Deal TEC-based ranged Ice damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["140%"],
+            }
+        },
+        "Aegis Guard":{
+            "Description": "Nullify all physical attacks to the party for this turn.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Aegis Ward":{
+            "Description": "Nullify all elemental attacks to the party for this turn.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Falling Stars":{
+            "Description": "Deal 3~4 hits of STR-based ranged Bash damage to random enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["135%"],
+            }
+        },
+    },
+    "4 Gauges":{
+        "Triumph Song":{
+            "Description": "Increase all damage dealt and decrease all damage taken by the party for this turn.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Damage Dealt↑": ["+40%"],
+                "Damage Taken↓": ["-40%"],
+            }
+        },
+        "Swipe Slash":{
+            "Description": "Deal STR-based ranged Cut damage to all enemies, with a chance to inflict Instant Kill.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["200%"],
+                "Infliction Rate": ["35%"],
+            }
+        },
+        "Spectral Cage":{
+            "Description": "Attempt to inflict all 3 binds on one enemy.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Infliction Rate": ["110%"],
+            }
+        },
+        "Aegis Shield":{
+            "Description": "Nullify all attacks against the party for this turn.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Zeus' Wrath":{
+            "Description": "Deal 4~5 hits of TEC-based ranged Volt damage to random enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["50%"],
+            }
+        },
+    },
+    "5 Gauges":{
+        "Geo Impact":{
+            "Description": "Deal STR-based ranged Bash damage to all enemies and inflict Stun. (Ignores Stun resistance and immunity)",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["400%"],
+            }
+        },
+        "Supernova":{
+            "Description": "Deal TEC-based ranged Almighty damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["250%"],
+            }
+        },
+        "Hygieia's Bowl":{
+            "Description": "Revive, fully heal and remove binds/ailments for the whole party.",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+},
 "Battle Items":{
     "Healing":{
         "Medica / Medica II / Medica III / Medica IV":{
@@ -2307,6 +2478,116 @@ function populate(class_name){
                 current_effect = current_skill["Data"][effect]
                 latest = current_effect
                 var latest
+                for (const value in current_effect){
+                    if (current_effect[value] == latest.innerText) {
+                        latest.colSpan = latest.colSpan+1
+                        continue
+                    }
+                    effect_value = document.createElement("td")
+                    effect_value.innerText = current_effect[value]
+                    effect_row.appendChild(effect_value)
+                    latest = effect_value
+                }
+            }
+        }
+    }
+}
+
+function populate_burst(class_name){
+    var skill_list = document.getElementById("skill_list")
+    while (skill_list.hasChildNodes()){
+        skill_list.removeChild(skill_list.firstChild)
+    }
+    var current_class = data[class_name]
+    name_banner = document.createElement("h2")
+    name_banner.style.margin = "20px"
+    name_banner.innerText = class_name
+    skill_list.appendChild(name_banner)
+
+    class_decription = document.createElement("p")
+    class_decription.style.marginLeft = "10px"
+    class_decription.innerText = descriptions[class_name]
+    skill_list.appendChild(class_decription)
+    for (const category in current_class){
+        category_name = document.createElement("h3")
+        category_name.innerText = category
+        skill_list.appendChild(category_name)
+        for (const skill in current_class[category]){
+            var current_skill = current_class[category][skill]
+            skill_table = document.createElement("table")
+            skill_table.classList.add("skill_entry")
+            if (current_skill["Starter"] == "2"){
+                skill_table.style.marginTop = "15px"
+            }
+            skill_list.appendChild(skill_table)
+            
+            first_row = document.createElement("tr")
+            skill_table.appendChild(first_row)
+
+            skill_name = document.createElement("th")
+            first_row.appendChild(skill_name)
+            skill_name.classList.add("skill_name")
+            skill_name.innerText = skill
+            skill_name.colSpan = 2
+
+
+            if (current_skill.hasOwnProperty("Usage")){
+                second_row = document.createElement("tr")
+                skill_table.appendChild(second_row)
+
+                usage = document.createElement("td")
+                second_row.appendChild(usage)
+                usage.innerText = current_skill["Usage"]
+            }
+            
+            third_row = document.createElement("tr")
+            skill_table.appendChild(third_row)
+
+            data_block = document.createElement("td")
+            third_row.appendChild(data_block)
+            data_block.classList.add("hide_table")
+            data_block.style.textAlign = "left"
+            data_block.colSpan = 2
+            data_block.id = skill
+            first_row.addEventListener("click", function(){
+                toggle_data(skill)
+            })
+
+            description = document.createElement("p")
+            data_block.appendChild(description)
+            description.innerHTML = current_skill["Description"]
+
+            levels_table = document.createElement("table")
+            data_block.appendChild(levels_table)
+            levels_table.classList.add("levels_table")
+            levels_row = document.createElement("tr")
+            levels_table.appendChild(levels_row)
+            if (current_skill["Data"] !== ""){
+                start_level = document.createElement("th")
+                start_level.innerText = "Level"
+                levels_row.appendChild(start_level)
+            }
+            for (let i = 1; i <= current_skill["Max Level"]; i++){
+                level = document.createElement("th")
+                levels_row.appendChild(level)
+                if (current_skill.hasOwnProperty("Levels")){
+                    level.innerText = current_skill["Levels"][i-1]
+                }
+                else{
+                    level.innerText = i
+                }
+                
+            }
+            for (const effect in current_skill["Data"]){
+                effect_row = document.createElement("tr")
+                levels_table.appendChild(effect_row)
+
+                effect_name = document.createElement("th")
+                effect_name.innerText = effect
+                effect_row.appendChild(effect_name)
+                current_effect = current_skill["Data"][effect]
+                var latest
+                latest = current_effect
                 for (const value in current_effect){
                     if (current_effect[value] == latest.innerText) {
                         latest.colSpan = latest.colSpan+1
