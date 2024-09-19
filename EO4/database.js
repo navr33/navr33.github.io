@@ -8,7 +8,7 @@ var data = {
             "Max Level": "3",
             "Data": {
                 "Damage Dealt↑": ["+20%", "+25%", "+30%"],
-                "Accuracy↑": ["+10%", "+15%", "+20%"],
+                "Accuracy↑": ["+10", "+15", "+20"],
             }
         },
     },
@@ -19,31 +19,53 @@ var data = {
             "Description": "Sword/Rapier: Deal weapon-based damage to one enemy. Hits at the start of turn.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "5", "5", "5", "5", "5", "6"],
+                "Attack Power": ["130%", "135%", "140%", "145%", "160%", "163%", "166%", "169%", "172%", "180%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Blazing Link":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Sonic Raid (Lv 3)",
-            "Description": "Sword/Rapier: Deal melee Cut/Stab+Fire damage to one enemy and mark them with a Link for this turn. The next hit by an ally will activate the Link, dealing additional Cut/Stab+Fire damage.",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab+Fire damage to one enemy and mark them with a Link for this turn. The next hit by an ally will activate the Link, dealing additional Cut/Stab+Fire damage but with decreased power.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10"],
+                "Attack Power": ["115%", "120%", "124%", "127%", "130%", "132%", "134%", "136%", "138%", "140%"],
+                "Power Modifier\n(Follow Up)": ["x0.4", "x0.4", "x0.4", "x0.4", "x0.45", "x0.45", "x0.45", "x0.45", "x0.45", "x0.5"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Freezing Link":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Sonic Raid (Lv 3)",
-            "Description": "Sword/Rapier: Deal melee Cut/Stab+Fire damage to one enemy and mark them with a Link for this turn. The next hit by an ally will activate the Link, dealing additional Cut/Stab+Fire damage.",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab+Ice damage to one enemy and mark them with a Link for this turn. The next hit by an ally will activate the Link, dealing additional Cut/Stab+Ice damage but with decreased power.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10"],
+                "Attack Power": ["115%", "120%", "124%", "127%", "130%", "132%", "134%", "136%", "138%", "140%"],
+                "Power Modifier\n(Follow Up)": ["x0.4", "x0.4", "x0.4", "x0.4", "x0.45", "x0.45", "x0.45", "x0.45", "x0.45", "x0.5"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Electric Link":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Sonic Raid (Lv 3)",
-            "Description": "Sword/Rapier: Deal melee Cut/Stab+Fire damage to one enemy and mark them with a Link for this turn. The next hit by an ally will activate the Link, dealing additional Cut/Stab+Fire damage.",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab+Volt damage to one enemy and mark them with a Link for this turn. The next hit by an ally will activate the Link, dealing additional Cut/Stab+Volt damage but with decreased power.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10"],
+                "Attack Power": ["115%", "120%", "124%", "127%", "130%", "132%", "134%", "136%", "138%", "140%"],
+                "Power Modifier\n(Follow Up)": ["x0.4", "x0.4", "x0.4", "x0.4", "x0.45", "x0.45", "x0.45", "x0.45", "x0.45", "x0.5"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Power Break":{
             "Usage": "Active (Arms, STR)",
@@ -51,7 +73,13 @@ var data = {
             "Description": "Shield: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which decreases physical damage dealt.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["4", "4", "5", "5", "5", "6"],
+                "Attack Power": ["80%", "83%", "90%", "95%", "100%", "110%"],
+                "Damage Dealt↓": ["-15%", "-17%", "-20%", "-21%", "-22%", "-25%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Mind Break":{
             "Usage": "Active (Arms, STR)",
@@ -59,7 +87,13 @@ var data = {
             "Description": "Shield: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which decreases elemental damage dealt.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["4", "4", "5", "5", "5", "6"],
+                "Attack Power": ["80%", "83%", "90%", "95%", "100%", "110%"],
+                "Damage Dealt↓": ["-15%", "-17%", "-20%", "-21%", "-22%", "-25%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Power Boost":{
             "Usage": "Passive",
@@ -67,7 +101,9 @@ var data = {
             "Description": "Increases physical damage dealt.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑": ["+5%", "+9%", "+12%", "+15%", "+17%", "+19%", "+21%", "+23%"],
+            }
         },
         "Vanguard":{
             "Usage": "Active (Head)",
@@ -75,7 +111,12 @@ var data = {
             "Description": "Place a buff on yourself for 5 turns, which increases physical damage dealt and makes you act first but also increases physical damage taken.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "6", "6"],
+                "Damage Dealt↑": ["+10%", "+18%", "+25%", "+30%", "+35%", "+40%"],
+                "Damage Taken↑": ["+25%", "+25%", "+25%", "+25%", "+25%", "+25%"],
+                "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6"],
+            }
         },
         "Bandage":{
             "Usage": "Active (Field)",
@@ -83,7 +124,10 @@ var data = {
             "Description": "Restore HP to one ally.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["2", "2", "4", "4", "8", "8"],
+                "HP Gain": ["10", "20", "50", "60", "140", "150"],
+            }
         },
         "Mineralogy":{
             "Usage": "Passive (Field)",
@@ -101,7 +145,12 @@ var data = {
             "Description": "Sword/Rapier: Deal 2 hits of melee Cut/Stab damage to one enemy.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["9", "9", "9", "11", "11", "11", "11", "13"],
+                "Attack Power": ["95%", "102%", "108%", "125%", "129%", "133%", "137%", "150%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["-3", "-3", "-3", "-1", "-1", "-1", "-1", "+0"],
+            }
         },
         "Spiral Slice":{
             "Usage": "Active (Arms, STR)",
@@ -109,7 +158,12 @@ var data = {
             "Description": "Sword: Deal melee Cut damage to one enemy, with splash effect.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["11", "11", "11", "13", "13", "13", "13", "16"],
+                "Attack Power": ["155%", "165%", "175%", "195%", "202%", "209%", "215%", "230%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Penetrate":{
             "Usage": "Active (Arms, STR)",
@@ -117,7 +171,12 @@ var data = {
             "Description": "Rapier: Deal melee Stab damage to one enemy, with pierce effect.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["11", "11", "11", "13", "13", "13", "13", "16"],
+                "Attack Power": ["180%", "190%", "200%", "230%", "238%", "246%", "254%", "270%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Iron Wall":{
             "Usage": "Passive",
@@ -125,15 +184,19 @@ var data = {
             "Description": "Decreases physical damage taken.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Damage Taken↓": ["-5%", "-9%", "-12%", "-15%", "-17%", "-19%", "-21%", "-23%"],
+            }
         },
         "Swordbreaker":{
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Chance of halving physical damage taken by party members in your line.",
             "Starter": "0",
-            "Max Level": "8",
-            "Data": ""
+            "Max Level": "6",
+            "Data": {
+                "Activation Chance": ["5%", "10%", "15%", "18%", "20%", "22%"],
+            }
         },
         "Improved Link":{
             "Usage": "Active (Head)",
@@ -141,7 +204,11 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which increases maximum Link activations. Multi-hit attacks can trigger a Link multiple times (max 4), but activation chance during an attack goes down by 20% with each activation.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["7", "8", "9", "10", "9", "8", "7", "10"],
+                "Added Links": ["+3", "+4", "+5", "+6", "+6", "+6", "+6", "+7"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Initiative":{
             "Usage": "Passive",
@@ -149,15 +216,21 @@ var data = {
             "Description": "Increases all damage dealt and accuracy when you attack before any enemy has acted.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑": ["+10%", "+18%", "+25%", "+30%", "+33%", "+36%", "+38%", "+40%"],
+                "Accuracy↑": ["+10", "+15", "+18", "+20", "+22", "+23", "+24", "+25"],
+            }
         },
         "Muscular Chef":{
             "Usage": "Passive (Sky)",
             "Unlock": "N/A",
             "Description": "Increases STR gains and decreases STR loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
             "Starter": "0",
-            "Max Level": "0",
-            "Data": ""
+            "Max Level": "5",
+            "Data": {
+                "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
+                "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
+            }
         },
     },
     "Master (Lv 40)":{
@@ -167,15 +240,12 @@ var data = {
             "Description": "Sword: Deal melee Cut damage to one enemy.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
-        },
-        "Sword Tempest":{
-            "Usage": "Active (Arms, STR)",
-            "Unlock": "Spiral Slice (Lv 3)",
-            "Description": "Sword: Deal melee Cut damage to one enemy.",
-            "Starter": "0",
-            "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["13", "13", "13", "15", "15", "15", "15", "18"],
+                "Attack Power": ["270%", "290%", "310%", "350%", "360%", "370%", "380%", "400%"],
+                "Accuracy": ["-5", "-5", "-5", "-5", "-5", "-5", "-5", "-5"],
+                "Action Speed": ["-20", "-20", "-20", "-20", "-20", "-20", "-20", "-20"],
+            }
         },
         "Swift Stab":{
             "Usage": "Active (Arms, STR)",
@@ -183,7 +253,14 @@ var data = {
             "Description": "Rapier: Deal multiple hits of melee Stab damage to random enemies in a line.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["16", "16", "16", "19", "19", "19", "19", "23"],
+                "Attack Power": ["95%", "99%", "103%", "105%", "108%", "111%", "113%", "125%"],
+                "Min. Hits": ["3", "3", "3", "3", "3", "3", "3", "3"],
+                "Max. Hits": ["3", "3", "3", "4", "4", "4", "4", "4"],
+                "Accuracy": ["-15", "-15", "-15", "-15", "-15", "-15", "-15", "-15"],
+                "Action Speed": ["+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9"],
+            }
         },
         "Weapon Parry":{
             "Usage": "Passive",
@@ -191,7 +268,9 @@ var data = {
             "Description": "Decreases physical damage taken if you have two weapons equipped.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Damage Taken↓": ["-10%", "-15%", "-20%", "-24%", "-27%", "-30%"],
+            }
         },
         "Link Mastery":{
             "Usage": "Passive",
@@ -199,7 +278,9 @@ var data = {
             "Description": "Increases damage dealt by a Link's activations for each time it has been activated this turn.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑": ["+3%", "+4%", "+5%", "+6%", "+7%", "+8%"],
+            }
         },
     },
 },
@@ -351,8 +432,11 @@ var data = {
             "Unlock": "N/A",
             "Description": "Increases AGI gains and decreases AGI loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
             "Starter": "0",
-            "Max Level": "0",
-            "Data": ""
+            "Max Level": "5",
+            "Data": {
+                "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
+                "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
+            }
         },
     },
     "Master (Lv 40)":{
@@ -554,8 +638,11 @@ var data = {
             "Unlock": "N/A",
             "Description": "Increases VIT gains and decreases VIT loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
             "Starter": "0",
-            "Max Level": "0",
-            "Data": ""
+            "Max Level": "5",
+            "Data": {
+                "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
+                "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
+            }
         },
     },
     "Master (Lv 40)":{
@@ -934,7 +1021,7 @@ var data = {
         "Toxin Study":{
             "Usage": "Passive (Sky)",
             "Unlock": "N/A",
-            "Description": "Removes poison from cooked food, making it grant a bonus instead of dealing damage.",
+            "Description": "Removes poison from poisonous food, making it grant a bonus instead of dealing damage.",
             "Starter": "0",
             "Max Level": "0",
             "Data": ""
@@ -1132,8 +1219,11 @@ var data = {
             "Unlock": "N/A",
             "Description": "Increases TEC gains and decreases TEC loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
             "Starter": "0",
-            "Max Level": "0",
-            "Data": ""
+            "Max Level": "5",
+            "Data": {
+                "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
+                "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
+            }
         },
     },
     "Master (Lv 40)":{
@@ -1226,7 +1316,7 @@ var data = {
         },
         "Counter Samba":{
             "Usage": "Active (Legs)",
-            "Unlock": "Counter",
+            "Unlock": "N/A",
             "Description": "Place a buff on yourself for 3 turns, which gives you a chance to counterattack when your line is hit.",
             "Starter": "0",
             "Max Level": "8",
@@ -1317,7 +1407,7 @@ var data = {
         "Burst Saver":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Chance to spend 1 less level Burst gauge when you use a Burst skill.",
+            "Description": "Chance to spend 1 less level of Burst gauge when you use a Burst skill.",
             "Starter": "0",
             "Max Level": "10",
             "Data": ""
@@ -1327,8 +1417,11 @@ var data = {
             "Unlock": "N/A",
             "Description": "Increases LUC gains and decreases LUC loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
             "Starter": "0",
-            "Max Level": "0",
-            "Data": ""
+            "Max Level": "5",
+            "Data": {
+                "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
+                "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
+            }
         },
     },
     "Master (Lv 40)":{
@@ -1522,8 +1615,11 @@ var data = {
             "Unlock": "N/A",
             "Description": "Increases TP gains and decreases TP loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
             "Starter": "0",
-            "Max Level": "0",
-            "Data": ""
+            "Max Level": "5",
+            "Data": {
+                "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
+                "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
+            }
         },
     },
     "Master (Lv 40)":{
@@ -1709,8 +1805,11 @@ var data = {
             "Unlock": "N/A",
             "Description": "Increases HP gains and decreases HP loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
             "Starter": "0",
-            "Max Level": "0",
-            "Data": ""
+            "Max Level": "5",
+            "Data": {
+                "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
+                "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
+            }
         },
     },
     "Master (Lv 40)":{
