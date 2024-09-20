@@ -1338,7 +1338,7 @@ var data = {
             "Data": {
                 "Accuracy↑": ["+10%", "+12%", "+14%", "+14%", "+16%", "+18%", "+20%", "+20%"],
                 "Evasion↑": ["+10%", "+12%", "+14%", "+14%", "+16%", "+18%", "+20%", "+20%"],
-                "Speed↑": ["x1.3%", "x1.43", "x1.51", "x1.51", "x1.59", "x1.67", "x1.75", "x1.75"],
+                "Speed↑": ["x1.35", "x1.43", "x1.51", "x1.51", "x1.59", "x1.67", "x1.75", "x1.75"],
                 "Duration (Start)": ["4", "4", "4", "5", "5", "5", "5", "6"],
             }
         },
@@ -4203,7 +4203,7 @@ var data = {
         "Power Break":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Shield: Deal melee Bash damage to one enemy. Place a debuff on the target for 3 turns, which decreases physical/elemental damage dealt.",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which decreases physical/elemental damage dealt. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -4289,7 +4289,7 @@ var data = {
         "Smash Link":{
             "Usage": "Passive",
             "Unlock": "Improved Link (Lv 1)",
-            "Description": "Link activations can make Critical Hits, with increased Critical rate. (If a multi-hit attack triggers multiple Links, when one become Critical the remaining ones will also be Critical)",
+            "Description": "Link activations can make Critical Hits, with increased Critical rate. (If a multi-hit attack triggers multiple Links, once one of them becomes Critical the remaining ones will all be Critical)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -4299,7 +4299,7 @@ var data = {
         "Guard Break":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Power Break (Lv 2)",
-            "Description": "Shield: Deal melee Bash damage to one enemy. Place a debuff on the target for 3 turns, which increases physical/elemental damage taken.",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which increases physical/elemental damage taken. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -4313,7 +4313,7 @@ var data = {
         "Speed Break":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Guard Break (Lv 2)",
-            "Description": "Shield: Deal melee Bash damage to one enemy. Place a debuff on the target for 3 turns, which decreases evasion and action speed.",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which decreases evasion and action speed. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -4402,7 +4402,7 @@ var data = {
         "Full Break":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Speed Break (Lv 2)",
-            "Description": "Shield: Deal melee Bash damage to one enemy. Increase damage dealt by 125% if the target has a Break skill debuff.",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Increase damage dealt by 125% if the target has a Break skill debuff. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
             "Starter": "1",
             "Max Level": "6",
             "Data": {

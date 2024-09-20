@@ -35,7 +35,7 @@ var data = {
     "Prevent Order":{
         "Usage": "Active (Head)",
         "Unlock": "Guard Order (Lv 3)",
-        "Description": "Place a buff on an ally row for 3 turns, which nullifies one ailment infliction received (disappears when activated).",
+        "Description": "Place a buff on an ally row for 3 turns, which nullifies one ailment infliction received. (Buff is consumed when activated)",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -130,7 +130,7 @@ var data = {
     "Ad Nihilo":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Guard Order (Lv 5), Attack Order (Lv 5)",
-        "Description": "Dispel all buffs on one enemy. If successful, deal ranged Almighty damage to that enemy. This attack cannot miss.",
+        "Description": "Dispel all buffs on one enemy. Deal Almighty damage to the target if at least one modifier was removed. Cannot miss.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -182,7 +182,7 @@ var data = {
     "Negotiation":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Nobility Proof (Lv 1)",
-        "Description": "Dispel all buffs on one ally. If successful, restore HP to them.",
+        "Description": "Dispel all buffs on one ally. Restore HP to the target if at least one modifier was removed.",
         "Starter": "0",
         "Max Level": "10",
         "Data":{
@@ -194,7 +194,7 @@ var data = {
     "Inspire":{
         "Usage": "Active (Head)",
         "Unlock": "Nobility Proof (Lv 3)",
-        "Description": "Dispel all debuffs on an ally row. Restore TP to successful targets.",
+        "Description": "Dispel all debuffs on an ally row. Restore TP to targets where at least one modifier was removed.",
         "Starter": "0",
         "Max Level": "10",
         "Data":{
@@ -218,7 +218,7 @@ var data = {
     "Endless Battle":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Increase physical damage dealt.",
+        "Description": "Increases physical damage dealt.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -228,7 +228,7 @@ var data = {
     "Sword Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt with Sword's normal attacks. Unlocks Sword skills.",
+        "Description": "Increases damage dealt with Sword's normal attacks. Unlocks Sword skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -308,7 +308,7 @@ var data = {
     "Club Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt with Club's normal attacks. Unlocks Club skills.",
+        "Description": "Increases damage dealt with Club's normal attacks. Unlocks Club skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -456,7 +456,7 @@ var data = {
     "Guardian":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Decrease physical damage taken.",
+        "Description": "Decreases physical damage taken.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -466,7 +466,7 @@ var data = {
     "Shield Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "If a Shield is equipped, decrease physical damage taken. Unlocks Shield skills.",
+        "Description": "If a Shield is equipped, decreases physical damage taken. Unlocks Shield skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -537,7 +537,7 @@ var data = {
     "Overwatch":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 8), Selflessness (Lv 3)",
-        "Description": "Shield: Protect one ally for this turn, which nullifies attacks to them that would've done more damage than your current HP.",
+        "Description": "Shield: Protect another ally for this turn, which nullifies attacks to them if the calculated damage is higher than your current HP.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -572,7 +572,7 @@ var data = {
     "Parry":{
         "Usage": "Passive",
         "Unlock": "Provoke (Lv 5)",
-        "Description": "Gain a chance to nullify physical attacks received.",
+        "Description": "Chance to nullify physical attacks received.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -582,7 +582,7 @@ var data = {
     "Magic Parry":{
         "Usage": "Passive",
         "Unlock": "Provoke (Lv 5)",
-        "Description": "Gain a chance to nullify elemental attacks received.",
+        "Description": "Chance to nullify elemental attacks received.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -592,7 +592,7 @@ var data = {
     "Spear Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt with Spear's normal attacks. Unlocks Spear skills.",
+        "Description": "Increases damage dealt with Spear's normal attacks. Unlocks Spear skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -687,7 +687,7 @@ var data = {
     "Rapier Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt with Rapier's normal attacks. Unlocks Rapier skills.",
+        "Description": "Increases damage dealt with Rapier's normal attacks. Unlocks Rapier skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -767,7 +767,7 @@ var data = {
     "Gun Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt with Gun's normal attacks. Unlocks Gun skills.",
+        "Description": "Increases damage dealt with Gun's normal attacks. Unlocks Gun skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -886,7 +886,7 @@ var data = {
     "Lady Luck":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Critical Hit chance.",
+        "Description": "Increases Critical Hit chance.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -896,7 +896,7 @@ var data = {
     "Limit Boost":{
         "Usage": "Passive",
         "Unlock": "Eagle Eye (Lv 3), Lady Luck (Lv 3)",
-        "Description": "Increase minimum Limit Gauge gains. (For reference, normal gain is a random value from 5 to 15)",
+        "Description": "Increases minimum Limit Gauge gains. (For reference, normal gain is a random value from 5 to 15)",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -920,7 +920,7 @@ var data = {
     "Mystic Calm":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Decrease the TP cost of all skills (to a minimum of 1). Removes the back row penalty for melee attacks.",
+        "Description": "Decreases the TP cost of all skills (to a minimum of 1). Removes the back row penalty for melee attacks.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -976,7 +976,7 @@ var data = {
     "Knife Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt with Knife's normal attacks. Unlocks Knife skills.",
+        "Description": "Increases damage dealt with Knife's normal attacks. Unlocks Knife skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1093,7 +1093,7 @@ var data = {
     "Concealment":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase evasion.",
+        "Description": "Increases evasion.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1151,7 +1151,7 @@ var data = {
     "Form Qi":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Increase the effect of non-fixed healing skills.",
+        "Description": "Increases the effect of non-fixed healing skills.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -1244,7 +1244,7 @@ var data = {
     "Waking Chakra":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase natural bind/ailment recovery rate.",
+        "Description": "Increases natural bind/ailment recovery rate.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1377,7 +1377,7 @@ var data = {
     "Ether Mastery":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Increase elemental damage dealt.",
+        "Description": "Increases elemental damage dealt.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -1387,7 +1387,7 @@ var data = {
     "Fire Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Fire damage dealt. Unlocks Fire skills.",
+        "Description": "Increases Fire damage dealt. Unlocks Fire skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1435,7 +1435,7 @@ var data = {
     "Ice Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Ice damage dealt. Unlocks Ice skills.",
+        "Description": "Increases Ice damage dealt. Unlocks Ice skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1483,7 +1483,7 @@ var data = {
     "Volt Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Volt damage dealt. Unlocks Volt skills.",
+        "Description": "Increases Volt damage dealt. Unlocks Volt skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1542,7 +1542,7 @@ var data = {
     "Singularity":{
         "Usage": "Passive",
         "Unlock": "Dark Ether (Lv 5)",
-        "Description": "Increase damage dealt when hitting an enemy's weakness.",
+        "Description": "Increases damage dealt when hitting an enemy's weakness.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -1602,7 +1602,7 @@ var data = {
     "Beast Soul":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Increase Max HP, damage dealt, and defense for your summoned Beasts.",
+        "Description": "Increases Max HP, damage dealt, and defense for your summoned Beasts.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -1614,7 +1614,7 @@ var data = {
     "Wild Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase infliction chances of your summoned Beasts. This bonus is added after applying resistances. Unlocks Beast skills.",
+        "Description": "Increases infliction chances of your summoned Beasts. This bonus is added after applying resistances. Unlocks Beast skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1624,7 +1624,7 @@ var data = {
     "Dismiss Beast":{
         "Usage": "Active (Arms)",
         "Unlock": "Wild Mastery (Lv 1)",
-        "Description": "Removes a summoned Beast from battle, then recover the TP that was spent to summon it.",
+        "Description": "Remove a summoned Beast from battle, then recover the TP that was spent to summon it.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -1639,7 +1639,8 @@ var data = {
         "Max Level": "10",
         "Data": {
             "TP Cost": ["15", "15", "18", "18", "21", "21", "24", "24", "27", "27"],
-            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Separator":[],
             "Beast HP": ["40", "45", "50", "55", "60", "66", "72", "78", "84", "90"],
             "Attack Power": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "130%"],
             "Infliction Rate": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
@@ -1654,7 +1655,8 @@ var data = {
         "Max Level": "10",
         "Data": {
             "TP Cost": ["15", "15", "18", "18", "21", "21", "24", "24", "27", "27"],
-            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Separator":[],
             "Beast HP": ["40", "45", "50", "55", "60", "66", "72", "78", "84", "90"],
             "Attack Power": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "130%"],
             "Infliction Rate": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
@@ -1669,7 +1671,8 @@ var data = {
         "Max Level": "10",
         "Data": {
             "TP Cost": ["15", "15", "18", "18", "21", "21", "24", "24", "27", "27"],
-            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Separator":[],
             "Beast HP": ["40", "45", "50", "55", "60", "66", "72", "78", "84", "90"],
             "Attack Power": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "130%"],
             "Infliction Rate": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
@@ -1684,7 +1687,8 @@ var data = {
         "Max Level": "10",
         "Data": {
             "TP Cost": ["18", "18", "21", "21", "24", "24", "27", "27", "30", "30"],
-            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Separator":[],
             "Beast HP": ["20", "22", "24", "26", "28", "30", "32", "34", "36", "40"],
             "Attack Power": ["60%", "65%", "70%", "75%", "80%", "90%", "100%", "110%", "120%", "130%"],
             "Infliction Rate": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
@@ -1700,7 +1704,8 @@ var data = {
         "Max Level": "10",
         "Data": {
             "TP Cost": ["18", "18", "21", "21", "24", "24", "27", "27", "30", "30"],
-            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Separator":[],
             "Beast HP": ["70", "80", "88", "98", "105", "112", "119", "126", "133", "140"],
             "Infliction Rate": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
         }
@@ -1713,7 +1718,8 @@ var data = {
         "Max Level": "10",
         "Data": {
             "TP Cost": ["27", "27", "30", "30", "33", "33", "36", "36", "39", "39"],
-            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Separator":[],
             "Beast HP": ["20", "22", "24", "26", "28", "30", "32", "34", "36", "40"],
             "Attack Power": ["120%", "125%", "130%", "135%", "140%", "150%", "160%", "170%", "180%", "190%"],
             "Infliction Rate": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
@@ -1729,7 +1735,8 @@ var data = {
         "Max Level": "10",
         "Data": {
             "TP Cost": ["21", "21", "24", "24", "27", "27", "30", "30", "33", "33"],
-            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Separator":[],
             "Beast HP": ["110", "125", "140", "155", "170", "185", "200", "215", "230", "250"],
             "Attack Power": ["75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%"],
             "Infliction Rate": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
@@ -1744,7 +1751,8 @@ var data = {
         "Max Level": "10",
         "Data": {
             "TP Cost": ["21", "21", "24", "24", "27", "27", "30", "30", "33", "33"],
-            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Separator":[],
             "Beast HP": ["100", "115", "125", "140", "150", "160", "170", "180", "190", "200"],
             "Attack Power": ["65%", "68%", "70%", "73%", "76%", "78%", "81%", "84%", "87%", "90%"],
             "Infliction Rate": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
@@ -1761,7 +1769,8 @@ var data = {
         "Max Level": "10",
         "Data": {
             "TP Cost": ["27", "27", "30", "30", "33", "33", "36", "36", "39", "39"],
-            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Separator":[],
             "Beast HP": ["160", "184", "200", "224", "240", "256", "272", "288", "304", "320"],
             "Attack Power\n(Normal)": ["130%", "135%", "140%", "145%", "150%", "160%", "170%", "180%", "190%", "200%"],
             "Attack Power\n(Ailment)": ["208%", "230%", "252%", "275%", "300%", "336%", "374%", "414%", "456%", "500%"],
@@ -1777,7 +1786,8 @@ var data = {
         "Max Level": "10",
         "Data": {
             "TP Cost": ["27", "27", "30", "30", "33", "33", "36", "36", "39", "39"],
-            "Action Speed\n(Summoning)": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            "Separator":[],
             "Beast HP": ["160", "184", "200", "224", "240", "256", "272", "288", "304", "320"],
             "Attack Power": ["120%", "125%", "130%", "140%", "150%", "160%", "170%", "180%", "190%", "200%"],
             "Infliction Rate": ["5%", "6%", "7%", "8%", "10%", "12%", "14%", "16%", "18%", "20%"],
@@ -1853,7 +1863,7 @@ var data = {
     "Giant Kill":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt to enemies whose current HP is at least twice your own current HP.",
+        "Description": "Increases damage dealt to enemies whose current HP is at least twice your own current HP.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -1863,7 +1873,7 @@ var data = {
     "Bolt Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt with Crossbow's normal attacks. Unlocks Crossbow skills.",
+        "Description": "Increases damage dealt with Crossbow's normal attacks. Unlocks Crossbow skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2013,7 +2023,7 @@ var data = {
     "Proper Form":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase accuracy.",
+        "Description": "Increases accuracy.",
         "Starter": "1",
         "Max Level": "5",
         "Data": {
@@ -2057,7 +2067,7 @@ var data = {
     "Night Vision":{
         "Usage": "Passive",
         "Unlock": "Pop Flares (Lv 3), Smoke Grenade (Lv 3)",
-        "Description": "Increase Critical Hit chance during the night.",
+        "Description": "Increases Critical Hit chance during the night.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -2161,7 +2171,7 @@ var data = {
     "Brave Heart":{
         "Usage": "Passive",
         "Unlock": "Sympathy Pain (Lv 5)",
-        "Description": "At the end of each turn, recover TP of your HP is full.",
+        "Description": "At the end of each turn, recover TP if your HP is full.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -2181,7 +2191,7 @@ var data = {
     "Keen Nose":{
         "Usage": "Passive (Field)",
         "Unlock": "Harvestry (Lv 3)",
-        "Description": "Gain an additional chance of finding rare items when gathering.",
+        "Description": "Chance of finding additional, rare items when gathering.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -2202,7 +2212,7 @@ var data = {
     "Camp Mastery":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Increase the HP and TP recovery from using Tents. Also makes Tents revive and remove Petrify.",
+        "Description": "Increases the HP and TP recovery from using Tents. Also makes Tents revive and remove Petrify.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2213,7 +2223,7 @@ var data = {
     "Waste Not":{
         "Usage": "Passive",
         "Unlock": "Camp Mastery (Lv 3)",
-        "Description": "Increase enemy drop rates.",
+        "Description": "Increases enemy drop rates.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -2299,7 +2309,7 @@ var data = {
     "Katana Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt with Katana's normal attacks. Unlocks Katana skills.",
+        "Description": "Increases damage dealt with Katana's normal attacks. Unlocks Katana skills.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2466,7 +2476,7 @@ var data = {
     "Bloody Lance":{
         "Usage": "Passive",
         "Unlock": "Endure (Lv 3)",
-        "Description": "Increase damage dealt each time an ally or enemy dies. Resets to 0 if you die.",
+        "Description": "Increases damage dealt each time an ally or enemy dies. Resets to 0 if you die.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -2595,7 +2605,7 @@ var data = {
     "Overheat":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase damage dealt, but lose HP each time you act.",
+        "Description": "Increases damage dealt, but makes you lose HP each time you act.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2632,7 +2642,7 @@ var data = {
     "Virus Scanner":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase resistance to all ailments.",
+        "Description": "Increases resistance to all ailments.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2642,7 +2652,7 @@ var data = {
     "Infravision":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase accuracy and evasion during the night.",
+        "Description": "Increases accuracy and evasion during the night.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2653,7 +2663,7 @@ var data = {
     "Data Mining":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increase Critical Hit rate and the Critical damage bonus.",
+        "Description": "Increases Critical Hit rate and the Critical damage bonus.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2664,12 +2674,13 @@ var data = {
     "Red Bot":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Data Mining (Lv 1)",
-        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Fire attacks, dealing ranged Fire damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Fire attacks, dealing ranged Fire damage to the same targets. Activation chance per turn starts at 100% and goes down with each follow up.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["10", "11", "12", "13", "14", "15", "16", "17", "18", "20"],
-            "Action Speed\n(Summoning)": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            "Separator":[],
             "Bot HP": ["40", "60", "80", "110", "140", "175", "210", "250", "290", "360"],
             "Attack Power": ["80%", "90%", "100%", "110%", "120%", "130%", "140%", "150%", "160%", "170%"],
             "Chance Fadeout": ["-40%", "-37%", "-34%", "-31%", "-28%", "-25%", "-22%", "-19%", "-16%", "-13%"],
@@ -2679,12 +2690,13 @@ var data = {
     "Blue Bot":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Data Mining (Lv 1)",
-        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Ice attacks, dealing ranged Ice damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Ice attacks, dealing ranged Ice damage to the same targets. Activation chance per turn starts at 100% and goes down with each follow up.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["10", "11", "12", "13", "14", "15", "16", "17", "18", "20"],
-            "Action Speed\n(Summoning)": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            "Separator":[],
             "Bot HP": ["40", "60", "80", "110", "140", "175", "210", "250", "290", "360"],
             "Attack Power": ["80%", "90%", "100%", "110%", "120%", "130%", "140%", "150%", "160%", "170%"],
             "Chance Fadeout": ["-40%", "-37%", "-34%", "-31%", "-28%", "-25%", "-22%", "-19%", "-16%", "-13%"],
@@ -2694,12 +2706,13 @@ var data = {
     "Yellow Bot":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Data Mining (Lv 1)",
-        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Volt attacks, dealing ranged Volt damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Volt attacks, dealing ranged Volt damage to the same targets. Activation chance per turn starts at 100% and goes down with each follow up.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["10", "11", "12", "13", "14", "15", "16", "17", "18", "20"],
-            "Action Speed\n(Summoning)": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            "Separator":[],
             "Bot HP": ["40", "60", "80", "110", "140", "175", "210", "250", "290", "360"],
             "Attack Power": ["80%", "90%", "100%", "110%", "120%", "130%", "140%", "150%", "160%", "170%"],
             "Chance Fadeout": ["-40%", "-37%", "-34%", "-31%", "-28%", "-25%", "-22%", "-19%", "-16%", "-13%"],
@@ -2760,8 +2773,7 @@ var data = {
 "Common Skills":{
     "HP Up":{
         "Usage": "Passive",
-        "Unlock": "N/A",
-        "Description": "Increase Max HP.",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2770,8 +2782,7 @@ var data = {
     },
     "TP Up":{
         "Usage": "Passive",
-        "Unlock": "N/A",
-        "Description": "Increase Max TP.",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2780,7 +2791,6 @@ var data = {
     },
     "Bandage":{
         "Usage": "Active (Field)",
-        "Unlock": "N/A",
         "Description": "Restore HP to one ally.",
         "Starter": "1",
         "Max Level": "10",
@@ -2791,7 +2801,6 @@ var data = {
     },
     "Combat Study":{
         "Usage": "Passive",
-        "Unlock": "N/A",
         "Description": "If you're not in the active party, a percentage of the experience earned from battle is also gained by you.",
         "Starter": "1",
         "Max Level": "10",
@@ -2801,7 +2810,6 @@ var data = {
     },
     "Take":{
         "Usage": "Passive (Field)",
-        "Unlock": "N/A",
         "Description": "Allows you to gather from Take spots a certain amount of times per day.",
         "Starter": "1",
         "Max Level": "10",
@@ -2811,7 +2819,6 @@ var data = {
     },
     "Chop":{
         "Usage": "Passive (Field)",
-        "Unlock": "N/A",
         "Description": "Allows you to gather from Chop spots a certain amount of times per day.",
         "Starter": "1",
         "Max Level": "10",
@@ -2821,7 +2828,6 @@ var data = {
     },
     "Mine":{
         "Usage": "Passive (Field)",
-        "Unlock": "N/A",
         "Description": "Allows you to gather from Mine spots a certain amount of times per day.",
         "Starter": "1",
         "Max Level": "10",
@@ -2831,199 +2837,146 @@ var data = {
     },
 },
 "Limit Skills":{
-    "Cross Slash":{
-        "Usage": "2 Units (STR)",
-        "Unlock": "Initial",
-        "Description": "At the start of the turn, deal Cut damage to one enemy.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Attack Power": ["230%"],
-        }
+    "1 Unit":{
+        "Indomitable":{
+            "Description": "Survive one instance of lethal damage with 1 HP.",
+            "Max Level": "0",
+            "Data": "",
+        },
+        "Second Wind":{
+            "Description": "At the end of the turn, fully restore your HP.",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Lucky Hammer":{
+            "Description": "At the end of the turn, deal STR-based Bash damage to one enemy. If it kills, obtain all of the target's item drops.",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["130%"],
+            }
+        },
     },
-    "Indomitable":{
-        "Usage": "1 Unit",
-        "Unlock": "Initial",
-        "Description": "Survive one instance of lethal damage with 1 HP.",
-        "Starter": "1",
-        "Max Level": "0",
-        "Data": "",
+    "2 Units":{
+        "Cross Slash":{
+            "Description": "At the start of the turn, deal STR-based Cut damage to one enemy.",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["230%"],
+            }
+        },
+        "Charge Tactic":{
+            "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which increases physical/elemental damage dealt.",
+            "Max Level": "1",
+            "Data": {
+                "Damage Dealt↑": ["+25%"],
+            }
+        },
+        "Guard Tactic":{
+            "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which decreases physical/elemental damage taken.",
+            "Max Level": "1",
+            "Data": {
+                "Damage Taken↓": ["-25%"],
+            }
+        },
+        "Lethal Tactic":{
+            "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which grants 100% Critical Hit chance.",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Wind Tactic":{
+            "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which increases evasion.",
+            "Max Level": "1",
+            "Data": {
+                "Evasion↑": ["+30%"],
+            }
+        },
+        "Hellfire":{
+            "Description": "At the end of the turn, deal 3~5 hits of TEC-based Fire damage to random enemies.",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["65%"],
+            }
+        },
+        "Absolute Zero":{
+            "Description": "At the end of the turn, deal 3~5 hits of TEC-based Ice damage to random enemies.",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["65%"],
+            }
+        },
+        "Typhoon Bolt":{
+            "Description": "At the end of the turn, deal 3~5 hits of TEC-based Volt damage to random enemies.",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["65%"],
+            }
+        },
     },
-    "Charge Tactic":{
-        "Usage": "2 Units",
-        "Unlock": "Initial",
-        "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which increases physical/elemental damage dealt.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Damage Dealt↑": ["+25%"],
-        }
+    "3 Units":{
+        "Mumyouken":{
+            "Description": "At the start of the turn, deal 3 hits of STR-based Stab damage to random enemies.",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["140%"],
+            }
+        },
+        "Aegis Defense":{
+            "Description": "Nullify physical attacks received by the party this turn.",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Aegis Barrier":{
+            "Description": "Nullify elemental attacks received by the party this turn.",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Regroup Tactic":{
+            "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which restores HP and removes ailments at the end of each turn.",
+            "Max Level": "1",
+            "Data": {
+                "Healing Power": ["30%"],
+            }
+        },
+        "Immortal":{
+            "Description": "At the end of the turn, revive, remove ailments/binds and fully restore HP and TP for the whole party.",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
-    "Mumyouken":{
-        "Usage": "3 Units (STR)",
-        "Unlock": "?",
-        "Description": "At the start of the turn, deal 3 hits of Stab damage to random enemies.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Attack Power": ["140%"],
-        }
+    "4 Units":{
+        "Sungrazer":{
+            "Description": "At the start of the turn, deal TEC-based Almighty damage to one enemy.",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["500%"],
+            }
+        },
+        "Aegis Shield":{
+            "Description": "Nullify all attacks received by the party this turn.",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Uroboros Guard":{
+            "Description": "For this turn, the whole party will absorb all attack damage taken.",
+            "Max Level": "0",
+            "Data": ""
+        },
     },
-    "Guard Tactic":{
-        "Usage": "2 Units",
-        "Unlock": "?",
-        "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which decreases physical/elemental damage taken.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Damage Taken↓": ["-25%"],
-        }
-    },
-    "Second Wind":{
-        "Usage": "1 Unit",
-        "Unlock": "?",
-        "Description": "At the end of the turn, fully restore your HP.",
-        "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
-    },
-    "Lethal Tactic":{
-        "Usage": "2 Units",
-        "Unlock": "?",
-        "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which grants 100% Critical Hit chance.",
-        "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
-    },
-    "Aegis Defense":{
-        "Usage": "3 Units",
-        "Unlock": "?",
-        "Description": "Nullify physical attacks received by the party this turn.",
-        "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
-    },
-    "Hellfire":{
-        "Usage": "2 Units (TEC)",
-        "Unlock": "?",
-        "Description": "At the end of the turn, deal 3~5 hits of Fire damage to random enemies.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Attack Power": ["65%"],
-        }
-    },
-    "Wind Tactic":{
-        "Usage": "2 Units",
-        "Unlock": "?",
-        "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which increases evasion.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Evasion↑": ["+30%"],
-        }
-    },
-    "Absolute Zero":{
-        "Usage": "2 Units (TEC)",
-        "Unlock": "?",
-        "Description": "At the end of the turn, deal 3~5 hits of Ice damage to random enemies.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Attack Power": ["65%"],
-        }
-    },
-    "Aegis Barrier":{
-        "Usage": "3 Units",
-        "Unlock": "?",
-        "Description": "Nullify elemental attacks received by the party this turn.",
-        "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
-    },
-    "Sungrazer":{
-        "Usage": "4 Units (TEC)",
-        "Unlock": "?",
-        "Description": "At the start of the turn, deal Almighty damage to one enemy.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Attack Power": ["500%"],
-        }
-    },
-    "Regroup Tactic":{
-        "Usage": "3 Units (TEC)",
-        "Unlock": "?",
-        "Description": "At the start of the turn, place a buff on the whole party for 5 turns, which restores HP and removes ailments at the end of each turn.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Healing Power": ["30%"],
-        }
-    },
-    "Typhoon Bolt":{
-        "Usage": "2 Units (TEC)",
-        "Unlock": "?",
-        "Description": "At the end of the turn, deal 3~5 hits of Volt damage to random enemies.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Attack Power": ["65%"],
-        }
-    },
-    "Aegis Shield":{
-        "Usage": "4 Units",
-        "Unlock": "?",
-        "Description": "Nullify all attacks received by the party this turn.",
-        "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
-    },
-    "Quintessence":{
-        "Usage": "5 Units (TEC)",
-        "Unlock": "?",
-        "Description": "At the end of the turn, deal Almighty damage to all enemies.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Attack Power": ["320%"],
-        }
-    },
-    "Star Smasher":{
-        "Usage": "5 Units (STR)",
-        "Unlock": "?",
-        "Description": "At the start of the turn, deal Bash damage to one enemy.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Attack Power": ["800%"],
-        }
-    },
-    "Lucky Hammer":{
-        "Usage": "1 Unit (STR)",
-        "Unlock": "?",
-        "Description": "At the end of the turn, deal Bash damage to one enemy. If it kills, obtain all of the target's item drops.",
-        "Starter": "1",
-        "Max Level": "1",
-        "Data": {
-            "Attack Power": ["130%"],
-        }
-    },
-    "Immortal":{
-        "Usage": "3 Units",
-        "Unlock": "?",
-        "Description": "At the end of the turn, revive, remove ailments/binds and fully restore HP and TP for the whole party.",
-        "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
-    },
-    "Uroboros Guard":{
-        "Usage": "4 Units",
-        "Unlock": "?",
-        "Description": "For this turn, the whole party will absorb all attack damage taken.",
-        "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+    "5 Units":{
+        "Quintessence":{
+            "Description": "At the end of the turn, deal TEC-based Almighty damage to all enemies.",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["320%"],
+            }
+        },
+        "Star Smasher":{
+            "Description": "At the start of the turn, deal STR-based Bash damage to one enemy.",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["800%"],
+            }
+        },
     },
 },
 "Battle Items":{
@@ -3213,7 +3166,7 @@ var descriptions = {
     "Shogun":"Warrior generals that command the party and fight along them.",
     "Yggdroid":"Combat androids who treat their own bodies as weapons.",
     "Common Skills":"Skills available to all classes.",
-    "Limit Skills":"Powerful skills only usable through the Limit system.",
+    "Limit Skills":"Powerful skills available through the Limit system.",
     "Battle Items":"Consumable items meant to aid you in battle.",
 }
 
@@ -3263,9 +3216,12 @@ function populate(class_name){
         usage.width = "30%"
         usage.innerText = current_skill["Usage"]
 
-        unlock = document.createElement("td")
-        second_row.appendChild(unlock)
-        unlock.innerText = "Unlock: "+current_skill["Unlock"]
+        if (current_skill.hasOwnProperty("Unlock")){
+            usage.width = "30%"
+            unlock = document.createElement("td")
+            second_row.appendChild(unlock)
+            unlock.innerText = "Unlock: "+current_skill["Unlock"]
+        }
         
         third_row = document.createElement("tr")
         skill_table.appendChild(third_row)
@@ -3300,8 +3256,14 @@ function populate(class_name){
             level.innerText = i
             
         }
+        var latest_row
         for (const effect in current_skill["Data"]){
+            if (effect == "Separator"){
+                latest_row.style.borderBottom = "4px solid"
+                continue
+            }
             effect_row = document.createElement("tr")
+            latest_row = effect_row
             levels_table.appendChild(effect_row)
 
             effect_name = document.createElement("th")
@@ -3364,9 +3326,14 @@ function populate_item(class_name){
             second_row = document.createElement("tr")
             skill_table.appendChild(second_row)
 
-            usage = document.createElement("td")
-            second_row.appendChild(usage)
-            usage.innerText = current_skill["Usage"]
+            if (current_skill.hasOwnProperty("Usage")){
+                second_row = document.createElement("tr")
+                skill_table.appendChild(second_row)
+
+                usage = document.createElement("td")
+                second_row.appendChild(usage)
+                usage.innerText = current_skill["Usage"]
+            }
             
             third_row = document.createElement("tr")
             skill_table.appendChild(third_row)
