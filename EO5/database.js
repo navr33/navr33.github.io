@@ -14,7 +14,7 @@ var data = {
         "Chain Flame":{
             "Usage": "Active (Legs, STR)",
             "Unlock": "N/A",
-            "Description": "(Chain) Sword: Target one enemy and prepare to follow up after your allies' Stab or Fire attacks to them this turn, dealing Cut/Stab+Fire damage. Activation chance starts at 100% and goes down with each follow up.",
+            "Description": "(Chain) Sword: Target one enemy and prepare to follow up after your allies' Stab or Fire attacks to them this turn, dealing Stab+Fire damage. Activation chance starts at 100% and goes down with each follow up.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -28,7 +28,7 @@ var data = {
         "Chain Freeze":{
             "Usage": "Active (Legs, STR)",
             "Unlock": "N/A",
-            "Description": "(Chain) Sword: Target one enemy and prepare to follow up after your allies' Stab or Ice attacks to them this turn, dealing Cut/Stab+Ice damage. Activation chance starts at 100% and goes down with each follow up.",
+            "Description": "(Chain) Sword: Target one enemy and prepare to follow up after your allies' Stab or Ice attacks to them this turn, dealing Stab+Ice damage. Activation chance starts at 100% and goes down with each follow up.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -42,7 +42,7 @@ var data = {
         "Chain Shock":{
             "Usage": "Active (Legs, STR)",
             "Unlock": "N/A",
-            "Description": "(Chain) Sword: Target one enemy and prepare to follow up after your allies' Stab or Volt attacks to them this turn, dealing Cut/Stab+Volt damage. Activation chance starts at 100% and goes down with each follow up.",
+            "Description": "(Chain) Sword: Target one enemy and prepare to follow up after your allies' Stab or Volt attacks to them this turn, dealing Stab+Volt damage. Activation chance starts at 100% and goes down with each follow up.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -66,7 +66,7 @@ var data = {
         "Chain Burst":{
             "Usage": "Passive (STR)",
             "Unlock": "Chain Flame/Freeze/Shock (Lv 2)",
-            "Description": "(Chain) If you kill an enemy with a Chain attack, perform an additional attack of the same types to a random enemy.",
+            "Description": "(Chain) When you kill an enemy with a Chain attack, perform an additional attack of the same types to a random enemy.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -169,7 +169,7 @@ var data = {
         "Lure":{
             "Usage": "Active (Legs)",
             "Unlock": "Phantom Swords (Lv 2)",
-            "Description": "Prepare to signal a counterattack each time you evade a hit this turn. Other allies in your line will deal weapon-based damage to the attacker.",
+            "Description": "Prepare to command a counterattack each time you evade a hit this turn. Other allies in your line will deal weapon-based damage to the attacker.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -315,7 +315,7 @@ var data = {
         "Chain Double":{
             "Usage": "Passive",
             "Unlock": "Chain Killer (Lv 5)",
-            "Description": "Chance to perform an extra follow up when a Chain activates.",
+            "Description": "Chance to perform two follow ups at once when a Chain activates.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -482,11 +482,12 @@ var data = {
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10"],
+                "Action Speed": ["125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%"],
+                "Separator":[],
                 "Bunker HP": ["10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
                 "Bunker DEF/MDF": ["35", "55", "75", "95", "95", "135", "175", "205", "255", "255"],
                 "Bunker Vulnerability": ["6%", "6%", "6%", "6%", "4%", "4%", "4%", "4%", "4%", "1%"],
                 "Aggro Bonus": ["+2000%", "+2000%", "+2000%", "+2000%", "+2750%", "+2750%", "+2750%", "+2750%", "+2750%", "+3500%"],
-                "Action Speed": ["125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%"],
             }
         },
         "Defense Form":{
@@ -728,6 +729,8 @@ var data = {
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "16"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+                "Separator": [],
                 "Turret HP": ["10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
                 "Turret ATK": ["205", "230", "255", "280", "280", "335", "390", "445", "500", "500"],
                 "Turret DEF/MDF": ["75", "90", "105", "120", "120", "140", "160", "180", "200", "200"],
@@ -735,7 +738,6 @@ var data = {
                 "Aggro Bonus": ["+1500%", "+1500%", "+1500%", "+1500%", "+2000%", "+2000%", "+2000%", "+2000%", "+2000%", "+2500%"],
                 "Attack Power": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
                 "Accuracy": ["-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%"],
-                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
             }
         },
         "Gun Support":{
@@ -923,7 +925,7 @@ var data = {
         "Leading Blow":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Corkscrew (Lv 2), One-Two Punch (Lv 5)",
-            "Description": "Cestus: Deal melee Bash damage to one enemy, then follow up with Concussion, Arm Crusher, Low Blow and/or Corkscrew (with modified damage) if the target is afflicted by the corresponding bind/ailment. (Corkscrew activates for any ailment)",
+            "Description": "Cestus: Deal melee Bash damage to one enemy, then follow up with Concussion, Arm Crusher, Low Blow and/or Corkscrew (with modified damage) if the target is already afflicted by their corresponding bind/ailment. (Corkscrew activates for any ailment)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -975,7 +977,7 @@ var data = {
         "Breather":{
             "Usage": "Active (No Parts)",
             "Unlock": "N/A",
-            "Description": "Only usable if afflicted with a bind/ailment. Remove all binds and ailments on yourself, then enter a charge state until the end of next turn, which increases all damage dealt. (Does not strenghten Union skills)",
+            "Description": "Only usable if afflicted with a bind/ailment. Remove all binds and ailments on yourself, then enter a charge state until the end of next turn, which increases all damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1005,8 +1007,8 @@ var data = {
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "15"],
-                "Infliction Chance\n(Enemy)": ["20%", "22%", "24%", "26%", "38%", "41%", "44%", "47%", "50%", "67%"],
-                "Infliction Chance\n(Self)": ["20%", "22%", "24%", "26%", "34%", "36%", "38%", "40%", "42%", "50%"],
+                "Infliction Rate\n(Enemy)": ["20%", "22%", "24%", "26%", "38%", "41%", "44%", "47%", "50%", "67%"],
+                "Infliction Rate\n(Self)": ["20%", "22%", "24%", "26%", "34%", "36%", "38%", "40%", "42%", "50%"],
                 "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
             }
         },
@@ -1063,7 +1065,7 @@ var data = {
         "Abyssal Killer":{
             "Usage": "Active (Head)",
             "Unlock": "Vajra Stance (Lv 5), Soul Crusher (Lv 5)",
-            "Description": "For this turn, you can survive one lethal attack with 1 HP. If this activates, enter a charge state until the end of next turn, which increases all damage dealt based on how much lethal damage you endured. The base damage increase is multiplied by (ExcessDamage/MaxHP)<sup>1/2</sup>.",
+            "Description": "For this turn, you can survive one instance of lethal damage with 1 HP. If this activates, enter a charge state until the end of next turn, which increases all damage dealt based on how much excess damage you endured: The base damage increase is multiplied by (ExcessDamage/MaxHP)<sup>1/2</sup>.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1101,7 +1103,7 @@ var data = {
         "Heavenly Aid":{
             "Usage": "Active (Head)",
             "Unlock": "Titan Killer (Lv 3), Death's Edge (Lv 3)",
-            "Description": "Enter a charge state until the end of next turn, which increases damage dealt based on how much HP is healed to you this turn. The base damage increase is multiplied by (GainedHP/MaxHP)<sup>3/4</sup>.",
+            "Description": "Enter a charge state until the end of next turn, which increases damage dealt based on how much HP is healed to you this turn: The base damage increase is multiplied by (GainedHP/MaxHP)<sup>3/4</sup>.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1263,7 +1265,7 @@ var data = {
         "Black Blade":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "While Miasma Armor remains active, increase all damage dealt for each time you inflict an ailment.",
+            "Description": "While Miasma Armor remains active, increase all damage dealt for each time you inflict an ailment. (Resets upon losing Miasma Armor)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1274,7 +1276,7 @@ var data = {
         "Black Shroud":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "While Miasma Armor remains active, decrease all damage taken for each time you inflict an ailment.",
+            "Description": "While Miasma Armor remains active, decrease all damage taken for each time you inflict an ailment. (Resets upon losing Miasma Armor)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1381,8 +1383,8 @@ var data = {
                 "TP Cost": ["10", "10", "10", "10", "18", "18", "18", "18", "18", "28"],
                 "Attack Power": ["205%", "220%", "235%", "250%", "250%", "270%", "290%", "310%", "330%", "330%"],
                 "Damage Bonus": ["x2.5", "x2.5", "x2.5", "x2.5", "x3.0", "x3.0", "x3.0", "x3.0", "x3.0", "x3.5"],
-                "Infliction Chance\n(Normal)": ["25%", "28%", "31%", "34%", "34%", "38%", "42%", "46%", "50%", "50%"],
-                "Infliction Chance\n(Sleep)": ["100%", "100%", "100%", "100%", "175%", "175%", "175%", "175%", "175%", "250%"],
+                "Infliction Rate\n(Normal)": ["25%", "28%", "31%", "34%", "34%", "38%", "42%", "46%", "50%", "50%"],
+                "Infliction Rate\n(Sleep)": ["100%", "100%", "100%", "100%", "175%", "175%", "175%", "175%", "175%", "250%"],
                 "Accuracy": ["-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%"],
                 "Action Speed": ["20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%"],
             }
@@ -1496,7 +1498,7 @@ var data = {
         "Soul Transfer":{
             "Usage": "Active (Head)",
             "Unlock": "Eroding/Masking Miasma (Lv 5)",
-            "Description": "Dispel all debuffs on one enemy at the start of turn. If the target had at least 1 debuff, all allies will get a chance to automatically revive (with 1 HP) if killed this turn. (Max once per ally. Max 3 activations)",
+            "Description": "Dispel all debuffs on one enemy at the start of turn. If the target had at least 1 debuff, all allies will get a chance to automatically revive if killed this turn. (Max once per ally. Max 3 activations)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1755,7 +1757,7 @@ var data = {
         "Common Magic":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases damage dealt if another ally has already performed an INT-based attack this turn.",
+            "Description": "Increases damage dealt if any party member has already performed an INT-based attack this turn.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1814,7 +1816,7 @@ var data = {
         "Mana Flow":{
             "Usage": "Active (Head)",
             "Unlock": "Explosion (Lv 3), Hailstorm (Lv 3), Thunderbreak (Lv 3)",
-            "Description": "Place a buff on yourself for 3~5 turns, which grants a percentage of the TP you spend to a random ally.",
+            "Description": "Place a buff on yourself for 3~5 turns, which grants a percentage of the TP you spend each turn to a random ally.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2041,7 +2043,7 @@ var data = {
         "Soul Trade":{
             "Usage": "Active (Head)",
             "Unlock": "Burden Shift (Lv 5)",
-            "Description": "Sacrifice a Wraith for a chance to revive and heal all dead allies.",
+            "Description": "Sacrifice a Wraith for a chance to revive all dead allies.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2054,7 +2056,7 @@ var data = {
         "Grave":{
             "Usage": "Active (Head)",
             "Unlock": "Fierce Shield (Lv 3)",
-            "Description": "Target one ally, and each time they're hit this turn, all Wraiths will counterattack with a chance to inflict Paralysis. Counter chance starts at 100% and goes down by 9% with each activation. (<b>Warning</b>: Damage dealt is always reduced by melee backline penalty)",
+            "Description": "Target one ally, and each time they're hit this turn all Wraiths will counterattack, dealing Bash damage with a chance to inflict Paralysis to the attacker. Counter chance starts at 100% and goes down by 9% with each activation. (<b>Warning</b>: Damage dealt is always reduced by melee backline penalty)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2068,7 +2070,7 @@ var data = {
         "Wraith Dance":{
             "Usage": "Active (Head)",
             "Unlock": "Grave (Lv 5)",
-            "Description": "For this turn, Wraith attacks will deal 3 hits with modified damage.",
+            "Description": "For this turn, Wraith attacks will deal 3 hits with modified damage. (Also gives Wraiths a 100% chance to use a normal attack)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2120,9 +2122,9 @@ var data = {
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "12"],
-                "Infliction Chance\n(1 Wraith)": ["25%", "26%", "27%", "28%", "36%", "38%", "40%", "42%", "44%", "60%"],
-                "Infliction Chance\n(2 Wraiths)": ["40%", "42%", "44%", "46%", "66%", "70%", "74%", "78%", "82%", "110%"],
-                "Infliction Chance\n(3 Wraiths)": ["55%", "58%", "61%", "64%", "96%", "102%", "108%", "114%", "120%", "160%"],
+                "Infliction Rate\n(1 Wraith)": ["25%", "26%", "27%", "28%", "36%", "38%", "40%", "42%", "44%", "60%"],
+                "Infliction Rate\n(2 Wraiths)": ["40%", "42%", "44%", "46%", "66%", "70%", "74%", "78%", "82%", "110%"],
+                "Infliction Rate\n(3 Wraiths)": ["55%", "58%", "61%", "64%", "96%", "102%", "108%", "114%", "120%", "160%"],
                 "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
             }
         },
@@ -2550,7 +2552,7 @@ var data = {
             "Starter": "1",
             "Max Level": "10",
             "Data": {
-                "HP Gain↑": ["6+2%", "9+2%", "12+2%", "15+2%", "19+4%", "22+4%", "25+4%", "28+4%", "31+4%", "35+7%"],
+                "Bonus Healing": ["6+2%", "9+2%", "12+2%", "15+2%", "19+4%", "22+4%", "25+4%", "28+4%", "31+4%", "35+7%"],
             }
         },
         "Status ATK Up":{
@@ -2981,7 +2983,7 @@ var data = {
         "Helm Splitter":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Foot Sweep (Lv 5)",
-            "Description": "Katana: Deal melee Cut damage to one enemy. Low accuracy but ignores Cut resistance.",
+            "Description": "Katana: Deal melee Cut damage to one enemy. Low accuracy but ignores Cut vulnerability.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3004,7 +3006,7 @@ var data = {
         "Triple Strike":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Spirit Sword (Lv 5)",
-            "Description": "Katana: Deal 3 hits of melee Cut damage to one enemy. Hits have a chance to inflict Head Bind, then Arm Bind, then Leg Bind. Stops hitting if it lands a bind.",
+            "Description": "Katana: Deal 3 hits of melee Cut damage to one enemy. Hits have a chance to inflict Head Bind, then Arm Bind, then Leg Bind respectively. Stops hitting if it lands a bind.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3261,7 +3263,7 @@ var data = {
         "Invoke Gods":{
             "Usage": "Active (Head, STR)",
             "Unlock": "Mana Oracle (Lv 5), Aureole Oracle (Lv 3)",
-            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself to deal weapon-based damage to one enemy at the start of turn. Decreases damage dealt by target this turn.",
+            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself to deal weapon-based damage to one enemy at the start of turn. Decreases damage dealt by the target this turn.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3989,7 +3991,7 @@ var data = {
     }
 },
 "Earthlain":{
-    "Common":{
+    "Initial":{
         "Analyze":{
             "Usage": "Union (1 Unit)",
             "Description": "Register an enemy's details into the Monstrous Codex.",
@@ -4208,7 +4210,7 @@ var data = {
     },
 },
 "Celestrian":{
-    "Common":{
+    "Initial":{
         "Analyze":{
             "Usage": "Union (1 Unit)",
             "Description": "Register an enemy's details into the Monstrous Codex.",
@@ -4433,7 +4435,7 @@ var data = {
     },
 },
 "Therian":{
-    "Common":{
+    "Initial":{
         "Analyze":{
             "Usage": "Union (1 Unit)",
             "Description": "Register an enemy's details into the Monstrous Codex.",
@@ -4550,7 +4552,7 @@ var data = {
     "Level 10":{
         "Life Drain":{
             "Usage": "Union (3 Units)",
-            "Description": "For this turn, each time an ally damages an enemy the whole party recovers HP based on the damage dealt.",
+            "Description": "For this turn, each time an ally damages an enemy the whole party will recover HP based on the damage dealt.",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -4630,7 +4632,7 @@ var data = {
     "Level 20":{
         "All-Out Attack":{
             "Usage": "Union (5 Units, STR, LUC)",
-            "Description": "Command all allies to deal weapon-based damage to one enemy, with a chance to inflict Stun.",
+            "Description": "All party members will deal weapon-based damage to one enemy, with a chance to inflict Stun.",
             "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
@@ -4669,7 +4671,7 @@ var data = {
     },
 },
 "Brouni":{
-    "Common":{
+    "Initial":{
         "Analyze":{
             "Usage": "Union (1 Unit)",
             "Description": "Register an enemy's details into the Monstrous Codex.",
@@ -4765,7 +4767,7 @@ var data = {
         },
         "Herbology":{
             "Usage": "Passive",
-            "Description": "Increases the effect of healing items used in battle by 50%.",
+            "Description": "Increases the HP restored by healing items used in battle by 50%.",
             "Starter": "0",
             "Max Level": "0",
             "Data": ""
@@ -4774,7 +4776,7 @@ var data = {
     "Level 10":{
         "Forbidden Rite":{
             "Usage": "Union (3 Units)",
-            "Description": "Increase the duration of all buffs and debuffs in allies and enemies by 1 turn.",
+            "Description": "Increase the duration of all buffs and debuffs on allies and enemies by 1 turn.",
             "Starter": "0",
             "Max Level": "0",
             "Data": ""
@@ -5274,15 +5276,15 @@ var data = {
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "10"],
-                "Infliction Chance\n(Enemy)": ["20%", "22%", "24%", "26%", "38%"],
-                "Infliction Chance\n(Self)": ["20%", "22%", "24%", "26%", "34%"],
+                "Infliction Rate\n(Enemy)": ["20%", "22%", "24%", "26%", "38%"],
+                "Infliction Rate\n(Self)": ["20%", "22%", "24%", "26%", "34%"],
                 "Action Speed": ["80%", "80%", "80%", "80%", "80%"],
             }
         },
         "Mana Flow":{
             "Usage": "Active (Head)",
             "Unlock": "Reliquary",
-            "Description": "Place a buff on yourself for 3~4 turns, which grants a percentage of the TP you spend to a random ally. (Incorrectly called Magic Flow in the weapon's description)",
+            "Description": "Place a buff on yourself for 3~4 turns, which grants a percentage of the TP you spend each turn to a random ally. (Incorrectly called Magic Flow in the weapon's description)",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -5612,7 +5614,7 @@ var descriptions = {
     "Pugilist":["Brawlers who take down enemies with their own Fists.", "<b>Barrage Brawler</b>: Performs combos of punches that can disable the enemy.", "<b>Impact Brawler</b>: Throws destructive punches by sacrificing their own health."],
     "Harbinger":["Reapers who use noxious Miasma to weaken the enemy.", "<b>Deathbringer</b>: Coats their weapon in Miasma to inflict ailments and cut down enemies.", "<b>Deathguard</b>: Spreads Miasma to inflict debuffs or ward off enemy attacks."],
     "Warlock":["Elemental casters that strike the enemy's weakness.", "<b>Omnimancer</b>: Learns physical magic to cripple the enemy and continuously hit their weak points.", "<b>Elemancer</b>: Expands their elemental magic and improves control on their use of energy."],
-    "Necromancer":["Summoners who call forth Wraiths to assist the party.", "<b>Spirit Evoker</b>: Works alongside Wraiths to cover offense, defense and ailments.", "<b>Spirit Broker</b>: Uses attacks that summon Wraiths, then sacrifices them for more power."],
+    "Necromancer":["Summoners who call forth Wraiths to assist the party.", "<b>Spirit Evoker</b>: Works alongside Wraiths to provide offense, defense and ailments.", "<b>Spirit Broker</b>: Uses attacks that summon Wraiths, then sacrifices them for more power."],
     "Rover":["Archers who chase and restrain enemies alongside animal companions.", "<b>Flying Falcon</b>: Hunts with a Hawk that attacks multiple enemies.", "<b>Hunting Hound</b>: Hunts with a Hound that protects and heals allies."],
     "Masurao":["Frontline warriors specialized in strong offense with Katanas.", "<b>Blade Dancer</b>: Wields multiple Katanas at once, sacrificing all defense for overwhelming offense.", "<b>Blade Master</b>: Versatile duelists with attacks that combine power and utility."],
     "Shaman":["Support casters who manipulate buffs to strengthen the party.", "<b>Divine Punisher</b>: Dispels buffs to turn them into direct power.", "<b>Divine Herald</b>: Grants buffs to protect and heal allies."],
@@ -5732,8 +5734,14 @@ function populate(class_name){
                 }
                 
             }
+            var latest_row
             for (const effect in current_skill["Data"]){
+                if (effect == "Separator"){
+                    latest_row.style.borderBottom = "4px solid"
+                    continue
+                }
                 effect_row = document.createElement("tr")
+                latest_row = effect_row
                 levels_table.appendChild(effect_row)
 
                 effect_name = document.createElement("th")
