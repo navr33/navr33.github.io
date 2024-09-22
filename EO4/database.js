@@ -303,7 +303,12 @@ var data = {
             "Description": "Sword/Knife: Deal melee Cut+Ice damage to one enemy.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "9", "9", "9", "9", "9", "10"],
+                "Attack Power": ["150%", "157%", "164%", "170%", "190%", "194%", "198%", "202%", "206%", "220%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Biding Slice":{
             "Usage": "Active (Arms, STR)",
@@ -311,7 +316,12 @@ var data = {
             "Description": "Sword/Knife: Deal melee Cut damage to one enemy. At the end of turn, if you were not hit, attack a second time.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "12", "12", "12", "12", "12", "14"],
+                "Attack Power": ["130%", "137%", "144%", "150%", "165%", "169%", "173%", "177%", "180%", "190%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Sand Throw":{
             "Usage": "Active (Arms, STR, LUC)",
@@ -319,7 +329,13 @@ var data = {
             "Description": "Deal ranged Cut damage to one enemy, with a chance to inflict Blind.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["2", "2", "2", "3", "3", "3"],
+                "Attack Power": ["80%", "80%", "80%", "80%", "80%", "80%"],
+                "Infliction Rate": ["45%", "50%", "55%", "63%", "67%", "70%"],
+                "Accuracy": ["+1", "+1", "+2", "+2", "+3", "+3"],
+                "Action Speed": ["+2", "+2", "+2", "+2", "+2", "+2"],
+            }
         },
         "Nerve Throw":{
             "Usage": "Active (Arms, STR, LUC)",
@@ -327,15 +343,23 @@ var data = {
             "Description": "Deal ranged Cut damage to one enemy, with a chance to inflict Paralysis.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["3", "3", "3", "4", "4", "4"],
+                "Attack Power": ["80%", "80%", "80%", "80%", "80%", "80%"],
+                "Infliction Rate": ["45%", "50%", "55%", "63%", "67%", "70%"],
+                "Accuracy": ["+1", "+1", "+2", "+2", "+3", "+3"],
+                "Action Speed": ["+2", "+2", "+2", "+2", "+2", "+2"],
+            }
         },
         "Blade Flurry":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If two weapons are equipped, normal attacks will perform a second hit with your sub-weapon.",
+            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If two weapons are equipped, normal attacks will perform a second hit (with decreased damage) using the sub-weapon.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Damage Mod.\n(Second Hit)": ["x0.3", "x0.4", "x0.5", "x0.6", "x0.7", "x0.8"],
+            }
         },
         "Shadow Cloak":{
             "Usage": "Active (Legs)",
@@ -343,7 +367,10 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which nullifies one physical hit received. (Buff is consumed when activated)",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["9", "8", "6", "4"],
+                "Action Speed": ["+6", "+6", "+6", "+6"],
+            }
         },
         "Auto-Cloak":{
             "Usage": "Passive",
@@ -351,15 +378,21 @@ var data = {
             "Description": "Chance to automatically cast Shadow Cloak at the start of battle.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["25%", "35%", "43%", "49%", "55%", "60%"],
+            }
         },
         "Decoy Sign":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on one ally for 3 turns, which increases enemy aggro.",
+            "Description": "Place a buff on one ally for 3 turns, which increases enemy aggro. Actual increase on each attack is a random value between 3 and this skill's bonus.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4"],
+                "Max. Aggro Bonus": ["4", "6", "8", "9"],
+                "Action Speed": ["+6", "+6", "+6", "+6"],
+            }
         },
         "Herbology":{
             "Usage": "Passive (Field)",
@@ -377,15 +410,28 @@ var data = {
             "Description": "Sword/Knife: Deal melee Cut damage to one enemy, with a chance to inflict Instant Kill. Higher infliction rate if the target has an ailment.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["12", "12", "12", "13", "13", "13", "13", "14"],
+                "Attack Power": ["150%", "155%", "160%", "170%", "175%", "180%", "185%", "195%"],
+                "Infliction Rate\n(Normal)": ["20%", "23%", "26%", "28%", "30%", "32%", "34%", "35%"],
+                "Infliction Rate\n(Ailment)": ["30%", "34%", "38%", "42%", "44%", "46%", "47%", "50%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-2", "-2", "-2", "-1"],
+            }
         },
         "Shadow Bite":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Assassinate (Lv 3)",
-            "Description": "Sword/Knife: Deal melee Cut damage to one enemy. Stronger if the target has an ailment.",
+            "Description": "Sword/Knife: Deal melee Cut damage to one enemy. Damage dealt increases if the target has an ailment.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["15", "15", "15", "17", "17", "17", "17", "20"],
+                "Attack Power": ["170%", "175%", "180%", "195%", "200%", "204%", "208%", "220%"],
+                "Damage Bonus": ["x1.9", "x1.9", "x1.9", "x1.95", "x1.95", "x1.95", "x1.95", "x2.0"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Sleep Throw":{
             "Usage": "Active (Arms, STR, LUC)",
@@ -393,7 +439,13 @@ var data = {
             "Description": "Deal ranged Cut damage to one enemy, with a chance to inflict Sleep.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["3", "3", "3", "4", "4", "4"],
+                "Attack Power": ["80%", "80%", "80%", "80%", "80%", "80%"],
+                "Infliction Rate": ["45%", "50%", "55%", "63%", "67%", "70%"],
+                "Accuracy": ["+1", "+1", "+2", "+2", "+3", "+3"],
+                "Action Speed": ["+2", "+2", "+2", "+2", "+2", "+2"],
+            }
         },
         "Curse Throw":{
             "Usage": "Active (Arms, STR, LUC)",
@@ -401,7 +453,13 @@ var data = {
             "Description": "Deal ranged Cut damage to one enemy, with a chance to inflict Curse.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["3", "3", "3", "4", "4", "4"],
+                "Attack Power": ["80%", "80%", "80%", "80%", "80%", "80%"],
+                "Infliction Rate": ["45%", "50%", "55%", "63%", "67%", "70%"],
+                "Accuracy": ["+1", "+1", "+2", "+2", "+3", "+3"],
+                "Action Speed": ["+2", "+2", "+2", "+2", "+2", "+2"],
+            }
         },
         "Spread Throw":{
             "Usage": "Active (Arms)",
@@ -409,7 +467,9 @@ var data = {
             "Description": "Enter a charge state until the end of next turn, which makes Throw skills hit all enemies.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["8", "6", "4", "2"],
+            }
         },
         "Sneak Attack":{
             "Usage": "Active (Field)",
@@ -417,7 +477,11 @@ var data = {
             "Description": "Temporarily increase the chance of ambushing enemies.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "7", "8", "9", "10", "11"],
+                "Ambush↑": ["+25%", "+30%", "+35%", "+40%", "+45%", "+50%"],
+                "Duration": ["40", "45", "50", "55", "60", "65"],
+            }
         },
         "Speed Boost":{
             "Usage": "Passive",
@@ -425,7 +489,11 @@ var data = {
             "Description": "Increases accuracy, evasion and action speed.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "Accuracy↑": ["+2%", "+5%", "+7%", "+9%", "+10%", "+11%", "+12%", "+13%", "+14%", "+15%"],
+                "Evasion↑": ["+2%", "+5%", "+7%", "+9%", "+10%", "+11%", "+12%", "+13%", "+14%", "+15%"],
+                "Speed↑": ["+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"],
+            }
         },
         "Agile Chef":{
             "Usage": "Passive (Sky)",
@@ -446,7 +514,14 @@ var data = {
             "Description": "Sword/Knife: Deal multiple hits of melee Cut damage to one enemy.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["21", "21", "21", "24", "24", "24", "24", "28"],
+                "Attack Power": ["85%", "90%", "95%", "100%", "104%", "107%", "109%", "110%"],
+                "Min. Hits": ["3", "3", "3", "4", "4", "4", "4", "4"],
+                "Max. Hits": ["4", "4", "4", "4", "4", "4", "4", "5"],
+                "Accuracy": ["-35", "-35", "-35", "-35", "-35", "-35", "-35", "-35"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Venom Throw":{
             "Usage": "Active (Arms, STR, LUC)",
@@ -454,7 +529,14 @@ var data = {
             "Description": "Deal ranged Cut damage to one enemy, with a chance to inflict Poison.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "7", "7", "7"],
+                "Attack Power": ["80%", "80%", "80%", "80%", "80%", "80%"],
+                "Infliction Rate": ["60%", "65%", "70%", "74%", "77%", "80%"],
+                "Poison Power": ["200", "270", "350", "500", "600", "700"],
+                "Accuracy": ["+1", "+1", "+2", "+2", "+3", "+3"],
+                "Action Speed": ["+2", "+2", "+2", "+2", "+2", "+2"],
+            }
         },
         "Foul Mastery":{
             "Usage": "Passive",
@@ -462,7 +544,9 @@ var data = {
             "Description": "Increases all damage dealt for each time you have inflicted an ailment. (Stacks up to +100%. Resets upon dying)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑": ["+7%", "+11%", "+14%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+            }
         },
         "Follow Trace":{
             "Usage": "Passive",
@@ -470,7 +554,9 @@ var data = {
             "Description": "Weapon-based skills have a chance to be performed a second time. The second instance receives the damage modifier of Blade Flurry.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["25%", "30%", "35%", "40%", "43%", "46%", "48%", "50%"],
+            }
         },
         "Auto-Spread":{
             "Usage": "Passive",
@@ -478,7 +564,9 @@ var data = {
             "Description": "Chance to automatically cast Spread Throw at the start of battle.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["25%", "35%", "43%", "49%", "55%", "60%"],
+            }
         },
     },
 },
