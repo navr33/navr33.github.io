@@ -1135,7 +1135,11 @@ var data = {
             "Description": "Restore HP to one ally.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "7", "7", "7", "7", "7", "10"],
+                "Healing Power": ["70%", "78%", "85%", "90%", "115%", "120%", "124%", "127%", "130%", "150%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Line Heal":{
             "Usage": "Active (Head, TEC)",
@@ -1143,7 +1147,11 @@ var data = {
             "Description": "Restore HP to an ally line.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20"],
+                "Healing Power": ["60%", "65%", "70%", "75%", "95%", "99%", "102%", "105%", "108%", "120%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Steady Hands":{
             "Usage": "Active (Head)",
@@ -1151,7 +1159,11 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which increases the effect of healing skills used.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["4", "4", "6", "6", "6", "8"],
+                "Healing↑": ["+35%", "+40%", "+50%", "+54%", "+58%", "+65%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Refresh":{
             "Usage": "Active (Head)",
@@ -1159,7 +1171,11 @@ var data = {
             "Description": "Removes ailments from the targets.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "3", "12", "9", "6", "3"],
+                "Targets": ["Single", "Single", "Line", "Line", "Line", "Line"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Treat":{
             "Usage": "Active (Head)",
@@ -1167,7 +1183,11 @@ var data = {
             "Description": "Removes debuffs from the targets.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "3", "12", "9", "6", "3"],
+                "Targets": ["Single", "Single", "Line", "Line", "Line", "Line"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Recovery":{
             "Usage": "Active (Head)",
@@ -1175,7 +1195,11 @@ var data = {
             "Description": "Removes binds from the targets.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "3", "12", "9", "6", "3"],
+                "Targets": ["Single", "Single", "Line", "Line", "Line", "Line"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Heavy Strike":{
             "Usage": "Active (Arms, STR, LUC)",
@@ -1183,7 +1207,13 @@ var data = {
             "Description": "Mace/Staff: Deal melee Bash damage to one enemy, with a chance to inflict Stun.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["9", "9", "9", "10", "10", "10", "10", "11"],
+                "Attack Power": ["195%", "203%", "210%", "230%", "235%", "240%", "245%", "260%"],
+                "Infliction Rate": ["30%", "32%", "34%", "40%", "42%", "44%", "46%", "50%"],
+                "Accuracy": ["-5%", "-4%", "-3%", "-2%", "-1%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["+3", "+3", "+3", "+4", "+4", "+4", "+4", "+5"],
+            }
         },
         "Patch Up":{
             "Usage": "Passive",
@@ -1191,7 +1221,9 @@ var data = {
             "Description": "Restore HP to the whole party after each battle.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "HP Gain": ["10", "17", "24", "30", "35", "40", "45", "50"],
+            }
         },
         "Herbology":{
             "Usage": "Passive (Field)",
@@ -1209,7 +1241,10 @@ var data = {
             "Description": "Restore full HP to one ally.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["34", "30", "26", "20"],
+                "Action Speed": ["-6", "-6", "-6", "-6"],
+            }
         },
         "Party Heal":{
             "Usage": "Active (Head, TEC)",
@@ -1217,7 +1252,11 @@ var data = {
             "Description": "Restore HP to the whole party.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "27", "27", "27", "27", "27", "35"],
+                "Healing Power": ["50%", "55%", "60%", "65%", "80%", "83%", "86%", "88%", "90%", "100%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Revive":{
             "Usage": "Active (Head)",
@@ -1225,7 +1264,11 @@ var data = {
             "Description": "Revive one dead ally.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["15", "15", "15", "17", "17", "17", "17", "20"],
+                "HP Gain": ["1", "20", "50", "150", "180", "210", "240", "350"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Group Therapy":{
             "Usage": "Active (Head)",
@@ -1233,7 +1276,9 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which increases the area of effect (Single → Line → Party) of Refresh, Treat, Recovery and Full Refresh.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["15", "12", "9", "6"],
+            }
         },
         "Full Refresh":{
             "Usage": "Active (Head)",
@@ -1241,7 +1286,10 @@ var data = {
             "Description": "Remove all binds, ailments and debuffs on one ally.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["16", "14", "11", "8"],
+                "Action Speed": ["-3", "-3", "-3", "-3"],
+            }
         },
         "Knockout Blow":{
             "Usage": "Active (Arms, STR, LUC)",
@@ -1249,7 +1297,13 @@ var data = {
             "Description": "Mace/Staff: Deal melee Bash damage to one enemy, with a chance to inflict Sleep.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "10", "12", "12", "12", "12", "15"],
+                "Attack Power": ["160%", "170%", "180%", "200%", "208%", "214%", "220%", "240%"],
+                "Infliction Rate": ["30%", "32%", "34%", "40%", "42%", "44%", "46%", "50%"],
+                "Accuracy": ["-5%", "-4%", "-3%", "-2%", "-1%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["+3", "+3", "+3", "+4", "+4", "+4", "+4", "+5"],
+            }
         },
         "Stretch":{
             "Usage": "Passive",
@@ -1257,7 +1311,9 @@ var data = {
             "Description": "Chance to nullify bind inflictions received.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["20%", "28%", "34%", "40%", "46%", "50%"],
+            }
         },
         "Toxin Study":{
             "Usage": "Passive (Sky)",
@@ -1272,10 +1328,12 @@ var data = {
         "Auto-Heal":{
             "Usage": "Passive (Head, TEC)",
             "Unlock": "Party Heal (Lv 2)",
-            "Description": "Chance to automatically heal allies if their HP is below 30% after being attacked. (Max once per ally per turn)",
+            "Description": "30% chance to automatically heal allies if their HP is below 30% after being attacked. (Max once per ally per turn)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Healing Power": ["45%", "55%", "63%", "70%", "75%", "80%", "85%", "90%"],
+            }
         },
         "Heal Mastery":{
             "Usage": "Passive",
@@ -1283,15 +1341,19 @@ var data = {
             "Description": "Increases the effect of healing skills used.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Healing↑": ["+5%", "+10%", "+15%", "+20%", "+23%", "+26%", "+28%", "+30%"],
+            }
         },
         "Auto-Revive":{
             "Usage": "Passive (Head)",
             "Unlock": "Revive (Lv 4)",
-            "Description": "Chance to automatically revive allies when they die.",
+            "Description": "25% chance to automatically revive allies when they die.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "HP Gain": ["1", "10", "30", "60", "100", "150", "200", "250"],
+            }
         },
         "TP Boost":{
             "Usage": "Passive",
@@ -1299,7 +1361,9 @@ var data = {
             "Description": "Increases base Max TP.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Max TP↑": ["+10%", "+15%", "+19%", "+23%", "+27%", "+30%"],
+            }
         },
         "Star Drop":{
             "Usage": "Active (Arms, STR)",
@@ -1307,7 +1371,13 @@ var data = {
             "Description": "Mace/Staff: Deal melee Bash damage to one enemy. Increases all damage taken by the target until the end of turn.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["16", "16", "16", "20", "20", "20", "20", "25"],
+                "Attack Power": ["130%", "140%", "150%", "160%", "168%", "174%", "180%", "185%"],
+                "Damage Taken↑": ["x1.2", "x1.2", "x1.2", "x1.3", "x1.3", "x1.3", "x1.3", "x1.4"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1"],
+            }
         },
     },
 },
