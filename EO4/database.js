@@ -1960,7 +1960,9 @@ var data = {
             "Description": "If a Circle is active, restore HP to the whole party at the end of turn.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Healing Power": ["10%", "14%", "18%", "21%", "23%", "25%"],
+            }
         },
         "Poison Circle":{
             "Usage": "Active (Head, LUC)",
@@ -1968,7 +1970,13 @@ var data = {
             "Description": "Place a Circle for 3 turns, which attempts to inflict Poison on all enemies when placed and at the end of each turn. (Overrides other Circles)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "10", "13", "13", "13", "13", "16"],
+                "Infliction Rate\n(Initial)": ["40%", "40%", "40%", "45%", "45%", "45%", "45%", "50%"],
+                "Infliction Rate\n(Turn End)": ["30%", "30%", "30%", "35%", "35%", "35%", "35%", "40%"],
+                "Poison Power": ["50", "70", "90", "140", "170", "200", "230", "300"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Nerve Circle":{
             "Usage": "Active (Head, LUC)",
@@ -1976,7 +1984,12 @@ var data = {
             "Description": "Place a Circle for 3 turns, which attempts to inflict Paralysis on all enemies when placed and at the end of each turn. (Overrides other Circles)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "10", "13", "13", "13", "13", "16"],
+                "Infliction Rate\n(Initial)": ["25%", "27%", "30%", "35%", "37%", "39%", "41%", "45%"],
+                "Infliction Rate\n(Turn End)": ["15%", "17%", "20%", "25%", "27%", "29%", "31%", "35%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Chain Circle":{
             "Usage": "Active (Head, LUC)",
@@ -1984,7 +1997,12 @@ var data = {
             "Description": "Place a Circle for 3 turns, which attempts to inflict Arm Bind on all enemies when placed and at the end of each turn. (Overrides other Circles)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "10", "13", "13", "13", "13", "16"],
+                "Infliction Rate\n(Initial)": ["25%", "27%", "30%", "35%", "37%", "39%", "41%", "45%"],
+                "Infliction Rate\n(Turn End)": ["15%", "17%", "20%", "25%", "27%", "29%", "31%", "35%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Snare Circle":{
             "Usage": "Active (Head, LUC)",
@@ -1992,7 +2010,12 @@ var data = {
             "Description": "Place a Circle for 3 turns, which attempts to inflict Leg Bind on all enemies when placed and at the end of each turn. (Overrides other Circles)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "10", "13", "13", "13", "13", "16"],
+                "Infliction Rate\n(Initial)": ["25%", "27%", "30%", "35%", "37%", "39%", "41%", "45%"],
+                "Infliction Rate\n(Turn End)": ["15%", "17%", "20%", "25%", "27%", "29%", "31%", "35%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Warding Mist":{
             "Usage": "Passive",
@@ -2000,7 +2023,9 @@ var data = {
             "Description": "Chance to nullify bind/ailment inflictions against party members in your line.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["10%", "15%", "20%", "24%", "27%", "30%"],
+            }
         },
         "Tame Ground":{
             "Usage": "Active (Field)",
@@ -2008,7 +2033,11 @@ var data = {
             "Description": "Temporarily decrease damage taken from damaging floors.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4"],
+                "Damage Taken↓": ["x0.6", "x0.4", "x0.3", "x0.1"],
+                "Duration": ["20", "40", "60", "80"],
+            }
         },
         "Bracing Walk":{
             "Usage": "Passive (Field)",
@@ -2016,7 +2045,9 @@ var data = {
             "Description": "Restore HP to the whole party for each step taken.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "HP Gain": ["3", "4", "5", "6", "7", "8", "9", "10"],
+            }
         },
         "Herbology":{
             "Usage": "Passive (Field)",
@@ -2034,7 +2065,11 @@ var data = {
             "Description": "Remove an active Circle to restore HP to the whole party.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "10", "10", "10", "10", "10", "12"],
+                "Healing Power": ["80%", "90%", "100%", "110%", "130%", "134%", "137%", "140%", "142%", "150%"],
+                "Action Speed": ["+3", "+3", "+3", "+3", "+4", "+4", "+4", "+4", "+4", "+5"],
+            }
         },
         "Dismiss Blow":{
             "Usage": "Active (Head, TEC)",
@@ -2042,7 +2077,12 @@ var data = {
             "Description": "Remove an active Circle to deal ranged Almighty damage to one enemy.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["3", "3", "4", "4", "4", "5"],
+                "Attack Power": ["80%", "85%", "100%", "104%", "108%", "115%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["+3", "+3", "+5", "+5", "+5", "+7"],
+            }
         },
         "Sleep Circle":{
             "Usage": "Active (Head, LUC)",
@@ -2050,7 +2090,12 @@ var data = {
             "Description": "Place a Circle for 3 turns, which attempts to inflict Sleep on all enemies when placed and at the end of each turn. (Overrides other Circles)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["14", "14", "14", "18", "18", "18", "18", "23"],
+                "Infliction Rate\n(Initial)": ["25%", "27%", "30%", "35%", "37%", "39%", "41%", "45%"],
+                "Infliction Rate\n(Turn End)": ["15%", "17%", "20%", "25%", "27%", "29%", "31%", "35%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Chaos Circle":{
             "Usage": "Active (Head, LUC)",
@@ -2058,7 +2103,12 @@ var data = {
             "Description": "Place a Circle for 3 turns, which attempts to inflict Panic on all enemies when placed and at the end of each turn. (Overrides other Circles)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["20", "20", "20", "25", "25", "25", "25", "30"],
+                "Infliction Rate\n(Initial)": ["17%", "19%", "21%", "25%", "27%", "29%", "31%", "35%"],
+                "Infliction Rate\n(Turn End)": ["12%", "14%", "16%", "20%", "22%", "24%", "26%", "30%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Hood Circle":{
             "Usage": "Active (Head, LUC)",
@@ -2066,7 +2116,12 @@ var data = {
             "Description": "Place a Circle for 3 turns, which attempts to inflict Head Bind on all enemies when placed and at the end of each turn. (Overrides other Circles)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "10", "13", "13", "13", "13", "16"],
+                "Infliction Rate\n(Initial)": ["25%", "27%", "30%", "35%", "37%", "39%", "41%", "45%"],
+                "Infliction Rate\n(Turn End)": ["15%", "17%", "20%", "25%", "27%", "29%", "31%", "35%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Charm Eye":{
             "Usage": "Active (Head)",
@@ -2074,7 +2129,11 @@ var data = {
             "Description": "Place a debuff on all enemies for 3 turns, which decreases physical/elemental damage dealt.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12"],
+                "Damage Dealt↓": ["-10%", "-15%", "-18%", "-20%"],
+                "Action Speed": ["-6", "-6", "-6", "-6"],
+            }
         },
         "Atrophic Eye":{
             "Usage": "Active (Head)",
@@ -2082,7 +2141,11 @@ var data = {
             "Description": "Place a debuff on all enemies for 3 turns, which increases physical/elemental damage taken.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12"],
+                "Damage Taken↑": ["+15%", "+20%", "+23%", "+25%"],
+                "Action Speed": ["-6", "-6", "-6", "-6"],
+            }
         },
         "Purist Chef":{
             "Usage": "Passive (Sky)",
@@ -2103,15 +2166,23 @@ var data = {
             "Description": "Remove an active Circle to deal ranged Almighty damage to all enemies.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "12", "12", "12", "14"],
+                "Attack Power": ["100%", "105%", "120%", "124%", "128%", "135%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["+3", "+3", "+5", "+5", "+5", "+7"],
+            }
         },
         "Circle Mastery":{
             "Usage": "Passive",
             "Unlock": "Dismiss Blast (Lv 3)",
-            "Description": "Increase the effect of Dismiss skills based on the level of the Circle removed.",
+            "Description": "Increase the effect (Attack/Healing Power) of Dismiss skills based on the level of the Circle removed. (Applies one modifier based on this skill's level, and a separate one based on the Circle's level)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Effect↑\n(Mastery Level)": ["x1.05", "x1.1", "x1.15", "x1.2", "x1.23", "x1.26", "x1.28", "x1.3"],
+                "Effect↑\n(Circle Level)": ["x1.0", "x1.05", "x1.09", "x1.12", "x1.14", "x1.16", "x1.18", "x1.2"],
+            }
         },
         "TP Return":{
             "Usage": "Passive",
@@ -2119,7 +2190,9 @@ var data = {
             "Description": "Recover TP when one of your skills inflicts a bind/ailment on one or more enemies.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Gain": ["3", "6", "8", "10", "11", "12"],
+            }
         },
         "Releasal Spell":{
             "Usage": "Active (Head)",
@@ -2127,7 +2200,9 @@ var data = {
             "Description": "Resets one enemy's accumulative resistance.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["70", "60", "50", "40"],
+            }
         },
         "Ailment Boost":{
             "Usage": "Passive",
@@ -2135,7 +2210,9 @@ var data = {
             "Description": "Increases bind/ailment/death/stun infliction rates. This bonus is added after applying resistances.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "Inflictions↑": ["+2%", "+4%", "+6%", "+8%", "+10%", "+11%", "+12%", "+13%", "+14%", "+15%"],
+            }
         },
     },
 },
