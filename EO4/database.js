@@ -589,7 +589,12 @@ var data = {
             "Description": "Mace: Deal melee Bash+Volt damage to one enemy.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "9", "9", "9", "9", "9", "10"],
+                "Attack Power": ["150%", "157%", "164%", "170%", "190%", "194%", "198%", "202%", "206%", "220%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Holy Smite":{
             "Usage": "Active (Arms, STR)",
@@ -597,7 +602,13 @@ var data = {
             "Description": "Mace: Deal melee Bash damage to one enemy. Recover HP based on damage dealt.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "12", "12", "12", "12", "12", "14"],
+                "Attack Power": ["145%", "150%", "155%", "160%", "175%", "179%", "183%", "187%", "190%", "200%"],
+                "Damage Drain": ["70%", "70%", "70%", "70%", "75%", "75%", "75%", "75%", "75%", "80%"],
+                "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Ally Shield":{
             "Usage": "Active (Arms)",
@@ -605,7 +616,11 @@ var data = {
             "Description": "Shield: Protect one ally for this turn, which makes you take attacks in their place and decreases all damage taken.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "3"],
+                "Damage Taken↓": ["-10%", "-20%", "-25%", "-29%", "-32%", "-35%"],
+                "Action Speed": ["+30", "+30", "+30", "+30", "+30", "+30"],
+            }
         },
         "Strike Guard":{
             "Usage": "Active (Head)",
@@ -613,7 +628,11 @@ var data = {
             "Description": "Place a buff on the whole party for 3 turns, which decreases physical damage taken.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "12", "12"],
+                "Damage Taken↓": ["-15%", "-18%", "-20%", "-22%", "-24%", "-25%"],
+                "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6"],
+            }
         },
         "Element Guard":{
             "Usage": "Active (Head)",
@@ -621,15 +640,23 @@ var data = {
             "Description": "Place a buff on the whole party for 3 turns, which decreases elemental damage taken.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "12", "12"],
+                "Damage Taken↓": ["-15%", "-18%", "-20%", "-22%", "-24%", "-25%"],
+                "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6"],
+            }
         },
         "Taunt":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on yourself for 4 turns, which increases enemy aggro.",
+            "Description": "Place a buff on yourself for 4 turns, which increases enemy aggro. Actual increase on each attack is a random value between 3 and this skill's bonus.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2"],
+                "Max. Aggro Bonus": ["4", "6", "8", "9"],
+                "Action Speed": ["+20", "+20", "+20", "+20"],
+            }
         },
         "Auto-Taunt":{
             "Usage": "Passive",
@@ -637,7 +664,9 @@ var data = {
             "Description": "Chance to automatically cast Taunt at the start of battle.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["15%", "25%", "35%", "50%"],
+            }
         },
         "Iron Wall":{
             "Usage": "Passive",
@@ -645,7 +674,9 @@ var data = {
             "Description": "Decreases physical damage taken.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "Damage Taken↓": ["-5%", "-9%", "-12%", "-15%", "-17%", "-19%", "-21%", "-23%", "-24%", "-25%"],
+            }
         },
         "Mineralogy":{
             "Usage": "Passive (Field)",
@@ -660,10 +691,15 @@ var data = {
         "Vengeance Bash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Holy Smite (Lv 2)",
-            "Description": "Mace: Prepare an attack that will hit in 3 more turns. Deals melee Bash damage to one enemy. Damage dealt increases by 40% for each time you take damage while preparing (max +400%).",
+            "Description": "Mace: Prepare an attack that will hit in 3 more turns, at the end of turn. Deals melee Bash damage to one enemy. Damage dealt increases by 40% for each time you take damage while preparing (max +400%).",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["14", "14", "14", "16", "16", "16", "16", "18"],
+                "Attack Power": ["180%", "195%", "210%", "250%", "260%", "270%", "280%", "300%"],
+                "Accuracy": ["-5", "-4", "-3", "-2", "-1", "-1", "-1", "-1"],
+                "Action Speed": ["-100", "-100", "-100", "-100", "-100", "-100", "-100", "-100"],
+            }
         },
         "Line Shield":{
             "Usage": "Active (Arms)",
@@ -671,7 +707,11 @@ var data = {
             "Description": "Shield: Protect an ally line for this turn, which makes you take attacks in their place and decreases all damage taken.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "10"],
+                "Damage Taken↓": ["-5%", "-8%", "-10%", "-12%", "-14%", "-15%"],
+                "Action Speed": ["+30", "+30", "+30", "+30", "+30", "+30"],
+            }
         },
         "Party Shield":{
             "Usage": "Active (Arms)",
@@ -679,15 +719,21 @@ var data = {
             "Description": "Shield: Protect the whole party for this turn, which makes you take attacks in their place and decreases all damage taken.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "20", "20"],
+                "Damage Taken↓": ["-5%", "-8%", "-10%", "-12%", "-14%", "-15%"],
+                "Action Speed": ["+30", "+30", "+30", "+30", "+30", "+30"],
+            }
         },
         "Knight's Boon":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increase natural bind/ailment recovery rate.",
+            "Description": "Increases natural bind/ailment recovery rate.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Recovery Rate↑": ["+25%", "+32%", "+38%", "+43%", "+47%", "+50%"],
+            }
         },
         "Holy Blessing":{
             "Usage": "Active (Head)",
@@ -695,7 +741,10 @@ var data = {
             "Description": "Place a buff on an ally line for 3 turns, which nullifies one ailment infliction received. (Buff is consumed when activated)",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["14", "12", "9", "6"],
+                "Action Speed": ["+6", "+6", "+6", "+6"],
+            }
         },
         "Rampart":{
             "Usage": "Active (Head)",
@@ -703,7 +752,11 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which decreases physical/elemental damage taken.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "8", "8"],
+                "Damage Taken↓": ["-20%", "-23%", "-25%", "-27%", "-29%", "-30%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Healing Wall":{
             "Usage": "Passive",
@@ -711,7 +764,9 @@ var data = {
             "Description": "Party members in your line recover HP when they Defend.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "HP Gain": ["10", "15", "20", "25", "29", "33", "37", "40"],
+            }
         },
         "Sentry":{
             "Usage": "Active (Field)",
@@ -719,7 +774,11 @@ var data = {
             "Description": "Temporarily show the location of all FOEs within a certain distance.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "7", "7", "8", "8"],
+                "Range": ["1", "3", "4", "6", "8", "10"],
+                "Duration": ["30", "40", "50", "60", "80", "100"],
+            }
         },
         "Hardy Chef":{
             "Usage": "Passive (Sky)",
@@ -740,7 +799,12 @@ var data = {
             "Description": "Mace: Deal melee Bash damage to one enemy, with splash effect. Also hits yourself.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["24", "24", "24", "27", "27", "27", "27", "30"],
+                "Attack Power": ["180%", "195%", "210%", "250%", "260%", "270%", "280%", "300%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Weak Shield":{
             "Usage": "Active (Arms)",
@@ -748,7 +812,11 @@ var data = {
             "Description": "Shield: Place a buff on yourself for 3 turns, which makes you take attacks in place of allies below 50% HP and decreases all damage taken.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["20", "20", "20", "20", "20", "20"],
+                "Damage Taken↓": ["-5%", "-8%", "-10%", "-12%", "-14%", "-15%"],
+                "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6"],
+            }
         },
         "Guard Mastery":{
             "Usage": "Passive",
@@ -756,7 +824,9 @@ var data = {
             "Description": "Chance to nullify physical/elemental damage taken if you're in the front row.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["4%", "7%", "10%", "12%", "13%", "14%", "15%", "16%"],
+            }
         },
         "HP Boost":{
             "Usage": "Passive",
@@ -764,7 +834,9 @@ var data = {
             "Description": "Increases base Max HP.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "Max HP↑": ["+10%", "+15%", "+19%", "+23%", "+27%", "+30%", "+33%", "+36%", "+38%", "+40%"],
+            }
         },
     },
 },
