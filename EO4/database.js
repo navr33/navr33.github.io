@@ -1401,7 +1401,12 @@ var data = {
             "Description": "Place a buff on all allies and a debuff on all enemies for 3 turns. The buff increases Fire resistance, while the debuff decreases it. (Overrides other Rune buffs/debuffs)",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "7", "7", "7", "8"],
+                "Resistance↑\n(Allies)": ["+25%", "+30%", "+40%", "+42%", "+44%", "+50%"],
+                "Resistance↓\n(Enemies)": ["-15%", "-20%", "-30%", "-31%", "-32%", "-35%"],
+                "Action Speed": ["+10", "+10", "+10", "+10", "+10", "+10"],
+            }
         },
         "Fireball Rune":{
             "Usage": "Active (Head, TEC)",
@@ -1409,7 +1414,12 @@ var data = {
             "Description": "Deal ranged Fire damage to one enemy, with splash effect.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "11", "11", "11", "11", "11", "15"],
+                "Attack Power": ["35%", "39%", "42%", "45%", "55%", "57%", "59%", "61%", "63%", "70%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+            }
         },
         "Ice Rune":{
             "Usage": "Active (Head)",
@@ -1417,7 +1427,12 @@ var data = {
             "Description": "Place a buff on all allies and a debuff on all enemies for 3 turns. The buff increases Ice resistance, while the debuff decreases it. (Overrides other Rune buffs/debuffs)",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "7", "7", "7", "8"],
+                "Resistance↑\n(Allies)": ["+25%", "+30%", "+40%", "+42%", "+44%", "+50%"],
+                "Resistance↓\n(Enemies)": ["-15%", "-20%", "-30%", "-31%", "-32%", "-35%"],
+                "Action Speed": ["+10", "+10", "+10", "+10", "+10", "+10"],
+            }
         },
         "Ice Lance Rune":{
             "Usage": "Active (Head, TEC)",
@@ -1425,7 +1440,12 @@ var data = {
             "Description": "Deal ranged Ice damage to one enemy, with pierce effect.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "11", "11", "11", "11", "11", "15"],
+                "Attack Power": ["30%", "34%", "37%", "40%", "50%", "53%", "55%", "57%", "59%", "65%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+            }
         },
         "Volt Rune":{
             "Usage": "Active (Head)",
@@ -1433,7 +1453,12 @@ var data = {
             "Description": "Place a buff on all allies and a debuff on all enemies for 3 turns. The buff increases Volt resistance, while the debuff decreases it. (Overrides other Rune buffs/debuffs)",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "7", "7", "7", "8"],
+                "Resistance↑\n(Allies)": ["+25%", "+30%", "+40%", "+42%", "+44%", "+50%"],
+                "Resistance↓\n(Enemies)": ["-15%", "-20%", "-30%", "-31%", "-32%", "-35%"],
+                "Action Speed": ["+10", "+10", "+10", "+10", "+10", "+10"],
+            }
         },
         "Lightning Rune":{
             "Usage": "Active (Head, TEC)",
@@ -1441,7 +1466,12 @@ var data = {
             "Description": "Deal melee Volt damage to an enemy line.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "11", "11", "11", "11", "11", "15"],
+                "Attack Power": ["45%", "49%", "52%", "55%", "65%", "67%", "69%", "71%", "73%", "80%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+            }
         },
         "Runic Gleam":{
             "Usage": "Active (Head)",
@@ -1449,7 +1479,11 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which increases elemental and Almighty damage dealt.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["4", "4", "6", "6", "6", "8"],
+                "Damage Dealt↑": ["+28%", "+31%", "+37%", "+39%", "+41%", "+45%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "TP Boost":{
             "Usage": "Passive",
@@ -1457,7 +1491,9 @@ var data = {
             "Description": "Increases base Max TP.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Max TP↑": ["+10%", "+15%", "+19%", "+23%", "+27%", "+30%", "+33%", "+36%"],
+            }
         },
         "Herbology":{
             "Usage": "Passive (Field)",
@@ -1475,7 +1511,12 @@ var data = {
             "Description": "Deal ranged Fire damage to all enemies.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["15", "15", "15", "20", "20", "20", "20", "25"],
+                "Attack Power": ["45%", "47%", "49%", "55%", "57%", "59%", "61%", "65%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+            }
         },
         "Glacier Rune":{
             "Usage": "Active (Head, TEC)",
@@ -1483,7 +1524,14 @@ var data = {
             "Description": "Deal multiple hits of ranged Ice damage to random enemies.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["15", "15", "15", "20", "20", "20", "20", "25"],
+                "Attack Power": ["28%", "29%", "30%", "30%", "31%", "32%", "33%", "33%"],
+                "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "3"],
+                "Max. Hits": ["3", "3", "3", "4", "4", "4", "4", "4"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+            }
         },
         "Storm Rune":{
             "Usage": "Active (Head, TEC)",
@@ -1491,7 +1539,12 @@ var data = {
             "Description": "Deal ranged Volt damage to one enemy.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["15", "15", "15", "20", "20", "20", "20", "25"],
+                "Attack Power": ["75%", "80%", "85%", "95%", "99%", "102%", "104%", "110%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+            }
         },
         "Runic Shield":{
             "Usage": "Passive",
@@ -1499,7 +1552,9 @@ var data = {
             "Description": "Chance to nullify elemental attacks to party members in your line.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["5%", "10%", "13%", "15%"],
+            }
         },
         "Runic Guidance":{
             "Usage": "Passive",
@@ -1507,7 +1562,9 @@ var data = {
             "Description": "Increases damage dealt when you hit a weakness.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑": ["+25%", "+30%", "+34%", "+36%", "+38%", "+40%"],
+            }
         },
         "Free Energy":{
             "Usage": "Passive",
@@ -1515,7 +1572,9 @@ var data = {
             "Description": "Chance to not spend TP when using a skill.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["8%", "13%", "18%", "21%", "23%", "25%"],
+            }
         },
         "Runic Flare":{
             "Usage": "Passive",
@@ -1523,7 +1582,9 @@ var data = {
             "Description": "Increases elemental and Almighty damage dealt.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑": ["+5%", "+9%", "+12%", "+15%", "+17%", "+19%", "+21%", "+23%", "+24%", "+25%"],
+            }
         },
         "Wise Chef":{
             "Usage": "Passive (Sky)",
@@ -1544,7 +1605,12 @@ var data = {
             "Description": "Deal ranged Fire damage to one enemy.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["25", "25", "25", "30", "30", "30", "30", "35"],
+                "Attack Power": ["85%", "90%", "95%", "110%", "114%", "117%", "119%", "125%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+            }
         },
         "Blizzard Rune":{
             "Usage": "Active (Head, TEC)",
@@ -1552,7 +1618,12 @@ var data = {
             "Description": "Deal ranged Ice damage to all enemies.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["25", "25", "25", "30", "30", "30", "30", "35"],
+                "Attack Power": ["60%", "63%", "66%", "75%", "77%", "79%", "81%", "85%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+            }
         },
         "Galvanic Rune":{
             "Usage": "Active (Head, TEC)",
@@ -1560,7 +1631,14 @@ var data = {
             "Description": "Deal multiple hits of ranged Volt damage to random enemies.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["25", "25", "25", "30", "30", "30", "30", "35"],
+                "Attack Power": ["28%", "29%", "30%", "30%", "31%", "32%", "33%", "33%"],
+                "Min. Hits": ["2", "2", "2", "3", "3", "3", "3", "3"],
+                "Max. Hits": ["4", "4", "4", "4", "4", "4", "4", "5"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+            }
         },
         "Rune Mastery":{
             "Usage": "Passive",
@@ -1568,7 +1646,9 @@ var data = {
             "Description": "Increases damage dealt with Rune skills.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑": ["+5%", "+10%", "+14%", "+18%", "+20%", "+22%", "+24%", "+25%"],
+            }
         },
         "Origin Rune":{
             "Usage": "Active (Head, TEC)",
@@ -1576,7 +1656,12 @@ var data = {
             "Description": "Deal ranged Almighty damage to all enemies.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["45", "45", "45", "55", "55", "55", "55", "65"],
+                "Attack Power": ["100%", "105%", "110%", "120%", "124%", "129%", "132%", "140%"],
+                "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+                "Action Speed": ["-15", "-15", "-15", "-15", "-15", "-15", "-15", "-15"],
+            }
         },
     },
 },
