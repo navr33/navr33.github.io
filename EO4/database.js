@@ -859,7 +859,12 @@ var data = {
             "Description": "Bow: Deal ranged Stab damage to one enemy, with a chance to inflict Leg Bind. Cannot miss.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "7", "7", "7", "7", "8"],
+                "Attack Power": ["120%", "124%", "128%", "138%", "142%", "146%", "150%", "160%"],
+                "Infliction Rate": ["45%", "48%", "50%", "55%", "57%", "59%", "61%", "65%"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Arm Snipe":{
             "Usage": "Active (Arms, STR, LUC)",
@@ -867,7 +872,12 @@ var data = {
             "Description": "Bow: Deal ranged Stab damage to one enemy, with a chance to inflict Arm Bind. Cannot miss.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "7", "7", "7", "7", "8"],
+                "Attack Power": ["120%", "124%", "128%", "138%", "142%", "146%", "150%", "160%"],
+                "Infliction Rate": ["45%", "48%", "50%", "55%", "57%", "59%", "61%", "65%"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Long Shot":{
             "Usage": "Active (Arms, STR)",
@@ -875,7 +885,12 @@ var data = {
             "Description": "Bow: Deal ranged Stab damage to one enemy.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "5", "5", "5", "5", "5", "6"],
+                "Attack Power": ["140%", "145%", "150%", "155%", "165%", "169%", "173%", "177%", "180%", "190%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Steel Arrow":{
             "Usage": "Active (Arms, STR)",
@@ -883,7 +898,12 @@ var data = {
             "Description": "Bow: Deal ranged Stab damage to one enemy, with pierce effect.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10"],
+                "Attack Power": ["120%", "125%", "130%", "135%", "145%", "149%", "153%", "157%", "160%", "170%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Flank Shot":{
             "Usage": "Active (Arms, STR)",
@@ -891,7 +911,12 @@ var data = {
             "Description": "Bow: Deal ranged Stab damage to an enemy line.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10"],
+                "Attack Power": ["105%", "110%", "115%", "120%", "130%", "134%", "138%", "142%", "145%", "155%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Lock On":{
             "Usage": "Active (Head)",
@@ -899,7 +924,10 @@ var data = {
             "Description": "Place a buff on yourself for 5 turns, which increases Critical Hit rate.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["4", "4", "4", "6", "6", "6"],
+                "Crit Rate↑": ["+30%", "+35%", "+40%", "+45%", "+50%", "+60%"],
+            }
         },
         "Scavenger":{
             "Usage": "Passive",
@@ -907,7 +935,9 @@ var data = {
             "Description": "Increases enemy drop rates.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Drop Rate↑": ["+1%", "+2%", "+3%", "+4%", "+5%", "+6%"],
+            }
         },
         "Spotter":{
             "Usage": "Active (Head)",
@@ -915,7 +945,11 @@ var data = {
             "Description": "Place a buff on the whole party for 5 turns, which increases accuracy.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6"],
+                "Accuracy↑": ["+15%", "+25%", "+33%", "+40%"],
+                "Action Speed": ["+6", "+6", "+6", "+6"],
+            }
         },
         "Dendrology":{
             "Usage": "Passive (Field)",
@@ -933,15 +967,24 @@ var data = {
             "Description": "Bow: Deal ranged Stab damage to one enemy, with a chance to inflict Head Bind. Cannot miss.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["8", "8", "8", "10", "10", "10", "10", "12"],
+                "Attack Power": ["140%", "146%", "152%", "164%", "170%", "176%", "182%", "200%"],
+                "Infliction Rate": ["45%", "48%", "50%", "55%", "57%", "59%", "61%", "65%"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Chase Bind":{
             "Usage": "Passive",
             "Unlock": "Head Snipe (Lv 2)",
-            "Description": "When a party member inflicts a bind on an enemy, perform a follow up attack. Activation chance within a turn starts at 100% and goes down with each activation.",
+            "Description": "When a party member inflicts a bind on an enemy, perform a follow up attack. Activation chance within a turn starts at 100% and goes down with each activation. (<b>Bug</b>: Leveling does not increase power as it should)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Attack Power": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+                "Max. per Turn": ["1", "1", "1", "2", "2", "2", "2", "3"],
+                "Chance Fadeout": ["N/A", "N/A", "N/A", "35%", "35%", "35%", "35%", "25%"],
+            }
         },
         "Silver Arrow":{
             "Usage": "Active (Arms, STR)",
@@ -949,7 +992,12 @@ var data = {
             "Description": "Bow: Deal ranged Stab damage to one enemy. Ignores Stab vulnerability and buffs on the target.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["11", "11", "11", "12", "12", "12", "12", "13"],
+                "Attack Power": ["180%", "190%", "200%", "220%", "228%", "236%", "244%", "260%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Squall Volley":{
             "Usage": "Active (Arms, STR)",
@@ -957,7 +1005,14 @@ var data = {
             "Description": "Bow: Deal multiple hits of ranged Stab damage to random enemies. (Once one hit becomes Critical, all remaining hits will also be Critical)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["14", "14", "14", "17", "17", "17", "17", "22"],
+                "Attack Power": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+                "Min. Hits": ["2", "2", "2", "4", "4", "4", "4", "6"],
+                "Max. Hits": ["7", "8", "9", "11", "12", "13", "14", "16"],
+                "Accuracy": ["-60%", "-60%", "-60%", "-60%", "-60%", "-60%", "-60%", "-60%"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Bullseye":{
             "Usage": "Passive",
@@ -965,7 +1020,9 @@ var data = {
             "Description": "Increases Critical Hit rate.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "Crit Rate↑": ["+8%", "+10%", "+12%", "+14%", "+15%", "+16%", "+17%", "+18%", "+19%", "+20%"],
+            }
         },
         "Eagle Eye":{
             "Usage": "Active (Head)",
@@ -973,7 +1030,11 @@ var data = {
             "Description": "Place a debuff on one enemy for 3 turns, which increases physical damage taken.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6"],
+                "Damage Dealt↑": ["+20%", "+25%", "+28%", "+30%"],
+                "Action Speed": ["-6", "-6", "-6", "-6"],
+            }
         },
         "Camouflage":{
             "Usage": "Active (Field)",
@@ -981,7 +1042,11 @@ var data = {
             "Description": "Temporarily decrease the enemy encounter rate.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["7", "7", "7", "10", "10", "10"],
+                "Encounters↓": ["x0.8", "x0.7", "x0.6", "x0.5", "x0.4", "x0.3"],
+                "Duration": ["50", "50", "50", "100", "100", "100"],
+            }
         },
         "High Caution":{
             "Usage": "Passive",
@@ -989,7 +1054,9 @@ var data = {
             "Description": "Chance to nullify enemy ambushes.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["30%", "35%", "40%", "45%", "50%", "60%"],
+            }
         },
         "Discerning Eye":{
             "Usage": "Passive (Sky)",
@@ -1004,10 +1071,12 @@ var data = {
         "Snipe Mastery":{
             "Usage": "Passive",
             "Unlock": "Chase Bind (Lv 3)",
-            "Description": "Increases Critical rate against enemies with binds. Stronger effect the more binds the target has.",
+            "Description": "Increases Critical Hit chance for each bind on the target.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Crit Rate↑": ["+10%", "+14%", "+18%", "+22%", "+24%", "+26%", "+28%", "+30%"],
+            }
         },
         "Impact Arrow":{
             "Usage": "Active (Arms, STR)",
@@ -1015,15 +1084,25 @@ var data = {
             "Description": "Bow: Deal ranged Stab damage to one enemy, with pierce effect. Afterwards, this skill becomes disabled for 2 turns.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["15", "15", "15", "18", "18", "18", "18", "21"],
+                "Attack Power": ["210%", "220%", "230%", "260%", "270%", "280%", "290%", "320%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Divine Shot":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Squall Volley (Lv 2)",
-            "Description": "Bow: Deal ranged Stab damage to one enemy. Stronger for each bind on the target, but removes its binds.",
+            "Description": "Bow: Deal ranged Stab damage to one enemy. Damage dealt increases by 100% for each bind on the target, but removes its binds.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["15", "15", "15", "18", "18", "18", "18", "21"],
+                "Attack Power": ["140%", "145%", "150%", "165%", "170%", "174%", "178%", "190%"],
+                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Power Boost":{
             "Usage": "Passive",
@@ -1031,7 +1110,9 @@ var data = {
             "Description": "Increases physical damage dealt.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑": ["+5%", "+9%", "+12%", "+15%", "+17%", "+19%", "+21%", "+23%"],
+            }
         },
     },
 },
