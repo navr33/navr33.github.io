@@ -1669,7 +1669,7 @@ var data = {
     "Class Proficiency":{
         "Proficiency / Expertise / Enlightment":{
             "Usage": "Passive (Unique)",
-            "Description": "Increases the duration of Dance buffs.",
+            "Description": "Increases the duration of Dance buffs (Waltz, Tango and Samba).",
             "Starter": "0",
             "Max Level": "3",
             "Data": {
@@ -1684,7 +1684,11 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which restores HP to your line at the end of each turn.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "15"],
+                "Healing Power": ["40%", "45%", "50%", "55%", "65%", "68%", "71%", "74%", "77%", "85%"],
+                "Action Speed": ["-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6", "-6"],
+            }
         },
         "Refresh Waltz":{
             "Usage": "Active (Legs)",
@@ -1692,7 +1696,10 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which removes ailments from your line at the end of each turn.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["14", "12", "10", "8"],
+                "Action Speed": ["-6", "-6", "-6", "-6"],
+            }
         },
         "Attack Tango":{
             "Usage": "Active (Legs)",
@@ -1700,7 +1707,11 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which increases physical damage dealt by your line.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["5", "5", "5", "6", "6", "6", "6", "8"],
+                "Damage Dealt↑": ["+20%", "+23%", "+25%", "+30%", "+32%", "+34%", "+36%", "+40%"],
+                "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            }
         },
         "Guard Tango":{
             "Usage": "Active (Legs)",
@@ -1708,7 +1719,11 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which decreases physical damage taken by your line.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["5", "5", "5", "6", "6", "6", "6", "8"],
+                "Damage Taken↓": ["-20%", "-23%", "-25%", "-30%", "-32%", "-34%", "-36%", "-40%"],
+                "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            }
         },
         "Counter Samba":{
             "Usage": "Active (Legs)",
@@ -1716,7 +1731,13 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which gives you a chance to counterattack when your line is hit.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["4", "4", "4", "6", "6", "6", "6", "8"],
+                "Activation Chance": ["60%", "60%", "60%", "65%", "65%", "65%", "65%", "70%"],
+                "Attack Power": ["100%", "105%", "110%", "115%", "120%", "125%", "130%", "135%"],
+                "Accuracy": ["-3%", "-3%", "-3%", "-2%", "-2%", "-1%", "-1%", "+0%"],
+                "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            }
         },
         "Chase Samba":{
             "Usage": "Active (Legs)",
@@ -1724,7 +1745,14 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which makes you follow up attacks by other allies in your line.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["8", "8", "8", "10", "10", "10", "10", "12"],
+                "Attack Power": ["80%", "90%", "100%", "100%", "107%", "114%", "120%", "120%"],
+                "Max. per Turn": ["1", "1", "1", "2", "2", "2", "2", "2"],
+                "Activation Chance\n(Second Hit)": ["N/A", "N/A", "N/A", "50%", "50%", "50%", "50%", "75%"],
+                "Accuracy": ["-5%", "-5%", "-4%", "-4%", "-3%", "-3%", "-2%", "-1%"],
+                "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            }
         },
         "Fan Dance":{
             "Usage": "Passive",
@@ -1732,7 +1760,9 @@ var data = {
             "Description": "Increases evasion.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "Evasion↑": ["+10%", "+14%", "+18%", "+22%", "+25%", "+27%", "+29%", "+31%", "+33%", "+35%"],
+            }
         },
         "Dendrology":{
             "Usage": "Passive (Field)",
@@ -1750,7 +1780,10 @@ var data = {
             "Description": "Place a buff on yourself for 3 turns, which removes binds from your line at the end of each turn.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["14", "12", "10", "8"],
+                "Action Speed": ["-6", "-6", "-6", "-6"],
+            }
         },
         "Healing Step":{
             "Usage": "Active (Legs, TEC)",
@@ -1758,39 +1791,64 @@ var data = {
             "Description": "Only usable if you have a Waltz buff. Restore HP to the whole party.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["15", "15", "15", "15", "20", "20", "20", "20", "20", "25"],
+                "Healing Power": ["50%", "55%", "60%", "65%", "80%", "83%", "86%", "88%", "90%", "100%"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Energy Tango":{
             "Usage": "Active (Legs)",
             "Unlock": "Guard Tango (Lv 1)",
-            "Description": "Place a buff on yourself for 3 turns, which decreases the TP cost of skills by your line.",
+            "Description": "Place a buff on yourself for 3 turns, which decreases the TP cost of skills used by party members in your line.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "8", "10", "12", "14", "16"],
+                "Costs↓": ["-3", "-4", "-5", "-6", "-6", "-8"],
+                "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6"],
+            }
         },
         "Wide Dance":{
             "Usage": "Active (Legs)",
             "Unlock": "Energy Tango (Lv 2)",
-            "Description": "Only usable if you have a Tango buff. For this turn, your Waltz, Tango and Samba buffs will apply to the whole party.",
+            "Description": "Only usable if you have a Tango buff. For this turn, your Dance buffs will apply to the whole party.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["8", "6", "4", "2"],
+                "Action Speed": ["+100", "+100", "+100", "+100"],
+            }
         },
         "Trick Samba":{
             "Usage": "Active (Legs)",
             "Unlock": "Chase Samba (Lv 1)",
-            "Description": "Place a buff on yourself for 3 turns, which makes other allies in your line follow up after your attacks.",
+            "Description": "Place a buff on yourself for 3 turns, which makes other allies in your line follow up after your attacks. Activation chance per turn starts at 100% and goes down with each activation.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "10", "12", "12", "12", "12", "14"],
+                "Attack Power": ["80%", "90%", "100%", "100%", "107%", "114%", "120%", "120%"],
+                "Max. per Turn": ["2", "2", "2", "3", "3", "3", "3", "3"],
+                "Chance Fadeout": ["50%", "50%", "50%", "35%", "35%", "35%", "35%", "25%"],
+                "Accuracy": ["-3%", "-3%", "-3%", "-2%", "-2%", "-1%", "-1%", "+0%"],
+                "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+            }
         },
         "Rush Dance":{
             "Usage": "Active (Legs)",
             "Unlock": "Trick Samba (Lv 2)",
-            "Description": "Only usable if you have a Samba buff. Prepare to follow up after your allies' attacks this turn, dealing weapon-based damage to the same targets.",
+            "Description": "Only usable if you have a Samba buff. Prepare to follow up after your allies' attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each activation.",
             "Starter": "0",
-            "Max Level": "4",
-            "Data": ""
+            "Max Level": "8",
+            "Data": {
+                "TP Cost": ["14", "14", "14", "17", "17", "17", "17", "20"],
+                "Attack Power": ["105%", "110%", "115%", "120%", "125%", "129%", "132%", "135%"],
+                "Max. per Turn": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Chance Fadeout": ["25%", "25%", "25%", "20%", "20%", "20%", "20%", "15%"],
+                "Accuracy": ["-3%", "-3%", "-3%", "-2%", "-2%", "-2%", "-2%", "-1%"],
+                "Action Speed": ["+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60"],
+            }
         },
         "Sword Dance":{
             "Usage": "Passive",
@@ -1798,15 +1856,20 @@ var data = {
             "Description": "When using a normal attack there's a chance to perform multiple attacks at once.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["20%", "23%", "26%", "28%", "28%", "30%", "31%", "32%", "33%", "33%"],
+                "Max. Hits": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "4"],
+            }
         },
         "Burst Saver":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Chance to spend 1 less level of Burst gauge when you use a Burst skill.",
+            "Description": "Chance to spend 1 less level of Burst Gauge when you use a Burst skill.",
             "Starter": "0",
-            "Max Level": "10",
-            "Data": ""
+            "Max Level": "6",
+            "Data": {
+                "Activation Chance": ["10%", "14%", "18%", "21%", "23%", "25%"],
+            }
         },
         "Lucky Chef":{
             "Usage": "Passive (Sky)",
@@ -1827,7 +1890,9 @@ var data = {
             "Description": "Make target ally act at the start of this turn.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["12", "10", "8", "6"],
+            }
         },
         "Beat Dance":{
             "Usage": "Active (Legs)",
@@ -1835,15 +1900,22 @@ var data = {
             "Description": "Only usable if you have a Waltz, Tango and Samba buff. Makes all party members deal weapon-based damage to one enemy.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["12", "12", "14", "14", "14", "16"],
+                "Attack Power": ["120%", "125%", "135%", "140%", "145%", "155%"],
+                "Accuracy": ["-10%", "-8%", "-5%", "-3%", "-2%", "-1%"],
+                "Action Speed": ["-20", "-20", "-20", "-20", "-20", "-20"],
+            }
         },
         "Dance Mastery":{
             "Usage": "Passive",
             "Unlock": "Beat Dance (Lv 3)",
-            "Description": "Increases Burst gauge gains if you have Dance buffs (Waltz, Tango or Samba). Effect is multiplied by the amount of Dance buffs you have.",
+            "Description": "Increases Burst Gauge gains if you have Dance buffs. Effect is multiplied by the amount of Dance buffs you have.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Burst Gain↑": ["+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8"],
+            }
         },
         "Speed Boost":{
             "Usage": "Passive",
@@ -1851,7 +1923,11 @@ var data = {
             "Description": "Increases accuracy, evasion and action speed.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Accuracy↑": ["+2%", "+5%", "+7%", "+9%", "+10%", "+11%", "+12%", "+13%"],
+                "Evasion↑": ["+2%", "+5%", "+7%", "+9%", "+10%", "+11%", "+12%", "+13%"],
+                "Speed↑": ["+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8"],
+            }
         },
         "Mist Dance":{
             "Usage": "Passive",
@@ -1859,7 +1935,9 @@ var data = {
             "Description": "Normal attacks gain a chance to inflict Stun.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Infliction Rate": ["10%", "14%", "17%", "20%", "22%", "24%", "26", "28%"],
+            }
         },
     },
 },
