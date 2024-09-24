@@ -2235,7 +2235,13 @@ var data = {
             "Description": "Katana/Mace: Deal melee Bash damage to one enemy, with a chance to inflict Paralysis.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["5", "5", "5", "6", "6", "6", "6", "7"],
+                "Attack Power": ["115%", "120%", "125%", "140%", "145%", "148%", "150%", "160%"],
+                "Infliction Rate": ["30%", "32%", "34%", "40%", "41%", "42%", "43%", "45%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["+5", "+5", "+5", "+5", "+5", "+5", "+5", "+5"],
+            }
         },
         "Moon Slash":{
             "Usage": "Active (Arms, STR)",
@@ -2243,7 +2249,12 @@ var data = {
             "Description": "Katana: Deal melee Cut damage to an enemy line.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["10", "10", "10", "12", "12", "12", "12", "14"],
+                "Attack Power": ["130%", "135%", "140%", "150%", "155%", "159%", "162%", "170%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["-3", "-3", "-3", "-2", "-2", "-2", "-2", "-1"],
+            }
         },
         "Skull Crusher":{
             "Usage": "Active (Arms, STR, LUC)",
@@ -2251,15 +2262,26 @@ var data = {
             "Description": "Mace: Deal melee Bash damage to one enemy, with a chance to inflict Head Bind.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["7", "7", "7", "8", "8", "8", "8", "10"],
+                "Attack Power": ["135%", "140%", "145%", "160%", "165%", "170%", "175%", "185%"],
+                "Infliction Rate": ["40%", "42%", "44%", "46%", "48%", "50%", "52%", "55%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Blood Surge":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Activate the Blood Surge state, which increases damage dealt but makes you lose HP and TP each time you act.",
             "Starter": "0",
-            "Max Level": "8",
-            "Data": ""
+            "Max Level": "6",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "2", "2"],
+                "Damage Dealt↑": ["+45%", "+50%", "+55%", "+60%", "+65%", "+70%"],
+                "HP Loss": ["10", "23", "51", "89", "135", "197"],
+                "TP Loss": ["5", "6", "7", "8", "9", "10"],
+            }
         },
         "Endure":{
             "Usage": "Passive",
@@ -2267,15 +2289,21 @@ var data = {
             "Description": "Once per battle, recover HP upon taking lethal damage.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "HP Gain": ["10", "50", "100", "200"],
+            }
         },
         "Roar":{
             "Usage": "Active (Head, TEC)",
             "Unlock": "N/A",
-            "Description": "Dispel all buffs on one enemy. If successful, deal ranged Almighty damage to that enemy. This attack cannot miss.",
+            "Description": "Dispel all buffs on one enemy. If the target had at least one modifier, deal ranged Almighty damage to that enemy. This attack cannot miss.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5"],
+                "Attack Power": ["100%", "115%", "130%", "150%"],
+                "Action Speed": ["-3", "-3", "-3", "-3"],
+            }
         },
         "Power Boost":{
             "Usage": "Passive",
@@ -2283,7 +2311,9 @@ var data = {
             "Description": "Increases physical damage dealt.",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑": ["+5%", "+9%", "+12%", "+15%", "+17%", "+19%", "+21%", "+23%", "+24%", "+25%"],
+            }
         },
         "Dendrology":{
             "Usage": "Passive (Field)",
@@ -2301,7 +2331,12 @@ var data = {
             "Description": "Katana/Mace: Deal ranged Cut damage to all enemies, then spend 25% of current HP.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["16", "16", "16", "18", "18", "18", "18", "20"],
+                "Attack Power": ["130%", "138%", "145%", "160%", "165%", "168%", "170%", "180%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-4%", "-4%", "-4%", "-4%", "-3%"],
+                "Action Speed": ["-9", "-9", "-9", "-7", "-7", "-7", "-7", "-6"],
+            }
         },
         "Ice Slash":{
             "Usage": "Active (Arms, STR)",
@@ -2309,7 +2344,12 @@ var data = {
             "Description": "Katana: Deal melee Cut+Ice damage to one enemy.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["12", "12", "12", "14", "14", "14", "14", "16"],
+                "Attack Power": ["170%", "180%", "190%", "215%", "225%", "235%", "245%", "260%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Fire Strike":{
             "Usage": "Active (Arms, STR)",
@@ -2317,7 +2357,12 @@ var data = {
             "Description": "Mace: Deal melee Bash+Fire damage to one enemy.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["12", "12", "12", "14", "14", "14", "14", "16"],
+                "Attack Power": ["170%", "180%", "190%", "215%", "225%", "235%", "245%", "260%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Deep Breath":{
             "Usage": "Active (Head)",
@@ -2325,7 +2370,11 @@ var data = {
             "Description": "Deactivate the Blood Surge state at the start of turn, then recover HP and TP.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["1", "1", "1", "1"],
+                "HP Gain": ["80", "140", "270", "350"],
+                "TP Gain": ["20", "30", "40", "50"],
+            }
         },
         "Auto-Surge":{
             "Usage": "Passive",
@@ -2333,7 +2382,9 @@ var data = {
             "Description": "Chance to automatically cast Blood Surge at the start of battle.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["25%", "33%", "40%", "50%"],
+            }
         },
         "Charge":{
             "Usage": "Active (Head)",
@@ -2341,15 +2392,21 @@ var data = {
             "Description": "Enter a charge state until the end of next turn, which drastically increases physical damage dealt for your next action.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2"],
+                "Damage Dealt↑": ["x1.8", "x2.0", "x2.1", "x2.2"],
+                "Action Speed": ["-100", "-100", "-100", "-100"],
+            }
         },
         "Defiance":{
             "Usage": "Passive",
             "Unlock": "Charge (Lv 2)",
             "Description": "Increases physical damage dealt if you have two weapons equipped.",
             "Starter": "0",
-            "Max Level": "6",
-            "Data": ""
+            "Max Level": "8",
+            "Data": {
+                "Damage Dealt↑": ["+10%", "+15%", "+19%", "+22%", "+24%", "+26%", "+28%", "+30%"],
+            }
         },
         "Robust Chef":{
             "Usage": "Passive (Sky)",
@@ -2370,15 +2427,27 @@ var data = {
             "Description": "Katana: Deal melee Cut damage to one enemy.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["16", "16", "16", "18", "18", "18", "18", "21"],
+                "Attack Power": ["230%", "245%", "260%", "300%", "310%", "318%", "325%", "340%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-4%", "-4%", "-4%", "-4%", "-3%"],
+                "Action Speed": ["+5", "+5", "+5", "+7", "+7", "+7", "+7", "+8"],
+            }
         },
         "Multi-Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flash Slice (Lv 3)",
-            "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Deals more hits the less remaining HP you have.",
+            "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Deals more hits the less remaining HP you have: Adds one hit when missing HP crosses 50%, and one more hit for every additional 10% missing beyond that.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["22", "22", "22", "26", "26", "26", "26", "30"],
+                "Attack Power": ["63%", "66%", "68%", "69%", "70%", "72%", "74%", "75%"],
+                "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2"],
+                "Max. Hits": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Accuracy": ["-8%", "-8%", "-8%", "-7%", "-7%", "-7%", "-7%", "-6%"],
+                "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
+            }
         },
         "Meteor Strike":{
             "Usage": "Active (Arms, STR)",
@@ -2386,7 +2455,12 @@ var data = {
             "Description": "Mace: Deal melee Bash damage to one enemy, with splash effect.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["18", "18", "18", "21", "21", "21", "21", "24"],
+                "Attack Power": ["170%", "185%", "200%", "230%", "240%", "250%", "260%", "280%"],
+                "Accuracy": ["-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%"],
+                "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
+            }
         },
         "Fierce Strike":{
             "Usage": "Active (Arms, STR)",
@@ -2394,15 +2468,23 @@ var data = {
             "Description": "Mace: Deal melee Bash damage to one enemy, then inflict Paralysis on yourself.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["20", "20", "20", "23", "23", "23", "23", "27"],
+                "Attack Power": ["300%", "315%", "330%", "360%", "375%", "390%", "400%", "430%"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
+                "Action Speed": ["-10", "-10", "-10", "-10", "-10", "-10", "-10", "-10"],
+            }
         },
         "Surge Mastery":{
             "Usage": "Passive",
             "Unlock": "Deep Breath (Lv 2)",
-            "Description": "During Blood Surge, increase damage dealt based on missing TP and decrease damage taken based on missing HP.",
+            "Description": "During Blood Surge, increase damage dealt based on missing TP and decrease damage taken based on missing HP:<br>-Damage dealt increase is equal to [FixedBonus + MissingTP%/3], capped at 90% missing TP.<br>-Damage taken decrease is equal to [MaxBonus*MissingHP%/99%].",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑\n(Fixed Bonus)": ["+0%", "+2%", "+4%", "+6%", "+7%", "+8%", "+9%", "+10%"],
+                "Damage Taken↓\n(Max Bonus)": ["-30%", "-31%", "-32%", "-32%", "-33%", "-33%", "-33%", "-33%"],
+            }
         },
         "Ferocity":{
             "Usage": "Passive",
@@ -2410,7 +2492,9 @@ var data = {
             "Description": "Recover HP when you perform a normal attack.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "HP Gain": ["20", "38", "56", "75", "90", "103", "115", "125"],
+            }
         },
     },
 },
