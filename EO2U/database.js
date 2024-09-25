@@ -3236,7 +3236,7 @@ var data = {
     "Burst Shot":{
         "Usage": "Active (Arms, AGI)",
         "Unlock": "Charged Fire/Ice/Volt (Lv 2)",
-        "Description": "Gun: Deal ranged Stab+Fire+Ice+Volt damage to one enemy. Increase damage taken by 50% until it activates. Afterwards, becomes disabled for 3 turns.",
+        "Description": "Gun: Deal ranged Stab+Fire+Ice+Volt damage to one enemy. Increase damage taken by 50% until it activates. Afterwards, this skill becomes disabled for 3 turns.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",

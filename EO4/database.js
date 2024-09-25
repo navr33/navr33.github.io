@@ -3,12 +3,12 @@ var data = {
     "Class Proficiency":{
         "Proficiency / Expertise / Enlightment":{
             "Usage": "Passive (Unique)",
-            "Description": "After you attack, other allies deal more damage and have more accuracy against your targets until the end of turn.",
+            "Description": "After you perform an attack, all party members deal more damage and have more accuracy against its targets until the end of turn.",
             "Starter": "0",
             "Max Level": "3",
             "Data": {
                 "Damage Dealt↑": ["+20%", "+25%", "+30%"],
-                "Accuracy↑": ["+10", "+15", "+20"],
+                "Accuracy↑": ["+10%", "+15%", "+20%"],
             }
         },
     },
@@ -22,48 +22,48 @@ var data = {
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "5", "5", "5", "5", "5", "6"],
                 "Attack Power": ["130%", "135%", "140%", "145%", "160%", "163%", "166%", "169%", "172%", "180%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
             }
         },
         "Blazing Link":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Sonic Raid (Lv 3)",
-            "Description": "Sword/Rapier: Deal melee Cut/Stab+Fire damage to one enemy and mark them with a Link for this turn. The next hit by an ally will activate the Link, dealing additional Cut/Stab+Fire damage but with decreased power.",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab+Fire damage to one enemy and mark them with a Link for this turn. The next hit by an ally will activate the Link, repeating a percentage of the damage dealt by the initial attack.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10"],
                 "Attack Power": ["115%", "120%", "124%", "127%", "130%", "132%", "134%", "136%", "138%", "140%"],
-                "Power Modifier\n(Follow Up)": ["x0.4", "x0.4", "x0.4", "x0.4", "x0.45", "x0.45", "x0.45", "x0.45", "x0.45", "x0.5"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Repeated Damage": ["40%", "40%", "40%", "40%", "45%", "45%", "45%", "45%", "45%", "50%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
             }
         },
         "Freezing Link":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Sonic Raid (Lv 3)",
-            "Description": "Sword/Rapier: Deal melee Cut/Stab+Ice damage to one enemy and mark them with a Link for this turn. The next hit by an ally will activate the Link, dealing additional Cut/Stab+Ice damage but with decreased power.",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab+Ice damage to one enemy and mark them with a Link for this turn. The next hit by an ally will activate the Link, repeating a percentage of the damage dealt by the initial attack.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10"],
                 "Attack Power": ["115%", "120%", "124%", "127%", "130%", "132%", "134%", "136%", "138%", "140%"],
-                "Power Modifier\n(Follow Up)": ["x0.4", "x0.4", "x0.4", "x0.4", "x0.45", "x0.45", "x0.45", "x0.45", "x0.45", "x0.5"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Repeated Damage": ["40%", "40%", "40%", "40%", "45%", "45%", "45%", "45%", "45%", "50%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
             }
         },
         "Electric Link":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Sonic Raid (Lv 3)",
-            "Description": "Sword/Rapier: Deal melee Cut/Stab+Volt damage to one enemy and mark them with a Link for this turn. The next hit by an ally will activate the Link, dealing additional Cut/Stab+Volt damage but with decreased power.",
+            "Description": "Sword/Rapier: Deal melee Cut/Stab+Volt damage to one enemy and mark them with a Link for this turn. The next hit by an ally will activate the Link, repeating a percentage of the damage dealt by the initial attack.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10"],
                 "Attack Power": ["115%", "120%", "124%", "127%", "130%", "132%", "134%", "136%", "138%", "140%"],
-                "Power Modifier\n(Follow Up)": ["x0.4", "x0.4", "x0.4", "x0.4", "x0.45", "x0.45", "x0.45", "x0.45", "x0.45", "x0.5"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Repeated Damage": ["40%", "40%", "40%", "40%", "45%", "45%", "45%", "45%", "45%", "50%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
             }
         },
@@ -77,7 +77,7 @@ var data = {
                 "TP Cost": ["4", "4", "5", "5", "5", "6"],
                 "Attack Power": ["80%", "83%", "90%", "95%", "100%", "110%"],
                 "Damage Dealt↓": ["-15%", "-17%", "-20%", "-21%", "-22%", "-25%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3"],
             }
         },
@@ -91,7 +91,7 @@ var data = {
                 "TP Cost": ["4", "4", "5", "5", "5", "6"],
                 "Attack Power": ["80%", "83%", "90%", "95%", "100%", "110%"],
                 "Damage Dealt↓": ["-15%", "-17%", "-20%", "-21%", "-22%", "-25%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3"],
             }
         },
@@ -148,7 +148,7 @@ var data = {
             "Data": {
                 "TP Cost": ["9", "9", "9", "11", "11", "11", "11", "13"],
                 "Attack Power": ["95%", "102%", "108%", "125%", "129%", "133%", "137%", "150%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["-3", "-3", "-3", "-1", "-1", "-1", "-1", "+0"],
             }
         },
@@ -161,7 +161,7 @@ var data = {
             "Data": {
                 "TP Cost": ["11", "11", "11", "13", "13", "13", "13", "16"],
                 "Attack Power": ["155%", "165%", "175%", "195%", "202%", "209%", "215%", "230%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
             }
         },
@@ -174,7 +174,7 @@ var data = {
             "Data": {
                 "TP Cost": ["11", "11", "11", "13", "13", "13", "13", "16"],
                 "Attack Power": ["180%", "190%", "200%", "230%", "238%", "246%", "254%", "270%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
             }
         },
@@ -218,7 +218,7 @@ var data = {
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["+10%", "+18%", "+25%", "+30%", "+33%", "+36%", "+38%", "+40%"],
-                "Accuracy↑": ["+10", "+15", "+18", "+20", "+22", "+23", "+24", "+25"],
+                "Accuracy↑": ["+10%", "+15%", "+18%", "+20%", "+22%", "+23%", "+24%", "+25%"],
             }
         },
         "Muscular Chef":{
@@ -243,7 +243,7 @@ var data = {
             "Data": {
                 "TP Cost": ["13", "13", "13", "15", "15", "15", "15", "18"],
                 "Attack Power": ["270%", "290%", "310%", "350%", "360%", "370%", "380%", "400%"],
-                "Accuracy": ["-5", "-5", "-5", "-5", "-5", "-5", "-5", "-5"],
+                "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
                 "Action Speed": ["-20", "-20", "-20", "-20", "-20", "-20", "-20", "-20"],
             }
         },
@@ -258,7 +258,7 @@ var data = {
                 "Attack Power": ["95%", "99%", "103%", "105%", "108%", "111%", "113%", "125%"],
                 "Min. Hits": ["3", "3", "3", "3", "3", "3", "3", "3"],
                 "Max. Hits": ["3", "3", "3", "4", "4", "4", "4", "4"],
-                "Accuracy": ["-15", "-15", "-15", "-15", "-15", "-15", "-15", "-15"],
+                "Accuracy": ["-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%"],
                 "Action Speed": ["+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9"],
             }
         },
@@ -275,11 +275,11 @@ var data = {
         "Link Mastery":{
             "Usage": "Passive",
             "Unlock": "Improved Link (Lv 3)",
-            "Description": "Increases damage dealt by a Link's activations for each time it has been activated this turn.",
+            "Description": "Increases the percentage of the original damage repeated by a Link's activations for each time it has been activated this turn.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
-                "Damage Dealt↑": ["+3%", "+4%", "+5%", "+6%", "+7%", "+8%"],
+                "Repeated Damage↑": ["+3%", "+4%", "+5%", "+6%", "+7%", "+8%"],
             }
         },
     },
@@ -306,7 +306,7 @@ var data = {
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "9", "9", "9", "9", "9", "10"],
                 "Attack Power": ["150%", "157%", "164%", "170%", "190%", "194%", "198%", "202%", "206%", "220%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             }
         },
@@ -319,7 +319,7 @@ var data = {
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "12", "12", "12", "12", "12", "14"],
                 "Attack Power": ["130%", "137%", "144%", "150%", "165%", "169%", "173%", "177%", "180%", "190%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             }
         },
@@ -333,7 +333,7 @@ var data = {
                 "TP Cost": ["2", "2", "2", "3", "3", "3"],
                 "Attack Power": ["80%", "80%", "80%", "80%", "80%", "80%"],
                 "Infliction Rate": ["45%", "50%", "55%", "63%", "67%", "70%"],
-                "Accuracy": ["+1", "+1", "+2", "+2", "+3", "+3"],
+                "Accuracy": ["+1%", "+1%", "+2%", "+2%", "+3%", "+3%"],
                 "Action Speed": ["+2", "+2", "+2", "+2", "+2", "+2"],
             }
         },
@@ -347,18 +347,18 @@ var data = {
                 "TP Cost": ["3", "3", "3", "4", "4", "4"],
                 "Attack Power": ["80%", "80%", "80%", "80%", "80%", "80%"],
                 "Infliction Rate": ["45%", "50%", "55%", "63%", "67%", "70%"],
-                "Accuracy": ["+1", "+1", "+2", "+2", "+3", "+3"],
+                "Accuracy": ["+1%", "+1%", "+2%", "+2%", "+3%", "+3%"],
                 "Action Speed": ["+2", "+2", "+2", "+2", "+2", "+2"],
             }
         },
         "Blade Flurry":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If two weapons are equipped, normal attacks will perform a second hit (with decreased damage) using the sub-weapon.",
+            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If two weapons are equipped, normal attacks will perform a second attack (with decreased damage) using the sub-weapon.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
-                "Damage Mod.\n(Second Hit)": ["x0.3", "x0.4", "x0.5", "x0.6", "x0.7", "x0.8"],
+                "Damage Mod.\n(Second Attack)": ["x0.3", "x0.4", "x0.5", "x0.6", "x0.7", "x0.8"],
             }
         },
         "Shadow Cloak":{
@@ -415,7 +415,7 @@ var data = {
                 "Attack Power": ["150%", "155%", "160%", "170%", "175%", "180%", "185%", "195%"],
                 "Infliction Rate\n(Normal)": ["20%", "23%", "26%", "28%", "30%", "32%", "34%", "35%"],
                 "Infliction Rate\n(Ailment)": ["30%", "34%", "38%", "42%", "44%", "46%", "47%", "50%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["-3", "-3", "-3", "-3", "-2", "-2", "-2", "-1"],
             }
         },
@@ -428,8 +428,8 @@ var data = {
             "Data": {
                 "TP Cost": ["15", "15", "15", "17", "17", "17", "17", "20"],
                 "Attack Power": ["170%", "175%", "180%", "195%", "200%", "204%", "208%", "220%"],
-                "Damage Bonus": ["x1.9", "x1.9", "x1.9", "x1.95", "x1.95", "x1.95", "x1.95", "x2.0"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Damage Bonus": ["+90%", "+90%", "+90%", "+95%", "+95%", "+95%", "+95%", "+100%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
             }
         },
@@ -443,7 +443,7 @@ var data = {
                 "TP Cost": ["3", "3", "3", "4", "4", "4"],
                 "Attack Power": ["80%", "80%", "80%", "80%", "80%", "80%"],
                 "Infliction Rate": ["45%", "50%", "55%", "63%", "67%", "70%"],
-                "Accuracy": ["+1", "+1", "+2", "+2", "+3", "+3"],
+                "Accuracy": ["+1%", "+1%", "+2%", "+2%", "+3%", "+3%"],
                 "Action Speed": ["+2", "+2", "+2", "+2", "+2", "+2"],
             }
         },
@@ -457,14 +457,14 @@ var data = {
                 "TP Cost": ["3", "3", "3", "4", "4", "4"],
                 "Attack Power": ["80%", "80%", "80%", "80%", "80%", "80%"],
                 "Infliction Rate": ["45%", "50%", "55%", "63%", "67%", "70%"],
-                "Accuracy": ["+1", "+1", "+2", "+2", "+3", "+3"],
+                "Accuracy": ["+1%", "+1%", "+2%", "+2%", "+3%", "+3%"],
                 "Action Speed": ["+2", "+2", "+2", "+2", "+2", "+2"],
             }
         },
         "Spread Throw":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Enter a charge state until the end of next turn, which makes Throw skills hit all enemies.",
+            "Description": "Enter a charge state until the end of next turn, which makes Throw skills target all enemies.",
             "Starter": "0",
             "Max Level": "4",
             "Data": {
@@ -474,7 +474,7 @@ var data = {
         "Sneak Attack":{
             "Usage": "Active (Field)",
             "Unlock": "N/A",
-            "Description": "Temporarily increase the chance of ambushing enemies.",
+            "Description": "Temporarily increase the chance of ambushing enemies. (Note: If your ambush chance is 40% or higher, enemies cannot ambush you)",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -519,7 +519,7 @@ var data = {
                 "Attack Power": ["85%", "90%", "95%", "100%", "104%", "107%", "109%", "110%"],
                 "Min. Hits": ["3", "3", "3", "4", "4", "4", "4", "4"],
                 "Max. Hits": ["4", "4", "4", "4", "4", "4", "4", "5"],
-                "Accuracy": ["-35", "-35", "-35", "-35", "-35", "-35", "-35", "-35"],
+                "Accuracy": ["-35%", "-35%", "-35%", "-35%", "-35%", "-35%", "-35%", "-35%"],
                 "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
             }
         },
@@ -534,7 +534,7 @@ var data = {
                 "Attack Power": ["80%", "80%", "80%", "80%", "80%", "80%"],
                 "Infliction Rate": ["60%", "65%", "70%", "74%", "77%", "80%"],
                 "Poison Power": ["200", "270", "350", "500", "600", "700"],
-                "Accuracy": ["+1", "+1", "+2", "+2", "+3", "+3"],
+                "Accuracy": ["+1%", "+1%", "+2%", "+2%", "+3%", "+3%"],
                 "Action Speed": ["+2", "+2", "+2", "+2", "+2", "+2"],
             }
         },
@@ -592,7 +592,7 @@ var data = {
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "9", "9", "9", "9", "9", "10"],
                 "Attack Power": ["150%", "157%", "164%", "170%", "190%", "194%", "198%", "202%", "206%", "220%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             }
         },
@@ -606,14 +606,14 @@ var data = {
                 "TP Cost": ["10", "10", "10", "10", "12", "12", "12", "12", "12", "14"],
                 "Attack Power": ["145%", "150%", "155%", "160%", "175%", "179%", "183%", "187%", "190%", "200%"],
                 "Damage Drain": ["70%", "70%", "70%", "70%", "75%", "75%", "75%", "75%", "75%", "80%"],
-                "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
+                "Accuracy": ["-5%", "-5%", "-4%", "-4%", "-3%", "-3%", "-2%", "-2%", "-1%", "-1%"],
                 "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             }
         },
         "Ally Shield":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Shield: Protect one ally for this turn, which makes you take attacks in their place and decreases all damage taken.",
+            "Description": "Shield: Protect one ally for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -697,14 +697,14 @@ var data = {
             "Data": {
                 "TP Cost": ["14", "14", "14", "16", "16", "16", "16", "18"],
                 "Attack Power": ["180%", "195%", "210%", "250%", "260%", "270%", "280%", "300%"],
-                "Accuracy": ["-5", "-4", "-3", "-2", "-1", "-1", "-1", "-1"],
+                "Accuracy": ["-5%", "-4%", "-3%", "-2%", "-1%", "-1%", "-1%", "-1%"],
                 "Action Speed": ["-100", "-100", "-100", "-100", "-100", "-100", "-100", "-100"],
             }
         },
         "Line Shield":{
             "Usage": "Active (Arms)",
             "Unlock": "Ally Shield (Lv 3)",
-            "Description": "Shield: Protect an ally line for this turn, which makes you take attacks in their place and decreases all damage taken.",
+            "Description": "Shield: Protect an ally line for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -716,7 +716,7 @@ var data = {
         "Party Shield":{
             "Usage": "Active (Arms)",
             "Unlock": "Line Shield (Lv 3)",
-            "Description": "Shield: Protect the whole party for this turn, which makes you take attacks in their place and decreases all damage taken.",
+            "Description": "Shield: Protect the whole party for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -802,14 +802,14 @@ var data = {
             "Data": {
                 "TP Cost": ["24", "24", "24", "27", "27", "27", "27", "30"],
                 "Attack Power": ["180%", "195%", "210%", "250%", "260%", "270%", "280%", "300%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             }
         },
         "Weak Shield":{
             "Usage": "Active (Arms)",
             "Unlock": "Party Shield (Lv 3)",
-            "Description": "Shield: Place a buff on yourself for 3 turns, which makes you take attacks in place of allies below 50% HP and decreases all damage taken.",
+            "Description": "Shield: Place a buff on yourself for 3 turns, which makes you take attacks in place of allies below 50% HP. Decrease damage taken from those redirected attacks.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -888,7 +888,7 @@ var data = {
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "5", "5", "5", "5", "5", "6"],
                 "Attack Power": ["140%", "145%", "150%", "155%", "165%", "169%", "173%", "177%", "180%", "190%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
             }
         },
@@ -901,7 +901,7 @@ var data = {
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10"],
                 "Attack Power": ["120%", "125%", "130%", "135%", "145%", "149%", "153%", "157%", "160%", "170%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
             }
         },
@@ -914,7 +914,7 @@ var data = {
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10"],
                 "Attack Power": ["105%", "110%", "115%", "120%", "130%", "134%", "138%", "142%", "145%", "155%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
             }
         },
@@ -995,7 +995,7 @@ var data = {
             "Data": {
                 "TP Cost": ["11", "11", "11", "12", "12", "12", "12", "13"],
                 "Attack Power": ["180%", "190%", "200%", "220%", "228%", "236%", "244%", "260%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
             }
         },
@@ -1087,7 +1087,7 @@ var data = {
             "Data": {
                 "TP Cost": ["15", "15", "15", "18", "18", "18", "18", "21"],
                 "Attack Power": ["210%", "220%", "230%", "260%", "270%", "280%", "290%", "320%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             }
         },
@@ -1100,7 +1100,7 @@ var data = {
             "Data": {
                 "TP Cost": ["15", "15", "15", "18", "18", "18", "18", "21"],
                 "Attack Power": ["140%", "145%", "150%", "165%", "170%", "174%", "178%", "190%"],
-                "Accuracy": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             }
         },
@@ -1120,7 +1120,7 @@ var data = {
     "Class Proficiency":{
         "Proficiency / Expertise / Enlightment":{
             "Usage": "Passive (Unique)",
-            "Description": "Increases the effect of healing skills used by any party member.",
+            "Description": "Increases the effect of healing skills used by any party member. (Stacks additively with itself)",
             "Starter": "0",
             "Max Level": "3",
             "Data": {
@@ -1374,7 +1374,7 @@ var data = {
             "Data": {
                 "TP Cost": ["16", "16", "16", "20", "20", "20", "20", "25"],
                 "Attack Power": ["130%", "140%", "150%", "160%", "168%", "174%", "180%", "185%"],
-                "Damage Taken↑": ["x1.2", "x1.2", "x1.2", "x1.3", "x1.3", "x1.3", "x1.3", "x1.4"],
+                "Damage Taken↑": ["+20%", "+20%", "+20%", "+30%", "+30%", "+30%", "+30%", "+40%"],
                 "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1"],
             }
@@ -1385,7 +1385,7 @@ var data = {
     "Class Proficiency":{
         "Proficiency / Expertise / Enlightment":{
             "Usage": "Passive (Unique)",
-            "Description": "Increases damage dealt and decreases damage taken of elemental or Almighty type for party members in your row.",
+            "Description": "Increases damage dealt and decreases damage taken of elemental or Almighty type for party members in your row. (Stacks additively with itself)",
             "Starter": "0",
             "Max Level": "3",
             "Data": {
@@ -1463,7 +1463,7 @@ var data = {
         "Lightning Rune":{
             "Usage": "Active (Head, TEC)",
             "Unlock": "Volt Rune (Lv 1)",
-            "Description": "Deal melee Volt damage to an enemy line.",
+            "Description": "Deal melee Volt damage to an enemy line. (Damage not affected by melee backline penalty)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1945,7 +1945,7 @@ var data = {
     "Class Proficiency":{
         "Proficiency / Expertise / Enlightment":{
             "Usage": "Passive (Unique)",
-            "Description": "Recover TP when a Circle wears off or is dispelled.",
+            "Description": "Recover TP when a Circle wears off or is dismissed.",
             "Starter": "0",
             "Max Level": "3",
             "Data": {
@@ -2286,7 +2286,7 @@ var data = {
         "Endure":{
             "Usage": "Passive",
             "Unlock": "Blood Surge (Lv 1)",
-            "Description": "Once per battle, recover HP upon taking lethal damage.",
+            "Description": "Once per battle, survive lethal damage (with 1 HP) and immediately recover HP.",
             "Starter": "0",
             "Max Level": "4",
             "Data": {
@@ -2296,7 +2296,7 @@ var data = {
         "Roar":{
             "Usage": "Active (Head, TEC)",
             "Unlock": "N/A",
-            "Description": "Dispel all buffs on one enemy. If the target had at least one modifier, deal ranged Almighty damage to that enemy. This attack cannot miss.",
+            "Description": "Dispel all buffs on one enemy. If at least one modifier was removed, deal ranged Almighty damage to that enemy. This attack cannot miss.",
             "Starter": "0",
             "Max Level": "4",
             "Data": {
@@ -2394,7 +2394,7 @@ var data = {
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2"],
-                "Damage Dealt↑": ["x1.8", "x2.0", "x2.1", "x2.2"],
+                "Damage Dealt↑": ["+80%", "+100%", "+110%", "+120%"],
                 "Action Speed": ["-100", "-100", "-100", "-100"],
             }
         },
@@ -2437,7 +2437,7 @@ var data = {
         "Multi-Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flash Slice (Lv 3)",
-            "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Deals more hits the less remaining HP you have: Adds one hit when missing HP crosses 50%, and one more hit for every additional 10% missing beyond that.",
+            "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Deals more hits the more missing HP you have: Adds one hit when missing HP crosses 50%, and one more hit for every additional 10% missing beyond that.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -2478,12 +2478,13 @@ var data = {
         "Surge Mastery":{
             "Usage": "Passive",
             "Unlock": "Deep Breath (Lv 2)",
-            "Description": "During Blood Surge, increase damage dealt based on missing TP and decrease damage taken based on missing HP:<br>-Damage dealt increase is equal to [FixedBonus + MissingTP%/3], capped at 90% missing TP.<br>-Damage taken decrease is equal to [MaxBonus*MissingHP%/99%].",
+            "Description": "During Blood Surge, increase damage dealt based on missing TP and decrease damage taken based on missing HP:<br>-Damage dealt increase grows linearly from the minimum until it reaches its maximum at 90% missing TP.<br>-Damage taken decrease grows linearly from 0 until it reaches its maximum at 99% missing HP.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
-                "Damage Dealt↑\n(Fixed Bonus)": ["+0%", "+2%", "+4%", "+6%", "+7%", "+8%", "+9%", "+10%"],
-                "Damage Taken↓\n(Max Bonus)": ["-30%", "-31%", "-32%", "-32%", "-33%", "-33%", "-33%", "-33%"],
+                "Damage Dealt↑\n(Min. Bonus)": ["+0%", "+2%", "+4%", "+6%", "+7%", "+8%", "+9%", "+10%"],
+                "Damage Dealt↑\n(Max. Bonus)": ["+30%", "+32%", "+34%", "+36%", "+37%", "+38%", "+39%", "+40%"],
+                "Damage Taken↓\n(Max. Bonus)": ["-30%", "-31%", "-32%", "-32%", "-33%", "-33%", "-33%", "-33%"],
             }
         },
         "Ferocity":{
@@ -2610,13 +2611,13 @@ var data = {
         "Charge Edge":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Cool Edge (Lv 2)",
-            "Description": "Drive Blade: Deal melee Cut damage to one enemy. Enter a charge state until the end of next turn, which increases all damage dealt for your next action. Only usable right after Sharp Edge or Impulse Edge.",
+            "Description": "Drive Blade: Deal melee Cut damage to one enemy. Enter a charge state until the end of next turn, which increases all damage dealt for your next action. Only usable right after Sharp Edge or Cool Edge.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["12", "12", "15", "15", "15", "18"],
                 "Attack Power": ["260%", "280%", "300%", "315%", "330%", "350%"],
-                "Damage Dealt↑": ["x2.2", "x2.2", "x2.4", "x2.4", "x2.4", "x2.6"],
+                "Damage Dealt↑": ["+120%", "+120%", "+140%", "+140%", "+140%", "+160%"],
                 "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0"],
             }
@@ -2668,7 +2669,7 @@ var data = {
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6"],
-                "Damage Dealt↑": ["+20%", "+25%", "+28%", "+30%"],
+                "Damage Taken↑": ["+20%", "+25%", "+28%", "+30%"],
                 "Action Speed": ["-6", "-6", "-6", "-6"],
             }
         },
@@ -2730,7 +2731,7 @@ var data = {
         "Wide Effect":{
             "Usage": "Passive",
             "Unlock": "Finisher (Lv 3)",
-            "Description": "Single-target skills have a chance to gain splash effect.",
+            "Description": "Single-target skills have a chance to also hit to the left and/or right of the target. (Chance rolled separately for each side)",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
