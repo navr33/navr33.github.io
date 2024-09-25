@@ -1032,7 +1032,7 @@ var data = {
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6"],
-                "Damage Dealt↑": ["+20%", "+25%", "+28%", "+30%"],
+                "Damage Taken↑": ["+20%", "+25%", "+28%", "+30%"],
                 "Action Speed": ["-6", "-6", "-6", "-6"],
             }
         },
@@ -2517,7 +2517,12 @@ var data = {
             "Description": "Drive Blade: Deal melee Cut damage to one enemy. Decreases Overheat time by 1 turn.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["8", "8", "9", "9", "9", "10"],
+                "Attack Power": ["90%", "100%", "130%", "140%", "150%", "170%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Impulse Edge":{
             "Usage": "Active (Arms, STR)",
@@ -2525,7 +2530,13 @@ var data = {
             "Description": "Drive Blade: Deal melee Cut damage to one enemy, and recover TP. Only usable right after Sharp Edge.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "2", "2"],
+                "Attack Power": ["150%", "155%", "160%", "165%", "170%", "175%"],
+                "TP Gain": ["20", "24", "28", "31", "33", "35"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Assault Drive":{
             "Usage": "Active (Arms, STR)",
@@ -2533,15 +2544,23 @@ var data = {
             "Description": "Drive Blade: Deal melee Cut damage to one enemy, then enter Overheat state for 8 turns. Increases damage taken by 50% until it activates. (Not usable during Overheat)",
             "Starter": "0",
             "Max Level": "10",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["14", "14", "14", "14", "16", "16", "16", "16", "16", "18"],
+                "Attack Power": ["450%", "470%", "490%", "510%", "550%", "565%", "580%", "595%", "610%", "650%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+0%", "+0%"],
+                "Action Speed": ["-10", "-10", "-10", "-10", "-10", "-10", "-10", "-10", "-10", "-10"],
+            }
         },
         "Heat Sink":{
             "Usage": "Active (Head)",
             "Unlock": "Assault Drive (Lv 2)",
-            "Description": "Only usable during Overheat. Decrease remaining Overheat time.",
+            "Description": "Only usable during Overheat. Decrease remaining Overheat time by 3 turns.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["20", "18", "16", "14"],
+                "Action Speed": ["+0", "+0", "+0", "+0"],
+            }
         },
         "Rear Guard":{
             "Usage": "Active (Head)",
@@ -2549,7 +2568,11 @@ var data = {
             "Description": "Place a buff on one ally for 5 turns, which decreases damage taken but makes them act last.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "6", "6"],
+                "Damage Taken↓": ["-15%", "-18%", "-20%", "-22%", "-24%", "-25%"],
+                "Action Speed": ["-30", "-30", "-30", "-30", "-30", "-30"],
+            }
         },
         "Power Boost":{
             "Usage": "Passive",
@@ -2557,7 +2580,9 @@ var data = {
             "Description": "Increases physical damage dealt.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑": ["+5%", "+9%", "+12%", "+15%", "+17%", "+19%", "+21%", "+23%"],
+            }
         },
         "Mineralogy":{
             "Usage": "Passive (Field)",
@@ -2575,7 +2600,12 @@ var data = {
             "Description": "Drive Blade: Deal melee Cut damage to one enemy. Decreases Overheat time by 2 turns. Only usable right after Sharp Edge or Impulse Edge.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["12", "12", "13", "13", "13", "14"],
+                "Attack Power": ["190%", "220%", "280%", "300%", "320%", "350%"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Charge Edge":{
             "Usage": "Active (Arms, STR)",
@@ -2583,7 +2613,13 @@ var data = {
             "Description": "Drive Blade: Deal melee Cut damage to one enemy. Enter a charge state until the end of next turn, which increases all damage dealt for your next action. Only usable right after Sharp Edge or Impulse Edge.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["12", "12", "15", "15", "15", "18"],
+                "Attack Power": ["260%", "280%", "300%", "315%", "330%", "350%"],
+                "Damage Dealt↑": ["x2.2", "x2.2", "x2.4", "x2.4", "x2.4", "x2.6"],
+                "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Flame Drive":{
             "Usage": "Active (Arms, STR)",
@@ -2591,7 +2627,12 @@ var data = {
             "Description": "Drive Blade: Deal melee Cut+Fire damage to one enemy, then enter Overheat state for 9 turns. Increases damage taken by 50% until it activates. (Not usable during Overheat)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["16", "16", "16", "18", "18", "18", "18", "20"],
+                "Attack Power": ["550%", "580%", "610%", "670%", "690%", "710%", "730%", "780%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["-10", "-10", "-10", "-10", "-10", "-10", "-10", "-10"],
+            }
         },
         "Freeze Drive":{
             "Usage": "Active (Arms, STR)",
@@ -2599,7 +2640,12 @@ var data = {
             "Description": "Drive Blade: Deal melee Cut+Ice damage to one enemy, then enter Overheat state for 9 turns. Increases damage taken by 50% until it activates. (Not usable during Overheat)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["16", "16", "16", "18", "18", "18", "18", "20"],
+                "Attack Power": ["550%", "580%", "610%", "670%", "690%", "710%", "730%", "780%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["-10", "-10", "-10", "-10", "-10", "-10", "-10", "-10"],
+            }
         },
         "Shock Drive":{
             "Usage": "Active (Arms, STR)",
@@ -2607,7 +2653,12 @@ var data = {
             "Description": "Drive Blade: Deal melee Cut+Volt damage to one enemy, then enter Overheat state for 9 turns. Increases damage taken by 50% until it activates. (Not usable during Overheat)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["16", "16", "16", "18", "18", "18", "18", "20"],
+                "Attack Power": ["550%", "580%", "610%", "670%", "690%", "710%", "730%", "780%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["-10", "-10", "-10", "-10", "-10", "-10", "-10", "-10"],
+            }
         },
         "Hawkeye":{
             "Usage": "Active (Head)",
@@ -2615,7 +2666,11 @@ var data = {
             "Description": "Place a debuff on one enemy for 3 turns, which increases elemental damage taken.",
             "Starter": "0",
             "Max Level": "4",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6"],
+                "Damage Dealt↑": ["+20%", "+25%", "+28%", "+30%"],
+                "Action Speed": ["-6", "-6", "-6", "-6"],
+            }
         },
         "Absorber":{
             "Usage": "Passive",
@@ -2623,7 +2678,9 @@ var data = {
             "Description": "Recover TP each time you hit an enemy's weakness.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Gain": ["3", "4", "5", "6", "7", "8"],
+            }
         },
         "Hunter Sense":{
             "Usage": "Passive (Sky)",
@@ -2638,10 +2695,14 @@ var data = {
         "Ignition":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Only usable after entering Overheat a certain amount of times. Dispel Overheat and enter a special state for 3 turns, which prevents you from entering Overheat. (Necessary Overheats are reset upon use)",
+            "Description": "Only usable after entering Overheat a certain amount of times. Remove Overheat and enter the Ignition state for 3 turns, which prevents you from entering Overheat. (Necessary Overheats are reset upon use)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["15", "10", "5", "20", "15", "10", "5", "20"],
+                "Overheats Needed": ["4", "4", "4", "3", "3", "3", "3", "2"],
+                "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
+            }
         },
         "Overdrive":{
             "Usage": "Active (Arms, STR)",
@@ -2649,7 +2710,12 @@ var data = {
             "Description": "Remove the Ignition state to deal ranged Almighty damage to all enemies. Increases damage taken by 50% until it activates.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["20", "20", "20", "22", "22", "22", "22", "25"],
+                "Attack Power": ["760%", "800%", "830%", "890%", "910%", "930%", "950%", "1000%"],
+                "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+                "Action Speed": ["-10", "-10", "-10", "-10", "-10", "-10", "-10", "-10"],
+            }
         },
         "Finisher":{
             "Usage": "Passive",
@@ -2657,7 +2723,9 @@ var data = {
             "Description": "Recover TP each time you kill an enemy.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "TP Gain": ["3", "4", "5", "6", "7", "8"],
+            }
         },
         "Wide Effect":{
             "Usage": "Passive",
@@ -2665,7 +2733,9 @@ var data = {
             "Description": "Single-target skills have a chance to gain splash effect.",
             "Starter": "0",
             "Max Level": "6",
-            "Data": ""
+            "Data": {
+                "Activation Chance": ["20%", "25%", "30%", "34%", "37%", "40%"],
+            }
         },
         "Accel Drive":{
             "Usage": "Active (Arms, STR)",
@@ -2673,15 +2743,22 @@ var data = {
             "Description": "Drive Blade: Deal melee Cut+Almighty damage to one enemy, then enter Overheat state for 9 turns. Increases damage taken by 50% until it activates. (Not usable during Overheat)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "TP Cost": ["18", "18", "18", "20", "20", "20", "20", "22"],
+                "Attack Power": ["670%", "700%", "730%", "790%", "810%", "830%", "850%", "900%"],
+                "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
+                "Action Speed": ["-10", "-10", "-10", "-10", "-10", "-10", "-10", "-10"],
+            }
         },
         "Drive Mastery":{
             "Usage": "Passive",
             "Unlock": "Accel Drive (Lv 3)",
-            "Description": "Increases damage dealt for each time you have entered Overheat. (Stacks upto +100%. Resets upon dying)",
+            "Description": "Increases damage dealt for each time you have entered Overheat. (Stacks up to +100%. Resets upon dying)",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑": ["+3%", "+6%", "+9%", "+11%", "+12%", "+13%", "+14%", "+15%"],
+            }
         },
         "Element Boost":{
             "Usage": "Passive",
@@ -2689,7 +2766,9 @@ var data = {
             "Description": "Increases elemental and Almighty damage dealt.",
             "Starter": "0",
             "Max Level": "8",
-            "Data": ""
+            "Data": {
+                "Damage Dealt↑": ["+5%", "+9%", "+12%", "+15%", "+17%", "+19%", "+21%", "+23%"],
+            }
         },
     },
 },
