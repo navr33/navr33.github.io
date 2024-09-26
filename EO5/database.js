@@ -1610,12 +1610,12 @@ var data = {
         "Levitation":{
             "Usage": "Active (Field)",
             "Unlock": "N/A",
-            "Description": "Temporarily nullify damaging tiles and increase chance to ambush enemies.",
+            "Description": "Temporarily nullify damaging tiles and gain an additional chance to ambush enemies.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "10"],
-                "Ambush↑": ["+4%", "+7%", "+10%", "+13%", "+13%", "+16%", "+19%", "+22%", "+25%", "+25%"],
+                "Ambush Chance": ["4%", "7%", "10%", "13%", "13%", "16%", "19%", "22%", "25%", "25%"],
                 "Duration (Steps)": ["50", "50", "50", "50", "130", "130", "130", "130", "130", "250"],
             }
         },

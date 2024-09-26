@@ -603,13 +603,13 @@ var data = {
     "Sneak Attack":{
         "Usage": "Active (Field)",
         "Unlock": "Risk Perception (Lv 3)",
-        "Description": "Temporarily increase the chance of ambushing enemies.",
+        "Description": "Temporarily gain an additional chance of ambushing enemies.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "14", "14", "14", "14", "14", "18"],
-            "Ambush↑": ["x1.5", "x1.5", "x1.5", "x1.5", "x2.0", "x2.0", "x2.0", "x2.0", "x2.0", "x2.5", "x2.5", "x2.5", "x2.5", "x2.5", "x2.5", "x2.5", "x2.5", "x2.5", "x2.5", "x3.0"],
+            "Ambush Chance": ["15%", "15%", "15%", "15%", "20%", "20%", "20%", "20%", "20%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "30%"],
             "Duration (Steps)": ["50", "55", "60", "65", "70", "75", "80", "85", "90", "100", "103", "106", "109", "112", "125", "128", "131", "134", "137", "150"],
         }
     },
