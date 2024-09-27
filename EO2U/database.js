@@ -579,7 +579,7 @@ var data = {
     "Risk Perception":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Chance to nullify enemy ambushes.",
+        "Description": "Chance to nullify enemy blindsides.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -603,13 +603,13 @@ var data = {
     "Sneak Attack":{
         "Usage": "Active (Field)",
         "Unlock": "Risk Perception (Lv 3)",
-        "Description": "Temporarily gain an additional chance of ambushing enemies.",
+        "Description": "Temporarily gain an additional chance of getting a preemptive strike.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "14", "14", "14", "14", "14", "18"],
-            "Ambush Chance": ["15%", "15%", "15%", "15%", "20%", "20%", "20%", "20%", "20%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "30%"],
+            "Activation Chance": ["15%", "15%", "15%", "15%", "20%", "20%", "20%", "20%", "20%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "25%", "30%"],
             "Duration (Steps)": ["50", "55", "60", "65", "70", "75", "80", "85", "90", "100", "103", "106", "109", "112", "125", "128", "131", "134", "137", "150"],
         }
     },
@@ -2395,7 +2395,7 @@ var data = {
     "Holy Gift":{
         "Usage": "Active (Head)",
         "Unlock": "TP Up (Lv 10)",
-        "Description": "Increases EXP earned by the team at the end of battle.",
+        "Description": "Increases EXP earned by the team at the end of battle. (Stacks additiely with itself and the Holy Gift item)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5453,14 +5453,14 @@ var data = {
     "Action Cancel":{
         "Flash Grenade":{
             "Usage": "20 en",
-            "Description": "Prevents nearby FOEs from moving for 1 turn.",
+            "Description": "Stuns FOEs outside the battle that are chasing you, which prevents them from moving for 1 turn.",
             "Starter": "0",
             "Max Level": "0",
             "Data": ""
         },
         "Blast Grenade":{
             "Usage": "100 en",
-            "Description": "Stun an enemy that's preparing an attack.",
+            "Description": "Cancels the action of all enemies that are in a charge state.",
             "Starter": "0",
             "Max Level": "0",
             "Data": ""
@@ -5476,7 +5476,7 @@ var data = {
         },
         "Holy Gift":{
             "Usage": "2.800 en",
-            "Description": "Increases EXP earned this battle.",
+            "Description": "Increases EXP earned this battle. (Repeated uses don't stack. Added to the Holy Gift passive skill)",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -5542,7 +5542,7 @@ var data = {
             "Levels": ["Effect"],
             "Data": {
                 "Monster Fish Panino": ["Multiplies experience earned from battle by 1.2."],
-                "Apple Sauce Bison Steak": ["Chance of randomly ambushing or being ambushed by enemies becomes 0."],
+                "Apple Sauce Bison Steak": ["Chance of random preemptive strikes or blindsides becomes 0."],
                 "Crab Cream Croquette": ["Increases the party's LUC stat by 10."],
                 "Forest Paella": ["The party recovers 2% max TP at the end of each turn."],
             }
@@ -5658,7 +5658,7 @@ var data = {
             }
         },
     },
-    "Chinese Dishes (Bind/ailment resilience)":{
+    "Chinese Dishes (Bind, ailment and death resilience)":{
         "Chinese Food 1":{
             "Description": "",
             "Starter": "0",
@@ -5739,7 +5739,7 @@ var data = {
             "Max Level": "1",
             "Levels": ["Effect"],
             "Data": {
-                "Yggdrasil-Bud Tea": ["Strongly increases drop rates. When gathering, grants rare items."],
+                "Yggdrasil-Bud Tea": ["Strongly increases drop rates. When gathering, obtain additional, rare items."],
                 "Yggdrasil-Sprout Tea": ["Strongly increases the chance of a Premium Grimoire Chance happening."],
                 "Yggdrasil-Clover Tea": ["Multiply experience earned by 3. Non-active guild members will also gain some experience."],
             }
