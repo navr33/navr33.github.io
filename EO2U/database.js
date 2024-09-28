@@ -579,7 +579,7 @@ var data = {
     "Risk Perception":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Chance to nullify enemy blindsides.",
+        "Description": "Chance to nullify enemy ambushes.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -603,7 +603,7 @@ var data = {
     "Sneak Attack":{
         "Usage": "Active (Field)",
         "Unlock": "Risk Perception (Lv 3)",
-        "Description": "Temporarily gain an additional chance of getting a preemptive strike.",
+        "Description": "Temporarily gain an additional chance of getting a preemptive attack.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2395,7 +2395,7 @@ var data = {
     "Holy Gift":{
         "Usage": "Active (Head)",
         "Unlock": "TP Up (Lv 10)",
-        "Description": "Increases EXP earned by the team at the end of battle. (Stacks additiely with itself and the Holy Gift item)",
+        "Description": "Increases EXP earned by the team at the end of battle. (Stacks additively with itself and the Holy Gift item)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3636,7 +3636,7 @@ var data = {
     "War Edge Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Enables using War Edge skills with a Staff. If a Sword is equipped, increases Max TP. If a Staff is equipped, increases all damage dealt. (Automatically unlocks other skills that require this one)",
+        "Description": "Enables using Sword skills with a Staff. If a Sword is equipped, increases Max TP. If a Staff is equipped, increases all damage dealt. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5476,7 +5476,7 @@ var data = {
         },
         "Holy Gift":{
             "Usage": "2.800 en",
-            "Description": "Increases EXP earned this battle. (Repeated uses don't stack. Added to the Holy Gift passive skill)",
+            "Description": "Increases EXP earned this battle. (Repeated uses don't stack. Stacks additively with Troubadour's Holy Gift skill)",
             "Starter": "0",
             "Max Level": "1",
             "Data": {
@@ -5542,7 +5542,7 @@ var data = {
             "Levels": ["Effect"],
             "Data": {
                 "Monster Fish Panino": ["Multiplies experience earned from battle by 1.2."],
-                "Apple Sauce Bison Steak": ["Chance of random preemptive strikes or blindsides becomes 0."],
+                "Apple Sauce Bison Steak": ["Chance of random preemptive attacks or enemy ambushes becomes 0."],
                 "Crab Cream Croquette": ["Increases the party's LUC stat by 10."],
                 "Forest Paella": ["The party recovers 2% max TP at the end of each turn."],
             }
@@ -5654,7 +5654,7 @@ var data = {
                 "Hermit Sugata-zukuri": ["Single-target attack items are not consumed when used."],
                 "Black Osuimono": ["Increases the chance of a Grimoire Fever happening/continuing."],
                 "Sumo Chanko Pot": ["Increases the level of equipped Grimoires by 2."],
-                "Eastern Nishime": ["FOE encounters will always be a preemptive strike."],
+                "Eastern Nishime": ["FOE encounters will always be a preemptive attack."],
             }
         },
     },
