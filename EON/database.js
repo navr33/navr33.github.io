@@ -1244,12 +1244,12 @@ var data = {
         "Sneak Attack":{
             "Usage": "Active (Field)",
             "Unlock": "N/A",
-            "Description": "Temporarily increase the chance of ambushing enemies.",
+            "Description": "Temporarily gain an additional chance of getting a preemptive attack.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "15"],
-                "Ambush↑": ["+6%", "+7%", "+8%", "+9%", "+10%", "+20%"],
+                "Ambush Chance": ["6%", "7%", "8%", "9%", "10%", "20%"],
                 "Duration (Steps)": ["60", "70", "80", "90", "100", "255"],
             }
         },
@@ -1633,7 +1633,7 @@ var data = {
         "Random Disease":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "N/A",
-            "Description": "Attempt to inflict one of Blind, Poison, Paralysis, Sleep or Curse to one enemy",
+            "Description": "Attempt to randomly inflict one of Blind, Poison, Paralysis, Sleep or Curse to one enemy.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2000,7 +2000,7 @@ var data = {
         "Bloody Veil":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "When you loss HP from any source, decrease all attack damage taken until the end of the turn.",
+            "Description": "When you first lose HP from any source during a turn, decrease all attack damage taken until the end of the turn.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -2451,7 +2451,7 @@ var data = {
         "Penetrator":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Single-hit, single-target attacks have a chance to gain pierce effect.",
+            "Description": "Single-hit, single-target attacks have a chance to gain pierce effect. (Valid attacks will let you choose the possible pierce target)",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2664,7 +2664,7 @@ var data = {
         "Negotiation":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Dispel 1 buff and 1 debuff from one ally. Restore HP and TP to them if one effect type was dispelled, doubled if both.",
+            "Description": "Dispel 1 buff and 1 debuff from one ally. Restore HP and TP to them if one modifier type was removed, doubled if both.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -2707,7 +2707,7 @@ var data = {
         "Element Bomb I":{
             "Usage": "Active (Arms, INT)",
             "Unlock": "Fire/Freeze/Shock Arms (Lv 1)",
-            "Description": "Dispel an elemental imbue on one ally. If successful, deal ranged damage of that element to all enemies.",
+            "Description": "Dispel an elemental imbue on one ally. If successful, deal ranged damage of that element to all enemies. (Can be affected by the damage bonus of an Arms buff removed from the target, but not one active on the user)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2793,7 +2793,7 @@ var data = {
         "Element Bomb II":{
             "Usage": "Active (Arms, INT)",
             "Unlock": "Element Bomb I (Lv 3)",
-            "Description": "Dispel an elemental imbue on one ally. If successful, deal 3 ranged hits of that element to random enemies.",
+            "Description": "Dispel an elemental imbue on one ally. If successful, deal 3 ranged hits of that element to random enemies. (Can be affected by the damage bonus of an Arms buff removed from the target, but not one active on the user)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2806,7 +2806,7 @@ var data = {
         "Clearance":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Dispel all ally buffs, ally debuffs, enemy buffs and enemy debuffs, then restore HP and TP to the whole party based on the amount of buffs/debuffs dispelled. (Base healing is multiplied by amount of dispels squared. This caps at x400 at 20 dispels, and each dispel beyond that instead adds 20 to this multiplier)",
+            "Description": "Dispel all ally buffs, ally debuffs, enemy buffs and enemy debuffs, then restore HP and TP to the whole party based on the amount of individual buffs/debuffs removed. (Base healing is multiplied by the amount of dispels squared. This caps at x400 for 20 dispels, and each dispel beyond that instead adds 20 to this multiplier)",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -2832,7 +2832,7 @@ var data = {
         "Final Decree":{
             "Usage": "Active (Head)",
             "Unlock": "Tactical Decree (Lv 2), Healing Decree (Lv 2)",
-            "Description": "Can only be used if you have 3 buffs. Dispel all buffs on yourself, then increase physical/elemental damage dealt and decrease physical/elemental damage taken by the party this turn.",
+            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself, then increase physical/elemental damage dealt and decrease physical/elemental damage taken by the party this turn.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -2882,7 +2882,7 @@ var data = {
         "Ninpo: Daggers":{
             "Usage": "Active (Head, STR, LUC)",
             "Unlock": "N/A",
-            "Description": "Deal 3~5 hits of ranged Stab damage to random enemies (max once each), with a chance to inflict Sleep.",
+            "Description": "Deal multiple hits of ranged Stab damage to random enemies (max once each), with a chance to inflict Sleep.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3367,7 +3367,7 @@ var data = {
         "Etheric Boon":{
             "Usage": "Passive",
             "Unlock": "Etheric Charge (Lv 2)",
-            "Description": "Increases all damage dealt based on how much TP you spent last turn. This skill has a base damage bonus which is then multiplied by SpentTP<sup>1.5</sup>/100 and rounded down. (Cheat Sheet: 15TP → x0.58; 25TP → x1.25; 35TP → x2.07; 45TP → x3.01)",
+            "Description": "Increases all damage dealt based on how much TP you spent last turn. This skill has a base damage bonus which is then multiplied by [SpentTP<sup>1.5</sup>/100] and rounded down. (Cheat Sheet: 15TP → x0.58; 25TP → x1.25; 35TP → x2.07; 45TP → x3.01)",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -3927,7 +3927,7 @@ var data = {
         "Blitz Command":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Endure Command (Lv 2)",
-            "Description": "Command all other allies to attack target enemy with their weapons.",
+            "Description": "Command all other allies to deal weapon-based damage to one enemy.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -4289,7 +4289,7 @@ var data = {
         "Smash Link":{
             "Usage": "Passive",
             "Unlock": "Improved Link (Lv 1)",
-            "Description": "Link activations can make Critical Hits, with increased Critical rate. (If a multi-hit attack triggers multiple Links, once one of them becomes Critical the remaining ones will all be Critical)",
+            "Description": "Link activations can make Critical Hits, with increased Critical rate. (If a multi-hit attack triggers multiple Link activations, when one of those becomes Critical the remaining ones will also be Critical)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -4441,7 +4441,7 @@ var data = {
         },
         "Disaster":{
             "Usage": "Force Break (Arms, STR)",
-            "Description": "Deal melee Cut damage to one enemy. If the target has an ailment, force it to last 1 more turn.",
+            "Description": "Deal melee Cut damage to one enemy. If the target has an ailment, prevent it from being healed this turn.",
             "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
@@ -4626,12 +4626,12 @@ var data = {
         "Sneak Attack":{
             "Usage": "Active (Field)",
             "Unlock": "Proficiency (Lv 2)",
-            "Description": "Temporarily increase the chance of ambushing enemies.",
+            "Description": "Temporarily gain an additional chance of getting a preemptive attack.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "15"],
-                "Ambush↑": ["+6%", "+7%", "+8%", "+9%", "+10%", "+20%"],
+                "Ambush Chance": ["6%", "7%", "8%", "9%", "10%", "20%"],
                 "Duration (Steps)": ["60", "70", "80", "90", "100", "255"],
             }
         },
@@ -6121,13 +6121,13 @@ var data = {
             "Unlock": "Sapling Sword",
             "Description": "Place a buff on one ally for 3 turns, which increases physical damage dealt and action speed but also increases physical damage taken.",
             "Starter": "0",
-            "Max Level": "6",
+            "Max Level": "5",
             "Data": {
-                "TP Cost": ["10", "10", "10", "10", "10", "16"],
-                "Damage Dealt↑": ["+20%", "+22%", "+25%", "+27%", "+30%", "+40%"],
-                "Speed↑": ["x3.5", "x4.25", "x5.0", "x5.75", "x6.50", "x10.0"],
-                "Damage Taken↑": ["+50%", "+50%", "+50%", "+50%", "+50%", "+50%"],
-                "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%"],
+                "TP Cost": ["10", "10", "10", "10", "10"],
+                "Damage Dealt↑": ["+20%", "+22%", "+25%", "+27%", "+30%"],
+                "Speed↑": ["x3.5", "x4.25", "x5.0", "x5.75", "x6.50"],
+                "Damage Taken↑": ["+50%", "+50%", "+50%", "+50%", "+50%"],
+                "Action Speed": ["50%", "50%", "50%", "50%", "50%"],
             }
         },
         "Queen's Verdict":{
@@ -6215,11 +6215,11 @@ var data = {
             "Unlock": "Coral Bow",
             "Description": "Place a buff on the whole party for 3 turns, which increases accuracy.",
             "Starter": "0",
-            "Max Level": "6",
+            "Max Level": "5",
             "Data": {
-                "TP Cost": ["4", "4", "4", "4", "4", "7"],
-                "Accuracy↑": ["+15%", "+16.5%", "+18%", "+19.5%", "+21%", "+30%"],
-                "Action Speed": ["40%", "60%", "80%", "100%", "120%", "200%"],
+                "TP Cost": ["4", "4", "4", "4", "4"],
+                "Accuracy↑": ["+15%", "+16.5%", "+18%", "+19.5%", "+21%"],
+                "Action Speed": ["40%", "60%", "80%", "100%", "120%"],
             }
         },
         "Hellish Pinwheel":{
@@ -7039,11 +7039,11 @@ var data = {
             "Unlock": "Zaftfaust",
             "Description": "Restore HP to yourself and your adjacent allies. Healing is based on your Max HP.",
             "Starter": "0",
-            "Max Level": "6",
+            "Max Level": "5",
             "Data": {
-                "TP Cost": ["5", "5", "5", "5", "5", "10"],
-                "HP Gain": ["20+12%", "25+14%", "30+16%", "35+18%", "40+20%", "60+25%"],
-                "Action Speed": ["75%", "75%", "75%", "75%", "75%", "75%"],
+                "TP Cost": ["5", "5", "5", "5", "5"],
+                "HP Gain": ["20+12%", "25+14%", "30+16%", "35+18%", "40+20%"],
+                "Action Speed": ["75%", "75%", "75%", "75%", "75%"],
             }
         },
         "New Challenger":{
@@ -7051,12 +7051,12 @@ var data = {
             "Unlock": "Jeweled Fist",
             "Description": "Start multiple enemy encounters in a row, with an increased chance of Rare Breeds appearing.",
             "Starter": "0",
-            "Max Level": "6",
+            "Max Level": "5",
             "Data": {
-                "TP Cost": ["2", "2", "2", "2", "2", "5"],
-                "Min. Battles": ["1", "1", "1", "1", "1", "3"],
-                "Max. Battles": ["3", "4", "5", "6", "7", "10"],
-                "Rare Chance↑": ["+1%", "+2%", "+3%", "+4%", "+5%", "+10%"],
+                "TP Cost": ["2", "2", "2", "2", "2"],
+                "Min. Battles": ["1", "1", "1", "1", "1"],
+                "Max. Battles": ["3", "4", "5", "6", "7"],
+                "Rare Chance↑": ["+1%", "+2%", "+3%", "+4%", "+5%"],
             }
         },
         "Sky Dive":{
@@ -7472,26 +7472,27 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Hero":"Knights of Sword and Shield who leave afterimages as they move, letting them cover offense and defense simultaneously.",
-    "Protector":"Knights of unmatched durability who use their Shield to protect the party from harm.",
-    "Medic":"Healers that effectively treat every kind of injury. Their Staff strikes assist by leaving the enemy vulnerable.",
-    "Survivalist":"Archers skilled in exploration. Their agility and sharp senses safeguard the party in and out of battle.",
-    "Ronin":"Katana users who favor offense over defense. They adopt different Stances to adjust to the situation.",
-    "War Magus":"Witch doctors that switch between treating the party's afflictions and aggravating the enemy's.",
-    "Highlander":"Offensive specialists who fight with Spears. They sacrifice their life force to carry out powerful attacks.",
-    "Gunner":"Versatile backline class that uses Guns. Capable of providing offense, binding and healing.",
-    "Sovereign":"Support casters that grant and manage buffs to strenghten and protect the party.",
-    "Ninja":"Stealthy assassins skilled in combat, diversion and incapacitation. They can create clones to amplify their capabilities.",
-    "Zodiac":"Offensive casters with high control of energy. They use elemental attacks to hit the enemy's weakness.",
-    "Farmer":"Specialists in exploration and resource gathering. Their combat skills can be awkward but surprisingly effective.",
-    "Shogun":"Generals who lead the party through buffs and attack commands, or by fighting directly with dual Katanas.",
+    "Hero":       "Knights of Sword and Shield whose afterimage repeats their actions, letting them cover offense and defense at once.",
+    "Protector":  "Knights of unmatched durability who block and deflect enemy attacks to keep the party safe from harm.",
+    "Medic":      "Healers that effectively treat every kind of injury, and use Staff strikes to leave the enemy vulnerable.",
+    "Survivalist":"Archers skilled in careful exploration. Their agility and sharp senses safeguard the party in and out of battle.",
+    "Ronin":      "Katana users who favor offense over defense. They adopt different Stances to adjust to the situation.",
+    "War Magus":  "Witch doctors that switch between treating the party's afflictions and aggravating the enemy's.",
+    "Highlander": "Offensive specialists who fight with Spears. They sacrifice their life force to carry out powerful attacks.",
+    "Gunner":     "Versatile Gun users with a large variety of attack types. Capable of providing offense, binding and healing.",
+    "Sovereign":  "Support casters that grant and manage buffs to strenghten, protect and heal the party.",
+    "Ninja":      "Stealthy assassins skilled in combat, diversion and incapacitation. They can create clones to amplify their capabilities.",
+    "Zodiac":     "Offensive casters with high control of energy. They use elemental magic to hit the enemy's weakness.",
+    "Farmer":     "Specialists in exploration and resource gathering. Their combat skills can be awkward but surprisingly effective.",
+    "Shogun":     "Warrior generals who lead the party through buffs and attack commands, and can fight directly using dual Katanas.",
     "Landsknecht":"Frontline warriors with solid offense and defense. They lead the charge, encouraging their allies to follow up.",
-    "Nightseeker":"Assassins who throw poisoned daggers from the shadows, going for the kill once the enemy is ailing.",
-    "Arcanist":"Support casters that summon magic circles to restrain the enemy and protect the party.",
-    "Imperial":"Knights who wield mechanical Drive Blades. Their attacks are devastating but put a heavy strain in the weapon and wielder.",
-    "Pugilist":"Brawlers who fight with their own Fists. They use combos of precise punches to quickly disable the enemy.",
-    "Harbinger":"Reapers who summon noxious Miasma, spreading it to weaken the enemy or to ward off their attacks.",
-    "Vampire":"Night-dwellers with control over life and death. This pseudo-class overrides another's Force and grants passive effects.",
+    "Nightseeker":"Assassins who throw poisoned daggers from the shadows, closing in for the kill once the enemy is ailing.",
+    "Arcanist":   "Support casters that summon magic circles to restrain the enemy and protect the party.",
+    "Imperial":   "Knights who wield mechanical Drive Blades. Their attacks are devastating but put a heavy strain on the weapon and wielder.",
+    "Pugilist":   "Brawlers who fight with their own Fists. They use combos of precise punches to quickly disable the enemy.",
+    "Harbinger":  "Reapers who summon noxious Miasma, spreading it to weaken the enemy or to ward off their attacks.",
+    "Vampire":    "Night-dwellers with control over life and death. This pseudo-class overrides another's Force and grants passive effects.",
+
     "Weapon Skills":"Skills borrowed from certain weapons.",
     "Battle Items":"Consumable items meant to aid you in battle.",
 }
