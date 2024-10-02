@@ -1266,7 +1266,7 @@ var data = {
             "Data": ""
         },
         "Issen":{
-            "Usage": "Force Break (Arms, STR)",
+            "Usage": "Force Break (Arms, STR, LUC)",
             "Description": "Deal ranged Cut damage to all enemies, with a chance to inflict Instant Death. (Infliction chance allegedly higher on low-HP targets, but could not reproduce in testing)",
             "Starter": "0",
             "Max Level": "3",
@@ -2237,7 +2237,7 @@ var data = {
             }
         },
         "Riot Gun":{
-            "Usage": "Force Break (Arms, STR)",
+            "Usage": "Force Break (Arms, STR, LUC)",
             "Description": "Deal ranged Stab damage and inflict Stun to one enemy.",
             "Starter": "0",
             "Max Level": "3",
@@ -3529,7 +3529,7 @@ var data = {
             }
         },
         "Play Possum":{
-            "Usage": "Active (Arms, LUC)",
+            "Usage": "Active (Arms)",
             "Unlock": "Sympathy Pain (Lv 1)",
             "Description": "Place a buff on an ally for 3 turns, which decreases enemy aggro.",
             "Starter": "0",
@@ -4575,7 +4575,7 @@ var data = {
         "Nerve Throw":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Curse Throw (Lv 2)",
-            "Description": "(Throw) Deal ranged Cut damage to one enemy, with a chance to inflict Nerve.",
+            "Description": "(Throw) Deal ranged Cut damage to one enemy, with a chance to inflict Paralysis.",
             "Starter": "0",
             "Max Level": "6",
             "Data": {
@@ -4587,7 +4587,7 @@ var data = {
             }
         },
         "Shadow Bite":{
-            "Usage": "Active (Arms, STR, LUC)",
+            "Usage": "Active (Arms, STR)",
             "Unlock": "Sleep Throw (Lv 3)",
             "Description": "Sword/Knife: Deal melee Cut damage to one enemy. Deals double damage to enemies with ailments.",
             "Starter": "0",
@@ -4988,7 +4988,7 @@ var data = {
             }
         },
         "Circle Mastery":{
-            "Usage": "Active (Head, INT)",
+            "Usage": "Active (Head)",
             "Unlock": "Dismiss Blast (Lv 3)",
             "Description": "Increases the effect of Dismiss skills.",
             "Starter": "0",
@@ -5028,7 +5028,7 @@ var data = {
             }
         },
         "Dismiss Quake":{
-            "Usage": "Active (Head, INT)",
+            "Usage": "Active (Head, LUC)",
             "Unlock": "Poison/Chaos Circle (Lv 3)",
             "Description": "(Dismiss) Remove an active Circle to attempt to inflict Stun on all enemies.",
             "Starter": "0",
@@ -5221,7 +5221,7 @@ var data = {
             }
         },
         "Impulse Edge":{
-            "Usage": "Active (Arms, STR, LUC)",
+            "Usage": "Active (Arms, STR)",
             "Unlock": "Trip Edge (Lv 2)",
             "Description": "(Combo) Drive Blade: Deal melee Cut damage to one enemy, and recover TP. (Only usable right after a Starter skill)",
             "Starter": "0",
@@ -5383,7 +5383,7 @@ var data = {
             }
         },
         "Final Blow":{
-            "Usage": "Force Break (Arms, STR)",
+            "Usage": "Force Break (Arms, STR, LUC)",
             "Description": "Deal melee Bash damage to one enemy, with a chance to inflict Head Bind, Arm Bind and Leg Bind.",
             "Starter": "0",
             "Max Level": "3",
