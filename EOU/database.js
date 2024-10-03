@@ -3,217 +3,326 @@ var data = {
     "Sword Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases physical damage dealt if a Sword is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+3%", "+5%", "+6%", "+8%", "+9%", "+11%", "+12%", "+13%", "+15%"],
+        }
     },
     "Raging Edge":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Sword Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Sword: Deal melee Cut damage to one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "16", "16", "16", "16", "16", "16"],
+            "Attack Power": ["140%", "146%", "152%", "158%", "195%", "205%", "215%", "225%", "235%", "320%", "330%", "340%", "350%", "360%", "430%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+10%", "+10%", "+10%", "+10%", "+10%", "+30%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Tornado":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Sword Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "Sword: Deal melee Cut damage to one enemy, with splash effect.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["7", "7", "7", "7", "12", "12", "12", "12", "12", "17", "17", "17", "17", "17", "17"],
+            "Attack Power": ["170%", "176%", "182%", "188%", "219%", "225%", "231%", "237%", "243%", "274%", "280%", "286%", "293%", "299%", "330%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Blinding Slap":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Sword Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Sword: Deal melee Cut damage to one enemy. If it misses, attempt to inflict Blind on all enemies.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20", "20", "20", "20", "20", "20"],
+            "Attack Power": ["230%", "238%", "246%", "255%", "320%", "330%", "340%", "350%", "360%", "370%", "460%", "470%", "480%", "490%", "600%"],
+            "Infliction Rate": ["55%", "55%", "55%", "55%", "70%", "70%", "70%", "70%", "70%", "85%", "85%", "85%", "85%", "85%", "100%"],
+            "Accuracy": ["-30%", "-30%", "-30%", "-30%", "-50%", "-50%", "-50%", "-50%", "-50%", "-70%", "-70%", "-70%", "-70%", "-70%", "-70%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
+        }
     },
     "Falcon Slash":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Sword Mastery (Lv 10)",
-        "Description": ".",
+        "Description": "Sword: Deal multiple hits of melee Cut damage to random enemies (max once each).",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["16", "16", "16", "16", "21", "21", "21", "21", "21", "26", "26", "26", "26", "26", "26"],
+            "Attack Power": ["200%", "210%", "220%", "230%", "250%", "260%", "270%", "280%", "290%", "310%", "320%", "330%", "340%", "350%", "370%"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "4"],
+            "Max. Hits": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%"],
+        }
     },
     "Axe Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases physical damage dealt if an Axe is equipped. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+3%", "+5%", "+6%", "+8%", "+9%", "+11%", "+12%", "+13%", "+15%"],
+        }
     },
     "Boomerang Axe":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Axe Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Axe: Deal ranged Bash damage to one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "12"],
+            "Attack Power": ["130%", "135%", "140%", "145%", "170%", "177%", "184%", "191%", "198%", "250%", "258%", "266%", "274%", "282%", "330%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+10%", "+10%", "+10%", "+10%", "+10%", "+50%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%", "150%", "150%", "150%", "150%", "150%", "200%"],
+        }
     },
     "Head Bash":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Axe Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "Axe: Deal melee Bash damage to one enemy, with a chance to inflict Head Bind.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "16", "16", "16", "16", "16", "16"],
+            "Attack Power": ["170%", "177%", "185%", "192%", "215%", "222%", "230%", "237%", "245%", "267%", "275%", "282%", "290%", "297%", "320%"],
+            "Infliction Rate": ["35%", "35%", "35%", "35%", "50%", "50%", "50%", "50%", "50%", "65%", "65%", "65%", "65%", "65%", "80%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Stunning Smash":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Axe Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Axe: Deal melee Bash damage to one enemy, with a chance to inflict Stun.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["9", "9", "9", "9", "14", "14", "14", "14", "14", "19", "19", "19", "19", "19", "19"],
+            "Attack Power": ["180%", "188%", "196%", "204%", "230%", "238%", "246%", "254%", "262%", "292%", "300%", "308%", "316%", "324%", "355%"],
+            "Infliction Rate": ["40%", "40%", "40%", "40%", "50%", "50%", "50%", "50%", "50%", "60%", "60%", "60%", "60%", "60%", "80%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["120%", "120%", "120%", "120%", "160%", "160%", "160%", "160%", "160%", "200%", "200%", "200%", "200%", "200%", "250%"],
+        }
     },
     "Power Crush":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Axe Mastery (Lv 10)",
-        "Description": ".",
+        "Description": "Axe: Deal melee Bash damage to one enemy, with pierce effect.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["14", "14", "14", "14", "18", "18", "18", "18", "18", "22", "22", "22", "22", "22", "22"],
+            "Attack Power": ["200%", "209%", "218%", "227%", "264%", "273%", "282%", "291%", "300%", "340%", "350%", "360%", "370%", "380%", "420%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Double Strike":{
         "Usage": "Passive",
         "Unlock": "Blinding Slap (Lv 3), Head Bash (Lv 3)",
-        "Description": ".",
+        "Description": "Normal attacks have a chance to hit a second time.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["22%", "25%", "28%", "31%", "34%", "37%", "40%", "43%", "46%", "50%"],
+        }
     },
     "Fire Chaser":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Tornado (Lv 5), Stunning Smash (Lv 5)",
-        "Description": ".",
+        "Description": "Sword/Axe: Prepare to follow up after your allies' Fire attacks this turn, dealing Cut/Bash+Fire damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
         "Starter": "1",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "17", "17", "17", "17", "17", "22", "22", "22", "22", "22", "22"],
+            "Attack Power": ["130%", "137%", "144%", "151%", "151%", "159%", "166%", "173%", "180%", "180%", "188%", "195%", "202%", "210%", "230%"],
+            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "6"],
+            "Chance Fadeout": ["35%", "35%", "35%", "35%", "25%", "25%", "25%", "25%", "25%", "15%", "15%", "15%", "15%", "15%", "10%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+        }
     },
     "Ice Chaser":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Tornado (Lv 5), Stunning Smash (Lv 5)",
-        "Description": ".",
+        "Description": "Sword/Axe: Prepare to follow up after your allies' Ice attacks this turn, dealing Cut/Bash+Ice damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "17", "17", "17", "17", "17", "22", "22", "22", "22", "22", "22"],
+            "Attack Power": ["130%", "137%", "144%", "151%", "151%", "159%", "166%", "173%", "180%", "180%", "188%", "195%", "202%", "210%", "230%"],
+            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "6"],
+            "Chance Fadeout": ["35%", "35%", "35%", "35%", "25%", "25%", "25%", "25%", "25%", "15%", "15%", "15%", "15%", "15%", "10%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+        }
     },
     "Volt Chaser":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Tornado (Lv 5), Stunning Smash (Lv 5)",
-        "Description": ".",
+        "Description": "Sword/Axe: Prepare to follow up after your allies' Volt attacks this turn, dealing Cut/Bash+Volt damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "17", "17", "17", "17", "17", "22", "22", "22", "22", "22", "22"],
+            "Attack Power": ["130%", "137%", "144%", "151%", "151%", "159%", "166%", "173%", "180%", "180%", "188%", "195%", "202%", "210%", "230%"],
+            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "6"],
+            "Chance Fadeout": ["35%", "35%", "35%", "35%", "25%", "25%", "25%", "25%", "25%", "15%", "15%", "15%", "15%", "15%", "10%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+        }
     },
     "DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Decreases physical damage taken.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Taken↓": ["-2%", "-4%", "-6%", "-8%", "-10%", "-12%", "-14%", "-16%", "-18%", "-20%"],
+        }
     },
     "Recover":{
         "Usage": "Active (No Parts)",
-        "Unlock": "N/A",
-        "Description": ".",
+        "Unlock": "DEF Up (Lv 3)",
+        "Description": "Remove binds on yourself. If this successfully removes any binds, place a buff on yourself (lasts indefinitely), which increases Max HP. The Max HP bonus is multiplied by the amount of binds that were removed.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "5", "5", "5", "5", "5", "10", "10", "10", "10", "10", "10"],
+            "Binds Removed": ["1", "1", "1", "1", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3"],
+            "Max HP↑": ["+10%", "+12%", "+14%", "+16%", "+22%", "+24%", "+26%", "+28%", "+30%", "+36%", "+38%", "+40%", "+42%", "+44%", "+50%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Savage Cry":{
         "Usage": "Active (Head)",
-        "Unlock": "N/A",
-        "Description": ".",
+        "Unlock": "Recover (Lv 3)",
+        "Description": "Place a buff on yourself and a debuff on all enemies for several turns. The buff increases enemy aggro, while the debuff increases physical damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "13", "13", "13", "13", "13", "13"],
+            "Base Aggro↑\n(Self)": ["+50", "+52", "+54", "+56", "+74", "+76", "+78", "+80", "+82", "+100", "+110", "+120", "+130", "+140", "+150"],
+            "Damage Taken↑\n(Enemies)": ["+18%", "+20%", "+22%", "+23%", "+23%", "+25%", "+26%", "+27%", "+28%", "+28%", "+30%", "+32%", "+33%", "+34%", "+38%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases base Max TP.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Triple Charge":{
         "Usage": "Active (Arms)",
         "Unlock": "HP Up (Lv 2), TP Up (Lv 2)",
-        "Description": ".",
+        "Description": "Enter a charge state until the end of next turn, which increases damage dealt, accuracy and ailment infliction rates.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "5", "5", "5", "5", "5", "8", "8", "8", "8", "8", "8"],
+            "Damage Dealt↑": ["+50%", "+50%", "+50%", "+50%", "+60%", "+60%", "+60%", "+60%", "+60%", "+70%", "+75%", "+80%", "+85%", "+90%", "+100%"],
+            "Accuracy↑": ["+10%", "+13.6%", "+17.2%", "+20.9%", "+28.2%", "+31.8%", "+35.5%", "+39.1%", "+42.8%", "+50%", "+53.7%", "+57.4%", "+61%", "+64.7%", "+72%"],
+            "Inflictions↑": ["x1.1", "x1.14", "x1.18", "x1.22", "x1.31", "x1.35", "x1.39", "x1.43", "x1.47", "x1.55", "x1.6", "x1.65", "x1.7", "x1.75", "x1.9"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases physical damage dealt.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+4%", "+6%", "+8%", "+10%", "+12%", "+14%", "+16%", "+18%", "+20%"],
+        }
     },
     "War Cry":{
         "Usage": "Active (Head)",
         "Unlock": "ATK Up (Lv 3)",
-        "Description": ".",
+        "Description": "Spend part of your line's current HP to place a buff on it for several turns, which increases physical/elemental damage dealt and taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+            "HP Cost": ["5%", "5%", "5%", "5%", "10%", "10%", "10%", "10%", "10%", "15%", "15%", "15%", "15%", "15%", "15%"],
+            "Damage Dealt↑": ["+30%", "+32%", "+34%", "+37%", "+39%", "+42%", "+44%", "+46%", "+48%", "+50%", "+52%", "+54%", "+56%", "+58%", "+70%"],
+            "Damage Taken↑": ["+10%", "+10%", "+10%", "+10%", "+15%", "+15%", "+15%", "+15%", "+15%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Strike Chaser":{
         "Usage": "Active (Head)",
         "Unlock": "Triple Charge (Lv 3), War Cry (Lv 5)",
-        "Description": ".",
+        "Description": "Enter a charge state for next turn, which gives your allies a chance to follow up on your attacks, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each activation. If an ally's follow up uses a different damage type than the attack that triggered it, damage dealt is increased but activation chance goes down faster.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["16", "16", "16", "16", "21", "21", "21", "21", "21", "28", "28", "28", "28", "28", "28"],
+            "Attack Power": ["110%", "117%", "124%", "131%", "131%", "139%", "146%", "153%", "160%", "160%", "168%", "175%", "182%", "190%", "190%"],
+            "Power Bonus\n(Diff. Type)": ["x1.8", "x1.9", "x2.0", "x2.12", "x2.12", "x2.23", "x2.34", "x2.45", "x2.56", "x2.56", "x2.67", "x2.78", "x2.89", "x3.0", "x3.0"],
+            "Chance Fadeout\n(Same Type)": ["35%", "35%", "35%", "35%", "25%", "25%", "25%", "25%", "25%", "15%", "15%", "15%", "15%", "15%", "10%"],
+            "Chance Fadeout\n(Diff. Type)": ["95%", "95%", "95%", "95%", "70%", "70%", "70%", "70%", "70%", "55%", "55%", "55%", "55%", "55%", "40%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
 },
@@ -221,11 +330,13 @@ var data = {
     "Bow Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases physical damage dealt if a Bow is equipped. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+3%", "+5%", "+6%", "+8%", "+9%", "+11%", "+12%", "+13%", "+15%"],
+        }
     },
     "Power Shot":{
         "Usage": "Active (Arms, STR)",
@@ -374,11 +485,13 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Efficiency":{
         "Usage": "Passive",
@@ -401,49 +514,53 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases base Max TP.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "0",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "0",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
 },
 "Protector":{
     "Shield Mastery":{
         "Usage": "Passive",
-        "Unlock": "N/A",
+        "Unlock": "Decrease physical damage taken if a Shield is equipped. (Automatically unlocks other skills that require this one)",
         "Description": ".",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Taken↓": ["-5%", "-6%", "-7%", "-8%", "-9%", "-10%", "-11%", "-12%", "-13%", "-15%"],
+        }
     },
     "Front Guard":{
         "Usage": "Active (Arms)",
@@ -529,11 +646,13 @@ var data = {
     "DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Decreases physical damage taken.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Taken↓": ["-2%", "-4%", "-6%", "-8%", "-10%", "-12%", "-14%", "-16%", "-18%", "-20%"],
+        }
     },
     "Provoke":{
         "Usage": "Active (Head)",
@@ -583,11 +702,13 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Safe Passage":{
         "Usage": "Active (Field)",
@@ -637,19 +758,21 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases base Max TP.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
 },
@@ -657,11 +780,13 @@ var data = {
     "Whip Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases physical damage dealt if a Whip is equipped. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+3%", "+5%", "+6%", "+8%", "+9%", "+11%", "+12%", "+13%", "+15%"],
+        }
     },
     "Gag":{
         "Usage": "Active (Arms, STR, LUC)",
@@ -720,11 +845,13 @@ var data = {
     "Sword Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases physical damage dealt if a Sword is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+3%", "+5%", "+6%", "+8%", "+9%", "+11%", "+12%", "+13%", "+15%"],
+        }
     },
     "Hypno Bite":{
         "Usage": "Active (Arms, STR, LUC)",
@@ -783,11 +910,13 @@ var data = {
     "ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases physical damage dealt.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+4%", "+6%", "+8%", "+10%", "+12%", "+14%", "+16%", "+18%", "+20%"],
+        }
     },
     "Boost Up":{
         "Usage": "Passive",
@@ -819,11 +948,13 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases base Max TP.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Bind Heart":{
         "Usage": "Active (Head)",
@@ -855,19 +986,21 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
 },
@@ -875,11 +1008,13 @@ var data = {
     "Heal Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases the HP restored by healing skills used. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+3%", "+6%", "+9%", "+12%", "+14%", "+16%", "+18%", "+20%", "+22%", "+25%"],
+        }
     },
     "Cure":{
         "Usage": "Active (Head, TEC)",
@@ -974,11 +1109,13 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Anaesthetic":{
         "Usage": "Active (Head, LUC)",
@@ -1037,11 +1174,13 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases base Max TP.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Safe Passage":{
         "Usage": "Active (Field)",
@@ -1073,11 +1212,13 @@ var data = {
     "ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases physical damage dealt.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+4%", "+6%", "+8%", "+10%", "+12%", "+14%", "+16%", "+18%", "+20%"],
+        }
     },
     "Caduceus":{
         "Usage": "Active (Arms, STR, LUC)",
@@ -1091,10 +1232,10 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
 },
@@ -1102,11 +1243,13 @@ var data = {
     "Formula Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases elemental damage dealt. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+4%", "+6%", "+8%", "+10%", "+12%", "+14%", "+16%", "+18%", "+20%"],
+        }
     },
     "Fire Formula":{
         "Usage": "Active (Head, TEC)",
@@ -1246,11 +1389,13 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases base Max TP.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Return Formula":{
         "Usage": "Active (Field)",
@@ -1309,10 +1454,10 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
 },
@@ -1482,11 +1627,13 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Frightful Yawl":{
         "Usage": "Active (Field)",
@@ -1518,19 +1665,21 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases base Max TP.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
 },
@@ -1538,11 +1687,13 @@ var data = {
     "Katana Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases physical damage dealt if a Katana is equipped. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+3%", "+5%", "+6%", "+8%", "+9%", "+11%", "+12%", "+13%", "+15%"],
+        }
     },
     "Slantwise Cut":{
         "Usage": "Active (Arms, STR)",
@@ -1682,11 +1833,13 @@ var data = {
     "ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases physical damage dealt.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+4%", "+6%", "+8%", "+10%", "+12%", "+14%", "+16%", "+18%", "+20%"],
+        }
     },
     "Crit Up":{
         "Usage": "Passive",
@@ -1709,11 +1862,13 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Breath":{
         "Usage": "Active (Head)",
@@ -1727,11 +1882,13 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases base Max TP.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Indomitable Cry":{
         "Usage": "Active (Head)",
@@ -1745,10 +1902,10 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
 },
@@ -1927,11 +2084,13 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases base Max TP.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Staggering Word":{
         "Usage": "Passive (LUC)",
@@ -1945,19 +2104,21 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
 },
@@ -1965,11 +2126,13 @@ var data = {
     "Spear Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases physical damage dealt if a Spear is equipped. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+3%", "+5%", "+6%", "+8%", "+9%", "+11%", "+12%", "+13%", "+15%"],
+        }
     },
     "Long Thrust":{
         "Usage": "Active (Arms, STR)",
@@ -2055,11 +2218,13 @@ var data = {
     "ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases physical damage dealt.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+4%", "+6%", "+8%", "+10%", "+12%", "+14%", "+16%", "+18%", "+20%"],
+        }
     },
     "Turning Tide":{
         "Usage": "Passive",
@@ -2100,11 +2265,13 @@ var data = {
     "DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Decreases physical damage taken.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Taken↓": ["-2%", "-4%", "-6%", "-8%", "-10%", "-12%", "-14%", "-16%", "-18%", "-20%"],
+        }
     },
     "Battle Instinct":{
         "Usage": "Passive",
@@ -2145,11 +2312,13 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Limitless":{
         "Usage": "Active (Arms)",
@@ -2172,10 +2341,10 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
 },
@@ -2183,11 +2352,13 @@ var data = {
     "Gun Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases physical damage dealt if a Gun is equipped. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+3%", "+5%", "+6%", "+8%", "+9%", "+11%", "+12%", "+13%", "+15%"],
+        }
     },
     "Head Snipe":{
         "Usage": "Active (Arms, STR, LUC)",
@@ -2318,11 +2489,13 @@ var data = {
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+5%", "+8%", "+11%", "+13%", "+15%", "+17%", "+19%", "+21%", "+23%", "+25%"],
+        }
     },
     "Medic Bullet":{
         "Usage": "Active (Arms, TEC)",
@@ -2354,11 +2527,13 @@ var data = {
     "ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
-        "Starter": "1",
+        "Description": "Increases physical damage dealt.",
+        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Damage Dealt↑": ["+2%", "+4%", "+6%", "+8%", "+10%", "+12%", "+14%", "+16%", "+18%", "+20%"],
+        }
     },
     "High Caliber":{
         "Usage": "Passive",
@@ -2390,10 +2565,10 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "10",
-        "Natural Level": "10",
+        "Max Level": "0",
+        "Natural Level": "0",
         "Data": ""
     },
 },
