@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Etrian Odyssey Untold - Skill Data</title>
+    <link href="style.css" rel="stylesheet">
+    </head>
+    <body style="background-color:powderblue; ">
+        <div id="sidebar" class="sidebar" style="overflow: auto;">
+            <h2 style="text-align:center;">Skills</h2>
+            <button class="page_link" onclick="populate('Landsknecht')">Landsknecht</button>
+            <button class="page_link" onclick="populate('Survivalist')">Survivalist</button>
+            <button class="page_link" onclick="populate('Protector')">Protector</button>
+            <button class="page_link" onclick="populate('Dark Hunter')">Dark Hunter</button>
+            <button class="page_link" onclick="populate('Medic')">Medic</button>
+            <button class="page_link" onclick="populate('Alchemist')">Alchemist</button>
+            <button class="page_link" onclick="populate('Troubadour')">Troubadour</button>
+            <button class="page_link" onclick="populate('Ronin')">Ronin</button>
+            <button class="page_link" onclick="populate('Hexer')">Hexer</button>
+            <button class="page_link" onclick="populate('Highlander')">Highlander</button>
+            <button class="page_link" onclick="populate('Gunner')">Gunner</button>
+            <hr>
+            <button class="page_link" onclick="populate_item('Battle Items')">Battle Items</button>
+            <hr>
+        </div>
+        <div id="skill_list" class="skill_list" style="overflow: auto; height:100%; width:85%;">
+        </div>
+    <script src="database.js"></script>
+    </body>
+</html>
