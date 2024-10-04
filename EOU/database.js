@@ -637,83 +637,121 @@ var data = {
     "Front Guard":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Shield: Protect the front line for this turn, which decreases physical damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "6", "6", "6", "6", "6", "6"],
+            "Damage Taken↓": ["-20%", "-22%", "-24%", "-25%", "-30%", "-32%", "-34%", "-35%", "-36%", "-40%", "-45%", "-50%", "-55%", "-60%", "-80%"],
+        }
     },
     "Rear Guard":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Shield: Protect the back line for this turn, which decreases physical damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "6", "6", "6", "6", "6", "6"],
+            "Damage Taken↓": ["-20%", "-22%", "-24%", "-25%", "-30%", "-32%", "-34%", "-35%", "-36%", "-40%", "-45%", "-50%", "-55%", "-60%", "-80%"],
+        }
     },
     "Defender":{
         "Usage": "Active (Head)",
         "Unlock": "Front/Read Guard (Lv 5)",
-        "Description": ".",
+        "Description": "Place a buff on the whole party for several turns, which decreases physical damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "14", "14", "14", "14", "14", "14"],
+            "Damage Taken↓": ["-15%", "-17%", "-19%", "-20%", "-20%", "-22%", "-23%", "-24%", "-25%", "-25%", "-26%", "-27%", "-28%", "-29%", "-32%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "Fire Wall":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "Shield: Protect the whole party for this turn, which decreases Fire damage taken (max once per ally). From level 10 onward it absorbs damage instead of decreasing it. (From level 5 onward it nullifies secondary effects from attacks)",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "16", "14", "12", "10", "8", "12", "12", "12", "12", "12", "12"],
+            "Damage Taken↓": ["-25%", "-50%", "-75%", "-85%", "-100%", "-100%", "-100%", "-100%", "-100%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "50%", "100%", "150%", "200%", "250%", "500%"],
+        }
     },
     "Ice Wall":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "Shield: Protect the whole party for this turn, which decreases Ice damage taken (max once per ally). From level 10 onward it absorbs damage instead of decreasing it. (From level 5 onward it nullifies secondary effects from attacks)",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "16", "14", "12", "10", "8", "12", "12", "12", "12", "12", "12"],
+            "Damage Taken↓": ["-25%", "-50%", "-75%", "-85%", "-100%", "-100%", "-100%", "-100%", "-100%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "50%", "100%", "150%", "200%", "250%", "500%"],
+        }
     },
     "Volt Wall":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "Shield: Protect the whole party for this turn, which decreases Volt damage taken (max once per ally). From level 10 onward it absorbs damage instead of decreasing it. (From level 5 onward it nullifies secondary effects from attacks)",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "16", "14", "12", "10", "8", "12", "12", "12", "12", "12", "12"],
+            "Damage Taken↓": ["-25%", "-50%", "-75%", "-85%", "-100%", "-100%", "-100%", "-100%", "-100%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "50%", "100%", "150%", "200%", "250%", "500%"],
+        }
     },
     "Shield Smite":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Shield Mastery (Lv 7)",
-        "Description": ".",
+        "Description": "Shield: Deal melee Bash damage to one enemy, with a chance to inflict Arm Bind.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "22", "22", "22", "22", "22", "22"],
+            "Attack Power": ["190%", "200%", "210%", "220%", "270%", "280%", "290%", "300%", "310%", "360%", "370%", "380%", "390%", "400%", "450%"],
+            "Infliction Rate": ["15%", "15%", "15%", "15%", "25%", "25%", "25%", "25%", "25%", "35%", "40%", "45%", "50%", "55%", "65%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%"],
+        }
     },
     "Shield Rush":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Shield Smite (Lv 5)",
-        "Description": ".",
+        "Description": "Shield: Deal melee Bash damage to all enemies. Places a debuff on the targets for 3 turns, which decreases physical damage dealt.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["15", "15", "15", "15", "21", "21", "21", "21", "21", "27", "27", "27", "27", "27", "27"],
+            "Attack Power": ["180%", "188%", "196%", "204%", "221%", "229%", "237%", "245%", "254%", "270%", "278%", "287%", "295%", "303%", "320%"],
+            "Damage Dealt↓": ["-10%", "-10%", "-10%", "-10%", "-15%", "-15%", "-15%", "-15%", "-15%", "-20%", "-20%", "-20%", "-20%", "-20%", "-20%"],
+            "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Bravery's Gift":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 10)",
-        "Description": ".",
+        "Description": "Increase your Max HP (also healing you by the amount of HP you gained) and protect the whole party for this turn, which makes you take attacks in their place.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["25", "25", "25", "25", "30", "30", "30", "30", "30", "35", "35", "35", "35", "35", "35"],
+            "Max HP↑": ["+5%", "+9%", "+13%", "+17%", "+25%", "+29%", "+33%", "+37%", "+42%", "+50%", "+57%", "+64%", "+72%", "+80%", "+100%"],
+        }
     },
     "DEF Up":{
         "Usage": "Passive",
@@ -729,47 +767,69 @@ var data = {
     "Provoke":{
         "Usage": "Active (Head)",
         "Unlock": "DEF Up (Lv 1)",
-        "Description": ".",
+        "Description": "Place a buff on yourself for several turns, which increases enemy aggro and slightly decreases damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "5", "5", "5", "5", "5", "9", "9", "9", "9", "9", "9"],
+            "Aggro Priority↑": ["+1", "+1", "+1", "+1", "+1", "+1", "+1", "+1", "+1", "+2", "+2", "+2", "+2", "+2", "+2"],
+            "Base Aggro↑": ["+10", "+25", "+40", "+55", "+70", "+85", "+100", "+115", "+130", "+10", "+50", "+100", "+150", "+200", "+250"],
+            "Damage Taken↓": ["-0%", "-0%", "-0%", "-0%", "-5%", "-5%", "-5%", "-5%", "-5%", "-10%", "-11%", "-12%", "-13%", "-14%", "-15%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
+        }
     },
     "Parry":{
         "Usage": "Active (Arms)",
         "Unlock": "Provoke (Lv 5)",
-        "Description": ".",
+        "Description": "Chance to nullify physical hits towards your line this turn. Activation chance goes down with each activation.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["7", "7", "7", "7", "14", "14", "14", "14", "14", "22", "22", "22", "22", "22", "22"],
+            "Initial Chance": ["60%", "70%", "80%", "90%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            "Chance Fadeout": ["100%", "100%", "100%", "100%", "100%", "80%", "70%", "60%", "50%", "35%", "30%", "25%", "20%", "15%", "10%"],
+            "Max. Activations": ["1", "1", "1", "1", "1", "2", "2", "2", "2", "3", "3", "3", "3", "3", "4"],
+            "Action Speed": ["800%", "800%", "800%", "800%", "800%", "800%", "800%", "800%", "800%", "800%", "800%", "800%", "800%", "800%", "800%"],
+        }
     },
     "Fortify":{
         "Usage": "Active (Head)",
         "Unlock": "DEF Up (Lv 3)",
-        "Description": ".",
+        "Description": "Place a buff on yourself for several turns, which decreases physical damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "6", "6", "6", "6", "6", "8", "8", "8", "8", "8", "8"],
+            "Damage Taken↓": ["-20%", "-23%", "-25%", "-26%", "-26%", "-28%", "-30%", "-31%", "-32%", "-32%", "-33%", "-34%", "-35%", "-36%", "-40%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "Aegis":{
         "Usage": "Passive",
         "Unlock": "DEF Up (Lv 5)",
-        "Description": ".",
+        "Description": "Chance to survive lethal damage with 1 HP.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["10%", "13%", "15%", "17%", "19%", "21%", "23%", "25%", "27%", "30%"],
+        }
     },
     "En Garde":{
         "Usage": "Passive",
         "Unlock": "Fortify (Lv 5), Aegis (Lv 5)",
-        "Description": ".",
+        "Description": "Chance to automatically Defend against any hit received.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["6%", "8%", "10%", "12%", "14%", "16%", "18%", "20%", "22%", "25%"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -785,47 +845,67 @@ var data = {
     "Safe Passage":{
         "Usage": "Active (Field)",
         "Unlock": "HP Up (Lv 1)",
-        "Description": ".",
+        "Description": "Temporarily decrease damage taken from damaging floors.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
+            "Damage Taken↓": ["x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15", "x0.1", "x0.01"],
+            "Duration": ["25", "25", "25", "25", "45", "45", "45", "45", "45", "70"],
+        }
     },
     "Flee":{
         "Usage": "Active (Legs)",
         "Unlock": "Safe Passage (Lv 3)",
-        "Description": ".",
+        "Description": "Attempt to escape the battle at the start of the turn and teleport to the point where you entered the floor. If successful, spend part of the whole party's current HP.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "7", "7", "7", "7", "7", "7"],
+            "Success Chance": ["50%", "55%", "60%", "65%", "70%", "75%", "80%", "85%", "90%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            "HP Loss": ["50%", "50%", "50%", "50%", "25%", "25%", "25%", "25%", "25%", "10%", "8%", "6%", "4%", "2%", "1%"],
+        }
     },
     "Cure":{
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 3)",
-        "Description": ".",
+        "Description": "Restore HP to one ally.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8", "8", "8", "8", "8", "8"],
+            "Healing Power": ["25%", "27%", "29%", "31%", "50%", "53%", "56%", "59%", "62%", "98%", "101%", "104%", "107%", "110%", "250%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%", "150%", "150%", "150%", "150%", "150%", "250%"],
+        }
     },
     "Party Cure":{
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 5)",
-        "Description": ".",
+        "Description": "Restore HP to the whole party.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "20", "20", "20", "20", "20", "30", "30", "30", "30", "30", "30"],
+            "Healing Power": ["30%", "32%", "34%", "36%", "58%", "61%", "64%", "67%", "70%", "110%", "114%", "118%", "122%", "126%", "280%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Prayer":{
         "Usage": "Passive",
         "Unlock": "Cure (Lv 5), Party Cure (Lv 3)",
-        "Description": ".",
+        "Description": "Restore HP and TP to the whole party after each battle. Healing is based on each unit's Max HP. (Doesn't stack)",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "HP Gain (Fixed)": ["7", "9", "11", "13", "15", "17", "19", "21", "23", "35"],
+            "HP Gain (Max HP)": ["1%", "2%", "2%", "3%", "3%", "4%", "4%", "5%", "5%", "6%"],
+            "TP Gain": ["2", "3", "3", "4", "4", "5", "5", "6", "6", "7"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
