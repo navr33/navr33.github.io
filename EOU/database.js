@@ -341,146 +341,212 @@ var data = {
     "Power Shot":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Bow Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Bow: Deal ranged Stab damage to one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "12", "12", "12", "12", "12", "12"],
+            "Attack Power": ["140%", "146%", "152%", "158%", "182%", "188%", "194%", "200%", "206%", "255%", "263%", "271%", "279%", "287%", "330%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Disabling Shot":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Bow Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Bow: Deal ranged Stab damage to one enemy, with a chance to inflict Leg Bind.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "12"],
+            "Attack Power": ["120%", "127%", "134%", "141%", "148%", "155%", "162%", "170%", "177%", "185%", "192%", "199%", "207%", "215%", "225%"],
+            "Infliction Rate": ["50%", "50%", "50%", "50%", "62%", "62%", "62%", "62%", "62%", "75%", "75%", "75%", "75%", "75%", "90%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Multi-Shot":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Power Shot (Lv 5), Disabling Shot (Lv 3)",
-        "Description": ".",
+        "Description": "Bow: Deal 2 hits of ranged Stab damage to random enemies.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["13", "13", "13", "13", "18", "18", "18", "18", "18", "23", "23", "23", "23", "23", "23"],
+            "Attack Power": ["120%", "125%", "130%", "135%", "150%", "155%", "160%", "165%", "170%", "185%", "190%", "195%", "200%", "205%", "220%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Sagittarius Shot":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Bow Mastery (Lv 10)",
-        "Description": ".",
+        "Description": "Bow: Prepare an attack that will hit in 2 more turns, at the start of the turn. Deals ranged Stab damage to one enemy, with a chance to inflict Stun.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["16", "16", "16", "16", "21", "21", "21", "21", "21", "26", "26", "26", "26", "26", "26"],
+            "Attack Power": ["350%", "364%", "378%", "393%", "450%", "464%", "479%", "493%", "507%", "565%", "579%", "593%", "608%", "622%", "680%"],
+            "Infliction Rate": ["30%", "30%", "30%", "30%", "45%", "45%", "45%", "45%", "45%", "60%", "62%", "64%", "66%", "68%", "80%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "AGI Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases action speed and evasion.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Speed↑": ["x1.02", "x1.03", "x1.04", "x1.06", "x1.07", "x1.09", "x1.1", "x1.12", "x1.13", "x1.15"],
+            "Evasion↑": ["+3%", "+4%", "+4.9%", "+5.7%", "+6.5%", "+7.3%", "+8%", "+8.7%", "+9.4%", "+10%"],
+        }
     },
     "Hasten":{
         "Usage": "Active (Legs)",
         "Unlock": "AGI Up (Lv 1)",
-        "Description": ".",
+        "Description": "Place a buff on one ally for several turns, which increases action speed.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "7", "7", "7", "7", "7", "7"],
+            "Speed↑": ["x1.25", "x1.3", "x1.34", "x1.38", "x1.4", "x1.45", "x1.49", "x1.53", "x1.57", "x1.6", "x1.64", "x1.68", "x1.72", "x1.76", "x1.82"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Trickery":{
         "Usage": "Active (Legs)",
         "Unlock": "AGI Up (Lv 2)",
-        "Description": ".",
+        "Description": "Place a debuff on one enemy for several turns, which decreases accuracy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "7", "7", "7", "7", "7", "7"],
+            "Accuracy↓": ["-18%", "-19%", "-20%", "-21%", "-21%", "-22%", "-23%", "-24%", "-25%", "-25%", "-26%", "-27%", "-28%", "-29%", "-30%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Sure Shot":{
         "Usage": "Active (Legs)",
         "Unlock": "AGI Up (Lv 3)",
-        "Description": ".",
+        "Description": "Place a buff on one ally line for several turns, which increases accuracy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "12"],
+            "Accuracy↑": ["+22%", "+23%", "+24%", "+25%", "+26%", "+27%", "+28%", "+29%", "+30%", "+31%", "+32%", "+33%", "+34%", "+35%", "+40%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Chain Dance":{
         "Usage": "Active (Legs)",
         "Unlock": "Hasten (Lv 2), Trickery (Lv 2), Sure Shot (Lv 2)",
-        "Description": ".",
+        "Description": "Place a buff on yourself for several turns, which increases evasion and enemy aggro.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "14", "14", "14", "14", "14", "20", "20", "20", "20", "20", "20"],
+            "Evasion↑": ["+23%", "+24%", "+25%", "+26%", "+26%", "+27%", "+28%", "+29%", "+30%", "+30%", "+31.5%", "+33%", "+33.5%", "+35%", "+38%"],
+            "Aggro Priority↑": ["+0", "+0", "+0", "+0", "+1", "+1", "+1", "+1", "+1", "+2", "+2", "+2", "+2", "+2", "+2"],
+            "Base Aggro↑": ["+100", "+110", "+120", "+130", "+10", "+20", "+30", "+40", "+50", "+10", "+20", "+30", "+40", "+50", "+60"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Endorphins":{
         "Usage": "Passive",
         "Unlock": "Chain Dance (Lv 5)",
-        "Description": ".",
+        "Description": "Recover TP each time you evade a hit.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Gain": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        }
     },
     "Act First":{
         "Usage": "Passive",
         "Unlock": "AGI Up (Lv 5)",
-        "Description": ".",
+        "Description": "Chance to act at the start of turn, disregarding action speed.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["25%", "30%", "35%", "40%", "45%", "49%", "53%", "57%", "61%", "65%"],
+        }
     },
     "Quick Step":{
         "Usage": "Active (Legs)",
         "Unlock": "AGI Up (Lv 10)",
-        "Description": ".",
+        "Description": "Chance to make target ally act at the start of this turn.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "8", "6", "14", "12", "10", "18", "16", "14", "20", "20", "20", "20", "20", "20"],
+            "Success Chance": ["50%", "50%", "50%", "70%", "70%", "70%", "90%", "90%", "90%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Predator":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Gain an additional chance of getting a preemptive attack.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Ambush Chance": ["2.3%", "3.1%", "3.8%", "4.5%", "5.2%", "5.8%", "6.4%", "7.0%", "7.5%", "8.0%"],
+        }
     },
     "Owl-Eye":{
         "Usage": "Active (Field)",
         "Unlock": "Predator (Lv 1)",
-        "Description": ".",
+        "Description": "Temporarily show the location of all FOEs within a square centered around you.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "6"],
+            "Square Side": ["23", "23", "23", "23", "27", "27", "27", "27", "27", "31"],
+            "Duration": ["16", "18", "20", "22", "30", "32", "34", "36", "38", "50"],
+        }
     },
     "Awareness":{
         "Usage": "Passive",
         "Unlock": "Predator (Lv 3)",
-        "Description": ".",
+        "Description": "Chance to nullify enemy ambushes.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["25%", "30%", "35%", "40%", "45%", "49%", "53%", "57%", "61%", "65%"],
+        }
     },
     "Stalker":{
         "Usage": "Active (Field)",
         "Unlock": "Predator (Lv 5)",
-        "Description": ".",
+        "Description": "Temporarily decrease the enemy encounter rate.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "9", "9", "9", "9", "9", "12"],
+            "Encounters↓": ["x0.8", "x0.77", "x0.74", "x0.71", "x0.57", "x0.54", "x0.51", "x0.48", "x0.45", "x0.3"],
+            "Duration": ["30", "30", "30", "30", "60", "60", "60", "60", "60", "100"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -496,26 +562,32 @@ var data = {
     "Efficiency":{
         "Usage": "Passive",
         "Unlock": "HP Up (Lv 3)",
-        "Description": ".",
+        "Description": "Increases the HP and TP restored by healing items used by you in battle.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Healing↑": ["+28%", "+36%", "+44%", "+52%", "+60%", "+68%", "+76%", "+84%", "+92%", "+100%"],
+        }
     },
     "Resuscitate":{
         "Usage": "Active (Field)",
         "Unlock": "Efficiency (Lv 5)",
-        "Description": ".",
+        "Description": "Chance to revive a dead ally.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "5", "5", "5", "5", "5", "12"],
+            "Success Chance": ["25%", "25%", "25%", "25%", "50%", "50%", "50%", "50%", "50%", "100%"],
+            "HP Gain": ["1", "5", "15", "30", "50", "80", "120", "170", "250", "999"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases base Max TP.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -553,8 +625,8 @@ var data = {
 "Protector":{
     "Shield Mastery":{
         "Usage": "Passive",
-        "Unlock": "Decrease physical damage taken if a Shield is equipped. (Automatically unlocks other skills that require this one)",
-        "Description": ".",
+        "Unlock": "N/A",
+        "Description": "Decrease physical damage taken if a Shield is equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -759,7 +831,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases base Max TP.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -911,7 +983,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases physical damage dealt.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -949,7 +1021,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases base Max TP.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1008,7 +1080,7 @@ var data = {
     "Heal Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases the HP restored by healing skills used. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
+        "Description": "Increases the HP restored by healing skills used. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -1175,7 +1247,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases base Max TP.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1213,7 +1285,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases physical damage dealt.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1390,7 +1462,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases base Max TP.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1666,7 +1738,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases base Max TP.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1834,7 +1906,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases physical damage dealt.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1883,7 +1955,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases base Max TP.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -2085,7 +2157,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases base Max TP.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -2219,7 +2291,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases physical damage dealt.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -2528,7 +2600,7 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases physical damage dealt.",
-        "Starter": "0",
+        "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -2593,7 +2665,7 @@ var data = {
             }
         },
         "Amrita / Amrita II":{
-            "Usage": "800 / w.000 en",
+            "Usage": "800 / 2.000 en",
             "Description": "Restores TP to one ally.",
             "Starter": "0",
             "Max Level": "2",

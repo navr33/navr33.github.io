@@ -6,6 +6,8 @@ EO3 data compiled from the Skill Data Viewer by violentlycar (https://viocar.git
 
 EO4 data compiled from the Data Dump (https://docs.google.com/spreadsheets/d/1XSnae5BOvkIXdG5PgZXDALy4_IimnrB5K6N1IDP5j2Y/)
 
+EOU data compiled from the Data Dump (https://docs.google.com/spreadsheets/d/17Ll3gB2BTXmf6B0m5V0Q4FTISVQ_duBvGmBq3T7OG04/)
+
 EO2U data compiled from the Data Dump (https://docs.google.com/spreadsheets/d/1okVRwnjgecrx6BfuH17Aukyy_X-PuJb5qJqBt6c8DS8/)
 
 EO5 data compiled from the Data Dump (https://docs.google.com/spreadsheets/d/1OZ4bsQsBNXzM93HXlpznFsrkc_Lsi03EjWuR7nWKtMk/)
