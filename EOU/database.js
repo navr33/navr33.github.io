@@ -877,7 +877,7 @@ var data = {
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8", "8", "8", "8", "8", "8"],
-            "Healing Power": ["25%", "27%", "29%", "31%", "50%", "53%", "56%", "59%", "62%", "98%", "101%", "104%", "107%", "110%", "250%"],
+            "Healing Power": ["25", "27", "29", "31", "50", "53", "56", "59", "62", "98", "101", "104", "107", "110", "250"],
             "Action Speed": ["100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%", "150%", "150%", "150%", "150%", "150%", "250%"],
         }
     },
@@ -890,7 +890,7 @@ var data = {
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["12", "12", "12", "12", "20", "20", "20", "20", "20", "30", "30", "30", "30", "30", "30"],
-            "Healing Power": ["30%", "32%", "34%", "36%", "58%", "61%", "64%", "67%", "70%", "110%", "114%", "118%", "122%", "126%", "280%"],
+            "Healing Power": ["30", "32", "34", "36", "58", "61", "64", "67", "70", "110", "114", "118", "122", "126", "280"],
             "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
         }
     },
@@ -943,56 +943,93 @@ var data = {
     "Gag":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Whip Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Whip: Deal melee Cut damage to one enemy, with a chance to inflict Head Bind.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "14", "14", "14", "14", "14", "14"],
+            "Attack Power": ["120%", "127%", "134%", "141%", "155%", "163%", "171%", "179%", "187%", "240%", "248%", "256%", "264%", "272%", "300%"],
+            "Infliction Rate": ["50%", "50%", "50%", "50%", "62%", "62%", "62%", "62%", "62%", "75%", "75%", "75%", "75%", "75%", "90%"],
+            "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Shackles":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Whip Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Whip: Deal melee Cut damage to one enemy, with a chance to inflict Leg Bind.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "14", "14", "14", "14", "14", "14"],
+            "Attack Power": ["120%", "127%", "134%", "141%", "155%", "163%", "171%", "179%", "187%", "240%", "248%", "256%", "264%", "272%", "300%"],
+            "Infliction Rate": ["50%", "50%", "50%", "50%", "62%", "62%", "62%", "62%", "62%", "75%", "75%", "75%", "75%", "75%", "90%"],
+            "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Cuffs":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Whip Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Whip: Deal melee Cut damage to one enemy, with a chance to inflict Arm Bind.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "14", "14", "14", "14", "14", "14"],
+            "Attack Power": ["120%", "127%", "134%", "141%", "155%", "163%", "171%", "179%", "187%", "240%", "248%", "256%", "264%", "272%", "300%"],
+            "Infliction Rate": ["50%", "50%", "50%", "50%", "62%", "62%", "62%", "62%", "62%", "75%", "75%", "75%", "75%", "75%", "90%"],
+            "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Ecstasy":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Gag (Lv 7), Shackles (Lv 7), Cuffs (Lv 7)",
-        "Description": ".",
+        "Description": "Whip: Deal melee Cut damage to one enemy. Stronger for each bind on the target: Damage dealt is multiplied by 2 for 1 bind, by 3.15 for 2 binds, and by 5.6225 for all 3 binds. (<b>Bug</b>: The 0-bind version is receiving a damage multiplier that grows with the skill's level)",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "18", "18", "18", "18", "18", "18"],
+            "Attack Power": ["150%", "155%", "160%", "165%", "190%", "195%", "200%", "205%", "210%", "240%", "245%", "250%", "255%", "260%", "290%"],
+            "0-Bind Bonus": ["x1.2", "x1.24", "x1.28", "x1.32", "x1.58", "x1.63", "x1.67", "x1.71", "x1.76", "x2.0", "x2.06", "x2.1", "x2.14", "x2.19", "x2.55"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Viper":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Whip Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Whip: Deal melee Cut damage to one enemy, with a chance to inflict Poison.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "17", "17", "17", "17", "17", "17"],
+            "Attack Power": ["140%", "146%", "152%", "158%", "170%", "176%", "182%", "188%", "194%", "206%", "212%", "218%", "224%", "230%", "242%"],
+            "Infliction Rate": ["70%", "70%", "70%", "70%", "80%", "80%", "80%", "80%", "80%", "90%", "90%", "90%", "90%", "90%", "110%"],
+            "Poison Power": ["20", "30", "40", "50", "80", "95", "110", "125", "140", "300", "320", "340", "360", "380", "650"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Climax":{
-        "Usage": "Active (Arms, STR)",
+        "Usage": "Active (Arms)",
         "Unlock": "Whip Mastery (Lv 10), Viper (Lv 3)",
-        "Description": ".",
+        "Description": "Whip: Attempt to instantly kill one enemy. Only works on non-boss enemies at 40% HP or less. If successful, heal by a percentage of the target's remaining HP. (Does not count as Instant Death, but it is affected by Instant Death resistance)",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["15", "15", "15", "15", "19", "19", "19", "19", "19", "24", "24", "24", "24", "24", "24"],
+            "Success Rate": ["100%", "100%", "100%", "100%", "200%", "200%", "200%", "200%", "200%", "350%", "370%", "400%", "440%", "500%", "999%"],
+            "Damage Drain": ["120%", "130%", "140%", "150%", "190%", "200%", "210%", "220%", "230%", "270%", "280%", "290%", "300%", "310%", "350%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Sword Mastery":{
         "Usage": "Passive",
@@ -1008,56 +1045,92 @@ var data = {
     "Hypno Bite":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Sleep.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "14", "14", "14", "14", "14", "14"],
+            "Attack Power": ["120%", "127%", "134%", "141%", "155%", "163%", "171%", "179%", "187%", "240%", "248%", "256%", "264%", "272%", "300%"],
+            "Infliction Rate": ["50%", "50%", "50%", "50%", "62%", "62%", "62%", "62%", "62%", "75%", "75%", "75%", "75%", "75%", "90%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Nerve Bite":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Paralysis.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "14", "14", "14", "14", "14", "14"],
+            "Attack Power": ["120%", "127%", "134%", "141%", "155%", "163%", "171%", "179%", "187%", "240%", "248%", "256%", "264%", "272%", "300%"],
+            "Infliction Rate": ["50%", "50%", "50%", "50%", "62%", "62%", "62%", "62%", "62%", "75%", "75%", "75%", "75%", "75%", "90%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Mirage Bite":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Panic.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "14", "14", "14", "14", "14", "14"],
+            "Attack Power": ["120%", "127%", "134%", "141%", "155%", "163%", "171%", "179%", "187%", "240%", "248%", "256%", "264%", "272%", "300%"],
+            "Infliction Rate": ["50%", "50%", "50%", "50%", "62%", "62%", "62%", "62%", "62%", "75%", "75%", "75%", "75%", "75%", "90%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Soul Liberator":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Hypno/Nerve/Mirage Bite (Lv 7)",
-        "Description": ".",
+        "Description": "Sword: Deal melee Cut damage to one enemy. Damage dealt is multiplied by 4 if the target has an ailment, but removes the ailment.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "18", "18", "18", "18", "18", "18"],
+            "Attack Power": ["125%", "130%", "135%", "140%", "165%", "170%", "175%", "180%", "185%", "215%", "220%", "225%", "230%", "235%", "265%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Drain Bite":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Sword Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Sword: Deal melee Cut damage to one enemy. Recover HP based on damage dealt.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "17", "17", "17", "17", "17", "17"],
+            "Attack Power": ["140%", "148%", "156%", "164%", "188%", "196%", "204%", "212%", "220%", "244%", "252%", "260%", "268%", "276%", "300%"],
+            "Damage Drain": ["50%", "50%", "50%", "50%", "75%", "75%", "75%", "75%", "75%", "100%", "125%", "125%", "125%", "125%", "150%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Catastrophe":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 10), Drain Bite (Lv 3)",
-        "Description": ".",
+        "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Petrify. If the infliction misses, increase your ailment infliction rates on the next turn.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["15", "15", "15", "15", "19", "19", "19", "19", "19", "24", "24", "24", "24", "24", "24"],
+            "Attack Power": ["200%", "208%", "217%", "225%", "251%", "259%", "268%", "276%", "285%", "310%", "319%", "327%", "336%", "344%", "370%"],
+            "Infliction Rate": ["35%", "35%", "35%", "35%", "45%", "45%", "45%", "45%", "45%", "55%", "55%", "55%", "55%", "55%", "55%"],
+            "Inflictions↑": ["x1.15", "x1.15", "x1.15", "x1.15", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.35", "x1.5", "x1.5", "x1.5", "x1.5", "x1.7"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "ATK Up":{
         "Usage": "Passive",
@@ -1073,29 +1146,42 @@ var data = {
     "Boost Up":{
         "Usage": "Passive",
         "Unlock": "ATK Up (Lv 3)",
-        "Description": ".",
+        "Description": "Increases Boost Gauge gains. (For reference, normal gain is a random value between 5 and 15)",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Min. Boost Gain↑": ["+2", "+2.6", "+3.1", "+3.6", "+4.1", "+4.6", "+5", "+5.4", "+5.7", "+6"],
+            "Max. Boost Gain↑": ["+1", "+1.3", "+1.55", "+1.8", "+2.05", "+2.3", "+2.5", "+2.7", "+2.85", "+3"],
+        }
     },
     "Wrath's Might":{
         "Usage": "Passive",
         "Unlock": "ATK Up (Lv 5)",
-        "Description": ".",
+        "Description": "Increases physical/elemental damage dealt if your HP is below a certain threshold. (Stacks with its own Grimoire)",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "HP Threshold": ["30%", "30%", "30%", "30%", "40%", "40%", "40%", "40%", "40%", "50%"],
+            "Damage Dealt↑": ["+15%", "+20%", "+24%", "+27%", "+30%", "+32%", "+34%", "+36%", "+38%", "+40%"],
+        }
     },
     "Bait":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Boost Up (Lv 3), Wrath's Might (Lv 3)",
-        "Description": ".",
+        "Description": "Sword/Whip: Prepare to counterattack each time you or your adjacent allies are hit with physical damage this turn, dealing weapon-based damage to the attacker. Stronger when countering attacks against yourself. Activation chance starts at 100% and goes down with each activation.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["14", "14", "14", "14", "18", "18", "18", "18", "18", "22", "22", "22", "22", "22", "22"],
+            "Attack Power\n(Self)": ["180%", "188%", "196%", "204%", "228%", "236%", "244%", "252%", "260%", "284%", "292%", "300%", "308%", "316%", "340%"],
+            "Attack Power\n(Others)": ["120%", "125%", "130%", "135%", "150%", "155%", "160%", "165%", "170%", "185%", "190%", "195%", "200%", "205%", "220%"],
+            "Chance Fadeout": ["30%", "30%", "30%", "30%", "25%", "25%", "25%", "25%", "25%", "20%", "20%", "20%", "20%", "20%", "15%"],
+            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "6"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
@@ -1111,29 +1197,44 @@ var data = {
     "Bind Heart":{
         "Usage": "Active (Head)",
         "Unlock": "TP Up (Lv 1)",
-        "Description": ".",
+        "Description": "Place a debuff on one enemy for several turns, which decreases action speed.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "6", "6", "6", "6", "6", "6"],
+            "Speed↓": ["x0.82", "x0.8", "x0.78", "x0.76", "x0.74", "x0.72", "x0.7", "x0.68", "x0.66", "x0.64", "x0.62", "x0.6", "x0.58", "x0.56", "x0.5"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Shadow Veil":{
         "Usage": "Active (Legs)",
         "Unlock": "TP Up (Lv 3)",
-        "Description": ".",
+        "Description": "Place a buff on yourself for several turns, which decreases enemy aggro.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "9", "9", "9", "9", "9", "9"],
+            "Aggro Priority↓": ["-0", "-0", "-0", "-0", "-1", "-1", "-1", "-1", "-1", "-2", "-2", "-2", "-2", "-2", "-2"],
+            "Base Aggro↓": ["-2", "-4", "-6", "-9", "-0", "-1", "-3", "-5", "-7", "-0", "-1", "-3", "-5", "-7", "-9"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Dark Curse":{
         "Usage": "Active (Head)",
         "Unlock": "Bind Heart (Lv 2), Shadow Veil (Lv 2)",
-        "Description": ".",
+        "Description": "Attempt to inflict Curse on all enemies.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "16", "16", "16", "16", "16", "16"],
+            "Infliction Rate": ["35%", "36%", "37%", "38%", "44%", "45%", "46%", "47%", "48%", "55%", "56%", "57%", "58%", "59%", "68%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
