@@ -1885,7 +1885,7 @@ var data = {
     "Warrior Song":{
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 1)",
-        "Description": "(Song) Place a buff on the whole party for several turns, which increases damage dealt.",
+        "Description": "(Song) Place a buff on the whole party for several turns, which increases physical/elemental damage dealt.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
@@ -1899,7 +1899,7 @@ var data = {
     "Shelter Song":{
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 1)",
-        "Description": "(Song) Place a buff on the whole party for several turns, which decreases damage taken.",
+        "Description": "(Song) Place a buff on the whole party for several turns, which decreases physical/elemental damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
@@ -2519,173 +2519,264 @@ var data = {
     "Curse Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases the infliction rates of Curse skills. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Inflictions↑": ["x1.02", "x1.04", "x1.06", "x1.08", "x1.1", "x1.12", "x1.14", "x1.16", "x1.18", "x1.2"],
+        }
     },
     "Sapping Curse":{
         "Usage": "Active (Head)",
         "Unlock": "Curse Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Place a debuff on all enemies for several turns, which decreases physical/elemental damage dealt.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "12"],
+            "Damage Dealt↓": ["-8%", "-10%", "-12%", "-13%", "-13%", "-15%", "-16%", "-17%", "-18%", "-18%", "-19%", "-20%", "-21%", "-22%", "-25%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Leaden Curse":{
         "Usage": "Active (Head)",
         "Unlock": "Sapping Curse (Lv 2)",
-        "Description": ".",
+        "Description": "Place a debuff on all enemies for several turns, which decreases action speed.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "9", "9", "9", "9", "9", "9"],
+            "Speed↓": ["x0.84", "x0.82", "x0.8", "x0.78", "x0.78", "x0.76", "x0.74", "x0.72", "x0.7", "x0.7", "x0.68", "x0.66", "x0.64", "x0.62", "x0.55"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Frailty Curse":{
         "Usage": "Active (Head)",
         "Unlock": "Curse Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Place a debuff on all enemies for several turns, which increases physical/elemental damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "12"],
+            "Damage Taken↑": ["+15%", "+17%", "+19%", "+20%", "+20%", "+22%", "+23%", "+24%", "+25%", "+25%", "+26%", "+27%", "+28%", "+29%", "+35%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Deceit Curse":{
         "Usage": "Active (Head)",
         "Unlock": "Frailty Curse (Lv 2)",
-        "Description": ".",
+        "Description": "Place a debuff on all enemies for several turns, which decreases accuracy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["7", "7", "7", "7", "12", "12", "12", "12", "12", "17", "17", "17", "17", "17", "17"],
+            "Accuracy↓": ["-18%", "-19%", "-20%", "-21%", "-21%", "-22%", "-23%", "-24%", "-25%", "-25%", "-26%", "-27%", "-28%", "-29%", "-30%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Revenge Curse":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Leaden Curse (Lv 5), Deceit Curse (Lv 5)",
-        "Description": ".",
+        "Description": "Deal ranged Almighty damage to one enemy. Deals more damage the more missing HP you have:<br>-Your missing HP grants a damage multiplier of [1 + MissingHP/500].<br>-Your missing HP% grants a damage multiplier of [MissingHP%*(1+MissingHP%)/2 + 0.01].",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["18", "18", "18", "18", "27", "27", "27", "27", "27", "38", "38", "38", "38", "38", "38"],
+            "Attack Power": ["200%", "206%", "212%", "218%", "248%", "254%", "260%", "266%", "272%", "302%", "308%", "314%", "320%", "326%", "356%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Blinding Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "(Curse) Attempt to inflict Blind on an enemy line.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "16", "16", "16", "16", "16", "16"],
+            "Infliction Rate": ["35%", "36%", "38%", "39%", "45%", "47%", "48%", "50%", "51%", "57%", "59%", "60%", "62%", "63%", "70%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Madness Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "(Curse) Attempt to inflict Panic on an enemy line.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "16", "16", "16", "16", "16", "16"],
+            "Infliction Rate": ["45%", "46%", "47%", "48%", "55%", "57%", "58%", "59%", "60%", "70%", "72%", "73%", "74%", "75%", "85%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Torpor Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "(Curse) Attempt to inflict Sleep on an enemy line.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "16", "16", "16", "16", "16", "16"],
+            "Infliction Rate": ["45%", "46%", "47%", "48%", "55%", "57%", "58%", "59%", "60%", "70%", "72%", "73%", "74%", "75%", "85%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Corrupt Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Blinding Curse (Lv 2), Madness Curse (Lv 3)",
-        "Description": ".",
+        "Description": "(Curse) Attempt to inflict Curse on an enemy line.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["9", "9", "9", "9", "13", "13", "13", "13", "13", "18", "18", "18", "18", "18", "18"],
+            "Infliction Rate": ["50%", "51%", "52%", "53%", "60%", "62%", "63%", "64%", "65%", "75%", "77%", "78%", "79%", "80%", "90%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Stoning Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Madness Curse (Lv 3), Torpor Curse (Lv 2)",
-        "Description": ".",
+        "Description": "(Curse) Attempt to inflict Petrify on one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["9", "9", "9", "9", "13", "13", "13", "13", "13", "18", "18", "18", "18", "18", "18"],
+            "Infliction Rate": ["45%", "46%", "47%", "48%", "55%", "57%", "58%", "59%", "60%", "70%", "72%", "73%", "74%", "75%", "85%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
+    },
+    "Relapse Curse":{
+        "Usage": "Active (Head)",
+        "Unlock": "Corrupt/Stoning Curse (Lv 3)",
+        "Description": "Place a debuff on all enemies for several turns, which decreases natural bind/ailment recovery rate.",
+        "Starter": "0",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["16", "16", "16", "16", "21", "21", "21", "21", "21", "26", "26", "26", "26", "26", "26"],
+            "Recovery Rate↓": ["-10%", "-11%", "-12%", "-14%", "-14%", "-15%", "-17%", "-18%", "-20%", "-20%", "-22%", "-24%", "-26%", "-28%", "-30%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Cranial Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "(Curse) Attempt to inflict Head Bind on one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "14", "14", "14", "14", "14", "14"],
+            "Infliction Rate": ["60%", "62%", "63%", "65%", "75%", "77%", "78%", "80%", "81%", "92%", "94%", "95%", "97%", "98%", "110%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Abdomen Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "(Curse) Attempt to inflict Arm Bind on one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "14", "14", "14", "14", "14", "14"],
+            "Infliction Rate": ["60%", "62%", "63%", "65%", "75%", "77%", "78%", "80%", "81%", "92%", "94%", "95%", "97%", "98%", "110%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Immobile Curse":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "(Curse) Attempt to inflict Leg Bind on one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "14", "14", "14", "14", "14", "14"],
+            "Infliction Rate": ["60%", "62%", "63%", "65%", "75%", "77%", "78%", "80%", "81%", "92%", "94%", "95%", "97%", "98%", "110%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Evil Eye":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 10)",
-        "Description": ".",
+        "Description": "(Curse) Attempt to inflict Fear on an enemy line.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["9", "9", "9", "9", "13", "13", "13", "13", "13", "18", "18", "18", "18", "18", "18"],
+            "Infliction Rate": ["40%", "41%", "42%", "43%", "50%", "52%", "53%", "54%", "55%", "65%", "67%", "68%", "69%", "70%", "80%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Luring Whisper":{
         "Usage": "Active (Field)",
         "Unlock": "Evil Eye (Lv 1)",
-        "Description": ".",
+        "Description": "Temporarily increase the enemy encounter rate.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "6"],
+            "Encounters↑": ["x1.4", "x1.44", "x1.48", "x1.52", "x1.68", "x1.72", "x1.76", "x1.8", "x1.84", "x2.0"],
+            "Duration": ["20", "20", "20", "20", "40", "40", "40", "40", "40", "60"],
+        }
     },
     "Muting Word":{
         "Usage": "Active (Head)",
         "Unlock": "Evil Eye (Lv 3)",
-        "Description": ".",
+        "Description": "Control all enemies afflicted with Fear for this turn, which prevents them from acting and increases their damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "6", "6", "6", "6", "6", "6"],
+            "Damage Taken↑": ["+10%", "+15%", "+20%", "+25%", "+35%", "+40%", "+45%", "+50%", "+55%", "+65%", "+70%", "+75%", "+80%", "+85%", "+100%"],
+        }
     },
     "Conflict Word":{
         "Usage": "Active (Head)",
         "Unlock": "Evil Eye (Lv 5)",
-        "Description": ".",
+        "Description": "Control all enemies afflicted with Fear for this turn, which makes them attack another random enemy. (If there's only one enemy, it will attack itself)",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "6", "6", "6", "6", "6", "6"],
+            "Attack Power": ["100%", "105%", "110%", "115%", "130%", "135%", "140%", "145%", "150%", "165%", "170%", "175%", "180%", "185%", "200%"],
+        }
     },
     "Suicide Word":{
         "Usage": "Active (Head)",
         "Unlock": "Evil Eye (Lv 10)",
-        "Description": ".",
+        "Description": "Control one enemy afflicted with Fear for this turn, which makes it hit itself multiple times.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "6", "6", "6", "6", "6", "10", "10", "10", "10", "10", "10"],
+            "Attack Power": ["100%", "105%", "110%", "115%", "115%", "120%", "125%", "130%", "135%", "135%", "140%", "145%", "150%", "155%", "155%"],
+            "Hits": ["1", "1", "1", "1", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "4"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
@@ -2701,11 +2792,14 @@ var data = {
     "Staggering Word":{
         "Usage": "Passive (LUC)",
         "Unlock": "TP Up (Lv 3)",
-        "Description": ".",
+        "Description": "Chance to inflict Stun on all enemies at the start of battle.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["6%", "8%", "10%", "12%", "14%", "15%", "16%", "17%", "18%", "20%"],
+            "Infliction Rate": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -3417,10 +3511,10 @@ var descriptions = {
     "Protector":   "Sturdy knights that keep the party safe from harm.",
     "Dark Hunter": "Ruthless fighters that immobilize then finish off enemies.",
     "Medic":       "Healers that effectively treat any injury or affliction.",
-    "Alchemist":   "Elemental casters that strike the enemy's weakness.",
+    "Alchemist":   "Elemental casters that exploit the enemy's weakness.",
     "Troubadour":  "Musicians that grant buffs to bolster and energize allies.",
-    "Ronin":       "Offense specialists who change stances to adapt to the situation.",
-    "Hexer":       "Support casters that weaken, incapacitate and control the enemy.",
+    "Ronin":       "Offense specialists who change stance to adapt to the situation.",
+    "Hexer":       "Support casters that weaken, disable and control the enemy.",
     "Highlander":  "A Spear user that sacrifices life force to perform powerful attacks.",
     "Gunner":      "A versatile Gun user that can provide damage, binding or healing.",
 
