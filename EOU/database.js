@@ -1579,137 +1579,205 @@ var data = {
     "Fire Formula":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Formula Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Deal ranged Fire damage to one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "20", "20", "20", "20", "20", "20"],
+            "Attack Power": ["110%", "115%", "120%", "125%", "180%", "186%", "192%", "198%", "204%", "300%", "308%", "316%", "324%", "332%", "420%"],
+            "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Inferno Formula":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Fire Formula (Lv 5)",
-        "Description": ".",
+        "Description": "Deal ranged Fire damage to all enemies.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["20", "20", "20", "20", "32", "32", "32", "32", "32", "50", "50", "50", "50", "50", "50"],
+            "Attack Power": ["140%", "145%", "150%", "155%", "220%", "225%", "230%", "235%", "240%", "330%", "335%", "340%", "345%", "350%", "440%"],
+            "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Ice Formula":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Formula Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Deal ranged Ice damage to one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "20", "20", "20", "20", "20", "20"],
+            "Attack Power": ["110%", "115%", "120%", "125%", "180%", "186%", "192%", "198%", "204%", "300%", "308%", "316%", "324%", "332%", "420%"],
+            "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Cocytus Formula":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Ice Formula (Lv 5)",
-        "Description": ".",
+        "Description": "Deal ranged Ice damage to all enemies.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["20", "20", "20", "20", "32", "32", "32", "32", "32", "50", "50", "50", "50", "50", "50"],
+            "Attack Power": ["140%", "145%", "150%", "155%", "220%", "225%", "230%", "235%", "240%", "330%", "335%", "340%", "345%", "350%", "440%"],
+            "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Volt Formula":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Formula Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Deal ranged Volt damage to one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "20", "20", "20", "20", "20", "20"],
+            "Attack Power": ["110%", "115%", "120%", "125%", "180%", "186%", "192%", "198%", "204%", "300%", "308%", "316%", "324%", "332%", "420%"],
+            "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Thor Formula":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Volt Formula (Lv 5)",
-        "Description": ".",
+        "Description": "Deal ranged Volt damage to all enemies.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["20", "20", "20", "20", "32", "32", "32", "32", "32", "50", "50", "50", "50", "50", "50"],
+            "Attack Power": ["140%", "145%", "150%", "155%", "220%", "225%", "230%", "235%", "240%", "330%", "335%", "340%", "345%", "350%", "440%"],
+            "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Flame Formula":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Formula Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Deal ranged Fire damage to one enemy, with splash effect.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["13", "13", "13", "13", "23", "23", "23", "23", "23", "38", "38", "38", "38", "38", "38"],
+            "Attack Power": ["130%", "135%", "140%", "145%", "210%", "217%", "224%", "232%", "240%", "350%", "360%", "370%", "380%", "390%", "490%"],
+            "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+            "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+        }
     },
     "Freeze Formula":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Formula Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Deal ranged Ice damage to one enemy, with pierce effect.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["13", "13", "13", "13", "23", "23", "23", "23", "23", "38", "38", "38", "38", "38", "38"],
+            "Attack Power": ["125%", "130%", "134%", "138%", "193%", "210%", "216%", "222%", "228%", "335%", "345%", "355%", "365%", "375%", "470%"],
+            "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+            "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+        }
     },
     "Spark Formula":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Formula Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Deal ranged Volt damage to an enemy line.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["13", "13", "13", "13", "23", "23", "23", "23", "23", "38", "38", "38", "38", "38", "38"],
+            "Attack Power": ["115%", "119%", "123%", "127%", "188%", "194%", "200%", "205%", "210%", "310%", "318%", "326%", "332%", "340%", "440%"],
+            "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+            "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+        }
     },
     "Dilution":{
         "Usage": "Active (Head)",
         "Unlock": "Flame/Freeze/Spark Formula (Lv 3)",
-        "Description": ".",
+        "Description": "Place a debuff on all enemies for several turns, which increases elemental damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "13", "13", "13", "13", "13", "13"],
+            "Damage Taken↑": ["+20%", "+22%", "+24%", "+25%", "+25%", "+27%", "+28%", "+29%", "+30%", "+30%", "+31%", "+32%", "+33%", "+34%", "+40%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Analysis":{
         "Usage": "Active (Head)",
         "Unlock": "Formula Mastery (Lv 7)",
-        "Description": ".",
+        "Description": "Place a buff on yourself for several turns, which increases damage dealt when hitting a weakness.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "12"],
+            "Damage Dealt↑": ["+35%", "+37%", "+39%", "+41%", "+41%", "+43%", "+45%", "+47%", "+50%", "+50%", "+53%", "+56%", "+58%", "+61%", "+70%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "Pain Formula":{
         "Usage": "Active (Arms, TEC)",
         "Unlock": "Formula Mastery (Lv 10)",
-        "Description": ".",
+        "Description": "Deal melee Bash damage to one enemy. Only usable from the front line, and can only target the enemy front line.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "13", "13", "13", "13", "13", "19", "19", "19", "19", "19", "19"],
+            "Attack Power": ["150%", "155%", "160%", "165%", "190%", "195%", "200%", "205%", "210%", "235%", "240%", "245%", "250%", "255%", "280%"],
+            "Accuracy": ["-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%", "-1%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Firelight":{
         "Usage": "Passive (TEC)",
         "Unlock": "Pain Formula (Lv 1)",
-        "Description": ".",
+        "Description": "At the end of turn, deal ranged Fire damage to enemies that were hit by Pain Formula or had their attacks blocked by Light Formula/Tincture.",
         "Starter": "0",
-        "Max Level": "15",
+        "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Attack Power": ["130%", "136%", "142%", "148%", "154%", "160%", "166%", "172%", "178%", "184%"],
+        }
     },
     "Light Formula":{
         "Usage": "Active (Arms)",
         "Unlock": "Firelight (Lv 1)",
-        "Description": ".",
+        "Description": "Chance to nullify physical hits received this turn. Activation chance starts at 100% and goes down with each activation.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "15", "15", "15", "15", "15", "22", "22", "22", "22", "22", "22"],
+            "Chance Fadeout": ["100%", "92%", "84%", "76%", "60%", "54%", "48%", "43%", "38%", "28%", "24%", "20%", "17%", "15%", "5%"],
+        }
     },
     "Light Tincture":{
         "Usage": "Active (Arms)",
         "Unlock": "Firelight (Lv 1)",
-        "Description": ".",
+        "Description": "Chance to nullify elemental hits received this turn. Activation chance starts at 100% and goes down with each activation.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "15", "15", "15", "15", "15", "22", "22", "22", "22", "22", "22"],
+            "Chance Fadeout": ["100%", "92%", "84%", "76%", "60%", "54%", "48%", "43%", "38%", "28%", "24%", "20%", "17%", "15%", "5%"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
@@ -1725,56 +1793,72 @@ var data = {
     "Return Formula":{
         "Usage": "Active (Field)",
         "Unlock": "TP Up (Lv 1)",
-        "Description": ".",
+        "Description": "Chance to return to town.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["15", "12", "10", "8", "15", "12", "10", "8", "5", "1"],
+            "Success Chance": ["50%", "50%", "50%", "50%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Flee":{
         "Usage": "Active (Legs)",
         "Unlock": "Return Formula (Lv 3)",
-        "Description": ".",
+        "Description": "Attempt to escape the battle at the start of the turn and teleport to the point where you entered the floor. If successful, spend part of the whole party's current HP.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "7", "7", "7", "7", "7", "7"],
+            "Success Chance": ["50%", "55%", "60%", "65%", "70%", "75%", "80%", "85%", "90%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            "HP Loss": ["50%", "50%", "50%", "50%", "25%", "25%", "25%", "25%", "25%", "10%", "8%", "6%", "4%", "2%", "1%"],
+        }
     },
     "Alchemy":{
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 2)",
-        "Description": ".",
+        "Description": "Discarding materials grants Ental equal to a percentage of their sell price.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Convertion Rate": ["20%", "28%", "36%", "43%", "50%", "57%", "63%", "69%", "75%", "80%"],
+        }
     },
     "Scavenge":{
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 3)",
-        "Description": ".",
+        "Description": "Increases enemy drop rates.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Drop Rate↑": ["+3%", "+5%", "+7%", "+9%", "+11%", "+12%", "+13%", "+14%", "+15%", "+16%"],
+        }
     },
     "Sight Formula":{
         "Usage": "Active (Field)",
         "Unlock": "TP Up (Lv 5)",
-        "Description": ".",
+        "Description": "Show the location of all FOEs within a square centered around you. Lasts until you take a step.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["1", "1", "1", "1", "2", "2", "2", "2", "2", "3"],
+            "Square Side": ["23", "25", "27", "29", "43", "47", "51", "55", "59", "999"],
+        }
     },
     "Focus":{
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 10)",
-        "Description": ".",
+        "Description": "At the end of each turn, recover TP if your HP is full.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Gain": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        }
     },
     "Chop":{
         "Usage": "Passive (Field)",
