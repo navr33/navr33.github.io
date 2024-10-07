@@ -1224,7 +1224,7 @@ var data = {
         }
     },
     "Dark Curse":{
-        "Usage": "Active (Head)",
+        "Usage": "Active (Head, LUC)",
         "Unlock": "Bind Heart (Lv 2), Shadow Veil (Lv 2)",
         "Description": "Attempt to inflict Curse on all enemies.",
         "Starter": "0",
@@ -1266,98 +1266,142 @@ var data = {
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
-            "Damage Dealt↑": ["+3%", "+6%", "+9%", "+12%", "+14%", "+16%", "+18%", "+20%", "+22%", "+25%"],
+            "Healing↑": ["+3%", "+6%", "+9%", "+12%", "+14%", "+16%", "+18%", "+20%", "+22%", "+25%"],
         }
     },
     "Cure":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Heal Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Restore HP to one ally.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8", "8", "8", "8", "8", "8"],
+            "Healing Power": ["25", "27", "29", "31", "50", "53", "56", "59", "62", "98", "101", "104", "107", "110", "250"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%", "150%", "150%", "150%", "150%", "150%", "250%"],
+        }
     },
     "Salve":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Cure (Lv 5)",
-        "Description": ".",
+        "Description": "Restore HP to the whole party.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "20", "20", "20", "20", "20", "30", "30", "30", "30", "30", "30"],
+            "Healing Power": ["30", "32", "34", "36", "58", "61", "64", "67", "70", "110", "114", "118", "122", "126", "280"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Unbind":{
         "Usage": "Active (Head)",
         "Unlock": "Heal Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "Remove binds from the targets.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "5", "10", "5", "20", "10", "20", "15", "10", "35", "35", "35", "35", "35", "35"],
+            "Binds Removed": ["1", "1", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+            "Targets": ["Single", "Single", "Single", "Single", "Line", "Line", "Line", "Line", "Line", "Party", "Party", "Party", "Party", "Party", "Party"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Refresh":{
         "Usage": "Active (Head)",
         "Unlock": "Heal Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "Remove ailments from the targets.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "7", "4", "2", "20", "17", "14", "12", "10", "35", "35", "35", "35", "35", "35"],
+            "Targets": ["Single", "Single", "Single", "Single", "Line", "Line", "Line", "Line", "Line", "Party", "Party", "Party", "Party", "Party", "Party"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Immunize":{
         "Usage": "Active (Head)",
         "Unlock": "Unbind (Lv 5), Refresh (Lv 5)",
-        "Description": ".",
+        "Description": "Place a buff on the whole party for several turns, which decreases elemental damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "14", "14", "14", "14", "14", "14"],
+            "Damage Taken↓": ["-15%", "-17%", "-19%", "-20%", "-20%", "-22%", "-23%", "-24%", "-25%", "-25%", "-26%", "-27%", "-28%", "-29%", "-32%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "Regenerate":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Heal Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Place a buff on one ally for several turns, which restores HP at the end of each turn.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "12"],
+            "Healing Power": ["13", "16", "19", "22", "26", "30", "34", "37", "40", "45", "48", "51", "54", "57", "120"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Delayed Heal":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Regenerate (Lv 3)",
-        "Description": ".",
+        "Description": "Prepare a heal that will activate at the start of the next turn, restoring HP to the whole party.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["14", "14", "14", "14", "23", "23", "23", "23", "23", "33", "33", "33", "33", "33", "33"],
+            "Healing Power": ["70", "72", "74", "76", "110", "113", "116", "119", "122", "180", "183", "186", "189", "192", "450"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Heal":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Heal Mastery (Lv 7)",
-        "Description": ".",
+        "Description": "Restore HP to one ally.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "18", "18", "18", "18", "18", "18"],
+            "Healing Power": ["70", "72", "74", "76", "110", "113", "116", "119", "122", "180", "183", "186", "189", "192", "450"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "105%", "105%", "105%", "105%", "105%", "120%", "120%", "120%", "120%", "120%", "150%"],
+        }
     },
     "Revive":{
         "Usage": "Active (Head)",
         "Unlock": "Heal Mastery (Lv 10)",
-        "Description": ".",
+        "Description": "Revive one dead ally.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "18", "18", "18", "18", "18", "25", "25", "25", "25", "25", "25"],
+            "HP Gain": ["1", "5", "10", "20", "80", "90", "102", "115", "130", "270", "300", "330", "360", "400", "999"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "CPR":{
         "Usage": "Active (Head)",
         "Unlock": "Revive (Lv 3)",
-        "Description": ".",
+        "Description": "Place a buff on the whole party for several turns, which gives targets a chance to survive lethal damage with 1 HP. (Buff is consumed when activated)",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["18", "18", "18", "18", "26", "26", "26", "26", "26", "36", "36", "36", "36", "36", "36"],
+            "Activation Chance": ["43%", "48%", "52%", "55%", "55%", "60%", "64%", "67%", "70%", "70%", "75%", "79%", "83%", "86%", "100%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -1371,58 +1415,72 @@ var data = {
         }
     },
     "Anaesthetic":{
-        "Usage": "Active (Head, LUC)",
+        "Usage": "Active (Arms, LUC)",
         "Unlock": "HP Up (Lv 1)",
-        "Description": ".",
+        "Description": "Attempt to inflict Sleep on one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "8", "8", "8", "8", "8", "8"],
+            "Infliction Rate": ["50%", "52%", "54%", "56%", "66%", "69%", "71%", "73%", "75%", "85%", "88%", "90%", "92%", "94%", "110%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Toxin Injection":{
         "Usage": "Active (Arms, LUC)",
         "Unlock": "HP Up (Lv 1)",
-        "Description": ".",
+        "Description": "Attempt to inflict Poison on one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "8", "8", "8", "8", "8", "8"],
+            "Infliction Rate": ["70%", "70%", "70%", "70%", "85%", "85%", "85%", "85%", "85%", "100%", "100%", "100%", "100%", "100%", "130%"],
+            "Poison Power": ["20", "29", "38", "47", "74", "83", "92", "101", "110", "160", "170", "180", "190", "200", "350"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Curare":{
         "Usage": "Active (Arms, LUC)",
         "Unlock": "HP Up (Lv 1)",
-        "Description": ".",
+        "Description": "Attempt to inflict Paralysis on one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
-    },
-    "Anaesthetic":{
-        "Usage": "Active (Arms, LUC)",
-        "Unlock": "HP Up (Lv 1)",
-        "Description": ".",
-        "Starter": "0",
-        "Max Level": "15",
-        "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "8", "8", "8", "8", "8", "8"],
+            "Infliction Rate": ["50%", "52%", "54%", "56%", "66%", "69%", "71%", "73%", "75%", "85%", "88%", "90%", "92%", "94%", "110%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Diagnosis":{
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 5)",
-        "Description": ".",
+        "Description": "Place a buff on an ally line for several turns, which increases Critical rate.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "7", "7", "7", "7", "7", "12", "12", "12", "12", "12", "12"],
+            "Crit Rate↑": ["+30%", "+34%", "+38%", "+42%", "+48%", "+52%", "+56%", "+60%", "+64%", "+70%", "+73%", "+76%", "+79%", "+82%", "+99.9%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "Clear Strike":{
         "Usage": "Active (Arms, TEC)",
         "Unlock": "HP Up (Lv 10)",
-        "Description": ".",
+        "Description": "Staff: Deal melee Bash damage to one enemy. (Uses the STR damage formula but with the user's TEC instead of STR)",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["7", "7", "7", "7", "12", "12", "12", "12", "12", "17", "17", "17", "17", "17", "17"],
+            "Attack Power": ["160%", "166%", "172%", "178%", "209%", "215%", "221%", "227%", "233%", "264%", "270%", "276%", "283%", "289%", "320%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
@@ -1438,29 +1496,37 @@ var data = {
     "Safe Passage":{
         "Usage": "Active (Field)",
         "Unlock": "TP Up (Lv 1)",
-        "Description": ".",
+        "Description": "Temporarily decrease damage taken from damaging floors.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
+            "Damage Taken↓": ["x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15", "x0.1", "x0.01"],
+            "Duration": ["25", "25", "25", "25", "45", "45", "45", "45", "45", "70"],
+        }
     },
     "Scavenge":{
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 3)",
-        "Description": ".",
+        "Description": "Increases enemy drop rates.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Drop Rate↑": ["+3%", "+5%", "+7%", "+9%", "+11%", "+12%", "+13%", "+14%", "+15%", "+16%"],
+        }
     },
     "Focus":{
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 0)",
-        "Description": ".",
+        "Description": "At the end of each turn, recover TP if your HP is full.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Gain": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        }
     },
     "ATK Up":{
         "Usage": "Passive",
@@ -1476,11 +1542,17 @@ var data = {
     "Caduceus":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "ATK Up (Lv 10)",
-        "Description": ".",
+        "Description": "Staff: Deal melee Bash damage to one enemy, with a chance to inflict Stun.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "20", "20", "20", "20", "20", "20"],
+            "Attack Power": ["165%", "170%", "175%", "180%", "220%", "228%", "236%", "244%", "252%", "360%", "370%", "380%", "390%", "400%", "520%"],
+            "Infliction Rate": ["30%", "30%", "30%", "30%", "45%", "45%", "45%", "45%", "45%", "65%", "70%", "75%", "80%", "85%", "100%"],
+            "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-3%", "-3%", "-3%", "-3%", "-3%", "+0%", "+0%", "+0%", "+0%", "+0%", "+20%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "100%", "100%", "100%", "100%", "100%", "150%", "150%", "150%", "150%", "150%", "200%"],
+        }
     },
     "Chop":{
         "Usage": "Passive (Field)",
