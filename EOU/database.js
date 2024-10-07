@@ -2204,137 +2204,223 @@ var data = {
     "Slantwise Cut":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Katana Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Katana: Deal melee Cut damage to one enemy. On the next turn, enables all skills that require a Stance.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "6", "6", "6", "6", "6", "6"],
+            "Attack Power": ["120%", "125%", "130%", "135%", "155%", "160%", "165%", "170%", "175%", "210%", "215%", "220%", "225%", "230%", "255%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Perfect Chaser":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Slantwise Cut (Lv 7)",
-        "Description": ".",
+        "Description": "Katana: Requires any Stance. Prepare to follow up after your allies' normal attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12"],
+            "Attack Power": ["130%", "137%", "144%", "151%", "151%", "159%", "166%", "173%", "180%", "180%", "188%", "195%", "202%", "210%", "230%"],
+            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "6"],
+            "Chance Fadeout": ["35%", "35%", "35%", "35%", "25%", "25%", "25%", "25%", "25%", "15%", "15%", "15%", "15%", "15%", "10%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+        }
     },
     "Upper Stance":{
         "Usage": "Active (No Parts)",
         "Unlock": "Katana Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Katana: Gain the Upper Stance buff for several turns, which increases physical damage dealt and slightly decreases physical damage taken. (Overrides other Stances)",
         "Starter": "1",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["1", "1", "1", "1", "3", "3", "3", "3", "3", "5", "5", "5", "5", "5", "5"],
+            "Damage Dealt↑": ["+12%", "+14%", "+16%", "+18%", "+20%", "+22%", "+24%", "+26%", "+28%", "+30%", "+32%", "+34%", "+36%", "+38%", "+40%"],
+            "Damage Taken↓": ["-5%", "-5%", "-5%", "-5%", "-7%", "-7%", "-7%", "-7%", "-7%", "-10%", "-11%", "-12%", "-13%", "-14%", "-15%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "Horse Slash":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Upper Stance (Lv 1)",
-        "Description": ".",
+        "Description": "Katana: Requires Upper Stance. Deal melee Cut damage to one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10", "10", "10", "10", "10", "10"],
+            "Attack Power": ["150%", "158%", "165%", "173%", "210%", "220%", "230%", "240%", "250%", "300%", "310%", "320%", "330%", "340%", "400%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Flame Grater":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Horse Slash (Lv 3)",
-        "Description": ".",
+        "Description": "Katana: Requires Upper Stance. Deal melee Cut+Fire damage to an enemy line.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "11", "11", "11", "11", "11", "15", "15", "15", "15", "15", "15"],
+            "Attack Power": ["160%", "166%", "172%", "178%", "205%", "211%", "217%", "223%", "229%", "265%", "271%", "277%", "283%", "289%", "330%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Swallow Strike":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Upper Stance (Lv 5)",
-        "Description": ".",
+        "Description": "Katana: Requires Upper Stance. Deal multiple hits of melee Cut damage to one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "18", "18", "18", "18", "18", "18"],
+            "Attack Power": ["125%", "127%", "129%", "131%", "131%", "133%", "135%", "137%", "140%", "140%", "142%", "144%", "146%", "148%", "170%"],
+            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3"],
+            "Max. Hits": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+            "Accuracy": ["-10%", "-9%", "-8%", "-7%", "-6%", "-5%", "-4%", "-3%", "-2%", "-1%", "+0%", "+1%", "+2%", "+3%", "+4%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Clear Stance":{
         "Usage": "Active (No Parts)",
         "Unlock": "Katana Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Katana: Gain the Clear Stance buff for several turns, which decreases physical damage taken and slightly increases physical damage dealt. (Overrides other Stances)",
         "Starter": "1",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["1", "1", "1", "1", "3", "3", "3", "3", "3", "5", "5", "5", "5", "5", "5"],
+            "Damage Taken↓": ["-8%", "-10%", "-12%", "-14%", "-16%", "-17%", "-19%", "-21%", "-23%", "-25%", "-26%", "-28%", "-30%", "-32%", "-33%"],
+            "Damage Dealt↑": ["+5%", "+5%", "+5%", "+5%", "+7%", "+7%", "+7%", "+7%", "+7%", "+10%", "+12%", "+14%", "+16%", "+18%", "+20%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "Razor Dodge":{
         "Usage": "Active (Legs)",
         "Unlock": "Clear Stance (Lv 1)",
-        "Description": ".",
+        "Description": "Katana: Requires Clear Stance. Chance to evade hits received (rolled before the standard accuracy check). Activation chance starts at 100% and goes down with each activation.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10", "10", "10", "10", "10", "10"],
+            "Chance Fadeout": ["100%", "75%", "50%", "40%", "35%", "31%", "28%", "25%", "23%", "21%", "20%", "17%", "14%", "11%", "5%"],
+            "Max. Activations": ["1", "2", "2", "2", "3", "3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+        }
     },
     "Lightning Stab":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Razor Dodge (Lv 3)",
-        "Description": ".",
+        "Description": "Katana: Requires Clear Stance. Deal melee Stab+Volt damage to one enemy, with pierce effect.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["7", "7", "7", "7", "10", "10", "10", "10", "10", "13", "13", "13", "13", "13", "13"],
+            "Attack Power": ["190%", "198%", "206%", "214%", "248%", "256%", "254%", "262%", "270%", "310%", "317%", "323%", "330%", "337%", "375%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Arm Strike":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Clear Stance (Lv 5)",
-        "Description": ".",
+        "Description": "Katana: Requires Clear Stance. Deal melee Cut damage to one enemy, with a chance to inflict Arm Bind.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "11", "11", "11", "11", "11", "15", "15", "15", "15", "15", "15"],
+            "Attack Power": ["190%", "200%", "210%", "220%", "240%", "250%", "260%", "270%", "280%", "300%", "310%", "320%", "330%", "340%", "360%"],
+            "Infliction Rate": ["50%", "50%", "50%", "50%", "60%", "60%", "60%", "60%", "60%", "75%", "76%", "77%", "78%", "80%", "100%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Drawing Stance":{
         "Usage": "Active (No Parts)",
         "Unlock": "Katana Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Katana: Gain the Drawing Stance buff for several turns, which increases accuracy, evasion and action speed. (Overrides other Stances)",
         "Starter": "1",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["1", "1", "1", "1", "3", "3", "3", "3", "3", "5", "5", "5", "5", "5", "5"],
+            "Accuracy↑": ["+13%", "+14%", "+15%", "+16%", "+16%", "+17%", "+18%", "+19%", "+20%", "+20%", "+21%", "+22%", "+23%", "+24%", "+28%"],
+            "Evasion↑": ["+13%", "+14%", "+15%", "+16%", "+16%", "+17%", "+18%", "+19%", "+20%", "+20%", "+21%", "+22%", "+23%", "+24%", "+28%"],
+            "Speed↑": ["x1.2", "x1.24", "x1.28", "x1.32", "x1.44", "x1.48", "x1.52", "x1.56", "x1.6", "x1.72", "x1.76", "x1.8", "x1.84", "x1.88", "x2.0"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "Beheading Cut":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Drawing Stance (Lv 1)",
-        "Description": ".",
+        "Description": "Katana: Requires Drawing Stance. Deal melee Cut damage to one enemy, with a chance to inflict Instant Death.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10", "10", "10", "10", "10", "10"],
+            "Attack Power": ["135%", "143%", "151%", "159%", "180%", "188%", "196%", "204%", "212%", "240%", "248%", "256%", "264%", "272%", "300%"],
+            "Infliction Rate": ["35%", "35%", "35%", "35%", "50%", "50%", "50%", "50%", "50%", "65%", "66%", "67%", "68%", "69%", "100%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Frigid Slash":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Beheading Cut (Lv 3)",
-        "Description": ".",
+        "Description": "Katana: Requires Drawing Stance. Deal ranged Cut+Ice damage to all enemies.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "18", "18", "18", "18", "18", "18"],
+            "Attack Power": ["155%", "160%", "165%", "170%", "196%", "202%", "208%", "214%", "220%", "255%", "261%", "268%", "274%", "282%", "315%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Charging Slash":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Drawing Stance (Lv 5)",
-        "Description": ".",
+        "Description": "Katana: Requires Drawing Stance. Deal melee Stab damage to one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "11", "11", "11", "11", "11", "15", "15", "15", "15", "15", "15"],
+            "Attack Power": ["220%", "230%", "240%", "250%", "285%", "295%", "305%", "315%", "325%", "370%", "380%", "390%", "400%", "410%", "455%"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Peerless Stance":{
         "Usage": "Active (Arms)",
         "Unlock": "Katana Mastery (Lv 10)",
-        "Description": ".",
+        "Description": "Katana: Only usable if you have another Stance buff. Gain the Peerless Stance buff for 3 turns, which improves offense, defense and agility and enables all skills that require a Stance. (Overrides other Stances)",
         "Starter": "1",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "7", "7", "7", "7", "7", "7"],
+            "Damage Dealt↑": ["+12%", "+14%", "+16%", "+18%", "+22%", "+24%", "+26%", "+28%", "+30%", "+35%", "+37%", "+39%", "+41%", "+43%", "+50%"],
+            "Damage Taken↓": ["-7%", "-9%", "-11%", "-13%", "-17%", "-19%", "-21%", "-23%", "-25%", "-28%", "-30%", "-32%", "-34%", "-36%", "-40%"],
+            "Accuracy↑": ["+10%", "+10.8%", "+11.6%", "+12.4%", "+13.2%", "+14%", "+14.8%", "+15.6%", "+16.4%", "+18%", "+18.8%", "+19.6%", "+20.4%", "+21.2%", "+23%"],
+            "Evasion↑": ["+10%", "+10.8%", "+11.6%", "+12.4%", "+13.2%", "+14%", "+14.8%", "+15.6%", "+16.4%", "+18%", "+18.8%", "+19.6%", "+20.4%", "+21.2%", "+23%"],
+            "Speed↑": ["x1.2", "x1.24", "x1.28", "x1.32", "x1.44", "x1.48", "x1.52", "x1.56", "x1.6", "x1.72", "x1.76", "x1.8", "x1.84", "x1.88", "x2.0"],
+            "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "ATK Up":{
         "Usage": "Passive",
@@ -2350,20 +2436,25 @@ var data = {
     "Crit Up":{
         "Usage": "Passive",
         "Unlock": "ATK Up (Lv 5)",
-        "Description": ".",
+        "Description": "Increases Critical rate.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Crit Rate↑": ["+8%", "+9.3%", "+10.6%", "+12%", "+13.3%", "+14.6%", "+16%", "+17.3%", "+18.6%", "+20%"],
+        }
     },
     "Severing Slash":{
-        "Usage": "Passive",
+        "Usage": "Passive (LUC)",
         "Unlock": "Crit Up (Lv 5)",
-        "Description": ".",
+        "Description": "Chance to inflict Instant Death on all enemies at the start of battle. Activation chance grows based on the level difference between the user and the highest-level enemy. (Equal level multiplies the chance by 1. Difference of 15 or more multiplies the chance by 3)",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["1%", "2%", "3%", "4%", "5%", "6%", "7%", "8%", "9%", "10%"],
+            "Infliction Rate": ["55%", "60%", "65%", "70%", "75%", "80%", "85%", "90%", "95%", "100%"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -2379,11 +2470,16 @@ var data = {
     "Breath":{
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 3)",
-        "Description": ".",
+        "Description": "Restore HP to yourself and your adjacent allies. Healing is based on each target's Max HP.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10", "10", "10", "10", "10", "10"],
+            "HP Gain (Fixed)": ["20", "23", "26", "29", "40", "44", "48", "52", "56", "80", "85", "90", "95", "100", "150"],
+            "HP Gain (Max HP)": ["25%", "26%", "27%", "28%", "32%", "33%", "34%", "35%", "36%", "40%", "42%", "44%", "46%", "48%", "60%"],
+            "Action Speed": ["120%", "120%", "120%", "120%", "150%", "150%", "150%", "150%", "150%", "200%", "200%", "200%", "200%", "200%", "500%"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
@@ -2397,13 +2493,17 @@ var data = {
         }
     },
     "Indomitable Cry":{
-        "Usage": "Active (Head)",
+        "Usage": "Active (Head, LUC)",
         "Unlock": "TP Up (Lv 3)",
-        "Description": ".",
+        "Description": "Attempt to inflict Fear on all enemies.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "16", "16", "16", "16", "16", "16"],
+            "Infliction Rate": ["35%", "36%", "37%", "38%", "44%", "45%", "46%", "47%", "48%", "55%", "56%", "57%", "58%", "59%", "68%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Mine":{
         "Usage": "Passive (Field)",
