@@ -1874,164 +1874,249 @@ var data = {
     "Song Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": ".",
+        "Description": "Increases action speed when using Song skills. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Speed↑": ["x1.1", "x1.2", "x1.3", "x1.4", "x1.5", "x1.6", "x1.7", "x1.8", "x1.9", "x2.0"],
+        }
     },
     "Warrior Song":{
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on the whole party for several turns, which increases damage dealt.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "12"],
+            "Damage Dealt↑": ["+20%", "+22%", "+24%", "+25%", "+25%", "+27%", "+28%", "+29%", "+30%", "+30%", "+31%", "+32%", "+33%", "+34%", "+40%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Shelter Song":{
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on the whole party for several turns, which decreases damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "12"],
+            "Damage Taken↓": ["-10%", "-12%", "-14%", "-15%", "-15%", "-17%", "-18%", "-19%", "-20%", "-20%", "-21%", "-22%", "-23%", "-24%", "-27%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Holy Gift":{
         "Usage": "Passive",
         "Unlock": "Warrior/Shelter Song (Lv 5)",
-        "Description": ".",
+        "Description": "Increases EXP earned by the team at the end of battle. (Stacks additively across different party members)",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "EXP Gain↑": ["+10%", "+12%", "+14%", "+16%", "+18%", "+20%", "+21%", "+22%", "+23%", "+25%"],
+        }
     },
     "Skanda Song":{
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on the whole party for several turns, which increases action speed.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "9", "9", "9", "9", "9", "9"],
+            "Speed↑": ["x1.14", "x1.16", "x1.18", "x1.2", "x1.2", "x1.22", "x1.24", "x1.26", "x1.28", "x1.28", "x1.3", "x1.32", "x1.34", "x1.36", "x1.4"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Insight Melody":{
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on the whole party for several turns, which increases accuracy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "15", "15", "15", "15", "15", "15"],
+            "Accuracy↑": ["+22%", "+23%", "+24%", "+25%", "+26%", "+27%", "+28%", "+29%", "+30%", "+31%", "+32%", "+33%", "+34%", "+35%", "+40%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Recovery Aria":{
         "Usage": "Active (Head)",
         "Unlock": "Skanda Song (Lv 5), Insight Melody (Lv 5)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on the whole party for several turns, which increases natural bind/ailment recovery rate.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "22", "22", "22", "22", "22", "22"],
+            "Recovery Rate↑": ["+14%", "+17%", "+20%", "+23%", "+23%", "+26%", "+29%", "+32%", "+35%", "+35%", "+38%", "+41%", "+44%", "+47%", "+50%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Fire Prelude":{
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on one ally for several turns, which imbues their weapon with Fire damage and increases all damage dealt. (Skips the diminishing returns system)",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10", "10", "10", "10", "10", "10"],
+            "Damage Dealt↑": ["+14%", "+16%", "+18%", "+20%", "+20%", "+22%", "+24%", "+26%", "+28%", "+28%", "+30%", "+32%", "+34%", "+36%", "+40%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Flame Fantasia":{
         "Usage": "Active (Head)",
         "Unlock": "Fire Prelude (Lv 3)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on all allies and a debuff on all enemies for several turns. The buff increases Fire resistance, while the debuff decreases it.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "18", "18", "18", "18", "18", "18"],
+            "Resistance↑\n(Allies)": ["+35%", "+38%", "+41%", "+44%", "+44%", "+47%", "+50%", "+53%", "+55%", "+55%", "+58%", "+61%", "+64%", "+67%", "+75%"],
+            "Resistance↓\n(Enemies)": ["-25%", "-27%", "-29%", "-31%", "-31%", "-33%", "-35%", "-37%", "-40%", "-40%", "-42%", "-44%", "-46%", "-48%", "-55%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Ice Prelude":{
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on one ally for several turns, which imbues their weapon with Ice damage and increases all damage dealt. (Skips the diminishing returns system)",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10", "10", "10", "10", "10", "10"],
+            "Damage Dealt↑": ["+14%", "+16%", "+18%", "+20%", "+20%", "+22%", "+24%", "+26%", "+28%", "+28%", "+30%", "+32%", "+34%", "+36%", "+40%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Frost Fantasia":{
         "Usage": "Active (Head)",
         "Unlock": "Ice Prelude (Lv 3)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on all allies and a debuff on all enemies for several turns. The buff increases Ice resistance, while the debuff decreases it.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "18", "18", "18", "18", "18", "18"],
+            "Resistance↑\n(Allies)": ["+35%", "+38%", "+41%", "+44%", "+44%", "+47%", "+50%", "+53%", "+55%", "+55%", "+58%", "+61%", "+64%", "+67%", "+75%"],
+            "Resistance↓\n(Enemies)": ["-25%", "-27%", "-29%", "-31%", "-31%", "-33%", "-35%", "-37%", "-40%", "-40%", "-42%", "-44%", "-46%", "-48%", "-55%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Volt Prelude":{
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on one ally for several turns, which imbues their weapon with Volt damage and increases all damage dealt. (Skips the diminishing returns system)",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "8", "8", "8", "8", "8", "10", "10", "10", "10", "10", "10"],
+            "Damage Dealt↑": ["+14%", "+16%", "+18%", "+20%", "+20%", "+22%", "+24%", "+26%", "+28%", "+28%", "+30%", "+32%", "+34%", "+36%", "+40%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Shock Fantasia":{
         "Usage": "Active (Head)",
         "Unlock": "Volt Prelude (Lv 3)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on all allies and a debuff on all enemies for several turns. The buff increases Volt resistance, while the debuff decreases it.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "18", "18", "18", "18", "18", "18"],
+            "Resistance↑\n(Allies)": ["+35%", "+38%", "+41%", "+44%", "+44%", "+47%", "+50%", "+53%", "+55%", "+55%", "+58%", "+61%", "+64%", "+67%", "+75%"],
+            "Resistance↓\n(Enemies)": ["-25%", "-27%", "-29%", "-31%", "-31%", "-33%", "-35%", "-37%", "-40%", "-40%", "-42%", "-44%", "-46%", "-48%", "-55%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Echoing Rondo":{
-        "Usage": "Active (Head)",
+        "Usage": "Active (Head, TEC)",
         "Unlock": "Song Mastery (Lv 7)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on the whole party for several turns, which makes targets recover HP when another ally receives single-target healing. (Each target receives healing based on their own stats)",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "13", "13", "13", "13", "13", "18", "18", "18", "18", "18", "18"],
+            "Healing Power": ["45", "48", "51", "53", "53", "56", "59", "62", "64", "64", "66", "68", "70", "72", "80"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Healing Lullaby":{
-        "Usage": "Active (Head)",
+        "Usage": "Active (Head, TEC)",
         "Unlock": "Echoing Rondo (Lv 3)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on the whole party for several turns, which restores HP at the end of each turn.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20", "20", "20", "20", "20", "20"],
+            "Healing Power": ["12", "15", "18", "21", "21", "25", "29", "33", "38", "38", "41", "44", "47", "50", "80"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Eerie Chorus":{
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 10)",
-        "Description": ".",
+        "Description": "(Song) Remove buffs from all enemies.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["40", "35", "30", "25", "40", "35", "30", "25", "20", "20", "20", "20", "20", "20", "20"],
+            "Buffs Removed": ["1", "1", "1", "1", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Peace Ballad":{
         "Usage": "Active (Head)",
         "Unlock": "Eerie Chorus (Lv 5)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on the whole party for several turns, which restores TP at the end of each turn.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["20", "17", "14", "12", "30", "27", "24", "22", "20", "40", "40", "40", "40", "40", "40"],
+            "TP Gain": ["4", "4", "4", "4", "6", "6", "6", "6", "6", "8", "8", "8", "8", "8", "10"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "Taboo Rondo":{
         "Usage": "Active (Head)",
         "Unlock": "Healing Lullaby (Lv 5), Peace Ballad (Lv 5)",
-        "Description": ".",
+        "Description": "(Song) Increase the remaining duration of buffs and debuffs on all allies and enemies.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["20", "17", "13", "10", "30", "25", "21", "18", "15", "30", "30", "30", "30", "30", "30"],
+            "Duration↑": ["+1", "+1", "+1", "+1", "+2", "+2", "+2", "+2", "+2", "+3", "+3", "+3", "+3", "+3", "+3"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -2047,29 +2132,41 @@ var data = {
     "Frightful Yawl":{
         "Usage": "Active (Field)",
         "Unlock": "HP Up (Lv 1)",
-        "Description": ".",
+        "Description": "Temporarily decrease the enemy encounter rate.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "6", "6", "9", "9", "9", "9", "9", "12"],
+            "Encounters↓": ["x0.8", "x0.77", "x0.74", "x0.71", "x0.57", "x0.54", "x0.51", "x0.48", "x0.45", "x0.3"],
+            "Duration": ["30", "30", "30", "30", "60", "60", "60", "60", "60", "100"],
+        }
     },
     "Restful Tune":{
-        "Usage": "Active (Field)",
+        "Usage": "Active (Field, TEC)",
         "Unlock": "HP Up (Lv 3)",
-        "Description": ".",
+        "Description": "Restore HP to one ally.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["1", "1", "1", "1", "2", "2", "2", "2", "2", "3"],
+            "Healing Power": ["10", "12", "14", "16", "40", "42", "44", "46", "48", "130"],
+        }
     },
     "Barbaric March":{
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 10)",
-        "Description": ".",
+        "Description": "(Song) Place a buff on the whole party for several turns, which increases Max HP.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "22", "22", "22", "22", "22", "22"],
+            "Max HP↑": ["+30%", "+32%", "+34%", "+36%", "+36%", "+38%", "+40%", "+42%", "+45%", "+45%", "+47%", "+49%", "+51%", "+53%", "+60%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+        }
     },
     "TP Up":{
         "Usage": "Passive",
