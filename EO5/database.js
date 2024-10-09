@@ -92,7 +92,7 @@ var data = {
         "Wind Curtain":{
             "Usage": "Active (Head)",
             "Unlock": "Predict (Lv 3)",
-            "Description": "Place a buff on an ally line for 1~2 turns, which lets them evade one physical attack. (Buff is consumed when activated)",
+            "Description": "Place a buff on an ally line for a few turns, which lets them evade one physical attack. (Buff is consumed when activated)",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -301,7 +301,7 @@ var data = {
         "Chain Plus":{
             "Usage": "Active (Head)",
             "Unlock": "Chain Killer (Lv 5)",
-            "Description": "Place a buff on yourself for 3~5 turns, which increases Chain damage and activation chance.",
+            "Description": "Place a buff on yourself for several turns, which increases Chain damage and activation chance.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -342,8 +342,7 @@ var data = {
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "17", "17", "17", "17", "17", "23"],
                 "Attack Power": ["125%", "131%", "137%", "143%", "143%", "151%", "159%", "167%", "175%", "175%"],
-                "Min. Hits": ["1", "1", "1", "1", "2", "2", "2", "2", "2", "2"],
-                "Max. Hits": ["4", "4", "4", "4", "4", "4", "4", "4", "4", "5"],
+                "Hits": ["1~4", "1~4", "1~4", "1~4", "2~4", "2~4", "2~4", "2~4", "2~4", "2~5"],
                 "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
                 "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
             }
@@ -463,7 +462,7 @@ var data = {
         "Dragon Roar":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on one ally for 3~5 turns, which increases enemy aggro and slightly decreases all damage taken.",
+            "Description": "Place a buff on one ally for several turns, which increases enemy aggro and slightly decreases all damage taken.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -493,7 +492,7 @@ var data = {
         "Defense Form":{
             "Usage": "Active (Head)",
             "Unlock": "Decoy Bunker (Lv 2)",
-            "Description": "Only usable if there's a Bunker/Turret. Place a buff on the whole party for 3~5 turns, which decreases physical damage taken.",
+            "Description": "Only usable if there's a Bunker/Turret. Place a buff on the whole party for several turns, which decreases physical damage taken.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -989,7 +988,7 @@ var data = {
         "Fault Blocker":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Place a buff on your line for 3~5 turns, which increases resistance against binds/ailments.",
+            "Description": "Place a buff on your line for several turns, which increases resistance against binds/ailments.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1038,7 +1037,7 @@ var data = {
         "Vajra Stance":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Place a buff on your line for 3~5 turns, which decreases physical damage taken.",
+            "Description": "Place a buff on your line for several turns, which decreases physical damage taken.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1573,7 +1572,7 @@ var data = {
         "Amplifier":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on an ally line for 3~5 turns, which increases elemental damage dealt.",
+            "Description": "Place a buff on an ally line for several turns, which increases elemental damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1816,7 +1815,7 @@ var data = {
         "Mana Flow":{
             "Usage": "Active (Head)",
             "Unlock": "Explosion (Lv 3), Hailstorm (Lv 3), Thunderbreak (Lv 3)",
-            "Description": "Place a buff on yourself for 3~5 turns, which grants a percentage of the TP you spend each turn to a random ally.",
+            "Description": "Place a buff on yourself for several turns, which grants a percentage of the TP you spend each turn to a random ally.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1940,7 +1939,7 @@ var data = {
         "Soul Candy":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Sacrifice a Wraith to place a buff on the whole party for 3~5 turns, which decreases elemental damage taken.",
+            "Description": "Sacrifice a Wraith to place a buff on the whole party for several turns, which decreases elemental damage taken.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2511,14 +2510,13 @@ var data = {
         "Million Arrows":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Power Shot (Lv 5)",
-            "Description": "Bow: Prepare an attack that will hit on the next turn, at the start of the turn. Deals multiple hits of ranged Stab damage to random enemies (max 4 hits each). (Can't use again while preparing. Cancelled if you die while preparing)",
+            "Description": "Bow: Prepare an attack that will hit on the next turn, at the start of the turn. Deals multiple hits of ranged Stab damage to random enemies (max 4 hits each).",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["13", "13", "13", "13", "19", "19", "19", "19", "19", "27"],
                 "Attack Power": ["100%", "112%", "124%", "136%", "136%", "152%", "168%", "184%", "200%", "200%"],
-                "Min. Hits": ["4", "4", "4", "4", "6", "6", "6", "6", "6", "8"],
-                "Max. Hits": ["16", "16", "16", "16", "16", "16", "16", "16", "16", "16"],
+                "Hits": ["4~16", "4~16", "4~16", "4~16", "6~16", "6~16", "6~16", "6~16", "6~16", "8~16"],
                 "Accuracy": ["-50%", "-50%", "-50%", "-50%", "-50%", "-50%", "-50%", "-50%", "-50%", "-50%"],
                 "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
             }
@@ -2751,8 +2749,7 @@ var data = {
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "20"],
                 "Attack Power": ["100%", "104%", "108%", "112%", "136%", "141%", "146%", "151%", "156%", "180%"],
-                "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3"],
-                "Max. Hits": ["4", "4", "4", "4", "5", "5", "5", "5", "5", "6"],
+                "Hits": ["2~4", "2~4", "2~4", "2~4", "2~5", "2~5", "2~5", "2~5", "2~5", "3~6"],
                 "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
                 "Action Speed": ["85%", "85%", "85%", "85%", "85%", "85%", "85%", "85%", "85%", "85%"],
             }
@@ -2773,7 +2770,7 @@ var data = {
         "High Ground":{
             "Usage": "Active (Legs)",
             "Unlock": "N/A",
-            "Description": "Place a buff on your line for 3~5 turns, which increases physical damage dealt.",
+            "Description": "Place a buff on your line for several turns, which increases physical damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3058,7 +3055,7 @@ var data = {
         "Ruinous Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases physical/elemental damage dealt.",
+            "Description": "(Prayer) Place a buff on the whole party for several turns, which increases physical/elemental damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3071,7 +3068,7 @@ var data = {
         "Aegis Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which decreases physical/elemental damage taken.",
+            "Description": "(Prayer) Place a buff on the whole party for several turns, which decreases physical/elemental damage taken.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3084,7 +3081,7 @@ var data = {
         "Focus Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases accuracy.",
+            "Description": "(Prayer) Place a buff on the whole party for several turns, which increases accuracy.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3110,7 +3107,7 @@ var data = {
         "Blaze Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases Fire resistance and imbues their weapon with Fire damage.",
+            "Description": "(Prayer) Place a buff on the whole party for several turns, which increases Fire resistance and imbues their weapon with Fire damage.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3123,7 +3120,7 @@ var data = {
         "Hail Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases Ice resistance and imbues their weapon with Ice damage.",
+            "Description": "(Prayer) Place a buff on the whole party for several turns, which increases Ice resistance and imbues their weapon with Ice damage.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3136,7 +3133,7 @@ var data = {
         "Bolt Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases Volt resistance and imbues their weapon with Volt damage.",
+            "Description": "(Prayer) Place a buff on the whole party for several turns, which increases Volt resistance and imbues their weapon with Volt damage.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3297,7 +3294,7 @@ var data = {
         "Exorcism Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "Heaven's Gift (Lv 3)",
-            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases bind/ailment resistance.",
+            "Description": "(Prayer) Place a buff on the whole party for several turns, which increases bind/ailment resistance.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3310,7 +3307,7 @@ var data = {
         "Haste Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "Heaven's Gift (Lv 3)",
-            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases evasion.",
+            "Description": "(Prayer) Place a buff on the whole party for several turns, which increases evasion.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3323,7 +3320,7 @@ var data = {
         "Vitality Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "Heaven's Gift (Lv 3)",
-            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases Max HP.",
+            "Description": "(Prayer) Place a buff on the whole party for several turns, which increases Max HP.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3583,7 +3580,7 @@ var data = {
         "Shared Nostrum":{
             "Usage": "Active (Head)",
             "Unlock": "Herb Foraging (Lv 5)",
-            "Description": "Place a buff on yourself for 3~5 turns, which increases the area of effect (Single → Line → Party) of Herb skills but decreases their action speed and HP restored.",
+            "Description": "Place a buff on yourself for several turns, which increases the area of effect (Single → Line → Party) of Herb skills but decreases their action speed and HP restored.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3610,7 +3607,7 @@ var data = {
         "Delayed Herb":{
             "Usage": "Active (Arms, WIS)",
             "Unlock": "N/A",
-            "Description": "(Herb) Prepare to restore HP to the whole party at the start of the next turn. (Cannot use it again while it's in preparation).",
+            "Description": "(Herb) Prepare a heal that will activate at the start of the next turn, restoring HP to the whole party.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3622,7 +3619,7 @@ var data = {
         "Lingering Scent":{
             "Usage": "Active (No Parts)",
             "Unlock": "Reflex/Delayed Herb (Lv 3)",
-            "Description": "Place a buff on the whole party for 5~9 turns, which at the end of each turn repeats the effect (with decreased potency) of the last Herb skill they have received since this buff was applied.",
+            "Description": "Place a buff on the whole party for several turns, which at the end of each turn repeats the effect (with decreased potency) of the last Herb skill they have received since this buff was applied.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -5110,7 +5107,7 @@ var data = {
         "Ruinous Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "Prayer Scythe",
-            "Description": "(Prayer) Place a buff on the whole party for 3~5 turns, which increases damage dealt.",
+            "Description": "(Prayer) Place a buff on the whole party for several turns, which increases damage dealt.",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -5284,7 +5281,7 @@ var data = {
         "Mana Flow":{
             "Usage": "Active (Head)",
             "Unlock": "Reliquary",
-            "Description": "Place a buff on yourself for 3~4 turns, which grants a percentage of the TP you spend each turn to a random ally. (Incorrectly called Magic Flow in the weapon's description)",
+            "Description": "Place a buff on yourself for several turns, which grants a percentage of the TP you spend each turn to a random ally. (Incorrectly called Magic Flow in the weapon's description)",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -5327,7 +5324,7 @@ var data = {
         "Aegis Prayer":{
             "Usage": "Active (Head)",
             "Unlock": "Sequoian Bow",
-            "Description": "(Prayer) Place a buff on the whole party for 3~4 turns, which decreases physical/elemental damage taken.",
+            "Description": "(Prayer) Place a buff on the whole party for several turns, which decreases physical/elemental damage taken.",
             "Starter": "0",
             "Max Level": "5",
             "Data": {

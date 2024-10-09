@@ -257,10 +257,9 @@ var data = {
         "Data": {
             "TP Cost": ["7", "7", "8", "8", "9", "9", "10", "10", "11", "12"],
             "Attack Power": ["105%", "108%", "111%", "114%", "117%", "120%", "123%", "127%", "131%", "135%"],
+            "Hits": ["2~3", "2~3", "2~4", "2~4", "2~4", "2~5", "2~5", "2~5", "2~6", "3~6"],
             "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
             "Action Speed": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3"],
-            "Max. Hits": ["3", "3", "4", "4", "4", "5", "5", "5", "6", "6"],
         }
     },
     "Bind Cut":{
@@ -299,8 +298,7 @@ var data = {
         "Data": {
             "TP Cost": ["13", "14", "15", "17", "18", "19", "22", "23", "24", "27"],
             "Attack Power": ["80%", "82%", "84%", "84%", "86%", "88%", "88%", "90%", "92%", "95%"],
-            "Min. Hits": ["3", "3", "3", "3", "3", "3", "3", "3", "3", "4"],
-            "Max. Hits": ["3", "3", "3", "4", "4", "4", "5", "5", "5", "5"],
+            "Hits": ["3", "3", "3", "3~4", "3~4", "3~4", "3~5", "3~5", "3~5", "4~5"],
             "Accuracy": ["-10%", "-9%", "-8%", "-7%", "-6%", "-5%", "-4%", "-3%", "-2%", "-1%"],
             "Action Speed": ["+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9"],
         }
@@ -366,8 +364,7 @@ var data = {
         "Data": {
             "TP Cost": ["10", "11", "12", "14", "15", "17", "18", "20", "22", "25"],
             "Attack Power": ["80%", "82%", "84%", "84%", "86%", "86%", "88%", "88%", "90%", "90%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
-            "Max. Hits": ["5", "5", "5", "6", "6", "7", "7", "8", "8", "9"],
+            "Hits": ["2~5", "2~5", "2~5", "2~6", "2~6", "2~7", "2~7", "2~8", "2~8", "2~9"],
             "Accuracy": ["-30%", "-30%", "-30%", "-40%", "-40%", "-40%", "-40%", "-55%", "-55%", "-55%"],
             "Action Speed": ["-5", "-5", "-5", "-5", "-5", "-5", "-5", "-5", "-5", "-5"],
         }
@@ -783,8 +780,7 @@ var data = {
         "Data": {
             "TP Cost": ["4", "5", "6", "7", "8", "9", "10", "11", "12", "14"],
             "Attack Power": ["70%", "71%", "71%", "72%", "74%", "74%", "76%", "78%", "80%", "80%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
-            "Max. Hits": ["2", "2", "3", "3", "3", "4", "4", "4", "4", "5"],
+            "Hits": ["2", "2", "2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "2~5"],
             "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
             "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
         }
@@ -852,8 +848,7 @@ var data = {
         "Max Level": "10",
         "Data": {
             "Activation Chance": ["10%", "13%", "16%", "19%", "21%", "24%", "27%", "30%", "33%", "36%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
-            "Max. Hits": ["2", "2", "2", "2", "2", "2", "2", "3", "3", "4"],
+            "Hits": ["2", "2", "2", "2", "2", "2", "2", "2~3", "2~3", "2~4"],
         }
     },
     "Pincushion":{
@@ -865,10 +860,9 @@ var data = {
         "Data": {
             "TP Cost": ["19", "20", "21", "26", "27", "28", "29", "30", "31", "32"],
             "Attack Power": ["110%", "113%", "117%", "121%", "125%", "129%", "133%", "137%", "141%", "145%"],
+            "Hits": ["1~2", "1~2", "1~2", "1~3", "1~3", "1~3", "1~3", "1~3", "1~3", "1~3"],
             "Accuracy": ["-10%", "-9%", "-8%", "-7%", "-6%", "-5%", "-4%", "-3%", "-2%", "-1%"],
             "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
-            "Min. Hits": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1"],
-            "Max. Hits": ["2", "2", "2", "3", "3", "3", "3", "3", "3", "3"],
         }
     },
     "Eagle Eye":{
@@ -1020,8 +1014,7 @@ var data = {
         "Data": {
             "TP Cost": ["7", "8", "10", "11", "12", "14", "16", "18", "20", "22"],
             "Attack Power": ["80%", "85%", "85%", "90%", "95%", "95%", "100%", "105%", "105%", "110%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "3", "3"],
-            "Max. Hits": ["2", "2", "3", "3", "3", "4", "4", "4", "4", "4"],
+            "Hits": ["2", "2", "2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "3~4", "3~4"],
             "Accuracy": ["-10%", "-9%", "-8%", "-7%", "-6%", "-5%", "-4%", "-3%", "-2%", "-1%"],
             "Action Speed": ["+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9"],
         }
@@ -1035,8 +1028,7 @@ var data = {
         "Data": {
             "TP Cost": ["18", "19", "20", "22", "24", "26", "29", "32", "36", "40"],
             "Attack Power": ["100%", "105%", "110%", "117.5%", "125%", "132.5%", "140%", "147.5%", "155%", "165%"],
-            "Min. Hits": ["3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
-            "Max. Hits": ["3", "3", "4", "4", "4", "4", "5", "5", "5", "5"],
+            "Hits": ["3", "3", "3~4", "3~4", "3~4", "3~4", "3~5", "3~5", "3~5", "3~5"],
             "Accuracy": ["-10%", "-9%", "-8%", "-7%", "-6%", "-5%", "-4%", "-3%", "-2%", "-1%"],
             "Action Speed": ["+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9", "+9"],
         }
@@ -1284,8 +1276,7 @@ var data = {
         "Data": {
             "TP Cost": ["10", "11", "12", "14", "15", "17", "18", "20", "22", "25"],
             "Attack Power": ["70%", "75%", "75%", "80%", "85%", "85%", "90%", "90%", "100%", "100%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
-            "Max. Hits": ["2", "2", "3", "3", "3", "4", "4", "4", "4", "5"],
+            "Hits": ["2", "2", "2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "2~5"],
             "Accuracy": ["-5%", "-5%", "-4%", "-4%", "-3%", "-3%", "-2%", "-2%", "-1%", "-1%"],
             "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
         }
@@ -1579,8 +1570,7 @@ var data = {
         "Data": {
             "TP Cost": ["30", "32", "34", "37", "40", "43", "47", "51", "55", "60"],
             "Attack Power": ["35%", "38%", "38%", "41%", "41%", "44%", "44%", "47%", "47%", "50%"],
-            "Min. Hits": ["3", "3", "3", "3", "4", "4", "4", "4", "5", "5"],
-            "Max. Hits": ["4", "4", "5", "5", "5", "5", "6", "6", "6", "6"],
+            "Hits": ["3~4", "3~4", "3~5", "3~5", "4~5", "4~5", "4~6", "4~6", "5~6", "5~6"],
             "Accuracy": ["-5%", "-5%", "-4%", "-4%", "-3%", "-3%", "-2%", "-2%", "-1%", "-1%"],
             "Action Speed": ["-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12", "-12"],
         }
@@ -1756,8 +1746,7 @@ var data = {
             "Beast HP": ["100", "115", "125", "140", "150", "160", "170", "180", "190", "200"],
             "Attack Power": ["65%", "68%", "70%", "73%", "76%", "78%", "81%", "84%", "87%", "90%"],
             "Infliction Rate": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
-            "Max. Hits": ["2", "2", "3", "3", "3", "4", "4", "4", "4", "5"],
+            "Hits": ["2", "2", "2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "2~5"],
             "Accuracy": ["-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%"],
         }
     },
@@ -1910,7 +1899,7 @@ var data = {
     "Snipe":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Bolt Mastery (Lv 2)",
-        "Description": "Crossbow: At the end of turn, deal ranged Stab damage to all enemies afflicted with ailments.",
+        "Description": "Crossbow: At the end of turn, deal ranged weapon-based damage to all enemies afflicted with ailments.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -1922,7 +1911,7 @@ var data = {
     "Sharpshooter":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Bolt Mastery (Lv 2)",
-        "Description": "Crossbow: At the end of turn, deal ranged Stab damage to all enemies afflicted with binds.",
+        "Description": "Crossbow: At the end of turn, deal ranged weapon-based damage to all enemies afflicted with binds.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -1940,8 +1929,7 @@ var data = {
         "Data": {
             "TP Cost": ["7", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
             "Attack Power": ["100%", "102%", "104%", "107%", "110%", "113%", "116%", "119%", "122%", "125%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "3", "3"],
-            "Max. Hits": ["3", "3", "3", "4", "4", "4", "5", "5", "5", "5"],
+            "Hits": ["2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~5", "2~5", "3~5", "3~5"],
             "Accuracy": ["-20%", "-20%", "-20%", "-20%", "-20%", "-20%", "-20%", "-20%", "-20%", "-20%"],
             "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
         }
@@ -2340,8 +2328,7 @@ var data = {
             "TP Cost": ["11", "12", "13", "14", "15", "17", "18", "19", "21", "23"],
             "Attack Power\n(Day)": ["104%", "109%", "114%", "119%", "124%", "127%", "133%", "139%", "143%", "150%"],
             "Attack Power\n(Night)": ["80%", "82%", "84%", "86%", "88%", "90%", "92%", "94%", "97%", "100%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
-            "Max. Hits": ["3", "3", "3", "3", "3", "4", "4", "4", "4", "4"],
+            "Hits": ["2~3", "2~3", "2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "2~4"],
             "Accuracy": ["-10%", "-9%", "-8%", "-7%", "-6%", "-5%", "-4%", "-3%", "-2%", "-1%"],
             "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
         }
@@ -2356,8 +2343,7 @@ var data = {
             "TP Cost": ["11", "12", "13", "14", "15", "17", "18", "19", "21", "23"],
             "Attack Power\n(Night)": ["104%", "109%", "114%", "119%", "124%", "127%", "133%", "139%", "143%", "150%"],
             "Attack Power\n(Day)": ["80%", "82%", "84%", "86%", "88%", "90%", "92%", "94%", "97%", "100%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
-            "Max. Hits": ["3", "3", "3", "3", "3", "4", "4", "4", "4", "4"],
+            "Hits": ["2~3", "2~3", "2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "2~4"],
             "Accuracy": ["-10%", "-9%", "-8%", "-7%", "-6%", "-5%", "-4%", "-3%", "-2%", "-1%"],
             "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
         }
@@ -2371,8 +2357,7 @@ var data = {
         "Data": {
             "TP Cost": ["15", "16", "17", "18", "20", "22", "24", "26", "28", "30"],
             "Attack Power": ["70%", "72%", "74%", "76%", "78%", "80%", "82%", "84%", "86%", "90%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
-            "Max. Hits": ["3", "3", "3", "3", "4", "4", "4", "4", "5", "5"],
+            "Hits": ["2~3", "2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "2~5", "2~5"],
             "Accuracy": ["-10%", "-9%", "-8%", "-7%", "-6%", "-5%", "-4%", "-3%", "-2%", "-1%"],
             "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
         }
@@ -2538,7 +2523,7 @@ var data = {
     "Sleep Mode":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Recover TP each time you're afflicted with a bind.",
+        "Description": "Recover TP each time you're afflicted with a bind. (Yggdroids naturally cannot have binds inflicted or removed except by their own skills)",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -2759,7 +2744,7 @@ var data = {
     "Shoot":{
         "Usage": "Active (Head, STR)",
         "Unlock": "Resupply (Lv 3), All Out (Lv 3)",
-        "Description": "Command all your Bots attack one enemy, dealing a single hit of damage their combined elements, then they are destroyed. Damage is doubled for each Bot beyond the first. Damage is tripled and becomes Almighty type if the 3 Bot types participate.",
+        "Description": "Command all your Bots to attack one enemy, dealing a single hit of damage their combined elements, then they are destroyed. Damage is doubled for each Bot beyond the first. Damage is tripled and becomes Almighty type if the 3 Bot types participate.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -3153,18 +3138,19 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Sovereign":"Support casters that manage buffs to assist the party.",
-    "Gladiator":"Frontline warriors focused on strong physical offense.",
-    "Hoplite":"Sturdy knights skilled in deflecting enemy attacks.",
-    "Buccaneer":"Agile fighters that strike repeatedly alongside allies.",
-    "Ninja":"Assassins skilled in offense, evasion and ailments.",
-    "Monk":"Martial artists trained in healing and combat techniques.",
-    "Zodiac":"Elemental casters that strike the enemy's weakness.",
-    "Wildling":"Summoners that call forth beasts to incapacitate the enemy.",
-    "Arbalist":"Crossbowmen that deal heavy damage from any distance.",
-    "Farmer":"Specialists in improving exploration and resource gathering.",
-    "Shogun":"Warrior generals that command the party and fight along them.",
-    "Yggdroid":"Combat androids who treat their own bodies as weapons.",
+    "Sovereign": "Support casters that manage buffs to assist the party.",
+    "Gladiator": "Frontline warriors focused on strong physical offense.",
+    "Hoplite":   "Sturdy knights skilled in deflecting enemy attacks.",
+    "Buccaneer": "Agile fighters that strike repeatedly alongside allies.",
+    "Ninja":     "Assassins skilled in offense, evasion and ailments.",
+    "Monk":      "Martial artists trained in healing and combat techniques.",
+    "Zodiac":    "Elemental casters that exploit the enemy's weakness.",
+    "Wildling":  "Summoners that call forth beasts to attack and incapacitate.",
+    "Arbalist":  "Crossbowmen that deal heavy damage from any distance.",
+    "Farmer":    "Specialists in improving exploration and resource gathering.",
+    "Shogun":    "Warrior generals that command the party and fight along them.",
+    "Yggdroid":  "Combat androids who treat their own bodies as weapons.",
+
     "Common Skills":"Skills available to all classes.",
     "Limit Skills":"Powerful skills available through the Limit system.",
     "Battle Items":"Consumable items meant to aid you in battle.",

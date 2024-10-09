@@ -5759,19 +5759,19 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht": "Durable warriors focused on steady physical offense.",
+    "Landsknecht": "Frontline warriors focused on steady physical offense.",
     "Survivalist": "Archers with great agility and exploration knowledge.",
     "Protector":   "Sturdy knights that keep the party safe from harm.",
     "Dark Hunter": "Ruthless fighters that immobilize then finish off enemies.",
     "Medic":       "Healers that effectively treat any injury or affliction.",
     "Alchemist":   "Elemental casters that exploit the enemy's weakness.",
-    "Troubadour":  "Musicians that use buffs to bolster and energize allies.",
+    "Troubadour":  "Musicians that grant buffs to bolster and energize allies.",
     "Ronin":       "Katana users who change stance to adapt to the situation.",
     "Hexer":       "Support casters that weaken, disable and control the enemy.",
     "Gunner":      "Versatile Gun users that can provide damage, binding or healing.",
     "War Magus":   "Witch doctors who can treat ally injuries or worsen the enemy's.",
     "Beast":       "Animal companions who use their body as a shield and a weapon.",
-    "Sovereign":   "Support casters that manage buffs to strengthen the party.",
+    "Sovereign":   "Support casters that manage buffs to reinforce the party.",
     "Highlander":  "Spear users that control life force and turn it into power.",
     "Fafnir":      "A swordsman with high control of Force. He can transform to increase his capabilities.",
 

@@ -387,7 +387,7 @@ var data = {
         "Fortify":{
             "Usage": "Active (Arms)",
             "Unlock": "Ally Shield (Lv 2)",
-            "Description": "Place a buff on yourself for 3~5 turns, which decreases physical/elemental damage taken.",
+            "Description": "Place a buff on yourself for several turns, which decreases physical/elemental damage taken.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -414,7 +414,7 @@ var data = {
         "Taunt":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on yourself for 3~5 turns, which increases enemy aggro and slightly decreases all damage taken.",
+            "Description": "Place a buff on yourself for several turns, which increases enemy aggro and slightly decreases all damage taken.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -759,7 +759,7 @@ var data = {
         "Delayed Heal":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Line Heal (Lv 2)",
-            "Description": "(First Aid) Prepare yourself to restore HP to the whole party at the start of the next turn. (Cannot use it again while it's in preparation)",
+            "Description": "(First Aid) Prepare a heal that will activate at the start of the next turn, restoring HP to the whole party.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -782,7 +782,7 @@ var data = {
         "Group Therapy":{
             "Usage": "Active (Head)",
             "Unlock": "Unbind (Lv 1)",
-            "Description": "Place a buff on yourself for 3~5 turns, which increases the area of effect (Single → Line → Party) of First Aid skills but decreases their action speed and HP restored.",
+            "Description": "Place a buff on yourself for several turns, which increases the area of effect (Single → Line → Party) of First Aid skills but decreases their action speed and HP restored.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -903,7 +903,7 @@ var data = {
         "Deja Vu":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on the whole party for 5~9 turns, which at the end of each turn repeats the effect (with decreased potency) of the last First Aid skill they have received since this buff was applied.",
+            "Description": "Place a buff on the whole party for several turns, which at the end of each turn repeats the effect (with decreased potency) of the last First Aid skill they have received since this buff was applied.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -1196,7 +1196,7 @@ var data = {
         "Sagittarius Shot":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Drop Shot (Lv 3)",
-            "Description": "Bow: Prepare an attack that will hit in 2 more turns, at the start of the turn. Deals ranged Stab damage to one enemy, with a chance to inflict Stun. (Can't use again while preparing. Cancelled if you die while preparing)",
+            "Description": "Bow: Prepare an attack that will hit in 2 more turns, at the start of the turn. Deals ranged Stab damage to one enemy, with a chance to inflict Stun.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2045,7 +2045,7 @@ var data = {
         "Delayed Charge":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Spear: Spend part of your current HP to prepare an attack that will hit in 2~4 more turns, at the end of the turn. Deals ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage is multiplied by 0.75 for each remaining charge turn. (Can't use again while preparing. Cancelled if you die while preparing)",
+            "Description": "Spear: Spend part of your current HP to prepare an attack that will hit in 2~4 more turns, at the end of the turn. Deals ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage is multiplied by 0.75 for each remaining charge turn.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2087,7 +2087,7 @@ var data = {
         "Blood Fortune":{
             "Usage": "Active (Head)",
             "Unlock": "Spirit Shield (Lv 1)",
-            "Description": "Spend part of the whole party's current HP to place a buff on the whole party for 3~5 turns, which increases bind/ailment infliction rate.",
+            "Description": "Spend part of the whole party's current HP to place a buff on the whole party for several turns, which increases bind/ailment infliction rates.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2111,7 +2111,7 @@ var data = {
         "Bloody Offense":{
             "Usage": "Active (Head)",
             "Unlock": "Bloody Veil (Lv 2)",
-            "Description": "Place a buff on an ally line for 3~5 turns, which increases physical/elemental damage dealt but makes them lose HP when they act.",
+            "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but makes them lose HP when they act.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2162,7 +2162,7 @@ var data = {
         "Cross Charge":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Delayed Charge (Lv 2)",
-            "Description": "Spear: Spend part of your current HP to deal melee Stab damage to one enemy. If Delayed Charge is preparing, activate it and increase this skill's damage dealt by 150%.",
+            "Description": "Spear: Spend part of your current HP to deal melee Stab damage to one enemy. If Delayed Charge is preparing against the same target, activate it and increase this skill's damage dealt by 150%.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -2479,8 +2479,7 @@ var data = {
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "27", "27", "27", "27", "27", "35"],
                 "Attack Power": ["134%", "140%", "146%", "152%", "152%", "159%", "166%", "173%", "180%", "180%"],
-                "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3"],
-                "Max. Hits": ["5", "5", "5", "5", "6", "6", "6", "6", "6", "7"],
+                "Hits": ["2~5", "2~5", "2~5", "2~5", "2~6", "2~6", "2~6", "2~6", "2~6", "3~7"],
                 "Accuracy": ["-60%", "-60%", "-60%", "-60%", "-60%", "-60%", "-60%", "-60%", "-60%", "-60%"],
                 "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
             }
@@ -2569,7 +2568,7 @@ var data = {
         "Attack Order":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "(Order) Place a buff on an ally line for 3~5 turns, which increases physical/elemental damage dealt.",
+            "Description": "(Order) Place a buff on an ally line for several turns, which increases physical/elemental damage dealt.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2582,7 +2581,7 @@ var data = {
         "Fire Arms":{
             "Usage": "Active (Head)",
             "Unlock": "Attack Order (Lv 2)",
-            "Description": "Place a buff on an ally line for 3~5 turns, which increases Fire damage dealt and imbues their weapons with Fire damage.",
+            "Description": "Place a buff on an ally line for several turns, which increases Fire damage dealt and imbues their weapons with Fire damage.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -2595,7 +2594,7 @@ var data = {
         "Freeze Arms":{
             "Usage": "Active (Head)",
             "Unlock": "Attack Order (Lv 2)",
-            "Description": "Place a buff on an ally line for 3~5 turns, which increases Ice damage dealt and imbues their weapons with Ice damage.",
+            "Description": "Place a buff on an ally line for several turns, which increases Ice damage dealt and imbues their weapons with Ice damage.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -2608,7 +2607,7 @@ var data = {
         "Shock Arms":{
             "Usage": "Active (Head)",
             "Unlock": "Attack Order (Lv 2)",
-            "Description": "Place a buff on an ally line for 3~5 turns, which increases Volt damage dealt and imbues their weapons with Volt damage.",
+            "Description": "Place a buff on an ally line for several turns, which increases Volt damage dealt and imbues their weapons with Volt damage.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -2621,7 +2620,7 @@ var data = {
         "Guard Order":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "(Order) Place a buff on an ally line for 3~5 turns, which decreases physical/elemental damage taken.",
+            "Description": "(Order) Place a buff on an ally line for several turns, which decreases physical/elemental damage taken.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2720,7 +2719,7 @@ var data = {
         "Rally Order":{
             "Usage": "Active (Head)",
             "Unlock": "Reinforce (Lv 2)",
-            "Description": "(Order) Place a buff on an ally line for 3~5 turns, which increases Max HP.",
+            "Description": "(Order) Place a buff on an ally line for several turns, which increases Max HP.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -2733,7 +2732,7 @@ var data = {
         "Protect Order":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Reinforce (Lv 2)",
-            "Description": "(Order) Place a buff on an ally line for 3~5 turns, which restores HP at the end of each turn.",
+            "Description": "(Order) Place a buff on an ally line for several turns, which restores HP at the end of each turn.",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -2746,7 +2745,7 @@ var data = {
         "Prevent Order":{
             "Usage": "Active (Head)",
             "Unlock": "Rally Order (Lv 2), Protect Order (Lv 2)",
-            "Description": "(Order) Place a buff on an ally line for 3~5 turns, which has a chance to block bind/ailment inflictions. (Buff is consumed when activated)",
+            "Description": "(Order) Place a buff on an ally line for several turns, which has a chance to block bind/ailment inflictions. (Buff is consumed when activated)",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -2818,7 +2817,7 @@ var data = {
         "Dauntless Order":{
             "Usage": "Active (Head)",
             "Unlock": "Prevent Order (Lv 1)",
-            "Description": "(Order) Place a buff on an ally line for 3~5 turns, which gives them a chance to survive lethal damage, restoring HP if it activates. (Buff is consumed when activated)",
+            "Description": "(Order) Place a buff on an ally line for several turns, which gives them a chance to survive lethal damage, restoring HP if it activates. (Buff is consumed when activated)",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -3026,8 +3025,7 @@ var data = {
             "Data": {
                 "TP Cost": ["8", "8", "8", "13", "13", "13", "13", "20"],
                 "Attack Power": ["120%", "126%", "132%", "132%", "138%", "144%", "150%", "150%"],
-                "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "3"],
-                "Max. Hits": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Hits": ["2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "3~5"],
                 "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
                 "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
             }
@@ -3143,8 +3141,7 @@ var data = {
             "Data": {
                 "TP Cost": ["20", "20", "20", "27", "27", "27", "27", "35"],
                 "Attack Power": ["120%", "126%", "132%", "132%", "138%", "144%", "150%", "150%"],
-                "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "3"],
-                "Max. Hits": ["3", "3", "3", "4", "4", "4", "4", "5"],
+                "Hits": ["2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "3~5"],
                 "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%", "-5%"],
                 "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
             }
@@ -3202,7 +3199,7 @@ var data = {
         "Etheric Gleam":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on an ally line for 3~5 turns, which increases elemental damage dealt.",
+            "Description": "Place a buff on an ally line for several turns, which increases elemental damage dealt.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -4018,8 +4015,7 @@ var data = {
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "22", "22", "22", "22", "22", "30"],
                 "Attack Power": ["61%", "63%", "65%", "67%", "67%", "69%", "71%", "73%", "75%", "75%"],
-                "Min. Hits": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3"],
-                "Max. Hits": ["4", "4", "4", "4", "4", "4", "4", "4", "4", "5"],
+                "Hits": ["2~4", "2~4", "2~4", "2~4", "3~4", "3~4", "3~4", "3~4", "3~4", "3~5"],
                 "Accuracy": ["-7%", "-7%", "-7%", "-7%", "-7%", "-7%", "-7%", "-7%", "-7%", "-7%"],
                 "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
             }
@@ -4370,8 +4366,7 @@ var data = {
             "Data": {
                 "TP Cost": ["9", "9", "9", "14", "14", "14", "14", "21"],
                 "Attack Power": ["135%", "141%", "147%", "147%", "153%", "159%", "165%", "165%"],
-                "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "3"],
-                "Max. Hits": ["3", "3", "3", "4", "4", "4", "4", "4"],
+                "Hits": ["2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "3~4"],
                 "Accuracy": ["-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%", "-10%"],
                 "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
             }
