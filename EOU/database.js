@@ -3677,12 +3677,105 @@ var data = {
         },
     },
 },
+"Guildkeeper Effects":{
+    "Rosa (HP and TP)":{
+        "Regenurtica":{
+            "Usage": "10 en",
+            "Description": "Restores HP to the whole party at the end of each turn. Healing is based on each target's Max HP, plus a random flat value. (Affected by Heal Mastery)",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "HP Gain (Max HP)": ["8%"],
+                "HP Gain (Random)": ["0~5"],
+            }
+        },
+        "Gingerlife":{
+            "Usage": "50 en",
+            "Description": "Increases the party's base Max HP. (Cannot make HP go over 999)",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Max HP↑": ["+30%"],
+            }
+        },
+        "Amalawake":{
+            "Usage": "50 en",
+            "Description": "Restores TP to the whole party at the end of each turn. Healing is based on each target's Max TP, plus a random flat value.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "TP Gain (Max TP)": ["1%"],
+                "TP Gain (Random)": ["0~3"],
+            }
+        },
+        "Echinaceup":{
+            "Usage": "50 en",
+            "Description": "Increases the party's base Max TP.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Max TP↑": ["+30%"],
+            }
+        },
+        "Elderevenge":{
+            "Usage": "300 en",
+            "Description": "Party members will recover HP and TP based on their damage dealt.",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "HP Drain": ["5%"],
+                "TP Drain": ["1%"],
+            }
+        },
+    },
+    "Austin (Battle Protections)":{
+        "Fallback Plan":{
+            "Usage": "100 en",
+            "Description": "At the start of battle places a buff on the party for 5 turns, which nullifies one ailment infliction received. (Buff is consumed when activated)",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Bracing Plan":{
+            "Usage": "200 en",
+            "Description": "At the start of battle places a buff on the party for 5 turns, which restores HP after receiving a hit. (Buff is consumed when activated)",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "HP Gain (Max HP)": ["75%"],
+            }
+        },
+        "Escape Plan":{
+            "Usage": "100 en",
+            "Description": "At the start of battle places a buff on the party for 5 turns, which nullifies one bind infliction received. (Buff is consumed when activated)",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Revenge Plan":{
+            "Usage": "200 en",
+            "Description": "At the start of battle places a buff on the party for 5 turns, which triggers a weapon-based counterattack after receiving a hit. (Buff is consumed when activated)",
+            "Starter": "0",
+            "Max Level": "1",
+            "Data": {
+                "Attack Power": ["100%"],
+            }
+        },
+        "Revival Plan":{
+            "Usage": "600 en",
+            "Description": "If the whole party dies in battle, all members will revive with 1 HP. (Only once)",
+            "Starter": "0",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+},
 }
 
 //End of database
 
 var descriptions = {
-    "Landsknecht": "Durable warriors focused on steady physical offense.",
+    "Landsknecht": "Frontline warriors focused on steady physical offense.",
     "Survivalist": "Archers with great agility and exploration knowledge.",
     "Protector":   "Sturdy knights that keep the party safe from harm.",
     "Dark Hunter": "Ruthless fighters that immobilize then finish off enemies.",
@@ -3695,6 +3788,7 @@ var descriptions = {
     "Gunner":      "A versatile Gun user that can provide damage, binding or healing.",
 
     "Battle Items": "Consumable items that can be used in battle.",
+    "Guildkeeper Effects": "Enhancements granted by guildkeepers.",
 }
 
 function toggle_data(table_id){
