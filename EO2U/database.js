@@ -82,8 +82,7 @@ var data = {
         "Data": {
             "TP Cost": ["16", "16", "16", "16", "21", "21", "21", "21", "21", "26", "26", "26", "26", "26", "30", "30", "30", "30", "30", "34"],
             "Attack Power": ["200%", "207%", "214%", "221%", "235%", "242%", "249%", "256%", "263%", "280%", "283%", "285%", "288%", "290%", "290%", "293%", "296%", "299%", "302%", "330%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "4", "4", "4", "4", "4", "4"],
-            "Max. Hits": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+            "Hits": ["2~3", "2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "2~4", "3~4", "3~4", "3~4", "3~4", "3~4", "4", "4", "4", "4", "4", "4"],
             "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
             "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
         }
@@ -247,8 +246,8 @@ var data = {
         "Data": {
             "TP Cost": ["12", "12", "12", "12", "17", "17", "17", "17", "17", "22", "22", "22", "22", "22", "25", "25", "25", "25", "25", "30"],
             "Attack Power": ["120%", "122%", "123%", "125%", "125%", "127%", "128%", "129%", "130%", "130%", "131%", "132%", "133%", "134%", "140%", "141%", "142%", "143%", "144%", "155%"],
-            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
             "Chance Fadeout": ["35%", "35%", "35%", "35%", "25%", "25%", "25%", "25%", "25%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "0%"],
+            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
             "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
         }
     },
@@ -262,8 +261,8 @@ var data = {
         "Data": {
             "TP Cost": ["12", "12", "12", "12", "17", "17", "17", "17", "17", "22", "22", "22", "22", "22", "25", "25", "25", "25", "25", "30"],
             "Attack Power": ["120%", "122%", "123%", "125%", "125%", "127%", "128%", "129%", "130%", "130%", "131%", "132%", "133%", "134%", "140%", "141%", "142%", "143%", "144%", "155%"],
-            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
             "Chance Fadeout": ["35%", "35%", "35%", "35%", "25%", "25%", "25%", "25%", "25%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "0%"],
+            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
             "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
         }
     },
@@ -277,8 +276,8 @@ var data = {
         "Data": {
             "TP Cost": ["12", "12", "12", "12", "17", "17", "17", "17", "17", "22", "22", "22", "22", "22", "25", "25", "25", "25", "25", "30"],
             "Attack Power": ["120%", "122%", "123%", "125%", "125%", "127%", "128%", "129%", "130%", "130%", "131%", "132%", "133%", "134%", "140%", "141%", "142%", "143%", "144%", "155%"],
-            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
             "Chance Fadeout": ["35%", "35%", "35%", "35%", "25%", "25%", "25%", "25%", "25%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "0%"],
+            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
             "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
         }
     },
@@ -460,7 +459,7 @@ var data = {
     "Sagittarius Shot":{
         "Usage": "Active (Arms, AGI, LUC)",
         "Unlock": "Drop Shot (Lv 5)",
-        "Description": "Bow: Prepare an attack that will hit in 2 more turns, at the start of the turn. Deals ranged Stab damage to one enemy, with a chance to inflict Stun. (Can't use again while preparing. Cancelled if you die while preparing).",
+        "Description": "Bow: Prepare an attack that will hit in 2 more turns, at the start of the turn. Deals ranged Stab damage to one enemy, with a chance to inflict Stun.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1318,8 +1317,8 @@ var data = {
             "TP Cost": ["8", "8", "8", "8", "10", "10", "10", "10", "10", "16", "16", "16", "16", "16", "18", "18", "18", "18", "18", "26"],
             "Attack Power\n(Self)": ["225%", "228%", "231%", "234%", "250%", "253%", "255%", "258%", "260%", "270%", "272%", "273%", "275%", "276%", "285%", "286%", "287%", "288%", "289%", "290%"],
             "Attack Power\n(Other)": ["150%", "152%", "154%", "156%", "167%", "169%", "170%", "172%", "174%", "180%", "181%", "182%", "183%", "184%", "190%", "191%", "192%", "193%", "194%", "195%"],
-            "Max. Activations": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "4"],
             "Chance Fadeout": ["30%", "30%", "30%", "30%", "20%", "20%", "20%", "20%", "20%", "15%", "15%", "15%", "15%", "15%", "10%", "10%", "10%", "10%", "10%", "0%"],
+            "Max. Activations": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "4"],
             "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
         }
     },
@@ -1334,8 +1333,8 @@ var data = {
             "TP Cost": ["8", "8", "8", "8", "10", "10", "10", "10", "10", "16", "16", "16", "16", "16", "18", "18", "18", "18", "18", "26"],
             "Attack Power\n(Self)": ["225%", "228%", "231%", "234%", "250%", "253%", "255%", "258%", "260%", "270%", "272%", "273%", "275%", "276%", "285%", "286%", "287%", "288%", "289%", "290%"],
             "Attack Power\n(Other)": ["150%", "152%", "154%", "156%", "167%", "169%", "170%", "172%", "174%", "180%", "181%", "182%", "183%", "184%", "190%", "191%", "192%", "193%", "194%", "195%"],
-            "Max. Activations": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "4"],
             "Chance Fadeout": ["30%", "30%", "30%", "30%", "20%", "20%", "20%", "20%", "20%", "15%", "15%", "15%", "15%", "15%", "10%", "10%", "10%", "10%", "10%", "0%"],
+            "Max. Activations": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "4"],
             "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
         }
     },
@@ -1549,14 +1548,14 @@ var data = {
         "Data": {
             "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10", "10", "10", "10", "10", "12", "12", "12", "12", "12", "14"],
             "Healing Power": ["100%", "106%", "112%", "118%", "118%", "125%", "132%", "139%", "145%", "145%", "151%", "158%", "164%", "171%", "177%", "184%", "190%", "197%", "203%", "210%"],
-            "Max. Activations": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "5"],
             "Chance Fadeout": ["80%", "70%", "60%", "50%", "35%", "30%", "25%", "20%", "15%", "10%", "10%", "10%", "10%", "10%", "5%", "5%", "5%", "5%", "5%", "0%"],
+            "Max. Activations": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "5"],
         }
     },
     "Delayed Heal":{
         "Usage": "Active (Head, TEC+VIT)",
         "Unlock": "Chase Heal (Lv 5)",
-        "Description": "Prepare yourself to restore HP to the whole party at the start of the next turn. (Cannot use it again while it's in preparation).",
+        "Description": "Prepare a heal that will activate at the start of the next turn, restoring HP to the whole party.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2511,8 +2510,7 @@ var data = {
         "Data": {
             "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "22", "22", "22", "22", "22", "25", "25", "25", "25", "25", "28"],
             "Attack Power": ["115%", "117%", "118%", "120%", "120%", "122%", "123%", "124%", "125%", "125%", "126%", "127%", "128%", "129%", "135%", "136%", "137%", "138%", "139%", "150%"],
-            "Min. Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
-            "Max. Hits": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+            "Hits": ["2", "2", "2", "2", "2~3", "2~3", "2~3", "2~3", "2~3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
             "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-4%", "-4%", "-4%", "-4%", "-4%", "-3%", "-3%", "-3%", "-3%", "-3%", "-3%", "-3%", "-3%", "-3%", "-3%", "-3%"],
             "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
         }
@@ -2712,8 +2710,8 @@ var data = {
         "Data": {
             "TP Cost": ["6", "6", "6", "6", "9", "9", "9", "9", "9", "13", "13", "13", "13", "13", "15", "15", "15", "15", "15", "18"],
             "Attack Power": ["120%", "122%", "123%", "125%", "125%", "127%", "128%", "129%", "130%", "130%", "131%", "132%", "133%", "134%", "140%", "141%", "142%", "143%", "144%", "155%"],
-            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
             "Chance Fadeout": ["35%", "35%", "35%", "35%", "25%", "25%", "25%", "25%", "25%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "15%", "0%"],
+            "Max. Activations": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
             "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
         }
     },
@@ -3316,8 +3314,7 @@ var data = {
         "Data": {
             "TP Cost": ["20", "20", "20", "20", "25", "25", "25", "25", "25", "30", "30", "30", "30", "30", "30", "30", "30", "30", "30", "35"],
             "Attack Power": ["105%", "106%", "107%", "108%", "108%", "109%", "110%", "111%", "112%", "112%", "113%", "114%", "115%", "116%", "117%", "118%", "119%", "120%", "121%", "121%"],
-            "Min. Hits": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "4"],
-            "Max. Hits": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "Hits": ["2~3", "2~3", "2~3", "2~3", "3~4", "3~4", "3~4", "3~4", "3~4", "3~5", "3~5", "3~5", "3~5", "3~5", "3~5", "3~5", "3~5", "3~5", "3~5", "4~5"],
             "Accuracy": ["-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%", "-15%"],
             "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
         }
@@ -5000,7 +4997,7 @@ var data = {
     "Legion Thrust":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 2)",
-        "Description": "Spear: Spend 20% of other allies' HP to deal melee Stab damage to the enemy front line.",
+        "Description": "Spear: Spend 20% of other allies' current HP to deal melee Stab damage to the enemy front line.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5014,7 +5011,7 @@ var data = {
     "Legion Burst":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Legion Thrust (Lv 5)",
-        "Description": "Spear: Spend 40% of other allies' HP to deal melee Stab damage to all enemies.",
+        "Description": "Spear: Spend 40% of other allies' current HP to deal melee Stab damage to all enemies.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5057,7 +5054,7 @@ var data = {
     "Delayed Charge":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 10)",
-        "Description": "Spear: Spend 15% of current HP to prepare an attack that will activate several turns later, at the end of the turn. Deals ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage dealt receives a reduction multiplier for each remaining charge turn. (Can't use again while preparing. Cancelled if you die while preparing)",
+        "Description": "Spear: Spend 15% of current HP to prepare an attack that will activate several turns later, at the end of the turn. Deals ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage dealt receives a reduction multiplier for each remaining charge turn.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5072,7 +5069,7 @@ var data = {
     "Cross Charge":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Delayed Charge (Lv 3)",
-        "Description": "Spear: Spend part of your current HP to deal melee Stab damage to one enemy. If Delayed Charge is preparing, activate it and multiply this skill's damage dealt by 2.",
+        "Description": "Spear: Spend part of current HP to deal melee Stab damage to one enemy. If Delayed Charge is preparing against the same target, activate it and multiply this skill's damage dealt by 2.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5111,7 +5108,7 @@ var data = {
     "Bloody Offense":{
         "Usage": "Active (Head)",
         "Unlock": "Phys ATK Up (Lv 3)",
-        "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but makes them lose 10% of current HP when they act.",
+        "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but makes targets lose 10% of current HP when they act.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5138,7 +5135,7 @@ var data = {
     "Stigmata":{
         "Usage": "Active (No Parts, LUC)",
         "Unlock": "Phys ATK Up (Lv 5)",
-        "Description": "Attempt to inflict multiple binds on yourself, then attempt to inflict all binds and ailments on yourself onto one enemy.",
+        "Description": "Attempt to inflict multiple binds onto yourself, then attempt to inflict the binds and ailments on yourself onto one enemy.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5762,21 +5759,22 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht": "Frontline warriors focused on strong physical offense.",
+    "Landsknecht": "Durable warriors focused on steady physical offense.",
     "Survivalist": "Archers with great agility and exploration knowledge.",
-    "Protector": "Sturdy knights that keep the party safe from harm.",
+    "Protector":   "Sturdy knights that keep the party safe from harm.",
     "Dark Hunter": "Ruthless fighters that immobilize then finish off enemies.",
-    "Medic": "Healers that effectively treat any injury or affliction.",
-    "Alchemist": "Elemental casters that strike the enemy's weakness.",
-    "Troubadour": "Musicians that grant buffs to bolster and energize allies.",
-    "Ronin": "Katana users who change their stance to adapt to the situation.",
-    "Hexer": "Support casters that weaken, incapacitate and control the enemy.",
-    "Gunner": "Versatile Gun users that can provide damage, binding or healing.",
-    "War Magus": "Witch doctors who can treat ally injuries or worsen the enemy's.",
-    "Beast": "Fierce but loyal animals that protect allies with their own body.",
-    "Sovereign": "Support casters that manage buffs to strengthen the party.",
-    "Highlander": "Spear users that sacrifice life force to perform powerful attacks.",
-    "Fafnir": "A swordsman with high control of Force. He can transform to increase his capabilities.",
+    "Medic":       "Healers that effectively treat any injury or affliction.",
+    "Alchemist":   "Elemental casters that exploit the enemy's weakness.",
+    "Troubadour":  "Musicians that use buffs to bolster and energize allies.",
+    "Ronin":       "Katana users who change stance to adapt to the situation.",
+    "Hexer":       "Support casters that weaken, disable and control the enemy.",
+    "Gunner":      "Versatile Gun users that can provide damage, binding or healing.",
+    "War Magus":   "Witch doctors who can treat ally injuries or worsen the enemy's.",
+    "Beast":       "Animal companions who use their body as a shield and a weapon.",
+    "Sovereign":   "Support casters that manage buffs to strengthen the party.",
+    "Highlander":  "Spear users that control life force and turn it into power.",
+    "Fafnir":      "A swordsman with high control of Force. He can transform to increase his capabilities.",
+
     "Enemy Grimoires": "Enemy skills available for use through Grimoire Stones.",
     "Battle Items": "Consumable items that can be used in battle.",
     "Food Effects": "Bonuses granted by food in the Cafe.",
