@@ -660,7 +660,7 @@ var data = {
     },
     "Defender":{
         "Usage": "Active (Head)",
-        "Unlock": "Front/Read Guard (Lv 5)",
+        "Unlock": "Front/Rear Guard (Lv 5)",
         "Description": "Place a buff on the whole party for several turns, which decreases physical damage taken.",
         "Starter": "0",
         "Max Level": "15",
@@ -2837,83 +2837,133 @@ var data = {
     "Long Thrust":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 1)",
-        "Description": ".",
+        "Description": "Spear: Deal ranged Stab damage to one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "14", "14", "14", "14", "14", "14"],
+            "Attack Power": ["140%", "146%", "152%", "158%", "190%", "196%", "202%", "213%", "220%", "310%", "316%", "322%", "328%", "334%", "390%"],
+            "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+20%", "+20%", "+20%", "+20%", "+20%", "+30%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "130%", "130%", "130%", "130%", "130%", "130%"],
+        }
     },
     "Draining Thrust":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 2)",
-        "Description": ".",
+        "Description": "Spear: Spend 20% of current HP to deal melee Stab damage to the enemy front line.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "11", "11", "11", "11", "11", "11"],
+            "Attack Power": ["130%", "137%", "145%", "152%", "175%", "182%", "190%", "197%", "205%", "227%", "235%", "242%", "250%", "257%", "280%"],
+            "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Draining Burst":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Draining Thrust (Lv 5)",
-        "Description": ".",
+        "Description": "Spear: Spend 40% of current HP to deal melee Stab damage to all enemies.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "16", "16", "16", "16", "16", "16"],
+            "Attack Power": ["150%", "158%", "166%", "174%", "198%", "206%", "214%", "222%", "230%", "254%", "262%", "270%", "278%", "286%", "310%"],
+            "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Legion Thrust":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 2)",
-        "Description": ".",
+        "Description": "Spear: Spend 20% of other allies' current HP to deal melee Stab damage to the enemy front line.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "11", "11", "11", "11", "11", "11"],
+            "Attack Power": ["150%", "158%", "166%", "174%", "198%", "206%", "214%", "222%", "230%", "254%", "262%", "270%", "278%", "286%", "310%"],
+            "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Legion Burst":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Legion Thrust (Lv 5)",
-        "Description": ".",
+        "Description": "Spear: Spend 40% of other allies' current HP to deal melee Stab damage to all enemies.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "16", "16", "16", "16", "16", "16"],
+            "Attack Power": ["180%", "189%", "199%", "208%", "237%", "246%", "256%", "265%", "275%", "303%", "313%", "322%", "332%", "341%", "370%"],
+            "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Head Pierce":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Spear Mastery (Lv 3)",
-        "Description": ".",
+        "Description": "Spear: Deal melee Stab damage to one enemy, with a chance to inflict Head Bind or Instant Death.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "16", "16", "16", "16", "16", "16"],
+            "Attack Power": ["120%", "126%", "132%", "138%", "156%", "162%", "168%", "174%", "180%", "198%", "204%", "210%", "216%", "222%", "240%"],
+            "Infliction Rate\n(Head Bind)": ["35%", "35%", "35%", "35%", "45%", "45%", "45%", "45%", "45%", "55%", "55%", "55%", "55%", "55%", "70%"],
+            "Infliction Rate\n(Instant Kill)": ["15%", "15%", "15%", "15%", "20%", "20%", "20%", "20%", "20%", "25%", "25%", "25%", "25%", "25%", "35%"],
+            "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+20%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Spear Assist":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 5)",
-        "Description": ".",
+        "Description": "Spear: Deal melee Stab damage to one enemy at the end of turn. If any allies have used elemental attacks this turn, add the element of the most recent one and multiply damage dealt by 2.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "22", "22", "22", "22", "22", "22"],
+            "Attack Power": ["85%", "89%", "92%", "95%", "120%", "124%", "128%", "132%", "135%", "170%", "174%", "178%", "182%", "185%", "230%"],
+            "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+20%"],
+        }
     },
     "Delayed Charge":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 10)",
-        "Description": ".",
+        "Description": "Spear: Spend 15% of current HP to prepare an attack that will activate several turns later, at the end of the turn. Deals ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage dealt receives a reduction multiplier for each remaining charge turn.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "12", "12", "12", "12", "12", "16", "16", "16", "16", "16", "16"],
+            "Attack Power": ["250%", "260%", "270%", "280%", "450%", "465%", "480%", "495%", "510%", "750%", "770%", "790%", "810%", "830%", "1150%"],
+            "Turn Delay": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "4", "4", "4", "4", "4", "4"],
+            "Early Penalty": ["x0.7", "x0.7", "x0.7", "x0.7", "x0.72", "x0.72", "x0.72", "x0.72", "x0.72", "x0.75", "x0.75", "x0.75", "x0.75", "x0.75", "x0.75"],
+            "Accuracy": ["+80%", "+80%", "+80%", "+80%", "+80%", "+80%", "+80%", "+80%", "+80%", "+80%", "+80%", "+80%", "+80%", "+80%", "+80%"],
+        }
     },
     "Cross Charge":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Delayed Charge (Lv 3)",
-        "Description": ".",
+        "Description": "Spear: Spend part of current HP to deal melee Stab damage to one enemy. If Delayed Charge is preparing against the same target, activate it and increase this skill's power.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
+            "HP Cost": ["10%", "10%", "10%", "10%", "15%", "15%", "15%", "15%", "15%", "20%", "20%", "20%", "20%", "20%", "20%"],
+            "Attack Power\n(Solo)": ["120%", "130%", "140%", "150%", "180%", "190%", "200%", "210%", "220%", "250%", "260%", "270%", "280%", "290%", "320%"],
+            "Attack Power\n(Combo)": ["255%", "263.5%", "272%", "280.5%", "351.5%", "360.75%", "370%", "379.25%", "388.5%", "520%", "530%", "540%", "550%", "560%", "709.5%"],
+            "Accuracy\n(Solo)": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+20%"],
+            "Accuracy\n(Combo)": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "150%", "150%", "150%", "150%", "150%", "200%", "200%", "200%", "200%", "200%", "200%"],
+        }
     },
     "ATK Up":{
         "Usage": "Passive",
@@ -2929,38 +2979,55 @@ var data = {
     "Turning Tide":{
         "Usage": "Passive",
         "Unlock": "ATK Up (Lv 1)",
-        "Description": ".",
+        "Description": "Restore HP to the whole party each time you kill an enemy. Healing is based on each unit's Max HP.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "HP Gain (Fixed)": ["7", "9", "11", "13", "15", "17", "19", "21", "23", "25"],
+            "HP Gain (Max HP)": ["6%", "7%", "8%", "9%", "10%", "11%", "12%", "13%", "14%", "15%"],
+        }
     },
     "Bloody Offense":{
         "Usage": "Active (Head)",
         "Unlock": "ATK Up (Lv 3)",
-        "Description": ".",
+        "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but makes targets lose 10% of current HP when they act.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "8", "8", "8", "8", "8", "8"],
+            "Damage Dealt↑": ["+30%", "+32%", "+34%", "+37%", "+39%", "+42%", "+44%", "+46%", "+48%", "+50%", "+52%", "+54%", "+56%", "+58%", "+70%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Bloodlust":{
         "Usage": "Passive",
         "Unlock": "Turning Tide (Lv 3), Bloody Offense (Lv 3)",
-        "Description": ".",
+        "Description": "Chance to attack a random enemy each time you lose HP.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["20%", "20%", "20%", "20%", "25%", "25%", "25%", "25%", "25%", "30%"],
+            "Attack Power": ["100%", "105%", "110%", "114%", "118%", "122%", "126%", "129%", "132%", "135%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+        }
     },
     "Stigmata":{
         "Usage": "Active (No Parts, LUC)",
         "Unlock": "ATK Up (Lv 5)",
-        "Description": ".",
+        "Description": "Attempt to inflict multiple binds onto yourself, then attempt to inflict the binds and ailments on yourself onto one enemy.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "6", "6", "6", "6", "6", "6"],
+            "Binds Inflicted": ["1", "1", "1", "1", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3"],
+            "Infliction Rate": ["65%", "70%", "75%", "80%", "80%", "83%", "86%", "88%", "90%", "90%", "91%", "92%", "93%", "94%", "100%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "DEF Up":{
         "Usage": "Passive",
@@ -2976,38 +3043,52 @@ var data = {
     "Battle Instinct":{
         "Usage": "Passive",
         "Unlock": "DEF Up (Lv 1)",
-        "Description": ".",
+        "Description": "At the start of battle there's a chance to place a buff on the whole party for 5 turns, which nullifies one ailment infliction received. (Buff is consumed when activated).",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["10%", "13%", "16%", "18%", "20%", "22%", "24%", "26%", "28%", "30%"],
+        }
     },
     "Blood Fortune":{
         "Usage": "Active (Head)",
         "Unlock": "DEF Up (Lv 3)",
-        "Description": ".",
+        "Description": "Spend 15% of the whole party's current HP to place a buff on the whole party for several turns, which increases bind/ailment infliction rates.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20", "20", "20", "20", "20", "20"],
+            "Inflictions↑": ["x1.08", "x1.12", "x1.15", "x1.18", "x1.24", "x1.27", "x1.3", "x1.33", "x1.36", "x1.42", "x1.45", "x1.48", "x1.51", "x1.54", "x1.6"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+        }
     },
     "Allied Bonds":{
         "Usage": "Passive",
         "Unlock": "Battle Instinct (Lv 3), Blood Fortune (Lv 3)",
-        "Description": ".",
+        "Description": "If one of your skills consumes HP of other allies in your line, restore TP to them at the end of turn.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Gain": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        }
     },
     "Spirit Shield":{
         "Usage": "Active (Head)",
         "Unlock": "DEF Up (Lv 5)",
-        "Description": ".",
+        "Description": "Spend 10% of current HP to place a buff on an ally line for several turns, which decreases elemental damage taken.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "4", "4", "4", "4", "4", "4"],
+            "Damage Taken↓": ["-15%", "-17%", "-19%", "-20%", "-20%", "-22%", "-23%", "-24%", "-25%", "-25%", "-26%", "-27%", "-28%", "-29%", "-32%"],
+            "Duration": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -3023,20 +3104,28 @@ var data = {
     "Limitless":{
         "Usage": "Active (Arms)",
         "Unlock": "HP Up (Lv 1)",
-        "Description": ".",
+        "Description": "Enter a charge state until the end of next turn, which increases damage dealt and lets you use weapon-locked skills without equipping the required weapon.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "4", "4", "4", "4", "4", "6", "6", "6", "6", "6", "6"],
+            "Damage Dealt↑": ["+30%", "+33%", "+36%", "+39%", "+55%", "+59%", "+62%", "+65%", "+68%", "+85%", "+89%", "+94%", "+98%", "+102%", "+125%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Black Sabbath":{
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 10)",
-        "Description": ".",
+        "Description": "Deal typeless damage to all enemies. Restore HP to the party equal to the damage dealt split amongst party members. Damage dealt cannot exceed the party's total missing HP. Removes binds/ailments on enemies and inflicts them onto the party.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["12", "12", "12", "12", "16", "16", "16", "16", "16", "20", "20", "20", "20", "20", "20"],
+            "Attack Power": ["140%", "148%", "156%", "164%", "200%", "208%", "216%", "224%", "232%", "270%", "400%", "600%", "900%", "1500%", "9999%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+        }
     },
     "Mine":{
         "Usage": "Passive (Field)",
@@ -3506,16 +3595,16 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht": "Frontline warriors focused on strong physical offense.",
+    "Landsknecht": "Durable warriors focused on steady physical offense.",
     "Survivalist": "Archers with great agility and exploration knowledge.",
     "Protector":   "Sturdy knights that keep the party safe from harm.",
     "Dark Hunter": "Ruthless fighters that immobilize then finish off enemies.",
     "Medic":       "Healers that effectively treat any injury or affliction.",
     "Alchemist":   "Elemental casters that exploit the enemy's weakness.",
     "Troubadour":  "Musicians that grant buffs to bolster and energize allies.",
-    "Ronin":       "Offense specialists who change stance to adapt to the situation.",
+    "Ronin":       "Katana users who change stance to adapt to the situation.",
     "Hexer":       "Support casters that weaken, disable and control the enemy.",
-    "Highlander":  "A Spear user that sacrifices life force to perform powerful attacks.",
+    "Highlander":  "A Spear user that controls life force and turns it into power.",
     "Gunner":      "A versatile Gun user that can provide damage, binding or healing.",
 
     "Battle Items": "Consumable items that can be used in battle.",
