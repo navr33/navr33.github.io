@@ -156,7 +156,7 @@ var data = {
         "Phantom Swords":{
             "Usage": "Active (Legs)",
             "Unlock": "N/A",
-            "Description": "Sword: Place a debuff on an enemy line for 3~5 turns, which decreases accuracy.",
+            "Description": "Sword: Place a debuff on an enemy line for several turns, which decreases accuracy.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -447,7 +447,7 @@ var data = {
         "Barrage Wall":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Cannon: Deal ranged Bash damage to all enemies. Places a debuff on the targets for 3~5 turns, which decreases physical damage dealt.",
+            "Description": "Cannon: Deal ranged Bash damage to all enemies. Places a debuff on the targets for several turns, which decreases physical damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1208,7 +1208,7 @@ var data = {
         "Stifling Miasma":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a debuff on all enemies for 3~5 turns, which decreases physical/elemental damage dealt.",
+            "Description": "Place a debuff on all enemies for several turns, which decreases physical/elemental damage dealt.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1221,7 +1221,7 @@ var data = {
         "Wilting Miasma":{
             "Usage": "Active (Head)",
             "Unlock": "Stifling Miasma (Lv 3)",
-            "Description": "Place a debuff on all enemies for 3~5 turns, which decreases bind/ailment resistance.",
+            "Description": "Place a debuff on all enemies for several turns, which decreases bind/ailment resistance.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1459,7 +1459,7 @@ var data = {
         "Eroding Miasma":{
             "Usage": "Active (Head)",
             "Unlock": "Wilting Miasma (Lv 3)",
-            "Description": "Place a debuff on all enemies for 3~5 turns, which increases physical/elemental damage taken.",
+            "Description": "Place a debuff on all enemies for several turns, which increases physical/elemental damage taken.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1472,7 +1472,7 @@ var data = {
         "Masking Miasma":{
             "Usage": "Active (Head)",
             "Unlock": "Wilting Miasma (Lv 3)",
-            "Description": "Place a debuff on all enemies for 3~5 turns, which decreases accuracy.",
+            "Description": "Place a debuff on all enemies for several turns, which decreases accuracy.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1926,7 +1926,7 @@ var data = {
         "Wraith Cry":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Sacrifice a Wraith to place a debuff on one enemy for 3~5 turns, which increases physical/elemental damage taken.",
+            "Description": "Sacrifice a Wraith to place a debuff on one enemy for several turns, which increases physical/elemental damage taken.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2396,7 +2396,7 @@ var data = {
         "Target Arrow":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Bow: Deal ranged Stab damage to one enemy. Places a debuff on the target for 3~5 turns, which increases physical damage taken. Hawk/Hound/Wraith's normal attacks will prioritize enemies with this debuff.",
+            "Description": "Bow: Deal ranged Stab damage to one enemy. Places a debuff on the target for several turns, which increases physical damage taken. Hawk/Hound/Wraith's normal attacks will prioritize enemies with this debuff.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2830,7 +2830,7 @@ var data = {
         "Reblossom":{
             "Usage": "Passive",
             "Unlock": "Hell Slash (Lv 3)",
-            "Description": "Chance to perform Katana skills an second time. Chance is multiplied by your number of equipped Katana minus one.",
+            "Description": "Chance to perform Katana skills a second time. Chance is multiplied by your number of equipped Katana minus one.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2956,7 +2956,7 @@ var data = {
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "15", "15", "15", "15", "15", "22"],
                 "Attack Power": ["300%", "310%", "320%", "330%", "380%", "390%", "400%", "410%", "420%", "500%"],
-                "Activation Chance": ["67%", "70%", "73%", "76%", "100%", "103%", "106%", "109%", "112%", "135%"],
+                "Initial Chance": ["67%", "70%", "73%", "76%", "100%", "103%", "106%", "109%", "112%", "135%"],
                 "Chance Fadeout": ["35%", "35%", "35%", "35%", "35%", "35%", "35%", "35%", "35%", "35%"],
                 "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
                 "Action Speed": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
@@ -2965,7 +2965,7 @@ var data = {
         "Foot Sweep":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Haze Slash (Lv 3)",
-            "Description": "Katana: Deal melee Cut damage to an enemy line. Places a debuff on the targets for 2~4 turns, which decreases evasion.",
+            "Description": "Katana: Deal melee Cut damage to an enemy line. Places a debuff on the targets for several turns, which decreases evasion.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2980,7 +2980,7 @@ var data = {
         "Helm Splitter":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Foot Sweep (Lv 5)",
-            "Description": "Katana: Deal melee Cut damage to one enemy. Low accuracy but ignores Cut vulnerability.",
+            "Description": "Katana: Deal melee Cut damage to one enemy. Has low accuracy but ignores Cut vulnerability.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3469,7 +3469,7 @@ var data = {
         "Toxic Smoke":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "N/A",
-            "Description": "(Smoke) Attempt to inflict Poison on an enemy line. Places a debuff on the targets for 3~5 turns, which decreases Poison resistance.",
+            "Description": "(Smoke) Attempt to inflict Poison on an enemy line. Places a debuff on the targets for several turns, which decreases Poison resistance.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3484,7 +3484,7 @@ var data = {
         "Dark Smoke":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "N/A",
-            "Description": "(Smoke) Attempt to inflict Blind on an enemy line. Places a debuff on the targets for 3~5 turns, which decreases Blind resistance.",
+            "Description": "(Smoke) Attempt to inflict Blind on an enemy line. Places a debuff on the targets for several turns, which decreases Blind resistance.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3498,7 +3498,7 @@ var data = {
         "Smokeblight":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "Toxic/Dark Smoke (Lv 2)",
-            "Description": "Place a debuff on an enemy line for 3~5 turns, which increases elemental damage taken. Stronger effect while targets have an ailment.",
+            "Description": "Place a debuff on an enemy line for several turns, which increases elemental damage taken. Stronger effect while targets have an ailment.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3665,7 +3665,7 @@ var data = {
         "Numbing Smoke":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "Antibodies (Lv 3)",
-            "Description": "(Smoke) Attempt to inflict Paralysis on an enemy line. Places a debuff on the targets for 3~5 turns, which decreases Paralysis resistance.",
+            "Description": "(Smoke) Attempt to inflict Paralysis on an enemy line. Places a debuff on the targets for several turns, which decreases Paralysis resistance.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3679,7 +3679,7 @@ var data = {
         "Chaos Smoke":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "Antibodies (Lv 3)",
-            "Description": "(Smoke) Attempt to inflict Panic on an enemy line. Places a debuff on the targets for 3~5 turns, which decreases Panic resistance.",
+            "Description": "(Smoke) Attempt to inflict Panic on an enemy line. Places a debuff on the targets for several turns, which decreases Panic resistance.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3730,7 +3730,7 @@ var data = {
         "Passing Scent":{
             "Usage": "Active (Head)",
             "Unlock": "Smokestone (Lv 3), Smokeflash (Lv 3)",
-            "Description": "Place a debuff on all enemies for 5~9 turns, which at the end of each turn attempts to inflict an ailment matching the Smoke debuffs on each target. (Infliction chance and Poison damage depends on the target's stats and level)",
+            "Description": "Place a debuff on all enemies for several turns, which at the end of each turn attempts to inflict an ailment matching the Smoke debuffs on each target. (Infliction chance and Poison damage depends on the target's stats and level)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -5441,7 +5441,7 @@ var data = {
         "Stifling Miasma":{
             "Usage": "Active (Head)",
             "Unlock": "Mortar",
-            "Description": "Place a debuff on all enemies for 3~4 turns, which decreases physical/elemental damage dealt.",
+            "Description": "Place a debuff on all enemies for several turns, which decreases physical/elemental damage dealt.",
             "Starter": "0",
             "Max Level": "5",
             "Data": {
@@ -5606,16 +5606,36 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Fencer":["Swordfighters who overwhelm the enemy with swift movements.", "<b>Phantom Duelist</b>: Draws in, evades and counters enemy attacks.", "<b>Chain Duelist</b>: Strikes repeatedly in tandem with ally attacks."],
-    "Dragoon":["Sturdy knights skilled in protection and artillery.", "<b>Shield Bearer</b>: Specialized in blocking and diverting attacks.", "<b>Cannon Bearer</b>: Assists the offensive while maintaining defense."],
-    "Pugilist":["Brawlers who take down enemies with their own Fists.", "<b>Barrage Brawler</b>: Performs combos of punches that can disable the enemy.", "<b>Impact Brawler</b>: Throws destructive punches by sacrificing their own health."],
-    "Harbinger":["Reapers who use noxious Miasma to weaken the enemy.", "<b>Deathbringer</b>: Coats their weapon in Miasma to inflict ailments and cut down enemies.", "<b>Deathguard</b>: Spreads Miasma to inflict debuffs or ward off enemy attacks."],
-    "Warlock":["Elemental casters that strike the enemy's weakness.", "<b>Omnimancer</b>: Learns physical magic to cripple the enemy and continuously hit their weak points.", "<b>Elemancer</b>: Expands their elemental magic and improves control on their use of energy."],
-    "Necromancer":["Summoners who call forth Wraiths to assist the party.", "<b>Spirit Evoker</b>: Works alongside Wraiths to provide offense, defense and ailments.", "<b>Spirit Broker</b>: Uses attacks that summon Wraiths, then sacrifices them for more power."],
-    "Rover":["Archers who chase and restrain enemies alongside animal companions.", "<b>Flying Falcon</b>: Hunts with a Hawk that attacks multiple enemies.", "<b>Hunting Hound</b>: Hunts with a Hound that protects and heals allies."],
-    "Masurao":["Frontline warriors specialized in strong offense with Katanas.", "<b>Blade Dancer</b>: Wields multiple Katanas at once, sacrificing all defense for overwhelming offense.", "<b>Blade Master</b>: Versatile duelists with attacks that combine power and utility."],
-    "Shaman":["Support casters who manipulate buffs to strengthen the party.", "<b>Divine Punisher</b>: Dispels buffs to turn them into direct power.", "<b>Divine Herald</b>: Grants buffs to protect and heal allies."],
-    "Botanist":["Healers that use herbal concoctions to take care of afflictions.", "<b>Merciful Healer</b>: Uses medicinal herbs to treat all kinds of injuries.", "<b>Graced Poisoner</b>: Uses poisonous herbs to make enemies susceptible to ailments."],
+    "Fencer":   ["Swordfighters who overwhelm the enemy with swift movements.",
+                    "<b>Phantom Duelist</b>: Draws in, evades and counters enemy attacks.",
+                    "<b>Chain Duelist</b>: Strikes repeatedly in tandem with ally attacks."],
+    "Dragoon":  ["Sturdy knights skilled in protection and artillery.",
+                    "<b>Shield Bearer</b>: Specialized in blocking and diverting attacks.",
+                    "<b>Cannon Bearer</b>: Assists the offensive while maintaining defense."],
+    "Pugilist": ["Brawlers who take down enemies with their own Fists.",
+                    "<b>Barrage Brawler</b>: Performs combos of punches that can disable the enemy.",
+                    "<b>Impact Brawler</b>: Throws destructive punches by sacrificing their own health."],
+    "Harbinger":["Reapers who use noxious Miasma to weaken the enemy.",
+                    "<b>Deathbringer</b>: Coats their weapon in Miasma to inflict ailments and cut down enemies.",
+                    "<b>Deathguard</b>: Spreads Miasma to inflict debuffs or ward off enemy attacks."],
+    "Warlock":  ["Elemental casters that strike the enemy's weakness.",
+                    "<b>Omnimancer</b>: Learns physical magic to cripple the enemy and continuously hit their weak points.",
+                    "<b>Elemancer</b>: Expands their elemental magic and improves control on their use of energy."],
+    "Necromancer":["Summoners who call forth Wraiths to assist the party.",
+                    "<b>Spirit Evoker</b>: Works alongside Wraiths to provide offense, defense and ailments.",
+                    "<b>Spirit Broker</b>: Constantly attacks while summoning or sacrificing Wraiths."],
+    "Rover":    ["Archers who hunt down enemies alongside animal companions.",
+                    "<b>Flying Falcon</b>: Hunts with a Hawk that attacks multiple enemies.",
+                    "<b>Hunting Hound</b>: Hunts with a Hound that protects and heals allies."],
+    "Masurao":  ["Frontline warriors specialized in strong offense with Katanas.",
+                    "<b>Blade Dancer</b>: Wields 4 Katanas at once to trade all defense for overwhelming offense.",
+                    "<b>Blade Master</b>: Versatile duelists with attacks that combine power and utility."],
+    "Shaman":   ["Support casters who manipulate buffs to strengthen the party.",
+                    "<b>Divine Punisher</b>: Dispels buffs to turn them into direct power.",
+                    "<b>Divine Herald</b>: Grants buffs to protect and heal allies."],
+    "Botanist": ["Healers that use herbal concoctions to take care of afflictions.",
+                    "<b>Merciful Healer</b>: Uses medicinal herbs to treat all kinds of injuries.",
+                    "<b>Graced Poisoner</b>: Uses poisonous herbs to make enemies susceptible to ailments."],
 
     "Earthlain":["Common skills for characters of the Earthlain race.", "", ""],
     "Celestrian":["Common skills for characters of the Celestrian race.", "", ""],

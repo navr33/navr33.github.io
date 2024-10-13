@@ -3781,11 +3781,11 @@ var descriptions = {
     "Dark Hunter": "Ruthless fighters that immobilize then finish off enemies.",
     "Medic":       "Healers that effectively treat any injury or affliction.",
     "Alchemist":   "Elemental casters that exploit the enemy's weakness.",
-    "Troubadour":  "Musicians that grant buffs to bolster and energize allies.",
+    "Troubadour":  "Musicians that grant buffs to bolster the party in many ways.",
     "Ronin":       "Katana users who change stance to adapt to the situation.",
     "Hexer":       "Support casters that weaken, disable and control the enemy.",
     "Highlander":  "A Spear user that controls life force and turns it into power.",
-    "Gunner":      "A versatile Gun user that can provide damage, binding or healing.",
+    "Gunner":      "A versatile Gun user that can attack, immobilize and heal.",
 
     "Battle Items": "Consumable items that can be used in battle.",
     "Guildkeeper Effects": "Enhancements granted by guildkeepers.",

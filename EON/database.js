@@ -1125,7 +1125,7 @@ var data = {
         "Trickery":{
             "Usage": "Active (Legs)",
             "Unlock": "Chain Dance (Lv 2)",
-            "Description": "Place a debuff on an enemy line for 3~5 turns, which decreases accuracy.",
+            "Description": "Place a debuff on an enemy line for several turns, which decreases accuracy.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1222,7 +1222,7 @@ var data = {
         "Nature's Blessing":{
             "Usage": "Passive (Field)",
             "Unlock": "Cautious Steps (Lv 2)",
-            "Description": "Chance to get additional rare materials from gathering spots.",
+            "Description": "Chance to get additional, rare materials from gathering spots.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -2045,7 +2045,7 @@ var data = {
         "Delayed Charge":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Spear: Spend part of your current HP to prepare an attack that will hit in 2~4 more turns, at the end of the turn. Deals ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage is multiplied by 0.75 for each remaining charge turn.",
+            "Description": "Spear: Spend part of your current HP to prepare an attack that will hit in several more turns, at the end of the turn. Deals ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage is multiplied by 0.75 for each remaining charge turn.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -2181,7 +2181,7 @@ var data = {
             "Starter": "1",
             "Max Level": "10",
             "Data": {
-                "TP Cost": ["13", "13", "13", "13", "13", "17", "17", "17", "17", "17"],
+                "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "20"],
                 "HP Cost": ["15%", "15%", "15%", "15%", "30%", "30%", "30%", "30%", "30%", "50%"],
                 "Attack Power": ["350%", "365%", "380%", "395%", "500%", "515%", "530%", "545%", "560%", "700%"],
                 "Accuracy": ["+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%", "+30%"],
@@ -2328,15 +2328,14 @@ var data = {
             }
         },
         "Medic Bullet":{
-            "Usage": "Active (Arms, WIS)",
+            "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "Gun: Restore HP and remove ailments for one ally.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6", "10"],
-                "Fixed HP Gain": ["15", "19", "23", "27", "31", "50"],
-                "Healing Power": ["10%", "14%", "18%", "22%", "26%", "40%"],
+                "HP Gain": ["15+10%", "19+14%", "23+18%", "27+22%", "31+26%", "50+40%"],
                 "Action Speed": ["70%", "70%", "70%", "70%", "70%", "250%"],
             }
         },
@@ -2965,7 +2964,7 @@ var data = {
                 "TP Cost": ["4", "4", "4", "4", "4", "10"],
                 "Decoy HP": ["30%", "40%", "50%", "60%", "70%", "100%"],
                 "Decoy Stats": ["50%", "60%", "70%", "80%", "90%", "120%"],
-                "Evasion↑": ["+1%", "+4%", "+7%", "+10%", "+13%", "25%"],
+                "Evasion↑": ["+1%", "+4%", "+7%", "+10%", "+13%", "+25%"],
                 "Aggro↑": ["+500%", "+500%", "+500%", "+500%", "+500%", "+500%"],
                 "Action Speed": ["75%", "75%", "75%", "75%", "75%", "75%"],
             }
@@ -3748,7 +3747,7 @@ var data = {
         "Nature's Blessing":{
             "Usage": "Passive (Field)",
             "Unlock": "Survival Wisdom (Lv 2)",
-            "Description": "Chance to get additional rare materials from gathering spots.",
+            "Description": "Chance to get additional, rare materials from gathering spots.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -3793,7 +3792,7 @@ var data = {
         "Second Sword":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Allows you to equip a sub-weapon (uses an armor slot). Decreases damage taken if two weapons are equipped.",
+            "Description": "Allows you to equip a sub-weapon (uses an armor slot). Decreases damage taken if two weapons are equipped. (Skills that can use both weapons will prioritize the strongest one)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -3803,7 +3802,7 @@ var data = {
         "Echoing Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Second Sword (Lv 2)",
-            "Description": "Katana: Deal weapon-based damage to one enemy at the start of turn. After the target acts, perform a second hit based on your sub-weapon, if you have one.",
+            "Description": "Katana: Deal weapon-based damage to one enemy at the start of turn. If you have a sub-weapon, perform a second hit with it after the target acts.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3898,7 +3897,7 @@ var data = {
         "Twin Swallows":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Echoing Slash (Lv 3)",
-            "Description": "Katana: Deal weapon-based damage to one enemy. If you have a sub-weapon, perform a second hit based on it.",
+            "Description": "Katana: Deal weapon-based damage to one enemy. If you have a sub-weapon, perform a second hit with it.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -5013,7 +5012,7 @@ var data = {
         "Chaos Circle":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "Sleep Circle (Lv 2)",
-            "Description": "Place a Circle for 3 turns, which attempts to inflict Poison on all enemies at the end of each turn. (Overrides other Circles)",
+            "Description": "Place a Circle for 3 turns, which attempts to inflict Panic on all enemies at the end of each turn. (Overrides other Circles)",
             "Starter": "0",
             "Max Level": "8",
             "Data": {
@@ -5717,7 +5716,7 @@ var data = {
         "Eroding Miasma":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a debuff on all enemies for 3~5 turns, which increases physical/elemental damage taken.",
+            "Description": "Place a debuff on all enemies for several turns, which increases physical/elemental damage taken.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -5730,7 +5729,7 @@ var data = {
         "Stifling Miasma":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a debuff on all enemies for 3~5 turns, which decreases physical/elemental damage dealt.",
+            "Description": "Place a debuff on all enemies for several turns, which decreases physical/elemental damage dealt.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -5743,7 +5742,7 @@ var data = {
         "Sluggish Miasma":{
             "Usage": "Active (Head)",
             "Unlock": "Eroding/Stifling Miasma (Lv 2)",
-            "Description": "Place a debuff on all enemies for 3~5 turns, which decreases evasion and action speed.",
+            "Description": "Place a debuff on all enemies for several turns, which decreases evasion and action speed.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -5831,7 +5830,7 @@ var data = {
         "Wilting Miasma":{
             "Usage": "Active (Head)",
             "Unlock": "Sluggish Miasma (Lv 3)",
-            "Description": "Place a debuff on all enemies for 3~5 turns, which decreases ailment resistance and natural recovery rate.",
+            "Description": "Place a debuff on all enemies for several turns, which decreases ailment resistance and natural recovery rate.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -5845,7 +5844,7 @@ var data = {
         "Binding Miasma":{
             "Usage": "Active (Head)",
             "Unlock": "Wilting Miasma (Lv 3)",
-            "Description": "Place a debuff on all enemies for 3~5 turns, which decreases bind resistance and natural recovery rate.",
+            "Description": "Place a debuff on all enemies for several turns, which decreases bind resistance and natural recovery rate.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -5991,7 +5990,7 @@ var data = {
         "Spirit Barrier":{
             "Usage": "Active (Head)",
             "Unlock": "Black Wave (Lv 1)",
-            "Description": "Dispel your Miasma Armor for a chance to nullify Instant Deat/Stun/debuff inflictions to the party this turn.",
+            "Description": "Dispel your Miasma Armor for a chance to nullify Instant Death/Stun/debuff inflictions to the party this turn.",
             "Starter": "1",
             "Max Level": "6",
             "Data": {
@@ -7467,25 +7466,25 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Hero":       "Knights of Sword and Shield whose afterimage repeats their actions, letting them cover offense and defense at once.",
-    "Protector":  "Knights of unmatched durability who block and deflect enemy attacks to keep the party safe from harm.",
-    "Medic":      "Healers that effectively treat every kind of injury, and use Staff strikes to leave the enemy vulnerable.",
+    "Hero":       "Brave knights of Sword and Shield. They fight as more than one person to attack and defend at once.",
+    "Protector":  "Sturdy knights of unmatched durability. They block and divert attacks to keep allies in good condition.",
+    "Medic":      "Healers that effectively treat any kind of injury. They can use Staff strikes to make enemies vulnerable.",
     "Survivalist":"Archers skilled in careful exploration. Their agility and sharp senses safeguard the party in and out of battle.",
-    "Ronin":      "Katana users who favor offense over defense. They adopt different Stances to adjust to the situation.",
+    "Ronin":      "Katana users focused on strong offense. They adopt different Stances to adjust to the situation.",
     "War Magus":  "Witch doctors that switch between treating the party's afflictions and aggravating the enemy's.",
-    "Highlander": "Offensive specialists who fight with Spears. They sacrifice their life force to carry out powerful attacks.",
-    "Gunner":     "Versatile Gun users with a large variety of attack types. Capable of providing offense, binding and healing.",
-    "Sovereign":  "Support casters that grant and manage buffs to strenghten, protect and heal the party.",
-    "Ninja":      "Stealthy assassins skilled in combat, diversion and incapacitation. They can create clones to amplify their capabilities.",
-    "Zodiac":     "Offensive casters with high control of energy. They use elemental magic to hit the enemy's weakness.",
-    "Farmer":     "Specialists in exploration and resource gathering. Their combat skills can be awkward but surprisingly effective.",
-    "Shogun":     "Warrior generals who lead the party through buffs and attack commands, and can fight directly using dual Katanas.",
+    "Highlander": "Warriors skilled in close combat with Spears. They control life force and can convert it into power.",
+    "Gunner":     "Versatile Gun users with a large variety of attack types. They can attack, immobilize or heal as needed.",
+    "Sovereign":  "Commanders whose orders reinforce and heal the party by granting buffs and converting them into energy.",
+    "Ninja":      "Stealthy assassins proficient in diversion and incapacitation. Can create clones to amplify their capabilities.",
+    "Zodiac":     "Offensive casters with high control of energy. They use elemental magic to exploit the enemy's weakness.",
+    "Farmer":     "Specialists in exploration and resource gathering. Their battle skills can be awkward but surprisingly effective.",
+    "Shogun":     "Warrior generals who lead the party through buffs and commands, and can fight directly using dual Katanas.",
     "Landsknecht":"Frontline warriors with solid offense and defense. They lead the charge, encouraging their allies to follow up.",
     "Nightseeker":"Assassins who throw poisoned daggers from the shadows, closing in for the kill once the enemy is ailing.",
-    "Arcanist":   "Support casters that summon magic circles to restrain the enemy and protect the party.",
-    "Imperial":   "Knights who wield mechanical Drive Blades. Their attacks are devastating but put a heavy strain on the weapon and wielder.",
+    "Arcanist":   "Support casters that summon and release magic circles in order to restrain enemies and heal the party.",
+    "Imperial":   "Knights who wield mechanical Drive Blades. Their attacks are devastating but put a heavy strain on the weapon.",
     "Pugilist":   "Brawlers who fight with their own Fists. They use combos of precise punches to quickly disable the enemy.",
-    "Harbinger":  "Reapers who summon noxious Miasma, spreading it to weaken the enemy or to ward off their attacks.",
+    "Harbinger":  "Reapers who summon noxious Miasma, spreading it to weaken enemies or ward off their attacks.",
     "Vampire":    "Night-dwellers with control over life and death. This pseudo-class overrides another's Force and grants passive effects.",
 
     "Weapon Skills":"Skills borrowed from certain weapons.",

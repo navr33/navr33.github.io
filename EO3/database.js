@@ -3138,11 +3138,11 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Sovereign": "Support casters that manage buffs to assist the party.",
+    "Sovereign": "Commanders that manage buffs to reinforce and heal the party.",
     "Gladiator": "Frontline warriors focused on strong physical offense.",
     "Hoplite":   "Sturdy knights skilled in deflecting enemy attacks.",
     "Buccaneer": "Agile fighters that strike repeatedly alongside allies.",
-    "Ninja":     "Assassins skilled in offense, evasion and ailments.",
+    "Ninja":     "Stealthy assassins proficient in diversion and ailments.",
     "Monk":      "Martial artists trained in healing and combat techniques.",
     "Zodiac":    "Elemental casters that exploit the enemy's weakness.",
     "Wildling":  "Summoners that call forth beasts to attack and incapacitate.",
