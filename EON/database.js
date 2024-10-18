@@ -595,7 +595,7 @@ var data = {
         "En Garde":{
             "Usage": "Passive",
             "Unlock": "Line Shield (Lv 3)",
-            "Description": "Chance to automatically halve damage taken any time you're hit.",
+            "Description": "Chance to automatically halve damage taken any time you're hit. (Does not activate while Defending)",
             "Starter": "0",
             "Max Level": "10",
             "Data": {

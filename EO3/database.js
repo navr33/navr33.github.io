@@ -314,7 +314,7 @@ var data = {
         }
     },
     "Crushing Blow":{
-        "Usage": "Active (Arms, STR)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Club Mastery (Lv 1)",
         "Description": "Club: Deal melee Bash damage to one enemy, with a chance to inflict Panic.",
         "Starter": "0",
@@ -328,7 +328,7 @@ var data = {
         }
     },
     "Arm Breaker":{
-        "Usage": "Active (Arms, STR)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Club Mastery (Lv 3)",
         "Description": "Club: Deal melee Bash damage to one enemy, with a chance to inflict Arm Bind.",
         "Starter": "0",
@@ -439,7 +439,7 @@ var data = {
         }
     },
     "Stun Attack":{
-        "Usage": "Passive",
+        "Usage": "Passive (LUC)",
         "Unlock": "White Flame (Lv 3)",
         "Description": "Normal attacks gain a chance to inflict Stun.",
         "Starter": "0",
@@ -692,7 +692,7 @@ var data = {
         }
     },
     "Lights Out":{
-        "Usage": "Active (Arms, STR)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Rapier Mastery (Lv 1)",
         "Description": "Rapier: Deal melee Stab damage to one enemy, with a chance to inflict Blind.",
         "Starter": "0",
@@ -748,7 +748,7 @@ var data = {
         }
     },
     "Hanging":{
-        "Usage": "Active (Arms, STR)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Rapier Mastery (Lv 5)",
         "Description": "Rapier: Deal melee Stab damage to one enemy, with a chance to inflict Head Bind.",
         "Starter": "0",
@@ -978,7 +978,7 @@ var data = {
         }
     },
     "Shadow Bind":{
-        "Usage": "Active (Arms, STR)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Knife Mastery (Lv 1)",
         "Description": "Knife: Deal melee Cut damage to one enemy, with a chance to inflict Leg Bind.",
         "Starter": "0",
@@ -992,7 +992,7 @@ var data = {
         }
     },
     "Izuna":{
-        "Usage": "Active (Arms, STR)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Knife Mastery (Lv 3), Shadow Bind (Lv 3)",
         "Description": "Knife: Deal melee Cut damage to one enemy, with a chance to inflict Petrify.",
         "Starter": "0",
@@ -1034,7 +1034,7 @@ var data = {
         }
     },
     "Ninpo: Daggers":{
-        "Usage": "Active (Head, STR)",
+        "Usage": "Active (Head, STR, LUC)",
         "Unlock": "N/A",
         "Description": "Deal 3 hits of ranged stab damage to random enemies (max once each), with a chance to inflict Sleep.",
         "Starter": "1",
@@ -1048,7 +1048,7 @@ var data = {
         }
     },
     "Ninpo: Mirror":{
-        "Usage": "Active (Head)",
+        "Usage": "Active (Head, LUC)",
         "Unlock": "Ninpo:Daggers (Lv 1)",
         "Description": "Target one enemy with an ailment, then attempt to inflict that ailment on all other enemies.",
         "Starter": "0",
@@ -1060,7 +1060,7 @@ var data = {
         }
     },
     "Ninpo: Caltrops":{
-        "Usage": "Active (Head)",
+        "Usage": "Active (Head, LUC)",
         "Unlock": "Ninpo:Daggers (Lv 3)",
         "Description": "Prepare to counter attack each time target ally row is hit this turn. Counters deal fixed melee Cut damage (cannot miss), with a chance to inflict Poison.",
         "Starter": "0",
@@ -1073,7 +1073,7 @@ var data = {
         }
     },
     "Beheading":{
-        "Usage": "Passive",
+        "Usage": "Passive (LUC)",
         "Unlock": "Ninpo:Mirror (Lv 3), Ninpo:Caltrops (Lv 5)",
         "Description": "Normal attacks gain a chance to inflict Instant Death.",
         "Starter": "0",
@@ -1254,7 +1254,7 @@ var data = {
         }
     },
     "Kikouken":{
-        "Usage": "Active (Arms, STR)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Fist Mastery (Lv 1)",
         "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to inflict Paralysis.",
         "Starter": "0",
@@ -1308,7 +1308,7 @@ var data = {
         }
     },
     "Darkness Fist":{
-        "Usage": "Active (Arms, STR)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Fist Mastery (Lv 10), Breakfire Fist (Lv 3)",
         "Description": "Fist: Spend 25% of current HP to deal melee Bash damage to all enemies, with a chance to inflict Curse.",
         "Starter": "0",
@@ -2041,7 +2041,7 @@ var data = {
         }
     },
     "Smoke Grenade":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, LUC)",
         "Unlock": "N/A",
         "Description": "Attempt to inflict Blind on all enemies.",
         "Starter": "0",
@@ -2087,7 +2087,7 @@ var data = {
         }
     },
     "Lullaby":{
-        "Usage": "Active (Head)",
+        "Usage": "Active (Head, LUC)",
         "Unlock": "N/A",
         "Description": "Inflict Sleep on yourself, then attempt to inflict it on all enemies.",
         "Starter": "1",
@@ -2111,7 +2111,7 @@ var data = {
         }
     },
     "Strange Seeds":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, LUC)",
         "Unlock": "Lullaby (Lv 3)",
         "Description": "At the end of turn, attempt to inflict all 3 binds on all enemies. Has a chance to fail and not attempt the inflictions.",
         "Starter": "0",
@@ -2145,7 +2145,7 @@ var data = {
         }
     },
     "Sympathy Pain":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, LUC)",
         "Unlock": "Rotten Egg (Lv 3)",
         "Description": "If you're afflicted with an ailment, attempt to inflict it on an enemy. If successful, remove the ailment from yourself.",
         "Starter": "0",
@@ -2305,7 +2305,7 @@ var data = {
         }
     },
     "Hilt Strike":{
-        "Usage": "Active (Arms, STR)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Katana Mastery (Lv 1)",
         "Description": "Katana: Deal melee Bash damage to one enemy, with a chance to inflict Stun.",
         "Starter": "0",
@@ -2599,7 +2599,7 @@ var data = {
         }
     },
     "EM Barrier":{
-        "Usage": "Passive (TEC)",
+        "Usage": "Passive (TEC, LUC)",
         "Unlock": "Overheat (Lv 3)",
         "Description": "Chance to automatically counter attack when hit. Deals ranged Volt damage with a chance to inflict Paralysis to the attacker.",
         "Starter": "0",

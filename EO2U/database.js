@@ -4671,7 +4671,7 @@ var data = {
     "Delayed Chase":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Blade Mastery (Lv 5)",
-        "Description": "Prepare an attack that will be performed on the next turn if you use an elemental attack. Hits the same targets with Cut damage plus the element of the triggering attack.",
+        "Description": "Sword/Katana: Prepare an attack that will be performed on the next turn if you use an elemental attack. Hits the same targets with Cut damage plus the element of the triggering attack.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4684,7 +4684,7 @@ var data = {
     },
     "Blade Recoil":{
         "Usage": "Active (Arms, STR, TEC)",
-        "Description": "Transformed from Delayed Chase. Deal melee Cut damage to one enemy. If you used an elemental attack last turn, perform an additional hit of that same element (cannot miss). (First hit uses STR, second hit uses TEC)",
+        "Description": "Sword/Katana: Transformed from Delayed Chase. Deal melee Cut damage to one enemy. If you used an elemental attack last turn, perform an additional hit of that same element (cannot miss). (First hit uses STR, second hit uses TEC)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4699,7 +4699,7 @@ var data = {
     "Overkiller":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Blade Mastery (Lv 7)",
-        "Description": "Deal melee Cut damage to one enemy. If it kills the target, repeat the damage dealt to all other enemies.",
+        "Description": "Sword/Katana: Deal melee Cut damage to one enemy. If it kills the target, repeat the damage dealt to all other enemies.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4713,7 +4713,7 @@ var data = {
     "Full Slash":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Overkiller (Lv 3)",
-        "Description": "Deal melee Cut damage to one enemy. Damage dealt is multiplied by the target's [CurrentHP/MaxHP].",
+        "Description": "Sword/Katana: Deal melee Cut damage to one enemy. Damage dealt is multiplied by the target's [CurrentHP/MaxHP].",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4727,7 +4727,7 @@ var data = {
     "Resonance":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Blade Mastery (Lv 10)",
-        "Description": "Deal melee Cut damage to one enemy. Gains 1 charge at the start of each turn (max 4), and damage dealt is multiplied by [Charges/4]. (After use, reset charges at the end of turn)",
+        "Description": "Sword/Katana: Deal melee Cut damage to one enemy. Gains 1 charge at the start of each turn (max 4), and damage dealt is multiplied by [Charges/4]. (After use, charges are reset at the end of turn)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
