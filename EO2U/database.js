@@ -4312,12 +4312,13 @@ var data = {
     "Morale Boost":{
         "Usage": "Passive",
         "Unlock": "Order Mastery (Lv 10)",
-        "Description": "Increases natural Force gains of allies with buffs while you're alive. (Does not stack)",
+        "Description": "Increases natural Force gains of allies with buffs while you're alive. (Does not stack)<br>-For reference, normal Force gain is a random value between 5 and 15 per action.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
-            "Force Gain↑": ["+3%", "+5%", "+8%", "+10%", "+13%", "+16%", "+19%", "+23%", "+26%", "+30%", "+31%", "+33%", "+34%", "+36%", "+37%", "+39%", "+40%", "+42%", "+43%", "+45%"],
+            "Min. Gain↑": ["+0.3", "+0.5", "+0.8", "+1.0", "+1.3", "+1.6", "+1.9", "+2.3", "+2.6", "+3.0", "+3.1", "+3.3", "+3.4", "+3.6", "+3.7", "+3.9", "+4.0", "+4.2", "+4.3", "+4.5"],
+            "Max. Gain↑": ["+0.15", "+0.25", "+0.48", "+0.5", "+0.65", "+0.8", "+0.95", "+1.15", "+1.3", "+1.5", "+1.55", "+1.65", "+1.7", "+1.8", "+1.85", "+1.95", "+2.0", "+2.1", "+2.15", "+2.25"],
         }
     },
     "TP Up":{
@@ -4741,12 +4742,13 @@ var data = {
     "Force Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases natural Force gains. (Automatically unlocks other skills that require this one)<br>-For reference, normal Force gain is 5 to 15 per action.",
+        "Description": "Increases natural Force gains. (Automatically unlocks other skills that require this one)<br>-For reference, normal Force gain is a random value between 5 and 15 per action.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
-            "Force Gain↑": ["+3%", "+5%", "+8%", "+10%", "+13%", "+16%", "+19%", "+23%", "+26%", "+30%", "+31%", "+33%", "+34%", "+36%", "+37%", "+39%", "+40%", "+42%", "+43%", "+45%"],
+            "Min. Gain↑": ["+0.3", "+0.5", "+0.8", "+1.0", "+1.3", "+1.6", "+1.9", "+2.3", "+2.6", "+3.0", "+3.1", "+3.3", "+3.4", "+3.6", "+3.7", "+3.9", "+4.0", "+4.2", "+4.3", "+4.5"],
+            "Max. Gain↑": ["+0.15", "+0.25", "+0.48", "+0.5", "+0.65", "+0.8", "+0.95", "+1.15", "+1.3", "+1.5", "+1.55", "+1.65", "+1.7", "+1.8", "+1.85", "+1.95", "+2.0", "+2.1", "+2.15", "+2.25"],
         }
     },
     "Vital Shut":{
@@ -4797,14 +4799,15 @@ var data = {
     "Force Charge":{
         "Usage": "Active (Head)",
         "Unlock": "Absorb (Lv 5)",
-        "Description": "Enter a charge state until the end of next turn, which increases damage dealt and natural Force gain.",
+        "Description": "Enter a charge state until the end of next turn, which increases damage dealt and natural Force gains.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["2", "2", "2", "2", "5", "5", "5", "5", "5", "8", "8", "8", "8", "8", "10", "10", "10", "10", "10", "12"],
             "Damage Dealt↑": ["x1.4", "x1.4", "x1.4", "x1.4", "x1.5", "x1.5", "x1.5", "x1.5", "x1.5", "x1.6", "x1.6", "x1.6", "x1.6", "x1.6", "x1.65", "x1.65", "x1.65", "x1.65", "x1.65", "x1.7"],
-            "Force Gain↑": ["+50%", "+55%", "+60%", "+65%", "+75%", "+80%", "+85%", "+90%", "+95%", "+110%", "+115%", "+120%", "+125%", "+130%", "+140%", "+145%", "+150%", "+155%", "+160%", "+175%"],
+            "Min. Gain↑": ["+5.0", "+5.5", "+6.0", "+6.5", "+7.5", "+8.0", "+8.5", "+9.0", "+9.5", "+11.0", "+11.5", "+12.0", "+12.5", "+13.0", "+14.0", "+14.5", "+15.0", "+15.5", "+16.0", "+17.5"],
+            "Max. Gain↑": ["+2.5", "+2.75", "+3.0", "+3.25", "+3.75", "+4.0", "+4.25", "+4.5", "+4.75", "+5.5", "+5.75", "+6.0", "+6.25", "+6.5", "+7.0", "+7.25", "+7.5", "+7.75", "+8.0", "+8.75"],
             "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
         }
     },
@@ -4841,7 +4844,7 @@ var data = {
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["2", "2", "2", "2", "6", "6", "6", "6", "6", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "18"],
-            "Force Kept": ["20", "21", "22", "23", "26", "27", "28", "29", "30", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "50"],
+            "Force Conserved": ["20", "21", "22", "23", "26", "27", "28", "29", "30", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "50"],
         }
     },
     "Limit Break":{
