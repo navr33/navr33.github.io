@@ -2,7 +2,7 @@ var data = {
 "Landsknecht":{
     "Full Charge":{
         "Usage": "Force Boost",
-        "Description": "All Sword/Axe attacks will make a Critical Hit.",
+        "Description": "Normal attacks with a Sword or Axe, and skills that require a Sword or Axe, will always make a Critical Hit.",
         "Starter": "0",
         "Max Level": "0",
         "Data": ""
@@ -307,7 +307,7 @@ var data = {
     "Double Attack":{
         "Usage": "Passive",
         "Unlock": "Fencer (Lv 5)",
-        "Description": "Normal attacks have a chance to hit a second time.",
+        "Description": "Normal attacks have a chance to be performed a second time.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -352,7 +352,7 @@ var data = {
 "Survivalist":{
     "Illusion Step":{
         "Usage": "Force Boost",
-        "Description": "Drastically increases evasion. Perform follow up hits after Bow attacks.",
+        "Description": "Drastically increases evasion. If you hit enemies with a Bow-based attack or weapon-based attack while using a Bow, perform a weapon-based follow up against the same targets.",
         "Starter": "0",
         "Max Level": "3",
         "Levels": ["1", "60", "99"],
@@ -844,7 +844,7 @@ var data = {
     "Sentinel Guard":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 10)",
-        "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases all attack damage taken. While active, attacks against your allies use your defensive stats (including modifiers) for the damage calculation. Guard skills will be disabled on the next turn.",
+        "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases all attack damage taken. While active, attacks against your allies use your defensive stats (including buffs/debuffs and passive skills) for the damage calculation. Guard skills will be disabled on the next turn.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1391,7 +1391,7 @@ var data = {
         "Starter": "0",
         "Max Level": "1",
         "Data": {
-            "HP Gain↑": ["x1.7"],
+            "Healing↑": ["x1.7"],
             "Speed↑": ["x5.0"],
             "TP Cost↓": ["x0.5"],
         }

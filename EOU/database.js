@@ -40,7 +40,7 @@ var data = {
         }
     },
     "Blinding Slap":{
-        "Usage": "Active (Arms, STR)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 5)",
         "Description": "Sword: Deal melee Cut damage to one enemy. If it misses, attempt to inflict Blind on all enemies.",
         "Starter": "0",

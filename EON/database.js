@@ -638,8 +638,8 @@ var data = {
             "Levels": ["1"],
             "Data": {
                 "Speed↑": ["x1.7"],
-                "Healing↑": ["+70%"],
-                "TP Cost↓": ["-50%"],
+                "Healing↑": ["x1.7"],
+                "TP Cost↓": ["x0.5"],
             }
         },
         "Healing Touch":{
