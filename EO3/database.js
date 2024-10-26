@@ -3138,11 +3138,11 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Sovereign": "Commanders that manage buffs to reinforce and heal the party.",
+    "Sovereign": "Commanders that manage buffs to bolster and heal the party.",
     "Gladiator": "Frontline warriors focused on strong physical offense.",
     "Hoplite":   "Sturdy knights skilled in deflecting enemy attacks.",
     "Buccaneer": "Agile fighters that strike repeatedly alongside allies.",
-    "Ninja":     "Stealthy assassins proficient in diversion and ailments.",
+    "Ninja":     "Stealthy assassins proficient in evasion and ailments.",
     "Monk":      "Martial artists trained in healing and combat techniques.",
     "Zodiac":    "Elemental casters that exploit the enemy's weakness.",
     "Wildling":  "Summoners that call forth beasts to attack and incapacitate.",
@@ -3162,6 +3162,8 @@ function toggle_data(table_id){
 
 function populate(class_name){
     var skill_list = document.getElementById("skill_list")
+    skill_list.focus()
+    skill_list.blur()
     while (skill_list.hasChildNodes()){
         skill_list.removeChild(skill_list.firstChild)
     }
@@ -3274,6 +3276,8 @@ function populate(class_name){
 
 function populate_item(class_name){
     var skill_list = document.getElementById("skill_list")
+    skill_list.focus()
+    skill_list.blur()
     while (skill_list.hasChildNodes()){
         skill_list.removeChild(skill_list.firstChild)
     }

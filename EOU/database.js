@@ -3797,6 +3797,8 @@ function toggle_data(table_id){
 
 function populate(class_name){
     var skill_list = document.getElementById("skill_list")
+    skill_list.focus()
+    skill_list.blur()
     while (skill_list.hasChildNodes()){
         skill_list.removeChild(skill_list.firstChild)
     }
@@ -3913,6 +3915,8 @@ function populate(class_name){
 
 function populate_item(class_name){
     var skill_list = document.getElementById("skill_list")
+    skill_list.focus()
+    skill_list.blur()
     while (skill_list.hasChildNodes()){
         skill_list.removeChild(skill_list.firstChild)
     }

@@ -36,6 +36,10 @@
     background-color: #a6a6a6;
 }
 
+.page_link:focus {
+    background-color: #a6a6a6;
+}
+
 .skill_entry {
     border-collapse: collapse;
     background-color: #c4c4c4;

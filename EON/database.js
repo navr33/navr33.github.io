@@ -21,7 +21,7 @@ var data = {
             "Data": {
                 "Attack Power": ["700%", "1100%", "1500%"],
                 "Healing Power": ["75%", "75%", "75%"],
-                "Max Overheal": ["+75%", "+75%", "+75%"],
+                "Max. Overheal": ["+75%", "+75%", "+75%"],
             }
         },
     },
@@ -155,13 +155,13 @@ var data = {
             "Starter": "0",
             "Max Level": "8",
             "Data": {
-                "TP Gain": ["20%", "23%", "26%", "29%", "32%", "35%", "38%", "50%"],
+                "TP Refund": ["20%", "23%", "26%", "29%", "32%", "35%", "38%", "50%"],
             }
         },
         "Spark Blade":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Frigid Slash (Lv 2)",
-            "Description": "Sword: Deal melee Cut damage to one enemy, then ranged Volt damage to all enemies. Volt attack is stronger if the initial target was resistant to Cut: Damage is multiplied by 4 for 50% vulnerability, or by 6 if it's lower.",
+            "Description": "Sword: Deal melee Cut damage to one enemy, then ranged Volt damage to all enemies. Volt attack is stronger if the initial target was resistant to Cut: Damage is multiplied by 4 if the target had 50% vulnerability, or by 6 if it was lower.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -226,7 +226,7 @@ var data = {
         "Fervor":{
             "Usage": "Active (No parts)",
             "Unlock": "Clear Mind (Lv 1)",
-            "Description": "Transfer ailments and binds from allies in your line onto you. If successful, fill your Force Gauge.",
+            "Description": "Transfer ailments and binds from other allies in your line onto you. If successful, fill your Force Gauge.",
             "Starter": "1",
             "Max Level": "4",
             "Data": {
@@ -243,8 +243,7 @@ var data = {
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2", "2", "5"],
-                "Min. Battles": ["1", "1", "1", "1", "1", "3"],
-                "Max. Battles": ["3", "4", "5", "6", "7", "10"],
+                "Battles": ["1~3", "1~4", "1~5", "1~6", "1~7", "3~10"],
                 "Rare Chance↑": ["+1%", "+2%", "+3%", "+4%", "+5%", "+10%"],
             }
         },
@@ -263,7 +262,7 @@ var data = {
         "Act Breaker":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Burst Blade (Lv 2)",
-            "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Stun. Infliction chance depends on the target's remaining HP: Chance is multiplied by [(CurrentHP/MaxHP)<sup>2</sup>].",
+            "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Stun. Infliction chance is multiplied by the target's [(CurrentHP/MaxHP)<sup>2</sup>].",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
@@ -283,7 +282,7 @@ var data = {
             "Data": {
                 "TP Cost": ["18", "18", "18", "25", "25", "25", "25", "32"],
                 "Attack Power": ["250%", "260%", "270%", "300%", "310%", "320%", "330%", "400%"],
-                "Added Damage Cap": ["200%", "203%", "206%", "216%", "219%", "222%", "225%", "250%"],
+                "Added Damage Cap": ["100%", "103%", "106%", "116%", "119%", "122%", "125%", "150%"],
                 "Accuracy": ["+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%", "+10%"],
                 "Action Speed": ["-1000%", "-1000%", "-1000%", "-1000%", "-1000%", "-1000%", "-1000%", "-1000%"],
             }
@@ -315,7 +314,7 @@ var data = {
         "Guard Rush":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Elemental Shield (Lv 3)",
-            "Description": "Shield: Deal melee Bash damage to one enemy. Decrease all damage taken by the party until the attack activates, and this attack's damage increases by 20% each time the damage reduction triggers (max +200%), but the attack is cancelled if the reduction never triggers. If the attack lands, this skill becomes disabled for several turns. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Decrease all damage taken by the party until the attack activates, and this attack's damage dealt increases by 20% each time the damage reduction triggers (max +200%), but the attack is cancelled if the reduction never triggers. If the attack lands, this skill becomes disabled for several turns. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -837,7 +836,7 @@ var data = {
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7", "13"],
                 "Attack Power": ["240%", "255%", "270%", "285%", "300%", "370%"],
-                "Damage Taken↑": ["+10%", "+12%", "+14%", "+16%", "+18%", "+25%"],
+                "Damage Taken↑": ["+15%", "+17%", "+19%", "+21%", "+23%", "+30%"],
                 "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
                 "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%"],
             }
@@ -897,18 +896,18 @@ var data = {
             "Starter": "1",
             "Max Level": "6",
             "Data": {
-                "Max Overheal": ["+10%", "+13%", "+16%", "+19%", "+22%", "+34%"],
+                "Max. Overheal": ["+10%", "+13%", "+16%", "+19%", "+22%", "+34%"],
             }
         },
         "Deja Vu":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on the whole party for several turns, which at the end of each turn repeats the effect (with decreased potency) of the last First Aid skill they have received since this buff was applied.",
+            "Description": "Place a buff on the whole party for several turns, which at the end of each turn repeats the effect (with decreased healing power) of the last First Aid skill each target has received since this buff was applied.",
             "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["9", "9", "9", "12", "12", "12", "12", "15"],
-                "Healing↓": ["-80%", "-74%", "-68%", "-68%", "-62%", "-56%", "-50%", "-50%"],
+                "Repeat Power": ["x0.2", "x0.26", "x0.32", "x0.32", "x0.38", "x0.44", "x0.5", "x0.5"],
                 "Duration": ["5", "5", "5", "7", "7", "7", "7", "9"],
                 "Action Speed": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
             }
@@ -7484,7 +7483,7 @@ var descriptions = {
     "Arcanist":   "Support casters that summon and release magic circles in order to restrain enemies and heal the party.",
     "Imperial":   "Knights who wield mechanical Drive Blades. Their attacks are devastating but put a heavy strain on the weapon.",
     "Pugilist":   "Brawlers who fight with their own Fists. They use combos of precise punches to quickly disable the enemy.",
-    "Harbinger":  "Reapers who summon noxious Miasma, spreading it to weaken enemies or ward off their attacks.",
+    "Harbinger":  "Reapers who summon noxious Miasma, spreading it to weaken enemies and keep allies in good condition.",
     "Vampire":    "Night-dwellers with control over life and death. This pseudo-class overrides another's Force and grants passive effects.",
 
     "Weapon Skills":"Skills borrowed from certain weapons.",
@@ -7497,6 +7496,8 @@ function toggle_data(table_id){
 
 function populate(class_name){
     var skill_list = document.getElementById("skill_list")
+    skill_list.focus()
+    skill_list.blur()
     while (skill_list.hasChildNodes()){
         skill_list.removeChild(skill_list.firstChild)
     }

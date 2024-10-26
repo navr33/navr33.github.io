@@ -767,7 +767,7 @@ var data = {
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["4", "4", "4", "4", "16", "14", "12", "10", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
-            "Damage Taken↓": ["-30%", "-55%", "-75%", "-15%", "-100%", "-100%", "-100%", "-100%", "-100%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Taken↓": ["-30%", "-55%", "-75%", "-85%", "-100%", "-100%", "-100%", "-100%", "-100%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
             "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "10%", "15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%", "55%", "70%"],
         }
     },
@@ -780,7 +780,7 @@ var data = {
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["4", "4", "4", "4", "16", "14", "12", "10", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
-            "Damage Taken↓": ["-30%", "-55%", "-75%", "-15%", "-100%", "-100%", "-100%", "-100%", "-100%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Taken↓": ["-30%", "-55%", "-75%", "-85%", "-100%", "-100%", "-100%", "-100%", "-100%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
             "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "10%", "15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%", "55%", "70%"],
         }
     },
@@ -793,7 +793,7 @@ var data = {
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["4", "4", "4", "4", "16", "14", "12", "10", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
-            "Damage Taken↓": ["-30%", "-55%", "-75%", "-15%", "-100%", "-100%", "-100%", "-100%", "-100%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Taken↓": ["-30%", "-55%", "-75%", "-85%", "-100%", "-100%", "-100%", "-100%", "-100%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
             "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "10%", "15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%", "55%", "70%"],
         }
     },
@@ -4479,7 +4479,7 @@ var data = {
 "Fafnir":{
     "Transform":{
         "Usage": "Force Boost",
-        "Description": "Increases damage dealt and Max HP. Changes your elemental skills, and enables additional skills that are unlocked throughout the story. (When activated, also fully restores your HP)",
+        "Description": "Increases damage dealt and Max HP. Enables alternate versions of Farnir's elemental skills, and enables additional skills that are unlocked throughout the story. (When activated, also fully restores your HP)",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -4685,7 +4685,7 @@ var data = {
     },
     "Blade Recoil":{
         "Usage": "Active (Arms, STR, TEC)",
-        "Description": "Sword/Katana: Transformed from Delayed Chase. Deal melee Cut damage to one enemy. If you used an elemental attack last turn, perform an additional hit of that same element (cannot miss). (First hit uses STR, second hit uses TEC)",
+        "Description": "Sword/Katana: Transformed from Delayed Chase. Deal melee Cut damage to one enemy. If your previous action was an elemental attack, perform an additional hit of the same element (cannot miss). (First hit uses STR, second hit uses TEC)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4700,7 +4700,7 @@ var data = {
     "Overkiller":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Blade Mastery (Lv 7)",
-        "Description": "Sword/Katana: Deal melee Cut damage to one enemy. If it kills the target, repeat the damage dealt to all other enemies.",
+        "Description": "Sword/Katana: Deal melee Cut damage to one enemy. If it kills the target, repeat its damage on all other enemies.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5789,6 +5789,8 @@ function toggle_data(table_id){
 
 function populate(class_name){
     var skill_list = document.getElementById("skill_list")
+    skill_list.focus()
+    skill_list.blur()
     while (skill_list.hasChildNodes()){
         skill_list.removeChild(skill_list.firstChild)
     }
@@ -5905,6 +5907,8 @@ function populate(class_name){
 
 function populate_item(class_name){
     var skill_list = document.getElementById("skill_list")
+    skill_list.focus()
+    skill_list.blur()
     while (skill_list.hasChildNodes()){
         skill_list.removeChild(skill_list.firstChild)
     }

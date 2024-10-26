@@ -890,7 +890,7 @@ var data = {
         "Double Punch":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "When a single-hit Pugilist skill fails to inflict its bind/ailment, there's a chance to perform it a second time. (Does not work on One-Two Punch follow ups. Does not work if infliction fails because the target was already afllicted)",
+            "Description": "When a single-hit Pugilist skill fails to inflict its bind/ailment, there's a chance to perform it a second time. (Does not work on One-Two Punch follow ups. Does not work if the infliction fails because the target was already afflicted)",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -1064,7 +1064,7 @@ var data = {
         "Abyssal Killer":{
             "Usage": "Active (Head)",
             "Unlock": "Vajra Stance (Lv 5), Soul Crusher (Lv 5)",
-            "Description": "For this turn, you can survive one instance of lethal damage with 1 HP. If this activates, enter a charge state until the end of next turn, which increases all damage dealt based on how much excess damage you endured: The base damage increase is multiplied by (ExcessDamage/MaxHP)<sup>1/2</sup>.",
+            "Description": "For this turn, you can survive one instance of lethal damage with 1 HP. If this activates, enter a charge state until the end of next turn, which increases all damage dealt based on how much excess damage you endured: The base damage increase is multiplied by [(ExcessDamage/MaxHP)<sup>1/2</sup>].",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -1102,7 +1102,7 @@ var data = {
         "Heavenly Aid":{
             "Usage": "Active (Head)",
             "Unlock": "Titan Killer (Lv 3), Death's Edge (Lv 3)",
-            "Description": "Enter a charge state until the end of next turn, which increases damage dealt based on how much HP is healed to you this turn: The base damage increase is multiplied by (GainedHP/MaxHP)<sup>3/4</sup>.",
+            "Description": "Enter a charge state until the end of next turn, which increases damage dealt based on how much HP is healed to you this turn: The base damage increase is multiplied by [(GainedHP/MaxHP)<sup>3/4</sup>].",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -2116,14 +2116,13 @@ var data = {
         "Tombstone Vice":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "Curse Bomb (Lv 3), Ice Bomb (Lv 3)",
-            "Description": "Sacrifice all Wraiths to attempt to inflict Petrify on one enemy. Higher chance the more Wraiths were sacrificed.",
+            "Description": "Sacrifice all Wraiths to attempt to inflict Petrify on one enemy. Infliction rate increases for each Wraith sacrificed.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "12"],
-                "Infliction Rate\n(1 Wraith)": ["25%", "26%", "27%", "28%", "36%", "38%", "40%", "42%", "44%", "60%"],
-                "Infliction Rate\n(2 Wraiths)": ["40%", "42%", "44%", "46%", "66%", "70%", "74%", "78%", "82%", "110%"],
-                "Infliction Rate\n(3 Wraiths)": ["55%", "58%", "61%", "64%", "96%", "102%", "108%", "114%", "120%", "160%"],
+                "Base Infliction Rate": ["25%", "26%", "27%", "28%", "36%", "38%", "40%", "42%", "44%", "60%"],
+                "Bonus Per Wraith": ["+15%", "+16%", "+17%", "+18%", "+30%", "+32%", "+34%", "+36%", "+38%", "+50%"],
                 "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
             }
         },
@@ -3260,7 +3259,7 @@ var data = {
         "Invoke Gods":{
             "Usage": "Active (Head, STR)",
             "Unlock": "Mana Oracle (Lv 5), Aureole Oracle (Lv 3)",
-            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself to deal weapon-based damage to one enemy at the start of turn. Decreases damage dealt by the target this turn.",
+            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself to deal weapon-based damage to one enemy at the start of turn. Decreases damage dealt by the target until the end of turn.",
             "Starter": "1",
             "Max Level": "10",
             "Data": {
@@ -5610,32 +5609,32 @@ var descriptions = {
                     "<b>Phantom Duelist</b>: Draws in, evades and counters enemy attacks.",
                     "<b>Chain Duelist</b>: Strikes repeatedly in tandem with ally attacks."],
     "Dragoon":  ["Sturdy knights skilled in protection and artillery.",
-                    "<b>Shield Bearer</b>: Specialized in blocking and diverting attacks.",
+                    "<b>Shield Bearer</b>: Specializes in blocking and diverting attacks.",
                     "<b>Cannon Bearer</b>: Assists the offensive while maintaining defense."],
-    "Pugilist": ["Brawlers who take down enemies with their own Fists.",
+    "Pugilist": ["Brawlers who take down enemies with their own fists.",
                     "<b>Barrage Brawler</b>: Performs combos of punches that can disable the enemy.",
-                    "<b>Impact Brawler</b>: Throws destructive punches by sacrificing their own health."],
+                    "<b>Impact Brawler</b>: Throws destructive punches by risking their own health."],
     "Harbinger":["Reapers who use noxious Miasma to weaken the enemy.",
-                    "<b>Deathbringer</b>: Coats their weapon in Miasma to inflict ailments and cut down enemies.",
-                    "<b>Deathguard</b>: Spreads Miasma to inflict debuffs or ward off enemy attacks."],
-    "Warlock":  ["Elemental casters that strike the enemy's weakness.",
-                    "<b>Omnimancer</b>: Learns physical magic to cripple the enemy and continuously hit their weak points.",
-                    "<b>Elemancer</b>: Expands their elemental magic and improves control on their use of energy."],
+                    "<b>Deathbringer</b>: Inflict ailments and cuts down afflicted enemies.",
+                    "<b>Deathguard</b>: Inflicts debuffs and keeps the party in good condition."],
+    "Warlock":  ["Elemental casters that exploit the enemy's weakness.",
+                    "<b>Omnimancer</b>: Combines physical and elemental magic to hit any weakness.",
+                    "<b>Elemancer</b>: Specializes in strong elemental magic and energy control."],
     "Necromancer":["Summoners who call forth Wraiths to assist the party.",
-                    "<b>Spirit Evoker</b>: Works alongside Wraiths to provide offense, defense and ailments.",
+                    "<b>Spirit Evoker</b>: Controls Wraiths to provide offense, defense and ailments.",
                     "<b>Spirit Broker</b>: Constantly attacks while summoning or sacrificing Wraiths."],
     "Rover":    ["Archers who hunt down enemies alongside animal companions.",
                     "<b>Flying Falcon</b>: Hunts with a Hawk that attacks multiple enemies.",
                     "<b>Hunting Hound</b>: Hunts with a Hound that protects and heals allies."],
-    "Masurao":  ["Frontline warriors specialized in strong offense with Katanas.",
-                    "<b>Blade Dancer</b>: Wields 4 Katanas at once to trade all defense for overwhelming offense.",
-                    "<b>Blade Master</b>: Versatile duelists with attacks that combine power and utility."],
-    "Shaman":   ["Support casters who manipulate buffs to strengthen the party.",
-                    "<b>Divine Punisher</b>: Dispels buffs to turn them into direct power.",
-                    "<b>Divine Herald</b>: Grants buffs to protect and heal allies."],
+    "Masurao":  ["Frontline warriors focused in strong offense with Katanas.",
+                    "<b>Blade Dancer</b>: Wields 4 Katanas at once for overwhelming offense.",
+                    "<b>Blade Master</b>: Versatile duelists that combine power and utility."],
+    "Shaman":   ["Support casters who grant buffs to strengthen the party.",
+                    "<b>Divine Punisher</b>: Converts their own buffs into direct power or energy.",
+                    "<b>Divine Herald</b>: Reinforces allies while keeping them in good health."],
     "Botanist": ["Healers that use herbal concoctions to take care of afflictions.",
                     "<b>Merciful Healer</b>: Uses medicinal herbs to treat all kinds of injuries.",
-                    "<b>Graced Poisoner</b>: Uses poisonous herbs to make enemies susceptible to ailments."],
+                    "<b>Graced Poisoner</b>: Uses poisonous herbs to inflict debuffs and ailments."],
 
     "Earthlain":["Common skills for characters of the Earthlain race.", "", ""],
     "Celestrian":["Common skills for characters of the Celestrian race.", "", ""],
@@ -5653,6 +5652,8 @@ function toggle_data(table_id){
 
 function populate(class_name){
     var skill_list = document.getElementById("skill_list")
+    skill_list.focus()
+    skill_list.blur()
     while (skill_list.hasChildNodes()){
         skill_list.removeChild(skill_list.firstChild)
     }
