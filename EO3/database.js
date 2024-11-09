@@ -3,7 +3,7 @@ var data = {
     "Royal Lineage":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "When you receive a buff, recover TP.",
+        "Description": "Recover TP each time you receive a buff.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -11,7 +11,7 @@ var data = {
         }
     },
     "Guard Order":{
-        "Usage": "Active (Head)",
+        "Usage": "Active (Head)",   
         "Unlock": "N/A",
         "Description": "Place a buff on an ally row for 3 turns, which decreases physical damage taken.",
         "Starter": "1",
@@ -82,36 +82,36 @@ var data = {
     "Fire Arms":{
         "Usage": "Active (Head)",
         "Unlock": "Attack Order (Lv 1)",
-        "Description": "Place a buff on one ally for 3 turns, which decreases vulnerability to Fire and imbues their weapon with Fire damage.",
+        "Description": "Place a buff on one ally for 3 turns, which increases resistance to Fire and imbues their weapon with Fire damage.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["6", "7", "8", "9", "10"],
-            "Vulnerability↓": ["-10%", "-20%", "-30%", "-40%", "-50%"],
+            "Resistance↑": ["+10%", "+20%", "+30%", "+40%", "+50%"],
             "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
         }
     },
     "Freeze Arms":{
         "Usage": "Active (Head)",
         "Unlock": "Attack Order (Lv 1)",
-        "Description": "Place a buff on one ally for 3 turns, which decreases vulnerability to Ice and imbues their weapon with Ice damage.",
+        "Description": "Place a buff on one ally for 3 turns, which increases resistance to Ice and imbues their weapon with Ice damage.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["6", "7", "8", "9", "10"],
-            "Vulnerability↓": ["-10%", "-20%", "-30%", "-40%", "-50%"],
+            "Resistance↑": ["+10%", "+20%", "+30%", "+40%", "+50%"],
             "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
         }
     },
     "Shock Arms":{
         "Usage": "Active (Head)",
         "Unlock": "Attack Order (Lv 1)",
-        "Description": "Place a buff on one ally for 3 turns, which decreases vulnerability to Volt and imbues their weapon with Volt damage.",
+        "Description": "Place a buff on one ally for 3 turns, which increases resistance to Volt and imbues their weapon with Volt damage.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["6", "7", "8", "9", "10"],
-            "Vulnerability↓": ["-10%", "-20%", "-30%", "-40%", "-50%"],
+            "Resistance↑": ["+10%", "+20%", "+30%", "+40%", "+50%"],
             "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
         }
     },
@@ -152,7 +152,7 @@ var data = {
     "Triumphant Cry":{
         "Usage": "Passive",
         "Unlock": "Royal Veil (Lv 5)",
-        "Description": "If you're alive at the end of a battle, restore HP to the whole party.",
+        "Description": "If you're alive at the end of battle, restore HP to the whole party.",
         "Starter": "0",
         "Max Level": "10",
         "Data":{
@@ -228,7 +228,7 @@ var data = {
     "Sword Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Sword's normal attacks. Unlocks Sword skills.",
+        "Description": "Increases damage dealt with Sword's normal attacks. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -258,8 +258,8 @@ var data = {
             "TP Cost": ["7", "7", "8", "8", "9", "9", "10", "10", "11", "12"],
             "Attack Power": ["105%", "108%", "111%", "114%", "117%", "120%", "123%", "127%", "131%", "135%"],
             "Hits": ["2~3", "2~3", "2~4", "2~4", "2~4", "2~5", "2~5", "2~5", "2~6", "3~6"],
-            "Accuracy": ["-5", "-5", "-4", "-4", "-3", "-3", "-2", "-2", "-1", "-1"],
-            "Action Speed": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Accuracy": ["-5%", "-5%", "-4%", "-4%", "-3%", "-3%", "-2%", "-2%", "-1%", "-1%"],
+            "Action Speed": ["+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0"],
         }
     },
     "Bind Cut":{
@@ -306,7 +306,7 @@ var data = {
     "Club Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Club's normal attacks. Unlocks Club skills.",
+        "Description": "Increases damage dealt with Club's normal attacks. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -350,7 +350,6 @@ var data = {
         "Data": {
             "TP Cost": ["8", "8", "9", "9", "10", "10", "11", "11", "12", "12"],
             "Attack Power": ["150%", "155%", "160%", "165%", "170%", "175%", "180%", "185%", "190%", "200%"],
-            "Infliction Rate": ["40%", "42%", "44%", "46%", "48%", "50%", "52%", "54%", "56%", "60%"],
             "Accuracy": ["-5%", "-5%", "-4%", "-4%", "-3%", "-3%", "-2%", "-2%", "-1%", "-1%"],
             "Action Speed": ["-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
         }
@@ -463,7 +462,7 @@ var data = {
     "Shield Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "If a Shield is equipped, decreases physical damage taken. Unlocks Shield skills.",
+        "Description": "If a Shield is equipped, decreases physical damage taken. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -534,7 +533,7 @@ var data = {
     "Overwatch":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 8), Selflessness (Lv 3)",
-        "Description": "Shield: Protect another ally for this turn, which nullifies attacks to them if the calculated damage is higher than your current HP.",
+        "Description": "Shield: Protect another ally for this turn, which nullifies attacks against them if the calculated damage is higher than your current HP.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -589,7 +588,7 @@ var data = {
     "Spear Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Spear's normal attacks. Unlocks Spear skills.",
+        "Description": "Increases damage dealt with Spear's normal attacks. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -674,7 +673,7 @@ var data = {
     "Trickster":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "When you use an attack skill, recover TP.",
+        "Description": "Recover TP each time you use an attack skill.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -684,7 +683,7 @@ var data = {
     "Rapier Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Rapier's normal attacks. Unlocks Rapier skills.",
+        "Description": "Increases damage dealt with Rapier's normal attacks. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -764,7 +763,7 @@ var data = {
     "Gun Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Gun's normal attacks. Unlocks Gun skills.",
+        "Description": "Increases damage dealt with Gun's normal attacks. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -854,7 +853,7 @@ var data = {
     "Pincushion":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Rapier Mastery (Lv 10), Gun Mastery (Lv 10)",
-        "Description": "Rapier/Gun: Deal multiple hits of melee/ranged Stab damage to random enemies. Power gains +3% per point of AGI you have.",
+        "Description": "Rapier/Gun: Deal multiple hits of melee/ranged Stab damage to random enemies. Each point of AGI on the user adds 3% to the Attack Power.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -894,7 +893,7 @@ var data = {
         "Starter": "0",
         "Max Level": "5",
         "Data": {
-            "Limit Gain↑": ["+2", "+4", "+6", "+8", "+10"],
+            "Min. Limit Gain↑": ["+2", "+4", "+6", "+8", "+10"],
         }
     },
     "Troublemaker":{
@@ -970,7 +969,7 @@ var data = {
     "Knife Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Knife's normal attacks. Unlocks Knife skills.",
+        "Description": "Increases damage dealt with Knife's normal attacks. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1246,7 +1245,7 @@ var data = {
     "Fist Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Removes the ATK penalty when using bare Fists, and instead applies an ATK increase. Unlocks Fist skills.",
+        "Description": "Removes the ATK penalty when using bare Fists, and instead applies an ATK increase. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1334,7 +1333,7 @@ var data = {
     "Blood Return":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "When an ally dies, recover TP.",
+        "Description": "Recover TP each time an ally dies.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -1378,7 +1377,7 @@ var data = {
     "Fire Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases Fire damage dealt. Unlocks Fire skills.",
+        "Description": "Increases Fire damage dealt. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1426,7 +1425,7 @@ var data = {
     "Ice Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases Ice damage dealt. Unlocks Ice skills.",
+        "Description": "Increases Ice damage dealt. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1474,7 +1473,7 @@ var data = {
     "Volt Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases Volt damage dealt. Unlocks Volt skills.",
+        "Description": "Increases Volt damage dealt. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1543,7 +1542,7 @@ var data = {
     "Etheric Charge":{
         "Usage": "Active (Head)",
         "Unlock": "Dark Ether (Lv 5)",
-        "Description": "Enter a charge state until the end of next turn, which massively increases elemental damage dealt for your next action.",
+        "Description": "Enter a charge state until the end of next turn, which massively increases elemental damage dealt by your next action.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -1592,19 +1591,19 @@ var data = {
     "Beast Soul":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Increases Max HP, damage dealt, and defense for your summoned Beasts.",
+        "Description": "Increases Max HP, offense, and defense for your summoned Beasts. (The Beast HP formula applies the HP boost twice)",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
             "Max HP↑": ["+10%", "+14%", "+18%", "+22%", "+26%", "+30%", "+35%", "+40%", "+45%", "+50%"],
             "Damage Dealt↑": ["+20%", "+26%", "+32%", "+38%", "+44%", "+50%", "+56%", "+62%", "+68%", "+75%"],
-            "Defense↑": ["+5%", "+10%", "+15%", "+20%", "+25%", "+30%", "+35%", "+40%", "+45%", "+50%"],
+            "Damage Taken↓": ["-5%", "-9%", "-13%", "-17%", "-20%", "-23%", "-26%", "-29%", "-31%", "-33%"],
         }
     },
     "Wild Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases infliction chances of your summoned Beasts. This bonus is added after applying resistances. Unlocks Beast skills.",
+        "Description": "Increases infliction chances of your summoned Beasts. This bonus is directly added after applying resistances. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1614,7 +1613,7 @@ var data = {
     "Dismiss Beast":{
         "Usage": "Active (Arms)",
         "Unlock": "Wild Mastery (Lv 1)",
-        "Description": "Remove a summoned Beast from battle, then recover the TP that was spent to summon it.",
+        "Description": "Remove your summoned Beast from battle, then recover the TP that was spent to summon it.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -1796,7 +1795,7 @@ var data = {
     "Sacrifice 1":{
         "Usage": "Passive",
         "Unlock": "Nature Pact (Lv 3)",
-        "Description": "Your summoned Beasts have a chance to take physical attacks in place of allies in their same row.",
+        "Description": "Your summoned Beast has a chance to take physical attacks in place of allies in their same row.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -1806,7 +1805,7 @@ var data = {
     "Sacrifice 2":{
         "Usage": "Passive",
         "Unlock": "Nature Pact (Lv 3)",
-        "Description": "Your summoned Beasts have a chance to take elemental attacks in place of allies in their same row.",
+        "Description": "Your summoned Beast has a chance to take elemental attacks in place of allies in their same row.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -1862,7 +1861,7 @@ var data = {
     "Bolt Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Crossbow's normal attacks. Unlocks Crossbow skills.",
+        "Description": "Increases damage dealt with Crossbow's normal attacks. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1999,7 +1998,7 @@ var data = {
     "Cloudbuster":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Bolt Mastery (Lv 10)",
-        "Description": "Crossbow: Prepare an attack that will be performed at the end of next turn, which deals ranged Stab damage to all enemies.",
+        "Description": "Crossbow: Prepare an attack that will be performed at the end of next turn, dealing ranged Stab damage to all enemies.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -2297,7 +2296,7 @@ var data = {
     "Katana Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Katana's normal attacks. Unlocks Katana skills.",
+        "Description": "Increases damage dealt with Katana's normal attacks. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2496,7 +2495,7 @@ var data = {
     "Daifuhensha":{
         "Usage": "Active (Head)",
         "Unlock": "Endure (Lv 5)",
-        "Description": "Place a buff on an yourself for 3 turns, which increases physical damage dealt, decreases physical damage taken and increases enemy aggro. Actual aggro increase on each attack is a random value between 3 and this skill's bonus.",
+        "Description": "Place a buff on yourself for 3 turns, which increases physical damage dealt, decreases physical damage taken and increases enemy aggro. Actual aggro increase on each attack is a random value between 3 and this skill's bonus.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -3138,10 +3137,10 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Sovereign": "Commanders that manage buffs to bolster and heal the party.",
+    "Sovereign": "Commanders that manage buffs to empower and heal the party.",
     "Gladiator": "Frontline warriors focused on strong physical offense.",
-    "Hoplite":   "Sturdy knights skilled in deflecting enemy attacks.",
-    "Buccaneer": "Agile fighters that strike repeatedly alongside allies.",
+    "Hoplite":   "Sturdy knights that weaken and deflect enemy attacks.",
+    "Buccaneer": "Agile fighters that strike in tandem with their allies.",
     "Ninja":     "Stealthy assassins proficient in evasion and ailments.",
     "Monk":      "Martial artists trained in healing and combat techniques.",
     "Zodiac":    "Elemental casters that exploit the enemy's weakness.",
@@ -3149,7 +3148,7 @@ var descriptions = {
     "Arbalist":  "Crossbowmen that deal heavy damage from any distance.",
     "Farmer":    "Specialists in improving exploration and resource gathering.",
     "Shogun":    "Warrior generals that command the party and fight along them.",
-    "Yggdroid":  "Combat androids who treat their own bodies as weapons.",
+    "Yggdroid":  "Robots who weaponize their body and send out attack drones.",
 
     "Common Skills":"Skills available to all classes.",
     "Limit Skills":"Powerful skills available through the Limit system.",

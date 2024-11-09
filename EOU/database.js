@@ -3775,13 +3775,13 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht": "Frontline warriors focused on steady physical offense.",
+    "Landsknecht": "Frontline warriors that boast solid offense and defense.",
     "Survivalist": "Archers with great agility and exploration knowledge.",
     "Protector":   "Sturdy knights that keep the party safe from harm.",
     "Dark Hunter": "Ruthless fighters that immobilize then finish off enemies.",
     "Medic":       "Healers that effectively treat any injury or affliction.",
     "Alchemist":   "Elemental casters that exploit the enemy's weakness.",
-    "Troubadour":  "Musicians that grant buffs to bolster the party in many ways.",
+    "Troubadour":  "Musicians that grant various buffs to bolster the party.",
     "Ronin":       "Katana users who change stance to adapt to the situation.",
     "Hexer":       "Support casters that weaken, disable and control the enemy.",
     "Highlander":  "A Spear user that controls life force and turns it into power.",

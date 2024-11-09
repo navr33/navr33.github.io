@@ -1218,7 +1218,7 @@ var data = {
     "Drain Bite":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Sword Mastery (Lv 5)",
-        "Description": "Sword: Deal melee Cut damage to one enemy. Recover HP equal to 25% of the damage dealt.",
+        "Description": "Sword: Deal melee Cut damage to one enemy. Recover HP to your line equal to 25% of the damage dealt.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1259,7 +1259,7 @@ var data = {
     "Temptation":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "HP Up (Lv 4)",
-        "Description": "Attempt to inflict Stun on one enemy, and increase their damage taken until the end of turn.",
+        "Description": "Attempt to inflict Stun on one enemy. If successful, increase their damage taken until the end of turn.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1352,7 +1352,7 @@ var data = {
     "Snake Eyes":{
         "Usage": "Active (Head)",
         "Unlock": "Curb ATK Up (Lv 3)",
-        "Description": "Place a debuff on one enemy for several turns, which increases physical damage taken. Increased effect if the target has a bind/ailment.",
+        "Description": "Place a debuff on one enemy for several turns, which increases physical damage taken. Stronger effect if the target has a bind/ailment.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1844,7 +1844,7 @@ var data = {
     "Riot Formula":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Flame/Freeze/Spark Formula (Lv 3)",
-        "Description": "(Formula) Deal 5 hits of a random elemental type each to random enemies. TP cost goes down as you spend TP: Cost is multiplied by [1 - SpentTP/TPtoMin]. (Minimum cost of 1 TP. Cost resets when used)",
+        "Description": "(Formula) Deal 5 hits of a random elemental damage type to random enemies. TP cost goes down as you spend TP: Cost is multiplied by [1 - SpentTP/TPtoMin]. (Minimum cost of 1 TP. Cost resets when used. Animation changes based on the chosen element)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1901,7 +1901,7 @@ var data = {
     "Compression":{
         "Usage": "Active (Head)",
         "Unlock": "Inferno/Cocytus/Thor formula (Lv 3)",
-        "Description": "Place a buff on yourself for 3 turns, which increases damage dealt with all-target attacks but changes them to single-target.",
+        "Description": "Place a buff on yourself for 3 turns, which increases damage dealt with elemental all-target attacks but changes them to single-target.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2283,7 +2283,7 @@ var data = {
     "Life Ensemble":{
         "Usage": "Active (Head, TEC+VIT)",
         "Unlock": "Barbaric March (Lv 3)",
-        "Description": "(Song) For this turn, allies with Song buffs will recover HP upon taking damage.",
+        "Description": "(Song) For this turn, allies with Song buffs will recover HP upon taking damage (max once per turn per ally).",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "5",
@@ -2372,7 +2372,7 @@ var data = {
     "Healing Rhythm":{
         "Usage": "Passive",
         "Unlock": "HP Up (Lv 5)",
-        "Description": "If you have buffs, recover HP at the end of each turn.",
+        "Description": "At the end of each turn, if you have buffs, recover HP.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4200,7 +4200,7 @@ var data = {
     "Dauntless Order":{
         "Usage": "Active (Head)",
         "Unlock": "Attack/Guard Order (Lv 3)",
-        "Description": "(Order) Place a buff on an ally line for several turns, which gives them a chance to survive lethal damage, restoring HP if it activates.",
+        "Description": "(Order) Place a buff on an ally line for several turns, which gives them a chance to survive lethal damage, restoring HP if it activates. (Buff is consumed when activated)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4700,7 +4700,7 @@ var data = {
     "Overkiller":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Blade Mastery (Lv 7)",
-        "Description": "Sword/Katana: Deal melee Cut damage to one enemy. If it kills the target, repeat its damage on all other enemies.",
+        "Description": "Sword/Katana: Deal melee Cut damage to one enemy. If it kills the target, repeat that first hit's damage on all other enemies.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4861,7 +4861,7 @@ var data = {
     "Phys ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt.",
+        "Description": "Increases physical damage dealt. (Doesn't stack with Elem ATK Up, and composite attacks will only apply the stronger one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4872,7 +4872,7 @@ var data = {
     "Elem ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases elemental damage dealt.",
+        "Description": "Increases elemental damage dealt. (Doesn't stack with Phys ATK Up, and composite attacks will only apply the stronger one)",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5762,21 +5762,21 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht": "Frontline warriors focused on steady physical offense.",
+    "Landsknecht": "Frontline warriors that boast solid offense and defense.",
     "Survivalist": "Archers with great agility and exploration knowledge.",
     "Protector":   "Sturdy knights that keep the party safe from harm.",
     "Dark Hunter": "Ruthless fighters that immobilize then finish off enemies.",
     "Medic":       "Healers that effectively treat any injury or affliction.",
     "Alchemist":   "Elemental casters that exploit the enemy's weakness.",
-    "Troubadour":  "Musicians that grant buffs to bolster the party in many ways.",
+    "Troubadour":  "Musicians that grant various buffs to bolster the party.",
     "Ronin":       "Katana users who change stance to adapt to the situation.",
     "Hexer":       "Support casters that weaken, disable and control the enemy.",
     "Gunner":      "Versatile marksmen that can attack, immobilize and heal.",
-    "War Magus":   "Witch doctors who can treat ally injuries or worsen the enemy's.",
-    "Beast":       "Animal companions who use their body as a shield and a weapon.",
-    "Sovereign":   "Commanders that manage buffs to reinforce and heal the party.",
-    "Highlander":  "Spear users that control life force and turn it into power.",
-    "Fafnir":      "A swordsman with high control of Force. He can transform to increase his capabilities.",
+    "War Magus":   "Witch doctors who treat ally injuries and worsen the enemy's.",
+    "Beast":       "Animal companions whose body acts as a shield and a weapon.",
+    "Sovereign":   "Commanders that manage buffs to empower and heal the party.",
+    "Highlander":  "Warriors that control life force and turn it into power.",
+    "Fafnir":      "A swordsman that gains power by entering a monstrous form.",
 
     "Enemy Grimoires": "Enemy skills available for use through Grimoire Stones.",
     "Battle Items": "Consumable items that can be used in battle.",
