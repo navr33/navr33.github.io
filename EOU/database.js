@@ -3775,17 +3775,17 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht": "Frontline warriors that boast solid offense and defense.",
-    "Survivalist": "Archers with great agility and exploration knowledge.",
-    "Protector":   "Sturdy knights that keep the party safe from harm.",
-    "Dark Hunter": "Ruthless fighters that immobilize then finish off enemies.",
-    "Medic":       "Healers that effectively treat any injury or affliction.",
-    "Alchemist":   "Elemental casters that exploit the enemy's weakness.",
-    "Troubadour":  "Musicians that grant various buffs to bolster the party.",
-    "Ronin":       "Katana users who change stance to adapt to the situation.",
-    "Hexer":       "Support casters that weaken, disable and control the enemy.",
-    "Highlander":  "A Spear user that controls life force and turns it into power.",
-    "Gunner":      "A versatile Gun user that can attack, immobilize and heal.",
+    "Landsknecht":  "Frontline warriors with good attack power and durability.",
+    "Survivalist":  "Archers with great agility and exploration knowledge.",
+    "Protector":    "Sturdy knights that defend the party and keep them safe.",
+    "Dark Hunter":  "Ruthless fighters that immobilize then finish off enemies.",
+    "Medic":        "Healers that effectively treat any injuries and afflictions.",
+    "Alchemist":    "Elemental casters that exploit the enemy's weakness.",
+    "Troubadour":   "Musicians that grant various buffs to bolster the party.",
+    "Ronin":        "Katana users who change stance to adapt to the situation.",
+    "Hexer":        "Support casters that weaken, disable and control enemies.",
+    "Highlander":   "A Spear user that controls life force and turns it into power.",
+    "Gunner":       "A versatile Gun user that can attack, immobilize and heal.",
 
     "Battle Items": "Consumable items that can be used in battle.",
     "Guildkeeper Effects": "Enhancements granted by guildkeepers.",

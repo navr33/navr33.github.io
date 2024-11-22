@@ -5266,9 +5266,6 @@ var data = {
         "Data": ""
     },
 },
-"Enemy Grimoires":{
-
-},
 "Battle Items":{
     "Healing":{
         "Medica / Medica II / Medica III / Medica IV":{
@@ -5762,21 +5759,21 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht": "Frontline warriors that boast solid offense and defense.",
-    "Survivalist": "Archers with great agility and exploration knowledge.",
-    "Protector":   "Sturdy knights that keep the party safe from harm.",
-    "Dark Hunter": "Ruthless fighters that immobilize then finish off enemies.",
-    "Medic":       "Healers that effectively treat any injury or affliction.",
-    "Alchemist":   "Elemental casters that exploit the enemy's weakness.",
-    "Troubadour":  "Musicians that grant various buffs to bolster the party.",
-    "Ronin":       "Katana users who change stance to adapt to the situation.",
-    "Hexer":       "Support casters that weaken, disable and control the enemy.",
-    "Gunner":      "Versatile marksmen that can attack, immobilize and heal.",
-    "War Magus":   "Witch doctors who treat ally injuries and worsen the enemy's.",
-    "Beast":       "Animal companions whose body acts as a shield and a weapon.",
-    "Sovereign":   "Commanders that manage buffs to empower and heal the party.",
-    "Highlander":  "Warriors that control life force and turn it into power.",
-    "Fafnir":      "A swordsman that gains power by entering a monstrous form.",
+    "Landsknecht":  "Frontline warriors with good attack power and durability.",
+    "Survivalist":  "Archers with great agility and exploration knowledge.",
+    "Protector":    "Sturdy knights that defend the party and keep them safe.",
+    "Dark Hunter":  "Ruthless fighters that immobilize then finish off enemies.",
+    "Medic":        "Healers that effectively treat any injuries and afflictions.",
+    "Alchemist":    "Elemental casters that exploit the enemy's weakness.",
+    "Troubadour":   "Musicians that grant various buffs to bolster the party.",
+    "Ronin":        "Katana users who change stance to adapt to the situation.",
+    "Hexer":        "Support casters that weaken, disable and control enemies.",
+    "Gunner":       "Versatile marksmen that can attack, immobilize and heal.",
+    "War Magus":    "Witch doctors who treat ally injuries and worsen the enemy's.",
+    "Beast":        "Animal companions whose body acts as a shield and a weapon.",
+    "Sovereign":    "Commanders that use buffs to empower and heal the party.",
+    "Highlander":   "Warriors that control life force and can turn it into power.",
+    "Fafnir":       "A swordsman that gains power by entering a monstrous form.",
 
     "Enemy Grimoires": "Enemy skills available for use through Grimoire Stones.",
     "Battle Items": "Consumable items that can be used in battle.",
@@ -5952,6 +5949,13 @@ function populate_item(class_name){
                 usage = document.createElement("td")
                 second_row.appendChild(usage)
                 usage.innerText = current_skill["Usage"]
+            }
+
+            if (current_skill.hasOwnProperty("Unlock")){
+                usage.width = "30%"
+                unlock = document.createElement("td")
+                second_row.appendChild(unlock)
+                unlock.innerText = "Unlock: "+current_skill["Unlock"]
             }
             
             third_row = document.createElement("tr")

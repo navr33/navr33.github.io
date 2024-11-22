@@ -528,7 +528,7 @@ var data = {
             }
         },
         "Counter Guard":{
-            "Usage": "Active (Arms)",
+            "Usage": "Active (Arms, STR)",
             "Unlock": "Gunmount (Lv 3)",
             "Description": "(Guard) Shield: Protect an ally line for this turn, which decreases physical damage taken and makes you counterattack against physical hits. Counter chance starts at 100% and goes down with each activation.",
             "Starter": "0",
@@ -602,7 +602,7 @@ var data = {
         "Dragon Force":{
             "Usage": "Passive",
             "Unlock": "Auto-Roar (Lv 3)",
-            "Description": "Chance to negate damage taken by allies not in your line.",
+            "Description": "Chance to negate physical/elemental damage taken by allies not in your line.",
             "Starter": "0",
             "Max Level": "10",
             "Data": {
@@ -3495,7 +3495,7 @@ var data = {
             }
         },
         "Smokeblight":{
-            "Usage": "Active (Head, LUC)",
+            "Usage": "Active (Head)",
             "Unlock": "Toxic/Dark Smoke (Lv 2)",
             "Description": "Place a debuff on an enemy line for several turns, which increases elemental damage taken. Stronger effect while targets have an ailment.",
             "Starter": "0",
@@ -5605,10 +5605,10 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Fencer":   ["Swordfighters who overwhelm the enemy with swift movements.",
+    "Fencer":   ["Swordfighters who use swiftness to overpower enemies.",
                     "<b>Phantom Duelist</b>: Draws in, evades and counters enemy attacks.",
                     "<b>Chain Duelist</b>: Strikes repeatedly in tandem with ally attacks."],
-    "Dragoon":  ["Sturdy knights skilled in protection and artillery.",
+    "Dragoon":  ["Sturdy knights skilled in both protection and artillery.",
                     "<b>Shield Bearer</b>: Specializes in blocking and diverting attacks.",
                     "<b>Cannon Bearer</b>: Assists the offensive while maintaining defense."],
     "Pugilist": ["Brawlers who take down enemies with their own fists.",
@@ -5623,16 +5623,16 @@ var descriptions = {
     "Necromancer":["Summoners who call forth Wraiths to assist the party.",
                     "<b>Spirit Evoker</b>: Controls Wraiths to provide offense, defense and ailments.",
                     "<b>Spirit Broker</b>: Constantly attacks while summoning or sacrificing Wraiths."],
-    "Rover":    ["Archers who hunt down enemies alongside animal companions.",
+    "Rover":    ["Archers who hunt enemies alongside animal companions.",
                     "<b>Flying Falcon</b>: Hunts with a Hawk that attacks multiple enemies.",
                     "<b>Hunting Hound</b>: Hunts with a Hound that protects and heals allies."],
     "Masurao":  ["Frontline warriors focused in strong offense with Katanas.",
                     "<b>Blade Dancer</b>: Wields 4 Katanas at once for overwhelming offense.",
                     "<b>Blade Master</b>: Versatile duelists that combine power and utility."],
-    "Shaman":   ["Support casters who grant buffs to strengthen the party.",
+    "Shaman":   ["Support casters who manage buffs to strengthen the party.",
                     "<b>Divine Punisher</b>: Converts their own buffs into direct power or energy.",
                     "<b>Divine Herald</b>: Reinforces allies while keeping them in good health."],
-    "Botanist": ["Healers that use herbal concoctions to take care of afflictions.",
+    "Botanist": ["Healers that make concoctions to take care of afflictions.",
                     "<b>Merciful Healer</b>: Uses medicinal herbs to treat all kinds of injuries.",
                     "<b>Graced Poisoner</b>: Uses poisonous herbs to inflict debuffs and ailments."],
 

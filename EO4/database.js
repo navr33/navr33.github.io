@@ -3168,16 +3168,16 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht":"Frontline warriors that encourage allies to follow up after their attacks.",
-    "Nightseeker":"Assassins that hide to poison enemies then close in to kill them.",
-    "Fortress":   "Sturdy knights that put themselves on the line to protect the party.",
-    "Sniper":     "Archers that aim at weak spots to incapacitate or deal heavy damage.",
-    "Medic":      "Healers that effectively treat the party's injuries and afflictions.",
-    "Runemaster": "Offensive casters that control the elements to hit the enemy's weakness.",
-    "Dancer":     "Performers who use buffs to strengthen allies and attack alongside them.",
-    "Arcanist":   "Support casters that summon magic circles to restrain the enemy.",
-    "Bushi":      "Fierce attackers that enter a bloody rage to trade health for power.",
-    "Imperial":   "Knights whose mechanical blades deliver devastating but exhausting attacks.",
+    "Landsknecht":  "Frontline warriors that encourage allies to follow them up.",
+    "Nightseeker":  "Assassins that poison enemies then close in for the kill.",
+    "Fortress":     "Knights that put themselves on the line to protect the party.",
+    "Sniper":       "Archers that aim at weak spots to hurt and incapacitate.",
+    "Medic":        "Healers that effectively treat any injuries and afflictions.",
+    "Runemaster":   "Elemental casters that exploit the enemy's weakness.",
+    "Dancer":       "Performers who use buffs to strengthen, heal and attack.",
+    "Arcanist":     "Support casters that use magic circles to restrain enemies.",
+    "Bushi":        "Fierce attackers that enter a bloody rage to gain power.",
+    "Imperial":     "Heavy knights that use devastating but exhausting attacks.",
 
     "Burst Skills":"Powerful skills available through the Burst system.",
     "Battle Items":"Consumable items meant to aid you in battle.",
