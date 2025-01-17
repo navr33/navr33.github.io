@@ -1,6 +1,6 @@
 # Skill Data Viewer
 
-Apps for browsing detailed skill data for Etrian Odyssey games.
+Apps for browsing detailed skill data for Etrian Odyssey games, available through Github Pages (https://navr33.github.io/).
 
 EO3 data compiled from the Skill Data Viewer by violentlycar (https://viocar.github.io/)
 
