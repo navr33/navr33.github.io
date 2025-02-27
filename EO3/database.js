@@ -1621,7 +1621,7 @@ var data = {
         }
     },
     "Call Bird":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Wild Mastery (Lv 1)",
         "Description": "Summon a bird with 100% of your combat stats. When summoned, deals Stab damage and inflicts Head Bind to target enemy; on subsequent turns targets a random enemy instead.",
         "Starter": "0",
@@ -1631,13 +1631,14 @@ var data = {
             "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             "Separator":[],
             "Beast HP": ["40", "45", "50", "55", "60", "66", "72", "78", "84", "90"],
-            "Attack Power": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "130%"],
+            "Attack Power\n(Initial)": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "130%"],
+            "Attack Power\n(Later)": ["70%", "75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "120%"],
             "Infliction Rate": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
             "Accuracy": ["-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%"],
         }
     },
     "Call Snake":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Wild Mastery (Lv 1)",
         "Description": "Summon a snake with 100% of your combat stats. When summoned, deals Bash damage and inflicts Arm Bind to target enemy; on subsequent turns targets a random enemy instead.",
         "Starter": "0",
@@ -1647,13 +1648,14 @@ var data = {
             "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             "Separator":[],
             "Beast HP": ["40", "45", "50", "55", "60", "66", "72", "78", "84", "90"],
-            "Attack Power": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "130%"],
+            "Attack Power\n(Initial)": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "130%"],
+            "Attack Power\n(Later)": ["70%", "75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "120%"],
             "Infliction Rate": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
             "Accuracy": ["-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%"],
         }
     },
     "Call Mole":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Wild Mastery (Lv 1)",
         "Description": "Summon a mole with 100% of your combat stats. When summoned, deals Cut damage and inflicts Leg Bind to target enemy; on subsequent turns targets a random enemy instead.",
         "Starter": "0",
@@ -1663,13 +1665,14 @@ var data = {
             "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             "Separator":[],
             "Beast HP": ["40", "45", "50", "55", "60", "66", "72", "78", "84", "90"],
-            "Attack Power": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "130%"],
+            "Attack Power\n(Initial)": ["80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "130%"],
+            "Attack Power\n(Later)": ["70%", "75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "120%"],
             "Infliction Rate": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
             "Accuracy": ["-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%"],
         }
     },
     "Call Insect":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Wild Mastery (Lv 3)",
         "Description": "Summon a venomfly with 70% of your combat stats. When summoned, deals Cut damage and inflicts Poison to target enemy; on subsequent turns targets a random enemy instead.",
         "Starter": "0",
@@ -1679,14 +1682,15 @@ var data = {
             "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             "Separator":[],
             "Beast HP": ["20", "22", "24", "26", "28", "30", "32", "34", "36", "40"],
-            "Attack Power": ["60%", "65%", "70%", "75%", "80%", "90%", "100%", "110%", "120%", "130%"],
+            "Attack Power\n(Initial)": ["60%", "65%", "70%", "75%", "80%", "90%", "100%", "110%", "120%", "130%"],
+            "Attack Power\n(Later)": ["50%", "55%", "60%", "65%", "70%", "80%", "90%", "100%", "110%", "120%"],
             "Infliction Rate": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
             "Poison Power": ["50", "80", "110", "140", "170", "200", "230", "270", "310", "350"],
             "Accuracy": ["-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%"],
         }
     },
     "Call Owl":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, LUC)",
         "Unlock": "Wild Mastery (Lv 5)",
         "Description": "Summon an owl with 100% of your combat stats. On every turn, attempts to inflict Sleep on all enemies.",
         "Starter": "0",
@@ -1700,7 +1704,7 @@ var data = {
         }
     },
     "Call Ooze":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Wild Mastery (Lv 6), Nature Pact (Lv 10)",
         "Description": "Summon a slime with 90% of your combat stats. When summoned, deals Cut damage and inflicts Plague to target enemy; on subsequent turns targets a random enemy instead.",
         "Starter": "0",
@@ -1717,7 +1721,7 @@ var data = {
         }
     },
     "Call Elephant":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Wild Mastery (Lv 7), Call Insect (Lv 4)",
         "Description": "Summon an elephant with 120% of your combat stats. When summoned, deals Bash damage and inflicts Panic to all enemies; on subsequent turns it hits one random enemy instead.",
         "Starter": "0",
@@ -1727,13 +1731,14 @@ var data = {
             "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             "Separator":[],
             "Beast HP": ["110", "125", "140", "155", "170", "185", "200", "215", "230", "250"],
-            "Attack Power": ["75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%"],
+            "Attack Power\n(Initial)": ["75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%"],
+            "Attack Power\n(Later)": ["120%", "125%", "130%", "135%", "140%", "150%", "160%", "170%", "180%", "190%"],
             "Infliction Rate": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
             "Accuracy": ["-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%"],
         }
     },
     "Call Cow":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Wild Mastery (Lv 7), Call Owl (Lv 4)",
         "Description": "Summon a bull with 120% of your combat stats. When summoned, deals multiple hits of Stab damage and inflicts Paralysis to random enemies; on subsequent turns it hits once and targets one random enemy instead.",
         "Starter": "0",
@@ -1743,14 +1748,16 @@ var data = {
             "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             "Separator":[],
             "Beast HP": ["100", "115", "125", "140", "150", "160", "170", "180", "190", "200"],
-            "Attack Power": ["65%", "68%", "70%", "73%", "76%", "78%", "81%", "84%", "87%", "90%"],
-            "Infliction Rate": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
-            "Hits": ["2", "2", "2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "2~5"],
+            "Attack Power\n(Initial)": ["65%", "68%", "70%", "73%", "76%", "78%", "81%", "84%", "87%", "90%"],
+            "Infliction Rate\n(Initial)": ["25%", "27%", "29%", "32%", "35%", "38%", "41%", "44%", "47%", "50%"],
+            "Hits\n(Initial)": ["2", "2", "2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "2~5"],
+            "Attack Power\n(Later)": ["130%", "135%", "140%", "145%", "150%", "160%", "170%", "180%", "190%", "200%"],
+            "Infliction Rate\n(Later)": ["30%", "32%", "34%", "36%", "38%", "40%", "42%", "44%", "46%", "50%"],
             "Accuracy": ["-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%", "-2%"],
         }
     },
     "Call Lion":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Wild Mastery (Lv 10), Sacrifice 1 (Lv 5)",
         "Description": "Summon a lion with 150% of your combat stats that's afflicted with Sleep. If it wakes up, deals Almighty damage with a chance to inflict Paralysis and Stun to all enemies, then goes back to Sleep. Stronger on enemies afflicted with an ailment.",
         "Starter": "0",
@@ -1767,9 +1774,9 @@ var data = {
         }
     },
     "Call Tiger":{
-        "Usage": "Active (Arms)",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Wild Mastery (Lv 10), Sacrifice 2 (Lv 5)",
-        "Description": "Summon a tiger with 150% of your combat stats. When summoned, attempts to inflict Instant Death on all enemies; on subsequent turns, it will prepare to counter attack against any attack received.",
+        "Description": "Summon a tiger with 150% of your combat stats. When summoned, attempts to inflict Instant Death on all enemies; on subsequent turns it instead prepares to counterattack, dealing Cut damage to its attackers.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -1777,8 +1784,9 @@ var data = {
             "Action Speed": ["-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3", "-3"],
             "Separator":[],
             "Beast HP": ["160", "184", "200", "224", "240", "256", "272", "288", "304", "320"],
-            "Attack Power": ["120%", "125%", "130%", "140%", "150%", "160%", "170%", "180%", "190%", "200%"],
-            "Infliction Rate": ["5%", "6%", "7%", "8%", "10%", "12%", "14%", "16%", "18%", "20%"],
+            "Infliction Rate\n(Initial)": ["5%", "6%", "7%", "8%", "10%", "12%", "14%", "16%", "18%", "20%"],
+            "Attack Power\n(Later)": ["120%", "125%", "130%", "140%", "150%", "160%", "170%", "180%", "190%", "200%"],
+            "Accuracy": ["-2%", "-2%", "-1%", "-1%", "+0%", "+1%", "+2%", "+3%", "+4%", "+5%"],
         }
     },
     "Nature Pact":{
