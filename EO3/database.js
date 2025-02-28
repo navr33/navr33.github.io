@@ -2739,7 +2739,7 @@ var data = {
     "Reflector":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Resupply (Lv 3), All Out (Lv 3)",
-        "Description": "Command all Bots to nullify enemy attacks of their corresponding element. If it activates, the Bot will perform a counter attack that deals ranged damage of that element.",
+        "Description": "Command all Bots to nullify enemy attacks of their corresponding element. If a Bot stops an attack, it will perform a counter attack that deals ranged damage of its element.",
         "Starter": "0",
         "Max Level": "5",
         "Data": {
@@ -2751,7 +2751,7 @@ var data = {
     "Shoot":{
         "Usage": "Active (Head, STR)",
         "Unlock": "Resupply (Lv 3), All Out (Lv 3)",
-        "Description": "Command all your Bots to attack one enemy, dealing a single hit of damage their combined elements, then they are destroyed. Damage is doubled for each Bot beyond the first. Damage is tripled and becomes Almighty type if the 3 Bot types participate.",
+        "Description": "Command all your Bots to attack one enemy, dealing a single hit of damage of their combined elements, but then the Bots are destroyed. Damage is doubled for each Bot beyond the first. Damage is tripled and becomes Almighty type if the 3 Bot types participate.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -3308,6 +3308,8 @@ function populate_list(class_name){
     for (const skill in current_class){
         add_skill_entry(skill_list, current_class, skill)
     }
+    final_line = document.createElement("p")
+    skill_list.appendChild(final_line)
 }
 
 function populate_list_categorized(class_name){
@@ -3327,6 +3329,8 @@ function populate_list_categorized(class_name){
             add_skill_entry(skill_list, current_class[category], skill)
         }
     }
+    final_line = document.createElement("p")
+    skill_list.appendChild(final_line)
 }
 
 //Initiate page with the first class on the list

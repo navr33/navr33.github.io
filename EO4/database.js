@@ -3315,6 +3315,8 @@ function add_skill_entry(skill_list, current_class, skill){
             latest = effect_value
         }
     }
+    final_line = document.createElement("p")
+    skill_list.appendChild(final_line)
 }
 
 function populate_list_categorized(class_name){
@@ -3334,6 +3336,8 @@ function populate_list_categorized(class_name){
             add_skill_entry(skill_list, current_class[category], skill)
         }
     }
+    final_line = document.createElement("p")
+    skill_list.appendChild(final_line)
 }
 
 //Initiate page with the first class on the list
