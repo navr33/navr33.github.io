@@ -4951,6 +4951,268 @@ var data = {
         "Data": ""
     },
 },
+"Enemy Grimoires":{
+    "1st Stratum":{
+        "Hard Shell":{
+            "Usage": "Active (Head)",
+            "Unlock": "Forest Snail",
+            "Description": "Place a buff on yourself for 3 turns, which decreases physical damage taken.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+                "Damage Taken↓": ["-30%", "-31%", "-32%", "-33%", "-34%", "-35%", "-36%", "-37%", "-38%", "-40%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Desperate Needle":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Hedgehog",
+            "Description": "Deal melee Stab damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+                "Attack Power": ["120%", "123%", "126%", "130%", "133%", "136%", "140%", "143%", "146%", "150%"],
+                "Base Accuracy": ["99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%"],
+                "Action Speed": ["200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%", "200%"],
+            }
+        },
+        "Ensnaring Web":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Crawler",
+            "Description": "Attempt to inflict Leg Bind on an enemy line.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+                "Infliction Rate": ["30%", "31%", "32%", "33%", "34%", "35%", "36%", "37%", "38%", "40%"],
+                "Action Speed": ["120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%"],
+            }
+        },
+        "Jolting Blow":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Jackalope",
+            "Description": "Deal melee Bash damage to one enemy, with a chance to inflict Arm Bind.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+                "Attack Power": ["110%", "112%", "114%", "116%", "118%", "120%", "122%", "125%", "127%", "130%"],
+                "Infliction Rate": ["30%", "30%", "30%", "30%", "32%", "32%", "32%", "32%", "32%", "35%"],
+                "Base Accuracy": ["99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Poison Powder":{
+            "Usage": "Active (Arms, LUC)",
+            "Unlock": "Venomfly",
+            "Description": "Attempt to inflict Poison on one enemy.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+                "Infliction Rate": ["55%", "55%", "55%", "55%", "55%", "55%", "55%", "55%", "55%", "55%"],
+                "Poison Power": ["40", "44", "48", "53", "57", "62", "66", "71", "75", "80"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Rolling":{
+            "Usage": "Active (Legs, STR)",
+            "Unlock": "Roller",
+            "Description": "Deal melee Bash damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+                "Attack Power": ["130%", "133%", "136%", "139%", "142%", "146%", "149%", "153%", "156%", "160%"],
+                "Base Accuracy": ["99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Beaked Rush":{
+            "Usage": "Active (Head, STR)",
+            "Unlock": "Wild Wing",
+            "Description": "Deal melee Stab damage to one enemy, with pierce effect.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["9", "9", "9", "9", "9", "9", "9", "9", "9", "9"],
+                "Attack Power": ["170%", "174%", "178%", "183%", "187%", "192%", "196%", "201%", "205%", "210%"],
+                "Base Accuracy": ["99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Sleep Powder":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Hypnosis Owl",
+            "Description": "Attempt to inflict Sleep on one enemy.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+                "Infliction Rate": ["35%", "36%", "38%", "39%", "41%", "42%", "44%", "45%", "47%", "50%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Dive Kick":{
+            "Usage": "Active (Legs, AGI)",
+            "Unlock": "Flying Lizard",
+            "Description": "Deal melee Bash damage to one enemy, with splash effect.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+                "Attack Power": ["120%", "122%", "125%", "127%", "130%", "133%", "136%", "139%", "142%", "145%"],
+                "Base Accuracy": ["99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Poison Pollen":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Rafflesia",
+            "Description": "Attempt to inflict Poison on an enemy line.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
+                "Infliction Rate": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%"],
+                "Poison Power": ["40", "44", "48", "53", "57", "62", "66", "71", "75", "80"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Freezing Snare":{
+            "Usage": "Active (Head, TEC)",
+            "Unlock": "Rafflesia",
+            "Description": "Deal ranged Ice damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["16", "16", "16", "16", "16", "16", "16", "16", "16", "16"],
+                "Attack Power": ["115%", "117%", "120%", "122%", "125%", "128%", "131%", "134%", "137%", "140%"],
+                "Base Accuracy": ["150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%", "150%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Baffling Step":{
+            "Usage": "Active (Legs, LUC)",
+            "Unlock": "Ragelope",
+            "Description": "Attempt to inflict Panic on one enemy.",
+            "Starter": "2",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+                "Infliction Rate": ["40%", "41%", "42%", "43%", "44%", "45%", "46%", "47%", "48%", "50%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Knockdown":{
+            "Usage": "Active (Head, STR)",
+            "Unlock": "Ragelope",
+            "Description": "Deal melee Stab damage to one enemy.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
+                "Attack Power": ["160%", "164%", "168%", "173%", "177%", "182%", "186%", "191%", "195%", "200%"],
+                "Base Accuracy": ["99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Paralyze Fang":{
+            "Usage": "Active (Head, STR)",
+            "Unlock": "Raptor",
+            "Description": "Deal melee Cut damage to one enemy, with a chance to inflict Paralysis.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+                "Attack Power": ["150%", "154%", "158%", "163%", "167%", "172%", "176%", "181%", "185%", "190%"],
+                "Infliction Rate": ["30%", "30%", "30%", "30%", "32%", "32%", "32%", "32%", "32%", "35%"],
+                "Base Accuracy": ["99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%"],
+                "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
+            }
+        },
+        "Blood Drain":{
+            "Usage": "Active (Head, STR)",
+            "Unlock": "Vampire Bat",
+            "Description": "Deal melee Cut damage to one enemy. Recover HP equal to 70% of damage dealt.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+                "Attack Power": ["120%", "124%", "127%", "131%", "135%", "139%", "143%", "147%", "151%", "155%"],
+                "Base Accuracy": ["99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            }
+        },
+        "Echolocation":{
+            "Usage": "Active (Head, LUC)",
+            "Unlock": "Vampire Bat",
+            "Description": "Attempt to inflict Head Bind on one enemy.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+                "Infliction Rate": ["45%", "46%", "47%", "48%", "49%", "50%", "51%", "52%", "53%", "55%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+    },
+    "Ruins BF1":{
+        "Charge":{
+            "Usage": "Active (Head)",
+            "Unlock": "Wereboar",
+            "Description": "Enter a charge state until the end of next turn, which increases physical damage dealt.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2"],
+                "Damage Dealt↑": ["x1.55", "x1.57", "x1.59", "x1.61", "x1.63", "x1.65", "x1.67", "x1.7", "x1.72", "x1.75"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+        "Holy Shock":{
+            "Usage": "Active (Head, TEC)",
+            "Unlock": "Haggis",
+            "Description": "Deal ranged Volt damage to one enemy, with splash effect.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["12", "12", "12", "12", "12", "12", "12", "12", "12", "12"],
+                "Attack Power": ["120%", "123%", "125%", "128%", "130%", "133%", "135%", "138%", "140%", "145%"],
+                "Base Accuracy": ["120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%"],
+                "Action Speed": ["70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%", "70%"],
+            }
+        },
+        "Horror Banquet":{
+            "Usage": "Active (Head, STR)",
+            "Unlock": "Dread Hydra",
+            "Description": "Deal melee Cut damage to all enemies.",
+            "Starter": "0",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
+                "Attack Power": ["100%", "102%", "104%", "106%", "108%", "110%", "112%", "115%", "117%", "120%"],
+                "Base Accuracy": ["120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%", "120%"],
+                "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
+            }
+        },
+        "Swing":{
+            "Usage": "Active (Arms, STR)",
+            "Unlock": "Boar Captain",
+            "Description": "Deal melee Cut damage to an enemy line.",
+            "Starter": "2",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "7", "7", "7", "7", "7", "7", "7", "7", "7"],
+                "Attack Power": ["110%", "112%", "115%", "117%", "120%", "123%", "126%", "129%", "132%", "135%"],
+                "Base Accuracy": ["99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%"],
+                "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
+            }
+        },
+    },
+},
 "Battle Items":{
     "Healing":{
         "Medica / Medica II / Medica III / Medica IV":{
