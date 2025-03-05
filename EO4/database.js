@@ -3214,7 +3214,7 @@ function add_skill_entry(skill_list, current_class, skill){
     skill_table = document.createElement("table")
     skill_table.classList.add("skill_entry")
     //Separator for more visual clarity
-    if (current_skill["Starter"] == "2"){
+    if (current_skill["Starter"] == "1"){
         skill_table.style.marginTop = "15px"
     }
     skill_list.appendChild(skill_table)
@@ -3315,8 +3315,6 @@ function add_skill_entry(skill_list, current_class, skill){
             latest = effect_value
         }
     }
-    final_line = document.createElement("p")
-    skill_list.appendChild(final_line)
 }
 
 function populate_list_categorized(class_name){
