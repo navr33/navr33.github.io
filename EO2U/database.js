@@ -239,7 +239,7 @@ var data = {
     "Fire Chaser":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "War Cry (Lv 3), Triple Charge (Lv 3)",
-        "Description": "Sword/Axe: Prepare to follow up after your allies' Fire attacks this turn, dealing Cut/Bash+Fire damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Sword/Axe: Prepare to follow up after your allies' Fire attacks this turn, dealing Cut/Bash+Fire damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -254,7 +254,7 @@ var data = {
     "Ice Chaser":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "War Cry (Lv 3), Triple Charge (Lv 3)",
-        "Description": "Sword/Axe: Prepare to follow up after your allies' Ice attacks this turn, dealing Cut/Bash+Ice damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Sword/Axe: Prepare to follow up after your allies' Ice attacks this turn, dealing Cut/Bash+Ice damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -269,7 +269,7 @@ var data = {
     "Volt Chaser":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "War Cry (Lv 3), Triple Charge (Lv 3)",
-        "Description": "Sword/Axe: Prepare to follow up after your allies' Volt attacks this turn, dealing Cut/Bash+Volt damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Sword/Axe: Prepare to follow up after your allies' Volt attacks this turn, dealing Cut/Bash+Volt damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "20",
         "Natural Level": "10",
@@ -343,7 +343,7 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -688,7 +688,7 @@ var data = {
     "Natural Instinct":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -1015,7 +1015,7 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -1378,7 +1378,7 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -1719,7 +1719,7 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -2063,7 +2063,7 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -2405,7 +2405,7 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -2763,7 +2763,7 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -3095,7 +3095,7 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -3446,7 +3446,7 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -3792,7 +3792,7 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -4130,7 +4130,7 @@ var data = {
     "Natural Instinct":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -4470,7 +4470,7 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -4479,7 +4479,7 @@ var data = {
 "Fafnir":{
     "Transform":{
         "Usage": "Force Boost",
-        "Description": "Increases damage dealt and Max HP. Enables alternate versions of Farnir's elemental skills, and enables additional skills that are unlocked throughout the story. (When activated, also fully restores your HP)",
+        "Description": "Increases damage dealt and Max HP. Enables alternate versions of Fafnir's elemental skills, and enables additional skills that are unlocked throughout the story. (When activated, also fully restores your HP)",
         "Starter": "0",
         "Max Level": "1",
         "Data": {
@@ -4916,7 +4916,7 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""
@@ -5260,7 +5260,7 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Data": ""

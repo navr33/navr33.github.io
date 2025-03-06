@@ -707,7 +707,7 @@ var data = {
     "Chase Saber":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Rapier Mastery (Lv 3)",
-        "Description": "Rapier: Prepare to follow up after your allies' Cut attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Rapier: Prepare to follow up after your allies' Cut attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -721,7 +721,7 @@ var data = {
     "Chase Blow":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Rapier Mastery (Lv 3)",
-        "Description": "Rapier: Prepare to follow up after your allies' Bash attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Rapier: Prepare to follow up after your allies' Bash attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -735,7 +735,7 @@ var data = {
     "Chase Thrust":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Rapier Mastery (Lv 3)",
-        "Description": "Rapier: Prepare to follow up after your allies' Stab attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Rapier: Prepare to follow up after your allies' Stab attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -787,7 +787,7 @@ var data = {
     "Chase Flame":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Gun Mastery (Lv 3)",
-        "Description": "Gun: Prepare to follow up after your allies' Fire attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Gun: Prepare to follow up after your allies' Fire attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -801,7 +801,7 @@ var data = {
     "Chase Ice":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Gun Mastery (Lv 3)",
-        "Description": "Gun: Prepare to follow up after your allies' Ice attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Gun: Prepare to follow up after your allies' Ice attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -815,7 +815,7 @@ var data = {
     "Chase Volt":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Gun Mastery (Lv 3)",
-        "Description": "Gun: Prepare to follow up after your allies' Volt attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Gun: Prepare to follow up after your allies' Volt attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -2666,7 +2666,7 @@ var data = {
     "Red Bot":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Data Mining (Lv 1)",
-        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Fire attacks, dealing ranged Fire damage to the same targets. Activation chance per turn starts at 100% and goes down with each follow up.",
+        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Fire attacks, dealing ranged Fire damage to the same targets. Activation chance per turn starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -2682,7 +2682,7 @@ var data = {
     "Blue Bot":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Data Mining (Lv 1)",
-        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Ice attacks, dealing ranged Ice damage to the same targets. Activation chance per turn starts at 100% and goes down with each follow up.",
+        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Ice attacks, dealing ranged Ice damage to the same targets. Activation chance per turn starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {
@@ -2698,7 +2698,7 @@ var data = {
     "Yellow Bot":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Data Mining (Lv 1)",
-        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Volt attacks, dealing ranged Volt damage to the same targets. Activation chance per turn starts at 100% and goes down with each follow up.",
+        "Description": "Summon a Bot with 100% of your combat stats. On every turn, it prepares to follow up after the party's Volt attacks, dealing ranged Volt damage to the same targets. Activation chance per turn starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "10",
         "Data": {

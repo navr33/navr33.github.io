@@ -141,7 +141,7 @@ var data = {
     "Double Strike":{
         "Usage": "Passive",
         "Unlock": "Blinding Slap (Lv 3), Head Bash (Lv 3)",
-        "Description": "Normal attacks have a chance to hit a second time.",
+        "Description": "Normal attacks have a chance to be performed a second time.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -152,7 +152,7 @@ var data = {
     "Fire Chaser":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Tornado (Lv 5), Stunning Smash (Lv 5)",
-        "Description": "Sword/Axe: Prepare to follow up after your allies' Fire attacks this turn, dealing Cut/Bash+Fire damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Sword/Axe: Prepare to follow up after your allies' Fire attacks this turn, dealing Cut/Bash+Fire damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
         "Starter": "1",
         "Max Level": "15",
         "Natural Level": "10",
@@ -167,7 +167,7 @@ var data = {
     "Ice Chaser":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Tornado (Lv 5), Stunning Smash (Lv 5)",
-        "Description": "Sword/Axe: Prepare to follow up after your allies' Ice attacks this turn, dealing Cut/Bash+Ice damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Sword/Axe: Prepare to follow up after your allies' Ice attacks this turn, dealing Cut/Bash+Ice damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
@@ -182,7 +182,7 @@ var data = {
     "Volt Chaser":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Tornado (Lv 5), Stunning Smash (Lv 5)",
-        "Description": "Sword/Axe: Prepare to follow up after your allies' Volt attacks this turn, dealing Cut/Bash+Volt damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Sword/Axe: Prepare to follow up after your allies' Volt attacks this turn, dealing Cut/Bash+Volt damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
@@ -301,7 +301,7 @@ var data = {
     "Strike Chaser":{
         "Usage": "Active (Head)",
         "Unlock": "Triple Charge (Lv 3), War Cry (Lv 5)",
-        "Description": "Enter a charge state for next turn, which gives your allies a chance to follow up on your attacks, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each activation. If an ally's follow up uses a different damage type than the attack that triggered it, damage dealt is increased but activation chance goes down faster.",
+        "Description": "Enter a charge state for next turn, which gives your allies a chance to follow up on your attacks, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up. If an ally's follow up uses a different damage type than your triggering attack, damage dealt is increased but activation chance goes down faster.",
         "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
@@ -318,7 +318,7 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Natural Level": "0",
@@ -596,7 +596,7 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Natural Level": "0",
@@ -605,7 +605,7 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "0",
         "Max Level": "0",
         "Natural Level": "0",
@@ -614,7 +614,7 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "0",
         "Max Level": "0",
         "Natural Level": "0",
@@ -920,7 +920,7 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Natural Level": "0",
@@ -1249,7 +1249,7 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Natural Level": "0",
@@ -1518,7 +1518,7 @@ var data = {
     },
     "Focus":{
         "Usage": "Passive",
-        "Unlock": "TP Up (Lv 0)",
+        "Unlock": "TP Up (Lv 10)",
         "Description": "At the end of each turn, recover TP if your HP is full.",
         "Starter": "0",
         "Max Level": "10",
@@ -1556,7 +1556,7 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Natural Level": "0",
@@ -1862,7 +1862,7 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Natural Level": "0",
@@ -2181,7 +2181,7 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Natural Level": "0",
@@ -2506,7 +2506,7 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Natural Level": "0",
@@ -2813,7 +2813,7 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Natural Level": "0",
@@ -3128,7 +3128,7 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Natural Level": "0",
@@ -3430,7 +3430,7 @@ var data = {
     "Double Strike":{
         "Usage": "Passive",
         "Unlock": "High Caliber (Lv 3), Vulcan Stance (Lv 3)",
-        "Description": "Normal attacks have a chance to hit a second time.",
+        "Description": "Normal attacks have a chance to be performed a second time.",
         "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
@@ -3441,7 +3441,7 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level, however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
         "Starter": "1",
         "Max Level": "0",
         "Natural Level": "0",
