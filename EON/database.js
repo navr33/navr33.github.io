@@ -4,7 +4,6 @@ var data = {
         "Brave Heart":{
             "Usage": "Force Boost",
             "Description": "Increases Afterimage creation chance, and increases the damage dealt by Afterimages.",
-            "Starter": "0",
             "Max Level": "4",
             "Levels": ["1~79", "80~98", "99~117", "118~130"],
             "Data": {
@@ -15,7 +14,6 @@ var data = {
         "Miracle Edge":{
             "Usage": "Force Break (Arms, STR, WIS)",
             "Description": "Deal melee Cut damage to all enemies, then restore HP to the whole party. Excess healing increases Max HP until the end of the turn.",
-            "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -30,7 +28,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Attack skills gain a chance to create an Afterimage when they hit. Afterimages are clones of the user with their same stats and passive skills, but decreased HP and without their buffs/debuffs. After the turn where they are created, Afterimages use the skill that created them then vanish at the end of the turn.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "Creation Rate": ["13%", "16%", "19%", "22%", "25%", "28%", "31%", "34%", "37%", "50%"],
@@ -41,7 +38,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Afterimage (Lv 1)",
             "Description": "Sword: Deal melee Cut damage to one enemy. This attack has an increased chance to create an Afterimage.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "7"],
@@ -55,7 +51,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Sword: Deal melee Cut damage to one enemy. If this is performed before the target acts (or if their action was prevented), hit all enemies instead.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["5", "5", "5", "9", "9", "9", "9", "14"],
@@ -68,7 +63,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Wide Bravery (Lv 1)",
             "Description": "Sword: Deal melee Cut+Ice damage to one enemy, with splash effect.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6", "13"],
@@ -81,7 +75,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Restore HP to the whole party each time you use an attack skill. Healing is based on your Max HP.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "HP Gain": ["6+2%", "7+2%", "8+2%", "10+4%", "11+4%", "12+4%", "13+4%", "15+6%"],
@@ -91,7 +84,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Encourage (Lv 1)",
             "Description": "When the HP of every party member is above a certain threshold, increases all damage dealt and action speed.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "HP Threshold": ["90%", "88%", "86%", "84%", "82%", "75%"],
@@ -103,7 +95,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Shield: Deal melee Bash damage to one enemy. Decrease physical damage taken by the party until the attack activates. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "15"],
@@ -117,7 +108,6 @@ var data = {
             "Usage": "Active (No parts)",
             "Unlock": "N/A",
             "Description": "Remove binds and ailments on yourself. If successful, recover TP.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["2", "2", "2", "5"],
@@ -129,7 +119,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -139,7 +128,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Mirage Sword (Lv 2)",
             "Description": "Dispel your Afterimages to enter a charge state until the end of next turn, which increases all damage dealt and chance to create Afterimages.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "7"],
@@ -152,7 +140,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Charge Image (Lv 2)",
             "Description": "If you use a skill while there's an Afterimage, recover part of the TP used by the skill.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Refund": ["20%", "23%", "26%", "29%", "32%", "35%", "38%", "50%"],
@@ -162,7 +149,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Frigid Slash (Lv 2)",
             "Description": "Sword: Deal melee Cut damage to one enemy, then ranged Volt damage to all enemies. Volt attack is stronger if the initial target was resistant to Cut: Damage is multiplied by 4 if the target had 50% vulnerability, or by 6 if it was lower.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["9", "9", "9", "13", "13", "13", "13", "17"],
@@ -177,7 +163,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Spark Blade (Lv 2)",
             "Description": "Sword: Deal 2~3 hits of melee Cut damage to one enemy. Maximum hits increase by 1 per enemy in the battle (including the target).",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "10", "10", "14", "14", "14", "14", "18"],
@@ -190,7 +175,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Heroic Bonds (Lv 2)",
             "Description": "When the HP of every party member is below a certain threshold, decreases your damage taken and increases enemy aggro.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "HP Threshold": ["30%", "32%", "34%", "36%", "38%", "50%"],
@@ -202,7 +186,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Heroic Steel (Lv 1)",
             "Description": "If an ally below a certain HP threshold is hit, there's a chance to take damage in their place. (If you and an Afterimage trigger this effect at the same time, the Afterimage takes priority)",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "HP Threshold": ["11%", "13%", "15%", "17%", "19%", "21%", "23%", "34%"],
@@ -213,7 +196,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Physical Shield (Lv 2)",
             "Description": "Shield: Deal melee Bash damage to one enemy. Decrease elemental damage taken by the party until the attack activates. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "15"],
@@ -227,7 +209,6 @@ var data = {
             "Usage": "Active (No parts)",
             "Unlock": "Clear Mind (Lv 1)",
             "Description": "Transfer ailments and binds from other allies in your line onto you. If successful, fill your Force Gauge.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["3", "3", "3", "5"],
@@ -239,7 +220,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "N/A",
             "Description": "Start multiple enemy encounters in a row, with an increased chance of Rare Breeds appearing.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2", "2", "5"],
@@ -253,7 +233,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Graceful Image (Lv 3)",
             "Description": "Afterimages have a chance to not disappear at the end of their attack turn.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Remain Chance": ["11%", "12%", "14%", "15%", "17%", "18%", "20%", "21%", "23%", "34%"],
@@ -263,7 +242,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Burst Blade (Lv 2)",
             "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Stun. Infliction chance is multiplied by the target's [(CurrentHP/MaxHP)<sup>2</sup>].",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["14", "14", "14", "18", "18", "18", "18", "24"],
@@ -277,7 +255,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Act Breaker (Lv 3)",
             "Description": "Sword: Deal melee Cut+Fire damage to one enemy at the end of turn. Up to 40% of the damage your allies have done this turn is added to this attack's own calculated damage, capped at a certain percentage of said calculated value.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["18", "18", "18", "25", "25", "25", "25", "32"],
@@ -291,7 +268,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Sword: Deal melee Cut damage to one enemy. If it lands, restore Force to other allies in your line.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "12", "20"],
@@ -305,7 +281,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Force Gift (Lv 3)",
             "Description": "If your Force Boost ends during battle, recover some Force.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "Force Gain": ["5%", "10%", "15%", "25%"],
@@ -315,7 +290,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Elemental Shield (Lv 3)",
             "Description": "Shield: Deal melee Bash damage to one enemy. Decrease all damage taken by the party until the attack activates, and this attack's damage dealt increases by 20% each time the damage reduction triggers (max +200%), but the attack is cancelled if the reduction never triggers. If the attack lands, this skill becomes disabled for several turns. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25", "32", "32", "32", "32", "32", "40"],
@@ -333,7 +307,6 @@ var data = {
         "Shield Protect":{
             "Usage": "Force Boost",
             "Description": "When a Guard skill decreases damage to a party member, apply an additional damage reduction.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -343,7 +316,6 @@ var data = {
         "Painless":{
             "Usage": "Force Break (Arms)",
             "Description": "Nullify all attacks to the party for this turn.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -354,7 +326,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "(Guard) Shield: Protect the front line for this turn, which decreases physical damage taken.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "9"],
@@ -365,7 +336,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Front Guard (Lv 2)",
             "Description": "(Guard) Shield: Protect the back line for this turn, which decreases physical damage taken.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["3", "3", "3", "6"],
@@ -376,7 +346,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "(Guard) Shield: Protect one ally for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["3", "3", "3", "5", "5", "5", "5", "7"],
@@ -387,7 +356,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Ally Shield (Lv 2)",
             "Description": "Place a buff on yourself for several turns, which decreases physical/elemental damage taken.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "12"],
@@ -400,7 +368,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Shield: Deal melee Bash damage to one enemy, with a chance to inflict Arm Bind. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "16"],
@@ -414,7 +381,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Place a buff on yourself for several turns, which increases enemy aggro and slightly decreases all damage taken.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["3", "3", "3", "5", "5", "5", "5", "9"],
@@ -428,7 +394,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Taunt (Lv 2)",
             "Description": "Chance to automatically cast Taunt at the start of battle.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "Activation Chance": ["25%", "30%", "35%", "42%", "49%", "65%"],
@@ -438,7 +403,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "When you Defend, restore HP to all allies in your line. Healing is based on your Max HP.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "HP Gain": ["7+4%", "8+5%", "9+6%", "10+7%", "11+8%", "15+12%"],
@@ -448,7 +412,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -458,7 +421,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Rear Guard (Lv 1)",
             "Description": "(Guard) Shield: Protect an ally line for this turn, which removes binds and decreases physical damage taken.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["15", "15", "15", "20"],
@@ -469,7 +431,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Fortify (Lv 1)",
             "Description": "Chance to survive lethal damage with 1 HP. (Max once per battle)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["10%", "11%", "12%", "13%", "18%", "19%", "20%", "21%", "22%", "30%"],
@@ -479,7 +440,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Shield Smite (Lv 3)",
             "Description": "Shield: Deal melee Bash damage to all enemies. Places a debuff on the targets for 3 turns, which decreases physical damage dealt. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "15", "15", "15", "15", "15", "20"],
@@ -493,7 +453,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "(Guard) Shield: Protect one ally until the end of next turn, which decreases physical/elemental damage taken. While active, you cannot use Guard skills.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "7"],
@@ -504,7 +463,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Decreases physical damage taken.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Taken↓": ["-4%", "-5%", "-6%", "-9%", "-10%", "-11%", "-12%", "-15%"],
@@ -514,7 +472,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Decreases elemental damage taken.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "Damage Taken↓": ["-4%", "-5%", "-6%", "-9%", "-10%", "-11%", "-12%", "-15%"],
@@ -524,7 +481,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases Fire damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "13", "13", "13"],
@@ -536,7 +492,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases Ice damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "13", "13", "13"],
@@ -548,7 +503,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases Volt damage taken (max once per ally). At high levels it absorbs damage instead of decreasing it. (From level 4 onward it nullifies secondary effects from attacks)",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "13", "13", "13"],
@@ -562,7 +516,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases base Max HP.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Max HP↑": ["+5%", "+6%", "+7%", "+11%", "+12%", "+13%", "+14%", "+20%"],
@@ -572,7 +525,6 @@ var data = {
             "Usage": "Active (Arms, WIS)",
             "Unlock": "Recovery Guard (Lv 2)",
             "Description": "(Guard) Shield: Protect an ally line for this turn, which restores HP and decreases physical damage taken.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20", "25"],
@@ -584,7 +536,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Aegis (Lv 3)",
             "Description": "(Guard) Shield: Protect an ally line for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["8", "8", "8", "11", "11", "11", "11", "15"],
@@ -595,7 +546,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Line Shield (Lv 3)",
             "Description": "Chance to automatically halve damage taken any time you're hit. (Does not activate while Defending)",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["12%", "14%", "16%", "18%", "20%", "22%", "24%", "26%", "28%", "40%"],
@@ -605,7 +555,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Shield Bash (Lv 3)",
             "Description": "Shield: Prepare to counterattack each time you're hit until the end of next turn. Counters deal ranged Fire damage to the attacker. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "16"],
@@ -617,7 +566,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Fire Wall (Lv 2), Ice Wall (Lv 2), Volt Wall (Lv 2)",
             "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases all attack damage taken. Afterwards, this skill becomes disabled for several turns.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "26", "26", "26", "26", "26", "35"],
@@ -632,7 +580,6 @@ var data = {
         "Intensive Care":{
             "Usage": "Force Boost",
             "Description": "Increases action speed, increases HP restored by First Aid skills and decreases their TP costs. (Also powers up TP restoration from items)",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -644,7 +591,6 @@ var data = {
         "Healing Touch":{
             "Usage": "Force Break (Head, WIS)",
             "Description": "Restore HP, revive, and remove binds/ailments/debuffs for the whole party.",
-            "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -657,7 +603,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "N/A",
             "Description": "(First Aid) Restore HP to one ally.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
@@ -669,7 +614,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "Healing (Lv 3)",
             "Description": "(First Aid) Restore HP to an ally line.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "10", "10", "10", "10", "10", "15"],
@@ -681,7 +625,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "(First Aid) Remove ailments from target allies.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "2", "12", "6"],
@@ -693,7 +636,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "(First Aid) Revive one ally, restoring a certain amount of HP.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "16"],
@@ -705,7 +647,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Staff: Deal melee Bash damage to one enemy, with a chance to inflict Head Bind.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "12"],
@@ -719,7 +660,6 @@ var data = {
             "Usage": "Passive (WIS)",
             "Unlock": "N/A",
             "Description": "Restore HP to the whole party after each battle. (Does not stack)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Healing Power": ["45%", "55%", "65%", "75%", "85%", "95%", "105%", "150%"],
@@ -729,7 +669,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases natural bind/ailment recovery rate.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Recovery Rate↑": ["+15%", "+20%", "+25%", "+30%", "+35%", "+50%"],
@@ -739,7 +678,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases enemy drop rates.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "Drop Rate↑": ["+5%", "+8%", "+12%", "+20%"],
@@ -749,7 +687,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -759,7 +696,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "Line Heal (Lv 2)",
             "Description": "(First Aid) Prepare a heal that will activate at the start of the next turn, restoring HP to the whole party.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "10", "10", "14", "14", "14", "14", "18"],
@@ -770,7 +706,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Refresh (Lv 2)",
             "Description": "(First Aid) Remove all binds from target allies.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "2", "12", "6"],
@@ -782,7 +717,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Unbind (Lv 1)",
             "Description": "Place a buff on yourself for several turns, which increases the area of effect (Single → Line → Party) of First Aid skills but decreases their action speed and HP restored.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["15", "15", "15", "20", "20", "20", "20", "25"],
@@ -796,7 +730,6 @@ var data = {
             "Usage": "Passive (WIS)",
             "Unlock": "Revive (Lv 3)",
             "Description": "Upon dying, restore HP to the whole party.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "Healing Power": ["100%", "140%", "180%", "350%"],
@@ -806,7 +739,6 @@ var data = {
             "Usage": "Passive (Head)",
             "Unlock": "Final Gift (Lv 2)",
             "Description": "Chance to automatically revive allies when they die.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["4%", "5%", "6%", "7%", "8%", "9%", "10%", "11%", "12%", "16%"],
@@ -817,7 +749,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Head Bash (Lv 3)",
             "Description": "Staff: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which increases physical damage taken.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7", "13"],
@@ -831,7 +762,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Star Drop (Lv 2)",
             "Description": "Staff: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which increases elemental damage taken.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7", "13"],
@@ -845,7 +775,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "N/A",
             "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles. Additionally, damage taken from attacks out of battle is decreased to 1.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -856,7 +785,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Decreases elemental damage taken.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Taken↓": ["-4%", "-5%", "-6%", "-9%", "-10%", "-11%", "-12%", "-15%"],
@@ -868,7 +796,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "Delayed Heal (Lv 3)",
             "Description": "(First Aid) Restore HP to the whole party.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "21", "21", "21", "21", "21", "30"],
@@ -880,7 +807,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "Delayed Heal (Lv 3)",
             "Description": "(First Aid) Prepare to heal allies each time they're hit this turn. Activation chance starts at 100% but goes down with each activation. There's a limit on how many times it can activate on each ally.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "10", "10", "14", "14", "14", "14", "20"],
@@ -893,7 +819,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "During battle, excess healing from First Aid skills increases the target's Max HP (up to a certain cap) until the end of the turn.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Max. Overheal": ["+10%", "+13%", "+16%", "+19%", "+22%", "+34%"],
@@ -903,7 +828,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Place a buff on the whole party for several turns, which at the end of each turn repeats the effect (with decreased healing power) of the last First Aid skill each target has received since this buff was applied.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["9", "9", "9", "12", "12", "12", "12", "15"],
@@ -916,7 +840,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Medical Rod (Lv 3)",
             "Description": "Staff: Deal melee Bash damage to one enemy.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25", "35", "35", "35", "35", "35", "50"],
@@ -929,7 +852,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Heavy Strike (Lv 1)",
             "Description": "If a Staff is equipped, increases Max TP and physical damage dealt.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "Max TP↑": ["+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+15%"],
@@ -943,7 +865,6 @@ var data = {
         "Illusory Formation":{
             "Usage": "Force Boost",
             "Description": "Increases evasion and action speed for the whole party.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -954,7 +875,6 @@ var data = {
         "Mirage Arrow":{
             "Usage": "Force Break (Arms, STR)",
             "Description": "Deal ranged Stab damage to one enemy. Places a debuff on the target for 3 turns, which decreases accuracy and makes them act last.",
-            "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -968,7 +888,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Bow: Deal ranged Stab damage to one enemy, with pierce effect.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["6", "6", "6", "9", "9", "9", "9", "14"],
@@ -981,7 +900,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Power Shot (Lv 3)",
             "Description": "Bow: Deal ranged Stab+Fire damage to one enemy.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["5", "5", "5", "9", "9", "9", "9", "13"],
@@ -994,7 +912,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Bow: Deal ranged Stab damage to one enemy, with a chance to inflict Blind.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "10"],
@@ -1008,7 +925,6 @@ var data = {
             "Usage": "Active (Legs)",
             "Unlock": "Blind Arrow (Lv 3)",
             "Description": "Increase your evasion and enemy aggro until the end of the turn.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "9"],
@@ -1021,7 +937,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "N/A",
             "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles. Additionally, damage taken from attacks out of battle is decreased to 1.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -1032,7 +947,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Safe Passage (Lv 2)",
             "Description": "Chance to nullify enemy ambushes.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "Activation Chance": ["35%", "41%", "47%", "53%", "59%", "75%"],
@@ -1042,7 +956,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "N/A",
             "Description": "Restore HP to one ally. From level 4 onward can also revive.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2", "2", "3"],
@@ -1054,7 +967,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Resuscitate (Lv 3)",
             "Description": "Increases the size of the inventory.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "Item Slots↑": ["+4", "+5", "+6", "+7", "+10", "+11", "+12", "+13", "+14", "+20"],
@@ -1064,7 +976,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield grows from 1 to 3 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -1074,7 +985,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flame Arrow (Lv 3)",
             "Description": "Bow: Deal ranged Stab damage to an enemy line.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["9", "9", "9", "13", "13", "13", "13", "18"],
@@ -1087,7 +997,6 @@ var data = {
             "Usage": "Passive (STR)",
             "Unlock": "Flank Shot (Lv 3)",
             "Description": "After attacking an enemy, if their HP is below a certain threshold, perform a follow up attack.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "HP Threshold": ["10%", "12%", "14%", "16%", "18%", "20%", "22%", "30%"],
@@ -1099,7 +1008,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flame Arrow (Lv 3)",
             "Description": "Bow: Deal 2 hits of ranged Stab damage to one enemy.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "13", "13", "13", "13", "13", "20"],
@@ -1112,7 +1020,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Multi-Shot (Lv 3)",
             "Description": "Bow: Deal ranged Stab damage to one enemy. Deals triple damage against enemies in the back line.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["6", "6", "6", "9", "9", "9", "9", "13"],
@@ -1125,7 +1032,6 @@ var data = {
             "Usage": "Active (Legs)",
             "Unlock": "Chain Dance (Lv 2)",
             "Description": "Place a debuff on an enemy line for several turns, which decreases accuracy.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "11", "11", "11", "11", "11", "17"],
@@ -1138,7 +1044,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "Risk Perception (Lv 1)",
             "Description": "Temporarily decrease the enemy encounter rate.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "8", "14"],
@@ -1150,7 +1055,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Place a buff on yourself for 5 turns, which increases the effect of Medica-type items and makes them affect a full line.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "10"],
@@ -1162,7 +1066,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases accuracy, evasion and action speed.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Accuracy↑": ["+2.5%", "+3.1%", "+3.7%", "+5.7%", "+6.3%", "+6.9%", "+7.5%", "+10%"],
@@ -1174,7 +1077,6 @@ var data = {
             "Usage": "Active (Legs)",
             "Unlock": "Speed Up (Lv 2)",
             "Description": "Make target ally act at the start of this turn.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["35", "30", "25", "15"],
@@ -1186,7 +1088,6 @@ var data = {
             "Usage": "Passive (LUC)",
             "Unlock": "Finishing Shot (Lv 1)",
             "Description": "Bow skills gain a chance to inflict Leg Bind.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Infliction Rate": ["7%", "9%", "11%", "13%", "15%", "17%", "19%", "25%"],
@@ -1196,7 +1097,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Drop Shot (Lv 3)",
             "Description": "Bow: Prepare an attack that will hit in 2 more turns, at the start of the turn. Deals ranged Stab damage to one enemy, with a chance to inflict Stun.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "20", "20", "20", "20", "20", "27"],
@@ -1210,7 +1110,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Trickery (Lv 3)",
             "Description": "Bow: Deal ranged Stab damage to one enemy. Cannot miss. Only usable if you dodged an attack last turn.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -1222,7 +1121,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "Cautious Steps (Lv 2)",
             "Description": "Chance to get additional, rare materials from gathering spots.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "Max. Extra Items": ["1", "2", "3", "4"],
@@ -1232,7 +1130,6 @@ var data = {
             "Usage": "Active (Legs)",
             "Unlock": "N/A",
             "Description": "Select one ally to protect the rest of the party for this turn, which makes the target take attacks in place of their allies a certain amount of times. Target takes decreased damage from those redirected attacks.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["7", "7", "12", "12", "12", "18"],
@@ -1244,7 +1141,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "N/A",
             "Description": "Temporarily gain an additional chance of getting a preemptive attack.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "15"],
@@ -1259,7 +1155,6 @@ var data = {
         "Musou":{
             "Usage": "Force Boost",
             "Description": "Grants the effects of the 3 Stances at level 1, on top of your active Stance. Your active Stance's duration does not go down, and your skills don't decrease its duration nor remove it.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -1267,7 +1162,6 @@ var data = {
         "Issen":{
             "Usage": "Force Break (Arms, STR, LUC)",
             "Description": "Deal ranged Cut damage to all enemies, with a chance to inflict Instant Death. (Infliction chance allegedly higher on low-HP targets, but could not reproduce in testing)",
-            "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -1281,7 +1175,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Stance that increases all damage dealt. Activated by Upward Slash. (If a Katana is equipped, activate your highest-level Stance at the start of battle. Ties for highest level will choose a Stance at random)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["x1.1", "x1.12", "x1.14", "x1.14", "x1.16", "x1.18", "x1.2", "x1.2"],
@@ -1292,7 +1185,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Upper Stance (Lv 1)",
             "Description": "Katana: Deal melee Cut damage to one enemy. Makes a Critical Hit if you're in Upper Stance. Activates/extends Upper Stance for a certain amount of turns.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "7"],
@@ -1306,7 +1198,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Stance that decreases all damage taken and increases bind/ailment infliction rates for Ronin skills. Activated by Charging Thrust. (If a Katana is equipped, activate your highest-level Stance at the start of battle. Ties for highest level will choose a Stance at random)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Taken↓": ["x0.9", "x0.87", "x0.84", "x0.84", "x0.81", "x0.78", "x0.75", "x0.75"],
@@ -1318,7 +1209,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Clear Stance (Lv 1)",
             "Description": "Katana: Deal melee Stab damage to one enemy. Makes a Critical Hit if you're in Clear Stance. Activates/extends Clear Stance for a certain amount of turns.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "7"],
@@ -1332,7 +1222,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Stance that increases accuracy, evasion and action speed. Activated by Sheath Strike. (If a Katana is equipped, activate your highest-level Stance at the start of battle. Ties for highest level will choose a Stance at random)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Accuracy↑": ["+10%", "+12%", "+14%", "+14%", "+16%", "+18%", "+20%", "+20%"],
@@ -1345,7 +1234,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Swift Stance (Lv 1)",
             "Description": "Katana: Deal melee Bash damage to one enemy. Makes a Critical Hit if you're in Swift Stance. Activates/extends Swift Stance for a certain amount of turns.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "7"],
@@ -1359,7 +1247,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Katana: Deal ranged Cut damage to one enemy. Makes a Critical Hit if you're in any Stance.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10"],
@@ -1372,7 +1259,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Katana: Deal melee Cut damage to one enemy, with a chance to inflict Arm Bind. Makes a Critical Hit if you're in any Stance.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "8", "8", "8", "8", "12"],
@@ -1386,7 +1272,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Restore HP to yourself and your adjacent allies. Healing is based on your Max HP.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -1398,7 +1283,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -1408,7 +1292,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Upward Slash (Lv 1)",
             "Description": "Katana: Deal melee Cut damage to one enemy. Low accuracy but ignores Cut vulnerability. Requires a Stance, and makes a Critical Hit during Upper Stance. Decreases remaining Stance duration by 2 turns.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "15", "15", "15", "15", "15", "20"],
@@ -1421,7 +1304,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Helm Splitter (Lv 3)",
             "Description": "Katana: Deal melee Cut+Fire damage to one enemy. Makes a Critical Hit if you're in Upper Stance.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["5", "5", "5", "9", "9", "9", "9", "13"],
@@ -1434,7 +1316,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Charging Thrust (Lv 1)",
             "Description": "Katana: Deal melee Cut damage to one enemy, with a chance to inflict Sleep. Requires a Stance, and makes a Critical Hit during Clear Stance. Decreases remaining Stance duration by 2 turns.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["9", "9", "9", "9", "13", "13", "13", "13", "13", "18"],
@@ -1448,7 +1329,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Haze Slash (Lv 3)",
             "Description": "Katana: Deal melee Stab+Volt damage to one enemy. Makes a Critical Hit if you're in Clear Stance.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["5", "5", "5", "9", "9", "9", "9", "13"],
@@ -1461,7 +1341,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Sheath Strike (Lv 1)",
             "Description": "Katana: Deal melee Cut damage to an enemy line. Requires a Stance, and makes a Critical Hit during Swift Stance. Decreases remaining Stance duration by 2 turns.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "20", "20", "20", "20", "20", "27"],
@@ -1474,7 +1353,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Horizontal Slash (Lv 3)",
             "Description": "Katana: Deal melee Cut+Ice damage to one enemy. Makes a Critical Hit if you're in Swift Stance.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["5", "5", "5", "9", "9", "9", "9", "13"],
@@ -1487,7 +1365,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Air Blade (Lv 2), Arm Strike (Lv 2)",
             "Description": "Increases all damage dealt when attacking enemies that you also attacked on the previous turn.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Damage Dealt↑": ["+8%", "+10%", "+12%", "+14%", "+16%", "+25%"],
@@ -1497,7 +1374,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases physical damage dealt.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["+4%", "+5%", "+6%", "+9%", "+10%", "+11%", "+12%", "+15%"],
@@ -1509,7 +1385,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flame Grater (Lv 3)",
             "Description": "Katana: Deal multiple hits of melee Cut damage to one enemy. Requires a Stance, and makes a Critical Hit during Upper Stance. Removes your Stance and disables skills on the next turn.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20", "28"],
@@ -1523,7 +1398,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Lightning Stab (Lv 3)",
             "Description": "Katana: Deal melee Stab damage to one enemy, with a chance to inflict Petrify. Requires a Stance, and makes a Critical Hit during Clear Stance. Removes your Stance and disables skills on the next turn.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["17", "17", "17", "17", "17", "24"],
@@ -1537,7 +1411,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Frigid Slash (Lv 3)",
             "Description": "Katana: Deal ranged Slash damage to all enemies. Damage dealt is divided by [√Targets]. Requires a Stance, and makes a Critical Hit during Swift Stance. Removes your Stance and disables skills on the next turn.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25", "25", "34"],
@@ -1550,7 +1423,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases the effect of Stances by applying a second modifier while they're active.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Damage↑ (Upper)": ["x1.02", "x1.03", "x1.04", "x1.05", "x1.06", "x1.07", "x1.08", "x1.09", "x1.1", "x1.12"],
@@ -1565,7 +1437,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Full Proficiency (Lv 2)",
             "Description": "At the end of each turn, if you have a Stance (or Force Boost) active, recover TP.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Gain": ["1", "2", "3", "5"],
@@ -1575,7 +1446,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases accuracy, evasion and action speed.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Accuracy↑": ["+2.5%", "+3.1%", "+3.7%", "+5.7%", "+6.3%", "+6.9%", "+7.5%", "+10%"],
@@ -1590,7 +1460,6 @@ var data = {
         "War Edge Power":{
             "Usage": "Force Boost",
             "Description": "War Edge skills will apply their secondary effect even if the target doesn't have an ailment.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -1598,7 +1467,6 @@ var data = {
         "Fairy Robe":{
             "Usage": "Force Break (Head, WIS)",
             "Description": "Restore HP and remove binds/ailments for the whole party. Until the end of turn, prevent all types of negative inflictions (bind/ailment/stun/instakill/debuff) to the party.",
-            "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -1611,7 +1479,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "N/A",
             "Description": "Restore HP to one ally at the start of the turn, then again at the end of the turn.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
@@ -1622,7 +1489,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "War Heal (Lv 2)",
             "Description": "Restore HP to an ally line at the start of the turn, then again at the end of the turn.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "10", "10", "10", "10", "10", "15"],
@@ -1633,7 +1499,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "N/A",
             "Description": "Attempt to randomly inflict one of Blind, Poison, Paralysis, Sleep or Curse to one enemy.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["3", "3", "3", "6", "6", "6", "6", "10"],
@@ -1646,7 +1511,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Random Disease (Lv 1)",
             "Description": "(War Edge) Sword: Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, place a debuff on them for 7 turns, which decreases physical/elemental damage dealt.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -1660,7 +1524,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Random Disease (Lv 1)",
             "Description": "(War Edge) Sword: Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, place a debuff on them for 7 turns, which increases physical/elemental damage taken.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -1674,7 +1537,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "N/A",
             "Description": "Remove binds and ailments on one ally, then attempt to inflict them onto one enemy.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["8", "8", "8", "12"],
@@ -1686,7 +1548,6 @@ var data = {
             "Usage": "Passive (WIS)",
             "Unlock": "N/A",
             "Description": "If you deal damage to an enemy with an ailment, restore HP to your line. (Max once per turn)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Fixed HP Gain": ["11", "14", "17", "20", "23", "34"],
@@ -1697,7 +1558,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Enables using Sword skills with a Staff (they will still do Cut damage). If a Sword is equipped, increases Max TP. If a Staff is equipped, increases all damage dealt.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Max TP↑": ["+6%", "+8%", "+10%", "+12%", "+14%", "+16%", "+18%", "+25%"],
@@ -1708,7 +1568,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -1718,7 +1577,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "War Heal Line (Lv 3)",
             "Description": "Revive one ally at the start of the turn, then there's a chance to revive them again at the end of the turn.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["9", "9", "9", "9", "16", "16", "16", "16", "16", "25"],
@@ -1730,7 +1588,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "War Revive (Lv 2)",
             "Description": "Place a buff on all allies for 3 turns, which restores HP to them when they act (max once per turn).",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "8", "15"],
@@ -1742,7 +1599,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "War Revive (Lv 2)",
             "Description": "Place a debuff on one enemy for 3 turns, which restores HP to the party when the target acts (max once per turn).",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7", "13"],
@@ -1754,7 +1610,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Strength Slash (Lv 2)",
             "Description": "(War Edge) Sword: Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, attempt to inflict Head Bind.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["7", "7", "7", "11", "11", "11", "11", "16"],
@@ -1768,7 +1623,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Guard Slash (Lv 2)",
             "Description": "(War Edge) Sword: Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, attempt to inflict Arm Bind.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["7", "7", "7", "11", "11", "11", "11", "16"],
@@ -1782,7 +1636,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Headcut (Lv 2), Armcut (Lv 2)",
             "Description": "(War Edge) Sword: Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, attempt to inflict Leg Bind.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["7", "7", "7", "11", "11", "11", "11", "16"],
@@ -1796,7 +1649,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Vampire (Lv 2)",
             "Description": "Increases Force gains for each enemy that's afflicted with a bind.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "Force Gain↑": ["+2%", "+3%", "+4%", "+6%"],
@@ -1806,7 +1658,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases base Max HP.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Max HP↑": ["+5%", "+6%", "+7%", "+11%", "+12%", "+13%", "+14%", "+20%"],
@@ -1816,7 +1667,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases resistance to bind/ailment inflictions.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Inflictions↓": ["x0.92", "x0.91", "x0.9", "x0.85", "x0.84", "x0.83", "x0.82", "x0.75"],
@@ -1828,7 +1678,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "Artery (Lv 2), War Response (Lv 2)",
             "Description": "Restore HP to the whole party at the start of the turn, then again at the end of the turn.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "21", "21", "21", "21", "21", "30"],
@@ -1839,7 +1688,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "War Heal All (Lv 3)",
             "Description": "Chance to nullify bind/ailment/debuff inflictions to party members this turn.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20"],
@@ -1851,7 +1699,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Legcut (Lv 3)",
             "Description": "(War Edge) Sword: Deal melee Cut+Almighty damage to one enemy. If the target has an ailment, increase damage dealt by 150%.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "15", "24"],
@@ -1864,7 +1711,6 @@ var data = {
             "Usage": "Passive (WIS)",
             "Unlock": "Rouse (Lv 2)",
             "Description": "If you damage an enemy afflicted by a bind and an ailment, restore TP to your line.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Fixed TP Gain": ["1", "2", "3", "4", "5", "6"],
@@ -1875,7 +1721,6 @@ var data = {
             "Usage": "Passive (LUC)",
             "Unlock": "Mind Drain (Lv 3)",
             "Description": "Normal attacks gain a chance to inflict Blind, Poison, Paralysis, Sleep or Curse.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "Infliction Rate": ["1%", "2%", "3%", "4%"],
@@ -1886,7 +1731,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases physical damage dealt.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["+4%", "+5%", "+6%", "+9%", "+10%", "+11%", "+12%", "+15%"],
@@ -1899,7 +1743,6 @@ var data = {
         "Hero Battle":{
             "Usage": "Force Boost",
             "Description": "Increases damage dealt with Spear skills. Restore HP to the party based on your damage dealt.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -1910,7 +1753,6 @@ var data = {
         "Gae Bolg":{
             "Usage": "Force Break (Arms, STR)",
             "Description": "Deal ranged Stab damage to all enemies. Recover TP based on your damage dealt.",
-            "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -1924,7 +1766,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Spear: Deal ranged Stab damage to one enemy.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["3", "3", "3", "5", "5", "5", "5", "8"],
@@ -1937,7 +1778,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Long Thrust (Lv 2)",
             "Description": "Spear: Deal melee Stab damage to one enemy at the end of turn. If any allies have used elemental attacks this turn, add the element of the most recent one and increase damage dealt by 100%.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "16"],
@@ -1949,7 +1789,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Restore HP to the whole party each time you kill an enemy. Healing is based on each unit's Max HP.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "HP Gain": ["10+10%", "12+12%", "14+14%", "16+16%", "18+18%", "25+25%"],
@@ -1959,7 +1798,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Turning Tide (Lv 2)",
             "Description": "Spear: Spend part of your current HP to deal melee Stab damage to the enemy front line.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -1973,7 +1811,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Turning Tide (Lv 2)",
             "Description": "Spear: Spend part of other allies' current HP to deal melee Stab damage to the enemy front line.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6", "12"],
@@ -1987,7 +1824,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Spend part of your current HP to place a buff on an ally line for 3 turns, which decreases elemental damage taken.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "9"],
@@ -2000,7 +1836,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "When you first lose HP from any source during a turn, decrease all attack damage taken until the end of the turn.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Damage Taken↓": ["-20%", "-22%", "-24%", "-26%", "-28%", "-34%"],
@@ -2010,7 +1845,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases base Max HP.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Max HP↑": ["+5%", "+6%", "+7%", "+11%", "+12%", "+13%", "+14%", "+20%"],
@@ -2020,7 +1854,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -2030,7 +1863,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Spear Assist (Lv 3)",
             "Description": "Spear: Deal melee Stab damage to one enemy, with a chance to inflict Head Bind or Instant Death.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7", "13"],
@@ -2045,7 +1877,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Spear: Spend part of your current HP to prepare an attack that will hit in several more turns, at the end of the turn. Deals ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage is multiplied by 0.75 for each remaining charge turn.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["9", "9", "9", "9", "14", "14", "14", "14", "14", "20"],
@@ -2059,7 +1890,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Draining Thrust (Lv 2)",
             "Description": "Spear: Spend part of your current HP to deal melee Stab damage to all enemies.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "17"],
@@ -2073,7 +1903,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Legion Thrust (Lv 2)",
             "Description": "Spear: Spend part of other allies' current HP to deal melee Stab damage to all enemies.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "10", "10", "14", "14", "14", "14", "20"],
@@ -2087,7 +1916,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Spirit Shield (Lv 1)",
             "Description": "Spend part of the whole party's current HP to place a buff on the whole party for several turns, which increases bind/ailment infliction rates.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["7", "7", "7", "12", "12", "12", "12", "18"],
@@ -2101,7 +1929,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Blood Fortune (Lv 2)",
             "Description": "At the start of battle there's a chance to place a buff on the whole party for 3 turns, which nullifies one ailment infliction received. (Buff is consumed when activated)",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "Activation Chance": ["15%", "20%", "25%", "30%", "35%", "50%"],
@@ -2111,7 +1938,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Bloody Veil (Lv 2)",
             "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but makes them lose HP when they act.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["6", "6", "6", "9", "9", "9", "9", "14"],
@@ -2125,7 +1951,6 @@ var data = {
             "Usage": "Passive (STR)",
             "Unlock": "Bloody Offense (Lv 2)",
             "Description": "Chance to attack a random enemy each time you lose HP.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["10%", "13%", "16%", "19%", "28%", "31%", "34%", "37%", "40%", "50%"],
@@ -2137,7 +1962,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Decreases physical damage taken.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Taken↓": ["-4%", "-5%", "-6%", "-9%", "-10%", "-11%", "-12%", "-15%"],
@@ -2149,7 +1973,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Head Pierce (Lv 3)",
             "Description": "Spear: Deal melee Stab damage to one enemy. Increase damage dealt by 200% if the target's remaining HP% is higher than yours.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["9", "9", "9", "9", "9", "14"],
@@ -2162,7 +1985,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Delayed Charge (Lv 2)",
             "Description": "Spear: Spend part of your current HP to deal melee Stab damage to one enemy. If Delayed Charge is preparing against the same target, activate it and increase this skill's damage dealt by 150%.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["13", "13", "13", "13", "13", "17"],
@@ -2177,7 +1999,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Legion Burst (Lv 3)",
             "Description": "Spear: Spend part of other allies' current HP to deal melee Stab damage to one enemy.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "14", "14", "14", "14", "14", "20"],
@@ -2191,7 +2012,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Legion Charge (Lv 2)",
             "Description": "If one of your skills consumes HP of other allies in your line, restore TP to them at the end of turn.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Gain": ["2+1%", "3+1%", "4+1%", "6+2%"],
@@ -2201,7 +2021,6 @@ var data = {
             "Usage": "Active (Head, STR)",
             "Unlock": "Bloodlust (Lv 3)",
             "Description": "Deal ranged Almighty damage to all enemies. The party recovers HP based on your damage dealt.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["15", "15", "15", "22", "22", "22", "22", "30"],
@@ -2215,7 +2034,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases physical damage dealt.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["+4%", "+5%", "+6%", "+9%", "+10%", "+11%", "+12%", "+15%"],
@@ -2228,7 +2046,6 @@ var data = {
         "Double Action":{
             "Usage": "Force Boost",
             "Description": "Gun skills are performed twice. The second instance has decreased attack/healing power.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -2238,7 +2055,6 @@ var data = {
         "Riot Gun":{
             "Usage": "Force Break (Arms, STR, LUC)",
             "Description": "Deal ranged Stab damage and inflict Stun to one enemy.",
-            "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -2252,7 +2068,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Deal 3 hits of ranged Stab damage to one enemy. Fast but inaccurate.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "8", "8", "8", "8", "12"],
@@ -2265,7 +2080,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Rapid Fire (Lv 3)",
             "Description": "Deal ranged Stab damage to one enemy, with splash effect.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["7", "7", "7", "11", "11", "11", "11", "15"],
@@ -2278,7 +2092,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Leg Bind. Slow but cannot miss.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "13"],
@@ -2291,7 +2104,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Leg Snipe (Lv 2)",
             "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Arm Bind. Slow but cannot miss.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "13"],
@@ -2304,7 +2116,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "When you Defend in the back line, restore HP to the front line. Healing is based on each unit's Max HP.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "HP Gain": ["8+5%", "9+6%", "10+7%", "11+8%", "12+9%", "15+15%"],
@@ -2314,7 +2125,6 @@ var data = {
             "Usage": "Active (Arms, LUC)",
             "Unlock": "Cover Support (Lv 2)",
             "Description": "Weaken the enemy back line for this turn, which decreases their offense, defense, accuracy and evasion. Also attempts to inflict Stun.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["4", "4", "4", "7"],
@@ -2330,7 +2140,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "Gun: Restore HP and remove ailments for one ally.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6", "10"],
@@ -2342,7 +2151,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "Place a buff on the whole party for 3 turns, which increases accuracy.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "7"],
@@ -2354,7 +2162,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -2364,7 +2171,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Splash Shot (Lv 2)",
             "Description": "Deal ranged Stab damage to an enemy line. Places a debuff on the targets for 3 turns, which decreases evasion.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "17"],
@@ -2378,7 +2184,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Feint Shot (Lv 2)",
             "Description": "Deal ranged Stab damage to all enemies.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["12", "12", "12", "18", "18", "18", "18", "24"],
@@ -2391,7 +2196,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Head Bind. Slow but cannot miss.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "13"],
@@ -2404,7 +2208,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "Enter a charge state until the end of next turn, which increases action speed and decreases TP costs.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2"],
@@ -2417,7 +2220,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Act Quick (Lv 2)",
             "Description": "Deal ranged Stab damage to one enemy. Increase damage taken by 100% until it activates.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "19", "19", "19", "19", "19", "24"],
@@ -2430,7 +2232,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Shell Shock (Lv 1)",
             "Description": "Chance to automatically cast Shell Shock at the start of battle.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Activation Chance": ["20%", "26%", "32%", "38%", "44%", "67%"],
@@ -2440,7 +2241,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Pop Flare (Lv 2)",
             "Description": "Chance to automatically cast Pop Flare at the start of battle.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Activation Chance": ["15%", "20%", "25%", "30%", "35%", "50%"],
@@ -2450,7 +2250,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Single-hit, single-target attacks have a chance to gain pierce effect. (Valid attacks will let you choose the possible pierce target)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Activation Chance": ["18%", "23%", "28%", "33%", "38%", "43%", "48%", "66%"],
@@ -2460,7 +2259,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases base Max TP.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Max TP↑": ["+7%", "+9%", "+11%", "+17%", "+19%", "+21%", "+23%", "+30%"],
@@ -2472,7 +2270,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Scattershot (Lv 2)",
             "Description": "Deal multiple hits of ranged Stab damage to random enemies. Very innacurate.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "27", "27", "27", "27", "27", "35"],
@@ -2486,7 +2283,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Charged Shot (Lv 3)",
             "Description": "Deal ranged Stab+Fire damage to one enemy. Increase damage taken by 100% until it activates.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["18", "18", "18", "18", "18", "30"],
@@ -2499,7 +2295,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Charged Shot (Lv 3)",
             "Description": "Deal ranged Stab+Ice damage to one enemy. Increase damage taken by 100% until it activates.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["18", "18", "18", "18", "18", "30"],
@@ -2512,7 +2307,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Charged Shot (Lv 3)",
             "Description": "Deal ranged Stab+Volt damage to one enemy. Increase damage taken by 100% until it activates.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["18", "18", "18", "18", "18", "30"],
@@ -2525,7 +2319,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases physical damage dealt.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["+4%", "+5%", "+6%", "+9%", "+10%", "+11%", "+12%", "+15%"],
@@ -2535,7 +2328,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Chance for attack skills to be activated an additional time. (Max once per turn)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Activation Chance": ["4%", "5%", "6%", "7%", "8%", "9%", "10%", "15%"],
@@ -2548,7 +2340,6 @@ var data = {
         "Victory Vow":{
             "Usage": "Force Boost",
             "Description": "Order skills affect the whole party, and their TP cost is cut in half.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -2556,7 +2347,6 @@ var data = {
         "Proof of Nobility":{
             "Usage": "Force Break (Head)",
             "Description": "For this turn, buffs cannot be lost and their effect is doubled.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -2567,7 +2357,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "(Order) Place a buff on an ally line for several turns, which increases physical/elemental damage dealt.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "8", "8", "8", "8", "13"],
@@ -2580,7 +2369,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Attack Order (Lv 2)",
             "Description": "Place a buff on an ally line for several turns, which increases Fire damage dealt and imbues their weapons with Fire damage.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["6", "6", "6", "11", "11", "11", "11", "17"],
@@ -2593,7 +2381,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Attack Order (Lv 2)",
             "Description": "Place a buff on an ally line for several turns, which increases Ice damage dealt and imbues their weapons with Ice damage.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["6", "6", "6", "11", "11", "11", "11", "17"],
@@ -2606,7 +2393,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Attack Order (Lv 2)",
             "Description": "Place a buff on an ally line for several turns, which increases Volt damage dealt and imbues their weapons with Volt damage.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["6", "6", "6", "11", "11", "11", "11", "17"],
@@ -2619,7 +2405,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "(Order) Place a buff on an ally line for several turns, which decreases physical/elemental damage taken.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "8", "8", "8", "8", "13"],
@@ -2632,7 +2417,6 @@ var data = {
             "Usage": "Passive (WIS)",
             "Unlock": "Guard Order (Lv 2)",
             "Description": "Restore HP to allies when you place a buff on them.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "Healing Power": ["40%", "44%", "48%", "52%", "64%", "68%", "72%", "76%", "80%", "100%"],
@@ -2642,7 +2426,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "At the end of each turn, if your HP is full, restore HP to all allies. Healing is based on each unit's Max HP. (Does not stack)",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "HP Gain": ["6+5%", "8+6%", "10+7%", "15+10%"],
@@ -2652,7 +2435,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "Royal Veil (Lv 2)",
             "Description": "Restore HP to the whole party for every 3 steps taken.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "HP Gain": ["2", "3", "5", "10"],
@@ -2662,7 +2444,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Dispel 1 buff and 1 debuff from one ally. Restore HP and TP to them if one modifier type was removed, doubled if both.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2", "2", "2"],
@@ -2675,7 +2456,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -2685,7 +2465,6 @@ var data = {
             "Usage": "Passive (WIS)",
             "Unlock": "N/A",
             "Description": "Once per turn, if you have a buff, recover HP when attacked.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Healing Power": ["40%", "50%", "60%", "70%", "80%", "120%"],
@@ -2695,7 +2474,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Recover TP each time you receive a buff. (Does not activate if the buff cancelled a debuff)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Gain": ["2", "3", "4", "5", "6", "8"],
@@ -2705,7 +2483,6 @@ var data = {
             "Usage": "Active (Arms, INT)",
             "Unlock": "Fire/Freeze/Shock Arms (Lv 1)",
             "Description": "Dispel an elemental imbue on one ally. If successful, deal ranged damage of that element to all enemies. (Can be affected by the damage bonus of an Arms buff removed from the target, but not one active on the user)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "23"],
@@ -2718,7 +2495,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Reinforce (Lv 2)",
             "Description": "(Order) Place a buff on an ally line for several turns, which increases Max HP.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["6", "6", "6", "11", "11", "11", "11", "17"],
@@ -2731,7 +2507,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "Reinforce (Lv 2)",
             "Description": "(Order) Place a buff on an ally line for several turns, which restores HP at the end of each turn.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["8", "8", "8", "13", "13", "13", "13", "20"],
@@ -2744,7 +2519,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Rally Order (Lv 2), Protect Order (Lv 2)",
             "Description": "(Order) Place a buff on an ally line for several turns, which has a chance to block bind/ailment inflictions. (Buff is consumed when activated)",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "10", "10", "17", "17", "17", "17", "24"],
@@ -2757,7 +2531,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "For this turn, allies with buffs will recover TP based on their damage taken.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "6"],
@@ -2768,7 +2541,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "For this turn, allies with buffs will recover HP based on their damage dealt.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "5"],
@@ -2781,7 +2553,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases resistance to bind/ailment inflictions.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Inflictions↓": ["x0.92", "x0.91", "x0.9", "x0.85", "x0.84", "x0.83", "x0.82", "x0.75"],
@@ -2791,7 +2562,6 @@ var data = {
             "Usage": "Active (Arms, INT)",
             "Unlock": "Element Bomb I (Lv 3)",
             "Description": "Dispel an elemental imbue on one ally. If successful, deal 3 ranged hits of that element to random enemies. (Can be affected by the damage bonus of an Arms buff removed from the target, but not one active on the user)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "23"],
@@ -2804,7 +2574,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Dispel all ally buffs, ally debuffs, enemy buffs and enemy debuffs, then restore HP and TP to the whole party based on the amount of individual buffs/debuffs removed. (Base healing is multiplied by the amount of dispels squared. This caps at x400 for 20 dispels, and each dispel beyond that instead adds 20 to this multiplier)",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20"],
@@ -2816,7 +2585,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Prevent Order (Lv 1)",
             "Description": "(Order) Place a buff on an ally line for several turns, which gives them a chance to survive lethal damage, restoring HP if it activates. (Buff is consumed when activated)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["15", "15", "15", "22", "22", "22", "22", "30"],
@@ -2830,7 +2598,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Tactical Decree (Lv 2), Healing Decree (Lv 2)",
             "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself, then increase physical/elemental damage dealt and decrease physical/elemental damage taken by the party this turn.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20", "35"],
@@ -2842,7 +2609,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Final Decree (Lv 3)",
             "Description": "When you dispel buffs on yourself, they have a chance to be reapplied.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["12%", "14%", "16%", "18%", "20%", "22%", "24%", "26%", "28%", "40%"],
@@ -2855,7 +2621,6 @@ var data = {
         "Diversion Gambit":{
             "Usage": "Force Boost",
             "Description": "Increases evasion and enemy aggro.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -2866,7 +2631,6 @@ var data = {
         "Ninpo: Toxic Mist":{
             "Usage": "Force Break (Head, LUC)",
             "Description": "Inflict Poison to all enemies. (For reference, <i>Poison Damage = (PoisonPower + Level/6 + Random1)*(1 + Level/25) + Random2</i>, where each Random is a number from 0 to 5)",
-            "Starter": "0",
             "Max Level": "3",
             "Levels": ["1~59", "60~98", "99~130"],
             "Data": {
@@ -2880,7 +2644,6 @@ var data = {
             "Usage": "Active (Head, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Deal multiple hits of ranged Stab damage to random enemies (max once each), with a chance to inflict Sleep.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10"],
@@ -2895,7 +2658,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Ninpo:Daggers (Lv 3)",
             "Description": "Prepare to counterattack when target ally line takes physical damage. Deals ranged Cut damage, with a chance to inflict Poison.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "9"],
@@ -2909,7 +2671,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Knife: Deal melee Cut damage to one enemy, with a chance to inflict Leg Bind.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "12"],
@@ -2923,7 +2684,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Shadow Bind (Lv 3)",
             "Description": "Knife: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which increases physical damage taken.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["5", "5", "5", "8", "8", "8", "8", "13"],
@@ -2937,7 +2697,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Recover TP each time you evade an attack.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Gain": ["2+1%", "3+1%", "4+1%", "5+2%"],
@@ -2947,7 +2706,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Reflexes (Lv 2)",
             "Description": "Increases evasion.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "Evasion↑": ["+5%", "+6%", "+7%", "+8%", "+11%", "+12%", "+13%", "+14%", "+15%", "+20%"],
@@ -2957,7 +2715,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Summon a Decoy copy of yourself with modified stats. This Decoy cannot act and has increased evasion and enemy aggro.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "10"],
@@ -2972,7 +2729,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases all damage dealt. At max level, removes the backline penalty for melee attacks.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "Damage Dealt↑": ["+4%", "+6%", "+8%", "+10%"],
@@ -2982,7 +2738,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -2992,7 +2747,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Ninpo:Caltrops (Lv 2)",
             "Description": "Target one enemy afflicted with an ailment, then attempt to inflict that ailment on all other enemies.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6", "10"],
@@ -3004,7 +2758,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Bone Crusher (Lv 2)",
             "Description": "Knife: Deal melee Cut damage to one enemy, with a chance to inflict Petrify.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["7", "7", "7", "11", "11", "11", "11", "16"],
@@ -3018,7 +2771,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Izuna (Lv 3)",
             "Description": "Knife: Deal multiple hits of melee Cut damage to random enemies.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["8", "8", "8", "13", "13", "13", "13", "20"],
@@ -3032,7 +2784,6 @@ var data = {
             "Usage": "Passive (STR)",
             "Unlock": "N/A",
             "Description": "Once per battle, when killed, deal ranged Fire damage to your attacker.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Attack Power": ["500%", "560%", "620%", "680%", "740%", "1000%"],
@@ -3043,7 +2794,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Revenge Bomb (Lv 2)",
             "Description": "Spend part of your current HP and TP, then summon a fully controllable clone of yourself. (Cannot be used while Force Boost is active, and vice versa)",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "HP/TP Cost": ["70%", "69%", "68%", "67%", "63%", "62%", "61%", "60%", "59%", "55%"],
@@ -3054,7 +2804,6 @@ var data = {
             "Usage": "Passive (LUC)",
             "Unlock": "Concealment (Lv 3)",
             "Description": "Normal attacks gain a chance to inflict Instant Death.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Infliction Rate": ["2%", "3%", "4%", "5%", "6%", "7%", "8%", "10%"],
@@ -3064,7 +2813,6 @@ var data = {
             "Usage": "Active (Legs)",
             "Unlock": "N/A",
             "Description": "Drastically increase evasion against physical attacks until the end of turn. Bonus goes down each time you evade an attack.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "7", "7", "7", "7", "7", "13"],
@@ -3077,7 +2825,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Ninpo:Mirage (Lv 2)",
             "Description": "Chance to automatically activate Ninpo: Mirage at the start of battle.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Activation Chance": ["25%", "30%", "35%", "40%", "45%", "67%"],
@@ -3087,7 +2834,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases bind/ailment infliction rates.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Inflictions↑": ["x1.04", "x1.05", "x1.06", "x1.09", "x1.1", "x1.11", "x1.12", "x1.15"],
@@ -3099,7 +2845,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Ninpo:Mirror (Lv 2)",
             "Description": "Attempt to inflict Panic on all enemies.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["13", "13", "13", "13", "13", "20"],
@@ -3111,7 +2856,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Ninpo:Panic (Lv 2)",
             "Description": "When you evade an attack, increase ailment infliction rates on the next turn.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "Inflictions↑": ["x1.1", "x1.13", "x1.16", "x1.19", "x1.22", "x1.35"],
@@ -3121,7 +2865,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Hawk Strike (Lv 2)",
             "Description": "Knife: Deal melee Cut damage to one enemy. Cannot miss. If the target has an ailment, recover Force.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["12", "12", "12", "17", "17", "17", "17", "24"],
@@ -3134,7 +2877,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Dominance (Lv 2), Ninpo:Double (Lv 2)",
             "Description": "Knife: Deal multiple hits of melee Cut damage to random enemies. Damage is doubled for each clone, but dispels all clones. (Damage is divided by 4 if there's no clones)",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["20", "20", "20", "27", "27", "27", "27", "35"],
@@ -3148,7 +2890,6 @@ var data = {
             "Usage": "Active (Legs)",
             "Unlock": "Ninpo: Flight (Lv 2)",
             "Description": "Spend part of current HP to place a buff on yourself for 3 turns, which increases evasion.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20"],
@@ -3161,7 +2902,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Decreases the TP cost of skills. (Costs have a minimum cap of 1)",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost↓": ["-1", "-2", "-3", "-4"],
@@ -3174,7 +2914,6 @@ var data = {
         "Divination":{
             "Usage": "Force Boost",
             "Description": "Increases damage dealt with Astrology skills, and refunds part of their spent TP.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -3185,7 +2924,6 @@ var data = {
         "Astrosign":{
             "Usage": "Force Break (Head, INT)",
             "Description": "Deal ranged Fire+Ice+Volt damage to all enemies. For this turn, skills from your allies spend 0 TP.",
-            "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -3198,7 +2936,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Place a buff on an ally line for several turns, which increases elemental damage dealt.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["6", "6", "6", "10", "10", "10", "10", "16"],
@@ -3211,7 +2948,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Etheric Gleam (Lv 1)",
             "Description": "(Astrology) Deal ranged Fire damage to one enemy, with splash effect.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "13", "13", "13", "13", "13", "18"],
@@ -3224,7 +2960,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Etheric Gleam (Lv 1)",
             "Description": "(Astrology) Deal ranged Ice damage to one enemy, with pierce effect.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "13", "13", "13", "13", "13", "18"],
@@ -3237,7 +2972,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Etheric Gleam (Lv 1)",
             "Description": "(Astrology) Deal ranged Volt damage to an enemy line.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "13", "13", "13", "13", "13", "18"],
@@ -3250,7 +2984,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases damage dealt when you hit a weakness. (Additionally, attacks that hit a weakness will show a message and make a special sound effect)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["+6%", "+7%", "+9%", "+10%", "+12%", "+13%", "+15%", "+20%"],
@@ -3260,7 +2993,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Singularity (Lv 3)",
             "Description": "Enter a charge state until the end of next turn, which increases damage dealt with Astrology skills but turns them into single-target attacks.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "15"],
@@ -3272,7 +3004,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Singularity (Lv 3)",
             "Description": "Recover TP each time you kill an enemy.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Gain": ["1%", "1+1%", "2+1%", "3+2%"],
@@ -3282,7 +3013,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "N/A",
             "Description": "Temporarily decrease the enemy encounter rate.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6", "10"],
@@ -3294,7 +3024,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -3304,7 +3033,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases damage dealt with Astrology skills.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+15%"],
@@ -3314,7 +3042,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases base Max TP.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Max TP↑": ["+7%", "+9%", "+11%", "+17%", "+19%", "+21%", "+23%", "+30%"],
@@ -3324,7 +3051,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Fire Star (Lv 3)",
             "Description": "(Astrology) Deal ranged Fire damage to all enemies.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "27", "27", "27", "27", "27", "35"],
@@ -3337,7 +3063,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Ice Star (Lv 3)",
             "Description": "(Astrology) Deal ranged Ice damage to all enemies.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "27", "27", "27", "27", "27", "35"],
@@ -3350,7 +3075,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Volt Star (Lv 3)",
             "Description": "(Astrology) Deal ranged Volt damage to all enemies.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "27", "27", "27", "27", "27", "35"],
@@ -3363,7 +3087,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Etheric Charge (Lv 2)",
             "Description": "Increases all damage dealt based on how much TP you spent last turn. This skill has a base damage bonus which is then multiplied by [SpentTP<sup>1.5</sup>/100] and rounded down. (Cheat Sheet: 15TP → x0.58; 25TP → x1.25; 35TP → x2.07; 45TP → x3.01)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Damage Dealt↑": ["+3%", "+4%", "+5%", "+6%", "+7%", "+10%"],
@@ -3373,7 +3096,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Etheric Boon (Lv 2)",
             "Description": "Chance to nullify elemental attacks against party members in your line.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "Activation Chance": ["3%", "4%", "5%", "6%", "7%", "10%"],
@@ -3383,7 +3105,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Etheric Return (Lv 2)",
             "Description": "Target one ally line, decrease their TP spent for this turn.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20", "30"],
@@ -3395,7 +3116,6 @@ var data = {
             "Usage": "Active (Arms, INT)",
             "Unlock": "Dark Ether (Lv 2)",
             "Description": "(Astrology) Deal ranged weapon-based damage to one enemy.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["2", "2", "2", "4", "4", "4", "4", "7"],
@@ -3410,7 +3130,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Binary Fire (Lv 2)",
             "Description": "Target one enemy, and nullify any Fire attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases all damage dealt.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25"],
@@ -3422,7 +3141,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Binary Ice (Lv 2)",
             "Description": "Target one enemy, and nullify any Ice attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases all damage dealt.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25"],
@@ -3434,7 +3152,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Binary Volt (Lv 2)",
             "Description": "Target one enemy, and nullify any Volt attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases all damage dealt.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25"],
@@ -3446,7 +3163,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Fire/Ice/Volt Prophecy (Lv 1)",
             "Description": "Chance to not spend TP when using skills.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "Activation Chance": ["10%", "12%", "14%", "16%", "18%", "25%"],
@@ -3456,7 +3172,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Anti-Ether (Lv 2)",
             "Description": "Enter a charge state until the end of next turn, which decreases damage dealt with Astrology skills but turns them into random-target multi-hit attacks (2~5 hits). In the case of Meteor, instead of changing target type it triples the minimum and maximum hits.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "35"],
@@ -3468,7 +3183,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Ether Shot (Lv 2), Horoscope (Lv 3)",
             "Description": "(Astrology) Deal 2~5 hits of ranged Bash damage to random enemies.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["27", "27", "27", "27", "35", "35", "35", "35", "35", "45"],
@@ -3484,7 +3198,6 @@ var data = {
         "Item Echo":{
             "Usage": "Force Boost",
             "Description": "Items used will activate their effect twice.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -3492,7 +3205,6 @@ var data = {
         "Final Secret":{
             "Usage": "Force Break (Head)",
             "Description": "Fill the Force Gauges of the whole party to 100%. Also has a 33% chance to restore broken Force Gauges.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -3503,7 +3215,6 @@ var data = {
             "Usage": "Active (Arms, LUC)",
             "Unlock": "N/A",
             "Description": "If you're afflicted with binds and/or an ailment, attempt to inflict them on all enemies.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "9"],
@@ -3515,7 +3226,6 @@ var data = {
             "Usage": "Active (Arms, LUC)",
             "Unlock": "Sympathy Pain (Lv 1)",
             "Description": "Plant seeds on all enemies, which will attempt to inflict a random bind on each one at the end of turn.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "14"],
@@ -3527,7 +3237,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Sympathy Pain (Lv 1)",
             "Description": "Place a buff on an ally for 3 turns, which decreases enemy aggro.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "5"],
@@ -3539,7 +3248,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "N/A",
             "Description": "Temporarily display treasure, shortcuts, stairs, FOEs and gathering points on the whole floor.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "8"],
@@ -3550,7 +3258,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "Keen Eye (Lv 2)",
             "Description": "Chance to obtain materials on every 20 steps taken. Maximum amount of items gained and the chance of obtaining higher amounts increases with skill level. Normal maximum level is 8, but gets added to other instances of this skill.",
-            "Starter": "0",
             "Max Level": "0",
             "Data": ""
         },
@@ -3558,7 +3265,6 @@ var data = {
             "Usage": "Active (Legs)",
             "Unlock": "N/A",
             "Description": "Attempt to escape the battle and teleport to the point where you entered the floor. If successful, spend part of the whole party's HP.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["3", "3", "3", "7"],
@@ -3570,7 +3276,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "N/A",
             "Description": "Revive an ally.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["7", "7", "7", "10"],
@@ -3581,7 +3286,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "If you're alive at the end of a battle, increases EXP earned by the party.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "EXP↑": ["+9%", "+10%", "+12%", "+13%", "+15%", "+16%", "+18%", "+19%", "+21%", "+30%"],
@@ -3591,7 +3295,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield grows from 1 to 3 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -3601,7 +3304,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Strange Seeds (Lv 3), Play Possum (Lv 1)",
             "Description": "Place a debuff on all enemies for 3 turns, which decreases damage dealt. Stronger while targets are afflicted with an ailment.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6", "10"],
@@ -3614,7 +3316,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Rotten Egg (Lv 2)",
             "Description": "If you're dead, there's a chance to automatically revive with 1 HP at the end of each turn.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["3%", "4%", "5%", "6%", "8%", "9%", "10%", "11%", "12%", "15%"],
@@ -3623,8 +3324,7 @@ var data = {
         "Waste Not":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases enemy drop rates.",
-            "Starter": "1", 
+            "Description": "Increases enemy drop rates.", 
             "Max Level": "4",
             "Data": {
                 "Drop Rate↑": ["+5%", "+8%", "+12%", "+20%"],
@@ -3634,7 +3334,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "Excavation (Lv 3)",
             "Description": "Chance to obtain consumable items on every 20 steps taken. Maximum amount of items gained and the chance of obtaining higher amounts increases with skill level. Normal maximum level is 8, but gets added to other instances of this skill.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -3642,7 +3341,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "Flee (Lv 1)",
             "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles. Additionally, damage taken from attacks out of battle is decreased to 1.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -3653,7 +3351,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "Rain or Shine (Lv 2)",
             "Description": "Temporarily decrease the enemy encounter rate.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "8", "14"],
@@ -3665,7 +3362,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "Restore TP to other allies in your line.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "14", "18", "22", "26", "30", "34", "50"],
@@ -3677,7 +3373,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "At the end of each turn, if you're in the front line and have full HP, recover TP.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Gain": ["1+1%", "2+1%", "3+1%", "4+2%"],
@@ -3687,7 +3382,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "Earth's Bounty (Lv 3)",
             "Description": "Restore HP and TP to the party when using a gathering spot. Healing is based on each unit's Max HP and Max TP.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "HP Gain": ["10+25%", "15+27%", "20+29%", "25+31%", "30+33%", "50+50%"],
@@ -3700,7 +3394,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Persistence (Lv 2)",
             "Description": "Inflict Sleep on yourself, then attempt to inflict it on all enemies.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["9", "9", "9", "9", "9", "14"],
@@ -3712,7 +3405,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "Lullaby (Lv 3)",
             "Description": "Restore TP to the party for every certain amount of steps taken. Healing is based on each unit's Max TP.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "Steps to Heal": ["12", "11", "10", "9", "8", "7", "6", "3"],
@@ -3723,7 +3415,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Waste Not (Lv 2)",
             "Description": "Restore Force to the whole party each time you kill an enemy.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Force Gain": ["3%", "4%", "5%", "6%", "7%", "10%"],
@@ -3733,7 +3424,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Deal melee Cut damage to all enemies. On targets with binds, increase damage dealt by 250% and attempt to inflict Instant Death.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "18", "18", "18", "18", "18", "28"],
@@ -3747,7 +3437,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "Survival Wisdom (Lv 2)",
             "Description": "Chance to get additional, rare materials from gathering spots.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "Max. Extra Items": ["1", "2", "3", "4"],
@@ -3757,7 +3446,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "Nature's Blessing (Lv 2)",
             "Description": "Chance to gather a second time when using a gathering spot. (Max once per gather, even with multiple instances of this skill)",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "Activation Chance": ["16%", "19%", "22%", "25%", "28%", "31%", "34%", "50%"],
@@ -3770,7 +3458,6 @@ var data = {
         "Unified Effort":{
             "Usage": "Force Boost",
             "Description": "Increases Max HP and all damage dealt for the whole party.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -3781,7 +3468,6 @@ var data = {
         "Decoy Party":{
             "Usage": "Force Break (Head)",
             "Description": "For this turn, each ally will block the first enemy action (attack or any infliction type) that targets them.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -3792,7 +3478,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Allows you to equip a sub-weapon (uses an armor slot). Decreases damage taken if two weapons are equipped. (Skills that can use both weapons will prioritize the strongest one)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Damage Taken↓": ["-5%", "-6%", "-7%", "-8%", "-12%", "-13%", "-14%", "-15%", "-16%", "-20%"],
@@ -3802,7 +3487,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Second Sword (Lv 2)",
             "Description": "Katana: Deal weapon-based damage to one enemy at the start of turn. If you have a sub-weapon, perform a second hit with it after the target acts.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "9"],
@@ -3815,7 +3499,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Target one ally, and when they're first hit this turn, all front line allies will counterattack with their weapons.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "8"],
@@ -3828,7 +3511,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Katana: Deal melee Cut+Volt damage to one enemy.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["6", "6", "6", "10", "10", "10", "10", "15"],
@@ -3841,7 +3523,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases all damage dealt if it's nighttime or you're afflicted by Blind.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "Damage Dealt↑": ["+8%", "+10%", "+12%", "+20%"],
@@ -3851,7 +3532,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Place a buff on one ally for 3 turns, which increases physical damage dealt and enemy aggro.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "9"],
@@ -3864,7 +3544,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "Great Warrior (Lv 2)",
             "Description": "Temporarily increase the enemy encounter rate and EXP gained from battle.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "15"],
@@ -3877,7 +3556,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "If you're revived during battle, restore HP to all allies.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "HP Gain": ["25", "30", "35", "50"],
@@ -3887,7 +3565,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -3897,7 +3574,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Echoing Slash (Lv 3)",
             "Description": "Katana: Deal weapon-based damage to one enemy. If you have a sub-weapon, perform a second hit with it.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "11", "11", "11", "11", "11", "17"],
@@ -3910,7 +3586,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Front Command (Lv 2)",
             "Description": "When you're first hit this turn, all other allies will counterattack with their weapons.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -3923,7 +3598,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Endure Command (Lv 2)",
             "Description": "Command all other allies to deal weapon-based damage to one enemy.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "22"],
@@ -3936,7 +3610,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Bolt Slash (Lv 3)",
             "Description": "Deal melee Cut damage to an enemy line. Deals 50% more damage during daytime.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "12", "18"],
@@ -3949,7 +3622,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Avidya Sight (Lv 2)",
             "Description": "Deal melee Cut damage to one enemy. Deals 50% more damage during nighttime.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7", "12"],
@@ -3962,7 +3634,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Twilight Hour (Lv 2)",
             "Description": "Increases all damage dealt for each time you have killed a unit. (Max 9 stacks. Resets if you die)",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "Damage Dealt↑": ["+6%", "+8%", "+10%", "+12%", "+14%", "+20%"],
@@ -3972,7 +3643,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "At the end of a turn where you died, there's a chance to automatically revive with 1 HP.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["5%", "6%", "7%", "8%", "11%", "12%", "13%", "14%", "15%", "20%"],
@@ -3982,7 +3652,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases damage dealt based on how many hits you have performed this turn.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+4%", "+4%", "+4%", "+4%", "+7%", "+7%", "+7%", "+7%", "+7%", "+10%"],
@@ -3993,7 +3662,6 @@ var data = {
             "Usage": "Active (Arms, WIS)",
             "Unlock": "N/A",
             "Description": "User dies to restore HP to all other allies, with a chance to revive them. (<b>Bug</b>: Revive chance is rolled twice and must pass both to activate)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "15", "25"],
@@ -4008,7 +3676,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Twin Swallows (Lv 4)",
             "Description": "Katana: Deal multiple hits of weapon-based damage to random enemies. If you have a sub-weapon, the maximum hits are doubled and hits will alternate between both weapons.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "22", "22", "22", "22", "22", "30"],
@@ -4022,7 +3689,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Blitz Command (Lv 3)",
             "Description": "Target one ally line, and when it's first hit this turn, all allies with a Bow or a Gun will counterattack with their weapons.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7", "12"],
@@ -4035,7 +3701,6 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Shot Command (Lv 2)",
             "Description": "Prepare to follow up all ally attacks this turn. Deals weapon-based damage, but costs HP for each hit.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20"],
@@ -4048,7 +3713,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Bloody Lance (Lv 2)",
             "Description": "Katana: Deal melee Bash damage to one enemy, with a chance to inflict Curse and Arm Bind.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["9", "9", "9", "13", "13", "13", "13", "18"],
@@ -4062,7 +3726,6 @@ var data = {
             "Usage": "Passive (Arms)",
             "Unlock": "Curse Strike (Lv 3)",
             "Description": "Chance to automatically kill allies or enemies that are below a certain HP threshold after being hit. (Ignores Instant Death resistance and immunity, except on the final boss and superboss)",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "HP Threshold": ["5%", "7%", "9%", "15%"],
@@ -4073,7 +3736,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Reincarnation (Lv 2)",
             "Description": "Place a buff on one ally for 3 turns, which increases physical damage dealt and action speed but also increases physical damage taken.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "16"],
@@ -4090,7 +3752,6 @@ var data = {
         "Trinity":{
             "Usage": "Force Boost",
             "Description": "Increases all damage dealt, accuracy and action speed.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -4102,7 +3763,6 @@ var data = {
         "Full Charge":{
             "Usage": "Force Break (Arms)",
             "Description": "Become immune to attacks and inflictions until the end of this turn, and enter a charge state until the end of the next turn, which drastically increases all damage dealt and action speed.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -4116,7 +3776,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "After you perform an attack, all party members deal more damage and have more accuracy against its targets until the end of turn.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "Damage Dealt↑": ["+3%", "+4%", "+5%", "+10%"],
@@ -4127,7 +3786,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Sword/Rapier: Deal weapon-based damage to one enemy. Hits at the start of turn.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "15"],
@@ -4139,7 +3797,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Sword/Rapier: Deal melee Cut/Stab+Fire damage to one enemy and mark them with a Link for this turn. Subsequent hits by allies will activate the Link (max 4 times), dealing additional Cut/Stab+Fire damage. Activation chance starts at 100% and goes down with each activation.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "14"],
@@ -4154,7 +3811,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Sword/Rapier: Deal melee Cut/Stab+Ice damage to one enemy and mark them with a Link for this turn. Subsequent hits by allies will activate the Link (max 4 times), dealing additional Cut/Stab+Ice damage. Activation chance starts at 100% and goes down with each activation.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "14"],
@@ -4169,7 +3825,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Sword/Rapier: Deal melee Cut/Stab+Volt damage to one enemy and mark them with a Link for this turn. Subsequent hits by allies will activate the Link (max 4 times), dealing additional Cut/Stab+Volt damage. Activation chance starts at 100% and goes down with each activation.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "14"],
@@ -4184,7 +3839,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Place a buff on yourself for 5 turns, which increases physical damage dealt and action speed but also increases physical damage taken.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "7"],
@@ -4198,7 +3852,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Shield: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which decreases physical/elemental damage dealt. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -4212,7 +3865,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Decreases physical damage taken.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Taken↓": ["-4%", "-5%", "-6%", "-9%", "-10%", "-11%", "-12%", "-15%"],
@@ -4222,7 +3874,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -4232,7 +3883,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Falcon Slash (Lv 2)",
             "Description": "Sword/Rapier: Deal 2 hits of weapon-based damage to one enemy.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "16"],
@@ -4245,7 +3895,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Double Strike (Lv 3)",
             "Description": "Sword: Deal melee Cut damage to one enemy, with splash effect.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "10", "10", "15", "15", "15", "15", "20"],
@@ -4258,7 +3907,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Double Strike (Lv 3)",
             "Description": "Rapier: Deal melee Stab damage to one enemy, with pierce effect.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["7", "7", "7", "10", "10", "10", "10", "14"],
@@ -4271,7 +3919,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Blazing/Freezing/Electric Link (Lv 3)",
             "Description": "Place a buff on yourself for 3 turns, which increases maximum Link activations and diminishes the chance decrease per activation.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["7", "7", "7", "12"],
@@ -4284,7 +3931,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Improved Link (Lv 1)",
             "Description": "Link activations can make Critical Hits, with increased Critical rate. (If a multi-hit attack triggers multiple Link activations, when one of those becomes Critical the remaining ones will also be Critical)",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "Crit Rate↑": ["+7%", "+8%", "+9%", "+10%", "+14%", "+15%", "+16%", "+17%", "+18%", "+25%"],
@@ -4294,7 +3940,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Power Break (Lv 2)",
             "Description": "Shield: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which increases physical/elemental damage taken. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -4308,7 +3953,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Guard Break (Lv 2)",
             "Description": "Shield: Deal melee Bash damage to one enemy. Places a debuff on the target for 3 turns, which decreases evasion and action speed. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -4323,7 +3967,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases all damage dealt and accuracy when you attack before any enemy has acted.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "Damage Dealt↑": ["+7%", "+10%", "+13%", "+20%"],
@@ -4334,7 +3977,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases resistance to bind/ailment inflictions.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Inflictions↓": ["x0.92", "x0.91", "x0.9", "x0.85", "x0.84", "x0.83", "x0.82", "x0.75"],
@@ -4346,7 +3988,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Spiral Slice (Lv 2)",
             "Description": "Sword: Deal melee Cut damage to one enemy.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["13", "13", "13", "18", "18", "18", "18", "24"],
@@ -4359,7 +4000,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Penetrate (Lv 2)",
             "Description": "Rapier: Deal multiple hits of melee Stab damage randomly to an enemy line.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["9", "9", "9", "14", "14", "14", "14", "21"],
@@ -4373,7 +4013,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Smash Link (Lv 2)",
             "Description": "Increases damage dealt by a Link's activations for each time it has been activated this turn. (Stacks up to +99%)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+12%", "+15%"],
@@ -4383,7 +4022,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Link Mastery (Lv 2)",
             "Description": "Sword/Rapier: Deal weapon-based damage to one enemy. Increase damage dealt by 30% for each time your Link was activated last turn.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "16"],
@@ -4396,7 +4034,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Speed Break (Lv 2)",
             "Description": "Shield: Deal melee Bash damage to one enemy. Increase damage dealt by 125% if the target has a Break skill debuff. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "18"],
@@ -4409,7 +4046,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases all damage dealt. Bonus is greater the less damage types the attack has.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Damage Dealt↑ (1 Type)": ["+6%", "+8%", "+10%", "+12%", "+14%", "+20%"],
@@ -4424,7 +4060,6 @@ var data = {
         "Killing Intent":{
             "Usage": "Force Boost",
             "Description": "Increases all damage dealt and ailment infliction rates.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -4435,7 +4070,6 @@ var data = {
         "Disaster":{
             "Usage": "Force Break (Arms, STR)",
             "Description": "Deal melee Cut damage to one enemy. If the target has an ailment, prevent it from being healed this turn.",
-            "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -4448,7 +4082,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "(Throw) Deal ranged Cut damage to one enemy, with a chance to inflict Blind.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "5"],
@@ -4462,7 +4095,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Sand Throw (Lv 2)",
             "Description": "(Throw) Deal ranged Cut damage to one enemy, with a chance to inflict Sleep.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "5"],
@@ -4476,7 +4108,6 @@ var data = {
             "Usage": "Active (Legs)",
             "Unlock": "N/A",
             "Description": "Enter the Shadow Cloak state for 3 turns, which gets consumed to nullify the next physical hit received.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4"],
@@ -4487,7 +4118,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Shadow Cloak (Lv 1)",
             "Description": "Sword/Knife: Deal melee Cut damage to one enemy. At the end of turn, if you were not hit, attack a second time.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "10"],
@@ -4500,7 +4130,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Sword/Knife: Deal melee Cut+Ice damage to one enemy.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["5", "5", "5", "8", "8", "8", "8", "12"],
@@ -4513,7 +4142,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases all damage dealt to enemies with ailments.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+12%", "+14%", "+16%", "+18%", "+20%", "+23%", "+26%", "+29%", "+32%", "+50%"],
@@ -4523,7 +4151,6 @@ var data = {
             "Usage": "Active (No Parts)",
             "Unlock": "N/A",
             "Description": "Place a buff on one ally for 3 turns, which increases enemy aggro.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["4", "4", "4", "6"],
@@ -4535,7 +4162,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Allows you to equip a sub-weapon (uses an armor slot). If two weapons are equipped, normal attacks will perform a second hit with your sub-weapon.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Attack Power\n(Second Hit)": ["30%", "33%", "36%", "39%", "42%", "45%", "48%", "60%"],
@@ -4545,7 +4171,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -4555,7 +4180,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Sleep Throw (Lv 3)",
             "Description": "(Throw) Deal ranged Cut damage to one enemy, with a chance to inflict Curse.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "5"],
@@ -4569,7 +4193,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Curse Throw (Lv 2)",
             "Description": "(Throw) Deal ranged Cut damage to one enemy, with a chance to inflict Paralysis.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "5"],
@@ -4583,7 +4206,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Sleep Throw (Lv 3)",
             "Description": "Sword/Knife: Deal melee Cut damage to one enemy. Deals double damage to enemies with ailments.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "16"],
@@ -4596,7 +4218,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Biding Slice (Lv 2)",
             "Description": "Chance to automatically cast Shadow Cloak at the start of battle.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Activation Chance": ["25%", "30%", "35%", "40%", "45%", "67%"],
@@ -4606,7 +4227,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Auto-Cloak (Lv 3)",
             "Description": "Sword/Knife: Deal melee Cut damage to one enemy, with a chance to inflict Head Bind. If Shadow Cloak is active, deals double damage and becomes Almighty type.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "15"],
@@ -4620,7 +4240,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "Proficiency (Lv 2)",
             "Description": "Temporarily gain an additional chance of getting a preemptive attack.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "15"],
@@ -4632,7 +4251,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Sneak Attack (Lv 2)",
             "Description": "Increases all damage dealt for each time you have inflicted an ailment, up to a certain limit. (Resets upon dying)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+4%", "+5%", "+6%", "+7%", "+8%", "+10%", "+11%", "+13%", "+14%", "+20%"],
@@ -4643,7 +4261,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases accuracy, evasion and action speed.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Accuracy↑": ["+2.5%", "+3.1%", "+3.7%", "+5.7%", "+6.3%", "+6.9%", "+7.5%", "+10%"],
@@ -4655,7 +4272,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "Enter a charge state until the end of next turn, which makes Throw skills hit all enemies and increases their infliction rate.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "7"],
@@ -4668,7 +4284,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Nerve Throw (Lv 2)",
             "Description": "(Throw) Deal ranged Cut damage to one enemy, with a chance to inflict Poison.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "5"],
@@ -4683,7 +4298,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Shadow Bite (Lv 3)",
             "Description": "Sword/Knife: Deal 3~5 hits of melee Cut damage to one enemy. Maximum hits are doubled against enemies with ailments.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["14", "14", "14", "14", "19", "19", "19", "19", "19", "25"],
@@ -4696,7 +4310,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Backstab (Lv 3)",
             "Description": "Sword/Knife: Deal melee Cut damage to one enemy. If Shadow Cloak is active, has a chance to inflict Instant Death.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "10", "10", "15", "15", "15", "15", "20"],
@@ -4710,7 +4323,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Assassinate (Lv 3)",
             "Description": "Chance to automatically reapply Shadow Cloak when it's consumed.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "Activation Chance": ["8%", "11%", "14%", "17%", "20%", "23%", "26%", "34%"],
@@ -4720,7 +4332,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Blade Flurry (Lv 4)",
             "Description": "When using an attack skill against an enemy with an ailment, there's a chance to perform the attack a second time.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["6%", "8%", "10%", "12%", "14%", "17%", "20%", "23%", "26%", "35%"],
@@ -4730,7 +4341,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Spread Throw (Lv 2)",
             "Description": "Chance to automatically cast Spread Throw at the start of battle.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["6%", "8%", "10%", "12%", "14%", "17%", "20%", "23%", "26%", "35%"],
@@ -4743,7 +4353,6 @@ var data = {
         "Circle Paradise":{
             "Usage": "Force Boost",
             "Description": "Increases bind/ailment infliction chances. Circle duration does not go down, and they don't get removed by Dismiss skills.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -4753,7 +4362,6 @@ var data = {
         "Releasal Spell":{
             "Usage": "Force Break (Head)",
             "Description": "Remove all buffs on one enemy and reset their accumulative resistance.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -4764,7 +4372,6 @@ var data = {
             "Usage": "Passive (WIS)",
             "Unlock": "N/A",
             "Description": "At the end of each turn, restore HP to the whole party if a Circle is active.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "Healing Power": ["15%", "20%", "25%", "40%"],
@@ -4774,7 +4381,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "Circle Boon (Lv 1)",
             "Description": "(Dismiss) Remove an active Circle to restore HP to the whole party.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "12", "12", "12", "12", "12", "24"],
@@ -4786,7 +4392,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "N/A",
             "Description": "Place a Circle for 3 turns, which attempts to inflict Arm Bind on all enemies at the end of each turn. (Overrides other Circles)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "18"],
@@ -4798,7 +4403,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Chain Circle (Lv 2)",
             "Description": "Place a Circle for 3 turns, which attempts to inflict Leg Bind on all enemies at the end of each turn. (Overrides other Circles)",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "18"],
@@ -4810,7 +4414,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "N/A",
             "Description": "Place a Circle for 3 turns, which attempts to inflict Paralysis on all enemies at the end of each turn. (Overrides other Circles)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["7", "7", "7", "10", "10", "10", "10", "15"],
@@ -4822,7 +4425,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Nerve Circle (Lv 2)",
             "Description": "Place a Circle for 3 turns, which attempts to inflict Curse on all enemies at the end of each turn. (Overrides other Circles)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["7", "7", "7", "10", "10", "10", "10", "15"],
@@ -4834,7 +4436,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Restore HP to the whole party for every 3 steps taken.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "HP Gain": ["2", "3", "5", "10"],
@@ -4844,7 +4445,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Recover TP when one of your Circles wears off by time or is dismissed.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Gain": ["1+1%", "2+1%", "3+1%", "4+1%", "5+1%", "6+2%"],
@@ -4854,7 +4454,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -4864,7 +4463,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Dismiss Heal (Lv 2)",
             "Description": "(Dismiss) Remove an active Circle for a chance to revive an ally line. (<b>Bug</b>: Revive chance is rolled twice and must pass both to activate)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "20", "20", "20", "20", "20", "35"],
@@ -4877,7 +4475,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Dismiss Revive (Lv 3)",
             "Description": "(Dismiss) Remove an active Circle to deal ranged Almighty damage to one enemy.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "13", "13", "13", "13", "13", "30"],
@@ -4890,7 +4487,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Snare Circle (Lv 2)",
             "Description": "Place a Circle for 3 turns, which attempts to inflict Head Bind on all enemies at the end of each turn. (Overrides other Circles)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "18"],
@@ -4902,7 +4498,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Curse Circle (Lv 2)",
             "Description": "Place a Circle for 3 turns, which attempts to inflict Sleep on all enemies at the end of each turn. (Overrides other Circles)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["7", "7", "7", "10", "10", "10", "10", "15"],
@@ -4914,7 +4509,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Place a debuff on all enemies for 3 turns, which decreases physical/elemental damage dealt.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7", "12"],
@@ -4926,7 +4520,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Charm Eye (Lv 2)",
             "Description": "Place a debuff on all enemies for 3 turns, which increases physical/elemental damage taken.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7", "12"],
@@ -4938,7 +4531,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases bind/ailment infliction rates.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Inflictions↑": ["x1.04", "x1.05", "x1.06", "x1.09", "x1.1", "x1.11", "x1.12", "x1.15"],
@@ -4948,7 +4540,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "N/A",
             "Description": "Temporarily nullify the effect of damaging tiles and muddy tiles. Additionally, damage taken from attacks out of battle is decreased to 1.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -4959,7 +4550,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Chance to nullify bind/ailment/stun inflictions towards your line.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "Activation Chance": ["4%", "5%", "6%", "10%"],
@@ -4971,7 +4561,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Dismiss Blow (Lv 2)",
             "Description": "(Dismiss) Remove an active Circle to deal ranged Almighty damage to all enemies.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "24", "24", "24", "24", "24", "40"],
@@ -4984,7 +4573,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Dismiss Blast (Lv 3)",
             "Description": "Increases the effect of Dismiss skills.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "Healing↑\n(D. Heal)": ["x1.08", "x1.11", "x1.14", "x1.17", "x1.2", "x1.3"],
@@ -4999,7 +4587,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Sleep Circle (Lv 2)",
             "Description": "Place a Circle for 3 turns, which attempts to inflict Poison on all enemies at the end of each turn. (Overrides other Circles)",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "10", "10", "15", "15", "15", "15", "21"],
@@ -5012,7 +4599,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Sleep Circle (Lv 2)",
             "Description": "Place a Circle for 3 turns, which attempts to inflict Panic on all enemies at the end of each turn. (Overrides other Circles)",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "10", "10", "15", "15", "15", "15", "21"],
@@ -5024,7 +4610,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Poison/Chaos Circle (Lv 3)",
             "Description": "(Dismiss) Remove an active Circle to attempt to inflict Stun on all enemies.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "12", "12", "12", "12", "12", "20"],
@@ -5036,7 +4621,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Recover TP when one of your skills inflicts a bind/ailment/stun on one or more enemies.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Gain": ["1+1%", "2+1%", "3+1%", "4+2%"],
@@ -5049,7 +4633,6 @@ var data = {
         "Ignition":{
             "Usage": "Force Boost",
             "Description": "Drive skills won't trigger the Overheat state.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -5057,7 +4640,6 @@ var data = {
         "Conversion":{
             "Usage": "Force Break (Head, WIS)",
             "Description": "Recover a massive amount of TP. Excess healing increases Max TP until you die or the battle ends.",
-            "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -5070,7 +4652,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "(Starter) Drive Blade: Deal melee Cut damage to one enemy. Decreases Overheat time by 1 turn.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "7"],
@@ -5083,7 +4664,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "(Starter) Drive Blade: Deal weapon-based damage to one enemy.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["3", "3", "3", "5", "5", "5", "5", "7"],
@@ -5096,7 +4676,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Sharp/Natural Edge (Lv 2)",
             "Description": "(Combo) Drive Blade: Deal melee Cut damage to one enemy. Recover HP based on damage dealt. (Only usable right after a Starter skill)",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "12"],
@@ -5110,7 +4689,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Place a buff on one ally for 3 turns, which decreases damage taken but makes them act last.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "7"],
@@ -5122,7 +4700,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "(Drive) Drive Blade: Deal melee Cut damage to one enemy, then enter Overheat state for 7 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "30", "30", "30", "30", "30", "40"],
@@ -5135,7 +4712,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Assault Drive (Lv 3)",
             "Description": "Decrease remaining Overheat time.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "6", "3", "15", "10", "7", "25", "15"],
@@ -5147,7 +4723,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Assault Drive (Lv 3)",
             "Description": "Decreases physical/elemental damage taken during Overheat.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "Damage Taken↓": ["-7%", "-9%", "-11%", "-13%", "-15%", "-20%"],
@@ -5157,7 +4732,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Recover HP each time an ally dies.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "HP Gain": ["30+10%", "40+15%", "50+20%", "100+40%"],
@@ -5167,7 +4741,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -5177,7 +4750,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Blood Edge (Lv 3)",
             "Description": "(Starter) Drive Blade: Deal melee Cut damage to one enemy, with splash effect.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "16"],
@@ -5190,7 +4762,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Massive Edge (Lv 2)",
             "Description": "(Combo) Drive Blade: Deal melee Cut damage to one enemy. Decreases Overheat time by 2 turns. (Only usable right after a Starter skill)",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["9", "9", "9", "14"],
@@ -5203,7 +4774,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Blood Edge (Lv 3)",
             "Description": "(Starter) Drive Blade: Deal melee Cut damage to one enemy, with a chance to inflict Leg Bind.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["6", "6", "6", "9", "9", "9", "9", "12"],
@@ -5217,7 +4787,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Trip Edge (Lv 2)",
             "Description": "(Combo) Drive Blade: Deal melee Cut damage to one enemy, and recover TP. (Only usable right after a Starter skill)",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
@@ -5231,7 +4800,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Heat Sink (Lv 1), Heat Shield (Lv 1)",
             "Description": "Increases damage dealt with Drive skills and decreases Overheat duration.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+3%", "+4%", "+5%", "+6%", "+6%", "+7%", "+8%", "+9%", "+10%", "+10%"],
@@ -5242,7 +4810,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Intercooler (Lv 3)",
             "Description": "(Drive) Drive Blade: Deal melee Cut+Fire damage to one enemy, then enter Overheat state for 8 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["25", "25", "25", "37", "37", "37", "37", "50"],
@@ -5255,7 +4822,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Intercooler (Lv 3)",
             "Description": "(Drive) Drive Blade: Deal melee Cut+Ice damage to one enemy, then enter Overheat state for 8 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["25", "25", "25", "37", "37", "37", "37", "50"],
@@ -5268,7 +4834,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Intercooler (Lv 3)",
             "Description": "(Drive) Drive Blade: Deal melee Cut+Volt damage to one enemy, then enter Overheat state for 8 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["25", "25", "25", "37", "37", "37", "37", "50"],
@@ -5281,7 +4846,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases resistance to bind/ailment inflictions.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Inflictions↓": ["x0.92", "x0.91", "x0.9", "x0.85", "x0.84", "x0.83", "x0.82", "x0.75"],
@@ -5293,7 +4857,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Cool Edge (Lv 2)",
             "Description": "(Final) Drive Blade: Deal melee Cut damage to one enemy. Enter a charge state until the end of next turn, which increases all damage dealt. (Only usable right after a Starter or Combo skill)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20", "40"],
@@ -5307,7 +4870,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Impulse Edge (Lv 2)",
             "Description": "(Final) Drive Blade: Deal melee Cut damage to one enemy, and gain Force. (Only usable right after a Starter or Combo skill)",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["14", "14", "14", "14", "14", "21"],
@@ -5321,7 +4883,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases base Max HP.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Max HP↑": ["+5%", "+6%", "+7%", "+11%", "+12%", "+13%", "+14%", "+20%"],
@@ -5331,7 +4892,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flame/Freeze/Shock Drive (Lv 1)",
             "Description": "(Drive) Drive Blade: Deal melee Cut+Almighty damage to one enemy, then enter Overheat state for 9 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["30", "30", "30", "30", "45", "45", "45", "45", "45", "60"],
@@ -5344,7 +4904,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Recover TP when one of your attacks hits the weakness of at least one enemy.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Gain": ["2", "3", "4", "5+1%"],
@@ -5354,7 +4913,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases elemental damage dealt.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["+4%", "+5%", "+6%", "+9%", "+10%", "+11%", "+12%", "+15%"],
@@ -5367,7 +4925,6 @@ var data = {
         "Bind Rush":{
             "Usage": "Force Boost",
             "Description": "Increases bind infliction rate. For each attack you land against an enemy afflicted by a bind/ailment/stun, perform a follow up attack.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -5378,7 +4935,6 @@ var data = {
         "Final Blow":{
             "Usage": "Force Break (Arms, STR, LUC)",
             "Description": "Deal melee Bash damage to one enemy, with a chance to inflict Head Bind, Arm Bind and Leg Bind.",
-            "Starter": "0",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -5392,7 +4948,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to inflict Head Bind. If performed during One-Two Punch, there's a chance to follow up with Arm Breaker or Low Blow.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["3", "3", "3", "6", "6", "6", "6", "10"],
@@ -5407,7 +4962,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to inflict Arm Bind. If performed during One-Two Punch, there's a chance to follow up with Low Blow.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["3", "3", "3", "6", "6", "6", "6", "10"],
@@ -5422,7 +4976,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to inflict Leg Bind.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["3", "3", "3", "6", "6", "6", "6", "10"],
@@ -5436,7 +4989,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Concussion (Lv 2), Arm Breaker (Lv 2), Low Blow (Lv 2)",
             "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to follow up with Concussion, Arm Breaker and/or Low Blow (with decreased damage and infliction rate) if the target does not have the corresponding bind. (This skill's follow up chance is only for the first successful follow up, after which the chance will depend on the level of the latest follow up skill performed)",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "16"],
@@ -5451,7 +5003,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to inflict Paralysis.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["3", "3", "3", "6", "6", "6", "6", "10"],
@@ -5465,7 +5016,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Recover TP when one of your skills inflicts a bind/ailment/stun on one or more enemies.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Gain": ["1+1%", "2+1%", "3+1%", "4+2%"],
@@ -5475,7 +5025,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "When a single-hit Fist skill fails to inflict its bind/ailment, there's a chance to perform it a second time. (Works with Cross Counter despite the in-game description. Does not work on One-Two Punch follow ups. Does not work if infliction fails because the target was already afllicted)",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["13%", "16%", "19%", "22%", "25%", "28%", "31%", "34%", "37%", "50%"],
@@ -5485,7 +5034,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases base Max HP.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Max HP↑": ["+5%", "+6%", "+7%", "+11%", "+12%", "+13%", "+14%", "+20%"],
@@ -5495,7 +5043,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -5505,7 +5052,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Fist: Spent part of your current HP to deal melee Bash damage to one enemy, with splash effect.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["12", "12", "12", "16", "16", "16", "16", "20"],
@@ -5519,7 +5065,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Devil's Fist (Lv 3)",
             "Description": "Increases all damage dealt if you lost HP on the previous turn.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "Damage Dealt↑": ["+10%", "+12%", "+14%", "+16%", "+18%", "+30%"],
@@ -5529,7 +5074,6 @@ var data = {
             "Usage": "Passive (Arms)",
             "Unlock": "One-Two Punch (Lv 2), Corkscrew (Lv 2)",
             "Description": "Chance to follow up with Corkscrew when you inflict a bind.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["13%", "16%", "19%", "22%", "25%", "28%", "31%", "34%", "37%", "50%"],
@@ -5539,7 +5083,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Following Strike (Lv 2)",
             "Description": "Fist: Deal melee Bash damage to one enemy, then follow up with Concussion, Arm Breaker, Low Blow and/or Corkscrew (with decreased damage) if the target is afflicted by the corresponding bind/ailment. (Corkscrew activates for any ailment)",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["14", "14", "14", "14", "19", "19", "19", "19", "19", "25"],
@@ -5553,7 +5096,6 @@ var data = {
             "Usage": "Active (No Parts)",
             "Unlock": "N/A",
             "Description": "Only usable if afflicted with a bind/ailment. Remove binds and ailment on yourself, then enter a charge state until the end of next turn, which increases all damage dealt.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["3", "3", "3", "8"],
@@ -5566,7 +5108,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
             "Description": "Place a buff on your line for 3 turns, which increases resistance against binds/ailments.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["8", "8", "8", "14"],
@@ -5578,7 +5119,6 @@ var data = {
             "Usage": "Active (No Parts, LUC)",
             "Unlock": "Breather (Lv 1), Fault Blocker (Lv 1)",
             "Description": "Attempt to inflict the 3 binds on one enemy and yourself.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["8", "8", "8", "14", "14", "14"],
@@ -5591,7 +5131,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases bind/ailment infliction rates.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Inflictions↑": ["x1.04", "x1.05", "x1.06", "x1.09", "x1.1", "x1.11", "x1.12", "x1.15"],
@@ -5601,7 +5140,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Fist: Prepare to counterattack when your line is first hit by a physical attack this turn. Deals melee Bash damage, with a chance to bind the part that was used to attack. (For normal attacks, attempts to inflict Arm Bind)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "9"],
@@ -5616,7 +5154,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Fighting Spirit (Lv 2)",
             "Description": "Fist: Deal melee Bash+Volt damage to one enemy. If it doesn't kill, lose part of your current HP.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["6", "6", "6", "10", "10", "10", "10", "14"],
@@ -5630,7 +5167,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Leading Blow (Lv 3)",
             "Description": "Fist: Deal multiple hits of melee Bash damage to one enemy. Hits as many times as the amount of hits you landed last turn. (Max 9 hits. Counts itself as a single hit regardless of how many were performed)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "10", "10", "10"],
@@ -5643,7 +5179,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Clinch (Lv 3)",
             "Description": "Enter a charge state until the end of next turn, which increases bind/ailment infliction rate.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "10"],
@@ -5655,7 +5190,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Meditation (Lv 2)",
             "Description": "Increases all damage dealt to enemies with binds/ailments. Stronger the more afflictions the target has: Bonus is multiplied by 2 for 2 afflictions, by 3 for 3 afflictions, and by 5 for 4 afflictions.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+12%", "+13%", "+14%", "+20%"],
@@ -5665,7 +5199,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Allows you to equip a sub-weapon (uses an armor slot). If a sub-weapon is equipped, normal attacks have a chance to hit 2~4 times.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Activation Chance": ["11%", "13%", "15%", "17%", "19%", "21%", "23%", "34%"],
@@ -5675,7 +5208,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Million Rush (Lv 3)",
             "Description": "Fist: Deal multiple hits of melee Bash damage to one enemy. Starts at 1 hit, and increases by 1 with each turn that passes. (Max 9  extra hits. Resets to 1 hit upon use)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25", "25", "35"],
@@ -5691,7 +5223,6 @@ var data = {
         "Endless Armor":{
             "Usage": "Force Boost",
             "Description": "Miasma Armor's duration does not go down and your skills do not remove it.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -5699,7 +5230,6 @@ var data = {
         "Miasma Tsunami":{
             "Usage": "Force Break (Head)",
             "Description": "Weaken all enemies for this turn, which decreases all offense, all defense, evasion, speed, and bind/ailment resistance.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -5716,7 +5246,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Place a debuff on all enemies for several turns, which increases physical/elemental damage taken.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "15"],
@@ -5729,7 +5258,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "N/A",
             "Description": "Place a debuff on all enemies for several turns, which decreases physical/elemental damage dealt.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "15"],
@@ -5742,7 +5270,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Eroding/Stifling Miasma (Lv 2)",
             "Description": "Place a debuff on all enemies for several turns, which decreases evasion and action speed.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10"],
@@ -5756,7 +5283,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
             "Description": "Scythe: Deal melee Cut damage to an enemy line. If Miasma Armor is active, has a chance to inflict Paralysis.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6", "13"],
@@ -5770,7 +5296,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Paralyzing Reap (Lv 2)",
             "Description": "Scythe: Deal melee Cut damage to an enemy line. If Miasma Armor is active, has a chance to inflict Poison.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6", "13"],
@@ -5785,7 +5310,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Paralyzing Reap (Lv 2)",
             "Description": "Enter the Miasma Armor state for 3 turns, which increases action speed. Miasma Armor will activate automatically at the start of battle.",
-            "Starter": "1",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["3", "3", "3", "5"],
@@ -5797,7 +5321,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Miasma Armor (Lv 2)",
             "Description": "When you use a debuff skill, there's a chance to activate/extend Miasma Armor.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "Activation Speed": ["26%", "34%", "42%", "50%", "58%", "66%", "74%", "100%"],
@@ -5807,7 +5330,6 @@ var data = {
             "Usage": "Active (Head, WIS)",
             "Unlock": "Miasma Armor (Lv 2)",
             "Description": "Dispel your Miasma Armor to restore HP to all allies, with a chance to remove ailments.",
-            "Starter": "0",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["9", "9", "9", "15", "15", "15", "15", "24"],
@@ -5820,7 +5342,6 @@ var data = {
             "Usage": "Passive (Field)",
             "Unlock": "N/A",
             "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield grows from 4 to 8 based on user's level.",
-            "Starter": "1",
             "Max Level": "0",
             "Data": ""
         },
@@ -5830,7 +5351,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Sluggish Miasma (Lv 3)",
             "Description": "Place a debuff on all enemies for several turns, which decreases ailment resistance and natural recovery rate.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "14", "14", "14", "14", "14", "20"],
@@ -5844,7 +5364,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Wilting Miasma (Lv 3)",
             "Description": "Place a debuff on all enemies for several turns, which decreases bind resistance and natural recovery rate.",
-            "Starter": "0",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "14", "14", "14", "14", "14", "20"],
@@ -5858,7 +5377,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Toxic Reap (Lv 2)",
             "Description": "Scythe: Deal melee Cut damage to an enemy line. If Miasma Armor is active, has a chance to inflict Blind.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6", "13"],
@@ -5872,7 +5390,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Darkness Reap (Lv 3)",
             "Description": "Scythe: Deal melee Cut damage to an enemy line. If Miasma Armor is active, has a chance to inflict Panic.",
-            "Starter": "0",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "18"],
@@ -5886,7 +5403,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Endless Shroud (Lv 1)",
             "Description": "While Miasma Armor is active, decreases physical/elemental damage taken.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Damage Taken↓": ["-10%", "-11%", "-13%", "-14%", "-16%", "-17%", "-19%", "-25%"],
@@ -5896,7 +5412,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Atonement (Lv 3)",
             "Description": "Dispel your Miasma Armor for a chance to revive all allies. (<b>Bug</b>: Revive chance is rolled twice and must pass both to activate)",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "25"],
@@ -5909,7 +5424,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Soul Transfer (Lv 1)",
             "Description": "At the end of each turn, if Miasma Armor is active, recover TP.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "TP Gain": ["1", "2", "3", "5"],
@@ -5919,7 +5433,6 @@ var data = {
             "Usage": "Passive (WIS)",
             "Unlock": "N/A",
             "Description": "Recover HP each time you inflict a debuff on one or more targets. Excess healing increases your Max HP until the end of turn.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "Healing Power": ["80%", "95%", "110%", "125%", "140%", "220%"],
@@ -5930,7 +5443,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Increases bind/ailment infliction rates.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Inflictions↑": ["x1.04", "x1.05", "x1.06", "x1.09", "x1.1", "x1.11", "x1.12", "x1.15"],
@@ -5942,7 +5454,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "Chance to nullify debuffs and ailments received.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "Activation Chance": ["7%", "9%", "11%", "13%", "15%", "17%", "19%", "25%"],
@@ -5952,7 +5463,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
             "Description": "Scythe: Deal multiple hits of melee Cut damage to one enemy. Hits once per debuff on the target. Cannot miss.",
-            "Starter": "1",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["16", "16", "16", "16", "22", "22", "22", "22", "22", "30"],
@@ -5964,7 +5474,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Chaos Reap (Lv 2)",
             "Description": "Scythe: Deal melee Cut damage to one enemy, with a chance to inflict Instant Death.",
-            "Starter": "1",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["13", "13", "13", "17", "17", "17", "17", "23"],
@@ -5978,7 +5487,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Black Wave (Lv 1)",
             "Description": "Dispel your Miasma Armor for a chance to nullify bind/ailment inflictions to the party this turn.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "15", "30"],
@@ -5990,7 +5498,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Black Wave (Lv 1)",
             "Description": "Dispel your Miasma Armor for a chance to nullify Instant Death/Stun/debuff inflictions to the party this turn.",
-            "Starter": "1",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "15", "30"],
@@ -6002,7 +5509,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "Miasma Wall (Lv 2), Spirit Barrier (Lv 2)",
             "Description": "Skills that dispel Miasma Armor will instead decrease its remaining duration.",
-            "Starter": "0",
             "Max Level": "4",
             "Data": {
                 "Duration Down": ["7", "6", "5", "3"],
@@ -6015,7 +5521,6 @@ var data = {
         "Undying Soul":{
             "Usage": "Force Boost",
             "Description": "Survive all lethal damage with 1 HP.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -6023,7 +5528,6 @@ var data = {
         "Ghastly March":{
             "Usage": "Force Break (Head)",
             "Description": "Revive all dead allies (with 1 HP), then deal 2 hits of ranged Almighty damage to one enemy, increased by 1 hit for every revived ally. (Damage does not depend on the user's stats or equipment, as this skill uses its own ATK value that scales from 36 to 350 based on user's level)",
-            "Starter": "0",
             "Max Level": "2",
             "Levels": ["1", "130"],
             "Data": {
@@ -6036,7 +5540,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "During daytime, take damage at the end of each turn, and for every 10 steps taken. (This can kill during battle)",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -6047,7 +5550,6 @@ var data = {
             "Usage": "Passive",
             "Unlock": "N/A",
             "Description": "During nighttime, recover HP at the end of each turn, and for every 10 steps taken.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -6062,7 +5564,6 @@ var data = {
             "Usage": "Active (Arms, LUC)",
             "Unlock": "Wyvern's Wing",
             "Description": "Attempt to inflict Leg Bind on all enemies.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -6074,7 +5575,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Cheer Blade",
             "Description": "Place a buff on the whole party for 3 turns, which increases resistance against binds/ailments.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7"],
@@ -6086,7 +5586,6 @@ var data = {
             "Usage": "Active (Head, STR)",
             "Unlock": "Seabeast's Tusk",
             "Description": "Deal melee Stab damage to one enemy line. Place a debuff on the targets for 3 turns, which decreases all damage dealt.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "15"],
@@ -6100,7 +5599,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Lighting Blade",
             "Description": "Deal melee Cut+Volt damage to one enemy, with splash effect.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "12"],
@@ -6113,7 +5611,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Sapling Sword",
             "Description": "Place a buff on one ally for 3 turns, which increases physical damage dealt and action speed but also increases physical damage taken.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10"],
@@ -6127,7 +5624,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Queen's Sabre",
             "Description": "Deal 4~6 hits of ranged Bash damage to random enemies.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["18"],
@@ -6140,7 +5636,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Balmung",
             "Description": "Place a buff on the whole party for 3 turns, which increases physical/elemental damage dealt.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["14", "14", "14", "14", "14"],
@@ -6152,7 +5647,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Caladbolg",
             "Description": "Deal melee Bash damage to one enemy, with splash effect and a chance to inflict Arm Bind.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["22"],
@@ -6168,7 +5662,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Kamatha",
             "Description": "Deal ranged Stab damage to one enemy. Places a debuff on the target for 3 turns, which increases physical damage taken.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5"],
@@ -6182,7 +5675,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Reseph's Bow",
             "Description": "Deal ranged Stab+Volt damage to all enemies.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["10"],
@@ -6195,7 +5687,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Lightning Bow",
             "Description": "Place a buff on an ally line for 3 turns, which increases Volt resistance.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5"],
@@ -6207,7 +5698,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Coral Bow",
             "Description": "Place a buff on the whole party for 3 turns, which increases accuracy.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4"],
@@ -6219,7 +5709,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flamerat Bow",
             "Description": "Deal ranged Bash+Fire damage to one enemy, with splash effect.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["9", "9", "9", "9", "9"],
@@ -6232,7 +5721,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Leopardfrog Bow",
             "Description": "Place a debuff on all enemies for 3 turns, which increases physical/elemental damage taken.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["9"],
@@ -6244,7 +5732,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Infection Bow",
             "Description": "Deal ranged Stab damage to an enemy line, with a chance to inflict Curse or Petrify.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["14", "14", "14", "14", "14"],
@@ -6258,7 +5745,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Failnaught",
             "Description": "Place a debuff on all enemies for 3 turns, which decreases bind resistance. Also attempts to inflict Panic on all enemies.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["25"],
@@ -6273,7 +5759,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Dangosashi",
             "Description": "Deal melee Cut damage to one enemy. Place a debuff on the target for 3 turns, which decreases all damage dealt.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -6287,7 +5772,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Mijinmaru",
             "Description": "Deal melee Bash damage to one enemy, with a chance to inflict Stun.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["7"],
@@ -6301,7 +5785,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Nikkari",
             "Description": "Deal melee Bash damage to one enemy, with splash effect and a chance to inflict Panic.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["9", "9", "9", "9", "9"],
@@ -6315,7 +5798,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Mikaeri",
             "Description": "Deal melee Cut damage to an enemy line. Place a debuff on the targets for 3 turns, which decreases evasion.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "12"],
@@ -6329,7 +5811,6 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Kamui Ranketam",
             "Description": "Deal melee Bash damage to one enemy, with splash effect.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["10"],
@@ -6342,7 +5823,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Nihil Youtou",
             "Description": "Deal melee Cut damage to all enemies. Recover HP based on damage dealt.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["8"],
@@ -6356,7 +5836,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Jizoumaru",
             "Description": "Deal 3~5 hits of melee Cut damage to random enemies.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20"],
@@ -6369,7 +5848,6 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Kurikara",
             "Description": "Deal 4~6 hits of melee Bash damage to random enemies, with a chance to inflict Stun.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["21"],
@@ -6383,7 +5861,6 @@ var data = {
             "Usage": "Active (Legs, STR, LUC)",
             "Unlock": "Ameno Habakiri",
             "Description": "Deal melee Stab damage to one enemy at the start of turn, with pierce effect and a chance to inflict Sleep. Recover HP based on damage dealt.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["21"],
@@ -6399,7 +5876,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Owl Staff",
             "Description": "Deal ranged Volt damage to one enemy.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3"],
@@ -6412,7 +5888,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Palm Zhezl",
             "Description": "Deal ranged Fire damage to one enemy.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4"],
@@ -6425,7 +5900,6 @@ var data = {
             "Usage": "Active (Arms, INT)",
             "Unlock": "Aqua Mace",
             "Description": "Deal ranged Bash+Ice damage to one enemy.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5"],
@@ -6438,7 +5912,6 @@ var data = {
             "Usage": "Active (Head, INT, LUC)",
             "Unlock": "Serpentflame Staff",
             "Description": "Deal 2~5 hits of ranged Fire damage to random enemies, with a chance to inflict Blind.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["16"],
@@ -6452,7 +5925,6 @@ var data = {
             "Usage": "Active (Head, INT, LUC)",
             "Unlock": "Tanuki Staff",
             "Description": "Deal ranged Volt damage to one enemy, with pierce effect and a chance to inflict Leg Bing.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10"],
@@ -6465,7 +5937,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Madness Staff",
             "Description": "Deal ranged Fire damage to all enemies. Places a debuff on the targets for 3 turns, which increases physical/elemental damage taken.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["30"],
@@ -6479,7 +5950,6 @@ var data = {
             "Usage": "Active (Arms, LUC)",
             "Unlock": "Pumpkin Bat",
             "Description": "Attempt to inflict Head Bind and Arm Bind on all enemies.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["12"],
@@ -6491,7 +5961,6 @@ var data = {
             "Usage": "Active (Head, STR)",
             "Unlock": "Kerykeion",
             "Description": "Deal melee Cut damage to one enemy, with pierce effect. Recover HP based on damage dealt.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["25"],
@@ -6507,7 +5976,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Butterfly Barrel",
             "Description": "Attempt to inflict Head Bind to an enemy line.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3"],
@@ -6519,7 +5987,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Flame Lance",
             "Description": "Place a buff on an ally line for 3 turns, which increases Fire resistance.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -6531,7 +5998,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Roar of the Sea",
             "Description": "Deal 3~8 hits of ranged Stab damage to one enemy.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["12"],
@@ -6544,7 +6010,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Shiyanqiang",
             "Description": "Deal 2~5 hits of ranged Stab damage to random enemies (max once each).",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10"],
@@ -6557,7 +6022,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Calamity Cannon",
             "Description": "Deal ranged Bash damage to one enemy, with a chance to inflict Petrify, Curse, Paralysis and Panic.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["13"],
@@ -6571,7 +6035,6 @@ var data = {
             "Usage": "Active (Head, INT, LUC)",
             "Unlock": "Halloween Barrel",
             "Description": "Deal ranged Fire damage to one enemy, with a chance to inflict Head, Arm and Leg Bind.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["25"],
@@ -6585,7 +6048,6 @@ var data = {
             "Usage": "Active (Head, LUC)",
             "Unlock": "Agneyastra",
             "Description": "Place a debuff on all enemies for 3 turns, which increases physical damage taken. Also attempts to inflict Sleep on all enemies.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["20"],
@@ -6600,7 +6062,6 @@ var data = {
             "Usage": "Active (Head, INT)",
             "Unlock": "Horn Spear",
             "Description": "Deal ranged Fire damage to one enemy, with pierce effect.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -6613,7 +6074,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Gae Dearg",
             "Description": "Deal ranged Stab damage to one enemy. Low accuracy but ignores Stab vulnerability.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -6626,7 +6086,6 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Leaf Javelin",
             "Description": "Deal 2~5 hits of ranged Stab damage to random enemies.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "8"],
@@ -6639,7 +6098,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Snow Spear",
             "Description": "Place a buff on an ally line for 3 turns, which increases Ice resistance.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -6651,7 +6109,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Vertigo Pike",
             "Description": "Deal melee Cut damage to one enemy, with a chance to inflict Blind and Stun.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "8"],
@@ -6665,7 +6122,6 @@ var data = {
             "Usage": "Active (Head, STR, LUC)",
             "Unlock": "Sansageki",
             "Description": "Deal melee Stab damage to one enemy, with a chance to inflict Instant Death.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["10"],
@@ -6679,7 +6135,6 @@ var data = {
             "Usage": "Active (Head, STR)",
             "Unlock": "Fangtianhuaji",
             "Description": "Deal melee Cut damage to all enemies.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20"],
@@ -6692,7 +6147,6 @@ var data = {
             "Usage": "Active (Legs, STR, LUC)",
             "Unlock": "Rhongomyniad",
             "Description": "Deal melee Bash damage to an enemy line, with a chance to inflict Sleep.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["18"],
@@ -6708,7 +6162,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Choking Rapier",
             "Description": "Deal melee Stab damage to one enemy, with a chance to inflict Head Bind.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6"],
@@ -6722,7 +6175,6 @@ var data = {
             "Usage": "Active (Head, STR, LUC)",
             "Unlock": "Piercing Tongue",
             "Description": "Deal melee Stab damage to one enemy, with pierce effect and a chance to inflict Blind.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["8"],
@@ -6736,7 +6188,6 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Moralltach",
             "Description": "Consume 40% of current HP to deal melee Stab damage to one enemy.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["17", "17", "17", "17", "17"],
@@ -6750,7 +6201,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Steelbug's Piercer",
             "Description": "Recover HP. Healing is based on your Max HP.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["2"],
@@ -6762,7 +6212,6 @@ var data = {
             "Usage": "Active (Head, STR)",
             "Unlock": "Sauro Pallasch",
             "Description": "Deal melee Bash damage to all enemies.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "15"],
@@ -6775,7 +6224,6 @@ var data = {
             "Usage": "Active (Head, STR)",
             "Unlock": "Dune Needle",
             "Description": "Deal 4~6 hits of ranged Stab damage to random enemies.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["15"],
@@ -6788,7 +6236,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Gorm Glas",
             "Description": "Place a buff on an ally line for 3 turns, which increases evasion.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "8"],
@@ -6800,7 +6247,6 @@ var data = {
             "Usage": "Active (Arms)",
             "Unlock": "Warped Mechablade",
             "Description": "Place a buff on an ally line for 3 turns, which increases physical resistances.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["12"],
@@ -6812,7 +6258,6 @@ var data = {
             "Usage": "Active (Head, STR, LUC)",
             "Unlock": "The Answerer",
             "Description": "Deal melee Bash damage to one enemy, with splash effect and a chance to inflict Petrify.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["17"],
@@ -6828,7 +6273,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Cross Knife",
             "Description": "Deal melee Stab damage to one enemy, with a chance to inflict Panic.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5"],
@@ -6842,7 +6286,6 @@ var data = {
             "Usage": "Active (Legs)",
             "Unlock": "Rose Knife",
             "Description": "Place a debuff on all enemies for 3 turns, which decreases accuracy.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7"],
@@ -6854,7 +6297,6 @@ var data = {
             "Usage": "Active (Legs, STR, LUC)",
             "Unlock": "Shadow Piercer",
             "Description": "Deal melee Stab damage to one enemy, with pierce effect and a chance to inflict Poison.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["10"],
@@ -6869,7 +6311,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Phurba",
             "Description": "Deal melee Cut damage to one enemy. Places a debuff on the target for 3 turns, which decreases ailment resistance.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "12"],
@@ -6883,7 +6324,6 @@ var data = {
             "Usage": "Active (Legs, STR, LUC)",
             "Unlock": "Metalfoot Knife",
             "Description": "Deal melee Bash damage to one enemy, with splash effect and a chance to inflict Arm Bind and Leg Bind.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "12"],
@@ -6897,7 +6337,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Futsuno Mitama",
             "Description": "Deal melee Stab damage to one enemy, with pierce effect. Places a debuff on the targets for 3 turns, which decreases accuracy.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["20"],
@@ -6913,7 +6352,6 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Shiden",
             "Description": "Deal ranged Cut damage to one enemy. Activates at the start of the turn.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5"],
@@ -6925,7 +6363,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Whirlwind",
             "Description": "Deal melee Cut damage to an enemy line, with a chance to inflict Curse.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["7"],
@@ -6939,7 +6376,6 @@ var data = {
             "Usage": "Active (Legs, LUC)",
             "Unlock": "Snailblade",
             "Description": "Attempt to inflict Sleep on all enemies.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7"],
@@ -6951,7 +6387,6 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Peacemaker",
             "Description": "Deal ranged Stab damage to all enemies.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["14", "14", "14", "14", "14"],
@@ -6964,7 +6399,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Terminator",
             "Description": "Deal 3~5 hits of ranged Bash damage to random enemies.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["15"],
@@ -6977,7 +6411,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Great Mountain",
             "Description": "Deal melee Bash damage to all enemies.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["30"],
@@ -6992,7 +6425,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Kakushu",
             "Description": "Deal melee Stab damage to one enemy, with a chance to inflict Blind.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["3"],
@@ -7006,7 +6438,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Loose Fist",
             "Description": "Deal melee Bash damage to an enemy line.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["9"],
@@ -7019,7 +6450,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Nicothoe Duster",
             "Description": "Place a debuff on all enemies for 3 turns, which decreases bind/ailment resistance.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["8"],
@@ -7031,7 +6461,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Zaftfaust",
             "Description": "Restore HP to yourself and your adjacent allies. Healing is based on your Max HP.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5"],
@@ -7043,7 +6472,6 @@ var data = {
             "Usage": "Active (Field)",
             "Unlock": "Jeweled Fist",
             "Description": "Start multiple enemy encounters in a row, with an increased chance of Rare Breeds appearing.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2", "2"],
@@ -7056,7 +6484,6 @@ var data = {
             "Usage": "Active (Arms, STR)",
             "Unlock": "Gryphbreaker",
             "Description": "Deal melee Cut damage to all enemies. Places a debuff on the targets for 3 turns, which decreases physical damage dealt.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["21"],
@@ -7070,7 +6497,6 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Demon Fist",
             "Description": "Deal melee Cut damage to an enemy line.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["9"],
@@ -7083,7 +6509,6 @@ var data = {
             "Usage": "Active (Head, STR, LUC)",
             "Unlock": "Crawler Knuckles",
             "Description": "Deal 4~6 hits of melee Cut damage to random enemies (max once each), with a chance to inflict Poison.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["15"],
@@ -7098,7 +6523,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Blast Piledriver",
             "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Instant Death.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["13"],
@@ -7112,7 +6536,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Polydeuces",
             "Description": "Deal melee Bash damage to all enemies, with a chance to inflict Paralysis.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["25"],
@@ -7128,7 +6551,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Thorn Scythe",
             "Description": "Deal melee Cut damage to an enemy line, with a chance to inflict Arm Bind.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["5"],
@@ -7142,7 +6564,6 @@ var data = {
             "Usage": "Active (Legs)",
             "Unlock": "Fossil Scythe",
             "Description": "Place a buff on the whole party for 3 turns, which decreases physical damage taken.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7"],
@@ -7154,7 +6575,6 @@ var data = {
             "Usage": "Active (Legs, STR)",
             "Unlock": "Vogeljagd",
             "Description": "Deal melee Cut damage to one enemy. Has very low accuracy.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["7"],
@@ -7167,7 +6587,6 @@ var data = {
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Silent Scythe",
             "Description": "Deal melee Cut damage to one enemy, with a chance to inflict Petrify.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10"],
@@ -7181,7 +6600,6 @@ var data = {
             "Usage": "Active (Arms, INT)",
             "Unlock": "Frigid Scythe",
             "Description": "Deal 3~5 hits of ranged Ice damage to random enemies. Has very low accuracy.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["12"],
@@ -7194,7 +6612,6 @@ var data = {
             "Usage": "Active (Head)",
             "Unlock": "Lunar Scraper",
             "Description": "Place a buff on the whole party for 3 turns, which increases physical damage dealt.",
-            "Starter": "0",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10"],
@@ -7206,7 +6623,6 @@ var data = {
             "Usage": "Active (Legs, STR, LUC)",
             "Unlock": "Cradle Edge",
             "Description": "Deal 2~4 hits of melee Cut damage to random enemies (max once each), with a chance to inflict Head, Arm and Leg Bind.",
-            "Starter": "0",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["28"],
@@ -7224,7 +6640,6 @@ var data = {
             "Usage": "20 / 80 / 200 / 1.000 en",
             "Unlock": "N/A / Mint / Crabapple / Milkvetch",
             "Description": "Restores HP to one ally.",
-            "Starter": "0",
             "Max Level": "4",
             "Levels": ["1", "2", "3", "4"],
             "Data": {
@@ -7235,7 +6650,6 @@ var data = {
             "Usage": "800 / 4.000 en",
             "Unlock": "Melted Ice Core / Madhuca",
             "Description": "Restores HP to all allies.",
-            "Starter": "0",
             "Max Level": "2",
             "Levels": ["1", "2"],
             "Data": {
@@ -7246,7 +6660,6 @@ var data = {
             "Usage": "1.200 / 8.000 en",
             "Unlock": "Tranquilized Gel / Pineapple Syrup",
             "Description": "Restores TP to one ally.",
-            "Starter": "0",
             "Max Level": "2",
             "Levels": ["1", "2"],
             "Data": {
@@ -7257,7 +6670,6 @@ var data = {
             "Usage": "250 / 3.000 en",
             "Unlock": "Anra Fruit / Grenada",
             "Description": "Restores HP and TP to one ally.",
-            "Starter": "0",
             "Max Level": "2",
             "Levels": ["1", "2"],
             "Data": {
@@ -7269,7 +6681,6 @@ var data = {
             "Usage": "300 / 5.000 en",
             "Unlock": "Culantro / Ambrosia",
             "Description": "Revives one ally.",
-            "Starter": "0",
             "Max Level": "2",
             "Levels": ["1", "2"],
             "Data": {
@@ -7282,7 +6693,6 @@ var data = {
             "Usage": "100 en",
             "Unlock": "Forest Aloe / Small Flower",
             "Description": "Respectively removes binds or ailments from one ally.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -7291,7 +6701,6 @@ var data = {
             "Usage": "2.500 en",
             "Unlock": "Nasturtium",
             "Description": "Removes all buffs and debuffs on one enemy.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -7300,7 +6709,6 @@ var data = {
             "Usage": "2.500 en",
             "Unlock": "Matricaria",
             "Description": "Removes all buffs and debuffs on the whole party.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -7311,7 +6719,6 @@ var data = {
             "Usage": "350 en",
             "Unlock": "Sweet Leaf",
             "Description": "Places a buff on one ally for 5 turns, which increases physical damage dealt.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -7322,7 +6729,6 @@ var data = {
             "Usage": "350 en",
             "Unlock": "Longan",
             "Description": "Places a buff on one ally for 5 turns, which decreases physical damage taken.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -7333,7 +6739,6 @@ var data = {
             "Usage": "2.000 en",
             "Unlock": "Scarlet Sugar",
             "Description": "Restores Force to one ally.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -7344,7 +6749,6 @@ var data = {
             "Usage": "30 en",
             "Unlock": "Burst Stink Gland",
             "Description": "Places a buff on one ally for 5 turns, which imbues their weapon with Fire/Ice/Volt damage.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -7353,7 +6757,6 @@ var data = {
             "Usage": "800 en",
             "Unlock": "Mist Flower",
             "Description": "Places a buff on all allies for 5 turns, which increases resistance to Fire/Ice/Volt.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -7364,7 +6767,6 @@ var data = {
             "Usage": "3.000 en",
             "Unlock": "Oleander",
             "Description": "Places a buff on all allies for 5 turns, which increases resistance to Fire, Ice and Volt.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -7377,7 +6779,6 @@ var data = {
             "Usage": "200 en",
             "Unlock": "Spewing Peapod",
             "Description": "Deals ranged Fire/Ice/Volt damage to one enemy.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -7389,7 +6790,6 @@ var data = {
             "Usage": "1.000 en",
             "Unlock": "Dried Stalk",
             "Description": "Deals ranged Fire/Ice/Volt damage to all enemies.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -7401,7 +6801,6 @@ var data = {
             "Usage": "700 en",
             "Unlock": "Conical Fruit",
             "Description": "Deals ranged Cut/Bash/Stab damage to all enemies.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -7415,7 +6814,6 @@ var data = {
             "Usage": "250 en",
             "Unlock": "Poison Ferrule / Green Thorn / Big Shell / Sticky Goo /\nSpherical Bone / Caterpillar Fang / Cockatrice Tail",
             "Description": "Respectively attempts to inflict Poison, Blind, Paralysis, Sleep, Curse, Panic or Petrify on all enemies.",
-            "Starter": "0",
             "Max Level": "7",
             "Levels": ["Poi", "Bli", "Par", "Sle", "Cur", "Pan", "Pet"],
             "Data": {
@@ -7428,7 +6826,6 @@ var data = {
             "Usage": "250 en",
             "Unlock": "Faerie Wings",
             "Description": "Respectively attempts to inflict Head Bind, Arm Bind or Leg Bind on all enemies.",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -7442,7 +6839,6 @@ var data = {
             "Usage": "5.000 en",
             "Unlock": "Screaming Snout",
             "Description": "Until the end of turn, enemies killed will drop all their materials.",
-            "Starter": "0",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -7451,7 +6847,6 @@ var data = {
             "Usage": "3.000 en",
             "Unlock": "Sea Grapes",
             "Description": "Increases EXP earned this battle. (Repeated uses do not stack)",
-            "Starter": "0",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -7520,7 +6915,7 @@ function add_skill_entry(skill_list, current_class, skill){
     skill_table = document.createElement("table")
     skill_table.classList.add("skill_entry")
     //Separator for more visual clarity
-    if (current_skill["Starter"] == "2"){
+    if (current_skill.hasOwnProperty("Starter")){
         skill_table.style.marginTop = "15px"
     }
     skill_list.appendChild(skill_table)

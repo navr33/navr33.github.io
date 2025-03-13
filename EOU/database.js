@@ -15,7 +15,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Sword Mastery (Lv 1)",
         "Description": "Sword: Deal melee Cut damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -29,7 +28,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Sword Mastery (Lv 3)",
         "Description": "Sword: Deal melee Cut damage to one enemy, with splash effect.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -43,7 +41,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 5)",
         "Description": "Sword: Deal melee Cut damage to one enemy. If it misses, attempt to inflict Blind on all enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -58,7 +55,6 @@ var data = {
         "Usage": "Active (Legs, STR)",
         "Unlock": "Sword Mastery (Lv 10)",
         "Description": "Sword: Deal multiple hits of melee Cut damage to random enemies (max once each).",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -84,7 +80,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Axe Mastery (Lv 1)",
         "Description": "Axe: Deal ranged Bash damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -98,7 +93,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Axe Mastery (Lv 3)",
         "Description": "Axe: Deal melee Bash damage to one enemy, with a chance to inflict Head Bind.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -113,7 +107,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Axe Mastery (Lv 5)",
         "Description": "Axe: Deal melee Bash damage to one enemy, with a chance to inflict Stun.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -128,7 +121,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Axe Mastery (Lv 10)",
         "Description": "Axe: Deal melee Bash damage to one enemy, with pierce effect.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -168,7 +160,6 @@ var data = {
         "Usage": "Active (Legs, STR)",
         "Unlock": "Tornado (Lv 5), Stunning Smash (Lv 5)",
         "Description": "Sword/Axe: Prepare to follow up after your allies' Ice attacks this turn, dealing Cut/Bash+Ice damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -183,7 +174,6 @@ var data = {
         "Usage": "Active (Legs, STR)",
         "Unlock": "Tornado (Lv 5), Stunning Smash (Lv 5)",
         "Description": "Sword/Axe: Prepare to follow up after your allies' Volt attacks this turn, dealing Cut/Bash+Volt damage to the same targets. Activation chance starts at 100% and goes down with each hit performed.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -209,7 +199,6 @@ var data = {
         "Usage": "Active (No Parts)",
         "Unlock": "DEF Up (Lv 3)",
         "Description": "Remove binds on yourself. If this successfully removes any binds, place a buff on yourself (lasts indefinitely), which increases Max HP. The Max HP bonus is multiplied by the amount of binds that were removed.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -223,7 +212,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Recover (Lv 3)",
         "Description": "Place a buff on yourself and a debuff on all enemies for several turns. The buff increases enemy aggro, while the debuff increases physical damage taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -249,7 +237,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases base Max TP.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -260,7 +247,6 @@ var data = {
         "Usage": "Active (Arms)",
         "Unlock": "HP Up (Lv 2), TP Up (Lv 2)",
         "Description": "Enter a charge state until the end of next turn, which increases damage dealt, accuracy and ailment infliction rates.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -275,7 +261,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "N/A",
         "Description": "Increases physical damage dealt.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -286,7 +271,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "ATK Up (Lv 3)",
         "Description": "Spend part of your line's current HP to place a buff on it for several turns, which increases physical/elemental damage dealt and taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -302,7 +286,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Triple Charge (Lv 3), War Cry (Lv 5)",
         "Description": "Enter a charge state for next turn, which gives your allies a chance to follow up on your attacks, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up. If an ally's follow up uses a different damage type than your triggering attack, damage dealt is increased but activation chance goes down faster.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -341,7 +324,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Bow Mastery (Lv 1)",
         "Description": "Bow: Deal ranged Stab damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -355,7 +337,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Bow Mastery (Lv 5)",
         "Description": "Bow: Deal ranged Stab damage to one enemy, with a chance to inflict Leg Bind.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -370,7 +351,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Power Shot (Lv 5), Disabling Shot (Lv 3)",
         "Description": "Bow: Deal 2 hits of ranged Stab damage to random enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -384,7 +364,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Bow Mastery (Lv 10)",
         "Description": "Bow: Prepare an attack that will hit in 2 more turns, at the start of the turn. Deals ranged Stab damage to one enemy, with a chance to inflict Stun.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -411,7 +390,6 @@ var data = {
         "Usage": "Active (Legs)",
         "Unlock": "AGI Up (Lv 1)",
         "Description": "Place a buff on one ally for several turns, which increases action speed.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -425,7 +403,6 @@ var data = {
         "Usage": "Active (Legs)",
         "Unlock": "AGI Up (Lv 2)",
         "Description": "Place a debuff on one enemy for several turns, which decreases accuracy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -439,7 +416,6 @@ var data = {
         "Usage": "Active (Legs)",
         "Unlock": "AGI Up (Lv 3)",
         "Description": "Place a buff on one ally line for several turns, which increases accuracy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -453,7 +429,6 @@ var data = {
         "Usage": "Active (Legs)",
         "Unlock": "Hasten (Lv 2), Trickery (Lv 2), Sure Shot (Lv 2)",
         "Description": "Place a buff on yourself for several turns, which increases evasion and enemy aggro.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -469,7 +444,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "Chain Dance (Lv 5)",
         "Description": "Recover TP each time you evade a hit.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -480,7 +454,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "AGI Up (Lv 5)",
         "Description": "Chance to act at the start of turn, disregarding action speed.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -491,7 +464,6 @@ var data = {
         "Usage": "Active (Legs)",
         "Unlock": "AGI Up (Lv 10)",
         "Description": "Chance to make target ally act at the start of this turn.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -514,7 +486,6 @@ var data = {
         "Usage": "Active (Field)",
         "Unlock": "Predator (Lv 1)",
         "Description": "Temporarily show the location of all FOEs within a square centered around you.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -527,7 +498,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "Predator (Lv 3)",
         "Description": "Chance to nullify enemy ambushes.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -538,7 +508,6 @@ var data = {
         "Usage": "Active (Field)",
         "Unlock": "Predator (Lv 5)",
         "Description": "Temporarily decrease the enemy encounter rate.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -562,7 +531,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "HP Up (Lv 3)",
         "Description": "Increases the HP and TP restored by healing items used by you in battle.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -573,7 +541,6 @@ var data = {
         "Usage": "Active (Field)",
         "Unlock": "Efficiency (Lv 5)",
         "Description": "Chance to revive a dead ally.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -606,7 +573,6 @@ var data = {
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
-        "Starter": "0",
         "Max Level": "0",
         "Natural Level": "0",
         "Data": ""
@@ -615,7 +581,6 @@ var data = {
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
         "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 10), however higher amounts have lower chance of appearing.",
-        "Starter": "0",
         "Max Level": "0",
         "Natural Level": "0",
         "Data": ""
@@ -637,7 +602,6 @@ var data = {
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 1)",
         "Description": "Shield: Protect the front line for this turn, which decreases physical damage taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -649,7 +613,6 @@ var data = {
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 1)",
         "Description": "Shield: Protect the back line for this turn, which decreases physical damage taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -661,7 +624,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Front/Rear Guard (Lv 5)",
         "Description": "Place a buff on the whole party for several turns, which decreases physical damage taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -675,7 +637,6 @@ var data = {
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 3)",
         "Description": "Shield: Protect the whole party for this turn, which decreases Fire damage taken (max once per ally). From level 10 onward it absorbs damage instead of decreasing it. (From level 5 onward it nullifies secondary effects from attacks)",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -688,7 +649,6 @@ var data = {
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 3)",
         "Description": "Shield: Protect the whole party for this turn, which decreases Ice damage taken (max once per ally). From level 10 onward it absorbs damage instead of decreasing it. (From level 5 onward it nullifies secondary effects from attacks)",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -701,7 +661,6 @@ var data = {
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 3)",
         "Description": "Shield: Protect the whole party for this turn, which decreases Volt damage taken (max once per ally). From level 10 onward it absorbs damage instead of decreasing it. (From level 5 onward it nullifies secondary effects from attacks)",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -714,7 +673,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Shield Mastery (Lv 7)",
         "Description": "Shield: Deal melee Bash damage to one enemy, with a chance to inflict Arm Bind.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -729,7 +687,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Shield Smite (Lv 5)",
         "Description": "Shield: Deal melee Bash damage to all enemies. Places a debuff on the targets for 3 turns, which decreases physical damage dealt.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -744,7 +701,6 @@ var data = {
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 10)",
         "Description": "Increase your Max HP (also healing you by the amount of HP you gained) and protect the whole party for this turn, which makes you take attacks in their place.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -767,7 +723,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "DEF Up (Lv 1)",
         "Description": "Place a buff on yourself for several turns, which increases enemy aggro and slightly decreases damage taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -783,7 +738,6 @@ var data = {
         "Usage": "Active (Arms)",
         "Unlock": "Provoke (Lv 5)",
         "Description": "Chance to nullify physical hits towards your line this turn. Activation chance goes down with each activation.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -798,7 +752,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "DEF Up (Lv 3)",
         "Description": "Place a buff on yourself for several turns, which decreases physical damage taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -812,7 +765,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "DEF Up (Lv 5)",
         "Description": "Chance to survive lethal damage with 1 HP.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -823,7 +775,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "Fortify (Lv 5), Aegis (Lv 5)",
         "Description": "Chance to automatically Defend against any hit received.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -845,7 +796,6 @@ var data = {
         "Usage": "Active (Field)",
         "Unlock": "HP Up (Lv 1)",
         "Description": "Temporarily decrease damage taken from damaging floors.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -858,7 +808,6 @@ var data = {
         "Usage": "Active (Legs)",
         "Unlock": "Safe Passage (Lv 3)",
         "Description": "Attempt to escape the battle at the start of the turn and teleport to the point where you entered the floor. If successful, spend part of the whole party's current HP.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -871,7 +820,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 3)",
         "Description": "Restore HP to one ally.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -884,7 +832,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 5)",
         "Description": "Restore HP to the whole party.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -897,7 +844,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "Cure (Lv 5), Party Cure (Lv 3)",
         "Description": "Restore HP and TP to the whole party after each battle. Healing is based on each unit's Max HP. (Doesn't stack)",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -943,7 +889,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Whip Mastery (Lv 1)",
         "Description": "Whip: Deal melee Cut damage to one enemy, with a chance to inflict Head Bind.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -958,7 +903,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Whip Mastery (Lv 1)",
         "Description": "Whip: Deal melee Cut damage to one enemy, with a chance to inflict Leg Bind.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -973,7 +917,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Whip Mastery (Lv 1)",
         "Description": "Whip: Deal melee Cut damage to one enemy, with a chance to inflict Arm Bind.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -988,7 +931,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Gag (Lv 7), Shackles (Lv 7), Cuffs (Lv 7)",
         "Description": "Whip: Deal melee Cut damage to one enemy. Stronger for each bind on the target: Damage dealt is multiplied by 2 for 1 bind, by 3.15 for 2 binds, and by 5.6225 for all 3 binds. (<b>Bug</b>: The 0-bind version is receiving a damage multiplier that grows with the skill's level)",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1003,7 +945,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Whip Mastery (Lv 5)",
         "Description": "Whip: Deal melee Cut damage to one enemy, with a chance to inflict Poison.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1019,7 +960,6 @@ var data = {
         "Usage": "Active (Arms)",
         "Unlock": "Whip Mastery (Lv 10), Viper (Lv 3)",
         "Description": "Whip: Attempt to instantly kill one enemy. Only works on non-boss enemies at 40% HP or less. If successful, heal by a percentage of the target's remaining HP. (Does not count as Instant Death, but it is affected by Instant Death resistance)",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1045,7 +985,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 1)",
         "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Sleep.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1060,7 +999,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 1)",
         "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Paralysis.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1075,7 +1013,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 1)",
         "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Panic.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1090,7 +1027,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Hypno/Nerve/Mirage Bite (Lv 7)",
         "Description": "Sword: Deal melee Cut damage to one enemy. Damage dealt is multiplied by 4 if the target has an ailment, but removes the ailment.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1104,7 +1040,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Sword Mastery (Lv 5)",
         "Description": "Sword: Deal melee Cut damage to one enemy. Recover HP based on damage dealt.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1119,7 +1054,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 10), Drain Bite (Lv 3)",
         "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Petrify. If the infliction misses, increase your ailment infliction rates on the next turn.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1146,7 +1080,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "ATK Up (Lv 3)",
         "Description": "Increases Boost Gauge gains. (For reference, normal gain is a random value between 5 and 15)",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1158,7 +1091,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "ATK Up (Lv 5)",
         "Description": "Increases physical/elemental damage dealt if your HP is below a certain threshold. (Stacks with its own Grimoire)",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1170,7 +1102,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Boost Up (Lv 3), Wrath's Might (Lv 3)",
         "Description": "Sword/Whip: Prepare to counterattack each time you or your adjacent allies are hit with physical damage this turn, dealing weapon-based damage to the attacker. Stronger when countering attacks against yourself. Activation chance starts at 100% and goes down with each activation.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1197,7 +1128,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "TP Up (Lv 1)",
         "Description": "Place a debuff on one enemy for several turns, which decreases action speed.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1211,7 +1141,6 @@ var data = {
         "Usage": "Active (Legs)",
         "Unlock": "TP Up (Lv 3)",
         "Description": "Place a buff on yourself for several turns, which decreases enemy aggro.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1226,7 +1155,6 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Bind Heart (Lv 2), Shadow Veil (Lv 2)",
         "Description": "Attempt to inflict Curse on all enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1272,7 +1200,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Heal Mastery (Lv 1)",
         "Description": "Restore HP to one ally.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1285,7 +1212,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Cure (Lv 5)",
         "Description": "Restore HP to the whole party.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1298,7 +1224,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Heal Mastery (Lv 3)",
         "Description": "Remove binds from the targets.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1312,7 +1237,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Heal Mastery (Lv 3)",
         "Description": "Remove ailments from the targets.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1325,7 +1249,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Unbind (Lv 5), Refresh (Lv 5)",
         "Description": "Place a buff on the whole party for several turns, which decreases elemental damage taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1339,7 +1262,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Heal Mastery (Lv 5)",
         "Description": "Place a buff on one ally for several turns, which restores HP at the end of each turn.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1353,7 +1275,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Regenerate (Lv 3)",
         "Description": "Prepare a heal that will activate at the start of the next turn, restoring HP to the whole party.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1366,7 +1287,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Heal Mastery (Lv 7)",
         "Description": "Restore HP to one ally.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1379,7 +1299,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Heal Mastery (Lv 10)",
         "Description": "Revive one dead ally.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1392,7 +1311,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Revive (Lv 3)",
         "Description": "Place a buff on the whole party for several turns, which gives targets a chance to survive lethal damage with 1 HP. (Buff is consumed when activated)",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1417,7 +1335,6 @@ var data = {
         "Usage": "Active (Arms, LUC)",
         "Unlock": "HP Up (Lv 1)",
         "Description": "Attempt to inflict Sleep on one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1430,7 +1347,6 @@ var data = {
         "Usage": "Active (Arms, LUC)",
         "Unlock": "HP Up (Lv 1)",
         "Description": "Attempt to inflict Poison on one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1444,7 +1360,6 @@ var data = {
         "Usage": "Active (Arms, LUC)",
         "Unlock": "HP Up (Lv 1)",
         "Description": "Attempt to inflict Paralysis on one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1457,7 +1372,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 5)",
         "Description": "Place a buff on an ally line for several turns, which increases Critical rate.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1471,7 +1385,6 @@ var data = {
         "Usage": "Active (Arms, TEC)",
         "Unlock": "HP Up (Lv 10)",
         "Description": "Staff: Deal melee Bash damage to one enemy. (Uses the STR damage formula but with the user's TEC instead of STR)",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1496,7 +1409,6 @@ var data = {
         "Usage": "Active (Field)",
         "Unlock": "TP Up (Lv 1)",
         "Description": "Temporarily decrease damage taken from damaging floors.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1509,7 +1421,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 3)",
         "Description": "Increases enemy drop rates.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1520,7 +1431,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 10)",
         "Description": "At the end of each turn, recover TP if your HP is full.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1542,7 +1452,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "ATK Up (Lv 10)",
         "Description": "Staff: Deal melee Bash damage to one enemy, with a chance to inflict Stun.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1579,7 +1488,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Formula Mastery (Lv 1)",
         "Description": "Deal ranged Fire damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1593,7 +1501,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Fire Formula (Lv 5)",
         "Description": "Deal ranged Fire damage to all enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1607,7 +1514,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Formula Mastery (Lv 1)",
         "Description": "Deal ranged Ice damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1621,7 +1527,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Ice Formula (Lv 5)",
         "Description": "Deal ranged Ice damage to all enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1635,7 +1540,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Formula Mastery (Lv 1)",
         "Description": "Deal ranged Volt damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1649,7 +1553,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Volt Formula (Lv 5)",
         "Description": "Deal ranged Volt damage to all enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1663,7 +1566,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Formula Mastery (Lv 5)",
         "Description": "Deal ranged Fire damage to one enemy, with splash effect.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1677,7 +1579,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Formula Mastery (Lv 5)",
         "Description": "Deal ranged Ice damage to one enemy, with pierce effect.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1691,7 +1592,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Formula Mastery (Lv 5)",
         "Description": "Deal ranged Volt damage to an enemy line.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1705,7 +1605,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Flame/Freeze/Spark Formula (Lv 3)",
         "Description": "Place a debuff on all enemies for several turns, which increases elemental damage taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1719,7 +1618,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Formula Mastery (Lv 7)",
         "Description": "Place a buff on yourself for several turns, which increases damage dealt when hitting a weakness.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1733,7 +1631,6 @@ var data = {
         "Usage": "Active (Arms, TEC)",
         "Unlock": "Formula Mastery (Lv 10)",
         "Description": "Deal melee Bash damage to one enemy. Only usable from the front line, and can only target the enemy front line.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1747,7 +1644,6 @@ var data = {
         "Usage": "Passive (TEC)",
         "Unlock": "Pain Formula (Lv 1)",
         "Description": "At the end of turn, deal ranged Fire damage to enemies that were hit by Pain Formula or had their attacks blocked by Light Formula/Tincture.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1758,7 +1654,6 @@ var data = {
         "Usage": "Active (Arms)",
         "Unlock": "Firelight (Lv 1)",
         "Description": "Chance to nullify physical hits received this turn. Activation chance starts at 100% and goes down with each activation.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1770,7 +1665,6 @@ var data = {
         "Usage": "Active (Arms)",
         "Unlock": "Firelight (Lv 1)",
         "Description": "Chance to nullify elemental hits received this turn. Activation chance starts at 100% and goes down with each activation.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1793,7 +1687,6 @@ var data = {
         "Usage": "Active (Field)",
         "Unlock": "TP Up (Lv 1)",
         "Description": "Chance to return to town.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1805,7 +1698,6 @@ var data = {
         "Usage": "Active (Legs)",
         "Unlock": "Return Formula (Lv 3)",
         "Description": "Attempt to escape the battle at the start of the turn and teleport to the point where you entered the floor. If successful, spend part of the whole party's current HP.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1818,7 +1710,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 2)",
         "Description": "Discarding materials grants Ental equal to a percentage of their sell price.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1829,7 +1720,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 3)",
         "Description": "Increases enemy drop rates.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1840,7 +1730,6 @@ var data = {
         "Usage": "Active (Field)",
         "Unlock": "TP Up (Lv 5)",
         "Description": "Show the location of all FOEs within a square centered around you. Lasts until you take a step.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1852,7 +1741,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 10)",
         "Description": "At the end of each turn, recover TP if your HP is full.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1885,7 +1773,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 1)",
         "Description": "(Song) Place a buff on the whole party for several turns, which increases physical/elemental damage dealt.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1899,7 +1786,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 1)",
         "Description": "(Song) Place a buff on the whole party for several turns, which decreases physical/elemental damage taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1913,7 +1799,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "Warrior/Shelter Song (Lv 5)",
         "Description": "Increases EXP earned by the team at the end of battle. (Stacks additively across different party members)",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -1924,7 +1809,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 3)",
         "Description": "(Song) Place a buff on the whole party for several turns, which increases action speed.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1938,7 +1822,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 3)",
         "Description": "(Song) Place a buff on the whole party for several turns, which increases accuracy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1952,7 +1835,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Skanda Song (Lv 5), Insight Melody (Lv 5)",
         "Description": "(Song) Place a buff on the whole party for several turns, which increases natural bind/ailment recovery rate.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1966,7 +1848,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 5)",
         "Description": "(Song) Place a buff on one ally for several turns, which imbues their weapon with Fire damage and increases all damage dealt. (Skips the diminishing returns system)",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1980,7 +1861,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Fire Prelude (Lv 3)",
         "Description": "(Song) Place a buff on all allies and a debuff on all enemies for several turns. The buff increases Fire resistance, while the debuff decreases it.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1995,7 +1875,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 5)",
         "Description": "(Song) Place a buff on one ally for several turns, which imbues their weapon with Ice damage and increases all damage dealt. (Skips the diminishing returns system)",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2009,7 +1888,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Ice Prelude (Lv 3)",
         "Description": "(Song) Place a buff on all allies and a debuff on all enemies for several turns. The buff increases Ice resistance, while the debuff decreases it.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2024,7 +1902,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 5)",
         "Description": "(Song) Place a buff on one ally for several turns, which imbues their weapon with Volt damage and increases all damage dealt. (Skips the diminishing returns system)",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2038,7 +1915,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Volt Prelude (Lv 3)",
         "Description": "(Song) Place a buff on all allies and a debuff on all enemies for several turns. The buff increases Volt resistance, while the debuff decreases it.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2053,7 +1929,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Song Mastery (Lv 7)",
         "Description": "(Song) Place a buff on the whole party for several turns, which makes targets recover HP when another ally receives single-target healing. (Each target receives healing based on their own stats)",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2067,7 +1942,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Echoing Rondo (Lv 3)",
         "Description": "(Song) Place a buff on the whole party for several turns, which restores HP at the end of each turn.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2081,7 +1955,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Song Mastery (Lv 10)",
         "Description": "(Song) Remove buffs from all enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2094,7 +1967,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Eerie Chorus (Lv 5)",
         "Description": "(Song) Place a buff on the whole party for several turns, which restores TP at the end of each turn.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2108,7 +1980,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Healing Lullaby (Lv 5), Peace Ballad (Lv 5)",
         "Description": "(Song) Increase the remaining duration of buffs and debuffs on all allies and enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2132,7 +2003,6 @@ var data = {
         "Usage": "Active (Field)",
         "Unlock": "HP Up (Lv 1)",
         "Description": "Temporarily decrease the enemy encounter rate.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -2145,7 +2015,6 @@ var data = {
         "Usage": "Active (Field, TEC)",
         "Unlock": "HP Up (Lv 3)",
         "Description": "Restore HP to one ally.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -2157,7 +2026,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 10)",
         "Description": "(Song) Place a buff on the whole party for several turns, which increases Max HP.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2204,7 +2072,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Katana Mastery (Lv 1)",
         "Description": "Katana: Deal melee Cut damage to one enemy. On the next turn, enables all skills that require a Stance.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2218,7 +2085,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Slantwise Cut (Lv 7)",
         "Description": "Katana: Requires any Stance. Prepare to follow up after your allies' normal attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2248,7 +2114,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Upper Stance (Lv 1)",
         "Description": "Katana: Requires Upper Stance. Deal melee Cut damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2262,7 +2127,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Horse Slash (Lv 3)",
         "Description": "Katana: Requires Upper Stance. Deal melee Cut+Fire damage to an enemy line.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2276,7 +2140,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Upper Stance (Lv 5)",
         "Description": "Katana: Requires Upper Stance. Deal multiple hits of melee Cut damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2306,7 +2169,6 @@ var data = {
         "Usage": "Active (Legs)",
         "Unlock": "Clear Stance (Lv 1)",
         "Description": "Katana: Requires Clear Stance. Chance to evade hits received (rolled before the standard accuracy check). Activation chance starts at 100% and goes down with each activation.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2319,7 +2181,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Razor Dodge (Lv 3)",
         "Description": "Katana: Requires Clear Stance. Deal melee Stab+Volt damage to one enemy, with pierce effect.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2333,7 +2194,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Clear Stance (Lv 5)",
         "Description": "Katana: Requires Clear Stance. Deal melee Cut damage to one enemy, with a chance to inflict Arm Bind.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2364,7 +2224,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Drawing Stance (Lv 1)",
         "Description": "Katana: Requires Drawing Stance. Deal melee Cut damage to one enemy, with a chance to inflict Instant Death.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2379,7 +2238,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Beheading Cut (Lv 3)",
         "Description": "Katana: Requires Drawing Stance. Deal ranged Cut+Ice damage to all enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2393,7 +2251,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Drawing Stance (Lv 5)",
         "Description": "Katana: Requires Drawing Stance. Deal melee Stab damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2435,7 +2292,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "ATK Up (Lv 5)",
         "Description": "Increases Critical rate.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -2446,7 +2302,6 @@ var data = {
         "Usage": "Passive (LUC)",
         "Unlock": "Crit Up (Lv 5)",
         "Description": "Chance to inflict Instant Death on all enemies at the start of battle. Activation chance grows based on the level difference between the user and the highest-level enemy. (Equal level multiplies the chance by 1. Difference of 15 or more multiplies the chance by 3)",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -2469,7 +2324,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 3)",
         "Description": "Restore HP to yourself and your adjacent allies. Healing is based on each target's Max HP.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2494,7 +2348,6 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "TP Up (Lv 3)",
         "Description": "Attempt to inflict Fear on all enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2529,7 +2382,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Curse Mastery (Lv 1)",
         "Description": "Place a debuff on all enemies for several turns, which decreases physical/elemental damage dealt.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2543,7 +2395,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Sapping Curse (Lv 2)",
         "Description": "Place a debuff on all enemies for several turns, which decreases action speed.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2557,7 +2408,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Curse Mastery (Lv 1)",
         "Description": "Place a debuff on all enemies for several turns, which increases physical/elemental damage taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2571,7 +2421,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Frailty Curse (Lv 2)",
         "Description": "Place a debuff on all enemies for several turns, which decreases accuracy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2585,7 +2434,6 @@ var data = {
         "Usage": "Active (Head, TEC)",
         "Unlock": "Leaden Curse (Lv 5), Deceit Curse (Lv 5)",
         "Description": "Deal ranged Almighty damage to one enemy. Deals more damage the more missing HP you have:<br>-Your missing HP grants a damage multiplier of [1 + MissingHP/500].<br>-Your missing HP% grants a damage multiplier of [MissingHP%*(1+MissingHP%)/2 + 0.01].",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2599,7 +2447,6 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 3)",
         "Description": "(Curse) Attempt to inflict Blind on an enemy line.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2612,7 +2459,6 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 3)",
         "Description": "(Curse) Attempt to inflict Panic on an enemy line.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2625,7 +2471,6 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 3)",
         "Description": "(Curse) Attempt to inflict Sleep on an enemy line.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2638,7 +2483,6 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Blinding Curse (Lv 2), Madness Curse (Lv 3)",
         "Description": "(Curse) Attempt to inflict Curse on an enemy line.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2651,7 +2495,6 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Madness Curse (Lv 3), Torpor Curse (Lv 2)",
         "Description": "(Curse) Attempt to inflict Petrify on one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2664,7 +2507,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Corrupt/Stoning Curse (Lv 3)",
         "Description": "Place a debuff on all enemies for several turns, which decreases natural bind/ailment recovery rate.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2678,7 +2520,6 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 5)",
         "Description": "(Curse) Attempt to inflict Head Bind on one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2691,7 +2532,6 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 5)",
         "Description": "(Curse) Attempt to inflict Arm Bind on one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2704,7 +2544,6 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 5)",
         "Description": "(Curse) Attempt to inflict Leg Bind on one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2717,7 +2556,6 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 10)",
         "Description": "(Curse) Attempt to inflict Fear on an enemy line.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2730,7 +2568,6 @@ var data = {
         "Usage": "Active (Field)",
         "Unlock": "Evil Eye (Lv 1)",
         "Description": "Temporarily increase the enemy encounter rate.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -2743,7 +2580,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Evil Eye (Lv 3)",
         "Description": "Control all enemies afflicted with Fear for this turn, which prevents them from acting and increases their damage taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2755,7 +2591,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Evil Eye (Lv 5)",
         "Description": "Control all enemies afflicted with Fear for this turn, which makes them attack another random enemy. (If there's only one enemy, it will attack itself)",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2767,7 +2602,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "Evil Eye (Lv 10)",
         "Description": "Control one enemy afflicted with Fear for this turn, which makes it hit itself multiple times.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2791,7 +2625,6 @@ var data = {
         "Usage": "Passive (LUC)",
         "Unlock": "TP Up (Lv 3)",
         "Description": "Chance to inflict Stun on all enemies at the start of battle.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -2836,7 +2669,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 1)",
         "Description": "Spear: Deal ranged Stab damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2850,7 +2682,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 2)",
         "Description": "Spear: Spend 20% of current HP to deal melee Stab damage to the enemy front line.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2864,7 +2695,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Draining Thrust (Lv 5)",
         "Description": "Spear: Spend 40% of current HP to deal melee Stab damage to all enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2878,7 +2708,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 2)",
         "Description": "Spear: Spend 20% of other allies' current HP to deal melee Stab damage to the enemy front line.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2892,7 +2721,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Legion Thrust (Lv 5)",
         "Description": "Spear: Spend 40% of other allies' current HP to deal melee Stab damage to all enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2906,7 +2734,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Spear Mastery (Lv 3)",
         "Description": "Spear: Deal melee Stab damage to one enemy, with a chance to inflict Head Bind or Instant Death.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2922,7 +2749,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 5)",
         "Description": "Spear: Deal melee Stab damage to one enemy at the end of turn. If any allies have used elemental attacks this turn, add the element of the most recent one and multiply damage dealt by 2.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2935,7 +2761,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 10)",
         "Description": "Spear: Spend 15% of current HP to prepare an attack that will activate several turns later, at the end of the turn. Deals ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage dealt receives a reduction multiplier for each remaining charge turn.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2950,7 +2775,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Delayed Charge (Lv 3)",
         "Description": "Spear: Spend part of current HP to deal melee Stab damage to one enemy. If Delayed Charge is preparing against the same target, activate it and increase this skill's power.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2978,7 +2802,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "ATK Up (Lv 1)",
         "Description": "Restore HP to the whole party each time you kill an enemy. Healing is based on each unit's Max HP.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -2990,7 +2813,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "ATK Up (Lv 3)",
         "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but makes targets lose 10% of current HP when they act.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3004,7 +2826,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "Turning Tide (Lv 3), Bloody Offense (Lv 3)",
         "Description": "Chance to attack a random enemy each time you lose HP.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -3017,7 +2838,6 @@ var data = {
         "Usage": "Active (No Parts, LUC)",
         "Unlock": "ATK Up (Lv 5)",
         "Description": "Attempt to inflict multiple binds onto yourself, then attempt to inflict the binds and ailments on yourself onto one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3042,7 +2862,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "DEF Up (Lv 1)",
         "Description": "At the start of battle there's a chance to place a buff on the whole party for 5 turns, which nullifies one ailment infliction received. (Buff is consumed when activated).",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -3053,7 +2872,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "DEF Up (Lv 3)",
         "Description": "Spend 15% of the whole party's current HP to place a buff on the whole party for several turns, which increases bind/ailment infliction rates.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3067,7 +2885,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "Battle Instinct (Lv 3), Blood Fortune (Lv 3)",
         "Description": "If one of your skills consumes HP of other allies in your line, restore TP to them at the end of turn.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -3078,7 +2895,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "DEF Up (Lv 5)",
         "Description": "Spend 10% of current HP to place a buff on an ally line for several turns, which decreases elemental damage taken.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3103,7 +2919,6 @@ var data = {
         "Usage": "Active (Arms)",
         "Unlock": "HP Up (Lv 1)",
         "Description": "Enter a charge state until the end of next turn, which increases damage dealt and lets you use weapon-locked skills without equipping the required weapon.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3116,7 +2931,6 @@ var data = {
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 10)",
         "Description": "Deal typeless damage to all enemies. Restore HP to the party equal to the damage dealt split amongst party members. Damage dealt cannot exceed the party's total missing HP. Removes binds/ailments on enemies and inflicts them onto the party.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3151,7 +2965,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Gun Mastery (Lv 1)",
         "Description": "Gun: Deal ranged Stab damage to one enemy, with a chance to inflict Head Bind.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3166,7 +2979,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Gun Mastery (Lv 1)",
         "Description": "Gun: Deal ranged Stab damage to one enemy, with a chance to inflict Arm Bind.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3181,7 +2993,6 @@ var data = {
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Gun Mastery (Lv 1)",
         "Description": "Gun: Deal ranged Stab damage to one enemy, with a chance to inflict Leg Bind.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3196,7 +3007,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Gun Mastery (Lv 3)",
         "Description": "Gun: Deal ranged Stab+Fire damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3210,7 +3020,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Fire Rounds (Lv 5)",
         "Description": "Gun: Deal ranged Stab+Fire damage to one enemy. Increase damage taken by 50% until it activates.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3224,7 +3033,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Gun Mastery (Lv 3)",
         "Description": "Gun: Deal ranged Stab+Ice damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3238,7 +3046,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Ice Rounds (Lv 5)",
         "Description": "Gun: Deal ranged Stab+Ice damage to one enemy. Increase damage taken by 50% until it activates.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3252,7 +3059,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Gun Mastery (Lv 3)",
         "Description": "Gun: Deal ranged Stab+Volt damage to one enemy.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3266,7 +3072,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Volt Rounds (Lv 5)",
         "Description": "Gun: Deal ranged Stab+Volt damage to one enemy. Increase damage taken by 50% until it activates.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3280,7 +3085,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Gun Mastery (Lv 5)",
         "Description": "Gun: Deal ranged Stab damage to one enemy. Increase damage taken by 50% until it activates.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3294,7 +3098,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "Gun Mastery (Lv 7)",
         "Description": "Normal attacks have a chance to gain pierce effect.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -3305,7 +3108,6 @@ var data = {
         "Usage": "Active (Arms, STR)",
         "Unlock": "Gun Mastery (Lv 10)",
         "Description": "Gun: Deal multiple hits of ranged Stab damage to random enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3320,7 +3122,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "Charged Shot (Lv 3), Penetrator (Lv 3)",
         "Description": "Chance to recover the TP spent when using a skill.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -3331,7 +3132,6 @@ var data = {
         "Usage": "Active (Legs)",
         "Unlock": "Penetrator (Lv 3), Rocochet (Lv 3)",
         "Description": "Enter a charge state for next turn, which will make you perform your selected action multiple times. For skills, TP will be consumed on each use.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3354,7 +3154,6 @@ var data = {
         "Usage": "Active (Arms, TEC)",
         "Unlock": "HP Up (Lv 1)",
         "Description": "Gun: Restore HP and remove ailments for one ally.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3367,7 +3166,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "HP Up (Lv 3)",
         "Description": "When you Defend in the back line, restore HP to the front line. Healing is based on each target's Max HP.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -3379,7 +3177,6 @@ var data = {
         "Usage": "Active (Legs, LUC)",
         "Unlock": "Medic Bullet (Lv 3), Cover Fire (Lv 3)",
         "Description": "Weaken the enemy back line for this turn, which decreases their offense, defense, accuracy and evasion. Also attempts to inflict Stun.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3406,7 +3203,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "ATK Up (Lv 1)",
         "Description": "Increases damage dealt with Critical Hits.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -3417,7 +3213,6 @@ var data = {
         "Usage": "Active (Legs)",
         "Unlock": "ATK Up (Lv 3)",
         "Description": "Place a buff on yourself for several turns, which increases damage dealt with normal attacks and makes them target all enemies.",
-        "Starter": "0",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3431,7 +3226,6 @@ var data = {
         "Usage": "Passive",
         "Unlock": "High Caliber (Lv 3), Vulcan Stance (Lv 3)",
         "Description": "Normal attacks have a chance to be performed a second time.",
-        "Starter": "0",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -3453,7 +3247,7 @@ var data = {
         "Medica / Medica II / Medica III / Medica IV":{
             "Usage": "20 / 100 / 500 / 2.500 en",
             "Description": "Restores HP to one ally.",
-            "Starter": "0",
+
             "Max Level": "4",
             "Data": {
                 "HP Gain": ["50", "100", "200", "All"],
@@ -3462,7 +3256,7 @@ var data = {
         "Soma / Somaprime":{
             "Usage": "700 / 1.500 en",
             "Description": "Restores HP to the whole party.",
-            "Starter": "0",
+
             "Max Level": "2",
             "Data": {
                 "HP Gain": ["80", "160"],
@@ -3471,7 +3265,7 @@ var data = {
         "Amrita / Amrita II":{
             "Usage": "800 / 2.000 en",
             "Description": "Restores TP to one ally.",
-            "Starter": "0",
+
             "Max Level": "2",
             "Data": {
                 "TP Gain": ["50", "100"],
@@ -3480,7 +3274,7 @@ var data = {
         "Hamao / Hamaoprime / Shilleka's SP Potion":{
             "Usage": "600 / 1.500 en",
             "Description": "Restores HP and TP to one ally.",
-            "Starter": "0",
+
             "Max Level": "3",
             "Data": {
                 "HP Gain": ["100", "200", "50"],
@@ -3490,7 +3284,7 @@ var data = {
         "Nectar / Nectar II":{
             "Usage": "300 / 3.500 en",
             "Description": "Revives one dead ally.",
-            "Starter": "0",
+
             "Max Level": "2",
             "Data": {
                 "HP Gain": ["20", "All"],
@@ -3501,21 +3295,21 @@ var data = {
         "Theriaca A / Theriaca B":{
             "Usage": "150 / 400 en",
             "Description": "Respectively removes binds or ailments from one ally.",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
         "Metopon":{
             "Usage": "1.800 en",
             "Description": "Removes all buffs and debuffs on one enemy.",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
         "Unihorn":{
             "Usage": "1.100 en",
             "Description": "Removes all buffs and debuffs on the party.",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
@@ -3524,7 +3318,7 @@ var data = {
         "Bravant":{
             "Usage": "400 en",
             "Description": "Places a buff on one ally for 5 turns, which increases physical damage dealt.",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "Damage Dealt↑": ["+30%"],
@@ -3533,7 +3327,7 @@ var data = {
         "Stonard":{
             "Usage": "400 en",
             "Description": "Places a buff on one ally for 5 turns, which decreases physical damage taken.",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "Damage Taken↓": ["-30%"],
@@ -3542,7 +3336,7 @@ var data = {
         "Axcela":{
             "Usage": "1.200 en",
             "Description": "Restores the Boost Gauge of one ally.",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "Boost Gain": ["10"],
@@ -3551,14 +3345,14 @@ var data = {
         "Blaze/Freeze/Shock Oil":{
             "Usage": "150 en",
             "Description": "Places a buff on one ally for 5 turns, which imbues their weapon with Fire/Ice/Volt damage.",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
         "Heat/Chill/Spark Mist":{
             "Usage": "1.000 en",
             "Description": "Places a buff on all allies for 5 turns, which increases resistance to Fire/Ice/Volt.",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "Resistance↑": ["+50%"],
@@ -3567,7 +3361,7 @@ var data = {
         "All Mist":{
             "Usage": "2.000 en",
             "Description": "Places a buff on all allies for 5 turns, which increases resistance to Fire, Ice and Volt.",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "Resistance↑": ["+20%"],
@@ -3578,7 +3372,7 @@ var data = {
         "Fire/Ice/Volt Talisman":{
             "Usage": "150 en",
             "Description": "Deals ranged Fire/Ice/Volt damage to one enemy.",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "Attack Power": ["180%"],
@@ -3588,7 +3382,7 @@ var data = {
         "Flame/Frost/Storm Talisman":{
             "Usage": "1.000 en",
             "Description": "Deals ranged Fire/Ice/Volt damage to all enemies.",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "Attack Power": ["220%"],
@@ -3600,7 +3394,7 @@ var data = {
         "Blind/Poison/Nerve/Confuse/Curse/Sleep Gas":{
             "Usage": "250 / 950 / 250 / 450 / 1.250 / 650 en",
             "Description": "Respectively attempts to inflict Blind, Poison, Paralysis, Panic, Curse or Sleep on all enemies.",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "Infliction Chance": ["50%"],
@@ -3611,7 +3405,7 @@ var data = {
         "Tangler: Head/Arms/Legs":{
             "Usage": "400 en",
             "Description": "Respectively attempts to inflict Head Bind, Arm Bind or Leg Bind on all enemies.",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "Infliction Chance": ["50%"],
@@ -3623,14 +3417,14 @@ var data = {
         "Flash Bomb":{
             "Usage": "20 en",
             "Description": "Stuns FOEs outside the battle that are chasing you, which prevents them from moving for 1 turn.",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
         "Sonic Bomb":{
             "Usage": "100 en",
             "Description": "Cancels the action of all enemies that are in a charge state.",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
@@ -3639,14 +3433,14 @@ var data = {
         "Formaldehyde":{
             "Usage": "3.000 en",
             "Description": "Until the end of turn, enemies killed will drop all their materials regardless of conditions.",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
         "Divine Gift":{
             "Usage": "2.100 en",
             "Description": "Increases EXP earned this battle. (Repeated uses don't stack)",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "EXP Gain↑": ["+40%"],
@@ -3657,21 +3451,21 @@ var data = {
         "Lucky Scarab":{
             "Usage": "700 en",
             "Description": "If used during a Grimoire chance, grants 100% chance to create a Grimoire Stone.",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
         "Hunting Horn":{
             "Usage": "2.500 en",
             "Description": "Grants a chance to create a Grimoire Stone.",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
         "Four-Leaf Clover":{
             "Usage": "10.000 en",
             "Description": "If you create a Grimoire Stone this turn, increase the chance of it being high level.",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
@@ -3682,7 +3476,7 @@ var data = {
         "Regenurtica":{
             "Usage": "10 en",
             "Description": "Restores HP to the whole party at the end of each turn. Healing is based on each target's Max HP, plus a random flat value. (Affected by Heal Mastery)",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "HP Gain (Max HP)": ["8%"],
@@ -3692,7 +3486,7 @@ var data = {
         "Gingerlife":{
             "Usage": "50 en",
             "Description": "Increases the party's base Max HP. (Cannot make HP go over 999)",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "Max HP↑": ["+30%"],
@@ -3701,7 +3495,7 @@ var data = {
         "Amalawake":{
             "Usage": "50 en",
             "Description": "Restores TP to the whole party at the end of each turn. Healing is based on each target's Max TP, plus a random flat value.",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "TP Gain (Max TP)": ["1%"],
@@ -3711,7 +3505,7 @@ var data = {
         "Echinaceup":{
             "Usage": "50 en",
             "Description": "Increases the party's base Max TP.",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "Max TP↑": ["+30%"],
@@ -3720,7 +3514,7 @@ var data = {
         "Elderevenge":{
             "Usage": "300 en",
             "Description": "Party members will recover HP and TP based on their damage dealt.",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "HP Drain": ["5%"],
@@ -3732,14 +3526,14 @@ var data = {
         "Fallback Plan":{
             "Usage": "100 en",
             "Description": "At the start of battle places a buff on the party for 5 turns, which nullifies one ailment infliction received. (Buff is consumed when activated)",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
         "Bracing Plan":{
             "Usage": "200 en",
             "Description": "At the start of battle places a buff on the party for 5 turns, which restores HP after receiving a hit. (Buff is consumed when activated)",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "HP Gain (Max HP)": ["75%"],
@@ -3748,14 +3542,14 @@ var data = {
         "Escape Plan":{
             "Usage": "100 en",
             "Description": "At the start of battle places a buff on the party for 5 turns, which nullifies one bind infliction received. (Buff is consumed when activated)",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
         "Revenge Plan":{
             "Usage": "200 en",
             "Description": "At the start of battle places a buff on the party for 5 turns, which triggers a weapon-based counterattack after receiving a hit. (Buff is consumed when activated)",
-            "Starter": "0",
+
             "Max Level": "1",
             "Data": {
                 "Attack Power": ["100%"],
@@ -3764,7 +3558,7 @@ var data = {
         "Revival Plan":{
             "Usage": "600 en",
             "Description": "If the whole party dies in battle, all members will revive with 1 HP. (Only once)",
-            "Starter": "0",
+
             "Max Level": "0",
             "Data": ""
         },
@@ -3821,7 +3615,7 @@ function add_skill_entry(skill_list, current_class, skill){
     skill_table = document.createElement("table")
     skill_table.classList.add("skill_entry")
     //Separator for more visual clarity
-    if (current_skill["Starter"] == "1"){
+    if (current_skill.hasOwnProperty("Starter")){
         skill_table.style.marginTop = "15px"
     }
     skill_list.appendChild(skill_table)
