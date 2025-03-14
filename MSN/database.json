@@ -4,46 +4,80 @@
         "Skills":{
             "Support Skills":{
                 "Favoritism":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Character Skill: Increase Physical damage dealt by the party if Jack is Stunned.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Damage Dealt↑":["+10%"]
+                    }
                 },
                 "EX Heal":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Blood Soul Skill: Restore HP to yourself.",
+                    "Max Level": "3",
+                    "Custom Levels": ["1", "20", "40"],
+                    "Data": {
+                        "Healing Power": ["50%", "75%", "100%"]
+                    }
                 },
                 "Wonder Counter":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Partner Skill: When partner is attacked, there's a chance to perform a counterattack.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["10%"],
+                        "Attack Power": ["130%"]
+                    }
                 }
             },
             "Massacre Skills":{
                 "Mass. VY Blast":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Air damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"]
+                    }
                 },
                 "Mass. Freeze":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Water damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["130%", "145%"]
+                    }
                 },
                 "Mass. Execution":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy, with a chance to inflict Death.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["135%", "150%"],
+                        "Infliction Rate": ["?", "?"]
+                    }
                 },
                 "Mass. Brandish":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["135%", "150%"]
+                    }
                 },
                 "Massacre Slash":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["150%", "160%"]
+                    }
                 },
                 "Mass. Rage Rush":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal 3 hits of Neutral damage to one random enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["85%", "90%"]
+                    }
                 },
                 "Mass. Evasive Dance":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Place a buff on one ally for several turns, which increases evasion.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Evasion↑": ["?", "?"],
+                        "Duration": ["2", "3"]
+                    }
                 }
             }
         }
@@ -53,16 +87,28 @@
         "Skills":{
             "Support Skills":{
                 "Bulwark":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Character Skill: Increase damage dealt by the party by if Red Riding Hood's HP is at 75% or less.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Damage Dealt↑": ["+10%"]
+                    }
                 },
                 "Regeneration":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Blood Soul Skill: Place a buff on all allies for 4 turns, which restores Max HP each turn.",
+                    "Max Level": "3",
+                    "Custom Levels": ["1", "20", "40"],
+                    "Data": {
+                        "HP Gain": ["5%", "8%", "11%"]
+                    }
                 },
                 "Sealed Lips":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Partner Skill: When partner attacks one enemy, there's a chance to perform a follow up attack that can inflict Skill Seal.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["10%"],
+                        "Attack Power": ["115%"],
+                        "Infliction Rate": ["?"]
+                    }
                 }
             },
             "Massacre Skills":{
@@ -102,16 +148,27 @@
         "Skills":{
             "Support Skills":{
                 "Dignity":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Character Skill: Increase Magical damage dealt by the party if the last two digits of Thumbelina's HP are the same.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Damage Dealt↑": ["+15%"]
+                    }
                 },
                 "Resist Magic":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Blood Soul Skill: Place a buff on all allies for 3 turns, which decreases Magical damage taken.",
+                    "Max Level": "3",
+                    "Custom Levels": ["1", "20", "40"],
+                    "Data": {
+                        "Damage Taken↓": ["-20%", "-30%", "-40%"]
+                    }
                 },
                 "Honey Flower":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Partner Skill: When partner acts, there's a chance to restore part of their max HP.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["10%"],
+                        "HP Gain": ["20%"]
+                    }
                 }
             },
             "Massacre Skills":{
@@ -151,16 +208,28 @@
         "Skills":{
             "Support Skills":{
                 "Concern":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Character Skill: Increase damage dealt by the party by if the last digit of Snow White's HP is 7.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Damage Dealt↑": ["+10%"]
+                    }
                 },
                 "Prayer":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Blood Soul Skill: Restore SP to yourself.",
+                    "Max Level": "3",
+                    "Custom Levels": ["1", "20", "40"],
+                    "Data": {
+                        "Healing Power": ["25%", "50%", "100%"]
+                    }
                 },
                 "Poisoned Apple":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Partner Skill: When partner attacks one enemy, there's a chance to perform a follow up attack that can inflict Poison.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["10%"],
+                        "Attack Power": ["115%"],
+                        "Infliction Rate": ["?"]
+                    }
                 }
             },
             "Massacre Skills":{
@@ -200,16 +269,28 @@
         "Skills":{
             "Support Skills":{
                 "Tribute":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Character Skill: Decrease Elemental damage taken by the party if Sleeping Beauty is Poisoned.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Damage Taken↓": ["-15%"]
+                    }
                 },
                 "Proofing":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Blood Soul Skill: Place a buff on all allies until the end of their next turn, which increases critical rate.",
+                    "Max Level": "3",
+                    "Custom Levels": ["1", "20", "40"],
+                    "Data": {
+                        "Crit Rate↑": ["?", "?", "+100%"]
+                    }
                 },
                 "Dark Thorn":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Partner Skill: When partner attacks one enemy, there's a chance to perform a follow up attack that can inflict Darkness.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["10%"],
+                        "Attack Power": ["115%"],
+                        "Infliction Rate": ["?"]
+                    }
                 }
             },
             "Massacre Skills":{
@@ -249,16 +330,29 @@
         "Skills":{
             "Support Skills":{
                 "Compassion":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Character skill: Chance of restoring Max HP to all party members when Gretel takes Magical damage.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["?"],
+                        "HP Gain": ["10%"]
+                    }
                 },
                 "Full Prayer":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Blood Soul Skill: Restore SP to the whole party.",
+                    "Max Level": "3",
+                    "Custom Levels": ["1", "20", "40"],
+                    "Data": {
+                        "Healing Power": ["5%", "15%", "25%"]
+                    }
                 },
                 "Test Subject":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Partner Skill: When partner attacks one enemy, there's a chance to perform a follow up attack that can inflict Stun.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["10%"],
+                        "Attack Power": ["115%"],
+                        "Infliction Rate": ["?"]
+                    }
                 }
             },
             "Massacre Skills":{
@@ -298,16 +392,28 @@
         "Skills":{
             "Support Skills":{
                 "Fortitude":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Character Skill: Chance of decreasing Physical damage taken by the party by if Rapunzel's HP is at 75% or less.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["?"],
+                        "Damage Taken↓": ["-25%"]
+                    }
                 },
                 "Resist Attack":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Blood Soul Skill: Place a buff on all allies for 3 turns, which decreases Physical damage taken.",
+                    "Max Level": "3",
+                    "Custom Levels": ["1", "20", "40"],
+                    "Data": {
+                        "Damage Taken↓": ["-20%", "-30%", "-40%"]
+                    }
                 },
                 "I'm Hungry!":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Partner Skill: When partner attacks one enemy, there's a chance to perform a follow up attack.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["10%"],
+                        "Attack Power": ["130%"]
+                    }
                 }
             },
             "Massacre Skills":{
@@ -347,16 +453,27 @@
         "Skills":{
             "Support Skills":{
                 "Proclamation":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Character Skill: If Cinderella's HP is at 50% or less and she hits an enemy's weakness, another random ally will perform an additional attack on that enemy.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Attack Power": ["100%"]
+                    }
                 },
                 "Healia":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Blood Soul Skill: Restore HP to all allies.",
+                    "Max Level": "3",
+                    "Custom Levels": ["1", "20", "40"],
+                    "Data": {
+                        "Healing Power": ["25%", "40%", "60%"]
+                    }
                 },
                 "Ballroom Dance":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Partner Skill: When partner attacks one enemy while at full HP, 20% chance to perform a follow up attack.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["20%"],
+                        "Attack Power": ["130%"]
+                    }
                 }
             },
             "Massacre Skills":{
@@ -392,16 +509,28 @@
         "Skills":{
             "Support Skills":{
                 "Resistance":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Character Skill: Chance of decreasing Magical damage taken by the party if Kaguya's HP is at 75% or less.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["?"],
+                        "Damage Taken↓": ["-25%"]
+                    }
                 },
                 "Hollow Vision":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Place a buff on all allies for 3 turns, which increases accuracy and evasion.",
+                    "Max Level": "3",
+                    "Custom Levels": ["1", "20", "40"],
+                    "Data": {
+                        "Accuracy↑": ["?", "?", "?"],
+                        "Evasion↑": ["?", "?", "?"]
+                    }
                 },
                 "Looter":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "When partner attacks one enemy, there's a chance to steal Gold(50% of their base yield) or an item(max once per enemy) from the target.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["10%"]
+                    }
                 }
             },
             "Massacre Skills":{
@@ -441,16 +570,28 @@
         "Skills":{
             "Support Skills":{
                 "Atonement":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Character Skill: Increase critical rate of the party if the last digit of Hameln's HP is 7.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Crit Rate↑": ["?"]
+                    }
                 },
                 "Recovery":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Blood Soul: Remove ailments from the targets.",
+                    "Max Level": "3",
+                    "Custom Levels": ["1", "20", "40"],
+                    "Data": {
+                        "Ailments Cured": ["Skill Seal", "All", "All"],
+                        "Targets": ["Party", "Self", "Party"]
+                    }
                 },
                 "Piper's Melody":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Partner Skill: When partner acts, there's chance to restore their Max SP.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["10%"],
+                        "SP Gain": ["10%"]
+                    }
                 }
             },
             "Massacre Skills":{

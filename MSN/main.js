@@ -97,8 +97,8 @@ function add_skill_entry(skill_list, current_class, skill){
     for (let i = 1; i <= current_skill["Max Level"]; i++){
         level = document.createElement("th")
         levels_row.appendChild(level)
-        if (current_skill.hasOwnProperty("Levels")){
-            level.innerText = current_skill["Levels"][i-1]
+        if (current_skill.hasOwnProperty("Custom Levels")){
+            level.innerText = current_skill["Custom Levels"][i-1]
         }
         else{
             level.innerText = i
