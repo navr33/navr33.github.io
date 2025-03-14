@@ -1,0 +1,930 @@
+{
+    "Alice":{
+        "Description": "",
+        "Skills":{
+            "Support Skills":{
+                "Favoritism":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "EX Heal":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Wonder Counter":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Massacre Skills":{
+                "Mass. VY Blast":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Freeze":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Execution":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Brandish":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Massacre Slash":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Rage Rush":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Evasive Dance":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Red Riding Hood":{
+        "Description": "",
+        "Skills":{
+            "Support Skills":{
+                "Bulwark":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Regeneration":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Sealed Lips":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Massacre Skills":{
+                "Mass. Flame Pillat":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Inferno":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Lightning Wave":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Lightning":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Recovery":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Attack Blocker":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Resist Fire":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Thumbelina":{
+        "Description": "",
+        "Skills":{
+            "Support Skills":{
+                "Dignity":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Resist Magic":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Honey Flower":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Massacre Skills":{
+                "Mass. Sand Shale":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Sandstorm":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Grand Quake":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Aerial Impact":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Stun Burst":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Succubus":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Darkness":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Snow White":{
+        "Description": "",
+        "Skills":{
+            "Support Skills":{
+                "Concern":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Prayer":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Poisoned Apple":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Massacre Skills":{
+                "Mass. Rock Blast":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. EX Vortex":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Freeze":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Frost Burst":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Darkness":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Sleep":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Bleed Recovery":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Sleeping Beauty":{
+        "Description": "",
+        "Skills":{
+            "Support Skills":{
+                "Tribute":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Proofing":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Dark Thorn":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Massacre Skills":{
+                "Mass. Torrent Blade":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Gravity Pull":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Impact Shock":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Assault Break":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Guard Break":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Action Break":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Frost Burst":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Gretel":{
+        "Description": "",
+        "Skills":{
+            "Support Skills":{
+                "Compassion":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Full Prayer":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Test Subject":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Massacre Skills":{
+                "Mass. Rising Flame":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Blaze":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Shock Blast":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Flash Blade":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Seal Burst":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Brandish":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Instant Death":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Rapunzel":{
+        "Description": "",
+        "Skills":{
+            "Support Skills":{
+                "Fortitude":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Resist Attack":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "I'm Hungry!":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Massacre Skills":{
+                "Mass. Lightning Wave":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. EX Vortex":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Shock":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Massacre Blast":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Stun Burst":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Brandish":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Darkness":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Cinderella":{
+        "Description": "",
+        "Skills":{
+            "Support Skills":{
+                "Proclamation":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Healia":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Ballroom Dance":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Massacre Skills":{
+                "Mass. Sandstorm":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Rock Blast":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Rising Flame":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Hypno Burst":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Ruin":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Seal":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Kaguya":{
+        "Description": "",
+        "Skills":{
+            "Support Skills":{
+                "Resistance":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Hollow Vision":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Looter":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Massacre Skills":{
+                "Mass. Flame Pillar":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Inferno":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Aerial Impact":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Sutra":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Blitz":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Stun Burst":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Spirit Bomb":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Hameln":{
+        "Description": "",
+        "Skills":{
+            "Support Skills":{
+                "Atonement":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Recovery":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Piper's Melody":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Massacre Skills":{
+                "Mass. Sandstorm":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Lightning Wave":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Keraunos Spark":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Poison Burst":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Blast":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Vile Drain":{
+                    "Description": "",
+                    "Data": ""
+                },
+                "Mass. Succubus":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Fighter":{
+        "Description": "An offense-oriented, front-line job. The job doesn't offer much in Skills, but is augmented well in stats.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Paladin":{
+        "Description": "A defense-oriented, front-line job. A bit lacking in offense, but great at being a shield.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Marshal":{
+        "Description": "A speed-oriented attacker. Excels in inflicting damage by numbers.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Destroyer":{
+        "Description": "An attacker that sacrifices defense for power, allowing it to deal massive damage.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Blood Lord":{
+        "Description": "A job with the most proficient command in wielding blood-based abilities.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Libero":{
+        "Description": "An all-rounder with numerous Skill slots. Can use attack and support-based Skills.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Poet":{
+        "Description": "A support role specializing in buffs. Poets heal and support allies through their songs.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Fairy":{
+        "Description": "A versatile job that uses debuffs and attack Skills. Its dance means imminent death.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Pierrot":{
+        "Description": "A unique job with random, double-edged Skills. Its impact in battle is up to fate.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Leech":{
+        "Description": "A unique job that draws power from enemies' blood to strike with unimaginable strength.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Magician":{
+        "Description": "A skill-oriented, rear-line job. Its powerful magic makes up for its lower defense.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Therapist":{
+        "Description": "A specialist in healing who can restore HP, heal ailments, and even revive allies.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Counselor":{
+        "Description": "A job that specializes in providing support to party members through buffs.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Necromancer":{
+        "Description": "A job that specializes in weakening enemies through debuffs.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Blood Witch":{
+        "Description": "A job that masterfully uses blood-based attacks on the battlefield.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Scientist":{
+        "Description": "A support role that can inflict ailments onto enemies and use buffs to help allies.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Item Meister":{
+        "Description": "A specialist in using Skills and items to change the course of battle.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Mimic":{
+        "Description": "A specialist that can analyze enemies and take on the skills of those they defeat.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Logic":{
+        "Description": "A Jail specialist who utilizes Jail Bonuses to bring a number of benefits to the party.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Blood Chemist":{
+        "Description": "A job that experiments with powerful blood-based Skills to deal heavy damage to enemies.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Archer":{
+        "Description": "A long range attacker with an abundance of SP, dealing damage from a safe distance.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Sniper":{
+        "Description": "A versatile, long-range job with a high hit rate and buff/debuff Skills.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Speed Gunner":{
+        "Description": "An attacker that deals damage in battle with profound speed.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Dark Seeker":{
+        "Description": "An attacker that moves in stealth, unleashing powerful attacks from the shadows.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Blood Hunter":{
+        "Description": "Blood Hunters can steal items from enemies, and have high hit and evasion rates.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    },
+    "Sakura Maiden":{
+        "Description": "An all-rounder adept in any position, whether attacking, healing, or providing support.",
+        "Skills":{
+            "Passive Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            },
+            "Active Skills":{
+                "":{
+                    "Description": "",
+                    "Data": ""
+                }
+            }
+        }
+    }
+}
