@@ -112,33 +112,53 @@
                 }
             },
             "Massacre Skills":{
-                "Mass. Flame Pillat":{
-                    "Description": "",
-                    "Data": ""
+                "Mass. Flame Pillar":{
+                    "Description": "Deal Fire damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["100%", "115%"]
+                    }
                 },
                 "Mass. Inferno":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Fire damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["130%", "145%"]
+                    }
                 },
                 "Mass. Lightning Wave":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Lightning damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"]
+                    }
                 },
                 "Mass. Lightning":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Lightning damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["130%", "145%"]
+                    }
                 },
                 "Mass. Recovery":{
-                    "Description": "",
+                    "Description": "Remove all ailments from one ally.",
                     "Data": ""
                 },
                 "Mass. Attack Blocker":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Place a buff on one ally for several turns, which gives them a shield that blocks a certain amount of Physical damage.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Base HP": ["?", "?"],
+                        "Duration": ["2", "3"]
+                    }
                 },
                 "Mass. Resist Fire":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Place a buff on one ally for several turns, which decreases Fire damage taken.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Damage Taken↓": ["-30%", "-50%"],
+                        "Duration": ["2", "3"]
+                    }
                 }
             }
         }
@@ -173,32 +193,55 @@
             },
             "Massacre Skills":{
                 "Mass. Sand Shale":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Earth damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["100%", "115%"]
+                    }
                 },
                 "Mass. Sandstorm":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Earth damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"]
+                    }
                 },
                 "Mass. Grand Quake":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Earth damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["165%", "180%"]
+                    }
                 },
                 "Mass. Aerial Impact":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Air damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["130%", "145%"]
+                    }
                 },
                 "Mass. Stun Burst":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies, with a chance to inflict Stun.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["65%", "85%"],
+                        "Infliction Rate": ["?", "?"]
+                    }
                 },
                 "Mass. Succubus":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy, then spend Max SP.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["195%", "215%"],
+                        "SP Loss": ["15%", "20%"]
+                    }
                 },
                 "Mass. Darkness":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Chance to inflict Darkness to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Infliction Rate": ["?", "?"]
+                    }
                 }
             }
         }
@@ -234,31 +277,50 @@
             },
             "Massacre Skills":{
                 "Mass. Rock Blast":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Earth damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["130%", "145%"]
+                    }
                 },
                 "Mass. EX Vortex":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Water damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["130%", "145%"]
+                    }
                 },
                 "Mass. Freeze":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Air damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["130%", "145%"]
+                    }
                 },
                 "Mass. Frost Burst":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies, with a chance to inflict Frostbite.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["65%", "85%"],
+                        "Infliction Rate": ["?", "?"]
+                    }
                 },
                 "Mass. Darkness":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Chance to inflict Darkness to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Infliction Rate": ["?", "?"]
+                    }
                 },
                 "Mass. Sleep":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Chance to inflict Sleep to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Infliction Rate": ["?", "?"]
+                    }
                 },
                 "Mass. Bleed Recovery":{
-                    "Description": "",
+                    "Description": "Remove Bleed from Jack.",
                     "Data": ""
                 }
             }
@@ -295,32 +357,60 @@
             },
             "Massacre Skills":{
                 "Mass. Torrent Blade":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Water damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["145%", "160%"]
+                    }
                 },
                 "Mass. Gravity Pull":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"]
+                    }
                 },
                 "Mass. Impact Shock":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["110%", "135%"]
+                    }
                 },
                 "Mass. Assault Break":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy, with chance to apply an ATK debuff.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"],
+                        "Infliction Rate": ["?", "?"],
+                        "ATK Stat↓": ["?", "?"]
+                    }
                 },
                 "Mass. Guard Break":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy, with chance to apply a DEF debuff.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"],
+                        "Infliction Rate": ["?", "?"],
+                        "DEF Stat↓": ["?", "?"]
+                    }
                 },
                 "Mass. Action Break":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy, with chance to apply a turn speed debuff.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"],
+                        "Infliction Rate": ["?", "?"],
+                        "Turn Speed↓": ["?", "?"]
+                    }
                 },
                 "Mass. Frost Burst":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies, with a chance to inflict Frostbite.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["65%", "85%"],
+                        "Infliction Rate": ["?", "?"]
+                    }
                 }
             }
         }
@@ -357,32 +447,54 @@
             },
             "Massacre Skills":{
                 "Mass. Rising Flame":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Fire damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"]
+                    }
                 },
                 "Mass. Blaze":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Fire damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["165%", "180%"]
+                    }
                 },
                 "Mass. Shock Blast":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Air damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["100%", "115%"]
+                    }
                 },
                 "Mass. Flash Blade":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Water damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"]
+                    }
                 },
                 "Mass. Seal Burst":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies, with a chance to inflict Skill Seal.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["65%", "85%"],
+                        "Infliction Rate": ["?", "?"]
+                    }
                 },
                 "Mass. Brandish":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["135%", "150%"]
+                    }
                 },
                 "Mass. Instant Death":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Chance to inflict Death to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Infliction Rate": ["?", "?"]
+                    }
                 }
             }
         }
@@ -418,32 +530,54 @@
             },
             "Massacre Skills":{
                 "Mass. Lightning Wave":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Lightning damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"]
+                    }
                 },
                 "Mass. EX Vortex":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Water damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["130%", "145%"]
+                    }
                 },
                 "Mass. Shock":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["140%", "155%"]
+                    }
                 },
                 "Massacre Blast":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["165%", "180%"]
+                    }
                 },
                 "Mass. Stun Burst":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies, with a chance to inflict Stun.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["65%", "85%"],
+                        "Infliction Rate": ["?", "?"]
+                    }
                 },
                 "Mass. Brandish":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["135%", "150%"]
+                    }
                 },
                 "Mass. Darkness":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Chance to inflict Darkness to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Infliction Rate": ["?", "?"]
+                    }
                 }
             }
         }
@@ -478,28 +612,49 @@
             },
             "Massacre Skills":{
                 "Mass. Sandstorm":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Earth damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"]
+                    }
                 },
                 "Mass. Rock Blast":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Earth damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["130%", "145%"]
+                    }
                 },
                 "Mass. Rising Flame":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Fire damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"]
+                    }
                 },
                 "Mass. Hypno Burst":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies, with a chance to inflict Sleep.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["65%", "85%"],
+                        "Infliction Rate": ["?", "?"]
+                    }
                 },
                 "Mass. Ruin":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy, with chance to apply a DEF debuff.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"],
+                        "Infliction Rate": ["?", "?"],
+                        "DEF Stat↓": ["?", "?"]
+                    }
                 },
                 "Mass. Seal":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Chance to inflict Skill Seal to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Infliction Rate": ["?", "?"]
+                    }
                 }
             }
         }
@@ -535,32 +690,55 @@
             },
             "Massacre Skills":{
                 "Mass. Flame Pillar":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Fire damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["100%", "115%"]
+                    }
                 },
                 "Mass. Inferno":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Fire damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["130%", "145%"]
+                    }
                 },
                 "Mass. Aerial Impact":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Air damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["130%", "145%"]
+                    }
                 },
                 "Mass. Sutra":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Air damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["165%", "180%"]
+                    }
                 },
                 "Mass. Blitz":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Lightning damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"]
+                    }
                 },
                 "Mass. Stun Burst":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies, with a chance to inflict Stun.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["65%", "85%"],
+                        "Infliction Rate": ["?", "?"]
+                    }
                 },
                 "Mass. Spirit Bomb":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies, then spend Max SP.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["180%", "220%"],
+                        "SP Loss": ["25%", "35%"]
+                    }
                 }
             }
         }
@@ -596,32 +774,65 @@
             },
             "Massacre Skills":{
                 "Mass. Sandstorm":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Earth damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"]
+                    }
                 },
                 "Mass. Lightning Wave":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Lightning damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["115%", "130%"]
+                    }
                 },
                 "Mass. Keraunos Spark":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Lightning damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["130%", "145%"]
+                    }
                 },
                 "Mass. Poison Burst":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to all enemies, with a chance to inflict Poison.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["65%", "85%"],
+                        "Infliction Rate": ["?", "?"]
+                    }
                 },
                 "Mass. Blast":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy. This skill consumes all SP, and power depends on the percentage of Max SP spent. (Level up has no effect)",
+                    "Max Level": "1",
+                    "Data": {
+                        "Attack Power (1% to 10%)": ["105%"],
+                        "Attack Power (11% to 20%)": ["120%"],
+                        "Attack Power (21% to 30%)": ["140%"],
+                        "Attack Power (31% to 40%)": ["165%"],
+                        "Attack Power (41% to 50%)": ["200%"],
+                        "Attack Power (51% to 65%)": ["250%"],
+                        "Attack Power (66% to 80%)": ["300%"],
+                        "Attack Power (81% to 95%)": ["350%"],
+                        "Attack Power (96% to 100%)": ["400%"]
+                    }
                 },
                 "Mass. Vile Drain":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy, with a chance to heal by 20/23% of damage dealt.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["195%", "215%"],
+                        "Infliction Rate": ["?", "?"],
+                        "Drain Rate": ["20%", "23%"]
+                    }
                 },
                 "Mass. Succubus":{
-                    "Description": "",
-                    "Data": ""
+                    "Description": "Deal Neutral damage to one enemy, then spend Max SP.",
+                    "Max Level": "2",
+                    "Data": {
+                        "Attack Power": ["195%", "215%"],
+                        "SP Loss": ["15%", "20%"]
+                    }
                 }
             }
         }
