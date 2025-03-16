@@ -841,15 +841,54 @@
         "Description": "An offense-oriented, front-line job. The job doesn't offer much in Skills, but is augmented well in stats.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "HP Limit Up":{
+                    "Description": "Increase base Max HP.",
+                    "Max Level": "3",
+                    "Data": {
+                        "HP Stat↑": ["+10%", "+20%", "+30%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Invisible Slash":{
+                    "Description": "Deal Physical Neutral damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["7", "7", "7", "7", "7"],
+                        "Attack Power": ["117%", "125%", "132%", "142%", "150%"]
+                    }
+                },
+                "Pound":{
+                    "Description": "Deal Physical Neutral damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["36", "36", "36", "36", "36"],
+                        "Attack Power": ["160%", "170%", "180%", "190%", "200%"]
+                    }
+                },
+                "Water Attack":{
+                    "Description": "Deal Physical Water damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["7", "7", "7", "7", "7"],
+                        "Attack Power": ["110%", "120%", "130%", "140%", "150%"]
+                    }
+                },
+                "Surge":{
+                    "Description": "Deal Physical Water damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["17", "17", "17", "17", "17"],
+                        "Attack Power": ["130%", "140%", "150%", "160%", "170%"]
+                    }
+                },
+                "Charge":{
+                    "Description": "Place a buff on yourself until the end of your next turn, which strongly increases ATK.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["7", "7", "7"],
+                        "ATK Stat↑": ["+20%", "+40%", "+70%"]
+                    }
                 }
             }
         }
@@ -858,15 +897,69 @@
         "Description": "A defense-oriented, front-line job. A bit lacking in offense, but great at being a shield.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Paladin Skill":{
+                    "Description": "Decrease the power of Physical attacks used by you or against you.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Removed Power": ["-10%"]
+                    }
+                },
+                "Resist Earth":{
+                    "Description": "Decrease Earth damage taken.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Damage Taken↓": ["-10%", "-20%", "-30%"]
+                    }
+                },
+                "DEF Up":{
+                    "Description": "Increase base DEF.",
+                    "Max Level": "3",
+                    "Data": {
+                        "DEF Stat↑": ["+5%", "+10%", "+15%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Darkness Bullet":{
+                    "Description": "Deal Magical Neutral damage to one enemy, with a chance to inflict Darkness.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18", "18", "18"],
+                        "Attack Power": ["110%", "120%", "135%", "150%", "165%"]
+                    }
+                },
+                "Cover":{
+                    "Description": "Place a buff on yourself for one turn, which forces single-target attacks to target you and decreases damage taken.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Cost": ["6"],
+                        "Damage Taken↓": ["-50%"]
+                    }
+                },
+                "Intimidate":{
+                    "Description": "Place a buff on yourself for several turns, which increases the chance of being targeted by enemies.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["4", "4", "4"],
+                        "Duration": ["3", "4", "6"]
+                    }
+                },
+                "Resist Attack":{
+                    "Description": "Place a buff on one ally for several turns, which decreases Physical damage taken.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["24", "24", "24"],
+                        "Damage Taken↓": ["-35%", "-40%", "-50%"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "EX Heal":{
+                    "Description": "Restore HP to one ally.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["10", "10", "10"],
+                        "Healing Power": ["30%", "40%", "50%"]
+                    }
                 }
             }
         }
@@ -875,15 +968,68 @@
         "Description": "A speed-oriented attacker. Excels in inflicting damage by numbers.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Marshal Skill":{
+                    "Description": "Normal attacks have a chance to be performed twice.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["30%"]
+                    }
+                },
+                "Counter":{
+                    "Description": "Chance to counterattack upon taking Physical damage.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Activation Chance": ["15%", "25%", "35%"]
+                    }
+                },
+                "AGI Up":{
+                    "Description": "Increase base AGI.",
+                    "Max Level": "3",
+                    "Data": {
+                        "AGI Stat↑": ["+5%", "+10%", "+15%"]
+                    }
+                },
+                "First Strike":{
+                    "Description": "Chance of getting an extra turn at the start of battle. (Separate from the AGI-based initial turn)",
+                    "Max Level": "3",
+                    "Data": {
+                        "Activation Chance": ["?", "?", "25%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Poison Bullet":{
+                    "Description": "Deal Physical Neutral damage to one enemy, with a chance to inflict Poison.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["12", "12", "12"],
+                        "Attack Power": ["95%", "100%", "110%"]
+                    }
+                },
+                "Force Wave":{
+                    "Description": "Deal Physical Neutral damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["14", "14", "14", "14", "14"],
+                        "Attack Power": ["80%", "90%", "100%", "108%", "115%"]
+                    }
+                },
+                "Amber Red":{
+                    "Description": "Deal Physical Neutral damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["31", "31", "31", "31", "31"],
+                        "Attack Power": ["85%", "97%", "107%", "115%", "123%"]
+                    }
+                },
+                "Rage Rush":{
+                    "Description": "Deal multiple hits of Physical Neutral damage to one random enemy.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["72", "72", "72"],
+                        "Attack Power": ["150%", "160%", "180%"],
+                        "Hits": ["2", "3", "4"]
+                    }
                 }
             }
         }
@@ -892,15 +1038,62 @@
         "Description": "An attacker that sacrifices defense for power, allowing it to deal massive damage.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Destroyer Skill":{
+                    "Description": "Increase the power of Physical attacks used by you or against you.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Added Power": ["+25%"]
+                    }
+                },
+                "ATK Up":{
+                    "Description": "Increase base ATK.",
+                    "Max Level": "3",
+                    "Data": {
+                        "ATK Stat↑": ["+5%", "+10%", "+15%"]
+                    }
+                },
+                "Critical Rate Up":{
+                    "Description": "Increase critical rate.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Crit Rate↑": ["+5%", "+10%", "+15%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Flash Impact":{
+                    "Description": "Deal Physical Neutral damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["17", "17", "17", "17", "17"],
+                        "Attack Power": ["65%", "72%", "80%", "93%", "105%"]
+                    }
+                },
+                "Shock":{
+                    "Description": "Deal Physical Neutral damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["17", "17", "17", "17", "17"],
+                        "Attack Power": ["130%", "140%", "150%", "160%", "175%"]
+                    }
+                },
+                "Desperation":{
+                    "Description": "Place a buff on yourself for several turns, which increases ATK but sets DEF to 1.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["24", "24", "24", "24", "24"],
+                        "ATK Stat↑": ["+10%", "+15%", "+20%", "+25%", "+35%"],
+                        "Duration": ["2", "3", "4", "5", "5"]
+                    }
+                },
+                "Wild Charge":{
+                    "Description": "Place a buff on yourself for several turns, which increases the critical damage bonus and sets critical rate to 100% but decreases accuracy. (Overrides Blood Lord's Critical Output Up)",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18"],
+                        "Crit. Damage↑": ["+10%", "+30%", "+50%"],
+                        "Accuracy↓": ["?", "?", "?"]
+                    }
                 }
             }
         }
@@ -909,15 +1102,94 @@
         "Description": "A job with the most proficient command in wielding blood-based abilities.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
+                "Blood Lord Skill":{
+                    "Description": "All your attacks have a chance to inflict Bleed.",
                     "Data": ""
+                },
+                "Critical Output Up":{
+                    "Description": "Increase the critical damage bonus.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Crit. Damage↑": ["+10%", "+30%", "+50%"]
+                    }
+                },
+                "Water Blessing":{
+                    "Description": "Increase Water damage dealt.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Damage Dealt↑": ["+30%", "+35%", "+40%"]
+                    }
+                },
+                "Earth Blessing":{
+                    "Description": "Increase Earth damage dealt.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Damage Dealt↑": ["+30%", "+35%", "+40%"]
+                    }
+                },
+                "Lightning Blessing":{
+                    "Description": "Increase Lightning damage dealt.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Damage Dealt↑": ["+30%", "+35%", "+40%"]
+                    }
+                },
+                "Commander":{
+                    "Description": "Increase the Bleed amount caused by your attacks.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Bleed↑": ["+25%", "+45%", "+75%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Blood Cleave":{
+                    "Description": "Deal Physical Neutral damage to one enemy, inflicting Bleed.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["13", "13", "13", "13", "13"],
+                        "Attack Power": ["90%", "100%", "110%", "120%", "130%"]
+                    }
+                },
+                "Blood Wound":{
+                    "Description": "Deal Physical Neutral damage to one enemy, inflicting Bleed.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["17", "17", "17", "17", "17"],
+                        "Attack Power": ["75%", "80%", "90%", "95%", "100%"]
+                    }
+                },
+                "Blood Raptor":{
+                    "Description": "Deal Magical Neutral damage to one enemy, inflicting Bleed.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["23", "23", "23", "23", "23"],
+                        "Attack Power": ["110%", "120%", "130%", "140%", "150%"]
+                    }
+                },
+                "Torrent Blade":{
+                    "Description": "Deal Magical Water damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["36", "36", "36", "36", "36"],
+                        "Attack Power": ["130%", "140%", "155%", "170%", "190%"]
+                    }
+                },
+                "Earth Cannon":{
+                    "Description": "Deal Magical Earth damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["36", "36", "36", "36", "36"],
+                        "Attack Power": ["130%", "140%", "155%", "170%", "190%"]
+                    }
+                },
+                "Keraunos":{
+                    "Description": "Deal Magical Lightning damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["36", "36", "36", "36", "36"],
+                        "Attack Power": ["130%", "140%", "155%", "170%", "190%"]
+                    }
                 }
             }
         }
