@@ -1599,15 +1599,88 @@
         "Description": "A skill-oriented, rear-line job. Its powerful magic makes up for its lower defense.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "TEC Up":{
+                    "Description": "Increase base TEC.",
+                    "Max Level": "3",
+                    "Data": {
+                        "TEC Stat↑": ["+5%", "+10%", "+15%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Hypno Burst":{
+                    "Description": "Deal Neutral damage to all enemies, with a chance to inflict Sleep.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["22", "22", "22", "22", "22"],
+                        "Attack Power": ["75%", "83%", "90", "100", "110"],
+                        "Infliction Rate": ["30%", "35%", "40%", "45%", "50%"]
+                    }
+                },
+                "Edict":{
+                    "Description": "Deal Magical Wind damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["7", "7", "7", "7", "7"],
+                        "Attack Power": ["110%", "120%", "130%", "140%", "150%"]
+                    }
+                },
+                "Flame Lore":{
+                    "Description": "Deal Magical Fire damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["17", "17", "17", "17", "17"],
+                        "Attack Power": ["120%", "130%", "140%", "150%", "165%"]
+                    }
+                },
+                "Sandstorm":{
+                    "Description": "Deal Magical Earth damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["19", "19", "19", "19", "19"],
+                        "Attack Power": ["55%", "68%", "80%", "93%", "105%"]
+                    }
+                },
+                "Flame Pillar":{
+                    "Description": "Deal Magical Fire damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["19", "19", "19", "19", "19"],
+                        "Attack Power": ["55%", "68%", "80%", "93%", "105%"]
+                    }
+                },
+                "Rising Flame":{
+                    "Description": "Deal Magical Fire damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["40", "40", "40", "40", "40"],
+                        "Attack Power": ["105%", "115%", "125%", "135%", "155%"]
+                    }
+                },
+                "Flash Flood":{
+                    "Description": "Deal Magical Water damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["40", "40", "40", "40", "40"],
+                        "Attack Power": ["90%", "100%", "110%", "120%", "130%"]
+                    }
+                },
+                "Blow":{
+                    "Description": "Place a buff on one ally for several turns, which increases Physical damage dealt.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["24", "24", "24"],
+                        "Damage Dealt↑": ["+20%", "+30%", "+40%"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Stealth":{
+                    "Description": "Temporarily decrease the chance of enemy encounters.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["12", "12", "12"],
+                        "Duration (Steps)": ["195", "180", "165"]
+                    }
                 }
             }
         }
@@ -1616,15 +1689,114 @@
         "Description": "A specialist in healing who can restore HP, heal ailments, and even revive allies.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Therapist Skill":{
+                    "Description": "Increase the power of healing skills used.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Added Power": ["+30%"]
+                    }
+                },
+                "MEN Up":{
+                    "Description": "Increase base MEN.",
+                    "Max Level": "3",
+                    "Data": {
+                        "MEN Stat↑": ["+5%", "+10%", "+15%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Seal Bullet+":{
+                    "Description": "Deal Magical Neutral damage to one enemy, with a chance to inflict Skill Seal.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18", "18", "18"],
+                        "Attack Power": ["110%", "120%", "135%", "150%", "170%"],
+                        "Infliction Rate": ["?", "?", "?", "?", "?"]
+                    }
+                },
+                "Shock Blast":{
+                    "Description": "Deal Magical Wind damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["40", "40", "40", "40", "40"],
+                        "Attack Power": ["50%", "60%", "75%", "85%", "100%"]
+                    }
+                },
+                "VY Blast":{
+                    "Description": "Deal Magical Wind damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["40", "40", "40", "40", "40"],
+                        "Attack Power": ["105%", "115%", "125%", "135%", "155%"]
+                    }
+                },
+                "Heal":{
+                    "Description": "Restore HP to one ally.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["6", "6", "6"],
+                        "Healing Power": ["17%", "27%", "35%"]
+                    }
+                },
+                "EX Heal":{
+                    "Description": "Restore HP to one ally.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["10", "10", "10"],
+                        "Healing Power": ["30%", "40%", "50%"]
+                    }
+                },
+                "Omega Heal":{
+                    "Description": "Restore full HP to one ally.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Cost": ["25"]
+                    }
+                },
+                "Resurrection":{
+                    "Description": "Revive one ally and restore part of their Max HP.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["36", "36", "36"],
+                        "HP Gain": ["50%", "65%", "80%"]
+                    }
+                },
+                "Poison Recovery":{
+                    "Description": "Remove Poison from one ally.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Cost": ["18"]
+                    }
+                },
+                "Bleed Recovery":{
+                    "Description": "Remove Bleed from Jack.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Cost": ["18"]
+                    }
+                },
+                "Frostbite Recovery":{
+                    "Description": "Remove Frostbite from one ally.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Cost": ["18"]
+                    }
+                },
+                "Weakness Recovery":{
+                    "Description": "Remove Weakness from one ally.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Cost": ["18"]
+                    }
+                },
+                "Resist Attack":{
+                    "Description": "Place a buff on one ally for several turns, which decreases Physical damage taken.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["24", "24", "24"],
+                        "Damage Taken↓": ["-35%", "-40%", "-50%"],
+                        "Duration": ["2", "3", "4"]
+                    }
                 }
             }
         }
@@ -1633,15 +1805,87 @@
         "Description": "A job that specializes in providing support to party members through buffs.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Counselor Skill":{
+                    "Description": "Decrease the SP cost of buff skills.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Costs↓": ["-33%"]
+                    }
+                },
+                "Earth Blessing":{
+                    "Description": "Increase Earth damage dealt.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Damage Dealt↑": ["+30%", "+35%", "+40%"]
+                    }
+                },
+                "Lightning Blessing":{
+                    "Description": "Increase Lightning damage dealt.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Damage Dealt↑": ["+30%", "+35%", "+40%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Keraunos":{
+                    "Description": "Deal Magical Lightning damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["36", "36", "36", "36", "36"],
+                        "Attack Power": ["130%", "140%", "155%", "170%", "190%"]
+                    }
+                },
+                "Rise Sense":{
+                    "Description": "Place a buff on one ally for several turns, which increases Magical damage dealt.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["24", "24", "24"],
+                        "Damage Dealt↑": ["+20%", "+30%", "+40%"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Resist Fire":{
+                    "Description": "Place a buff on all allies for several turns, which decreases Fire damage taken.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18"],
+                        "Damage Taken↓": ["-30%", "-45%", "-60%"],
+                        "Duration": ["2", "3", "3"]
+                    }
+                },
+                "Resist Water":{
+                    "Description": "Place a buff on all allies for several turns, which decreases Water damage taken.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18"],
+                        "Damage Taken↓": ["-30%", "-45%", "-60%"],
+                        "Duration": ["2", "3", "3"]
+                    }
+                },
+                "Resist Air":{
+                    "Description": "Place a buff on all allies for several turns, which decreases Air damage taken.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18"],
+                        "Damage Taken↓": ["-30%", "-45%", "-60%"],
+                        "Duration": ["2", "3", "3"]
+                    }
+                },
+                "Proofing":{
+                    "Description": "Place a buff on all allies until the end of their next turn, which increases critical rate.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Cost": ["54"],
+                        "Crit Rate↑": ["?"]
+                    }
+                },
+                "Dispel":{
+                    "Description": "Remove all buffs from one enemy.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Cost": ["30"]
+                    }
                 }
             }
         }
@@ -1650,15 +1894,134 @@
         "Description": "A job that specializes in weakening enemies through debuffs.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Necromancer Skill":{
+                    "Description": "Increase ailment infliction rates.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Inflictions↑": ["x1.2"]
+                    }
+                },
+                "Magic Counter":{
+                    "Description": "Chance to counterattack upon taking Magical damage.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Activation Chance": ["15%", "25%", "35%"]
+                    }
+                },
+                "Save SP":{
+                    "Description": "Decrease the SP cost of all skills.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Costs↓": ["-20%", "-25%", "-30%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Cursed Drain":{
+                    "Description": "Deal Physical Neutral damage to all enemies, with a chance to drain part of the damage dealt.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["21", "21", "21", "21", "21"],
+                        "Attack Power": ["50%", "65%", "80%", "95%", "110%"],
+                        "Activation Chance": ["?", "?", "?", "?", "?"],
+                        "Drain Rate": ["4%", "6%", "8%", "10%", "12%"]
+                    }
+                },
+                "Spirit Bomb":{
+                    "Description": "Deal Physical Neutral damage to all enemies, then spend Max SP.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["32", "32", "32"],
+                        "Attack Power": ["145%", "170%", "210%"],
+                        "SP Loss": ["30%", "45%", "60%"]
+                    }
+                },
+                "Resist Skill":{
+                    "Description": "Place a buff on all allies for several turns, which decreases Magical damage taken.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["24", "24", "24"],
+                        "Damage Taken↓": ["-15%", "-20%", "-25%"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Resist Earth":{
+                    "Description": "Place a buff on all allies for several turns, which decreases Earth damage taken.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18"],
+                        "Damage Taken↓": ["-30%", "-45%", "-60%"],
+                        "Duration": ["2", "3", "3"]
+                    }
+                },
+                "Poison":{
+                    "Description": "Attempt to inflict Poison on all enemies.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18"],
+                        "Infliction Rate": ["35%", "45%", "55%"]
+                    }
+                },
+                "Sleep":{
+                    "Description": "Attempt to inflict Sleep on all enemies.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18"],
+                        "Infliction Rate": ["35%", "45%", "55%"]
+                    }
+                },
+                "Stun":{
+                    "Description": "Attempt to inflict Stun on all enemies.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18"],
+                        "Infliction Rate": ["10%", "20%", "30%"]
+                    }
+                },
+                "Lower Water":{
+                    "Description": "Place a debuff on one enemy for several turns, which decreases Water resistance.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["6", "6", "6"],
+                        "Resistance↓": ["-30", "-50", "-70"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Lower Fire":{
+                    "Description": "Place a debuff on one enemy for several turns, which decreases Fire resistance.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["6", "6", "6"],
+                        "Resistance↓": ["-30", "-50", "-70"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Lower Air":{
+                    "Description": "Place a debuff on one enemy for several turns, which decreases Air resistance.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["6", "6", "6"],
+                        "Resistance↓": ["-30", "-50", "-70"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Lower Lightning":{
+                    "Description": "Place a debuff on one enemy for several turns, which decreases Lightning resistance.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["6", "6", "6"],
+                        "Resistance↓": ["-30", "-50", "-70"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Lower Earth":{
+                    "Description": "Place a debuff on one enemy for several turns, which decreases Earth resistance.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["6", "6", "6"],
+                        "Resistance↓": ["-30", "-50", "-70"],
+                        "Duration": ["2", "3", "4"]
+                    }
                 }
             }
         }
@@ -1667,15 +2030,98 @@
         "Description": "A job that masterfully uses blood-based attacks on the battlefield.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Blood Witch Skill":{
+                    "Description": "Increase the power of attack skills used.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Added Power": ["+15%"]
+                    }
+                },
+                "Commander":{
+                    "Description": "Increase the Bleed amount caused by your attacks.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Bleed↑": ["+25%", "+45%", "+75%"]
+                    }
+                },
+                "Water Blessing":{
+                    "Description": "Increase Water damage dealt.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Damage Dealt↑": ["+30%", "+35%", "+40%"]
+                    }
+                },
+                "Fire Blessing":{
+                    "Description": "Increase Fire damage dealt.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Damage Dealt↑": ["+30%", "+35%", "+40%"]
+                    }
+                },
+                "Air Blessing":{
+                    "Description": "Increase Air damage dealt.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Damage Dealt↑": ["+30%", "+35%", "+40%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Blood Raptor":{
+                    "Description": "Deal Magical Neutral damage to one enemy, inflicting Bleed.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["23", "23", "23", "23", "23"],
+                        "Attack Power": ["110%", "120%", "130%", "140%", "150%"]
+                    }
+                },
+                "Bloody Domination":{
+                    "Description": "Deal Magical Neutral damage to all enemies, inflicting Bleed.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["59", "59", "59", "59", "59"],
+                        "Attack Power": ["100%", "115%", "125%", "130%", "140%"]
+                    }
+                },
+                "EX Vortex":{
+                    "Description": "Deal Magical Water damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["62", "62", "62", "62", "62"],
+                        "Attack Power": ["105%", "115%", "125%", "135%", "155%"]
+                    }
+                },
+                "Mental Force":{
+                    "Description": "Deal Magical Multi-Elemental damage to all enemies. (Always hits weakness)",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["102", "102", "102", "102", "102"],
+                        "Attack Power": ["170%", "180%", "200%", "220%", "235%"]
+                    }
+                },
+                "EX Healia":{
+                    "Description": "Restore HP to all allies.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["26", "26", "26"],
+                        "Healing Power": ["20%", "25%", "30%"]
+                    }
+                },
+                "Recovery":{
+                    "Description": "Remove all ailments from one ally.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Cost": ["29"]
+                    }
+                },
+                "Resist Lightning":{
+                    "Description": "Place a buff on all allies for several turns, which decreases Lightning damage taken.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18"],
+                        "Damage Taken↓": ["-30%", "-45%", "-60%"],
+                        "Duration": ["2", "3", "3"]
+                    }
                 }
             }
         }
