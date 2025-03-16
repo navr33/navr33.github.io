@@ -818,7 +818,7 @@
                     }
                 },
                 "Mass. Vile Drain":{
-                    "Description": "Deal Neutral damage to one enemy, with a chance to heal by 20/23% of damage dealt.",
+                    "Description": "Deal Neutral damage to one enemy, with a chance to drain part of the damage dealt.",
                     "Max Level": "2",
                     "Data": {
                         "Attack Power": ["195%", "215%"],
@@ -920,12 +920,13 @@
                 }
             },
             "Active Skills":{
-                "Darkness Bullet":{
+                "Darkness Bullet+":{
                     "Description": "Deal Magical Neutral damage to one enemy, with a chance to inflict Darkness.",
                     "Max Level": "5",
                     "Data": {
                         "SP Cost": ["18", "18", "18", "18", "18"],
-                        "Attack Power": ["110%", "120%", "135%", "150%", "165%"]
+                        "Attack Power": ["110%", "120%", "135%", "150%", "165%"],
+                        "Infliction Rate": ["?", "?", "?", "?", "?"]
                     }
                 },
                 "Cover":{
@@ -1198,15 +1199,62 @@
         "Description": "An all-rounder with numerous Skill slots. Can use attack and support-based Skills.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Counter":{
+                    "Description": "Chance to counterattack upon taking Physical damage.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Activation Chance": ["15%", "25%", "35%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Splash Bomb":{
+                    "Description": "Deal Magical Water damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["7", "7", "7", "7", "7"],
+                        "Attack Power": ["110%", "120%", "130%", "140%", "150%"]
+                    }
+                },
+                "Fire Attack":{
+                    "Description": "Deal Magical Fire damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["7", "7", "7", "7", "7"],
+                        "Attack Power": ["110%", "120%", "130%", "140%", "150%"]
+                    }
+                },
+                "Keraunos":{
+                    "Description": "Deal Magical Lightning damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["36", "36", "36", "36", "36"],
+                        "Attack Power": ["130%", "140%", "155%", "170%", "190%"]
+                    }
+                },
+                "VY Blast":{
+                    "Description": "Deal Magical Wind damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["40", "40", "40", "40", "40"],
+                        "Attack Power": ["105%", "115%", "125%", "135%", "155%"]
+                    }
+                },
+                "Heal":{
+                    "Description": "Restore HP to one ally.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["6", "6", "6"],
+                        "Healing Power": ["17%", "27%", "35%"]
+                    }
+                },
+                "EX Healia":{
+                    "Description": "Restore HP to all allies.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["26", "26", "26"],
+                        "Healing Power": ["20%", "25%", "30%"]
+                    }
                 }
             }
         }
@@ -1215,15 +1263,63 @@
         "Description": "A support role specializing in buffs. Poets heal and support allies through their songs.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Poet Skill":{
+                    "Description": "Decrease the SP cost of buff skills.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Costs↓": ["-35%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Blow":{
+                    "Description": "Place a buff on one ally for several turns, which increases Physical damage dealt.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["24", "24", "24"],
+                        "Damage Dealt↑": ["+20%", "+30%", "+40%"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Invigorate":{
+                    "Description": "Place a buff on one ally for several turns, which increases turn speed.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["22", "22", "22"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Resist Attack":{
+                    "Description": "Place a buff on one ally for several turns, which decreases Physical damage taken.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["24", "24", "24"],
+                        "Damage Taken↓": ["-35%", "-40%", "-50%"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Resist Skill":{
+                    "Description": "Place a buff on all allies for several turns, which decreases Magical damage taken.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["24", "24", "24"],
+                        "Damage Taken↓": ["-15%", "-20%", "-25%"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Stun Recovery":{
+                    "Description": "Remove Stun from one ally.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Cost": ["18"]
+                    }
+                },
+                "Skill Seal Recovery":{
+                    "Description": "Remove Skill Seal from one ally.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Cost": ["18"]
+                    }
                 }
             }
         }
@@ -1232,15 +1328,144 @@
         "Description": "A versatile job that uses debuffs and attack Skills. Its dance means imminent death.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Fairy Skill":{
+                    "Description": "Increase ailment infliction rates.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Inflictions↑": ["x1.2"]
+                    }
+                },
+                "Magic Counter":{
+                    "Description": "Chance to counterattack upon taking Magical damage.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Activation Chance": ["15%", "25%", "35%"]
+                    }
+                },
+                "TEC Up":{
+                    "Description": "Increase base TEC.",
+                    "Max Level": "3",
+                    "Data": {
+                        "TEC Stat↑": ["+5%", "+10%", "+15%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Drain":{
+                    "Description": "Deal Magical Neutral damage to one enemy, with a chance to drain part of the damage dealt.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["8", "8", "8", "8", "8"],
+                        "Attack Power": ["85%", "95%", "105%", "115%", "140%"],
+                        "Activation Chance": ["?", "?", "?", "?", "?"],
+                        "Drain Rate": ["12%", "15%", "18%", "20%", "23%"]
+                    }
+                },
+                "Darkness Bullet":{
+                    "Description": "Deal Magical Neutral damage to one enemy, with a chance to inflict Darkness.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["22", "22", "22", "22", "22"],
+                        "Attack Power": ["90%", "100%", "110%", "120%", "130%"],
+                        "Infliction Rate": ["?", "?", "?", "?", "?"]
+                    }
+                },
+                "Hypno Bullet":{
+                    "Description": "Deal Magical Neutral damage to one enemy, with a chance to inflict Sleep.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["14", "14", "14", "14", "14"],
+                        "Attack Power": ["90%", "100%", "110%", "120%", "130%"],
+                        "Infliction Rate": ["?", "?", "?", "?", "?"]
+                    }
+                },
+                "Frost Bullet":{
+                    "Description": "Deal Magical Neutral damage to one enemy, with a chance to inflict Frostbite.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["13", "13", "13", "13", "13"],
+                        "Attack Power": ["90%", "100%", "110%", "120%", "130%"],
+                        "Infliction Rate": ["?", "?", "?", "?", "?"]
+                    }
+                },
+                "Poison Bullet+":{
+                    "Description": "Deal Magical Neutral damage to one enemy, with a chance to inflict Poison.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18", "18", "18"],
+                        "Attack Power": ["110%", "120%", "135%", "150%", "170%"],
+                        "Infliction Rate": ["?", "?", "?", "?", "?"]
+                    }
+                },
+                "Debilitate":{
+                    "Description": "Deal Magical Neutral damage to one enemy, with a chance to inflict Stun.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["24", "24", "24", "24", "24"],
+                        "Attack Power": ["115%", "130%", "150%", "170%", "190%"],
+                        "Infliction Rate": ["?", "?", "?", "?", "?"]
+                    }
+                },
+                "Execution":{
+                    "Description": "Deal Magical Neutral damage to one enemy, with a chance to inflict Death.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["30", "30", "30", "30", "30"],
+                        "Attack Power": ["115%", "130%", "150%", "170%", "190%"],
+                        "Infliction Rate": ["?", "?", "?", "?", "?"]
+                    }
+                },
+                "Charge":{
+                    "Description": "Place a buff on yourself until the end of your next turn, which strongly increases ATK.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["7", "7", "7"],
+                        "ATK Stat↑": ["+20%", "+40%", "+70%"]
+                    }
+                },
+                "Attack Stall":{
+                    "Description": "Place a debuff on one enemy for several turns, which decreases ATK.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["8", "8", "8"],
+                        "ATK Stat↓": ["-10%", "-20%", "-35%"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Defense Stall":{
+                    "Description": "Place a debuff on one enemy for several turns, which decreases DEF.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["8", "8", "8"],
+                        "DEF Stat↓": ["-10%", "-20%", "-35%"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Tech Stall":{
+                    "Description": "Place a debuff on one enemy for several turns, which decreases TEC.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["8", "8", "8"],
+                        "TEC Stat↓": ["-10%", "-20%", "-35%"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Mental Stall":{
+                    "Description": "Place a debuff on one enemy for several turns, which decreases MEN.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["8", "8", "8"],
+                        "MEN Stat↓": ["-10%", "-20%", "-35%"],
+                        "Duration": ["2", "3", "4"]
+                    }
+                },
+                "Impede":{
+                    "Description": "Place a debuff on one enemy for several turns, which decreases turn speed.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["22", "22", "22"],
+                        "Duration": ["2", "3", "4"]
+                    }
                 }
             }
         }
@@ -1249,15 +1474,79 @@
         "Description": "A unique job with random, double-edged Skills. Its impact in battle is up to fate.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Pierrot Skill":{
+                    "Description": "Chance to increase the power of attacks used and received.",
+                    "Max Level": "1",
+                    "Data": {
+                        "Activation Chance": ["30%"],
+                        "Added Power": ["+50%"]
+                    }
+                },
+                "HP Limit Up":{
+                    "Description": "Increase base Max HP.",
+                    "Max Level": "3",
+                    "Data": {
+                        "HP Stat↑": ["+10%", "+20%", "+30%"]
+                    }
+                },
+                "ATK Up":{
+                    "Description": "Increase base ATK.",
+                    "Max Level": "3",
+                    "Data": {
+                        "HP Stat↑": ["+5%", "+10%", "+15%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Endure":{
+                    "Description": "Deal Physical Neutral damage to one enemy, then spend Max HP.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["11", "11", "11"],
+                        "Attack Power": ["170%", "195%", "230%"],
+                        "HP Loss": ["20%", "30%", "35%"]
+                    }
+                },
+                "Spirit Attack":{
+                    "Description": "Deal Physical Neutral damage to one enemy, then spend Max SP.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["11", "11", "11"],
+                        "Attack Power": ["170%", "195%", "230%"],
+                        "SP Loss": ["25%", "40%", "50%"]
+                    }
+                },
+                "Lunacy":{
+                    "Description": "Deal Magical Random-Element damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["38", "38", "38", "38", "38"],
+                        "Attack Power": ["150%", "160%", "170%", "180%", "200%"]
+                    }
+                },
+                "Cluster":{
+                    "Description": "Deal Magical Random-Element damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["72", "72", "72", "72", "72"],
+                        "Attack Power": ["130%", "145%", "150%", "160%", "180%"]
+                    }
+                },
+                "Offering":{
+                    "Description": "Sacrifice 1 to 3 items, then deal Physical Neutral damage to one enemy. Each item spent adds to the power of the attack. (Every item gives a different bonus)",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["19", "19", "19"],
+                        "Attack Power": ["100%", "120%", "150%"]
+                    }
+                },
+                "EX Heal":{
+                    "Description": "Restore HP to one ally.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["10", "10", "10"],
+                        "Healing Power": ["30%", "40%", "50%"]
+                    }
                 }
             }
         }
@@ -1266,15 +1555,42 @@
         "Description": "A unique job that draws power from enemies' blood to strike with unimaginable strength.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
+                "Leech Skill":{
+                    "Description": "Increase or decrease the power of attacks used based on your Splatter Gauge level:<br>-From 0% to 49%: Remove 10% power.<br>-From 50% to 100%: Add <b>[(Gauge%-50%)/2]</b> power.",
                     "Data": ""
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Bloody Maneuver":{
+                    "Description": "Deal Physical Neutral damage to all enemies, inflicting Bleed.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["18", "18", "18", "18", "18"],
+                        "Attack Power": ["90%", "100%", "105%", "115%", "125%"]
+                    }
+                },
+                "Mass. Blast":{
+                    "Description": "Deal Physical Neutral damage to one enemy. This skill consumes all SP, and power depends on the percentage of Max SP spent. (Level up has no effect)",
+                    "Max Level": "1",
+                    "Data": {
+                        "Attack Power (1% to 10%)": ["105%"],
+                        "Attack Power (11% to 20%)": ["120%"],
+                        "Attack Power (21% to 30%)": ["140%"],
+                        "Attack Power (31% to 40%)": ["165%"],
+                        "Attack Power (41% to 50%)": ["200%"],
+                        "Attack Power (51% to 65%)": ["250%"],
+                        "Attack Power (66% to 80%)": ["300%"],
+                        "Attack Power (81% to 95%)": ["350%"],
+                        "Attack Power (96% to 100%)": ["400%"]
+                    }
+                },
+                "Blood Raptor":{
+                    "Description": "Deal Magical Neutral damage to one enemy, inflicting Bleed.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["23", "23", "23", "23", "23"],
+                        "Attack Power": ["110%", "120%", "130%", "140%", "150%"]
+                    }
                 }
             }
         }
