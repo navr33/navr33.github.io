@@ -241,7 +241,7 @@ var data = {
         "Act Breaker":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Burst Blade (Lv 2)",
-            "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Stun. Infliction chance is multiplied by the target's [(CurrentHP/MaxHP)<sup>2</sup>].",
+            "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Stun. Infliction chance is multiplied by the target's <b>(CurrentHP/MaxHP)<sup>2</sup></b>.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["14", "14", "14", "18", "18", "18", "18", "24"],
@@ -254,7 +254,7 @@ var data = {
         "Regiment Rave":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Act Breaker (Lv 3)",
-            "Description": "Sword: Deal melee Cut+Fire damage to one enemy at the end of turn. Up to 40% of the damage your allies have done this turn is added to this attack's own calculated damage, capped at a certain percentage of said calculated value.",
+            "Description": "Sword: Deal melee Cut+Fire damage to one enemy at the end of turn. Also repeats up to 40% of the damage your allies have done this turn, capped at a certain percentage of this attack's own damage.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["18", "18", "18", "25", "25", "25", "25", "32"],
@@ -289,7 +289,7 @@ var data = {
         "Guard Rush":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Elemental Shield (Lv 3)",
-            "Description": "Shield: Deal melee Bash damage to one enemy. Decrease all damage taken by the party until the attack activates, and this attack's damage dealt increases by 20% each time the damage reduction triggers (max +200%), but the attack is cancelled if the reduction never triggers. If the attack lands, this skill becomes disabled for several turns. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
+            "Description": "Shield: Deal melee Bash damage to one enemy. Decreases all damage taken by the party until the attack activates, and this attack's damage dealt increases by 20% each time the damage reduction triggers (capped at +200%), however the attack is cancelled if the reduction never triggers. If the attack lands, this skill becomes disabled for several turns. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25", "32", "32", "32", "32", "32", "40"],
@@ -1161,7 +1161,7 @@ var data = {
         },
         "Issen":{
             "Usage": "Force Break (Arms, STR, LUC)",
-            "Description": "Deal ranged Cut damage to all enemies, with a chance to inflict Instant Death. (Infliction chance allegedly higher on low-HP targets, but could not reproduce in testing)",
+            "Description": "Deal ranged Cut damage to all enemies, with a chance to inflict Instant Death.",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -2443,7 +2443,7 @@ var data = {
         "Negotiation":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Dispel 1 buff and 1 debuff from one ally. Restore HP and TP to them if one modifier type was removed, doubled if both.",
+            "Description": "Dispel 1 buff and 1 debuff from one ally. Restore HP and TP to the target for each modifier removed.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2", "2", "2"],
@@ -2482,7 +2482,7 @@ var data = {
         "Element Bomb I":{
             "Usage": "Active (Arms, INT)",
             "Unlock": "Fire/Freeze/Shock Arms (Lv 1)",
-            "Description": "Dispel an elemental imbue on one ally. If successful, deal ranged damage of that element to all enemies. (Can be affected by the damage bonus of an Arms buff removed from the target, but not one active on the user)",
+            "Description": "Dispel an elemental imbue on one ally to deal ranged damage of that element to all enemies. If this removed an Arms buff, apply its damage bonus to the attack. (Ignores Arms buffs on the user)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "23"],
@@ -2530,7 +2530,7 @@ var data = {
         "Tactical Decree":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "For this turn, allies with buffs will recover TP based on their damage taken.",
+            "Description": "Empower allies with buffs for this turn, which makes them recover TP based on their damage taken.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "6"],
@@ -2540,7 +2540,7 @@ var data = {
         "Healing Decree":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "For this turn, allies with buffs will recover HP based on their damage dealt.",
+            "Description": "Empower allies with buffs for this turn, which makes them recover HP based on their damage dealt.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "5"],
@@ -2561,7 +2561,7 @@ var data = {
         "Element Bomb II":{
             "Usage": "Active (Arms, INT)",
             "Unlock": "Element Bomb I (Lv 3)",
-            "Description": "Dispel an elemental imbue on one ally. If successful, deal 3 ranged hits of that element to random enemies. (Can be affected by the damage bonus of an Arms buff removed from the target, but not one active on the user)",
+            "Description": "Dispel an elemental imbue on one ally to deal 3 ranged hits of that element to random enemies. If this removed an Arms buff, apply its damage bonus to the attack. (Ignores Arms buffs on the user)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "23"],
@@ -2573,7 +2573,7 @@ var data = {
         "Clearance":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Dispel all ally buffs, ally debuffs, enemy buffs and enemy debuffs, then restore HP and TP to the whole party based on the amount of individual buffs/debuffs removed. (Base healing is multiplied by the amount of dispels squared. This caps at x400 for 20 dispels, and each dispel beyond that instead adds 20 to this multiplier)",
+            "Description": "Dispel all ally buffs, ally debuffs, enemy buffs and enemy debuffs, then restore HP and TP to the whole party based on the amount of individual buffs/debuffs removed:<br>-1 to 20 removals: Multiply the effect by <b>Removals<sup>2</sup></b>.<br>-Over 20 removals: Multiply the effect by <b>Removals*20.</b>",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20"],
@@ -2597,7 +2597,7 @@ var data = {
         "Final Decree":{
             "Usage": "Active (Head)",
             "Unlock": "Tactical Decree (Lv 2), Healing Decree (Lv 2)",
-            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself, then increase physical/elemental damage dealt and decrease physical/elemental damage taken by the party this turn.",
+            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself to empower the party for this turn, which increases physical/elemental damage dealt and decreases physical/elemental damage taken.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20", "35"],
@@ -2983,7 +2983,7 @@ var data = {
         "Singularity":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases damage dealt when you hit a weakness. (Additionally, attacks that hit a weakness will show a message and make a special sound effect)",
+            "Description": "Increase damage dealt when you hit a weakness. (Additionally, attacks that hit a weakness will show a message and make a special sound effect)",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["+6%", "+7%", "+9%", "+10%", "+12%", "+13%", "+15%", "+20%"],
@@ -2992,7 +2992,7 @@ var data = {
         "Etheric Charge":{
             "Usage": "Active (Head)",
             "Unlock": "Singularity (Lv 3)",
-            "Description": "Enter a charge state until the end of next turn, which increases damage dealt with Astrology skills but turns them into single-target attacks.",
+            "Description": "Enter a charge state until the end of next turn, which strongly increases damage dealt with Astrology skills but turns them into single-target attacks.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "15"],
@@ -3086,7 +3086,7 @@ var data = {
         "Etheric Boon":{
             "Usage": "Passive",
             "Unlock": "Etheric Charge (Lv 2)",
-            "Description": "Increases all damage dealt based on how much TP you spent last turn. This skill has a base damage bonus which is then multiplied by [SpentTP<sup>1.5</sup>/100] and rounded down. (Cheat Sheet: 15TP → x0.58; 25TP → x1.25; 35TP → x2.07; 45TP → x3.01)",
+            "Description": "Increases all damage dealt based on how much TP you spent last turn. This skill has a base damage bonus which is then multiplied by <b>SpentTP<sup>1.5</sup>/100</b> and rounded down. (Cheat Sheet: 15TP → x0.58; 25TP → x1.25; 35TP → x2.07; 45TP → x3.01)",
             "Max Level": "6",
             "Data": {
                 "Damage Dealt↑": ["+3%", "+4%", "+5%", "+6%", "+7%", "+10%"],
@@ -3104,7 +3104,7 @@ var data = {
         "Dark Ether":{
             "Usage": "Active (Head)",
             "Unlock": "Etheric Return (Lv 2)",
-            "Description": "Target one ally line, decrease their TP spent for this turn.",
+            "Description": "Empower one ally line for this turn, which decreases their TP spent.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20", "30"],
@@ -3129,7 +3129,7 @@ var data = {
         "Fire Prophecy":{
             "Usage": "Active (Head)",
             "Unlock": "Binary Fire (Lv 2)",
-            "Description": "Target one enemy, and nullify any Fire attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases all damage dealt.",
+            "Description": "Target one enemy and prepare to nullify any Fire attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases all damage dealt.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25"],
@@ -3140,7 +3140,7 @@ var data = {
         "Ice Prophecy":{
             "Usage": "Active (Head)",
             "Unlock": "Binary Ice (Lv 2)",
-            "Description": "Target one enemy, and nullify any Ice attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases all damage dealt.",
+            "Description": "Target one enemy and prepare to nullify any Ice attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases all damage dealt.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25"],
@@ -3151,7 +3151,7 @@ var data = {
         "Volt Prophecy":{
             "Usage": "Active (Head)",
             "Unlock": "Binary Volt (Lv 2)",
-            "Description": "Target one enemy, and nullify any Volt attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases all damage dealt.",
+            "Description": "Target one enemy and prepare to nullify any Volt attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases all damage dealt.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25"],
@@ -3285,7 +3285,7 @@ var data = {
         "Earth's Bounty":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "If you're alive at the end of a battle, increases EXP earned by the party.",
+            "Description": "If you're alive at the end of a battle, increase EXP earned by the party.",
             "Max Level": "10",
             "Data": {
                 "EXP↑": ["+9%", "+10%", "+12%", "+13%", "+15%", "+16%", "+18%", "+19%", "+21%", "+30%"],
@@ -3366,7 +3366,7 @@ var data = {
             "Data": {
                 "TP Cost": ["10", "14", "18", "22", "26", "30", "34", "50"],
                 "TP Gain": ["5", "7", "9", "11", "13", "15", "17", "25"],
-                "Activation Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+                "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
             }
         },
         "Fearless":{
@@ -3467,7 +3467,7 @@ var data = {
         },
         "Decoy Party":{
             "Usage": "Force Break (Head)",
-            "Description": "For this turn, each ally will block the first enemy action (attack or any infliction type) that targets them.",
+            "Description": "Empower all party members for this turn, which lets them block the first enemy action (attack or any infliction type) that targets them.",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -3498,7 +3498,7 @@ var data = {
         "Front Command":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Target one ally, and when they're first hit this turn, all front line allies will counterattack with their weapons.",
+            "Description": "Target one ally and prepare to command a counterattack when they're first hit this turn. If it activates, all party members in the front line will deal weapon-based damage to the attacker.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "8"],
@@ -3548,7 +3548,7 @@ var data = {
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "15"],
                 "Encounters↑": ["x2.5", "x3.25", "x4.0", "x4.75", "x5.5", "x10.0"],
-                "EXP↑": ["+20%", "+30%", "+40%", "+50%", "+60%", "+100%"],
+                "EXP Gain↑": ["+20%", "+30%", "+40%", "+50%", "+60%", "+100%"],
                 "Duration (Steps)": ["100", "100", "100", "100", "100", "100"],
             }
         },
@@ -3585,7 +3585,7 @@ var data = {
         "Endure Command":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Front Command (Lv 2)",
-            "Description": "When you're first hit this turn, all other allies will counterattack with their weapons.",
+            "Description": "Prepare to command a counterattack when you're first hit this turn. If it activates, all other allies will deal weapon-based damage to the attacker.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "10"],
@@ -3633,7 +3633,7 @@ var data = {
         "Bloody Lance":{
             "Usage": "Passive",
             "Unlock": "Twilight Hour (Lv 2)",
-            "Description": "Increases all damage dealt for each time you have killed a unit. (Max 9 stacks. Resets if you die)",
+            "Description": "Gain a bonus to all damage dealt each time you kill a unit. (Max 9 stacks. Resets if you die)",
             "Max Level": "6",
             "Data": {
                 "Damage Dealt↑": ["+6%", "+8%", "+10%", "+12%", "+14%", "+20%"],
@@ -3688,7 +3688,7 @@ var data = {
         "Shot Command":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Blitz Command (Lv 3)",
-            "Description": "Target one ally line, and when it's first hit this turn, all allies with a Bow or a Gun will counterattack with their weapons.",
+            "Description": "Target one ally line and prepare to command a counterattack when it's first hit this turn. If it activates, all party members with a Bow or a Gun will deal weapon-based damage to the attacker.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7", "12"],
@@ -3700,7 +3700,7 @@ var data = {
         "Warrior Might":{
             "Usage": "Active (Legs, STR)",
             "Unlock": "Shot Command (Lv 2)",
-            "Description": "Prepare to follow up all ally attacks this turn. Deals weapon-based damage, but costs HP for each hit.",
+            "Description": "Prepare to follow up all ally attacks this turn, dealing weapon-based damage to the same targets. Each activation will cost HP.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20"],
@@ -4021,7 +4021,7 @@ var data = {
         "Link Finale":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Link Mastery (Lv 2)",
-            "Description": "Sword/Rapier: Deal weapon-based damage to one enemy. Increase damage dealt by 30% for each time your Link was activated last turn.",
+            "Description": "Sword/Rapier: Deal weapon-based damage to one enemy. If you used a Link on the previous turn, increase damage dealt by 30% for each time it was activated.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "16"],
@@ -4107,7 +4107,7 @@ var data = {
         "Shadow Cloak":{
             "Usage": "Active (Legs)",
             "Unlock": "N/A",
-            "Description": "Enter the Shadow Cloak state for 3 turns, which gets consumed to nullify the next physical hit received.",
+            "Description": "Enter the Shadow Cloak state for 3 turns. If you take physical damage, the Cloak gets consumed to nullify it.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4"],
@@ -4226,7 +4226,7 @@ var data = {
         "Backstab":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Auto-Cloak (Lv 3)",
-            "Description": "Sword/Knife: Deal melee Cut damage to one enemy, with a chance to inflict Head Bind. If Shadow Cloak is active, deals double damage and becomes Almighty type.",
+            "Description": "Sword/Knife: Deal melee Cut damage to one enemy, with a chance to inflict Head Bind. If Shadow Cloak is active, damage dealt is doubled and becomes Almighty type.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "15"],
@@ -4250,7 +4250,7 @@ var data = {
         "Foul Mastery":{
             "Usage": "Passive",
             "Unlock": "Sneak Attack (Lv 2)",
-            "Description": "Increases all damage dealt for each time you have inflicted an ailment, up to a certain limit. (Resets upon dying)",
+            "Description": "Gain a bonus to all damage dealt each time you inflict an ailment, stacking up to a certain limit. (Resets upon dying)",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+4%", "+5%", "+6%", "+7%", "+8%", "+10%", "+11%", "+13%", "+14%", "+20%"],
@@ -4309,7 +4309,7 @@ var data = {
         "Assassinate":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Backstab (Lv 3)",
-            "Description": "Sword/Knife: Deal melee Cut damage to one enemy. If Shadow Cloak is active, has a chance to inflict Instant Death.",
+            "Description": "Sword/Knife: Deal melee Cut damage to one enemy. If Shadow Cloak is active, also attempts to inflict Instant Death.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "10", "10", "15", "15", "15", "15", "20"],
@@ -4331,7 +4331,7 @@ var data = {
         "Follow Trace":{
             "Usage": "Passive",
             "Unlock": "Blade Flurry (Lv 4)",
-            "Description": "When using an attack skill against an enemy with an ailment, there's a chance to perform the attack a second time.",
+            "Description": "When using an attack skill against an enemy with an ailment, there's a chance to perform it a second time.",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["6%", "8%", "10%", "12%", "14%", "17%", "20%", "23%", "26%", "35%"],
@@ -5107,7 +5107,7 @@ var data = {
         "Fault Blocker":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Place a buff on your line for 3 turns, which increases resistance against binds/ailments.",
+            "Description": "Place a buff on your line for 3 turns, which increases resistance to binds/ailment inflictions.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["8", "8", "8", "14"],
@@ -5139,7 +5139,7 @@ var data = {
         "Cross Counter":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
-            "Description": "Fist: Prepare to counterattack when your line is first hit by a physical attack this turn. Deals melee Bash damage, with a chance to bind the part that was used to attack. (For normal attacks, attempts to inflict Arm Bind)",
+            "Description": "Fist: Prepare to counterattack when your line is first hit by a physical attack this turn. If it activates, deal melee Bash damage to the attacker, with a chance to bind the part that was used to attack. (For normal attacks, attempts to inflict Arm Bind)",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "9"],
@@ -5402,7 +5402,7 @@ var data = {
         "Black Shroud":{
             "Usage": "Passive",
             "Unlock": "Endless Shroud (Lv 1)",
-            "Description": "While Miasma Armor is active, decreases physical/elemental damage taken.",
+            "Description": "While Miasma Armor is active, decrease physical/elemental damage taken.",
             "Max Level": "8",
             "Data": {
                 "Damage Taken↓": ["-10%", "-11%", "-13%", "-14%", "-16%", "-17%", "-19%", "-25%"],
@@ -5462,7 +5462,7 @@ var data = {
         "Ephemeral Reap":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Scythe: Deal multiple hits of melee Cut damage to one enemy. Hits once per debuff on the target. Cannot miss.",
+            "Description": "Scythe: Deal multiple hits of melee Cut damage (cannot miss) to one enemy. Hits once per debuff on the target.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["16", "16", "16", "16", "22", "22", "22", "22", "22", "30"],

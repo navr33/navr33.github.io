@@ -77,7 +77,7 @@ var data = {
     "Fire Arms":{
         "Usage": "Active (Head)",
         "Unlock": "Attack Order (Lv 1)",
-        "Description": "Place a buff on one ally for 3 turns, which increases resistance to Fire and imbues their weapon with Fire damage.",
+        "Description": "Place a buff on one ally for 3 turns, which increases Fire resistance and imbues their weapon with Fire damage.",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["6", "7", "8", "9", "10"],
@@ -88,7 +88,7 @@ var data = {
     "Freeze Arms":{
         "Usage": "Active (Head)",
         "Unlock": "Attack Order (Lv 1)",
-        "Description": "Place a buff on one ally for 3 turns, which increases resistance to Ice and imbues their weapon with Ice damage.",
+        "Description": "Place a buff on one ally for 3 turns, which increases Ice resistance and imbues their weapon with Ice damage.",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["6", "7", "8", "9", "10"],
@@ -99,7 +99,7 @@ var data = {
     "Shock Arms":{
         "Usage": "Active (Head)",
         "Unlock": "Attack Order (Lv 1)",
-        "Description": "Place a buff on one ally for 3 turns, which increases resistance to Volt and imbues their weapon with Volt damage.",
+        "Description": "Place a buff on one ally for 3 turns, which increases Volt resistance and imbues their weapon with Volt damage.",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["6", "7", "8", "9", "10"],
@@ -110,7 +110,7 @@ var data = {
     "Regal Radiance":{
         "Usage": "Active (Head, STR)",
         "Unlock": "Attack Order (Lv 3)",
-        "Description": "Dispel an elemental imbue (Arms buff or Oil item) on one ally. If successful, deal ranged damage of that element to all enemies. This attack cannot miss.",
+        "Description": "Dispel an elemental imbue (Arms skill or Oil item) on one ally. If this removed a modifier, the target will deal ranged damage of that element (cannot miss) to all enemies.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["12", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
@@ -121,7 +121,7 @@ var data = {
     "Ad Nihilo":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Guard Order (Lv 5), Attack Order (Lv 5)",
-        "Description": "Dispel all buffs on one enemy. Deal Almighty damage to the target if at least one modifier was removed. Cannot miss.",
+        "Description": "Dispel all buffs on one enemy. If this removed at least one modifier, deal Almighty damage (cannot miss) to the target.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -161,7 +161,7 @@ var data = {
     "Nobility Proof":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "When a buff on you wears off or is dispelled, recover TP.",
+        "Description": "When a buff on yourself wears off or is dispelled, recover TP.",
         "Starter": "1",
         "Max Level": "10",
         "Data":{
@@ -171,7 +171,7 @@ var data = {
     "Negotiation":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Nobility Proof (Lv 1)",
-        "Description": "Dispel all buffs on one ally. Restore HP to the target if at least one modifier was removed.",
+        "Description": "Dispel all buffs on one ally. If at least one modifier was removed, restore HP to the target.",
         "Max Level": "10",
         "Data":{
             "TP Cost": ["4", "4", "5", "5", "6", "6", "7", "7", "8", "8"],
@@ -193,7 +193,7 @@ var data = {
     "Knighthood":{
         "Usage": "Active (Head)",
         "Unlock": "Nobility Proof (Lv 5)",
-        "Description": "Make target ally act at the start of this turn.",
+        "Description": "Empower one ally to make it act at the start of this turn.",
         "Max Level": "5",
         "Data":{
             "TP Cost": ["12", "10", "8", "6", "4"],
@@ -432,7 +432,7 @@ var data = {
     "Shield Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "If a Shield is equipped, decreases physical damage taken. (Automatically unlocks other skills that require this one)",
+        "Description": "If you have a Shield equipped, decrease physical damage taken. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -623,7 +623,7 @@ var data = {
         "Data": {
             "TP Cost": ["6", "7", "8", "9", "10"],
             "Encounter Rate↓": ["x0.6", "x0.55", "x0.5", "x0.4", "x0.3"],
-            "Duration": ["30", "40", "50", "60", "80"],
+            "Duration (Steps)": ["30", "40", "50", "60", "80"],
         }
     },
 },
@@ -631,7 +631,7 @@ var data = {
     "Trickster":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Recover TP each time you use an attack skill.",
+        "Description": "Recover TP each time you use a direct attack skill.",
         "Max Level": "10",
         "Data": {
             "TP Gain": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
@@ -849,7 +849,7 @@ var data = {
         "Data": {
             "TP Cost": ["3", "3", "3", "3", "3"],
             "Encounter Rate↑": ["x2.0", "x2.2", "x2.4", "x2.7", "x3.0"],
-            "Duration": ["30", "35", "40", "45", "50"],
+            "Duration (Steps)": ["30", "35", "40", "45", "50"],
         }
     },
 },
@@ -996,7 +996,7 @@ var data = {
     "Ninpo: Caltrops":{
         "Usage": "Active (Head, LUC)",
         "Unlock": "Ninpo:Daggers (Lv 3)",
-        "Description": "Prepare to counter attack each time target ally row is hit this turn. Counters deal fixed melee Cut damage (cannot miss), with a chance to inflict Poison.",
+        "Description": "Target an ally row and prepare to counterattack each time it's hit this turn. On each activation, deal fixed melee Cut damage (cannot miss) to the attacker, with a chance to inflict Poison.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["4", "4", "5", "5", "6", "6", "7", "7", "8", "8"],
@@ -1027,7 +1027,7 @@ var data = {
     "Ninpo: Flight":{
         "Usage": "Active (Legs)",
         "Unlock": "Concealment (Lv 1)",
-        "Description": "For this turn, gain a chance to nullify physical attacks received.",
+        "Description": "Until the end of the turn, gain a high chance to nullify physical attacks received.",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["3", "4", "5", "6", "7"],
@@ -1204,7 +1204,7 @@ var data = {
     "Counter":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Fist Mastery (Lv 8)",
-        "Description": "Fist: Prepare to counter attack when you receive physical damage this turn. Counters deal melee Bash damage to the attacker.",
+        "Description": "Fist: Prepare to counterattack each time you take physical damage this turn. On each activation, deal melee Bash damage to the attacker.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["5", "5", "6", "6", "7", "7", "8", "8", "9", "9"],
@@ -1216,7 +1216,7 @@ var data = {
     "Retaliate":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Fist Mastery (Lv 8)",
-        "Description": "Fist: Prepare to counter attack when you receive elemental damage this turn. Counters deal melee Bash damage to the attacker.",
+        "Description": "Fist: Prepare to counterattack each time you take elemental damage this turn. On each activation, deal melee Bash damage to the attacker.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["5", "5", "6", "6", "7", "7", "8", "8", "9", "9"],
@@ -1275,7 +1275,7 @@ var data = {
         "Data": {
             "TP Cost": ["4", "5", "6", "7", "8"],
             "Damage Taken↓": ["-20%", "-40%", "-60%", "-70%", "-90%"],
-            "Duration": ["30", "40", "50", "60", "80"],
+            "Duration (Steps)": ["30", "40", "50", "60", "80"],
         }
     },
 },
@@ -1326,7 +1326,7 @@ var data = {
     "Fire Prophecy":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Fire Star (Lv 5), Binary Fire (Lv 5)",
-        "Description": "Target one enemy for this turn, and nullify any Fire attack they might use. If this activates, perform a counter attack that deals ranged Fire damage (cannot miss) to the target.",
+        "Description": "Target one enemy and prepare to nullify any Fire attack they might use this turn. If this activates, perform a counterattack that deals ranged Fire damage (cannot miss) to the target.",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["15", "16", "17", "18", "19"],
@@ -1371,7 +1371,7 @@ var data = {
     "Ice Prophecy":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Ice Star (Lv 5), Binary Ice (Lv 5)",
-        "Description": "Target one enemy for this turn, and nullify any Ice attack they might use. If this activates, perform a counter attack that deals ranged Ice damage (cannot miss) to the target.",
+        "Description": "Target one enemy and prepare to nullify any Ice attack they might use this turn. If this activates, perform a counterattack that deals ranged Ice damage (cannot miss) to the target.",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["15", "16", "17", "18", "19"],
@@ -1416,7 +1416,7 @@ var data = {
     "Volt Prophecy":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Volt Star (Lv 5), Binary Volt (Lv 5)",
-        "Description": "Target one enemy for this turn, and nullify any Volt attack they might use. If this activates, perform a counter attack that deals ranged Volt damage (cannot miss) to the target.",
+        "Description": "Target one enemy and prepare to nullify any Volt attack they might use this turn. If this activates, perform a counterattack that deals ranged Volt damage (cannot miss) to the target.",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["15", "16", "17", "18", "19"],
@@ -1427,7 +1427,7 @@ var data = {
     "Dark Ether":{
         "Usage": "Active (Head)",
         "Unlock": "N/A",
-        "Description": "Target one ally row, and for this turn their skills won't spend TP.",
+        "Description": "Empower an ally row for this turn, which makes their skills not spend TP.",
         "Starter": "1",
         "Max Level": "5",
         "Data": {
@@ -1485,7 +1485,7 @@ var data = {
         "Data": {
             "TP Cost": ["6", "6", "7", "7", "8"],
             "Radius (Tiles)": ["1", "3", "5", "7", "10"],
-            "Duration": ["30", "40", "50", "70", "100"],
+            "Duration (Steps)": ["30", "40", "50", "70", "100"],
         }
     },
 },
@@ -1504,7 +1504,7 @@ var data = {
     "Wild Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases infliction chances of your summoned Beasts. This bonus is directly added after applying resistances. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases infliction chances of your summoned Beasts. This is a flat bonus added after applying resistances. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1861,7 +1861,7 @@ var data = {
     "Armor Piercer":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Bolt Mastery (Lv 7)",
-        "Description": "Crossbow: Deal ranged Stab damage to one enemy. Ignores all buffs on the target.",
+        "Description": "Crossbow: Deal ranged Stab damage to one enemy. Ignores buffs on the target.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["11", "11", "12", "12", "13", "13", "14", "14", "15", "15"],
@@ -1950,7 +1950,7 @@ var data = {
         "Data": {
             "TP Cost": ["6", "7", "8", "9", "10"],
             "Ambush↑": ["+25%", "+30%", "+35%", "+40%", "+50%"],
-            "Duration": ["40", "45", "50", "55", "60"],
+            "Duration (Steps)": ["40", "45", "50", "55", "60"],
         }
     },
 },
@@ -1958,7 +1958,7 @@ var data = {
     "Earth's Bounty":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "If you're alive at the end of a battle, increase the EXP gained by the party.",
+        "Description": "If you're alive at the end of a battle, increase EXP gained by the party.",
         "Max Level": "10",
         "Data": {
             "EXP Gain↑": ["+10%", "+12%", "+14%", "+16%", "+18%", "+20%", "+22%", "+25%", "+27%", "+30%"],
@@ -2105,7 +2105,7 @@ var data = {
         "Max Level": "10",
         "Data": {
             "TP Cost": ["6", "6", "7", "7", "8", "8", "9", "9", "10", "10"],
-            "Duration": ["5", "10", "15", "20", "25", "30", "35", "40", "50", "60"],
+            "Duration (Steps)": ["5", "10", "15", "20", "25", "30", "35", "40", "50", "60"],
         }
     },
     "To Market":{
@@ -2124,7 +2124,7 @@ var data = {
         "Max Level": "10",
         "Data": {
             "TP Cost": ["10", "10", "11", "11", "12", "12", "13", "13", "14", "14"],
-            "Duration": ["10", "15", "20", "25", "30", "35", "40", "50", "60", "70"],
+            "Duration (Steps)": ["10", "15", "20", "25", "30", "35", "40", "50", "60", "70"],
         }
     },
     "Safe Stroll":{
@@ -2134,7 +2134,7 @@ var data = {
         "Max Level": "5",
         "Data": {
             "TP Cost": ["12", "12", "13", "13", "14"],
-            "Duration": ["15", "20", "25", "30", "40"],
+            "Duration (Steps)": ["15", "20", "25", "30", "40"],
         }
     },
     "Horseplay":{
@@ -2152,7 +2152,7 @@ var data = {
     "Second Sword":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Allows you to equip a second weapon (occupies an armor slot), and normal attacks will hit twice if you do. The second attack has reduced power.",
+        "Description": "Allows you to equip a second weapon (occupies an armor slot), and normal attacks will hit twice if you do. The second hit has reduced power.",
         "Max Level": "10",
         "Data": {
             "Attack Power\n(Second Hit)": ["20%", "23%", "26%", "29%", "32%", "35%", "38%", "41%", "45%", "50%"],
@@ -2259,7 +2259,7 @@ var data = {
     "Ambush Stance":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Fore Honor (Lv 3), Rear Dignity (Lv 3)",
-        "Description": "Command an ally row to prepare to counter attack against attacks received this turn. Counters deal weapon-based damage to the attacker.",
+        "Description": "Command an ally row to prepare to counterattack against attacks received this turn, dealing weapon-based damage to the attacker.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["10", "10", "11", "12", "13", "14", "15", "16", "17", "18"],
@@ -2295,7 +2295,7 @@ var data = {
     "Endure":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Chance to survive lethal damage with 1 HP (max once per battle).",
+        "Description": "Chance to survive lethal damage with 1 HP. (Only once per battle)",
         "Starter": "1",
         "Max Level": "5",
         "Data": {
@@ -2387,6 +2387,7 @@ var data = {
         "Max Level": "5",
         "Data": {
             "TP Gain": ["5", "4", "3", "2", "1"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6"],
         }
     },
     "Rocket Punch":{
@@ -2430,6 +2431,7 @@ var data = {
         "Max Level": "5",
         "Data": {
             "TP Gain": ["5", "4", "3", "2", "1"],
+            "Action Speed": ["-6", "-6", "-6", "-6", "-6"],
         }
     },
     "Overheat":{
@@ -2446,7 +2448,7 @@ var data = {
     "EM Barrier":{
         "Usage": "Passive (TEC, LUC)",
         "Unlock": "Overheat (Lv 3)",
-        "Description": "Chance to automatically counter attack when hit. Deals ranged Volt damage with a chance to inflict Paralysis to the attacker.",
+        "Description": "Chance to counterattack when hit. On each activation, deal ranged Volt damage to the attacker, with a chance to inflict Paralysis.",
         "Max Level": "10",
         "Data": {
             "Activation Chance": ["30%", "32%", "34%", "36%", "38%", "40%", "42%", "44%", "47%", "50%"],
@@ -2974,10 +2976,10 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Sovereign":    "Commanders that use buffs to empower and heal the party.",
+    "Sovereign":    "Commanders that use buffs to empower and heal allies.",
     "Gladiator":    "Aggressive warriors focused on strong physical offense.",
     "Hoplite":      "Sturdy knights that weaken and deflect enemy attacks.",
-    "Buccaneer":    "Agile fighters that strike rapidly in tandem with their allies.",
+    "Buccaneer":    "Agile fighters that strike rapidly in tandem with allies.",
     "Ninja":        "Stealthy assassins proficient in evasion and ailments.",
     "Monk":         "Martial artists trained in healing and combat techniques.",
     "Zodiac":       "Elemental casters that exploit the enemy's weakness.",

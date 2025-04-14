@@ -156,7 +156,7 @@ var data = {
         "Lure":{
             "Usage": "Active (Legs)",
             "Unlock": "Phantom Swords (Lv 2)",
-            "Description": "Prepare to command a counterattack each time you evade a hit this turn. Other allies in your line will deal weapon-based damage to the attacker.",
+            "Description": "Prepare to command a counterattack each time you evade a hit this turn. On each activation, other allies in your line will deal weapon-based damage to the attacker.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "10", "10", "10", "10", "10", "12"],
@@ -887,7 +887,7 @@ var data = {
         "Cross Counter":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Overexertion (Lv 5)",
-            "Description": "Cestus: Prepare to counterattack when your line is first hit by a physical attack this turn. Deals melee Bash damage, with a chance to bind the part that was used to attack.",
+            "Description": "Cestus: Prepare to counterattack when your line is first hit by a physical attack this turn. When activated, deal melee Bash damage to the attacker, with a chance to bind the part that was used to attack.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
@@ -980,7 +980,7 @@ var data = {
         "Abyssal Killer":{
             "Usage": "Active (Head)",
             "Unlock": "Vajra Stance (Lv 5), Soul Crusher (Lv 5)",
-            "Description": "For this turn, you can survive one instance of lethal damage with 1 HP. If this activates, enter a charge state until the end of next turn, which increases all damage dealt based on how much excess damage you endured: The base damage increase is multiplied by [(ExcessDamage/MaxHP)<sup>1/2</sup>].",
+            "Description": "For this turn, you can survive one instance of lethal damage with 1 HP. If this activates, enter a charge state until the end of next turn, which increases all damage dealt based on how much excess damage you endured: The base damage bonus is multiplied by <b>(ExcessDamage/MaxHP)<sup>1/2</sup></b>.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "18", "18", "18", "18", "18", "24"],
@@ -1003,7 +1003,7 @@ var data = {
         "Death's Edge":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Overexertion (Lv 3)",
-            "Description": "Cestus: Deal melee Bash damage to one enemy. Stronger the less HP the party has:<br>-Party's average missing HP grants a damage multiplier of [1 + MissingHP/100].<br>-Party's average missing HP% grants a damage multiplier of [MissingHP%*(1+MissingHP%)/2 + 0.01].",
+            "Description": "Cestus: Deal melee Bash damage to one enemy. Becomes stronger the less HP the party has:<br>-The average of the party's flat missing HP grants a damage multiplier of <b>1 + FlatHP/100</b>.<br>-The average of the party's fraction of missing HP grants a damage multiplier of <b>FracHP*(1+FracHP)/2 + 0.01</b>.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "14"],
@@ -1015,7 +1015,7 @@ var data = {
         "Heavenly Aid":{
             "Usage": "Active (Head)",
             "Unlock": "Titan Killer (Lv 3), Death's Edge (Lv 3)",
-            "Description": "Enter a charge state until the end of next turn, which increases damage dealt based on how much HP is healed to you this turn: The base damage increase is multiplied by [(GainedHP/MaxHP)<sup>3/4</sup>].",
+            "Description": "Enter a charge state until the end of next turn, which increases damage dealt based on how much HP is healed to you this turn: The base damage bonus is multiplied by <b>(GainedHP/MaxHP)<sup>3/4</sup></b>.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "9", "9", "9", "9", "9", "20"],
@@ -1470,7 +1470,7 @@ var data = {
         "Focus Chant":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "(Chant) Enter a charge state until the end of next turn, which increases damage dealt with Magi skills but they become single-target attacks.",
+            "Description": "(Chant) Enter a charge state until the end of next turn, which increases damage dealt with Magi skills but turns them into single-target attacks.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "15"],
@@ -1562,7 +1562,7 @@ var data = {
         "Altar":{
             "Usage": "Active (Head, INT, LUC)",
             "Unlock": "Windstorm (Lv 5), Earthspike (Lv 5), Rockfall (Lv 5)",
-            "Description": "Prepare an attack that will hit in 3 more turns, at the start of the turn. Deals ranged Bash damage to one enemy, with a chance to inflict Petrify. Damage dealt increases for each time the target's weakness is hit while preparing, up to 20 stacks. (Not a Magi skill despite the in-game description. Cancelled if you become incapable of acting while preparing)",
+            "Description": "Prepare an attack that will hit in 3 more turns, at the start of the turn. When activated, deal ranged Bash damage to one enemy, with a chance to inflict Petrify. Damage dealt increases for each time the target's weakness was hit while preparing, up to 20 stacks. (Not a Magi skill despite the in-game description)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "30", "30", "30", "30", "30", "40"],
@@ -1946,7 +1946,7 @@ var data = {
         "Tombstone Vice":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "Curse Bomb (Lv 3), Ice Bomb (Lv 3)",
-            "Description": "Sacrifice all Wraiths to attempt to inflict Petrify on one enemy. Infliction rate increases for each Wraith sacrificed.",
+            "Description": "Sacrifice all Wraiths to attempt to inflict Petrify on one enemy. Infliction rate increases for each Wraith that was sacrificed.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "12"],
@@ -1988,7 +1988,7 @@ var data = {
         "Fair Trade":{
             "Usage": "Active (Head)",
             "Unlock": "Fierce Shield (Lv 3)",
-            "Description": "Sacrifice one Wraith to deal damage to one enemy. Damage is equal to a percentage of that Wraith's remaining HP.",
+            "Description": "Sacrifice one Wraith to deal damage to one enemy. Damage dealt is equal to a percentage of that Wraith's remaining HP.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2", "5", "5", "5", "5", "5", "9"],
@@ -2262,7 +2262,7 @@ var data = {
         "Sky Dive":{
             "Usage": "Active (Head)",
             "Unlock": "Aerial Talons (Lv 5), Ice Peck (Lv 5)",
-            "Description": "Hawk: Command the Hawk to leave the battle, then return to attack in 3 more turns, at the start of the turn. Deals ranged Cut damage to one enemy, with a chance to inflict Head Bind. (If the battle ends or the user dies while preparing, the Hawk does not return)",
+            "Description": "Hawk: Command the Hawk to leave the battle, then return to attack in 3 more turns, at the start of the turn. When it returns, the Hawk will deal ranged Cut damage to one enemy, with a chance to inflict Head Bind. (If the battle ends or the user dies while preparing, the Hawk does not return)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["16", "16", "16", "16", "23", "23", "23", "23", "23", "32"],
@@ -2307,7 +2307,7 @@ var data = {
         "Million Arrows":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Power Shot (Lv 5)",
-            "Description": "Bow: Prepare an attack that will hit on the next turn, at the start of the turn. Deals multiple hits of ranged Stab damage to random enemies (max 4 hits each).",
+            "Description": "Bow: Prepare an attack that will hit on the next turn, at the start of the turn. When it activates, deal multiple hits of ranged Stab damage to random enemies (max 4 hits each).",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["13", "13", "13", "13", "19", "19", "19", "19", "19", "27"],
@@ -2892,7 +2892,7 @@ var data = {
         "Dance Oracle":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Blaze/Hail/Bolt Prayer (Lv 3)",
-            "Description": "Only usable if you're under Blaze/Hail/Bolt Prayer. Dispel an elemental Prayer on yourself to deal ranged damage of the corresponding element to all enemies. Targets take more damage of that element until the end of turn.",
+            "Description": "Blaze/Hail/Bolt Prayer: Dispel an elemental Prayer on yourself to deal ranged damage of the corresponding element to all enemies. Targets take more damage of that element until the end of turn.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "18", "18", "18", "18", "18", "26"],
@@ -2945,7 +2945,7 @@ var data = {
         "Purification":{
             "Usage": "Active (Head)",
             "Unlock": "Soul Grace (Lv 5), Offering (Lv 5)",
-            "Description": "Dispel all ally buffs, ally debuffs, enemy buffs and enemy debuffs. Recover TP for each modifier type that was dispelled.",
+            "Description": "Dispel all ally buffs, ally debuffs, enemy buffs and enemy debuffs. Recover TP for each modifier type that had at least one removal.",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["40", "40", "40", "40", "40"],
@@ -2974,7 +2974,7 @@ var data = {
         "Mana Oracle":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Dance Oracle (Lv 3)",
-            "Description": "Only usable if you're under Blaze/Hail/Bolt Prayer. Dispel an elemental Prayer on the whole party (only you need to have it) to deal 5 ranged hits of the corresponding element to random enemies.",
+            "Description": "Blaze/Hail/Bolt Prayer: Dispel an elemental Prayer on the whole party. If this removed a buff on yourself, deal 5 ranged hits of the corresponding element to random enemies.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "24"],
@@ -2986,7 +2986,7 @@ var data = {
         "Aureole Oracle":{
             "Usage": "Active (Head)",
             "Unlock": "Dance Oracle (Lv 3)",
-            "Description": "Only usable if you're under Blaze/Hail/Bolt Prayer. Dispel an elemental Prayer on the whole party (only you need to have it) to make them absorb attacks of the corresponding element for this turn.",
+            "Description": "Blaze/Hail/Bolt Prayer: Dispel an elemental Prayer on the whole party. If this removed a buff on yourself, make the party absorb attacks of the corresponding element for this turn.",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "20"],
@@ -3009,7 +3009,7 @@ var data = {
         "Appease Spirits":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "If you're alive, allies with buffs recover HP when they act.",
+            "Description": "While you're alive, allies with buffs recover HP when they act.",
             "Max Level": "10",
             "Data": {
                 "Healing Power": ["5%", "6%", "7%", "8%", "12%", "14%", "16%", "18%", "20%", "25%"],
@@ -3063,7 +3063,7 @@ var data = {
         "Sanctuary":{
             "Usage": "Active (Head)",
             "Unlock": "Exorcism/Haste/Vitality Prayer (Lv 5)",
-            "Description": "For this turn, allies with buffs have a chance to nullify bind/ailment inflictions received in exchange for losing a buff.",
+            "Description": "Empower allies with buffs for this turn, which gives them a chance to nullify bind/ailment inflictions received in exchange for losing a buff.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
@@ -3083,7 +3083,7 @@ var data = {
         "Split Spirits":{
             "Usage": "Active (Head)",
             "Unlock": "Dance Oracle (Lv 3)",
-            "Description": "For this turn, allies with buffs recover HP based on their damage dealt.",
+            "Description": "Empower allies with buffs for this turn, which makes them recover HP based on their damage dealt.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10"],
@@ -3093,7 +3093,7 @@ var data = {
         "Benevolence":{
             "Usage": "Passive",
             "Unlock": "Holy Flame (Lv 2), Split Spirits (Lv 2)",
-            "Description": "If you're alive, allies with buffs recover HP upon taking damage (once per turn per ally).",
+            "Description": "While you're alive, allies with buffs recover HP upon taking damage (once per turn per ally).",
             "Max Level": "10",
             "Data": {
                 "HP Gain": ["10+2%", "12+2%", "14+2%", "16+2%", "16+4%", "18+4%", "20+4%", "22+4%", "24+4%", "25+6%"],
@@ -3440,13 +3440,10 @@ var data = {
         "Auto-Smoke":{
             "Usage": "Passive",
             "Unlock": "Smokestone (Lv 3), Smokeflash (Lv 3)",
-            "Description": "Chance to automatically use a random Smoke skill on the enemy front line at the start of battle. Chance depends on the amount of Smoke skills you have unlocked.",
+            "Description": "Chance to automatically use a random Smoke skill (Toxic, Dark, Numbing or Chaos) on the enemy front line at the start of battle. Chance is multiplied by the amount of Smoke skills you have unlocked.",
             "Max Level": "10",
             "Data": {
-                "Chance (1 Skill)": ["7%", "8%", "9%", "10%", "15%", "16%", "17%", "18%", "19%", "25%"],
-                "Chance (2 Skills)": ["14%", "16%", "18%", "20%", "30%", "32%", "34%", "36%", "38%", "50%"],
-                "Chance (3 Skills)": ["24%", "26%", "28%", "30%", "45%", "48%", "51%", "54%", "57%", "75%"],
-                "Chance (4 Skills)": ["30%", "33%", "36%", "39%", "59%", "63%", "67%", "71%", "75%", "100%"],
+                "Activation Chance": ["7%", "8%", "9%", "10%", "15%", "16%", "17%", "18%", "19%", "25%"],
             }
         },
     },
@@ -5131,7 +5128,7 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Fencer":   ["Swordfighters who use swiftness to overpower enemies.",
+    "Fencer":   ["Swift swordfighters who react to the actions of others.",
                     "<b>Phantom Duelist</b>: Draws in, evades and counters enemy attacks.",
                     "<b>Chain Duelist</b>: Strikes repeatedly in tandem with ally attacks."],
     "Dragoon":  ["Sturdy knights skilled in both protection and artillery.",
@@ -5157,7 +5154,7 @@ var descriptions = {
                     "<b>Blade Master</b>: Versatile duelists that combine power and utility."],
     "Shaman":   ["Support casters who manage buffs to strengthen the party.",
                     "<b>Divine Punisher</b>: Converts their own buffs into direct power or energy.",
-                    "<b>Divine Herald</b>: Reinforces allies while keeping them in good health."],
+                    "<b>Divine Herald</b>: Grants buffs and blessing to keep allies in good health."],
     "Botanist": ["Healers that make concoctions to take care of afflictions.",
                     "<b>Merciful Healer</b>: Uses medicinal herbs to treat all kinds of injuries.",
                     "<b>Graced Poisoner</b>: Uses poisonous herbs to inflict debuffs and ailments."],

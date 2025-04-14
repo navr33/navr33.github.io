@@ -633,7 +633,7 @@ var data = {
         "Vengeance Bash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Holy Smite (Lv 2)",
-            "Description": "Mace: Prepare an attack that will hit in 3 more turns, at the end of turn. Deals melee Bash damage to one enemy. Damage dealt increases by 40% for each time you take damage while preparing (max +400%).",
+            "Description": "Mace: Prepare an attack that will hit in 3 more turns, at the end of turn, dealing melee Bash damage to one enemy. Damage dealt increases by 40% each time you take damage while preparing (capped at +400%).",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["14", "14", "14", "16", "16", "16", "16", "18"],
@@ -2904,7 +2904,7 @@ var descriptions = {
     "Dancer":       "Performers who use buffs to strengthen, heal and attack.",
     "Arcanist":     "Support casters that use magic circles to restrain enemies.",
     "Bushi":        "Fierce attackers that enter a bloody rage to gain power.",
-    "Imperial":     "Heavy knights that use devastating but exhausting attacks.",
+    "Imperial":     "Knights with blades that make destructive energy attacks.",
 
     "Burst Skills":"Powerful skills available through the Burst system.",
     "Battle Items":"Consumable items meant to aid you in battle.",

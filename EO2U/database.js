@@ -431,7 +431,7 @@ var data = {
     "Sagittarius Shot":{
         "Usage": "Active (Arms, AGI, LUC)",
         "Unlock": "Drop Shot (Lv 5)",
-        "Description": "Bow: Prepare an attack that will hit in 2 more turns, at the start of the turn. Deals ranged Stab damage to one enemy, with a chance to inflict Stun.",
+        "Description": "Bow: Prepare an attack that will hit in 2 more turns, at the start of the turn. When it activates, deal ranged Stab damage to one enemy, with a chance to inflict Stun.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -468,7 +468,7 @@ var data = {
     "Hazy Arrow":{
         "Usage": "Active (Arms, AGI)",
         "Unlock": "Multi-Shot (Lv 2), Chain Dance (Lv 4)",
-        "Description": "Bow: Deal ranged Stab damage to one enemy. Cannot miss. Only usable if you dodged an attack on the previous turn.",
+        "Description": "Bow: Deal ranged Stab damage (cannot miss) to one enemy. Only usable if you dodged an attack on the previous turn.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -520,7 +520,7 @@ var data = {
     "Scapegoat":{
         "Usage": "Active (Legs)",
         "Unlock": "Speed Up (Lv 7)",
-        "Description": "Select one ally to protect the rest of the party for this turn, which makes the target take attacks in place of their allies a certain amount of times. Target takes decreased damage from those redirected attacks.",
+        "Description": "Select one ally to protect the rest of the party for this turn, which makes the target take attacks in place of their allies a certain amount of times. The target takes decreased damage from those redirected attacks.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -532,7 +532,7 @@ var data = {
     "Swap Step":{
         "Usage": "Active (Legs)",
         "Unlock": "Speed Up (Lv 10)",
-        "Description": "Chance to make target ally act at the start of this turn.",
+        "Description": "Chance to empower one ally, making it act at the start of this turn.",
         "Max Level": "10",
         "Natural Level": "5",
         "Data": {
@@ -907,7 +907,7 @@ var data = {
     "Armor of Light":{
         "Usage": "Active (Head)",
         "Unlock": "Elem DEF Up (Lv 10)",
-        "Description": "Place a buff on yourself for several turns, which has a chance to nullify bind/ailment/debuff inflictions received.",
+        "Description": "Place a buff on yourself for several turns, which grants a chance to nullify bind/ailment/debuff inflictions received.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2005,7 +2005,7 @@ var data = {
     "Energy Ensemble":{
         "Usage": "Active (Head)",
         "Unlock": "Warrior/Shelter Song (Lv 3)",
-        "Description": "(Song) For this turn, allies with Song buffs will recover TP upon spending TP. Healing is based on the TP spent.",
+        "Description": "(Song) Empower allies with Song buffs for this turn, which makes them recover TP when spending TP. Healing is based on the TP spent.",
         "Max Level": "10",
         "Natural Level": "5",
         "Data": {
@@ -2042,7 +2042,7 @@ var data = {
     "Skanda Ensemble":{
         "Usage": "Active (Head)",
         "Unlock": "Lightfoot/Insight Melody (Lv 3)",
-        "Description": "(Song) For this turn, allies with Song buffs have increased action speed.",
+        "Description": "(Song) Empower allies with Song buffs for this turn, which increases their action speed.",
         "Max Level": "10",
         "Natural Level": "5",
         "Data": {
@@ -2147,7 +2147,7 @@ var data = {
     "Life Ensemble":{
         "Usage": "Active (Head, TEC+VIT)",
         "Unlock": "Barbaric March (Lv 3)",
-        "Description": "(Song) For this turn, allies with Song buffs will recover HP upon taking damage (max once per turn per ally).",
+        "Description": "(Song) Empower allies with Song buffs for this turn, which makes them recover HP upon taking damage (once per ally).",
         "Max Level": "10",
         "Natural Level": "5",
         "Data": {
@@ -2831,7 +2831,7 @@ var data = {
     "Sacrifice":{
         "Usage": "Active (Head, TEC, LUC)",
         "Unlock": "HP Up (Lv 5)",
-        "Description": "Kill one ally to deal ranged Almighty damage to all enemies, with a chance to inflict any bind/ailment the ally had. Becomes stronger the more HP the sacrificed ally had: Damage dealt is multiplied by [1+√(CurrentHP/1000)].",
+        "Description": "Kill one ally to deal ranged Almighty damage to all enemies, with a chance to inflict any bind/ailment the ally had. Stronger the more HP the sacrificed ally had: Damage dealt is multiplied by <b>1+√(FlatHP/1000)</b>.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2857,7 +2857,7 @@ var data = {
     "Life Trade":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "HP Up (Lv 10)",
-        "Description": "Deal ranged Almighty damage to all enemies. Restore HP to the party equal to 25% of damage dealt. Stronger the less HP the party has:<br>-Party's average missing HP grants a damage multiplier of [1 + MissingHP/2000].<br>-Party's average missing HP% grants a damage multiplier of [MissingHP%*(1+MissingHP%)/2 + 0.01].",
+        "Description": "Deal ranged Almighty damage to all enemies. Restore HP to the party equal to 25% of damage dealt. Stronger the less HP the party has:<br>-The average of the party's flat missing HP grants a damage multiplier of <b>1 + FlatHP/2000</b>.<br>-The average of the party's fraction of missing HP grants a damage multiplier of <b>FracHP*(1+FracHP)/2 + 0.01</b>.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2880,7 +2880,7 @@ var data = {
     "Chained Benefit":{
         "Usage": "Active (No Parts)",
         "Unlock": "Curb ATK Up (Lv 10)",
-        "Description": "Inflict Arm Bind and Leg Bind to yourself to enter a charge state until the end of next turn, which increases bind/ailment infliction rate.",
+        "Description": "Inflict Arm Bind and Leg Bind to yourself to enter a charge state until the end of next turn, which increases bind/ailment infliction rates.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3729,7 +3729,7 @@ var data = {
     "Wolf Fang":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Tiger Blow (Lv 5)",
-        "Description": "Claw: Deal 3 hits of melee Cut damage to one enemy. Deals more damage the more remaining HP you have:<br>-Your current HP grants a damage multiplier of [1 + CurrentHP/5000].<br>-Your current HP% grants a damage multiplier of [CurrentHP%*(1+CurrentHP%)/2 + 0.01].",
+        "Description": "Claw: Deal 3 hits of melee Cut damage to one enemy. Stronger the more remaining HP you have:<br>-Your flat current HP grants a damage multiplier of <b>1 + FlatHP/5000</b>.<br>-Your fraction of current HP grants a damage multiplier of <b>FracHP*(1+FracHP)/2 + 0.01</b>.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3755,7 +3755,7 @@ var data = {
     "Wildblow":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Comet Drop (Lv 5)",
-        "Description": "Claw: Deal melee Bash damage to one enemy. Deals more damage the more missing HP you have:<br>-Your missing HP grants a damage multiplier of [1 + MissingHP/5000].<br>-Your missing HP% grants a damage multiplier of [MissingHP%*(1+MissingHP%)/2 + 0.01].",
+        "Description": "Claw: Deal melee Bash damage to one enemy. Stronger the more missing HP you have:<br>-Your flat missing HP grants a damage multiplier of <b>1 + FlatHP/5000</b>.<br>-Your fraction of missing HP grants a damage multiplier of <b>FracHP*(1+FracHP)/2 + 0.01</b>.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3807,7 +3807,7 @@ var data = {
     "Endurance":{
         "Usage": "Active (Arms, STR+VIT)",
         "Unlock": "Loyalty Mastery (Lv 10), Claw Mastery (Lv 10)",
-        "Description": "Decrease damage taken for this turn. At the end of turn, deal melee Cut damage to all enemies. Damage dealt increases by 25% per hit received this turn (max +200%).",
+        "Description": "Decrease damage taken for this turn. At the end of turn, deal melee Cut damage to all enemies. Damage dealt increases by 25% per hit received this turn (capped at +200%).",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4033,7 +4033,7 @@ var data = {
     "Clearance":{
         "Usage": "Active (Head)",
         "Unlock": "Ad Nihilo (Lv 2), White Noble (Lv 2)",
-        "Description": "Dispel all ally buffs, ally debuffs, enemy buffs, and enemy debuffs. Recover TP for each modifier type that was removed.",
+        "Description": "Dispel all ally buffs, ally debuffs, enemy buffs, and enemy debuffs. Recover TP for each modifier type that had at least one removal.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -4079,7 +4079,7 @@ var data = {
     "Link Order":{
         "Usage": "Active (Arms, TEC)",
         "Unlock": "TP Up (Lv 1)",
-        "Description": "Target one enemy and prepare to follow up after the first elemental attack to them this turn. Deals ranged damage of the same element to the target. A percentage of the triggering attack's damage is added to this attack's own calculated damage, but this bonus cannot exceed said calculated damage. Cannot miss.",
+        "Description": "Target one enemy and prepare to follow up after the first elemental attack to them this turn. When activated, deal ranged damage of the same element (cannot miss) to the target. Also repeats up to a certain percentage of the triggering attack's damage, but without exceeding this attack's own damage.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -4091,7 +4091,7 @@ var data = {
     "Link Order II":{
         "Usage": "Active (Arms, TEC)",
         "Unlock": "Link Order (Lv 5)",
-        "Description": "Target one enemy and prepare to follow up after the first elemental attack to them this turn. Deals ranged damage of the same element to all enemies. A percentage of the triggering attack's damage is added to this attack's own calculated damage, but this bonus cannot exceed said calculated damage. Cannot miss.",
+        "Description": "Target one enemy and prepare to follow up after the first elemental attack to them this turn. When activated, deal ranged damage of the same element (cannot miss) to all enemies. Also repeats up to a certain percentage of the triggering attack's damage, but without exceeding this attack's own damage.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {

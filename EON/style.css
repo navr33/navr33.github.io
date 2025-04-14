@@ -100,4 +100,12 @@ h3 {
     text-decoration-line: underline;
 }
 
+.spoiler{
+    color: black;
+    background-color: black;
+}
+
+.spoiler:hover{
+    background-color: transparent;
+}
 
