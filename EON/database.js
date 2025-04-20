@@ -554,7 +554,7 @@ var data = {
         "Shield Flare":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Shield Bash (Lv 3)",
-            "Description": "Shield: Prepare to counterattack each time you're hit until the end of next turn. Counters deal ranged Fire damage to the attacker. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
+            "Description": "Shield: Prepare to counterattack each time you're hit until the end of next turn. On each activation, deal ranged Fire damage to the attacker. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "16"],
@@ -635,7 +635,7 @@ var data = {
         "Revive":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "(First Aid) Revive one ally, restoring a certain amount of HP.",
+            "Description": "(First Aid) Revive one ally, restoring a fixed amount of HP.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["8", "8", "8", "12", "12", "12", "12", "16"],
@@ -1076,7 +1076,7 @@ var data = {
         "Quick Step":{
             "Usage": "Active (Legs)",
             "Unlock": "Speed Up (Lv 2)",
-            "Description": "Make target ally act at the start of this turn.",
+            "Description": "Empower one ally to make it act at the start of this turn.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["35", "30", "25", "15"],
@@ -1184,7 +1184,7 @@ var data = {
         "Upward Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Upper Stance (Lv 1)",
-            "Description": "Katana: Deal melee Cut damage to one enemy. Makes a Critical Hit if you're in Upper Stance. Activates/extends Upper Stance for a certain amount of turns.",
+            "Description": "Katana: Deal melee Cut damage (critical during Upper Stance) to one enemy. Activates/extends Upper Stance for a certain amount of turns.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "7"],
@@ -1201,14 +1201,14 @@ var data = {
             "Max Level": "8",
             "Data": {
                 "Damage Taken↓": ["x0.9", "x0.87", "x0.84", "x0.84", "x0.81", "x0.78", "x0.75", "x0.75"],
-                "Infliction↑": ["x1.25", "x1.30", "x1.35", "x1.35", "x1.40", "x1.45", "x1.50", "x1.50"],
+                "Inflictions↑": ["x1.25", "x1.30", "x1.35", "x1.35", "x1.40", "x1.45", "x1.50", "x1.50"],
                 "Duration (Start)": ["4", "4", "4", "5", "5", "5", "5", "6"],
             }
         },
         "Charging Thrust":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Clear Stance (Lv 1)",
-            "Description": "Katana: Deal melee Stab damage to one enemy. Makes a Critical Hit if you're in Clear Stance. Activates/extends Clear Stance for a certain amount of turns.",
+            "Description": "Katana: Deal melee Stab damage (critical during Clear Stance) to one enemy. Activates/extends Clear Stance for a certain amount of turns.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "7"],
@@ -1233,7 +1233,7 @@ var data = {
         "Sheath Strike":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Swift Stance (Lv 1)",
-            "Description": "Katana: Deal melee Bash damage to one enemy. Makes a Critical Hit if you're in Swift Stance. Activates/extends Swift Stance for a certain amount of turns.",
+            "Description": "Katana: Deal melee Bash damage (critical during Swift Stance) to one enemy. Activates/extends Swift Stance for a certain amount of turns.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "7"],
@@ -1246,7 +1246,7 @@ var data = {
         "Air Blade":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Katana: Deal ranged Cut damage to one enemy. Makes a Critical Hit if you're in any Stance.",
+            "Description": "Katana: Deal ranged Cut damage (critical during any Stance) to one enemy.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10"],
@@ -1258,7 +1258,7 @@ var data = {
         "Arm Strike":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
-            "Description": "Katana: Deal melee Cut damage to one enemy, with a chance to inflict Arm Bind. Makes a Critical Hit if you're in any Stance.",
+            "Description": "Katana: Deal melee Cut damage (critical during any Stance) to one enemy, with a chance to inflict Arm Bind.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "8", "8", "8", "8", "12"],
@@ -1291,7 +1291,7 @@ var data = {
         "Helm Splitter":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Upward Slash (Lv 1)",
-            "Description": "Katana: Deal melee Cut damage to one enemy. Low accuracy but ignores Cut vulnerability. Requires a Stance, and makes a Critical Hit during Upper Stance. Decreases remaining Stance duration by 2 turns.",
+            "Description": "Katana, Stance: Deal melee Cut damage (critical during Upper Stance) to one enemy. Highly innacurate but ignores Cut vulnerability. Decreases Stance duration by 2 turns.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "15", "15", "15", "15", "15", "20"],
@@ -1303,7 +1303,7 @@ var data = {
         "Flame Grater":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Helm Splitter (Lv 3)",
-            "Description": "Katana: Deal melee Cut+Fire damage to one enemy. Makes a Critical Hit if you're in Upper Stance.",
+            "Description": "Katana: Deal melee Cut+Fire damage (critical during Upper Stance) to one enemy.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["5", "5", "5", "9", "9", "9", "9", "13"],
@@ -1315,7 +1315,7 @@ var data = {
         "Haze Slash":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Charging Thrust (Lv 1)",
-            "Description": "Katana: Deal melee Cut damage to one enemy, with a chance to inflict Sleep. Requires a Stance, and makes a Critical Hit during Clear Stance. Decreases remaining Stance duration by 2 turns.",
+            "Description": "Katana, Stance: Deal melee Cut damage (critical during Clear Stance) to one enemy, with a chance to inflict Sleep. Decreases Stance duration by 2 turns.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["9", "9", "9", "9", "13", "13", "13", "13", "13", "18"],
@@ -1328,7 +1328,7 @@ var data = {
         "Lightning Stab":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Haze Slash (Lv 3)",
-            "Description": "Katana: Deal melee Stab+Volt damage to one enemy. Makes a Critical Hit if you're in Clear Stance.",
+            "Description": "Katana: Deal melee Stab+Volt damage (critical during Clear Stance) to one enemy.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["5", "5", "5", "9", "9", "9", "9", "13"],
@@ -1340,7 +1340,7 @@ var data = {
         "Horizontal Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Sheath Strike (Lv 1)",
-            "Description": "Katana: Deal melee Cut damage to an enemy line. Requires a Stance, and makes a Critical Hit during Swift Stance. Decreases remaining Stance duration by 2 turns.",
+            "Description": "Katana, Stance: Deal melee Cut damage (critical during Swift Stance) to an enemy line. Decreases Stance duration by 2 turns.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "20", "20", "20", "20", "20", "27"],
@@ -1352,7 +1352,7 @@ var data = {
         "Frigid Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Horizontal Slash (Lv 3)",
-            "Description": "Katana: Deal melee Cut+Ice damage to one enemy. Makes a Critical Hit if you're in Swift Stance.",
+            "Description": "Katana: Deal melee Cut+Ice damage (critical during Swift Stance) to one enemy.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["5", "5", "5", "9", "9", "9", "9", "13"],
@@ -1384,7 +1384,7 @@ var data = {
         "Swallow Strike":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flame Grater (Lv 3)",
-            "Description": "Katana: Deal multiple hits of melee Cut damage to one enemy. Requires a Stance, and makes a Critical Hit during Upper Stance. Removes your Stance and disables skills on the next turn.",
+            "Description": "Katana, Stance: Deal multiple hits of melee Cut damage (critical during Upper Stance) to one enemy. Removes your Stance, and disables skills on the next turn.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20", "28"],
@@ -1397,7 +1397,7 @@ var data = {
         "Stone Thrust":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Lightning Stab (Lv 3)",
-            "Description": "Katana: Deal melee Stab damage to one enemy, with a chance to inflict Petrify. Requires a Stance, and makes a Critical Hit during Clear Stance. Removes your Stance and disables skills on the next turn.",
+            "Description": "Katana, Stance: Deal melee Stab damage (critical during Clear Stance) to one enemy, with a chance to inflict Petrify. Removes your Stance, and disables skills on the next turn.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["17", "17", "17", "17", "17", "24"],
@@ -1410,7 +1410,7 @@ var data = {
         "Petal Scatter":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Frigid Slash (Lv 3)",
-            "Description": "Katana: Deal ranged Slash damage to all enemies. Damage dealt is divided by [√Targets]. Requires a Stance, and makes a Critical Hit during Swift Stance. Removes your Stance and disables skills on the next turn.",
+            "Description": "Katana, Stance: Deal ranged Cut damage (critical during Swift Stance) to all enemies. Damage dealt is divided by <b>√Targets</b>. Removes your Stance, and disables skills on the next turn.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25", "25", "34"],
@@ -1427,7 +1427,7 @@ var data = {
             "Data": {
                 "Damage↑ (Upper)": ["x1.02", "x1.03", "x1.04", "x1.05", "x1.06", "x1.07", "x1.08", "x1.09", "x1.1", "x1.12"],
                 "Damage↓ (Clear)": ["x0.98", "x0.97", "x0.96", "x0.95", "x0.94", "x0.93", "x0.92", "x0.91", "x0.9", "x0.88"],
-                "Infliction↑ (Clear)": ["x1.04", "x1.05", "x1.07", "x1.08", "x1.1", "x1.11", "x1.13", "x1.14", "x1.16", "x1.20"],
+                "Inflictions↑ (Clear)": ["x1.04", "x1.05", "x1.07", "x1.08", "x1.1", "x1.11", "x1.13", "x1.14", "x1.16", "x1.20"],
                 "Accuracy↑ (Swift)": ["+2%", "+2.4%", "+2.8%", "+3.2%", "+3.6%", "+4%", "+4.4%", "+4.8%", "+5.2%", "+7%"],
                 "Evasion↑ (Swift)": ["+2%", "+2.4%", "+2.8%", "+3.2%", "+3.6%", "+4%", "+4.4%", "+4.8%", "+5.2%", "+7%"],
                 "Speed↑ (Swift)": ["x1.04", "x1.05", "x1.07", "x1.08", "x1.1", "x1.11", "x1.13", "x1.14", "x1.16", "x1.20"],
@@ -1436,7 +1436,7 @@ var data = {
         "Rouse Spirits":{
             "Usage": "Passive",
             "Unlock": "Full Proficiency (Lv 2)",
-            "Description": "At the end of each turn, if you have a Stance (or Force Boost) active, recover TP.",
+            "Description": "At the end of each turn, if you have a Stance (or Musou) active, recover TP.",
             "Max Level": "4",
             "Data": {
                 "TP Gain": ["1", "2", "3", "5"],
@@ -1557,7 +1557,7 @@ var data = {
         "War Edge Master":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Enables using Sword skills with a Staff (they will still do Cut damage). If a Sword is equipped, increases Max TP. If a Staff is equipped, increases all damage dealt.",
+            "Description": "Enables using Sword skills with a Staff. If a Sword is equipped, increases Max TP. If a Staff is equipped, increases all damage dealt.",
             "Max Level": "8",
             "Data": {
                 "Max TP↑": ["+6%", "+8%", "+10%", "+12%", "+14%", "+16%", "+18%", "+25%"],
@@ -1687,7 +1687,7 @@ var data = {
         "Barrier":{
             "Usage": "Active (Arms)",
             "Unlock": "War Heal All (Lv 3)",
-            "Description": "Chance to nullify bind/ailment/debuff inflictions to party members this turn.",
+            "Description": "Protect the whole party for this turn, which gives them a chance to nullify bind/ailment/debuff inflictions received.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "15", "15", "15", "15", "15", "20"],
@@ -1920,7 +1920,7 @@ var data = {
             "Data": {
                 "TP Cost": ["7", "7", "7", "12", "12", "12", "12", "18"],
                 "HP Cost": ["15%", "15%", "15%", "25%", "25%", "25%", "25%", "35%"],
-                "Infliction↑": ["x1.1", "x1.13", "x1.16", "x1.16", "x1.19", "x1.22", "x1.25", "x1.25"],
+                "Inflictions↑": ["x1.1", "x1.13", "x1.16", "x1.16", "x1.19", "x1.22", "x1.25", "x1.25"],
                 "Duration (Turns)": ["3", "3", "3", "4", "4", "4", "4", "5"],
                 "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%"],
             }
@@ -2067,7 +2067,7 @@ var data = {
         "Rapid Fire":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Deal 3 hits of ranged Stab damage to one enemy. Fast but inaccurate.",
+            "Description": "Gun: Deal 3 hits of ranged Stab damage to one enemy. Fast but inaccurate.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "8", "8", "8", "8", "12"],
@@ -2079,7 +2079,7 @@ var data = {
         "Splash Shot":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Rapid Fire (Lv 3)",
-            "Description": "Deal ranged Stab damage to one enemy, with splash effect.",
+            "Description": "Gun: Deal ranged Stab damage to one enemy, with splash effect.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["7", "7", "7", "11", "11", "11", "11", "15"],
@@ -2091,7 +2091,7 @@ var data = {
         "Leg Snipe":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
-            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Leg Bind. Slow but cannot miss.",
+            "Description": "Gun: Deal ranged Stab damage to one enemy, with a chance to inflict Leg Bind. Slow but cannot miss.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "13"],
@@ -2103,7 +2103,7 @@ var data = {
         "Arm Snipe":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Leg Snipe (Lv 2)",
-            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Arm Bind. Slow but cannot miss.",
+            "Description": "Gun: Deal ranged Stab damage to one enemy, with a chance to inflict Arm Bind. Slow but cannot miss.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "13"],
@@ -2124,7 +2124,7 @@ var data = {
         "Shell Shock":{
             "Usage": "Active (Arms, LUC)",
             "Unlock": "Cover Support (Lv 2)",
-            "Description": "Weaken the enemy back line for this turn, which decreases their offense, defense, accuracy and evasion. Also attempts to inflict Stun.",
+            "Description": "Weaken the enemy back line for this turn, which decreases their offense, defense, accuracy and evasion, and attempts to inflict Stun.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["4", "4", "4", "7"],
@@ -2170,7 +2170,7 @@ var data = {
         "Feint Shot":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Splash Shot (Lv 2)",
-            "Description": "Deal ranged Stab damage to an enemy line. Places a debuff on the targets for 3 turns, which decreases evasion.",
+            "Description": "Gun: Deal ranged Stab damage to an enemy line. Places a debuff on the targets for 3 turns, which decreases evasion.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "17"],
@@ -2183,7 +2183,7 @@ var data = {
         "Scattershot":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Feint Shot (Lv 2)",
-            "Description": "Deal ranged Stab damage to all enemies.",
+            "Description": "Gun: Deal ranged Stab damage to all enemies.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["12", "12", "12", "18", "18", "18", "18", "24"],
@@ -2195,7 +2195,7 @@ var data = {
         "Head Snipe":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
-            "Description": "Deal ranged Stab damage to one enemy, with a chance to inflict Head Bind. Slow but cannot miss.",
+            "Description": "Gun: Deal ranged Stab damage to one enemy, with a chance to inflict Head Bind. Slow but cannot miss.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "13"],
@@ -2219,7 +2219,7 @@ var data = {
         "Charged Shot":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Act Quick (Lv 2)",
-            "Description": "Deal ranged Stab damage to one enemy. Increase damage taken by 100% until it activates.",
+            "Description": "Gun: Deal ranged Stab damage to one enemy. Increases damage taken by 100% until it activates.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "19", "19", "19", "19", "19", "24"],
@@ -2269,7 +2269,7 @@ var data = {
         "Ricochet":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Scattershot (Lv 2)",
-            "Description": "Deal multiple hits of ranged Stab damage to random enemies. Very innacurate.",
+            "Description": "Gun: Deal multiple hits of ranged Stab damage to random enemies. Highly innacurate.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "27", "27", "27", "27", "27", "35"],
@@ -2282,7 +2282,7 @@ var data = {
         "Charged Fire":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Charged Shot (Lv 3)",
-            "Description": "Deal ranged Stab+Fire damage to one enemy. Increase damage taken by 100% until it activates.",
+            "Description": "Gun: Deal ranged Stab+Fire damage to one enemy. Increases damage taken by 100% until it activates.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["18", "18", "18", "18", "18", "30"],
@@ -2294,7 +2294,7 @@ var data = {
         "Charged Ice":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Charged Shot (Lv 3)",
-            "Description": "Deal ranged Stab+Ice damage to one enemy. Increase damage taken by 100% until it activates.",
+            "Description": "Gun: Deal ranged Stab+Ice damage to one enemy. Increases damage taken by 100% until it activates.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["18", "18", "18", "18", "18", "30"],
@@ -2306,7 +2306,7 @@ var data = {
         "Charged Volt":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Charged Shot (Lv 3)",
-            "Description": "Deal ranged Stab+Volt damage to one enemy. Increase damage taken by 100% until it activates.",
+            "Description": "Gun: Deal ranged Stab+Volt damage to one enemy. Increases damage taken by 100% until it activates.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["18", "18", "18", "18", "18", "30"],
@@ -2518,7 +2518,7 @@ var data = {
         "Prevent Order":{
             "Usage": "Active (Head)",
             "Unlock": "Rally Order (Lv 2), Protect Order (Lv 2)",
-            "Description": "(Order) Place a buff on an ally line for several turns, which has a chance to block bind/ailment inflictions. (Buff is consumed when activated)",
+            "Description": "(Order) Place a buff on an ally line for several turns, which has a chance to block bind/ailment inflictions received. (Buff is consumed when activated)",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "10", "10", "17", "17", "17", "17", "24"],
@@ -2657,7 +2657,7 @@ var data = {
         "Ninpo: Caltrops":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Ninpo:Daggers (Lv 3)",
-            "Description": "Prepare to counterattack when target ally line takes physical damage. Deals ranged Cut damage, with a chance to inflict Poison.",
+            "Description": "Target an ally line and prepare to counterattack each time it takes physical damage. On each activation, deal ranged Cut damage to the attacker, with a chance to inflict Poison.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "9"],
@@ -2817,7 +2817,7 @@ var data = {
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "7", "7", "7", "7", "7", "13"],
                 "Evasion↑": ["+50%", "+55%", "+60%", "+65%", "+84%", "+90%", "+96%", "+102%", "+108%", "+140%"],
-                "Evasion Fadeout": ["-10%", "-11%", "-12%", "-13%", "-16.8%", "-18%", "-19.2%", "-20.4%", "-21.6%", "-28%"],
+                "Evasion Fadeout": ["10%", "11%", "12%", "13%", "16.8%", "18%", "19.2%", "20.4%", "21.6%", "28%"],
                 "Action Speed": ["500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%", "500%"],
             }
         },
@@ -3633,7 +3633,7 @@ var data = {
         "Bloody Lance":{
             "Usage": "Passive",
             "Unlock": "Twilight Hour (Lv 2)",
-            "Description": "Gain a bonus to all damage dealt each time you kill a unit. (Max 9 stacks. Resets if you die)",
+            "Description": "Gain an increase to damage dealt each time you kill a unit. (Capped at 9 stacks. Resets if you die)",
             "Max Level": "6",
             "Data": {
                 "Damage Dealt↑": ["+6%", "+8%", "+10%", "+12%", "+14%", "+20%"],
@@ -3651,7 +3651,7 @@ var data = {
         "Peerless Demon":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases damage dealt based on how many hits you have performed this turn.",
+            "Description": "Increase damage dealt based on how many hits you have performed this turn.",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+4%", "+4%", "+4%", "+4%", "+7%", "+7%", "+7%", "+7%", "+7%", "+10%"],
@@ -3725,7 +3725,7 @@ var data = {
         "Execution":{
             "Usage": "Passive (Arms)",
             "Unlock": "Curse Strike (Lv 3)",
-            "Description": "Chance to automatically kill allies or enemies that are below a certain HP threshold after being hit. (Ignores Instant Death resistance and immunity, except on the final boss and superboss)",
+            "Description": "Chance to automatically kill allies and enemies that are below a certain HP threshold after being hit. (Ignores Instant Death resistance and immunity, except on the final boss and superboss)",
             "Max Level": "4",
             "Data": {
                 "HP Threshold": ["5%", "7%", "9%", "15%"],
@@ -4380,7 +4380,7 @@ var data = {
         "Dismiss Heal":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "Circle Boon (Lv 1)",
-            "Description": "(Dismiss) Remove an active Circle to restore HP to the whole party.",
+            "Description": "(Dismiss) Remove the active Circle to restore HP to the whole party.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "12", "12", "12", "12", "12", "24"],
@@ -4462,7 +4462,7 @@ var data = {
         "Dismiss Revive":{
             "Usage": "Active (Head)",
             "Unlock": "Dismiss Heal (Lv 2)",
-            "Description": "(Dismiss) Remove an active Circle for a chance to revive an ally line. (<b>Bug</b>: Revive chance is rolled twice and must pass both to activate)",
+            "Description": "(Dismiss) Remove the active Circle for a chance to revive an ally line. (<b>Bug</b>: Revive chance is rolled twice and must pass both to activate)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "20", "20", "20", "20", "20", "35"],
@@ -4474,7 +4474,7 @@ var data = {
         "Dismiss Blow":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Dismiss Revive (Lv 3)",
-            "Description": "(Dismiss) Remove an active Circle to deal ranged Almighty damage to one enemy.",
+            "Description": "(Dismiss) Remove the active Circle to deal ranged Almighty damage to one enemy.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "13", "13", "13", "13", "13", "30"],
@@ -4609,7 +4609,7 @@ var data = {
         "Dismiss Quake":{
             "Usage": "Active (Head, LUC)",
             "Unlock": "Poison/Chaos Circle (Lv 3)",
-            "Description": "(Dismiss) Remove an active Circle to attempt to inflict Stun on all enemies.",
+            "Description": "(Dismiss) Remove the active Circle to attempt to inflict Stun on all enemies.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "12", "12", "12", "12", "12", "20"],
@@ -4699,7 +4699,7 @@ var data = {
         "Assault Drive":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "(Drive) Drive Blade: Deal melee Cut damage to one enemy, then enter Overheat state for 7 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
+            "Description": "(Drive) Drive Blade: Deal melee Cut damage to one enemy, then enter Overheat state for 7 turns. Increases damage taken by 100% until it activates. (Not usable during Overheat)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "30", "30", "30", "30", "30", "40"],
@@ -4809,7 +4809,7 @@ var data = {
         "Flame Drive":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Intercooler (Lv 3)",
-            "Description": "(Drive) Drive Blade: Deal melee Cut+Fire damage to one enemy, then enter Overheat state for 8 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
+            "Description": "(Drive) Drive Blade: Deal melee Cut+Fire damage to one enemy, then enter Overheat state for 8 turns. Increases damage taken by 100% until it activates. (Not usable during Overheat)",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["25", "25", "25", "37", "37", "37", "37", "50"],
@@ -4821,7 +4821,7 @@ var data = {
         "Freeze Drive":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Intercooler (Lv 3)",
-            "Description": "(Drive) Drive Blade: Deal melee Cut+Ice damage to one enemy, then enter Overheat state for 8 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
+            "Description": "(Drive) Drive Blade: Deal melee Cut+Ice damage to one enemy, then enter Overheat state for 8 turns. Increases damage taken by 100% until it activates. (Not usable during Overheat)",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["25", "25", "25", "37", "37", "37", "37", "50"],
@@ -4833,7 +4833,7 @@ var data = {
         "Shock Drive":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Intercooler (Lv 3)",
-            "Description": "(Drive) Drive Blade: Deal melee Cut+Volt damage to one enemy, then enter Overheat state for 8 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
+            "Description": "(Drive) Drive Blade: Deal melee Cut+Volt damage to one enemy, then enter Overheat state for 8 turns. Increases damage taken by 100% until it activates. (Not usable during Overheat)",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["25", "25", "25", "37", "37", "37", "37", "50"],
@@ -4891,7 +4891,7 @@ var data = {
         "Accel Drive":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flame/Freeze/Shock Drive (Lv 1)",
-            "Description": "(Drive) Drive Blade: Deal melee Cut+Almighty damage to one enemy, then enter Overheat state for 9 turns. Increase damage taken by 100% until it activates. (Not usable during Overheat)",
+            "Description": "(Drive) Drive Blade: Deal melee Cut+Almighty damage to one enemy, then enter Overheat state for 9 turns. Increases damage taken by 100% until it activates. (Not usable during Overheat)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["30", "30", "30", "30", "45", "45", "45", "45", "45", "60"],
@@ -5207,7 +5207,7 @@ var data = {
         "Resonance Blow":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Million Rush (Lv 3)",
-            "Description": "Fist: Deal multiple hits of melee Bash damage to one enemy. Starts at 1 hit, and increases by 1 with each turn that passes. (Max 9  extra hits. Resets to 1 hit upon use)",
+            "Description": "Fist: Deal multiple hits of melee Bash damage to one enemy. Starts at 1 hit, and increases by 1 with each turn that passes. (Capped at 9 extra hits. Resets to 1 hit upon use)",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25", "25", "35"],
@@ -5486,7 +5486,7 @@ var data = {
         "Miasma Wall":{
             "Usage": "Active (Head)",
             "Unlock": "Black Wave (Lv 1)",
-            "Description": "Dispel your Miasma Armor for a chance to nullify bind/ailment inflictions to the party this turn.",
+            "Description": "Dispel your Miasma Armor to protect the whole party for this turn, which gives them a chance to nullify bind/ailment inflictions received.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "15", "30"],
@@ -5497,7 +5497,7 @@ var data = {
         "Spirit Barrier":{
             "Usage": "Active (Head)",
             "Unlock": "Black Wave (Lv 1)",
-            "Description": "Dispel your Miasma Armor for a chance to nullify Instant Death/Stun/debuff inflictions to the party this turn.",
+            "Description": "Dispel your Miasma Armor to protect the whole party for this turn, which gives them a chance to nullify Instant Death/Stun/debuff inflictions received.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "15", "30"],
@@ -6862,23 +6862,23 @@ var data = {
 var descriptions = {
     "Hero":       "Brave knights of Sword and Shield. They fight as more than one person to attack and defend at once.",
     "Protector":  "Sturdy knights of unmatched durability. They block and divert attacks to keep allies in good condition.",
-    "Medic":      "Healers that effectively treat any kind of injury. They can use Staff strikes to make enemies vulnerable.",
-    "Survivalist":"Archers skilled in careful exploration. Their agility and sharp senses safeguard the party in and out of battle.",
-    "Ronin":      "Katana users focused on strong offense. They adopt different Stances to adjust their combat style.",
-    "War Magus":  "Witch doctors that switch between treating the party's afflictions and aggravating the enemy's.",
-    "Highlander": "Warriors skilled in close combat with Spears. They control life force and can convert it into power.",
+    "Medic":      "Healers that effectively treat any kind of injury. Their careful Staff strikes leave the enemy vulnerable.",
+    "Survivalist":"Archers skilled in careful exploration. Their agility and sharp senses turn the tide in and out of battle.",
+    "Ronin":      "Katana users focused on strong offense. They change to different Stances to adjust their combat style.",
+    "War Magus":  "Witch doctors trained in combat and healing. They switch between treating and aggravating afflictions.",
+    "Highlander": "Warriors from a clan skilled in combat with Spears. They control life force and convert it into power.",
     "Gunner":     "Versatile Gun users with a large variety of attack types. They can attack, immobilize or heal as needed.",
-    "Sovereign":  "Commanders whose orders reinforce and heal the party by granting buffs and converting them into energy.",
-    "Ninja":      "Stealthy assassins proficient in diversion and ailments. Can make shadow clones to boost their capabilities.",
+    "Sovereign":  "Commanders whose orders grant and control buffs, using them to strengthen, protect and heal the party.",
+    "Ninja":      "Assassins proficient in diversion and ailments. They can create shadow clones to boost their capabilities.",
     "Zodiac":     "Offensive casters with high control of energy. They use elemental magic to exploit the enemy's weakness.",
-    "Farmer":     "Specialists in exploration and resource gathering. Their battle skills can be awkward but surprisingly effective.",
-    "Shogun":     "Warrior generals who lead the party through buffs and commands, and can fight directly using dual Katanas.",
-    "Landsknecht":"Frontline warriors with solid offense and defense. They lead the charge, encouraging their allies to follow up.",
+    "Farmer":     "Specialists in exploration and resource gathering. Their battle skills can be awkward but quite effective.",
+    "Shogun":     "Warrior generals wielding dual Katanas. They coordinate the offensive through buffs and commands.",
+    "Landsknecht":"Frontline warriors with solid offense and defense. They lead the charge, encouraging others to follow up.",
     "Nightseeker":"Assassins who throw poisoned daggers from the shadows, closing in for the kill once the enemy is ailing.",
-    "Arcanist":   "Support casters that summon and release magic circles in order to restrain enemies and heal the party.",
-    "Imperial":   "Knights who wield mechanical Drive Blades. Their attacks are devastating but put a heavy strain on the weapon.",
-    "Pugilist":   "Brawlers who fight with their own Fists. They use combos of precise punches to quickly disable the enemy.",
-    "Harbinger":  "Reapers who summon noxious Miasma, spreading it to weaken enemies and keep allies in good condition.",
+    "Arcanist":   "Spellcasters that summon magic circles onto the field, using them to restrain enemies and heal the party.",
+    "Imperial":   "Knights wielding mechanical Drive Blades. Their devastating attacks put a heavy strain on the weapon.",
+    "Pugilist":   "Brawlers who fight with their own Fists. They use combos of precise punches to quickly disable enemies.",
+    "Harbinger":  "Reapers who summon noxious Miasma, spreading it to weaken enemies and ward off against afflictions.",
     "Vampire":    "Night-dwellers with control over life and death. This pseudo-class overrides Force skills and grants passive effects.",
 
     "Weapon Skills":"Skills borrowed from certain weapons.",

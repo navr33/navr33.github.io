@@ -2084,7 +2084,7 @@ var data = {
     "Perfect Chaser":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Slantwise Cut (Lv 7)",
-        "Description": "Katana: Requires any Stance. Prepare to follow up after your allies' normal attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Katana, any Stance: Prepare to follow up after your allies' normal attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2113,7 +2113,7 @@ var data = {
     "Horse Slash":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Upper Stance (Lv 1)",
-        "Description": "Katana: Requires Upper Stance. Deal melee Cut damage to one enemy.",
+        "Description": "Katana, Upper Stance: Deal melee Cut damage to one enemy.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2126,7 +2126,7 @@ var data = {
     "Flame Grater":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Horse Slash (Lv 3)",
-        "Description": "Katana: Requires Upper Stance. Deal melee Cut+Fire damage to an enemy line.",
+        "Description": "Katana, Upper Stance: Deal melee Cut+Fire damage to an enemy line.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2139,7 +2139,7 @@ var data = {
     "Swallow Strike":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Upper Stance (Lv 5)",
-        "Description": "Katana: Requires Upper Stance. Deal multiple hits of melee Cut damage to one enemy.",
+        "Description": "Katana, Upper Stance: Deal multiple hits of melee Cut damage to one enemy.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2168,7 +2168,7 @@ var data = {
     "Razor Dodge":{
         "Usage": "Active (Legs)",
         "Unlock": "Clear Stance (Lv 1)",
-        "Description": "Katana: Requires Clear Stance. Chance to evade hits received (rolled before the standard accuracy check). Activation chance starts at 100% and goes down with each activation.",
+        "Description": "Katana, Clear Stance: Chance to evade hits received (rolled before the standard accuracy check). Activation chance starts at 100% and goes down with each activation.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2180,7 +2180,7 @@ var data = {
     "Lightning Stab":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Razor Dodge (Lv 3)",
-        "Description": "Katana: Requires Clear Stance. Deal melee Stab+Volt damage to one enemy, with pierce effect.",
+        "Description": "Katana, Clear Stance: Deal melee Stab+Volt damage to one enemy, with pierce effect.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2193,7 +2193,7 @@ var data = {
     "Arm Strike":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Clear Stance (Lv 5)",
-        "Description": "Katana: Requires Clear Stance. Deal melee Cut damage to one enemy, with a chance to inflict Arm Bind.",
+        "Description": "Katana, Clear Stance: Deal melee Cut damage to one enemy, with a chance to inflict Arm Bind.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2223,7 +2223,7 @@ var data = {
     "Beheading Cut":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Drawing Stance (Lv 1)",
-        "Description": "Katana: Requires Drawing Stance. Deal melee Cut damage to one enemy, with a chance to inflict Instant Death.",
+        "Description": "Katana, Drawing Stance: Deal melee Cut damage to one enemy, with a chance to inflict Instant Death.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2237,7 +2237,7 @@ var data = {
     "Frigid Slash":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Beheading Cut (Lv 3)",
-        "Description": "Katana: Requires Drawing Stance. Deal ranged Cut+Ice damage to all enemies.",
+        "Description": "Katana, Drawing Stance: Deal ranged Cut+Ice damage to all enemies.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2250,7 +2250,7 @@ var data = {
     "Charging Slash":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Drawing Stance (Lv 5)",
-        "Description": "Katana: Requires Drawing Stance. Deal melee Stab damage to one enemy.",
+        "Description": "Katana, Drawing Stance: Deal melee Stab damage to one enemy.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2263,7 +2263,7 @@ var data = {
     "Peerless Stance":{
         "Usage": "Active (Arms)",
         "Unlock": "Katana Mastery (Lv 10)",
-        "Description": "Katana: Only usable if you have another Stance buff. Gain the Peerless Stance buff for 3 turns, which improves offense, defense and agility and enables all skills that require a Stance. (Overrides other Stances)",
+        "Description": "Katana: Only usable if you have another Stance buff. Gain the Peerless Stance buff for 3 turns, which improves offense, defense and agility and enables all other skills that require a Stance. (Overrides other Stances)",
         "Starter": "1",
         "Max Level": "15",
         "Natural Level": "10",
@@ -2760,7 +2760,7 @@ var data = {
     "Delayed Charge":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 10)",
-        "Description": "Spear: Spend 15% of current HP to prepare an attack that will activate several turns later, at the end of the turn. Deals ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage dealt receives a reduction multiplier for each remaining charge turn.",
+        "Description": "Spear: Spend 15% of current HP to prepare an attack that will activate several turns later, at the end of the turn, dealing ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage dealt receives a reduction multiplier for each remaining charge turn.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3019,7 +3019,7 @@ var data = {
     "Charged Fire":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Fire Rounds (Lv 5)",
-        "Description": "Gun: Deal ranged Stab+Fire damage to one enemy. Increase damage taken by 50% until it activates.",
+        "Description": "Gun: Deal ranged Stab+Fire damage to one enemy. Increases damage taken by 50% until it activates.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3045,7 +3045,7 @@ var data = {
     "Charged Ice":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Ice Rounds (Lv 5)",
-        "Description": "Gun: Deal ranged Stab+Ice damage to one enemy. Increase damage taken by 50% until it activates.",
+        "Description": "Gun: Deal ranged Stab+Ice damage to one enemy. Increases damage taken by 50% until it activates.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3071,7 +3071,7 @@ var data = {
     "Charged Volt":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Volt Rounds (Lv 5)",
-        "Description": "Gun: Deal ranged Stab+Volt damage to one enemy. Increase damage taken by 50% until it activates.",
+        "Description": "Gun: Deal ranged Stab+Volt damage to one enemy. Increases damage taken by 50% until it activates.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3084,7 +3084,7 @@ var data = {
     "Charged Shot":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Gun Mastery (Lv 5)",
-        "Description": "Gun: Deal ranged Stab damage to one enemy. Increase damage taken by 50% until it activates.",
+        "Description": "Gun: Deal ranged Stab damage to one enemy. Increases damage taken by 50% until it activates.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {

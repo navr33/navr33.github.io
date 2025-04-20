@@ -1164,7 +1164,7 @@ var data = {
         "Black Blade":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "While Miasma Armor remains active, increase all damage dealt for each time you inflict an ailment. (Resets upon losing Miasma Armor)",
+            "Description": "While Miasma Armor is active, gain an increase to damage dealt each time you inflict an ailment. (Resets upon losing Miasma Armor)",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+15%", "+17%", "+19%", "+21%", "+21%", "+24%", "+27%", "+30%", "+33%", "+33%"],
@@ -1174,7 +1174,7 @@ var data = {
         "Black Shroud":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "While Miasma Armor remains active, decrease all damage taken for each time you inflict an ailment. (Resets upon losing Miasma Armor)",
+            "Description": "While Miasma Armor is active, gain a decrease to damage taken each time you inflict an ailment. (Resets upon losing Miasma Armor)",
             "Max Level": "10",
             "Data": {
                 "Damage Taken↓": ["-7%", "-8%", "-9%", "-10%", "-10%", "-11%", "-12%", "-13%", "-14%", "-14%"],
@@ -1202,7 +1202,7 @@ var data = {
         "Bloody Reap":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Judgement (Lv 3)",
-            "Description": "Scythe: Only usable if Miasma Armor is active. Spend part of current HP to deal 2~4 hits of melee Cut damage to random enemies.",
+            "Description": "Scythe, Miasma Armor: Spend part of current HP to deal 2~4 hits of melee Cut damage to random enemies.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12"],
@@ -1332,7 +1332,7 @@ var data = {
         "Miasma Wall":{
             "Usage": "Active (Head)",
             "Unlock": "Death's Asylum (Lv 5)",
-            "Description": "Dispel your Miasma Armor for a chance to nullify bind/ailment inflictions to the party this turn.",
+            "Description": "Dispel your Miasma Armor to protect the whole party for this turn, which gives them a  chance to nullify bind/ailment inflictions received.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "22", "22", "22", "22", "22", "35"],
@@ -1367,7 +1367,7 @@ var data = {
         "Ephemeral Reap":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Eroding/Masking Miasma (Lv 5)",
-            "Description": "Scythe: Dispel all debuffs on one enemy, then deal multiple hits of melee Cut damage to them. Amount of hits equal to amount of debuffs dispelled. Cannot miss.",
+            "Description": "Scythe: Dispel all debuffs on one enemy, then deal multiple hits of melee Cut damage (cannot miss) to them. Hits once per debuff that was removed.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["13", "13", "13", "13", "18", "18", "18", "18", "18", "24"],
@@ -1378,7 +1378,7 @@ var data = {
         "Soul Transfer":{
             "Usage": "Active (Head)",
             "Unlock": "Eroding/Masking Miasma (Lv 5)",
-            "Description": "Dispel all debuffs on one enemy at the start of turn. If the target had at least 1 debuff, all allies will get a chance to automatically revive if killed this turn. (Max once per ally. Max 3 activations)",
+            "Description": "Dispel all debuffs on one enemy at the start of the turn. If this removed at least one modifier, all allies will get a chance to automatically revive if killed this turn. (Max once per ally. Max 3 activations)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "12", "12", "12", "12", "12", "21"],
@@ -1562,7 +1562,7 @@ var data = {
         "Altar":{
             "Usage": "Active (Head, INT, LUC)",
             "Unlock": "Windstorm (Lv 5), Earthspike (Lv 5), Rockfall (Lv 5)",
-            "Description": "Prepare an attack that will hit in 3 more turns, at the start of the turn. When activated, deal ranged Bash damage to one enemy, with a chance to inflict Petrify. Damage dealt increases for each time the target's weakness was hit while preparing, up to 20 stacks. (Not a Magi skill despite the in-game description)",
+            "Description": "Prepare an attack that will hit in 3 more turns, at the start of the turn, dealing ranged Bash damage to one enemy with a chance to inflict Petrify. Damage dealt increases for each time the target's weakness was hit while preparing, stacking up to 20 times. (Not a Magi skill despite the in-game description)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "30", "30", "30", "30", "30", "40"],
@@ -1890,7 +1890,7 @@ var data = {
         "Grave":{
             "Usage": "Active (Head)",
             "Unlock": "Fierce Shield (Lv 3)",
-            "Description": "Target one ally, and each time they're hit this turn all Wraiths will counterattack, dealing Bash damage with a chance to inflict Paralysis to the attacker. Counter chance starts at 100% and goes down by 9% with each activation. (<b>Warning</b>: Damage dealt is always reduced by melee backline penalty)",
+            "Description": "Target one ally and prepare to command a counterattack each time they're hit this turn. On each activation, all Wraiths may deal Bash damage with a chance to inflict Paralysis to the attacker. Activation chance starts at 100% and goes down by 9% with each activation. (<b>Warning</b>: Damage dealt is always reduced by melee backline penalty)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "14"],
@@ -2307,7 +2307,7 @@ var data = {
         "Million Arrows":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Power Shot (Lv 5)",
-            "Description": "Bow: Prepare an attack that will hit on the next turn, at the start of the turn. When it activates, deal multiple hits of ranged Stab damage to random enemies (max 4 hits each).",
+            "Description": "Bow: Prepare an attack that will hit on the next turn, at the start of the turn, dealing multiple hits of ranged Stab damage to random enemies (max 4 hits each).",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["13", "13", "13", "13", "19", "19", "19", "19", "19", "27"],
@@ -2892,7 +2892,7 @@ var data = {
         "Dance Oracle":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Blaze/Hail/Bolt Prayer (Lv 3)",
-            "Description": "Blaze/Hail/Bolt Prayer: Dispel an elemental Prayer on yourself to deal ranged damage of the corresponding element to all enemies. Targets take more damage of that element until the end of turn.",
+            "Description": "Requires Blaze/Hail/Bolt Prayer: Dispel an elemental Prayer on yourself to deal ranged damage of the corresponding element to all enemies. Targets take more damage of that element until the end of turn.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "18", "18", "18", "18", "18", "26"],
@@ -2934,7 +2934,7 @@ var data = {
         "Offering":{
             "Usage": "Active (Head)",
             "Unlock": "Heaven's Gift (Lv 3)",
-            "Description": "Dispel one buff and debuff on yourself. Restore TP to other allies in your line if one modifier type was dispelled, doubled if both.",
+            "Description": "Dispel one buff and debuff on yourself. Restore TP to other allies in your line for each modifier that was removed.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["40", "40", "40", "40", "40", "40", "40", "40", "40", "40"],
@@ -2974,7 +2974,7 @@ var data = {
         "Mana Oracle":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Dance Oracle (Lv 3)",
-            "Description": "Blaze/Hail/Bolt Prayer: Dispel an elemental Prayer on the whole party. If this removed a buff on yourself, deal 5 ranged hits of the corresponding element to random enemies.",
+            "Description": "Requires Blaze/Hail/Bolt Prayer: Dispel an elemental Prayer on the whole party. If this removed a buff on yourself, deal 5 ranged hits of the corresponding element to random enemies.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "16", "16", "16", "16", "16", "24"],
@@ -2986,7 +2986,7 @@ var data = {
         "Aureole Oracle":{
             "Usage": "Active (Head)",
             "Unlock": "Dance Oracle (Lv 3)",
-            "Description": "Blaze/Hail/Bolt Prayer: Dispel an elemental Prayer on the whole party. If this removed a buff on yourself, make the party absorb attacks of the corresponding element for this turn.",
+            "Description": "Requires Blaze/Hail/Bolt Prayer: Dispel an elemental Prayer on the whole party. If this removed a buff on yourself, make the party absorb attacks of the corresponding element for this turn.",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "20"],
@@ -2996,7 +2996,7 @@ var data = {
         "Invoke Gods":{
             "Usage": "Active (Head, STR)",
             "Unlock": "Mana Oracle (Lv 5), Aureole Oracle (Lv 3)",
-            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself to deal weapon-based damage to one enemy at the start of turn. Decreases damage dealt by the target until the end of turn.",
+            "Description": "Requires 3 buffs: Dispel all buffs on yourself to deal weapon-based damage to one enemy at the start of turn. Decreases damage dealt by the target until the end of turn.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "32", "32", "32", "32", "32", "45"],
@@ -5138,8 +5138,8 @@ var descriptions = {
                     "<b>Barrage Brawler</b>: Performs combos of punches that can disable the enemy.",
                     "<b>Impact Brawler</b>: Throws destructive punches by risking their own health."],
     "Harbinger":["Reapers who use noxious Miasma to weaken the enemy.",
-                    "<b>Deathbringer</b>: Inflict ailments and cuts down afflicted enemies.",
-                    "<b>Deathguard</b>: Inflicts debuffs and keeps the party in good condition."],
+                    "<b>Deathbringer</b>: Inflicts ailments and cuts down afflicted enemies.",
+                    "<b>Deathguard</b>: Inflicts debuffs and wards off against afflictions."],
     "Warlock":  ["Elemental casters that exploit the enemy's weakness.",
                     "<b>Omnimancer</b>: Combines physical and elemental magic to hit any weakness.",
                     "<b>Elemancer</b>: Specializes in strong elemental magic and energy control."],

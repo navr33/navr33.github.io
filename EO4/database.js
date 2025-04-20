@@ -1635,7 +1635,7 @@ var data = {
         "Healing Step":{
             "Usage": "Active (Legs, TEC)",
             "Unlock": "Freedom Waltz (Lv 2)",
-            "Description": "Only usable if you have a Waltz buff. Restore HP to the whole party.",
+            "Description": "Requires a Waltz buff: Restore HP to the whole party.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "20", "20", "20", "20", "20", "25"],
@@ -1657,7 +1657,7 @@ var data = {
         "Wide Dance":{
             "Usage": "Active (Legs)",
             "Unlock": "Energy Tango (Lv 2)",
-            "Description": "Only usable if you have a Tango buff. For this turn, your Dance buffs will apply to the whole party.",
+            "Description": "Requires a Tango buff: For this turn, your Dance buffs will apply to the whole party.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["8", "6", "4", "2"],
@@ -1681,7 +1681,7 @@ var data = {
         "Rush Dance":{
             "Usage": "Active (Legs)",
             "Unlock": "Trick Samba (Lv 2)",
-            "Description": "Only usable if you have a Samba buff. Prepare to follow up after your allies' attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each activation.",
+            "Description": "Requires a Samba buff: Prepare to follow up after your allies' attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each activation.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["14", "14", "14", "17", "17", "17", "17", "20"],
@@ -1726,7 +1726,7 @@ var data = {
         "Quick Step":{
             "Usage": "Active (Legs)",
             "Unlock": "N/A",
-            "Description": "Make target ally act at the start of this turn.",
+            "Description": "Empower one ally to make it act at the start of this turn.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["12", "10", "8", "6"],
@@ -1735,7 +1735,7 @@ var data = {
         "Beat Dance":{
             "Usage": "Active (Legs)",
             "Unlock": "N/A",
-            "Description": "Only usable if you have a Waltz, Tango and Samba buff. Makes all party members deal weapon-based damage to one enemy.",
+            "Description": "Requires a Waltz, Tango and Samba buff: Command all party members to deal weapon-based damage to one enemy.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["12", "12", "14", "14", "14", "16"],
@@ -1886,7 +1886,7 @@ var data = {
         "Dismiss Heal":{
             "Usage": "Active (Head, TEC)",
             "Unlock": "Circle Boon (Lv 2)",
-            "Description": "Remove an active Circle to restore HP to the whole party.",
+            "Description": "(Dismiss) Remove the active Circle to restore HP to the whole party.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "10", "10", "10", "10", "10", "12"],
@@ -1897,7 +1897,7 @@ var data = {
         "Dismiss Blow":{
             "Usage": "Active (Head, TEC)",
             "Unlock": "Dismiss Heal (Lv 3)",
-            "Description": "Remove an active Circle to deal ranged Almighty damage to one enemy.",
+            "Description": "(Dismiss) Remove the active Circle to deal ranged Almighty damage to one enemy.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "4", "4", "4", "5"],
@@ -1979,7 +1979,7 @@ var data = {
         "Dismiss Blast":{
             "Usage": "Active (Head, TEC)",
             "Unlock": "Dismiss Blow (Lv 2)",
-            "Description": "Remove an active Circle to deal ranged Almighty damage to all enemies.",
+            "Description": "(Dismiss) Remove the active Circle to deal ranged Almighty damage to all enemies.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "12", "12", "12", "14"],
@@ -1991,7 +1991,7 @@ var data = {
         "Circle Mastery":{
             "Usage": "Passive",
             "Unlock": "Dismiss Blast (Lv 3)",
-            "Description": "Increase the effect (Attack/Healing Power) of Dismiss skills based on the level of the Circle removed. (Applies one modifier based on this skill's level, and a separate one based on the Circle's level)",
+            "Description": "Increases the Power of Dismiss skills. Applies one modifier based on this skill's level, and a separate one based on the level of the Circle removed.",
             "Max Level": "8",
             "Data": {
                 "Effect↑\n(Mastery Level)": ["x1.05", "x1.1", "x1.15", "x1.2", "x1.23", "x1.26", "x1.28", "x1.3"],
@@ -2010,7 +2010,7 @@ var data = {
         "Releasal Spell":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Resets one enemy's accumulative resistance.",
+            "Description": "Reset one enemy's accumulative resistance.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["70", "60", "50", "40"],
@@ -2019,7 +2019,7 @@ var data = {
         "Ailment Boost":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases bind/ailment/death/stun infliction rates. This bonus is added after applying resistances.",
+            "Description": "Increases bind/ailment/death/stun infliction rates. This is a flat bonus added after applying resistances.",
             "Max Level": "10",
             "Data": {
                 "Inflictions↑": ["+2%", "+4%", "+6%", "+8%", "+10%", "+11%", "+12%", "+13%", "+14%", "+15%"],
@@ -2520,7 +2520,7 @@ var data = {
         "Drive Mastery":{
             "Usage": "Passive",
             "Unlock": "Accel Drive (Lv 3)",
-            "Description": "Increases damage dealt for each time you have entered Overheat. (Stacks up to +100%. Resets upon dying)",
+            "Description": "Gain an increase to damage dealt each time you enter Overheat. (Stacks up to +100%. Resets upon dying)",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["+3%", "+6%", "+9%", "+11%", "+12%", "+13%", "+14%", "+15%"],

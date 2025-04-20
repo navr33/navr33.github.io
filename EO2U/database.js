@@ -2303,7 +2303,7 @@ var data = {
     "Upper Stance":{
         "Usage": "Passive",
         "Unlock": "Katana Mastery (Lv 1)",
-        "Description": "A Stance that increases physical damage dealt. Activated by Upward Slash. From level 10 onward can activate automatically at the start of battle.",
+        "Description": "A Stance that increases physical damage dealt. Activated by Upward Slash. From level 10 onward, it can activate automatically at the start of battle.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2329,7 +2329,7 @@ var data = {
     "Horse Slash":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Upper Stance (Lv 3)",
-        "Description": "Katana: Requires Upper Stance. Deal melee Cut damage to one enemy.",
+        "Description": "Katana, Upper Stance: Deal melee Cut damage to one enemy.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2342,7 +2342,7 @@ var data = {
     "Flame Grater":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Horse Slash (Lv 3)",
-        "Description": "Katana: Requires Upper Stance. Deal melee Cut+Fire damage to an enemy line.",
+        "Description": "Katana, Upper Stance: Deal melee Cut+Fire damage to an enemy line.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2355,7 +2355,7 @@ var data = {
     "Swallow Strike":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Upper Stance (Lv 5)",
-        "Description": "Katana: Requires Upper Stance. Deal multiple hits of melee Cut damage to one enemy.",
+        "Description": "Katana, Upper Stance: Deal multiple hits of melee Cut damage to one enemy.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2369,7 +2369,7 @@ var data = {
     "Clear Stance":{
         "Usage": "Passive",
         "Unlock": "Katana Mastery (Lv 1)",
-        "Description": "A Stance that decreases physical damage taken. Activated by Charging Thrust. From level 10 onward can activate automatically at the start of battle.",
+        "Description": "A Stance that decreases physical damage taken. Activated by Charging Thrust. From level 10 onward, it can activate automatically at the start of battle.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2395,7 +2395,7 @@ var data = {
     "Arm Strike":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Clear Stance (Lv 3)",
-        "Description": "Katana: Requires Clear Stance. Deal melee Stab damage to one enemy, with a chance to inflict Arm Bind.",
+        "Description": "Katana, Clear Stance: Deal melee Stab damage to one enemy, with a chance to inflict Arm Bind.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2409,7 +2409,7 @@ var data = {
     "Lightning Stab":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Arm Strike (Lv 3)",
-        "Description": "Katana: Requires Clear Stance. Deal melee Stab+Volt damage to one enemy, with pierce effect.",
+        "Description": "Katana, Clear Stance: Deal melee Stab+Volt damage to one enemy, with pierce effect.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2422,7 +2422,7 @@ var data = {
     "Moon Shadow":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Clear Stance (Lv 5)",
-        "Description": "Katana: Requires Clear Stance. Deal melee Stab damage to one enemy at the start of turn.",
+        "Description": "Katana, Clear Stance: Deal melee Stab damage to one enemy at the start of turn.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2434,7 +2434,7 @@ var data = {
     "Drawing Stance":{
         "Usage": "Passive",
         "Unlock": "Katana Mastery (Lv 1)",
-        "Description": "A Stance that increases accuracy, evasion and action speed. Activated by Sheath Strike. From level 10 onward can activate automatically at the start of battle.",
+        "Description": "A Stance that increases accuracy, evasion and action speed. Activated by Sheath Strike. From level 10 onward, it can activate automatically at the start of battle.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2462,7 +2462,7 @@ var data = {
     "Beheading Cut":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Drawing Stance (Lv 3)",
-        "Description": "Katana: Requires Drawing Stance. Deal melee Cut damage to one enemy, with a chance to inflict Instant Kill.",
+        "Description": "Katana, Drawing Stance: Deal melee Cut damage to one enemy, with a chance to inflict Instant Kill.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2476,7 +2476,7 @@ var data = {
     "Frigid Slash":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Beheading Cut (Lv 3)",
-        "Description": "Katana: Requires Drawing Stance. Deal ranged Cut+Ice damage to all enemies.",
+        "Description": "Katana, Drawing Stance: Deal ranged Cut+Ice damage to all enemies.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2489,7 +2489,7 @@ var data = {
     "Ground Strike":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Drawing Stance (Lv 5)",
-        "Description": "Katana: Requires Drawing Stance. Deal ranged Bash damage to one enemy.",
+        "Description": "Katana, Drawing Stance: Deal ranged Bash damage to one enemy.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2502,7 +2502,7 @@ var data = {
     "Peerless Stance":{
         "Usage": "Active (No Parts)",
         "Unlock": "Swallow Strike (Lv 1), Moon Shadow (Lv 1), Ground Strike (Lv 1)",
-        "Description": "Katana: Requires Upper, Clear or Drawing Stance. Enter a special Stance that improves offense, defense, accuracy, evasion and speed, and enables all other skills that require a Stance. The bonuses of the other Stances are added to this one's but at half effectiveness. (Cannot recast to extend duration)",
+        "Description": "Katana, any Stance: Enter a special Stance that improves offense, defense and agility, and enables all other skills that require a Stance. The bonuses of the other Stances are added to this one's but at half effectiveness. (Cannot recast to extend duration)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2519,7 +2519,7 @@ var data = {
     "Peerless Combo":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Peerless Stance (Lv 3)",
-        "Description": "Katana: Requires Peerless Stance. Perform Swallow Strike, Moon Shadow and Ground Strike against one enemy, with decreased damage. Removes your Stance upon use.",
+        "Description": "Katana, Peerless Stance: Perform Swallow Strike, Moon Shadow and Ground Strike against one enemy, with decreased damage. Removes your Stance upon use.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2545,7 +2545,7 @@ var data = {
     "Perfect Chaser":{
         "Usage": "Active (Legs, STR)",
         "Unlock": "Katana Mastery (Lv 10)",
-        "Description": "Katana: Requires any Stance. Prepare to follow up after your allies' normal attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
+        "Description": "Katana, any Stance: Prepare to follow up after your allies' normal attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each follow up.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2831,7 +2831,7 @@ var data = {
     "Sacrifice":{
         "Usage": "Active (Head, TEC, LUC)",
         "Unlock": "HP Up (Lv 5)",
-        "Description": "Kill one ally to deal ranged Almighty damage to all enemies, with a chance to inflict any bind/ailment the ally had. Stronger the more HP the sacrificed ally had: Damage dealt is multiplied by <b>1+√(FlatHP/1000)</b>.",
+        "Description": "Kill one ally to deal ranged Almighty damage to all enemies, with a chance to inflict any bind/ailment the ally had. Stronger the more HP the sacrificed ally had: Damage dealt is multiplied by <b>1+√(CurrentHP/1000)</b>.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2979,7 +2979,7 @@ var data = {
     "Charged Fire":{
         "Usage": "Active (Arms, AGI)",
         "Unlock": "Fire Rounds (Lv 5)",
-        "Description": "Gun: Deal ranged Stab+Fire damage to one enemy. Increase damage taken by 50% until it activates.",
+        "Description": "Gun: Deal ranged Stab+Fire damage to one enemy. Increases damage taken by 50% until it activates.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3005,7 +3005,7 @@ var data = {
     "Charged Ice":{
         "Usage": "Active (Arms, AGI)",
         "Unlock": "Ice Rounds (Lv 5)",
-        "Description": "Gun: Deal ranged Stab+Ice damage to one enemy. Increase damage taken by 50% until it activates.",
+        "Description": "Gun: Deal ranged Stab+Ice damage to one enemy. Increases damage taken by 50% until it activates.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3031,7 +3031,7 @@ var data = {
     "Charged Volt":{
         "Usage": "Active (Arms, AGI)",
         "Unlock": "Volt Rounds (Lv 5)",
-        "Description": "Gun: Deal ranged Stab+Volt damage to one enemy. Increase damage taken by 50% until it activates.",
+        "Description": "Gun: Deal ranged Stab+Volt damage to one enemy. Increases damage taken by 50% until it activates.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3044,7 +3044,7 @@ var data = {
     "Burst Shot":{
         "Usage": "Active (Arms, AGI)",
         "Unlock": "Charged Fire/Ice/Volt (Lv 2)",
-        "Description": "Gun: Deal ranged Stab+Fire+Ice+Volt damage to one enemy. Increase damage taken by 50% until it activates. Afterwards, this skill becomes disabled for 3 turns.",
+        "Description": "Gun: Deal ranged Stab+Fire+Ice+Volt damage to one enemy. Increases damage taken by 50% until it activates. Afterwards, this skill becomes disabled for 3 turns.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3099,7 +3099,7 @@ var data = {
     "Charged Shot":{
         "Usage": "Active (Arms, AGI)",
         "Unlock": "Gun Mastery (Lv 7)",
-        "Description": "Gun: Deal ranged Stab damage to one enemy. Increase damage taken by 50% until it activates.",
+        "Description": "Gun: Deal ranged Stab damage to one enemy. Increases damage taken by 50% until it activates.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3233,7 +3233,7 @@ var data = {
     "Double Action":{
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 10)",
-        "Description": "Chance for attack skills to be activated an additional time. (Max once per turn)",
+        "Description": "Chance for attack skills to be activated an additional time. (Only once per turn)",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3393,7 +3393,7 @@ var data = {
     "Barrier":{
         "Usage": "Active (Arms)",
         "Unlock": "Random Disease (Lv 3), Displace (Lv 3)",
-        "Description": "Chance to nullify bind/ailment/debuff inflictions to party members this turn.",
+        "Description": "Protect the whole party for this turn, which gives them a chance to nullify bind/ailment/debuff inflictions received.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
