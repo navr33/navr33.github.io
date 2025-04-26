@@ -148,7 +148,7 @@ var data = {
         "Spark Blade":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Frigid Slash (Lv 2)",
-            "Description": "Sword: Deal melee Cut damage to one enemy, then ranged Volt damage to all enemies. Volt attack is stronger if the initial target was resistant to Cut: Damage is multiplied by 4 if the target had 50% vulnerability, or by 6 if it was lower.",
+            "Description": "Sword: Deal melee Cut damage to one enemy, then ranged Volt damage to all enemies. The Volt attack becomes stronger if the initial target was resistant to Cut: Damage dealt is multiplied by 4 if the target had 50% vulnerability, or by 6 if it was lower.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["9", "9", "9", "13", "13", "13", "13", "17"],
@@ -851,7 +851,7 @@ var data = {
         "Staff Mastery":{
             "Usage": "Passive",
             "Unlock": "Heavy Strike (Lv 1)",
-            "Description": "If a Staff is equipped, increases Max TP and physical damage dealt.",
+            "Description": "Increases Max TP and physical damage dealt if you have a Staff equipped.",
             "Max Level": "8",
             "Data": {
                 "Max TP↑": ["+5%", "+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+15%"],
@@ -1174,7 +1174,7 @@ var data = {
         "Upper Stance":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Stance that increases all damage dealt. Activated by Upward Slash. (If a Katana is equipped, activate your highest-level Stance at the start of battle. Ties for highest level will choose a Stance at random)",
+            "Description": "Stance that increases all damage dealt. Activated by Upward Slash. (If you have a Katana equipped, activate your highest-level Stance at the start of battle. Ties for highest level will choose a Stance at random)",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["x1.1", "x1.12", "x1.14", "x1.14", "x1.16", "x1.18", "x1.2", "x1.2"],
@@ -1197,7 +1197,7 @@ var data = {
         "Clear Stance":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Stance that decreases all damage taken and increases bind/ailment infliction rates for Ronin skills. Activated by Charging Thrust. (If a Katana is equipped, activate your highest-level Stance at the start of battle. Ties for highest level will choose a Stance at random)",
+            "Description": "Stance that decreases all damage taken and increases bind/ailment infliction rates for Ronin skills. Activated by Charging Thrust. (If you have a Katana equipped, activate your highest-level Stance at the start of battle. Ties for highest level will choose a Stance at random)",
             "Max Level": "8",
             "Data": {
                 "Damage Taken↓": ["x0.9", "x0.87", "x0.84", "x0.84", "x0.81", "x0.78", "x0.75", "x0.75"],
@@ -1221,7 +1221,7 @@ var data = {
         "Swift Stance":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Stance that increases accuracy, evasion and action speed. Activated by Sheath Strike. (If a Katana is equipped, activate your highest-level Stance at the start of battle. Ties for highest level will choose a Stance at random)",
+            "Description": "Stance that increases accuracy, evasion and action speed. Activated by Sheath Strike. (If you have a Katana equipped, activate your highest-level Stance at the start of battle. Ties for highest level will choose a Stance at random)",
             "Max Level": "8",
             "Data": {
                 "Accuracy↑": ["+10%", "+12%", "+14%", "+14%", "+16%", "+18%", "+20%", "+20%"],
@@ -1557,7 +1557,7 @@ var data = {
         "War Edge Master":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Enables using Sword skills with a Staff. If a Sword is equipped, increases Max TP. If a Staff is equipped, increases all damage dealt.",
+            "Description": "Enables using Sword skills with a Staff. Increases Max TP if you have a Sword equipped. Increases all damage dealt if you have a Staff equipped.",
             "Max Level": "8",
             "Data": {
                 "Max TP↑": ["+6%", "+8%", "+10%", "+12%", "+14%", "+16%", "+18%", "+25%"],
@@ -1587,7 +1587,7 @@ var data = {
         "Artery":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "War Revive (Lv 2)",
-            "Description": "Place a buff on all allies for 3 turns, which restores HP to them when they act (max once per turn).",
+            "Description": "Place a buff on all the whole party for 3 turns, which restores HP to the holder upon acting (max once per turn).",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["8", "8", "8", "8", "8", "15"],
@@ -1598,7 +1598,7 @@ var data = {
         "War Response":{
             "Usage": "Active (Head, WIS)",
             "Unlock": "War Revive (Lv 2)",
-            "Description": "Place a debuff on one enemy for 3 turns, which restores HP to the party when the target acts (max once per turn).",
+            "Description": "Place a debuff on one enemy for 3 turns, which restores HP to the party when the holder acts (max once per turn).",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7", "13"],
@@ -1876,7 +1876,7 @@ var data = {
         "Delayed Charge":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Spear: Spend part of your current HP to prepare an attack that will hit in several more turns, at the end of the turn. Deals ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage is multiplied by 0.75 for each remaining charge turn.",
+            "Description": "Spear: Spend part of your current HP to prepare an attack that will hit in several more turns, at the end of the turn. When activated, deal ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage is multiplied by 0.75 for each remaining charge turn.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["9", "9", "9", "9", "14", "14", "14", "14", "14", "20"],
@@ -3477,7 +3477,7 @@ var data = {
         "Second Sword":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Allows you to equip a sub-weapon (uses an armor slot). Decreases damage taken if two weapons are equipped. (Skills that can use both weapons will prioritize the strongest one)",
+            "Description": "Allows you to equip a sub-weapon (uses an armor slot). Decreases damage taken if you have two weapons equipped. (Skills that can use both weapons will prioritize the strongest one)",
             "Max Level": "10",
             "Data": {
                 "Damage Taken↓": ["-5%", "-6%", "-7%", "-8%", "-12%", "-13%", "-14%", "-15%", "-16%", "-20%"],
@@ -4161,7 +4161,7 @@ var data = {
         "Blade Flurry":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If two weapons are equipped, normal attacks will perform a second hit with your sub-weapon.",
+            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If you have two weapons equipped, normal attacks will perform a second hit with your sub-weapon.",
             "Max Level": "8",
             "Data": {
                 "Attack Power\n(Second Hit)": ["30%", "33%", "36%", "39%", "42%", "45%", "48%", "60%"],
@@ -5198,7 +5198,7 @@ var data = {
         "Million Rush":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If a sub-weapon is equipped, normal attacks have a chance to hit 2~4 times.",
+            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If you have two weapons equipped, normal attacks have a chance to hit 2~4 times.",
             "Max Level": "8",
             "Data": {
                 "Activation Chance": ["11%", "13%", "15%", "17%", "19%", "21%", "23%", "34%"],

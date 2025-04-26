@@ -3,11 +3,11 @@ var data = {
     "Class Proficiency":{
         "Proficiency / Expertise / Enlightment":{
             "Usage": "Passive (Unique)",
-            "Description": "After you perform an attack, all party members deal more damage and have more accuracy against its targets until the end of turn.",
+            "Description": "Enemies hit by your attacks are weakened until the end of turn, which increases damage taken and decreases evasion.",
             "Max Level": "3",
             "Data": {
-                "Damage Dealt↑": ["+20%", "+25%", "+30%"],
-                "Accuracy↑": ["+10%", "+15%", "+20%"],
+                "Damage Taken↑": ["+20%", "+25%", "+30%"],
+                "Evasion↓": ["-10%", "-15%", "-20%"],
             }
         },
     },
@@ -100,7 +100,7 @@ var data = {
         "Vanguard":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on yourself for 5 turns, which increases physical damage dealt and makes you act first but also increases physical damage taken.",
+            "Description": "Place a buff on yourself for 5 turns, which increases physical damage dealt and speed priority but also increases physical damage taken.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6", "6"],
@@ -196,7 +196,7 @@ var data = {
         "Initiative":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases all damage dealt and accuracy when you attack before any enemy has acted.",
+            "Description": "Increases damage dealt and accuracy if no enemy has acted yet this turn.",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["+10%", "+18%", "+25%", "+30%", "+33%", "+36%", "+38%", "+40%"],
@@ -252,7 +252,7 @@ var data = {
         "Link Mastery":{
             "Usage": "Passive",
             "Unlock": "Improved Link (Lv 3)",
-            "Description": "Increases the percentage of the original damage repeated by a Link's activations for each time it has been activated this turn.",
+            "Description": "Increases the percentage of the original damage that's repeated by a Link's activations for each time it has been activated this turn.",
             "Max Level": "6",
             "Data": {
                 "Repeated Damage↑": ["+3%", "+4%", "+5%", "+6%", "+7%", "+8%"],
@@ -325,7 +325,7 @@ var data = {
         "Blade Flurry":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If two weapons are equipped, normal attacks will perform a second attack (with decreased damage) using the sub-weapon.",
+            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If you have two weapons equipped, normal attacks will perform a second attack (with decreased damage) using the sub-weapon.",
             "Max Level": "6",
             "Data": {
                 "Damage Mod.\n(Second Attack)": ["x0.3", "x0.4", "x0.5", "x0.6", "x0.7", "x0.8"],
@@ -353,7 +353,7 @@ var data = {
         "Decoy Sign":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on one ally for 3 turns, which increases enemy aggro. Actual increase on each attack is a random value between 3 and this skill's bonus.",
+            "Description": "Place a buff on one ally for 3 turns, which increases enemy aggro. The actual increase on each attack is a random value between 3 and this skill's bonus.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4"],
@@ -440,7 +440,7 @@ var data = {
             "Data": {
                 "TP Cost": ["6", "7", "8", "9", "10", "11"],
                 "Ambush↑": ["+25%", "+30%", "+35%", "+40%", "+45%", "+50%"],
-                "Duration": ["40", "45", "50", "55", "60", "65"],
+                "Duration (Steps)": ["40", "45", "50", "55", "60", "65"],
             }
         },
         "Speed Boost":{
@@ -496,7 +496,7 @@ var data = {
         "Foul Mastery":{
             "Usage": "Passive",
             "Unlock": "Swift Edge (Lv 2), Venom Throw (Lv 2)",
-            "Description": "Increases all damage dealt for each time you have inflicted an ailment. (Stacks up to +100%. Resets upon dying)",
+            "Description": "Gain an increase to damage dealt each time you inflict an ailment. (Stacks up to +100%. Resets upon dying)",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑": ["+7%", "+11%", "+14%", "+17%", "+19%", "+21%", "+23%", "+25%"],
@@ -595,7 +595,7 @@ var data = {
         "Taunt":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on yourself for 4 turns, which increases enemy aggro. Actual increase on each attack is a random value between 3 and this skill's bonus.",
+            "Description": "Place a buff on yourself for 4 turns, which increases enemy aggro. The actual increase on each attack is a random value between 3 and this skill's bonus.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2"],
@@ -711,7 +711,7 @@ var data = {
             "Data": {
                 "TP Cost": ["6", "6", "7", "7", "8", "8"],
                 "Range": ["1", "3", "4", "6", "8", "10"],
-                "Duration": ["30", "40", "50", "60", "80", "100"],
+                "Duration (Steps)": ["30", "40", "50", "60", "80", "100"],
             }
         },
         "Hardy Chef":{
@@ -918,7 +918,7 @@ var data = {
         "Squall Volley":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flank Shot (Lv 2)",
-            "Description": "Bow: Deal multiple hits of ranged Stab damage to random enemies. (Once one hit becomes Critical, all remaining hits will also be Critical)",
+            "Description": "Bow: Deal multiple hits of ranged Stab damage to random enemies. Highly innacurate. (Once one hit becomes Critical, all remaining hits will also be Critical)",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["14", "14", "14", "17", "17", "17", "17", "22"],
@@ -956,7 +956,7 @@ var data = {
             "Data": {
                 "TP Cost": ["7", "7", "7", "10", "10", "10"],
                 "Encounters↓": ["x0.8", "x0.7", "x0.6", "x0.5", "x0.4", "x0.3"],
-                "Duration": ["50", "50", "50", "100", "100", "100"],
+                "Duration (Steps)": ["50", "50", "50", "100", "100", "100"],
             }
         },
         "High Caution":{
@@ -1069,7 +1069,7 @@ var data = {
         "Refresh":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Removes ailments from the targets.",
+            "Description": "Remove ailments from target allies.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "3", "12", "9", "6", "3"],
@@ -1080,7 +1080,7 @@ var data = {
         "Treat":{
             "Usage": "Active (Head)",
             "Unlock": "Refresh (Lv 2)",
-            "Description": "Removes debuffs from the targets.",
+            "Description": "Remove debuffs from target allies.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "3", "12", "9", "6", "3"],
@@ -1091,7 +1091,7 @@ var data = {
         "Recovery":{
             "Usage": "Active (Head)",
             "Unlock": "Refresh (Lv 2)",
-            "Description": "Removes binds from the targets.",
+            "Description": "Remove binds from target allies.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "3", "12", "9", "6", "3"],
@@ -1535,7 +1535,7 @@ var data = {
     },
     "Novice (Lv 1)":{
         "Regen Waltz":{
-            "Usage": "Active (Legs)",
+            "Usage": "Active (Legs, TEC)",
             "Unlock": "N/A",
             "Description": "Place a buff on yourself for 3 turns, which restores HP to your line at the end of each turn.",
             "Max Level": "10",
@@ -1578,9 +1578,9 @@ var data = {
             }
         },
         "Counter Samba":{
-            "Usage": "Active (Legs)",
+            "Usage": "Active (Legs, STR)",
             "Unlock": "N/A",
-            "Description": "Place a buff on yourself for 3 turns, which gives you a chance to counterattack when your line is hit.",
+            "Description": "Place a buff on yourself for 3 turns, which gives you a chance to counterattack when your line is hit, dealing weapon-based damage to the attacker.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "6", "6", "6", "6", "8"],
@@ -1591,9 +1591,9 @@ var data = {
             }
         },
         "Chase Samba":{
-            "Usage": "Active (Legs)",
+            "Usage": "Active (Legs, STR)",
             "Unlock": "Counter Samba (Lv 3)",
-            "Description": "Place a buff on yourself for 3 turns, which makes you follow up attacks by other allies in your line.",
+            "Description": "Place a buff on yourself for 3 turns, which makes you follow up attacks by other allies in your line, dealing weapon-based damage to the same targets.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["8", "8", "8", "10", "10", "10", "10", "12"],
@@ -1646,18 +1646,18 @@ var data = {
         "Energy Tango":{
             "Usage": "Active (Legs)",
             "Unlock": "Guard Tango (Lv 1)",
-            "Description": "Place a buff on yourself for 3 turns, which decreases the TP cost of skills used by party members in your line.",
+            "Description": "Place a buff on yourself for 3 turns, which decreases TP costs for party members in your line.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "8", "10", "12", "14", "16"],
-                "Costs↓": ["-3", "-4", "-5", "-6", "-6", "-8"],
+                "Costs↓": ["-3", "-4", "-5", "-6", "-7", "-8"],
                 "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6"],
             }
         },
         "Wide Dance":{
             "Usage": "Active (Legs)",
             "Unlock": "Energy Tango (Lv 2)",
-            "Description": "Requires a Tango buff: For this turn, your Dance buffs will apply to the whole party.",
+            "Description": "Requires a Tango buff: Empower your Dance buffs for this turn, which makes them affect the whole party instead of only your line.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["8", "6", "4", "2"],
@@ -1665,9 +1665,9 @@ var data = {
             }
         },
         "Trick Samba":{
-            "Usage": "Active (Legs)",
+            "Usage": "Active (Legs, STR)",
             "Unlock": "Chase Samba (Lv 1)",
-            "Description": "Place a buff on yourself for 3 turns, which makes other allies in your line follow up after your attacks. Activation chance per turn starts at 100% and goes down with each activation.",
+            "Description": "Place a buff on yourself for 3 turns, which makes other allies in your line follow up after your attacks, dealing weapon-based damage to the same targets. Activation chance per turn starts at 100% and goes down with each activation.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["10", "10", "10", "12", "12", "12", "12", "14"],
@@ -1679,7 +1679,7 @@ var data = {
             }
         },
         "Rush Dance":{
-            "Usage": "Active (Legs)",
+            "Usage": "Active (Legs, STR)",
             "Unlock": "Trick Samba (Lv 2)",
             "Description": "Requires a Samba buff: Prepare to follow up after your allies' attacks this turn, dealing weapon-based damage to the same targets. Activation chance starts at 100% and goes down with each activation.",
             "Max Level": "8",
@@ -1699,7 +1699,7 @@ var data = {
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["20%", "23%", "26%", "28%", "28%", "30%", "31%", "32%", "33%", "33%"],
-                "Max. Hits": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "4"],
+                "Hits": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "4"],
             }
         },
         "Burst Saver":{
@@ -1733,7 +1733,7 @@ var data = {
             }
         },
         "Beat Dance":{
-            "Usage": "Active (Legs)",
+            "Usage": "Active (Legs, STR)",
             "Unlock": "N/A",
             "Description": "Requires a Waltz, Tango and Samba buff: Command all party members to deal weapon-based damage to one enemy.",
             "Max Level": "6",
@@ -1862,7 +1862,7 @@ var data = {
             "Data": {
                 "TP Cost": ["4", "4", "4", "4"],
                 "Damage Taken↓": ["x0.6", "x0.4", "x0.3", "x0.1"],
-                "Duration": ["20", "40", "60", "80"],
+                "Duration (Steps)": ["20", "40", "60", "80"],
             }
         },
         "Bracing Walk":{
@@ -2031,7 +2031,7 @@ var data = {
     "Class Proficiency":{
         "Proficiency / Expertise / Enlightment":{
             "Usage": "Passive (Unique)",
-            "Description": "Recover TP when you perform a normal attack.",
+            "Description": "Recover TP when you land a normal attack.",
             "Max Level": "3",
             "Data": {
                 "TP Gain": ["8", "10", "12"],
@@ -2080,7 +2080,7 @@ var data = {
         "Blood Surge":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Activate the Blood Surge state, which increases damage dealt but makes you lose HP and TP each time you act.",
+            "Description": "Activate the Blood Surge state, which strongly increases damage dealt but consumes HP and TP when acting.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2", "2", "2"],
@@ -2092,7 +2092,7 @@ var data = {
         "Endure":{
             "Usage": "Passive",
             "Unlock": "Blood Surge (Lv 1)",
-            "Description": "Once per battle, survive lethal damage (with 1 HP) and immediately recover HP.",
+            "Description": "Once per battle, if you take lethal damage, survive the hit (with 1 HP) and immediately recover HP.",
             "Max Level": "4",
             "Data": {
                 "HP Gain": ["10", "50", "100", "200"],
@@ -2101,7 +2101,7 @@ var data = {
         "Roar":{
             "Usage": "Active (Head, TEC)",
             "Unlock": "N/A",
-            "Description": "Dispel all buffs on one enemy. If at least one modifier was removed, deal ranged Almighty damage to that enemy. This attack cannot miss.",
+            "Description": "Dispel all buffs on one enemy. If at least one modifier was removed, deal ranged Almighty damage (cannot miss) to that enemy.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5"],
@@ -2166,7 +2166,7 @@ var data = {
         "Deep Breath":{
             "Usage": "Active (Head)",
             "Unlock": "Endure (Lv 1)",
-            "Description": "Deactivate the Blood Surge state at the start of turn, then recover HP and TP.",
+            "Description": "Deactivate the Blood Surge state at the start of the turn, then recover HP and TP.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["1", "1", "1", "1"],
@@ -2267,18 +2267,17 @@ var data = {
         "Surge Mastery":{
             "Usage": "Passive",
             "Unlock": "Deep Breath (Lv 2)",
-            "Description": "During Blood Surge, increase damage dealt based on missing TP and decrease damage taken based on missing HP:<br>-Damage dealt increase grows linearly from the minimum until it reaches its maximum at 90% missing TP.<br>-Damage taken decrease grows linearly from 0 until it reaches its maximum at 99% missing HP.",
+            "Description": "During Blood Surge, increase damage dealt based on missing TP and decrease damage taken based on missing HP:<br>-The increase to damage dealt has an initial value that gains +1% per 3% of missing TP (capped at 90%).<br>-The decrease to damage taken is multiplied by your percentage of missing HP (rounded up).",
             "Max Level": "8",
             "Data": {
                 "Damage Dealt↑\n(Min. Bonus)": ["+0%", "+2%", "+4%", "+6%", "+7%", "+8%", "+9%", "+10%"],
-                "Damage Dealt↑\n(Max. Bonus)": ["+30%", "+32%", "+34%", "+36%", "+37%", "+38%", "+39%", "+40%"],
                 "Damage Taken↓\n(Max. Bonus)": ["-30%", "-31%", "-32%", "-32%", "-33%", "-33%", "-33%", "-33%"],
             }
         },
         "Ferocity":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Recover HP when you perform a normal attack.",
+            "Description": "Recover HP when you land a normal attack.",
             "Max Level": "8",
             "Data": {
                 "HP Gain": ["20", "38", "56", "75", "90", "103", "115", "125"],
@@ -2348,7 +2347,7 @@ var data = {
         "Rear Guard":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on one ally for 5 turns, which decreases damage taken but makes them act last.",
+            "Description": "Place a buff on one ally for 5 turns, which decreases damage taken but also decreases speed priority.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "6", "6"],

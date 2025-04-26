@@ -3342,7 +3342,7 @@ var data = {
     "Artery":{
         "Usage": "Active (Head, TEC+VIT)",
         "Unlock": "War Lore Mastery (Lv 5)",
-        "Description": "Place a buff on the whole party for several turns, which restores HP to each target when they act.",
+        "Description": "Place a buff on the whole party for several turns, which restores HP to the holder upon acting.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3355,7 +3355,7 @@ var data = {
     "War Response":{
         "Usage": "Active (Head, TEC+VIT)",
         "Unlock": "Artery (Lv 5)",
-        "Description": "Place a debuff on one enemy for several turns, which restores HP to the whole party when the target acts.",
+        "Description": "Place a debuff on one enemy for several turns, which restores HP to the party when the holder acts.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3417,7 +3417,7 @@ var data = {
     "War Edge Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Enables using Sword skills with a Staff. If a Sword is equipped, increases Max TP. If a Staff is equipped, increases all damage dealt. (Automatically unlocks other skills that require this one)",
+        "Description": "Enables using Sword skills with a Staff. Increases Max TP if you have a Sword equipped. Increases all damage dealt if you have a Staff equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",

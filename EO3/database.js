@@ -133,7 +133,7 @@ var data = {
     "Royal Veil":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "At the end of each turn, if your HP is full, restore HP to the whole party.",
+        "Description": "At the end of each turn, if your HP is full, restore HP the whole party.",
         "Starter": "1",
         "Max Level": "10",
         "Data":{
@@ -432,7 +432,7 @@ var data = {
     "Shield Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "If you have a Shield equipped, decrease physical damage taken. (Automatically unlocks other skills that require this one)",
+        "Description": "Decreases physical damage taken if you have a Shield equipped. (Automatically unlocks other skills that require this one)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1326,7 +1326,7 @@ var data = {
     "Fire Prophecy":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Fire Star (Lv 5), Binary Fire (Lv 5)",
-        "Description": "Target one enemy and prepare to nullify any Fire attack they might use this turn. If this activates, perform a counterattack that deals ranged Fire damage (cannot miss) to the target.",
+        "Description": "Target one enemy and prepare to nullify its action for this turn if it's a Fire attack. If the nullification activates, counterattack with ranged Fire damage (cannot miss) to the target.",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["15", "16", "17", "18", "19"],
@@ -1371,7 +1371,7 @@ var data = {
     "Ice Prophecy":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Ice Star (Lv 5), Binary Ice (Lv 5)",
-        "Description": "Target one enemy and prepare to nullify any Ice attack they might use this turn. If this activates, perform a counterattack that deals ranged Ice damage (cannot miss) to the target.",
+        "Description": "Target one enemy and prepare to nullify its action for this turn if it's an Ice attack. If the nullification activates, counterattack with ranged Ice damage (cannot miss) to the target.",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["15", "16", "17", "18", "19"],
@@ -1416,7 +1416,7 @@ var data = {
     "Volt Prophecy":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Volt Star (Lv 5), Binary Volt (Lv 5)",
-        "Description": "Target one enemy and prepare to nullify any Volt attack they might use this turn. If this activates, perform a counterattack that deals ranged Volt damage (cannot miss) to the target.",
+        "Description": "Target one enemy and prepare to nullify its action for this turn if it's a Volt attack. If the nullification activates, counterattack with ranged Volt damage (cannot miss) to the target.",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["15", "16", "17", "18", "19"],
@@ -2001,7 +2001,7 @@ var data = {
     "Persistence":{
         "Usage": "Passive",
         "Unlock": "Play Possum (Lv 5), Strange Seeds (Lv 3)",
-        "Description": "Chance to automatically revive at the end of each turn (max once per battle). Revives with 20 HP.",
+        "Description": "If you're dead, there's a chance to automatically revive at the end of each turn (max once per battle). Revives with 20 HP.",
         "Max Level": "10",
         "Data": {
             "Activation Chance": ["16%", "18%", "20%", "22%", "24%", "27%", "30%", "33%", "36%", "40%"],
@@ -2235,7 +2235,7 @@ var data = {
     "Fore Honor":{
         "Usage": "Active (Head)",
         "Unlock": "Morale Boost (Lv 3)",
-        "Description": "Place a buff on one ally for 3 turns, which increases all damage dealt and makes them act first but also increases damage taken.",
+        "Description": "Place a buff on one ally for 3 turns, which increases all damage dealt and speed priority but also increases damage taken.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["8", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
@@ -2247,7 +2247,7 @@ var data = {
     "Rear Dignity":{
         "Usage": "Active (Head)",
         "Unlock": "Morale Boost (Lv 3)",
-        "Description": "Place a buff on one ally for 3 turns, which decreases damage taken but also decreases damage dealt and makes them act last.",
+        "Description": "Place a buff on one ally for 3 turns, which decreases damage taken but also decreases damage dealt and speed priority.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["8", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
@@ -2315,7 +2315,7 @@ var data = {
     "Bloody Lance":{
         "Usage": "Passive",
         "Unlock": "Endure (Lv 3)",
-        "Description": "Increases damage dealt each time an ally or enemy dies. Resets to 0 if you die.",
+        "Description": "Gain an increase to damage dealt each time an ally or enemy dies. (Resets to 0 upon dying)",
         "Max Level": "10",
         "Data": {
             "Damage Dealt↑": ["+10%", "+13%", "+16%", "+19%", "+22%", "+25%", "+28%", "+31%", "+35%", "+40%"],
@@ -2460,7 +2460,7 @@ var data = {
     "HP Cannon":{
         "Usage": "Active (STR)",
         "Unlock": "Overheat (Lv 10), Core Dump (Lv 5)",
-        "Description": "Can only be used if you're fully bound. Deal Almighty damage to one enemy. The damage is a fixed value that's multiplied by your amount of missing HP.",
+        "Description": "Requires having 3 binds: Deal Almighty damage to one enemy. The base damage is a fixed value that's multiplied by your amount of missing HP.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
@@ -2572,7 +2572,7 @@ var data = {
     "Reflector":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Resupply (Lv 3), All Out (Lv 3)",
-        "Description": "Command all Bots to nullify enemy attacks of their corresponding element. If a Bot stops an attack, it will perform a counter attack that deals ranged damage of its element.",
+        "Description": "Command all Bots to nullify enemy attacks of their corresponding element. If a Bot stops an attack, it will counterattack with ranged damage of its element.",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["14", "15", "16", "18", "20"],
@@ -2583,7 +2583,7 @@ var data = {
     "Shoot":{
         "Usage": "Active (Head, STR)",
         "Unlock": "Resupply (Lv 3), All Out (Lv 3)",
-        "Description": "Command all your Bots to attack one enemy, dealing a single hit of damage of their combined elements, but then the Bots are destroyed. Damage is doubled for each Bot beyond the first. Damage is tripled and becomes Almighty type if the 3 Bot types participate.",
+        "Description": "Command all your Bots to attack one enemy, dealing a single hit of damage of their combined elements, but then the Bots are destroyed. Damage dealt is doubled for each Bot beyond the first. Damage dealt is tripled and becomes Almighty type if the 3 Bot types participate.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["25", "26", "28", "30", "32", "34", "36", "39", "42", "45"],
