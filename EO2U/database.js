@@ -322,10 +322,13 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Survivalist":{
@@ -648,10 +651,13 @@ var data = {
     "Natural Instinct":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Protector":{
@@ -954,10 +960,13 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Dark Hunter":{
@@ -1297,10 +1306,13 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Medic":{
@@ -1618,10 +1630,13 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Alchemist":{
@@ -1942,10 +1957,13 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Troubadour":{
@@ -2262,10 +2280,13 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Ronin":{
@@ -2603,10 +2624,13 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Hexer":{
@@ -2914,10 +2938,13 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 
 },
@@ -3243,10 +3270,13 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "War Magus":{
@@ -3569,10 +3599,13 @@ var data = {
     "Chop":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Chop points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Chop points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Beast":{
@@ -3887,10 +3920,13 @@ var data = {
     "Natural Instinct":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take, Chop or Mine points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Sovereign":{
@@ -4205,10 +4241,13 @@ var data = {
     "Take":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Take points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Take points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Fafnir":{
@@ -4622,10 +4661,13 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Highlander":{
@@ -4945,10 +4987,13 @@ var data = {
     "Mine":{
         "Usage": "Passive (Field)",
         "Unlock": "N/A",
-        "Description": "Obtain additional materials when gathering from Mine points. Maximum possible yield is equal to the skill level (max 20), however higher amounts have lower chance of appearing.",
+        "Description": "Obtain additional materials when gathering from Mine points. Higher yields have a lower chance of appearing.",
         "Starter": "1",
-        "Max Level": "0",
-        "Data": ""
+        "Max Level": "20",
+        "Natural Level": "10",
+        "Data": {
+            "Max. Yield": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+        }
     },
 },
 "Battle Items":{

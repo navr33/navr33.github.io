@@ -206,8 +206,9 @@ var data = {
         "Muscular Chef":{
             "Usage": "Passive (Sky)",
             "Unlock": "N/A",
-            "Description": "Increases STR gains and decreases STR loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
+            "Description": "Increases STR gains and decreases STR loses from cooked food. Multiple instances are added as a single, higher-level skill.",
             "Max Level": "5",
+            "Natural Level": "1",
             "Data": {
                 "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
                 "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
@@ -457,8 +458,9 @@ var data = {
         "Agile Chef":{
             "Usage": "Passive (Sky)",
             "Unlock": "N/A",
-            "Description": "Increases AGI gains and decreases AGI loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
+            "Description": "Increases AGI gains and decreases AGI loses from cooked food. Multiple instances are added as a single, higher-level skill.",
             "Max Level": "5",
+            "Natural Level": "1",
             "Data": {
                 "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
                 "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
@@ -717,8 +719,9 @@ var data = {
         "Hardy Chef":{
             "Usage": "Passive (Sky)",
             "Unlock": "N/A",
-            "Description": "Increases VIT gains and decreases VIT loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
+            "Description": "Increases VIT gains and decreases VIT loses from cooked food. Multiple instances are added as a single, higher-level skill.",
             "Max Level": "5",
+            "Natural Level": "1",
             "Data": {
                 "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
                 "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
@@ -1453,8 +1456,9 @@ var data = {
         "Wise Chef":{
             "Usage": "Passive (Sky)",
             "Unlock": "N/A",
-            "Description": "Increases TEC gains and decreases TEC loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
+            "Description": "Increases TEC gains and decreases TEC loses from cooked food. Multiple instances are added as a single, higher-level skill.",
             "Max Level": "5",
+            "Natural Level": "1",
             "Data": {
                 "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
                 "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
@@ -1714,8 +1718,9 @@ var data = {
         "Lucky Chef":{
             "Usage": "Passive (Sky)",
             "Unlock": "N/A",
-            "Description": "Increases LUC gains and decreases LUC loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
+            "Description": "Increases LUC gains and decreases LUC loses from cooked food. Multiple instances are added as a single, higher-level skill.",
             "Max Level": "5",
+            "Natural Level": "1",
             "Data": {
                 "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
                 "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
@@ -1967,8 +1972,9 @@ var data = {
         "Purist Chef":{
             "Usage": "Passive (Sky)",
             "Unlock": "N/A",
-            "Description": "Increases TP gains and decreases TP loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
+            "Description": "Increases TP gains and decreases TP loses from cooked food. Multiple instances are added as a single, higher-level skill.",
             "Max Level": "5",
+            "Natural Level": "1",
             "Data": {
                 "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
                 "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
@@ -2206,8 +2212,9 @@ var data = {
         "Robust Chef":{
             "Usage": "Passive (Sky)",
             "Unlock": "N/A",
-            "Description": "Increases HP gains and decreases HP loses from cooked food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
+            "Description": "Increases HP gains and decreases HP loses from cooked food. Multiple instances are added as a single, higher-level skill.",
             "Max Level": "5",
+            "Natural Level": "1",
             "Data": {
                 "Stat Gain↑": ["+44%", "+63%", "+77%", "+89%", "+100%"],
                 "Stat Loss↓": ["-44%", "-63%", "-77%", "-89%", "-100%"],
@@ -2457,7 +2464,7 @@ var data = {
         "Hunter Sense":{
             "Usage": "Passive (Sky)",
             "Unlock": "N/A",
-            "Description": "Chance to not spend the food spot when gathering food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
+            "Description": "Chance to not deplete the resource spot when gathering food. Normal maximum level is 1, but multiple instances are added as a single, higher-level skill.",
             "Max Level": "0",
             "Data": ""
         },
@@ -2895,7 +2902,7 @@ var data = {
 
 var descriptions = {
     "Landsknecht":  "Frontline warriors that encourage allies to follow them up.",
-    "Nightseeker":  "Assassins that poison enemies then close in for the kill.",
+    "Nightseeker":  "Assassins that weaken enemies before closing in for the kill.",
     "Fortress":     "Knights that put themselves on the line to protect the party.",
     "Sniper":       "Archers that aim at weak spots to hurt and incapacitate.",
     "Medic":        "Healers that effectively treat any injuries and afflictions.",
@@ -2903,7 +2910,7 @@ var descriptions = {
     "Dancer":       "Performers who use buffs to strengthen, heal and attack.",
     "Arcanist":     "Support casters that use magic circles to restrain enemies.",
     "Bushi":        "Fierce attackers that enter a bloody rage to gain power.",
-    "Imperial":     "Knights with blades that make destructive energy attacks.",
+    "Imperial":     "Heavy knights that wield destructive mechanized blades.",
 
     "Burst Skills":"Powerful skills available through the Burst system.",
     "Battle Items":"Consumable items meant to aid you in battle.",
@@ -3012,6 +3019,11 @@ function add_skill_entry(skill_list, current_class, skill){
         }
         else{
             level.innerText = i
+        }
+        if (current_skill.hasOwnProperty("Natural Level")){
+            if (i > current_skill["Natural Level"]){
+                level.style.backgroundColor = "#ffa44a"
+            }
         }
     }
     //Add each row of skill data
