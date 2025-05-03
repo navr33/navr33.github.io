@@ -4,7 +4,7 @@ var data = {
         "Rapier Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases physical damage dealt if a Sword is equipped. Sword's damage type changes from Cut to Stab.",
+            "Description": "Increases physical damage dealt if you have a Sword equipped. Sword's damage type changes from Cut to Stab.",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+2%", "+3%", "+4%", "+5%", "+8%", "+9%", "+10%", "+11%", "+12%", "+15%"],
@@ -51,7 +51,7 @@ var data = {
         },
         "Chain Boost":{
             "Usage": "Passive",
-            "Unlock": "Chain Flame/Freeze/Shock (Lv 2)",
+            "Unlock": "Chain Flame (Lv 2), Chain Freeze (Lv 2), Chain Shock (Lv 2)",
             "Description": "Increases damage dealt with Chain attacks based on how many you have performed this turn. (Stacks up to +99%)",
             "Max Level": "10",
             "Data": {
@@ -60,7 +60,7 @@ var data = {
         },
         "Chain Burst":{
             "Usage": "Passive (STR)",
-            "Unlock": "Chain Flame/Freeze/Shock (Lv 2)",
+            "Unlock": "Chain Flame (Lv 2), Chain Freeze (Lv 2), Chain Shock (Lv 2)",
             "Description": "(Chain) When you kill an enemy with a Chain attack, perform an additional attack of the same types to a random enemy.",
             "Max Level": "10",
             "Data": {
@@ -78,8 +78,8 @@ var data = {
                 "TP Cost": ["7", "7", "7", "7", "11", "11", "11", "11", "11", "15"],
                 "Evasion↑": ["+100%", "+112%", "+124%", "+136%", "+136%", "+152%", "+168%", "+184%", "+200%", "+200%"],
                 "Aggro↑": ["+1000%", "+1120%", "+1240%", "+1360%", "+1360%", "+1520%", "+1680%", "+1840%", "+2000%", "+2000%"],
-                "Evasion Fadeout": ["-80%", "-80%", "-80%", "-80%", "-65%", "-65%", "-65%", "-65%", "-65%", "-50%"],
-                "Aggro Fadeout": ["-600%", "-600%", "-600%", "-600%", "-500%", "-500%", "-500%", "-500%", "-500%", "-400%"],
+                "Evasion Fadeout": ["80%", "80%", "80%", "80%", "65%", "65%", "65%", "65%", "65%", "50%"],
+                "Aggro Fadeout": ["600%", "600%", "600%", "600%", "500%", "500%", "500%", "500%", "500%", "400%"],
             }
         },
         "Wind Curtain":{
@@ -124,7 +124,7 @@ var data = {
         "Ray of Light":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases enemy aggro and decreases all damage taken for each time you evade an attack. Effect resets if you're hit.",
+            "Description": "Gain an increase to enemy aggro and a decrease to all damage taken each time you evade a hit. Resets to 0 upon being hit.",
             "Max Level": "10",
             "Data": {
                 "Aggro↑": ["+30%", "+30%", "+30%", "+30%", "+40%", "+40%", "+40%", "+40%", "+40%", "+50%"],
@@ -191,7 +191,7 @@ var data = {
             "Data": {
                 "TP Cost": ["15", "15", "15", "15", "21", "21", "21", "21", "21", "30"],
                 "Evasion↑": ["+50%", "+53%", "+56%", "+59%", "+70%", "+74%", "+78%", "+82%", "+86%", "+105%"],
-                "Evasion Fadeout": ["-25%", "-25%", "-25%", "-25%", "-30%", "-30%", "-30%", "-30%", "-30%", "-35%"],
+                "Evasion Fadeout": ["25%", "25%", "25%", "25%", "30%", "30%", "30%", "30%", "30%", "35%"],
             }
         },
         "Deft Thrust":{
@@ -350,7 +350,7 @@ var data = {
         "Shield Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Decreases physical damage taken if a Shield is equipped.",
+            "Description": "Decreases physical damage taken if you have a Shield equipped.",
             "Max Level": "10",
             "Data": {
                 "Damage Taken↓": ["-4%", "-5%", "-6%", "-7%", "-9%", "-10%", "-11%", "-12%", "-13%", "-15%"],
@@ -359,7 +359,7 @@ var data = {
         "Cannon Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases physical damage dealt if a Cannon is equipped.",
+            "Description": "Increases physical damage dealt if you have a Cannon equipped.",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+2%", "+3%", "+4%", "+5%", "+8%", "+9%", "+10%", "+11%", "+12%", "+15%"],
@@ -398,7 +398,7 @@ var data = {
         },
         "Gunmount":{
             "Usage": "Active (Arms, STR)",
-            "Unlock": "Line/Mana/Healing Guard (Lv 2)",
+            "Unlock": "Line Guard (Lv 2), Mana Guard (Lv 2), Healing Guard (Lv 2)",
             "Description": "Cannon: Repeat the effect of the Guard skill used last turn, and deal ranged Bash damage to one enemy.",
             "Max Level": "10",
             "Data": {
@@ -510,7 +510,7 @@ var data = {
         },
         "Full Guard":{
             "Usage": "Active (Arms)",
-            "Unlock": "Recovery/Counter/Divide Guard (Lv 3)",
+            "Unlock": "Recovery Guard (Lv 3), Counter Guard (Lv 3), Divide Guard (Lv 3)",
             "Description": "(Guard) Shield: Protect the whole party for this turn, which decreases physical/elemental damage taken. Afterwards, this skill becomes disabled for several turns.",
             "Max Level": "10",
             "Data": {
@@ -521,7 +521,7 @@ var data = {
         },
         "Soul Guard":{
             "Usage": "Active (Arms)",
-            "Unlock": "Recovery/Counter/Divide Guard (Lv 3)",
+            "Unlock": "Recovery Guard (Lv 3), Counter Guard (Lv 3), Divide Guard (Lv 3)",
             "Description": "(Guard) Shield: Protect an ally line for this turn, which decreases physical damage taken and grants them a chance to survive lethal damage with 1 HP.",
             "Max Level": "10",
             "Data": {
@@ -651,8 +651,8 @@ var data = {
         },
         "Buster Cannon":{
             "Usage": "Active (Arms, STR)",
-            "Unlock": "Rapid/Curse/Hypno Cannon (Lv 3)",
-            "Description": "Cannon: Start charging an attack that will be performed as your action for the next turn. Deals ranged Bash+Fire damage to one enemy. Deals 50% more damage if either you or the target are in the front line, or 100% more damage if both are.",
+            "Unlock": "Rapid Cannon (Lv 3), Curse Cannon (Lv 3), Hypno Cannon (Lv 3)",
+            "Description": "Cannon: Start charging an attack that will be performed as your action for the next turn. When it activates, deal ranged Bash+Fire damage to one enemy. Deals 50% more damage if either you or the target are in the front line, or 100% more damage if both are.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "30", "30", "30", "30", "30", "40"],
@@ -696,7 +696,7 @@ var data = {
         "Brawl Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases physical damage dealt if a Cestus is equipped.",
+            "Description": "Increases physical damage dealt if you have a Cestus equipped.",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+2%", "+3%", "+4%", "+5%", "+8%", "+9%", "+10%", "+11%", "+12%", "+15%"],
@@ -1051,7 +1051,7 @@ var data = {
         "Scythe Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases physical damage dealt if a Scythe is equipped.",
+            "Description": "Increases physical damage dealt if you have a Scythe equipped.",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+2%", "+3%", "+4%", "+5%", "+8%", "+9%", "+10%", "+11%", "+12%", "+15%"],
@@ -1226,7 +1226,7 @@ var data = {
         },
         "Temporal Shroud":{
             "Usage": "Active (Arms, STR)",
-            "Unlock": "Bloody/Frigid Reap (Lv 3)",
+            "Unlock": "Bloody Reap (Lv 3), Frigid Reap (Lv 3)",
             "Description": "Scythe: Dispel Miasma Armor to vanish while leaving a substitute in your place for this turn. At the end of turn, if the substitute is still alive, deal melee Cut damage to one enemy.",
             "Max Level": "10",
             "Data": {
@@ -1265,7 +1265,7 @@ var data = {
         },
         "Fatal Reap":{
             "Usage": "Active (Arms, STR, LUC)",
-            "Unlock": "Toxic/Chaos Reap (Lv 3)",
+            "Unlock": "Toxic Reap (Lv 3), Chaos Reap (Lv 3)",
             "Description": "Scythe: Deal melee Cut damage to one enemy, with a chance to inflict Instant Death. Increased damage and infliction rate if the target is afflicted with Sleep.",
             "Max Level": "10",
             "Data": {
@@ -1366,7 +1366,7 @@ var data = {
         },
         "Ephemeral Reap":{
             "Usage": "Active (Arms, STR)",
-            "Unlock": "Eroding/Masking Miasma (Lv 5)",
+            "Unlock": "Eroding Miasma (Lv 5), Masking Miasma (Lv 5)",
             "Description": "Scythe: Dispel all debuffs on one enemy, then deal multiple hits of melee Cut damage (cannot miss) to them. Hits once per debuff that was removed.",
             "Max Level": "10",
             "Data": {
@@ -1377,7 +1377,7 @@ var data = {
         },
         "Soul Transfer":{
             "Usage": "Active (Head)",
-            "Unlock": "Eroding/Masking Miasma (Lv 5)",
+            "Unlock": "Eroding Miasma (Lv 5), Masking Miasma (Lv 5)",
             "Description": "Dispel all debuffs on one enemy at the start of the turn. If this removed at least one modifier, all allies will get a chance to automatically revive if killed this turn. (Max once per ally. Max 3 activations)",
             "Max Level": "10",
             "Data": {
@@ -1903,7 +1903,7 @@ var data = {
         "Wraith Dance":{
             "Usage": "Active (Head)",
             "Unlock": "Grave (Lv 5)",
-            "Description": "For this turn, Wraith attacks will deal 3 hits with modified damage. (Also gives Wraiths a 100% chance to use a normal attack)",
+            "Description": "Empower all Wraiths for this turn, which makes their attacks deal 3 hits with modified damage. (Also gives Wraiths a 100% chance to use a normal attack)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["13", "13", "13", "13", "19", "19", "19", "19", "19", "24"],
@@ -2024,7 +2024,7 @@ var data = {
         "Negative Energy":{
             "Usage": "Active (Head, INT)",
             "Unlock": "Sacrifice (Lv 3)",
-            "Description": "Deal ranged Almighty damage to one enemy. Damage dealt increases by 150% for each time a unit has died (including sacrifices) this turn. Cannot miss.",
+            "Description": "Deal ranged Almighty damage (cannot miss) to one enemy. Damage dealt increases by 150% for each time a unit has died (including sacrifices) this turn.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12"],
@@ -2043,7 +2043,7 @@ var data = {
         },
         "Gates of Hell":{
             "Usage": "Active (Head, INT)",
-            "Unlock": "Fair Trade (Lv 5)",
+            "Unlock": "Poison Bomb (Lv 5), Flame Bomb (Lv 5)",
             "Description": "Deal ranged Bash damage to one enemy, then summon a Wraith with Max HP equal to the damage dealt.",
             "Max Level": "10",
             "Data": {
@@ -2055,7 +2055,7 @@ var data = {
         },
         "Zombie Powder":{
             "Usage": "Active (Head, LUC)",
-            "Unlock": "Fair Trade (Lv 5)",
+            "Unlock": "Gates of Hell (Lv 5)",
             "Description": "Attempt to inflict Instant Death to one enemy. If successful, summon a Wraith with Max HP equal to the target's remaining HP. (Max HP is capped at 9999)",
             "Max Level": "10",
             "Data": {
@@ -2071,7 +2071,7 @@ var data = {
         "Bow Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases physical damage dealt if a Bow is equipped.",
+            "Description": "Increases physical damage dealt if you have a Bow equipped.",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+4%", "+5%", "+6%", "+7%", "+9%", "+10%", "+11%", "+12%", "+13%", "+15%"],
@@ -2307,7 +2307,7 @@ var data = {
         "Million Arrows":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Power Shot (Lv 5)",
-            "Description": "Bow: Prepare an attack that will hit on the next turn, at the start of the turn, dealing multiple hits of ranged Stab damage to random enemies (max 4 hits each).",
+            "Description": "Bow: Prepare an attack that will hit on the next turn, at the start of the turn. On activation, deal multiple hits of ranged Stab damage to random enemies (max 4 hits each).",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["13", "13", "13", "13", "19", "19", "19", "19", "19", "27"],
@@ -2444,7 +2444,7 @@ var data = {
         "Katana Mastery":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases physical damage dealt if a Katana is equipped.",
+            "Description": "Increases physical damage dealt if you have a Katana equipped.",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+2%", "+3%", "+4%", "+5%", "+8%", "+9%", "+10%", "+11%", "+12%", "+15%"],
@@ -2453,7 +2453,7 @@ var data = {
         "Peerless Demon":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases damage dealt with a multi-hit attack for each hit it has landed this turn.",
+            "Description": "Increases damage dealt for each hit you have landed this turn.",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+5%", "+5%", "+5%", "+5%", "+7%", "+7%", "+7%", "+7%", "+7%", "+9%"],
@@ -2711,7 +2711,7 @@ var data = {
         "Mirror Moon":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "TP Up (Lv 5)",
-            "Description": "Katana: Chance to nullify physical attacks received, then counterattack with melee weapon-based damage. Activation chance goes down with each activation.",
+            "Description": "Katana: Prepare to nullify physical attacks received, then counterattack with melee weapon-based damage. Activation chance goes down with each activation.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "15", "15", "15", "15", "15", "22"],
@@ -2739,7 +2739,7 @@ var data = {
         "Helm Splitter":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Foot Sweep (Lv 5)",
-            "Description": "Katana: Deal melee Cut damage to one enemy. Has low accuracy but ignores Cut vulnerability.",
+            "Description": "Katana: Deal melee Cut damage to one enemy. Highly innacurate but ignores Cut vulnerability.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "12", "12", "12", "12", "12", "17"],
@@ -2760,7 +2760,7 @@ var data = {
         "Triple Strike":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Spirit Sword (Lv 5)",
-            "Description": "Katana: Deal 3 hits of melee Cut damage to one enemy. Hits have a chance to inflict Head Bind, then Arm Bind, then Leg Bind respectively. Stops hitting if it lands a bind.",
+            "Description": "Katana: Deal multiple hits of melee Cut damage to one enemy, with a chance to inflict Head Bind, Arm Bind and Leg Bind. Hits up to 3 times, but stops prematurely if it inflicts a bind.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "16", "16", "16", "16", "16", "24"],
@@ -2843,7 +2843,7 @@ var data = {
         },
         "Heaven's Gift":{
             "Usage": "Active (Head, WIS)",
-            "Unlock": "Ruinous/Aegis/Focus Prayer (Lv 2)",
+            "Unlock": "Ruinous Prayer (Lv 2), Aegis Prayer (Lv 2), Focus Prayer (Lv 2)",
             "Description": "Dispel one buff and debuff from an ally at the start of turn. Restore HP and increase their action speed for this turn if one modifier type was removed, with double healing effect if both.",
             "Max Level": "10",
             "Data": {
@@ -2891,7 +2891,7 @@ var data = {
         },
         "Dance Oracle":{
             "Usage": "Active (Head, INT)",
-            "Unlock": "Blaze/Hail/Bolt Prayer (Lv 3)",
+            "Unlock": "Blaze Prayer (Lv 3), Hail Prayer (Lv 3), Bolt Prayer (Lv 3)",
             "Description": "Requires Blaze/Hail/Bolt Prayer: Dispel an elemental Prayer on yourself to deal ranged damage of the corresponding element to all enemies. Targets take more damage of that element until the end of turn.",
             "Max Level": "10",
             "Data": {
@@ -3062,7 +3062,7 @@ var data = {
         },
         "Sanctuary":{
             "Usage": "Active (Head)",
-            "Unlock": "Exorcism/Haste/Vitality Prayer (Lv 5)",
+            "Unlock": "Exorcism Prayer (Lv 5), Haste Prayer (Lv 5), Vitality Prayer (Lv 5)",
             "Description": "Empower allies with buffs for this turn, which gives them a chance to nullify bind/ailment inflictions received in exchange for losing a buff.",
             "Max Level": "10",
             "Data": {
@@ -3213,7 +3213,7 @@ var data = {
         },
         "Smokeblight":{
             "Usage": "Active (Head)",
-            "Unlock": "Toxic/Dark Smoke (Lv 2)",
+            "Unlock": "Toxic Smoke (Lv 2), Dark Smoke (Lv 2)",
             "Description": "Place a debuff on an enemy line for several turns, which increases elemental damage taken. Stronger effect while targets have an ailment.",
             "Max Level": "10",
             "Data": {
@@ -3302,7 +3302,7 @@ var data = {
         "Reflex Herb":{
             "Usage": "Active (Arms, WIS)",
             "Unlock": "N/A",
-            "Description": "(Herb) Prepare to heal allies each time they're hit this turn. Activation chance starts at 100% but goes down with each activation. There's a limit on how many times it can activate on each ally.",
+            "Description": "(Herb) Prepare to heal allies each time they're hit this turn. Activation chance starts at 100% but goes down with each activation.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "7", "7", "7", "7", "7", "12"],
@@ -3324,8 +3324,8 @@ var data = {
         },
         "Lingering Scent":{
             "Usage": "Active (No Parts)",
-            "Unlock": "Reflex/Delayed Herb (Lv 3)",
-            "Description": "Place a buff on the whole party for several turns, which at the end of each turn repeats the effect (with decreased potency) of the last Herb skill they have received since this buff was applied.",
+            "Unlock": "Reflex Herb (Lv 3), Delayed Herb (Lv 3)",
+            "Description": "Place a buff on the whole party for several turns, which at the end of each turn repeats the effect (with decreased potency) of the last Herb skill the holder has received since this buff was applied.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "7", "7", "7", "7", "7", "9"],
@@ -3392,7 +3392,7 @@ var data = {
         },
         "Smoke Bomb":{
             "Usage": "Active (Head, INT)",
-            "Unlock": "Numbing/Chaos Smoke (Lv 3)",
+            "Unlock": "Numbing Smoke (Lv 3), Chaos Smoke (Lv 3)",
             "Description": "Deal ranged Fire damage to one enemy, but dispel a debuff on them. Only effective if target has an ailment and a debuff.",
             "Max Level": "10",
             "Data": {
@@ -5128,7 +5128,7 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Fencer":   ["Swift swordfighters who react to the actions of others.",
+    "Fencer":   ["Swordfighters adept at swift movement and reactions.",
                     "<b>Phantom Duelist</b>: Draws in, evades and counters enemy attacks.",
                     "<b>Chain Duelist</b>: Strikes repeatedly in tandem with ally attacks."],
     "Dragoon":  ["Sturdy knights skilled in both protection and artillery.",

@@ -3161,7 +3161,7 @@ var data = {
         },
         "Free Energy":{
             "Usage": "Passive",
-            "Unlock": "Fire/Ice/Volt Prophecy (Lv 1)",
+            "Unlock": "Fire Prophecy (Lv 1), Ice Prophecy (Lv 1), Volt Prophecy (Lv 1)",
             "Description": "Chance to not spend TP when using skills.",
             "Max Level": "6",
             "Data": {
@@ -3917,7 +3917,7 @@ var data = {
         },
         "Improved Link":{
             "Usage": "Active (Head)",
-            "Unlock": "Blazing/Freezing/Electric Link (Lv 3)",
+            "Unlock": "Blazing Link (Lv 3), Freezing Link (Lv 3), Electric Link (Lv 3)",
             "Description": "Place a buff on yourself for 3 turns, which increases maximum Link activations and diminishes the chance decrease per activation.",
             "Max Level": "4",
             "Data": {
@@ -4608,7 +4608,7 @@ var data = {
         },
         "Dismiss Quake":{
             "Usage": "Active (Head, LUC)",
-            "Unlock": "Poison/Chaos Circle (Lv 3)",
+            "Unlock": "Poison Circle (Lv 3), Chaos Circle (Lv 3)",
             "Description": "(Dismiss) Remove the active Circle to attempt to inflict Stun on all enemies.",
             "Max Level": "10",
             "Data": {
@@ -4674,7 +4674,7 @@ var data = {
         },
         "Blood Edge":{
             "Usage": "Active (Arms, STR)",
-            "Unlock": "Sharp/Natural Edge (Lv 2)",
+            "Unlock": "Sharp Edge (Lv 2), Natural Edge (Lv 2)",
             "Description": "(Combo) Drive Blade: Deal melee Cut damage to one enemy. Recover HP based on damage dealt. (Only usable right after a Starter skill)",
             "Max Level": "8",
             "Data": {
@@ -4890,7 +4890,7 @@ var data = {
         },
         "Accel Drive":{
             "Usage": "Active (Arms, STR)",
-            "Unlock": "Flame/Freeze/Shock Drive (Lv 1)",
+            "Unlock": "Flame Drive (Lv 1), Freeze Drive (Lv 1), Shock Drive (Lv 1)",
             "Description": "(Drive) Drive Blade: Deal melee Cut+Almighty damage to one enemy, then enter Overheat state for 9 turns. Increases damage taken by 100% until it activates. (Not usable during Overheat)",
             "Max Level": "10",
             "Data": {
@@ -5268,7 +5268,7 @@ var data = {
         },
         "Sluggish Miasma":{
             "Usage": "Active (Head)",
-            "Unlock": "Eroding/Stifling Miasma (Lv 2)",
+            "Unlock": "Eroding Miasma (Lv 2), Stifling Miasma (Lv 2)",
             "Description": "Place a debuff on all enemies for several turns, which decreases evasion and action speed.",
             "Max Level": "10",
             "Data": {
