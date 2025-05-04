@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Etrian Odyssey HD - Skill Data</title>
+    <link href="style.css" rel="stylesheet">
+    </head>
+    <body style="background-color:powderblue; ">
+        <div id="sidebar" class="sidebar" style="overflow: auto;">
+            <h2 style="text-align:center;">Skills</h2>
+            <button class="page_link" onclick="populate_list('Landsknecht')">Landsknecht</button>
+            <button class="page_link" onclick="populate_list('Survivalist')">Survivalist</button>
+            <button class="page_link" onclick="populate_list('Protector')">Protector</button>
+            <button class="page_link" onclick="populate_list('Dark Hunter')">Dark Hunter</button>
+            <button class="page_link" onclick="populate_list('Medic')">Medic</button>
+            <button class="page_link" onclick="populate_list('Alchemist')">Alchemist</button>
+            <button class="page_link" onclick="populate_list('Troubadour')">Troubadour</button>
+            <button class="page_link" onclick="populate_list('Ronin')">Ronin</button>
+            <button class="page_link" onclick="populate_list('Hexer')">Hexer</button>
+            <hr>
+        </div>
+        <div id="skill_list" class="skill_list" style="overflow: auto; height:100%; width:85%;">
+        </div>
+    <script src="database.js"></script>
+    </body>
+</html>
