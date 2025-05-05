@@ -186,7 +186,7 @@ var data = {
     "War Cry":{
         "Usage": "Active (Head)",
         "Unlock": "ATK Up (Lv 3)",
-        "Description": "Place a buff on yourself for 4 turns, which increases the power of attacks used and received.",
+        "Description": "Place a buff on yourself for 4 turns, which increases the power of attacks used but decreases all damage resistances.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -199,7 +199,7 @@ var data = {
     "Hell Cry":{
         "Usage": "Active (Head)",
         "Unlock": "ATK Up (Lv 10)",
-        "Description": "Place a buff on yourself for 4 turns, which increases the power of attacks used and received, and decreases Max HP.",
+        "Description": "Place a buff on yourself for 4 turns, which increases the power of attacks used but decreases all damage resistances and Max HP.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -434,118 +434,143 @@ var data = {
     "Shield Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Decreases elemental damage taken.",
+        "Description": "Increases resistance to elemental damage.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Vulnerability↓": ["x0.95", "x0.94", "x0.93", "x0.92", "x0.91", "x0.9", "x0.89", "x0.88", "x0.87", "x0.85"]
+        }
     },
     "Front Guard":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 1)",
-        "Description": "Protect the front line for this turn, which decreases damage taken from the first physical attack that hits it.",
+        "Description": "Protect the front line for this turn, which decreases damage taken from the first attack that hits it.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"]
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "Damage Taken↓": ["-20%", "-23%", "-26%", "-29%", "-35%", "-36%", "-37%", "-38%", "-39%", "-40%", "-41%", "-42%", "-43%", "-44%", "-45%"]
         }
     },
     "Rear Guard":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 1)",
-        "Description": "Protect the back line for this turn, which decreases damage taken from the first physical attack that hits it.",
+        "Description": "Protect the back line for this turn, which decreases damage taken from the first attack that hits it.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"]
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "Damage Taken↓": ["-20%", "-23%", "-26%", "-29%", "-35%", "-36%", "-37%", "-38%", "-39%", "-40%", "-41%", "-42%", "-43%", "-44%", "-45%"]
         }
     },
     "Defender":{
         "Usage": "Active (Head)",
         "Unlock": "Front Guard (Lv 3), Rear Guard (Lv 3)",
-        "Description": "Place a buff on the whole party for 4 turns, which decreases physical damage taken.",
+        "Description": "Place a buff on the whole party for 4 turns, which increases resistance to physical damage.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["8", "9", "10", "11", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12"]
+            "TP Cost": ["8", "9", "10", "11", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12"],
+            "Vulnerability↓": ["x0.8", "x0.77", "x0.74", "x0.71", "x0.68", "x0.67", "x0.66", "x0.65", "x0.65", "x0.64", "x0.63", "x0.62", "x0.61", "x0.6", "x0.59"],
+            "Action Speed": ["80%", "82%", "84%", "86%", "90%", "92%", "94%", "96%", "98%", "102%", "104%", "106%", "108%", "110%", "118%"]
         }
     },
     "Fire Wall":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 5), TP Up (Lv 3)",
-        "Description": "Shield: Protect the whole party for this turn, which decreases damage taken from the first Fire attack that hits it.",
+        "Description": "Shield: Protect the whole party for this turn, which increases resistance against the first Fire attack that hits it. From level 6 onward it instead absorbs the damage that would've been dealt by the attack. (From level 5 onward it also nullifies secondary effects the attack)",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"]
+            "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
+            "Vulnerability↓": ["x0.5", "x0.4", "x0.3", "x0.2", "x0", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "2%", "4%", "6%", "8%", "10%", "12%", "14%", "16%", "18%", "20%"]
         }
     },
     "Ice Wall":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 5), TP Up (Lv 3)",
-        "Description": "Shield: Protect the whole party for this turn, which decreases damage taken from the first Ice attack that hits it.",
+        "Description": "Shield: Protect the whole party for this turn, which increases resistance against the first Ice attack that hits it. From level 6 onward it instead absorbs the damage that would've been dealt by the attack. (From level 5 onward it also nullifies secondary effects the attack)",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"]
+            "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
+            "Vulnerability↓": ["x0.5", "x0.4", "x0.3", "x0.2", "x0", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "2%", "4%", "6%", "8%", "10%", "12%", "14%", "16%", "18%", "20%"]
         }
     },
     "Volt Wall":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 5), TP Up (Lv 3)",
-        "Description": "Shield: Protect the whole party for this turn, which decreases damage taken from the first Volt attack that hits it.",
+        "Description": "Shield: Protect the whole party for this turn, which increases resistance against the first Volt attack that hits it. From level 6 onward it instead absorbs the damage that would've been dealt by the attack. (From level 5 onward it also nullifies secondary effects the attack)",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"]
+            "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
+            "Vulnerability↓": ["x0.5", "x0.4", "x0.3", "x0.2", "x0", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "2%", "4%", "6%", "8%", "10%", "12%", "14%", "16%", "18%", "20%"]
         }
     },
     "Smite":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 10), Fortify (Lv 5)",
-        "Description": "",
+        "Description": "Shield: Deal melee Bash damage to one enemy. At high levels it also has a chance to inflict Arm Bind. (Your Shield's DEF is added to your ATK stat during damage calculation)",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["10", "11", "12", "13", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14"]
+            "TP Cost": ["10", "11", "12", "13", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14"],
+            "Attack Power": ["210%", "215%", "220%", "225%", "235%", "237%", "240%", "243%", "246%", "260%", "262%", "264%", "266%", "268%", "286%"],
+            "Infliction Rate": ["0%", "0%", "0%", "0%", "10%", "11%", "12%", "13%", "14%", "20%", "21%", "22%", "23%", "24%", "30%"],
+            "Accuracy": ["+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%"],
+            "Action Speed": ["20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "40%", "40%", "40%", "40%", "40%"]
         }
     },
     "DEF Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Decreases physical damage taken.",
+        "Description": "Increases resistance to physical damage.",
         "Starter": "1",
         "Max Level": "10",
-        "Data": ""
+        "Data": {
+            "Vulnerability↓": ["x0.95", "x0.94", "x0.93", "x0.92", "x0.91", "x0.9", "x0.89", "x0.88", "x0.87", "x0.85"]
+        }
     },
     "Provoke":{
         "Usage": "Active (Head)",
         "Unlock": "DEF Up (Lv 1)",
-        "Description": "Place a buff on yourself for 4 turns, which increases enemy aggro and slightly decreases damage taken.",
+        "Description": "Place a buff on yourself for 4 turns, which increases enemy aggro. At high levels it also increases resistance to physical damage.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"]
+            "TP Cost": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+            "Aggro↑": ["+20%", "+25%", "+35%", "+50%", "+70%", "+95%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%"],
+            "Vulnerability↓": ["N/A", "N/A", "N/A", "N/A", "N/A", "x0.9", "x0.89", "x0.88", "x0.87", "x0.85", "x0.84", "x0.83", "x0.82", "x0.81", "x0.78"],
+            "Action Speed": ["80%", "82%", "84%", "86%", "90%", "92%", "94%", "96%", "98%", "102%", "104%", "106%", "108%", "110%", "118%"]
         }
     },
     "Fortify":{
         "Usage": "Active (Head)",
         "Unlock": "DEF Up (Lv 3), Shield Mastery (Lv 3)",
-        "Description": "Place a buff on yourself for 4 turns, which decreases physical damage taken.",
+        "Description": "Place a buff on yourself for 4 turns, which increases resistance to physical damage.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"]
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "Vulnerability↓": ["x0.8", "x0.77", "x0.74", "x0.71", "x0.68", "x0.67", "x0.66", "x0.65", "x0.65", "x0.64", "x0.63", "x0.62", "x0.61", "x0.6", "x0.59"],
+            "Action Speed": ["80%", "82%", "84%", "86%", "90%", "92%", "94%", "96%", "98%", "102%", "104%", "106%", "108%", "110%", "118%"]
         }
     },
     "Parry":{
         "Usage": "Active (Arms)",
         "Unlock": "DEF Up (Lv 3)",
-        "Description": "Attempt to nullify physical damage received this turn.",
+        "Description": "Attempt to nullify the first physical attack that hits you this turn. At high levels it has a chance to remain active after each activation.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"]
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "Success Rate": ["70%", "75%", "80%", "85%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+            "Continue Rate": ["N/A", "N/A", "N/A", "N/A", "5%", "10%", "15%", "20%", "25%", "35%", "40%", "45%", "50%", "55%", "70%"]
         }
     },
     "Flee":{
@@ -555,7 +580,9 @@ var data = {
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"]
+            "TP Cost": ["4", "4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "Success Rate": ["60%", "64%", "68%", "72%", "80%", "82%", "84%", "86%", "88%", "98%", "100%", "100%", "100%", "100%", "100%"],
+            "HP Loss": ["50%", "50%", "50%", "50%", "50%", "45%", "40%", "35%", "30%", "25%", "20%", "15%", "10%", "5%", "0%"]
         }
     },
     "Stalker":{
@@ -564,7 +591,9 @@ var data = {
         "Description": "Temporarily decrease the enemy encounter rate.",
         "Max Level": "10",
         "Data": {
-            "TP Cost": ["2", "2", "3", "3", "4", "4", "4", "4", "4", "4"]
+            "TP Cost": ["2", "2", "3", "3", "4", "4", "4", "4", "4", "4"],
+            "Encounters↓": ["x0.7", "x0.7", "x0.7", "x0.7", "x0.7", "x0.65", "x0.65", "x0.6", "x0.6", "x0.5"],
+            "Duration (Steps)": ["30", "35", "40", "45", "60", "65", "70", "75", "80", "100"]
         }
     },
     "Aegis":{
@@ -572,14 +601,18 @@ var data = {
         "Unlock": "DEF Up (Lv 5)",
         "Description": "Chance to survive lethal damage with 1 HP.",
         "Max Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["20%", "21%", "22%", "23%", "29%", "30%", "31%", "32%", "33%", "40%"]
+        }
     },
     "En Garde":{
         "Usage": "Passive",
         "Unlock": "DEF Up (Lv 7), Shield Mastery (Lv 7)",
-        "Description": "Chance to automatically decrease damage taken.",
+        "Description": "Chance to automatically halve damage taken.",
         "Max Level": "10",
-        "Data": ""
+        "Data": {
+            "Activation Chance": ["10%", "11%", "12%", "13%", "16%", "17%", "18%", "19%", "20%", "23%"]
+        }
     },
     "HP Up":{
         "Usage": "Passive",
@@ -587,7 +620,9 @@ var data = {
         "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+        }
     },
     "Cure":{
         "Usage": "Active (Head)",
@@ -596,7 +631,9 @@ var data = {
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"]
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "HP Gain": ["20", "26", "32", "38", "50", "56", "62", "68", "74", "92", "98", "104", "110", "116", "140"],
+            "Action Speed": ["70%", "72%", "74%", "76%", "80%", "82%", "84%", "86%", "88%", "92%", "94%", "96%", "98%", "100%", "108%"]
         }
     },
     "Cure II":{
@@ -606,7 +643,9 @@ var data = {
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
-            "TP Cost": ["10", "11", "12", "13", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14"]
+            "TP Cost": ["10", "11", "12", "13", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14"],
+            "HP Gain": ["75", "81", "87", "93", "111", "117", "123", "129", "135", "159", "165", "171", "177", "183", "213"],
+            "Action Speed": ["20%", "22%", "24%", "26%", "30%", "32%", "34%", "36%", "38%", "42%", "44%", "46%", "48%", "50%", "58%"]
         }
     },
     "TP Up":{
@@ -615,7 +654,9 @@ var data = {
         "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+10%", "+12%", "+14%", "+16%", "+28%", "+30%", "+32%", "+34%", "+36%", "+50%"]
+        }
     },
     "Mine":{
         "Usage": "Active",
@@ -623,7 +664,9 @@ var data = {
         "Description": "Allows you to gather from Mine points a certain amount of times per day.",
         "Starter": "1",
         "Max Level": "10",
-        "Data": ""
+        "Data": {
+            "Gather Attempts": ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"]
+        }
     },
 },
 "Dark Hunter":{
@@ -1255,7 +1298,7 @@ var data = {
     "Songs":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "",
+        "Description": "Increases the action speed of skills.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
