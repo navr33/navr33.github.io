@@ -1115,7 +1115,7 @@ var data = {
         }
     },
     "Fire":{
-        "Usage": "Active",
+        "Usage": "Active (Head, TEC)",
         "Unlock": "Fire Up (Lv 1)",
         "Description": "Deal ranged Fire damage to one enemy.",
         "Max Level": "15",
@@ -1129,7 +1129,7 @@ var data = {
         }
     },
     "Flame":{
-        "Usage": "Active",
+        "Usage": "Active (Head, TEC)",
         "Unlock": "Fire Up (Lv 5), Fire (Lv 3)",
         "Description": "Deal ranged Fire damage to one enemy.",
         "Max Level": "15",
@@ -1143,7 +1143,7 @@ var data = {
         }
     },
     "Inferno":{
-        "Usage": "Active",
+        "Usage": "Active (Head, TEC)",
         "Unlock": "Fire Up (Lv 5)",
         "Description": "Deal ranged Fire damage to all enemies.",
         "Max Level": "15",
@@ -1167,7 +1167,7 @@ var data = {
         }
     },
     "Ice":{
-        "Usage": "Active",
+        "Usage": "Active (Head, TEC)",
         "Unlock": "Ice Up (Lv 1)",
         "Description": "Deal ranged Ice damage to one enemy.",
         "Max Level": "15",
@@ -1181,7 +1181,7 @@ var data = {
         }
     },
     "Freeze":{
-        "Usage": "Active",
+        "Usage": "Active (Head, TEC)",
         "Unlock": "Ice Up (Lv 5), Ice (Lv 3)",
         "Description": "Deal ranged Ice damage to one enemy.",
         "Max Level": "15",
@@ -1195,7 +1195,7 @@ var data = {
         }
     },
     "Cocytus":{
-        "Usage": "Active",
+        "Usage": "Active (Head, TEC)",
         "Unlock": "Ice Up (Lv 5)",
         "Description": "Deal ranged Ice damage to all enemies.",
         "Max Level": "15",
@@ -1219,7 +1219,7 @@ var data = {
         }
     },
     "Volt":{
-        "Usage": "Active",
+        "Usage": "Active (Head, TEC)",
         "Unlock": "Volt Up (Lv 1)",
         "Description": "Deal ranged Volt damage to one enemy.",
         "Max Level": "15",
@@ -1233,7 +1233,7 @@ var data = {
         }
     },
     "Thunder":{
-        "Usage": "Active",
+        "Usage": "Active (Head, TEC)",
         "Unlock": "Volt Up (Lv 5), Volt (Lv 3)",
         "Description": "Deal ranged Volt damage to one enemy.",
         "Max Level": "15",
@@ -1247,7 +1247,7 @@ var data = {
         }
     },
     "Thor":{
-        "Usage": "Active",
+        "Usage": "Active (Head, TEC)",
         "Unlock": "Volt Up (Lv 5)",
         "Description": "Deal ranged Volt damage to all enemies.",
         "Max Level": "15",
@@ -1304,7 +1304,7 @@ var data = {
         }
     },
     "Scavenge":{
-        "Usage": "Active",
+        "Usage": "Passive",
         "Unlock": "TP Up (Lv 3)",
         "Description": "Increases enemy drop rates.",
         "Max Level": "10",
@@ -1314,7 +1314,7 @@ var data = {
         }
     },
     "Sight":{
-        "Usage": "Active",
+        "Usage": "Active (Field)",
         "Unlock": "TP Up (Lv 5)",
         "Description": "Show the location of all FOEs on the map. Lasts until you take a step.",
         "Max Level": "10",
@@ -1324,7 +1324,7 @@ var data = {
         }
     },
     "Warp":{
-        "Usage": "Active",
+        "Usage": "Active (Field)",
         "Unlock": "TP Up (Lv 7)",
         "Description": "Teleport to the last Geomagnetic Field you used on the current trip.",
         "Max Level": "10",
@@ -1334,7 +1334,7 @@ var data = {
         }
     },
     "TP Regen":{
-        "Usage": "Active",
+        "Usage": "Passive",
         "Unlock": "TP Up (Lv 10)",
         "Description": "Recover TP at the end of each turn.",
         "Max Level": "10",
@@ -1363,127 +1363,197 @@ var data = {
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Speed↑": ["x1.1", "x1.11", "x1.12", "x1.13", "x1.19", "x1.2", "x1.21", "x1.22", "x1.23", "x1.3"]
+        }
     },
     "Bravery":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 1)",
-        "Description": "",
+        "Description": "Place a buff on the whole party (lasts indefinitely), which increases their ATK stat.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "ATK Stat↑": ["+10%", "+15%", "+20%", "+25%", "+30%", "+31%", "+32%", "+33%", "+34%", "+40%", "+41%", "+42%", "+43%", "+44%", "+50%"],
+            "Action Speed": ["80%", "82%", "84%", "86%", "90%", "92%", "94%", "96%", "98%", "102%", "104%", "106%", "108%", "110%", "118%"]
+        }
     },
     "Shelter":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 1)",
-        "Description": "",
+        "Description": "Place a buff on the whole party (lasts indefinitely), which increases their DEF stat.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "DEF Stat↑": ["+10%", "+15%", "+20%", "+25%", "+30%", "+31%", "+32%", "+33%", "+34%", "+40%", "+41%", "+42%", "+43%", "+44%", "+50%"],
+            "Action Speed": ["80%", "82%", "84%", "86%", "90%", "92%", "94%", "96%", "98%", "102%", "104%", "106%", "108%", "110%", "118%"]
+        }
     },
     "Mercury":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 1)",
-        "Description": "",
+        "Description": "Place a buff on the whole party (lasts indefinitely), which increases their AGI stat.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "AGI Stat↑": ["+10%", "+15%", "+20%", "+25%", "+30%", "+31%", "+32%", "+33%", "+34%", "+40%", "+41%", "+42%", "+43%", "+44%", "+50%"],
+            "Action Speed": ["80%", "82%", "84%", "86%", "90%", "92%", "94%", "96%", "98%", "102%", "104%", "106%", "108%", "110%", "118%"]
+        }
     },
     "Erasure":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 3)",
-        "Description": "",
+        "Description": "Remove buffs on one enemy.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "Buffs Removed": ["1", "1", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+            "Action Speed": ["80%", "82%", "84%", "86%", "90%", "92%", "94%", "96%", "98%", "102%", "104%", "106%", "108%", "110%", "118%"]
+        }
     },
     "Recovery":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 3)",
-        "Description": "",
+        "Description": "Place a buff on the whole party (lasts indefinitely), which increases bind/ailment recovery speed. (Remaining bind/ailment duration is divided by this modifier)",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "Recovery Rate↑": ["x1.1", "x1.3", "x1.5", "x1.7", "x2", "x2.2", "x2.4", "x2.6", "x2.8", "x3.2", "x3.4", "x3.6", "3.8", "x4", "x4.5"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Stamina":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 3), HP Up (Lv 3)",
-        "Description": "",
+        "Description": "Place a buff on the whole party (lasts indefinitely), which increases Max HP.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "Max HP↑": ["+20%", "+23%", "+26%", "+29%", "+35%", "+37%", "+39%", "+41%", "+43%", "+50%", "+51%", "+52%", "+53%", "+54%", "+60%"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Blaze":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 5), Bravery (Lv 3)",
-        "Description": "",
+        "Description": "Place a buff on one ally (lasts indefinitely), which adds bonus Fire damage to their normal attacks.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["15", "14", "13", "12", "10", "9", "8", "7", "6", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Frost":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 5), Bravery (Lv 3)",
-        "Description": "",
+        "Description": "Place a buff on one ally (lasts indefinitely), which adds bonus Ice damage to their normal attacks.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["15", "14", "13", "12", "10", "9", "8", "7", "6", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Shock":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 5), Bravery (Lv 3)",
-        "Description": "",
+        "Description": "Place a buff on one ally (lasts indefinitely), which adds bonus Volt damage to their normal attacks.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["15", "14", "13", "12", "10", "9", "8", "7", "6", "5", "5", "5", "5", "5", "5"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Ifrit":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 7)",
-        "Description": "",
+        "Description": "Place a buff on the whole party (lasts indefinitely) and a debuff on all enemies (lasts 4 turns). The buff increases resistance to Fire, while the debuff decreases it.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
+            "Vulnerability↓\n(Allies)": ["x0.8", "x0.75", "x0.7", "x0.65", "x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15", "x0.1"],
+            "Vulnerability↑\n(Enemies)": ["x1.1", "x1.15", "x1.2", "x1.25", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.4", "x1.41", "x1.42", "x1.43", "x1.44", "x1.5"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Ymir":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 7)",
-        "Description": "",
+        "Description": "Place a buff on the whole party (lasts indefinitely) and a debuff on all enemies (lasts 4 turns). The buff increases resistance to Ice, while the debuff decreases it.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
+            "Vulnerability↓\n(Allies)": ["x0.8", "x0.75", "x0.7", "x0.65", "x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15", "x0.1"],
+            "Vulnerability↑\n(Enemies)": ["x1.1", "x1.15", "x1.2", "x1.25", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.4", "x1.41", "x1.42", "x1.43", "x1.44", "x1.5"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Taranis":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 7)",
-        "Description": "",
+        "Description": "Place a buff on the whole party (lasts indefinitely) and a debuff on all enemies (lasts 4 turns). The buff increases resistance to Volt, while the debuff decreases it.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
+            "Vulnerability↓\n(Allies)": ["x0.8", "x0.75", "x0.7", "x0.65", "x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15", "x0.1"],
+            "Vulnerability↑\n(Enemies)": ["x1.1", "x1.15", "x1.2", "x1.25", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.4", "x1.41", "x1.42", "x1.43", "x1.44", "x1.5"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Healing":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 7), HP Up (Lv 5)",
-        "Description": "",
+        "Description": "Place a buff on the whole party (lasts indefinitely), which restores Max HP at the end of each turn.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "HP Gain": ["2%", "3%", "4%", "5%", "7%", "8%", "9%", "10%", "11%", "13%", "14%", "15%", "16%", "17%", "20%"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Peace Ballad":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 7), TP Up (Lv 5)",
-        "Description": "",
+        "Description": "Place a buff on the whole party (lasts indefinitely), which restores Max TP at the end of each turn.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "TP Gain": ["1%", "1%", "2%", "2%", "3%", "3%", "4%", "4%", "4%", "5%", "7%", "7%", "8%", "8%", "10%"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Divinity":{
-        "Usage": "Active",
+        "Usage": "Passive",
         "Unlock": "Songs (Lv 10), Recovery (Lv 5)",
-        "Description": "",
-        "Max Level": "15",
+        "Description": "Increases EXP gained by the party.",
+        "Max Level": "10",
+        "Data": {
+            "EXP Gain↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+        }
+    },
+    "HP Up":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increases base Max HP.",
+        "Starter": "1",
+        "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+10%", "+12%", "+14%", "+16%", "+28%", "+30%", "+32%", "+34%", "+36%", "+50%"]
+        }
     },
     "TP Up":{
         "Usage": "Passive",
@@ -1492,23 +1562,30 @@ var data = {
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+10%", "+12%", "+14%", "+16%", "+28%", "+30%", "+32%", "+34%", "+36%", "+50%"]
+        }
     },
     "Stalker":{
-        "Usage": "Active",
+        "Usage": "Active (Field)",
         "Unlock": "TP Up (Lv 5)",
-        "Description": "",
-        "Max Level": "15",
-        "Natural Level": "10",
-        "Data": ""
+        "Description": "Temporarily decrease the enemy encounter rate.",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["2", "2", "3", "3", "4", "4", "4", "4", "4", "4"],
+            "Encounters↓": ["x0.7", "x0.7", "x0.7", "x0.7", "x0.7", "x0.65", "x0.65", "x0.6", "x0.6", "x0.5"],
+            "Duration (Steps)": ["30", "35", "40", "45", "60", "65", "70", "75", "80", "100"]
+        }
     },
     "Return":{
-        "Usage": "Active",
-        "Unlock": "Return (Lv 3)",
-        "Description": "",
-        "Max Level": "15",
+        "Usage": "Active (Field)",
+        "Unlock": "Stalker (Lv 3)",
+        "Description": "Teleport in front of the last stairs you used. (Does not work if this would teleport you to the current floor)",
+        "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "9", "8", "7", "6", "5", "4", "3", "2", "1"]
+        }
     },
     "Take":{
         "Usage": "Passive (Field)",
@@ -1517,7 +1594,9 @@ var data = {
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Gather Attempts": ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"]
+        }
     },
 },
 "Ronin":{
