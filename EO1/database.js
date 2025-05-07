@@ -20,7 +20,7 @@ var data = {
             "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
             "Attack Power": ["160%", "165%", "170%", "175%", "185%", "187%", "190%", "193%", "196%", "210%", "212%", "214%", "216%", "218%", "236%"],
             "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
-            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"]
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
         }
     },
     "Stunner":{
@@ -48,7 +48,7 @@ var data = {
             "Attack Power": ["130%", "131%", "132%", "133%", "134%", "135%", "136%", "137%", "138%", "140%", "141%", "142%", "143%", "144%", "150%"],
             "Infliction Rate": ["20%", "21%", "22%", "23%", "29%", "30%", "31%", "32%", "33%", "40%", "41%", "42%", "43%", "44%", "52%"],
             "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
-            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"]
+            "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "80%", "80%", "80%", "80%", "80%"]
         }
     },
     "Sword Mastery":{
@@ -248,7 +248,6 @@ var data = {
         "Description": "Allows you to gather from Mine points a certain amount of times per day.",
         "Starter": "1",
         "Max Level": "10",
-        "Natural Level": "10",
         "Data": {
             "Gather Attempts": ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"]
         }
@@ -258,149 +257,208 @@ var data = {
     "Bows":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "",
+        "Description": "Increases your weapon's ATK stat during Bow attacks.",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "ATK Stat↑": ["+10%", "+12%", "+14%", "+16%", "+28%", "+30%", "+32%", "+34%", "+36%", "+50%"]
+        }
     },
     "Trueshot":{
-        "Usage": "Active",
+        "Usage": "Active (Arms, STR)",
         "Unlock": "Bows (Lv 1)",
-        "Description": "",
+        "Description": "Bow: Deal ranged Stab damage to one enemy.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "Attack Power": ["140%", "145%", "150%", "155%", "165%", "167%", "170%", "173%", "176%", "190%", "192%", "194%", "196%", "198%", "216%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
     },
     "Disable":{
-        "Usage": "Active",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Bows (Lv 3)",
-        "Description": "",
+        "Description": "Bow: Deal ranged Stab damage to one enemy, with a chance to inflict Leg Bind.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "Attack Power": ["130%", "131%", "132%", "133%", "134%", "135%", "136%", "137%", "138%", "140%", "141%", "142%", "143%", "144%", "150%"],
+            "Infliction Rate": ["20%", "21%", "22%", "23%", "29%", "30%", "31%", "32%", "33%", "40%", "41%", "42%", "43%", "44%", "52%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
     },
     "Multihit":{
-        "Usage": "Active",
+        "Usage": "Active (Arms, STR)",
         "Unlock": "Bows (Lv 5)",
-        "Description": "",
+        "Description": "Bow: Deal multiple hits of ranged Stab damage to random enemies.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "8", "9", "9", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+            "Attack Power": ["100%", "103%", "106%", "109%", "115%", "116%", "117%", "118%", "119%", "125%", "126%", "127%", "128%", "129%", "135%"],
+            "Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
     },
     "Apollon":{
-        "Usage": "Active",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Bows (Lv 10)",
-        "Description": "",
+        "Description": "Bow: Prepare an attack that will activate in 2 more turns, at the start of the turn. On activation, deal ranged Stab damage to one enemy. At high levels it also has a chance to inflict Stun.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "9", "10", "11", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12"],
+            "Attack Power": ["300%", "310%", "320%", "330%", "390%", "400%", "410%", "420%", "430%", "500%", "510%", "520%", "530%", "540%", "620%"],
+            "Infliction Rate": ["0%", "0%", "0%", "0%", "10%", "15%", "20%", "25%", "30%", "40%", "45%", "50%", "55%", "60%", "75%"],
+            "Accuracy": ["+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%"],
+            "Action Speed": ["20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "40%", "40%", "40%", "40%", "40%"]
+        }
     },
     "AGI Up":{
-        "Usage": "Active",
+        "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "",
+        "Description": "Increases your AGI stat.",
         "Starter": "1",
-        "Max Level": "15",
-        "Natural Level": "10",
-        "Data": ""
+        "Max Level": "10",
+        "Data": {
+            "AGI Stat↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+        }
     },
     "Trickery":{
-        "Usage": "Active",
+        "Usage": "Active (Legs)",
         "Unlock": "AGI Up (Lv 1)",
-        "Description": "",
+        "Description": "Place a debuff on all enemies for 4 turns, which decreases accuracy.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+            "Accuracy↓": ["-15%", "-17%", "-19%", "-21%", "-25%", "-26%", "-27%", "-28%", "-29%", "-30%", "-31%", "-32%", "-33%", "-34%", "-35%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "100%", "100%", "100%", "100%", "100%"]
+        }
     },
     "Cloak":{
-        "Usage": "Active",
+        "Usage": "Active (Legs)",
         "Unlock": "Trickery (Lv 3)",
-        "Description": "",
+        "Description": "Place a buff on yourself for 4 turns, which decreases enemy aggro.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+            "Aggro↓": ["-50%", "-52%", "-54%", "-56%", "-60%", "-62%", "-64%", "-66%", "-68%", "-74%", "-76%", "-78%", "-80%", "-82%", "-90%"],
+            "Action Speed": ["110%", "110%", "110%", "110%", "110%", "110%", "110%", "110%", "110%", "110%", "130%", "130%", "130%", "130%", "130%"]
+        }
     },
     "Quicken":{
-        "Usage": "Active",
+        "Usage": "Active (Legs)",
         "Unlock": "AGI Up (Lv 1)",
-        "Description": "",
+        "Description": "Place a buff on the whole party for 4 turns, which increases their AGI stat.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+            "AGI Stat↑": ["+10%", "+15%", "+20%", "+25%", "+30%", "+31%", "+32%", "+33%", "+34%", "+40%", "+41%", "+42%", "+43%", "+44%", "+50%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "100%", "100%", "100%", "100%", "100%"]
+        }
     },
     "Escape":{
-        "Usage": "Active",
+        "Usage": "Active (Legs)",
         "Unlock": "Quicken (Lv 3)",
-        "Description": "",
+        "Description": "Place a buff on the whole party for 4 turns, which increases escape rates. At high levels it also increases their DEF stat.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "Escape Rate↑": ["+20%", "+21%", "+22%", "+23%", "+29%", "+30%", "+31%", "+32%", "+33%", "+40%", "+41%", "+42%", "+43%", "+44%", "+47%"],
+            "DEF Stat↑": ["+0%", "+0%", "+0%", "+0%", "+10%", "+11%", "+12%", "+13%", "+14%", "+19%", "+20%", "+21%", "+22%", "+23%", "+29%"],
+            "Action Speed": ["80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "80%", "100%", "100%", "100%", "100%", "100%"]
+        }
     },
     "1st Turn":{
-        "Usage": "Active",
+        "Usage": "Active (Legs)",
         "Unlock": "Trickery (Lv 3), Quicken (Lv 3)",
-        "Description": "",
+        "Description": "Empower one ally to make it act at the start of the turn. At low levels it has a chance to fail.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "1", "1", "1", "1", "1"],
+            "Success Chance": ["70%", "75%", "80%", "85%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"]
+        }
     },
     "Ambush":{
-        "Usage": "Active",
+        "Usage": "Passive",
         "Unlock": "AGI Up (Lv 3)",
-        "Description": "",
-        "Max Level": "15",
-        "Natural Level": "10",
-        "Data": ""
+        "Description": "Increases your chance of getting a preemptive strike.",
+        "Max Level": "10",
+        "Data": {
+            "Preemptive↑": ["+16%", "+17%", "+18%", "+19%", "+22%", "+23%", "+24%", "+25%", "+26%", "+30%"]
+        }
     },
     "Owl-Eye":{
-        "Usage": "Active",
+        "Usage": "Active (Field)",
         "Unlock": "Ambush (Lv 1)",
-        "Description": "",
-        "Max Level": "15",
-        "Natural Level": "10",
-        "Data": ""
+        "Description": "Temporarily reveal FOEs within a certain radius.",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["2", "2", "3", "3", "4", "4", "4", "4", "4", "4"],
+            "Radius (Squares)": ["2", "2", "3", "3", "4", "4", "5", "5", "6", "6"],
+            "Duration (Steps)": ["16", "18", "20", "22", "30", "32", "34", "36", "38", "50"]
+        }
     },
     "Aware":{
-        "Usage": "Active",
+        "Usage": "Passive",
         "Unlock": "Ambush (Lv 2)",
-        "Description": "",
-        "Max Level": "15",
-        "Natural Level": "10",
-        "Data": ""
+        "Description": "Chance to nullify enemy ambushes.",
+        "Max Level": "10",
+        "Data": {
+            "Activation Chance": ["16%", "17%", "18%", "19%", "22%", "23%", "24%", "25%", "26%", "30%"]
+        }
     },
     "Stalker":{
-        "Usage": "Active",
+        "Usage": "Active (Field)",
         "Unlock": "Ambush (Lv 3)",
-        "Description": "",
-        "Max Level": "15",
-        "Natural Level": "10",
-        "Data": ""
+        "Description": "Temporarily decrease the enemy encounter rate.",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["2", "2", "3", "3", "4", "4", "4", "4", "4", "4"],
+            "Encounters↓": ["x0.7", "x0.7", "x0.7", "x0.7", "x0.7", "x0.65", "x0.65", "x0.6", "x0.6", "x0.5"],
+            "Duration (Steps)": ["30", "35", "40", "45", "60", "65", "70", "75", "80", "100"]
+        }
     },
     "1st Hit":{
-        "Usage": "Active",
+        "Usage": "Passive",
         "Unlock": "AGI Up (Lv 5), 1st Turn (Lv 3)",
-        "Description": "",
-        "Max Level": "15",
-        "Natural Level": "10",
-        "Data": ""
+        "Description": "Chance to act at the start of the turn, disregarding turn speed.",
+        "Max Level": "10",
+        "Data": {
+            "Activation Chance": ["16%", "17%", "18%", "19%", "22%", "23%", "24%", "25%", "26%", "30%"]
+        }
     },
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+10%", "+12%", "+14%", "+16%", "+28%", "+30%", "+32%", "+34%", "+36%", "+50%"]
+        }
     },
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+10%", "+12%", "+14%", "+16%", "+28%", "+30%", "+32%", "+34%", "+36%", "+50%"]
+        }
     },
     "Chop":{
         "Usage": "Passive (Field)",
@@ -409,7 +467,9 @@ var data = {
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Gather Attempts": ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"]
+        }
     },
     "Mine":{
         "Usage": "Passive (Field)",
@@ -417,7 +477,9 @@ var data = {
         "Description": "Allows you to gather from Mine points a certain amount of times per day.",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Gather Attempts": ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"]
+        }
     },
     "Take":{
         "Usage": "Passive (Field)",
@@ -425,7 +487,9 @@ var data = {
         "Description": "Allows you to gather from Take points a certain amount of times per day.",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Gather Attempts": ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"]
+        }
     },
 },
 "Protector":{
@@ -775,7 +839,7 @@ var data = {
     "Hypnos":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 1)",
-        "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Sleep.",
+        "Description": "Sword: Deal melee Stab damage to one enemy, with a chance to inflict Sleep.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -789,7 +853,7 @@ var data = {
     "Nerve":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 2)",
-        "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Paralysis.",
+        "Description": "Sword: Deal melee Stab damage to one enemy, with a chance to inflict Paralysis.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -803,7 +867,7 @@ var data = {
     "Mirage":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 3)",
-        "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Panic.",
+        "Description": "Sword: Deal melee Stab damage to one enemy, with a chance to inflict Panic.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -817,7 +881,7 @@ var data = {
     "Drain":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Sword Mastery (Lv 4)",
-        "Description": "Sword: Deal melee Cut damage to one enemy. Recover HP based on the damage dealt.",
+        "Description": "Sword: Deal melee Stab damage to one enemy. Recover HP based on the damage dealt.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -844,7 +908,7 @@ var data = {
     "Petrify":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Sword Mastery (Lv 10)",
-        "Description": "Sword: Deal melee Cut damage to one enemy, with a chance to inflict Petrify.",
+        "Description": "Sword: Deal melee Stab damage to one enemy, with a chance to inflict Petrify.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1265,7 +1329,7 @@ var data = {
         "Unlock": "N/A",
         "Description": "No effect.",
         "Starter": "1",
-        "Max Level": "5",
+        "Max Level": "0",
         "Data": ""
     },
     "Poison":{
@@ -1626,15 +1690,15 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht":  "Frontline warriors with good attack power and durability.",
-    "Survivalist":  "Archers with great agility and exploration knowledge.",
-    "Protector":    "Sturdy knights that defend the party and keep them safe.",
-    "Dark Hunter":  "Ruthless fighters that immobilize then finish off enemies.",
-    "Medic":        "Healers that effectively treat any injuries and afflictions.",
-    "Alchemist":    "Elemental casters that exploit the enemy's weakness.",
-    "Troubadour":   "Musicians that grant various buffs to bolster the party.",
-    "Ronin":        "Katana users who change stance to adapt to the situation.",
-    "Hexer":        "Support casters that weaken, disable and control enemies.",
+    "Landsknecht":  "Warriors with high strength and durability.",
+    "Survivalist":  "Archers with great agility and sharp senses.",
+    "Protector":    "Knights that defend the party from attacks.",
+    "Dark Hunter":  "Fighters whose attacks immobilize enemies.",
+    "Medic":        "Healers that keep the party in good condition.",
+    "Alchemist":    "Spellcasters that pierce the enemy's defense.",
+    "Troubadour":   "Musicians that increase the party's strength.",
+    "Ronin":        "Warriors that gain power from their stances.",
+    "Hexer":        "Sorcerers that weaken and disable enemies.",
 
     "Battle Items": "Consumable items that can be used in battle.",
 }
