@@ -996,166 +996,230 @@ var data = {
     "Healer":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "",
+        "Description": "Increases the effect of healing skills used. (Does not affect percentage healing)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Healing↑": ["+22%", "+28%", "+34%", "+40%", "+60%", "+66%", "+72%", "+78%", "+84%", "+110%"]
+        }
     },
     "Cure":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Healer (Lv 1)",
-        "Description": "",
+        "Description": "Restore HP to one ally.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "HP Gain": ["15", "20", "25", "30", "40", "45", "50", "55", "60", "75", "80", "85", "90", "95", "115"],
+            "Action Speed": ["70%", "72%", "74%", "76%", "80%", "82%", "84%", "86%", "88%", "92%", "94%", "96%", "98%", "100%", "108%"]
+        }
     },
     "Patch Up":{
         "Usage": "Passive",
         "Unlock": "Healer (Lv 2)",
-        "Description": "",
+        "Description": "Restore HP to the whole party after each battle.",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "HP Gain": ["3%", "4%", "5%", "6%", "8%", "9%", "10%", "11%", "12%", "15%"]
+        }
     },
     "Unbind":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Healer (Lv 3)",
-        "Description": "",
+        "Description": "Remove binds from one ally.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+            "Binds Removed": ["1", "1", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Salve":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Healer (Lv 3), Cure (Lv 3)",
-        "Description": "",
+        "Description": "Restore HP to the whole party.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+            "HP Gain": ["20", "25", "30", "35", "45", "50", "55", "60", "75", "80", "85", "90", "95", "100", "120"],
+            "Action Speed": ["70%", "72%", "74%", "76%", "80%", "82%", "84%", "86%", "88%", "92%", "94%", "96%", "98%", "100%", "108%"]
+        }
     },
     "Immunize":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Salve (Lv 3)",
-        "Description": "",
+        "Description": "Place a buff on the whole party for 4 turns, which increases resistance to physical/elemental damage.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "11", "12", "13", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14"],
+            "Vulnerability↓": ["x0.85", "x0.8", "x0.75", "x0.7", "x0.65", "x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Cure II":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Healer (Lv 3)",
-        "Description": "",
+        "Description": "Restore HP to one ally.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "11", "12", "13", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14"],
+            "HP Gain": ["60", "65", "70", "75", "90", "95", "100", "105", "110", "130", "135", "140", "145", "150", "175"],
+            "Action Speed": ["20%", "22%", "24%", "26%", "30%", "32%", "34%", "36%", "38%", "42%", "44%", "46%", "48%", "50%", "58%"]
+        }
     },
     "Salve II":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Healer (Lv 5), Cure II (Lv 3)",
-        "Description": "",
+        "Description": "Restore HP to the whole party.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["16", "17", "18", "19", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20"],
+            "HP Gain": ["75", "82", "89", "96", "120", "127", "134", "141", "148", "180", "187", "194", "201", "208", "1000"],
+            "Action Speed": ["20%", "22%", "24%", "26%", "30%", "32%", "34%", "36%", "38%", "42%", "44%", "46%", "48%", "50%", "58%"]
+        }
     },
     "CPR":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Salve II (Lv 5), Immunize (Lv 3)",
-        "Description": "",
+        "Description": "Place a buff on the whole party for 4 turns, which grants a chance to survive lethal damage with 1 HP.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["16", "17", "18", "19", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20"],
+            "Activation Chance": ["30%", "31%", "32%", "33%", "39%", "40%", "41%", "42%", "43%", "50%", "51%", "52%", "53%", "54%", "62%"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Regen":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Healer (Lv 5), Cure (Lv 5)",
-        "Description": "",
+        "Description": "Place a buff on one ally for 4 turns, which restores HP at the end of each turn.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "HP Gain": ["5%", "6%", "7%", "8%", "10%", "11%", "12%", "13%", "14%", "16%", "17%", "18%", "19%", "20%", "22%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
     },
     "Refresh":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Healer (Lv 5)",
-        "Description": "",
+        "Description": "Remove ailments from the whole party. Each skill level expands the list of curable ailments.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["3", "3", "3", "3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+            "Curable": ["+Blind", "+Paralysis", "+Panic", "+Sleep", "+Poison", "+Curse", "+Fear", "+Petrify", "All", "All", "All", "All", "All", "All", "All"],
+            "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
+        }
     },
     "Cure III":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Healer (Lv 5)",
-        "Description": "",
+        "Description": "Restore HP to one ally.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["20", "19", "18", "17", "15", "14", "13", "12", "11", "10", "10", "10", "10", "10", "10"],
+            "HP Gain": ["500", "500", "500", "500", "500", "500", "500", "500", "500", "500", "500", "500", "500", "500", "500"],
+            "Action Speed": ["5%", "8%", "11%", "14%", "20%", "23%", "26%", "29%", "32%", "40%", "43%", "46%", "49%", "52%", "62%"]
+        }
     },
     "Revive":{
-        "Usage": "Active",
+        "Usage": "Active (Head)",
         "Unlock": "Healer (Lv 7), Cure III (Lv 3)",
-        "Description": "",
+        "Description": "Revive one ally.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["10", "11", "12", "13", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14"],
+            "HP Gain": ["15", "20", "25", "30", "40", "45", "50", "55", "60", "75", "80", "85", "90", "250", "1000"],
+            "Action Speed": ["20%", "22%", "24%", "26%", "30%", "32%", "34%", "36%", "38%", "42%", "44%", "46%", "48%", "50%", "58%"]
+        }
     },
     "Healing Touch":{
-        "Usage": "Active",
+        "Usage": "Active (Field)",
         "Unlock": "Healer (Lv 10)",
-        "Description": "",
-        "Max Level": "15",
-        "Natural Level": "10",
-        "Data": ""
+        "Description": "Set the HP of all party members to a specific percentage. No effect on members that are already above that percentage.",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["3", "3", "3", "2", "1"],
+            "Target HP%": ["50%", "75%", "100%", "100%", "100%"]
+        }
     },
     "HP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
-        "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+10%", "+12%", "+14%", "+16%", "+28%", "+30%", "+32%", "+34%", "+36%", "+50%"]
+        }
     },
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "10",
-        "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max TP↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+        }
     },
     "Scavenge":{
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 3)",
-        "Description": "",
+        "Description": "Increases enemy drop rates.",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Drop Rate↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+        }
     },
     "TP Regen":{
         "Usage": "Passive",
         "Unlock": "TP Up (Lv 10)",
-        "Description": "",
+        "Description": "Recover TP at the end of each turn.",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Gain": ["1", "1", "2", "2", "3", "3", "4", "4", "4", "5"]
+        }
     },
     "ATK Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "",
+        "Description": "Increases your STR stat during attacks.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "STR Stat↑": ["+10%", "+25%", "+30%", "+45%", "+90%", "+105%", "+120%", "+135%", "+150%", "+200%"]
+        }
     },
     "Caduceus":{
-        "Usage": "Active",
+        "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "ATK Up (Lv 10)",
-        "Description": "",
+        "Description": "Staff: Deal melee Bash damage to one enemy, with a chance to inflict Stun.",
         "Max Level": "15",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "TP Cost": ["8", "9", "10", "11", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12"],
+            "Attack Power": ["200%", "210%", "220%", "230%", "250%", "260%", "270%", "280%", "290%", "320%", "330%", "340%", "350%", "360%", "400%"],
+            "Infliction Rate": ["15%", "20%", "25%", "30%", "40%", "45%", "50%", "55%", "60%", "75%", "76%", "77%", "78%", "79%", "80%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "40%", "40%", "40%", "40%", "40%"]
+        }
     },
     "Chop":{
         "Usage": "Passive",
@@ -1164,7 +1228,9 @@ var data = {
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Gather Attempts": ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"]
+        }
     },
 },
 "Alchemist":{
