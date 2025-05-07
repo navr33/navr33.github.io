@@ -184,26 +184,26 @@ var data = {
     "War Cry":{
         "Usage": "Active (Head)",
         "Unlock": "ATK Up (Lv 3)",
-        "Description": "Place a buff on yourself for 4 turns, which increases the power of attacks used but decreases all damage resistances.",
+        "Description": "Place a buff on yourself for 4 turns, which increases damage dealt but also increases damage taken.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
-            "Power↑": ["x1.1", "x1.13", "x1.16", "x1.19", "x1.25", "x1.27", "x1.29", "x1.31", "x1.33", "x1.4", "x1.41", "x1.42", "x1.43", "x1.44", "x1.52"],
-            "Vulnerability↑": ["x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.18", "x1.16", "x1.14", "x1.12", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1"],
+            "Damage Dealt↑": ["x1.1", "x1.13", "x1.16", "x1.19", "x1.25", "x1.27", "x1.29", "x1.31", "x1.33", "x1.4", "x1.41", "x1.42", "x1.43", "x1.44", "x1.52"],
+            "Damage Taken↑": ["x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.18", "x1.16", "x1.14", "x1.12", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1"],
             "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"]
         }
     },
     "Hell Cry":{
         "Usage": "Active (Head)",
         "Unlock": "ATK Up (Lv 10)",
-        "Description": "Place a buff on yourself for 4 turns, which increases the power of attacks used but decreases all damage resistances and Max HP.",
+        "Description": "Place a buff on yourself for 4 turns, which increases damage dealt but also increases damage taken and decreases Max HP.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
-            "Power↑": ["x1.2", "x1.23", "x1.26", "x1.29", "x1.35", "x1.37", "x1.39", "x1.41", "x1.43", "x1.5", "x1.51", "x1.52", "x1.53", "x1.54", "x1.62"],
-            "Vulnerability↑": ["x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.18", "x1.16", "x1.14", "x1.12", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1"],
+            "Damage Dealt↑": ["x1.2", "x1.23", "x1.26", "x1.29", "x1.35", "x1.37", "x1.39", "x1.41", "x1.43", "x1.5", "x1.51", "x1.52", "x1.53", "x1.54", "x1.62"],
+            "Damage Taken↑": ["x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.18", "x1.16", "x1.14", "x1.12", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1", "x1.1"],
             "Max HP↓": ["x0.8", "x0.8", "x0.8", "x0.8", "x0.8", "x0.82", "x0.84", "x0.86", "x0.88", "x0.9", "x0.9", "x0.9", "x0.9", "x0.9", "x0.9"],
             "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"]
         }
@@ -216,7 +216,7 @@ var data = {
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
-            "Vulnerability↓": ["x0.95", "x0.94", "x0.93", "x0.92", "x0.91", "x0.9", "x0.89", "x0.88", "x0.87", "x0.85"]
+            "Damage Taken↓": ["x0.95", "x0.94", "x0.93", "x0.92", "x0.91", "x0.9", "x0.89", "x0.88", "x0.87", "x0.85"]
         }
     },
     "Arm Heal":{
@@ -501,7 +501,7 @@ var data = {
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
-            "Vulnerability↓": ["x0.95", "x0.94", "x0.93", "x0.92", "x0.91", "x0.9", "x0.89", "x0.88", "x0.87", "x0.85"]
+            "Damage Taken↓": ["x0.95", "x0.94", "x0.93", "x0.92", "x0.91", "x0.9", "x0.89", "x0.88", "x0.87", "x0.85"]
         }
     },
     "Front Guard":{
@@ -529,48 +529,48 @@ var data = {
     "Defender":{
         "Usage": "Active (Head)",
         "Unlock": "Front Guard (Lv 3), Rear Guard (Lv 3)",
-        "Description": "Place a buff on the whole party for 4 turns, which increases resistance to physical damage.",
+        "Description": "Place a buff on the whole party for 4 turns, which decreases physical damage taken.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["8", "9", "10", "11", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12"],
-            "Vulnerability↓": ["x0.8", "x0.77", "x0.74", "x0.71", "x0.68", "x0.67", "x0.66", "x0.65", "x0.65", "x0.64", "x0.63", "x0.62", "x0.61", "x0.6", "x0.59"],
+            "Damage Taken↓": ["x0.8", "x0.77", "x0.74", "x0.71", "x0.68", "x0.67", "x0.66", "x0.65", "x0.65", "x0.64", "x0.63", "x0.62", "x0.61", "x0.6", "x0.59"],
             "Action Speed": ["80%", "82%", "84%", "86%", "90%", "92%", "94%", "96%", "98%", "102%", "104%", "106%", "108%", "110%", "118%"]
         }
     },
     "Fire Wall":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 5), TP Up (Lv 3)",
-        "Description": "Shield: Protect the whole party for this turn, which increases resistance against the first Fire attack that hits it. From level 6 onward it instead absorbs the damage that would've been dealt by the attack. (From level 5 onward it also nullifies secondary effects the attack)",
+        "Description": "Shield: Protect the whole party for this turn, which decreases damage taken from the first Fire attack that hits it. From level 6 onward it instead absorbs the damage that would've been dealt by the attack. (From level 5 onward it also nullifies secondary effects the attack)",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
-            "Vulnerability↓": ["x0.5", "x0.4", "x0.3", "x0.2", "x0", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Taken↓": ["x0.5", "x0.4", "x0.3", "x0.2", "x0", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
             "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "2%", "4%", "6%", "8%", "10%", "12%", "14%", "16%", "18%", "20%"]
         }
     },
     "Ice Wall":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 5), TP Up (Lv 3)",
-        "Description": "Shield: Protect the whole party for this turn, which increases resistance against the first Ice attack that hits it. From level 6 onward it instead absorbs the damage that would've been dealt by the attack. (From level 5 onward it also nullifies secondary effects the attack)",
+        "Description": "Shield: Protect the whole party for this turn, which decreases damage taken from the first Ice attack that hits it. From level 6 onward it instead absorbs the damage that would've been dealt by the attack. (From level 5 onward it also nullifies secondary effects the attack)",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
-            "Vulnerability↓": ["x0.5", "x0.4", "x0.3", "x0.2", "x0", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Taken↓": ["x0.5", "x0.4", "x0.3", "x0.2", "x0", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
             "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "2%", "4%", "6%", "8%", "10%", "12%", "14%", "16%", "18%", "20%"]
         }
     },
     "Volt Wall":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 5), TP Up (Lv 3)",
-        "Description": "Shield: Protect the whole party for this turn, which increases resistance against the first Volt attack that hits it. From level 6 onward it instead absorbs the damage that would've been dealt by the attack. (From level 5 onward it also nullifies secondary effects the attack)",
+        "Description": "Shield: Protect the whole party for this turn, which decreases damage taken from the first Volt attack that hits it. From level 6 onward it instead absorbs the damage that would've been dealt by the attack. (From level 5 onward it also nullifies secondary effects the attack)",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
-            "Vulnerability↓": ["x0.5", "x0.4", "x0.3", "x0.2", "x0", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
+            "Damage Taken↓": ["x0.5", "x0.4", "x0.3", "x0.2", "x0", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
             "Damage Drain": ["N/A", "N/A", "N/A", "N/A", "N/A", "2%", "4%", "6%", "8%", "10%", "12%", "14%", "16%", "18%", "20%"]
         }
     },
@@ -595,31 +595,31 @@ var data = {
         "Starter": "1",
         "Max Level": "10",
         "Data": {
-            "Vulnerability↓": ["x0.95", "x0.94", "x0.93", "x0.92", "x0.91", "x0.9", "x0.89", "x0.88", "x0.87", "x0.85"]
+            "Damage Taken↓": ["x0.95", "x0.94", "x0.93", "x0.92", "x0.91", "x0.9", "x0.89", "x0.88", "x0.87", "x0.85"]
         }
     },
     "Provoke":{
         "Usage": "Active (Head)",
         "Unlock": "DEF Up (Lv 1)",
-        "Description": "Place a buff on yourself for 4 turns, which increases enemy aggro. At high levels it also increases resistance to physical damage.",
+        "Description": "Place a buff on yourself for 4 turns, which increases enemy aggro. At high levels it also decreases physical damage taken.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3", "3"],
             "Aggro↑": ["+20%", "+25%", "+35%", "+50%", "+70%", "+95%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%", "+100%"],
-            "Vulnerability↓": ["N/A", "N/A", "N/A", "N/A", "N/A", "x0.9", "x0.89", "x0.88", "x0.87", "x0.85", "x0.84", "x0.83", "x0.82", "x0.81", "x0.78"],
+            "Damage Taken↓": ["N/A", "N/A", "N/A", "N/A", "N/A", "x0.9", "x0.89", "x0.88", "x0.87", "x0.85", "x0.84", "x0.83", "x0.82", "x0.81", "x0.78"],
             "Action Speed": ["80%", "82%", "84%", "86%", "90%", "92%", "94%", "96%", "98%", "102%", "104%", "106%", "108%", "110%", "118%"]
         }
     },
     "Fortify":{
         "Usage": "Active (Head)",
         "Unlock": "DEF Up (Lv 3), Shield Mastery (Lv 3)",
-        "Description": "Place a buff on yourself for 4 turns, which increases resistance to physical damage.",
+        "Description": "Place a buff on yourself for 4 turns, which decreases physical damage taken.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
-            "Vulnerability↓": ["x0.8", "x0.77", "x0.74", "x0.71", "x0.68", "x0.67", "x0.66", "x0.65", "x0.65", "x0.64", "x0.63", "x0.62", "x0.61", "x0.6", "x0.59"],
+            "Damage Taken↓": ["x0.8", "x0.77", "x0.74", "x0.71", "x0.68", "x0.67", "x0.66", "x0.65", "x0.65", "x0.64", "x0.63", "x0.62", "x0.61", "x0.6", "x0.59"],
             "Action Speed": ["80%", "82%", "84%", "86%", "90%", "92%", "94%", "96%", "98%", "102%", "104%", "106%", "108%", "110%", "118%"]
         }
     },
@@ -1053,12 +1053,12 @@ var data = {
     "Immunize":{
         "Usage": "Active (Head)",
         "Unlock": "Salve (Lv 3)",
-        "Description": "Place a buff on the whole party for 4 turns, which increases resistance to physical/elemental damage.",
+        "Description": "Place a buff on the whole party for 4 turns, which decreases physical/elemental damage taken.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["10", "11", "12", "13", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14"],
-            "Vulnerability↓": ["x0.85", "x0.8", "x0.75", "x0.7", "x0.65", "x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15"],
+            "Damage Taken↓": ["x0.85", "x0.8", "x0.75", "x0.7", "x0.65", "x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15"],
             "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
         }
     },
@@ -1605,39 +1605,39 @@ var data = {
     "Ifrit":{
         "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 7)",
-        "Description": "Place a buff on the whole party (lasts indefinitely) and a debuff on all enemies (lasts 4 turns). The buff increases resistance to Fire, while the debuff decreases it.",
+        "Description": "Place a buff on the whole party (lasts indefinitely) and a debuff on all enemies (lasts 4 turns). The buff decreases Fire damage taken, while the debuff increases it.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
-            "Vulnerability↓\n(Allies)": ["x0.8", "x0.75", "x0.7", "x0.65", "x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15", "x0.1"],
-            "Vulnerability↑\n(Enemies)": ["x1.1", "x1.15", "x1.2", "x1.25", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.4", "x1.41", "x1.42", "x1.43", "x1.44", "x1.5"],
+            "Damage Taken↓\n(Allies)": ["x0.8", "x0.75", "x0.7", "x0.65", "x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15", "x0.1"],
+            "Damage Taken↑\n(Enemies)": ["x1.1", "x1.15", "x1.2", "x1.25", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.4", "x1.41", "x1.42", "x1.43", "x1.44", "x1.5"],
             "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
         }
     },
     "Ymir":{
         "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 7)",
-        "Description": "Place a buff on the whole party (lasts indefinitely) and a debuff on all enemies (lasts 4 turns). The buff increases resistance to Ice, while the debuff decreases it.",
+        "Description": "Place a buff on the whole party (lasts indefinitely) and a debuff on all enemies (lasts 4 turns). The buff decreases Ice damage taken, while the debuff increases it.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
-            "Vulnerability↓\n(Allies)": ["x0.8", "x0.75", "x0.7", "x0.65", "x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15", "x0.1"],
-            "Vulnerability↑\n(Enemies)": ["x1.1", "x1.15", "x1.2", "x1.25", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.4", "x1.41", "x1.42", "x1.43", "x1.44", "x1.5"],
+            "Damage Taken↓\n(Allies)": ["x0.8", "x0.75", "x0.7", "x0.65", "x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15", "x0.1"],
+            "Damage Taken↑\n(Enemies)": ["x1.1", "x1.15", "x1.2", "x1.25", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.4", "x1.41", "x1.42", "x1.43", "x1.44", "x1.5"],
             "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
         }
     },
     "Taranis":{
         "Usage": "Active (Head)",
         "Unlock": "Songs (Lv 7)",
-        "Description": "Place a buff on the whole party (lasts indefinitely) and a debuff on all enemies (lasts 4 turns). The buff increases resistance to Volt, while the debuff decreases it.",
+        "Description": "Place a buff on the whole party (lasts indefinitely) and a debuff on all enemies (lasts 4 turns). The buff decreases Volt damage taken, while the debuff increases it.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["6", "6", "7", "7", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8", "8"],
-            "Vulnerability↓\n(Allies)": ["x0.8", "x0.75", "x0.7", "x0.65", "x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15", "x0.1"],
-            "Vulnerability↑\n(Enemies)": ["x1.1", "x1.15", "x1.2", "x1.25", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.4", "x1.41", "x1.42", "x1.43", "x1.44", "x1.5"],
+            "Damage Taken↓\n(Allies)": ["x0.8", "x0.75", "x0.7", "x0.65", "x0.6", "x0.55", "x0.5", "x0.45", "x0.4", "x0.35", "x0.3", "x0.25", "x0.2", "x0.15", "x0.1"],
+            "Damage Taken↑\n(Enemies)": ["x1.1", "x1.15", "x1.2", "x1.25", "x1.3", "x1.31", "x1.32", "x1.33", "x1.34", "x1.4", "x1.41", "x1.42", "x1.43", "x1.44", "x1.5"],
             "Action Speed": ["50%", "52%", "54%", "56%", "60%", "62%", "64%", "66%", "68%", "72%", "74%", "76%", "78%", "90%", "98%"]
         }
     },
@@ -1688,7 +1688,7 @@ var data = {
     "TP Up":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "",
+        "Description": "Increases base Max TP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
