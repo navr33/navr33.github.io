@@ -1988,11 +1988,240 @@ var data = {
     "Curses":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "",
+        "Description": "Increases bind/ailment infliction rates.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Inflictions↑": ["x1.1", "x1.11", "x1.12", "x1.13", "x1.19", "x1.2", "x1.21", "x1.22", "x1.23", "x1.3"],
+        }
+    },
+    "Sapping":{
+        "Usage": "Active (Head)",
+        "Unlock": "Curses (Lv 1)",
+        "Description": "Place a debuff on all enemies for 4 turns, which decreases their ATK stat.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "ATK Stat↓": ["-20%", "-23%", "-26%", "-29%", "-32%", "-33%", "-34%", "-35%", "-36%", "-40%", "-41%", "-42%", "-43%", "-44%", "-45%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Frailty":{
+        "Usage": "Active (Head)",
+        "Unlock": "Curses (Lv 1)",
+        "Description": "Place a debuff on all enemies for 4 turns, which decreases their DEF stat.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "DEF Stat↓": ["-20%", "-23%", "-26%", "-29%", "-32%", "-33%", "-34%", "-35%", "-36%", "-40%", "-41%", "-42%", "-43%", "-44%", "-45%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Leaden":{
+        "Usage": "Active (Head)",
+        "Unlock": "Curses (Lv 1)",
+        "Description": "Place a debuff on all enemies for 4 turns, which decreases their AGI stat.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "AGI Stat↓": ["-20%", "-23%", "-26%", "-29%", "-32%", "-33%", "-34%", "-35%", "-36%", "-40%", "-41%", "-42%", "-43%", "-44%", "-45%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Blinding":{
+        "Usage": "Active (Head, LUC)",
+        "Unlock": "Curses (Lv 2)",
+        "Description": "Attempt to inflict Blind on all enemies.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+            "Infliction Rate": ["50%", "51%", "52%", "53%", "59%", "60%", "61%", "62%", "63%", "70%", "71%", "72%", "73%", "74%", "82%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Relapse":{
+        "Usage": "Active (Head)",
+        "Unlock": "Curses (Lv 3), TP Up (Lv 3)",
+        "Description": "Place a debuff on all enemies for 4 turns, which decreases bind/ailment recovery speed. (Remaining bind/ailment duration is divided by this modifier)",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "Recovery Rate↓": ["x0.9", "x0.87", "x0.84", "x0.81", "x0.72", "x0.68", "x0.65", "x0.62", "x0.59", "x0.5", "x0.47", "x0.44", "x0.41", "x0.38", "x0.35"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Cranial":{
+        "Usage": "Active (Head, LUC)",
+        "Unlock": "Curses (Lv 5)",
+        "Description": "Attempt to inflict Head Bind on one enemy.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "Infliction Rate": ["50%", "51%", "52%", "53%", "59%", "60%", "61%", "62%", "63%", "70%", "71%", "72%", "73%", "74%", "82%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%"]
+        }
+    },
+    "Abdomen":{
+        "Usage": "Active (Head, LUC)",
+        "Unlock": "Curses (Lv 5)",
+        "Description": "Attempt to inflict Arm Bind on one enemy.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "Infliction Rate": ["50%", "51%", "52%", "53%", "59%", "60%", "61%", "62%", "63%", "70%", "71%", "72%", "73%", "74%", "82%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%"]
+        }
+    },
+    "Immobile":{
+        "Usage": "Active (Head, LUC)",
+        "Unlock": "Curses (Lv 5)",
+        "Description": "Attempt to inflict Leg Bind on one enemy.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "Infliction Rate": ["50%", "51%", "52%", "53%", "59%", "60%", "61%", "62%", "63%", "70%", "71%", "72%", "73%", "74%", "82%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%"]
+        }
+    },
+    "Torpor":{
+        "Usage": "Active (Head, LUC)",
+        "Unlock": "Curses (Lv 6)",
+        "Description": "Attempt to inflict Sleep on all enemies.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+            "Infliction Rate": ["50%", "51%", "52%", "53%", "59%", "60%", "61%", "62%", "63%", "70%", "71%", "72%", "73%", "74%", "82%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Corrupt":{
+        "Usage": "Active (Head, LUC)",
+        "Unlock": "Curses (Lv 7)",
+        "Description": "Attempt to inflict Curse on all enemies.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+            "Infliction Rate": ["50%", "51%", "52%", "53%", "59%", "60%", "61%", "62%", "63%", "70%", "71%", "72%", "73%", "74%", "82%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Stagger":{
+        "Usage": "Active (Head, LUC)",
+        "Unlock": "Torpor (Lv 5), Corrupt (Lv 5)",
+        "Description": "Chance to inflict Stun on all enemies at the start of the battle.",
+        "Max Level": "10",
+        "Data": {
+            "Activation Chance": ["16%", "17%", "18%", "19%", "22%", "23%", "24%", "25%", "26%", "30%"]
+        }
+    },
+    "Revenge":{
+        "Usage": "Active (Head)",
+        "Unlock": "Corrupt (Lv 10)",
+        "Description": "Deal damage to all enemies. This attack's base damage is equal to a flat value multiplied by your amount of missing HP.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+            "Damage per HP": ["1", "1.02", "1.04", "1.06", "1.2", "1.22", "1.24", "1.26", "1.28", "1.5", "1.52", "1.54", "1.56", "1.58", "1.7"],
+            "Accuracy": ["+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%", "+0%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Evil Eye":{
+        "Usage": "Active (Head, LUC)",
+        "Unlock": "Curses (Lv 10)",
+        "Description": "Attempt to inflict Fear on one enemy.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["8", "9", "10", "11", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12"],
+            "Infliction Rate": ["50%", "51%", "52%", "53%", "59%", "60%", "61%", "62%", "63%", "70%", "71%", "72%", "73%", "74%", "82%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Lure":{
+        "Usage": "Active (Field)",
+        "Unlock": "Evil Eye (Lv 1)",
+        "Description": "Temporarily increase the enemy encounter rate.",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["2", "2", "3", "3", "4", "4", "4", "4", "4", "4"],
+            "Encounters↑": ["x1.3", "x1.3", "x1.3", "x1.3", "x1.3", "x1.35", "x1.35", "x1.4", "x1.4", "x1.5"],
+            "Duration (Steps)": ["16", "18", "20", "22", "30", "32", "34", "36", "38", "50"]
+        }
+    },
+    "Paralyze":{
+        "Usage": "Active (Head)",
+        "Unlock": "Evil Eye (Lv 3)",
+        "Description": "Control all enemies afflicted with Fear for this turn, which prevents them from acting.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "1", "1", "1", "1", "1"]
+        }
+    },
+    "Betrayal":{
+        "Usage": "Active (Head)",
+        "Unlock": "Evil Eye (Lv 5)",
+        "Description": "Control all enemies afflicted with Fear for this turn, which makes them attack another random enemy. (If there's only one enemy, it will attack itself)",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "1", "1", "1", "1", "1"]
+        }
+    },
+    "Suicide":{
+        "Usage": "Active (Head)",
+        "Unlock": "Evil Eye (Lv 10)",
+        "Description": "Control one enemy afflicted with Fear for this turn, which makes it hit itself multiple times.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["10", "11", "12", "13", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14", "14"],
+            "Hits": ["1", "1", "2", "2", "3", "3", "3", "3", "3", "4", "4", "4", "4", "4", "5"],
+        }
+    },
+    "HP Up":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+10%", "+12%", "+14%", "+16%", "+28%", "+30%", "+32%", "+34%", "+36%", "+50%"]
+        }
+    },
+    "TP Up":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increases base Max TP.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Natural Level": "10",
+        "Data": {
+            "Max TP↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+        }
+    },
+    "Mine":{
+        "Usage": "Passive (Field)",
+        "Unlock": "N/A",
+        "Description": "Allows you to gather from Mine points a certain amount of times per day.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Gather Attempts": ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"]
+        }
     },
 }
 }
