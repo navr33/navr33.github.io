@@ -1730,14 +1730,258 @@ var data = {
     },
 },
 "Ronin":{
-    "Katanas":{
+    "Katana Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "",
+        "Description": "Increases your weapon's ATK stat during Katana attacks.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "ATK Stat↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+        }
+    },
+    "Kesagiri":{
+        "Usage": "Active (Legs, STR)",
+        "Unlock": "Katana Mastery (Lv 1)",
+        "Description": "Katana: Deal melee Cut damage to one enemy.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "Attack Power": ["130%", "135%", "140%", "145%", "150%", "155%", "160%", "165%", "170%", "180%", "185%", "190%", "195%", "200%", "210%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Overhead":{
+        "Usage": "Active (No Parts)",
+        "Unlock": "Katana Mastery (Lv 3)",
+        "Description": "Katana: Gain the Overhead Stance buff for 4 turns, which increases ATK and slightly decreases damage taken. (Overrides other Stances)",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["2", "2", "3", "3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+            "ATK Stat↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%", "+31%", "+32%", "+33%", "+34%", "+42%"],
+            "Damage Taken↓": ["x0.95", "x0.94", "x0.93", "x0.92", "x0.91", "x0.9", "x0.89", "x0.88", "x0.87", "x0.85", "x0.84", "x0.83", "x0.82", "x0.81", "x0.78"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%"]
+        }
+    },
+    "Zamba":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Katana Mastery (Lv 5), Overhead (Lv 1)",
+        "Description": "Katana, Overhead: Deal melee Cut damage to one enemy.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "Attack Power": ["140%", "145%", "150%", "155%", "165%", "167%", "170%", "173%", "176%", "190%", "192%", "194%", "196%", "198%", "216%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Midareba":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Katana Mastery (Lv 7), Overhead (Lv 3)",
+        "Description": "Katana, Overhead: Deal multiple hits of melee Cut damage to one enemy.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["8", "9", "10", "11", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12"],
+            "Attack Power": ["100%", "103%", "106%", "109%", "115%", "116%", "117%", "118%", "119%", "125%", "126%", "127%", "128%", "129%", "135%"],
+            "Hits": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Orochi":{
+        "Usage": "Active (Arms, STR+TEC)",
+        "Unlock": "Katana Mastery (Lv 10), Overhead (Lv 5)",
+        "Description": "Katana, Overhead: Deal melee Cut+Fire damage to one enemy.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+            "Attack Power\n(Physical)": ["130%", "131%", "132%", "133%", "134%", "135%", "136%", "137%", "138%", "140%", "141%", "142%", "143%", "144%", "150%"],
+            "Attack Power\n(Elemental)": ["50%", "55%", "60%", "70%", "75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "125%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "40%", "40%", "40%", "40%", "40%"]
+        }
+    },
+    "Seigan":{
+        "Usage": "Active (No Parts)",
+        "Unlock": "Katana Mastery (Lv 3)",
+        "Description": "Katana: Gain the Seigan Stance buff for 4 turns, which decreases damage taken and slightly increases ATK. (Overrides other Stances)",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["2", "2", "3", "3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+            "Damage Taken↓": ["x0.85", "x0.84", "x0.83", "x0.82", "x0.81", "x0.8", "x0.79", "x0.78", "x0.77", "x0.75", "x0.74", "x0.73", "x0.72", "x0.71", "x0.68"],
+            "ATK Stat↑": ["+0%", "+1%", "+2%", "+3%", "+9%", "+10%", "+11%", "+12%", "+13%", "+20%", "+21%", "+22%", "+23%", "+24%", "+32%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%"]
+        }
+    },
+    "Mikiri":{
+        "Usage": "Active (Arms)",
+        "Unlock": "Katana Mastery (Lv 5), Seigan (Lv 1)",
+        "Description": "Katana, Seigan: Nullify the first attack that hits you this turn.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "1", "1", "1", "1", "1"],
+        }
+    },
+    "Koteuchi":{
+        "Usage": "Active (Arms, STR, LUC)",
+        "Unlock": "Katana Mastery (Lv 7), Seigan (Lv 3)",
+        "Description": "Katana, Seigan: Deal melee Cut damage to one enemy, with a chance to inflict Arm Bind.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "Attack Power": ["130%", "131%", "132%", "133%", "134%", "135%", "136%", "137%", "138%", "140%", "141%", "142%", "143%", "144%", "150%"],
+            "Infliction Rate": ["20%", "21%", "22%", "23%", "29%", "30%", "31%", "32%", "33%", "40%", "41%", "42%", "43%", "44%", "52%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "70%", "70%", "70%", "70%", "70%"]
+        }
+    },
+    "Raizuki":{
+        "Usage": "Active (Arms, STR+TEC)",
+        "Unlock": "Katana Mastery (Lv 10), Seigan (Lv 5)",
+        "Description": "Katana, Seigan: Deal melee Cut+Volt damage to one enemy.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+            "Attack Power\n(Physical)": ["130%", "131%", "132%", "133%", "134%", "135%", "136%", "137%", "138%", "140%", "141%", "142%", "143%", "144%", "150%"],
+            "Attack Power\n(Elemental)": ["50%", "55%", "60%", "70%", "75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "125%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "40%", "40%", "40%", "40%", "40%"]
+        }
+    },
+    "Iai":{
+        "Usage": "Active (No Parts)",
+        "Unlock": "Katana Mastery (Lv 3)",
+        "Description": "Katana: Gain the Iai Stance buff for 4 turns, which increases AGI. (Overrides other Stances)",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["2", "2", "3", "3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+            "AGI Stat↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%", "+31%", "+32%", "+33%", "+34%", "+42%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%"]
+        }
+    },
+    "Kubiuchi":{
+        "Usage": "Active (Arms, STR, LUC)",
+        "Unlock": "Katana Mastery (Lv 5), Iai (Lv 1)",
+        "Description": "Katana, Iai: Deal melee Cut damage to one enemy, with a chance to inflict Instant Death.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+            "Attack Power": ["130%", "131%", "132%", "133%", "134%", "135%", "136%", "137%", "138%", "140%", "141%", "142%", "143%", "144%", "150%"],
+            "Infliction Rate": ["40%", "41%", "42%", "43%", "49%", "50%", "51%", "52%", "53%", "60%", "61%", "62%", "63%", "64%", "72%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%"]
+        }
+    },
+    "Gatotsu":{
+        "Usage": "Active (Arms, STR)",
+        "Unlock": "Katana Mastery (Lv 7), Iai (Lv 3)",
+        "Description": "Katana, Iai: Deal melee Stab damage to one enemy.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["4", "4", "5", "5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6", "6"],
+            "Attack Power": ["170%", "171%", "172%", "173%", "189%", "190%", "191%", "192%", "193%", "210%", "211%", "212%", "213%", "214%", "232%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "120%", "120%", "120%", "120%", "120%"]
+        }
+    },
+    "Hyosetsu":{
+        "Usage": "Active (Arms, STR+TEC)",
+        "Unlock": "Katana Mastery (Lv 10), Iai (Lv 5)",
+        "Description": "Katana, Iai: Deal melee Cut+Ice damage to one enemy.",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["6", "7", "8", "9", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+            "Attack Power\n(Physical)": ["130%", "131%", "132%", "133%", "134%", "135%", "136%", "137%", "138%", "140%", "141%", "142%", "143%", "144%", "150%"],
+            "Attack Power\n(Elemental)": ["50%", "55%", "60%", "70%", "75%", "80%", "85%", "90%", "95%", "100%", "105%", "110%", "115%", "120%", "125%"],
+            "Accuracy": ["+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%", "+20%"],
+            "Action Speed": ["20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "20%", "40%", "40%", "40%", "40%", "40%"]
+        }
+    },
+    "HP Up":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increases base Max HP.",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
-        "Data": ""
+        "Data": {
+            "Max HP↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+        }
+    },
+    "Ibuki":{
+        "Usage": "Active (Head)",
+        "Unlock": "HP Up (Lv 3)",
+        "Description": "Restore HP to yourself. (Only usable in battle)",
+        "Max Level": "15",
+        "Natural Level": "10",
+        "Data": {
+            "TP Cost": ["3", "3", "4", "4", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"],
+            "HP Gain": ["20", "26", "32", "38", "50", "56", "62", "68", "74", "92", "98", "104", "110", "116", "140"],
+            "Action Speed": ["70%", "72%", "74%", "76%", "80%", "82%", "86%", "88%", "90%", "96%", "98%", "100%", "102%", "104%", "112%"]
+        }
+    },
+    "TP Up":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increases base Max TP.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Max TP↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+        }
+    },
+    "ATK Up":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Increases your STR stat during attacks.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Natural Level": "10",
+        "Data": {
+            "STR Stat↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+        }
+    },
+    "Sight":{
+        "Usage": "Passive",
+        "Unlock": "ATK Up (Lv 3)",
+        "Description": "Increases your STR stat during attacks if it's nighttime or you're afflicted with Blind or Head Bind.",
+        "Max Level": "10",
+        "Data": {
+            "STR Stat↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+        }
+    },
+    "Crit Up":{
+        "Usage": "Passive",
+        "Unlock": "ATK Up (Lv 5)",
+        "Description": "Increases Critical Hit rate.",
+        "Max Level": "10",
+        "Data": {
+            "Crit Rate↑": ["+1%", "+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%"]
+        }
+    },
+    "Mine":{
+        "Usage": "Passive (Field)",
+        "Unlock": "N/A",
+        "Description": "Allows you to gather from Mine points a certain amount of times per day.",
+        "Starter": "1",
+        "Max Level": "10",
+        "Data": {
+            "Gather Attempts": ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"]
+        }
     },
 },
 "Hexer":{
