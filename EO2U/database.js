@@ -19,7 +19,7 @@ var data = {
     "Sword Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Sword is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if you have a Sword equipped. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -97,7 +97,7 @@ var data = {
     "Axe Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if an Axe is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if you have an Axe equipped. (On level up, if this unlocked a skill, it grants one level to it.)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -355,7 +355,7 @@ var data = {
     "Bow Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Bow is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if you have a Bow equipped. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -678,7 +678,7 @@ var data = {
     "Shield Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Chance to nullify physical attacks received if a Shield is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Chance to nullify physical attacks received if you have a Shield equipped. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -993,7 +993,7 @@ var data = {
     "Whip Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Whip is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if you have a Whip equipped. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1088,7 +1088,7 @@ var data = {
     "Sword Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Sword is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if you have a Sword equipped. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1339,7 +1339,7 @@ var data = {
     "Heal Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases HP restored with healing skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases HP restored with healing skills. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1499,7 +1499,7 @@ var data = {
     "Staff Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt and Max TP if a Staff is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt and Max TP if you have a Staff equipped. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1661,7 +1661,7 @@ var data = {
     "Formula Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Formula skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt with Formula skills. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1828,7 +1828,7 @@ var data = {
     "Palm Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Palm skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt with Palm skills. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1985,7 +1985,7 @@ var data = {
     "Song Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases action speed and decreases TP cost for Song skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases action speed and decreases TP cost for Song skills. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2313,7 +2313,7 @@ var data = {
     "Katana Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Katana is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if you have a Katana equipped. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2651,7 +2651,7 @@ var data = {
     "Curse Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases bind/ailment infliction rate of Curse skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases bind/ailment infliction rate of Curse skills. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2773,8 +2773,8 @@ var data = {
     },
     "Abdomen Curse":{
         "Usage": "Active (Head, LUC)",
-        "Unlock": "(Curse) Curse Mastery (Lv 5)",
-        "Description": "Attempt to inflict Arm Bind on one enemy.",
+        "Unlock": "Curse Mastery (Lv 5)",
+        "Description": "(Curse) Attempt to inflict Arm Bind on one enemy.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2970,7 +2970,7 @@ var data = {
     "Gun Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Gun is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if you have a Gun equipped. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3298,7 +3298,7 @@ var data = {
     "War Lore Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases the effect of War Lore skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases the effect of War Lore skills. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3447,7 +3447,7 @@ var data = {
     "War Edge Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Enables using Sword skills with a Staff. Increases Max TP if you have a Sword equipped. Increases all damage dealt if you have a Staff equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Enables using Sword skills with a Staff. Increases Max TP if you have a Sword equipped. Increases all damage dealt if you have a Staff equipped. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3629,7 +3629,7 @@ var data = {
     "Loyalty Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Chance to halve any attack damage received. (Automatically unlocks other skills that require this one)",
+        "Description": "Chance to halve any attack damage received. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3738,7 +3738,7 @@ var data = {
     "Claw Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Claw is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if you have a Claw equipped. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3951,7 +3951,7 @@ var data = {
     "Order Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "When you use an Order skill, restore HP to the targets. (Automatically unlocks other skills that require this one)",
+        "Description": "When you use an Order skill, restore HP to the targets. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4321,7 +4321,7 @@ var data = {
     "Blade Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt if a Sword or Katana is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt if you have a Sword or a Katana equipped. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4497,7 +4497,7 @@ var data = {
     "Force Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases natural Force gains. (Automatically unlocks other skills that require this one)<br>-For reference, normal Force gain is a random value between 5 and 15 per action.",
+        "Description": "Increases natural Force gains. (On level up, if this unlocked a skill, it grants one level to it)<br>-For reference, normal Force gain is a random value between 5 and 15 per action.",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -4693,7 +4693,7 @@ var data = {
     "Spear Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Spear is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if you have a Spear equipped. (On level up, if this unlocked a skill, it grants one level to it)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5489,15 +5489,15 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht":  "Frontline warriors with good attack power and durability.",
+    "Landsknecht":  "Frontline warriors boasting high strength and durability.",
     "Survivalist":  "Archers with great agility and exploration knowledge.",
     "Protector":    "Sturdy knights that defend the party and keep them safe.",
     "Dark Hunter":  "Ruthless fighters that immobilize then finish off enemies.",
     "Medic":        "Healers that effectively treat any injuries and afflictions.",
     "Alchemist":    "Elemental casters that exploit the enemy's weakness.",
     "Troubadour":   "Musicians that grant various buffs to bolster the party.",
-    "Ronin":        "Katana users who change stance to adapt to the situation.",
-    "Hexer":        "Support casters that weaken, disable and control enemies.",
+    "Ronin":        "Katana users who gain strength from different stances.",
+    "Hexer":        "Sorcerers that can weaken, disable and control enemies.",
     "Gunner":       "Versatile marksmen that can attack, immobilize and heal.",
     "War Magus":    "Witch doctors who treat ally injuries and worsen the enemy's.",
     "Beast":        "Animal companions whose body acts as a shield and a weapon.",

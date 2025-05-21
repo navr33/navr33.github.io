@@ -3,7 +3,7 @@ var data = {
     "Sword Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Sword is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if you have a Sword equipped. (On level up, if this unlocked a skill, grant one level to it)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -68,7 +68,7 @@ var data = {
     "Axe Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if an Axe is equipped. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
+        "Description": "Increases physical damage dealt if you have an Axe equipped. (On level up, if this unlocked a skill, grant one level to it. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -314,7 +314,7 @@ var data = {
     "Bow Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Bow is equipped. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
+        "Description": "Increases physical damage dealt if you have a Bow equipped. (On level up, if this unlocked a skill, grant one level to it. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -598,7 +598,7 @@ var data = {
     "Shield Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Decrease physical damage taken if a Shield is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Decrease physical damage taken if you have a Shield equipped. (On level up, if this unlocked a skill, grant one level to it)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -887,7 +887,7 @@ var data = {
     "Whip Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Whip is equipped. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
+        "Description": "Increases physical damage dealt if you have a Whip equipped. (On level up, if this unlocked a skill, grant one level to it. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -983,7 +983,7 @@ var data = {
     "Sword Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Sword is equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases physical damage dealt if you have a Sword equipped. (On level up, if this unlocked a skill, grant one level to it)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -1200,7 +1200,7 @@ var data = {
     "Heal Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases the HP restored by healing skills used. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases the HP restored by healing skills used. (On level up, if this unlocked a skill, grant one level to it)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -1490,7 +1490,7 @@ var data = {
     "Formula Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases elemental damage dealt. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
+        "Description": "Increases elemental damage dealt. (On level up, if this unlocked a skill, grant one level to it. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -1777,7 +1777,7 @@ var data = {
     "Song Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases action speed when using Song skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases action speed when using Song skills. (On level up, if this unlocked a skill, grant one level to it)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -2078,7 +2078,7 @@ var data = {
     "Katana Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Katana is equipped. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
+        "Description": "Increases physical damage dealt if you have a Katana equipped. (On level up, if this unlocked a skill, grant one level to it. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -2390,7 +2390,7 @@ var data = {
     "Curse Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases the infliction rates of Curse skills. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases the infliction rates of Curse skills. (On level up, if this unlocked a skill, grant one level to it)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -2679,7 +2679,7 @@ var data = {
     "Spear Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Spear is equipped. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
+        "Description": "Increases physical damage dealt if you have a Spear equipped. (On level up, if this unlocked a skill, grant one level to it. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -2977,7 +2977,7 @@ var data = {
     "Gun Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases physical damage dealt if a Gun is equipped. (Automatically unlocks other skills that require this one. Stacks with its own Grimoire)",
+        "Description": "Increases physical damage dealt if you have a Gun equipped. (On level up, if this unlocked a skill, grant one level to it. Stacks with its own Grimoire)",
         "Starter": "1",
         "Max Level": "10",
         "Natural Level": "10",
@@ -3595,7 +3595,7 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht":  "Frontline warriors with good attack power and durability.",
+    "Landsknecht":  "Frontline warriors boasting high strength and durability.",
     "Survivalist":  "Archers with great agility and exploration knowledge.",
     "Protector":    "Sturdy knights that defend the party and keep them safe.",
     "Dark Hunter":  "Ruthless fighters that immobilize then finish off enemies.",
@@ -3603,7 +3603,7 @@ var descriptions = {
     "Alchemist":    "Elemental casters that exploit the enemy's weakness.",
     "Troubadour":   "Musicians that grant various buffs to bolster the party.",
     "Ronin":        "Katana users who change stance to adapt to the situation.",
-    "Hexer":        "Support casters that weaken, disable and control enemies.",
+    "Hexer":        "Sorcerers that can weaken, disable and control enemies.",
     "Highlander":   "A Spear user that controls life force and turns it into power.",
     "Gunner":       "A versatile Gun user that can attack, immobilize and heal.",
 

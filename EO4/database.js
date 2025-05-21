@@ -2908,7 +2908,7 @@ var descriptions = {
     "Medic":        "Healers that effectively treat any injuries and afflictions.",
     "Runemaster":   "Elemental casters that exploit the enemy's weakness.",
     "Dancer":       "Performers who use buffs to strengthen, heal and attack.",
-    "Arcanist":     "Support casters that use magic circles to restrain enemies.",
+    "Arcanist":     "Sorcerers that summon magic circles to restrain enemies.",
     "Bushi":        "Fierce attackers that enter a bloody rage to gain power.",
     "Imperial":     "Heavy knights that wield destructive mechanized blades.",
 

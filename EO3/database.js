@@ -213,7 +213,7 @@ var data = {
     "Sword Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Sword's normal attacks. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt with Sword's normal attacks.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -286,7 +286,7 @@ var data = {
     "Club Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Club's normal attacks. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt with Club's normal attacks.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -334,7 +334,7 @@ var data = {
     "Nine Smashes":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Club Mastery (Lv 10), Arm Breaker (Lv 5)",
-        "Description": "Club: Deal multiple hits of melee Bash damage to one enemy. Has very low accuracy.",
+        "Description": "Club: Deal multiple hits of melee Bash damage to one enemy. Highly innacurate.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["10", "11", "12", "14", "15", "17", "18", "20", "22", "25"],
@@ -432,7 +432,7 @@ var data = {
     "Shield Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Decreases physical damage taken if you have a Shield equipped. (Automatically unlocks other skills that require this one)",
+        "Description": "Decreases physical damage taken if you have a Shield equipped.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -550,7 +550,7 @@ var data = {
     "Spear Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Spear's normal attacks. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt with Spear's normal attacks.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -640,7 +640,7 @@ var data = {
     "Rapier Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Rapier's normal attacks. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt with Rapier's normal attacks.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -715,7 +715,7 @@ var data = {
     "Gun Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Gun's normal attacks. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt with Gun's normal attacks.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -909,7 +909,7 @@ var data = {
     "Knife Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Knife's normal attacks. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt with Knife's normal attacks.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1168,7 +1168,7 @@ var data = {
     "Fist Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Removes the ATK penalty when using bare Fists, and instead applies an ATK increase. (Automatically unlocks other skills that require this one)",
+        "Description": "Removes the ATK penalty when using bare Fists, and instead applies an ATK increase.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1292,7 +1292,7 @@ var data = {
     "Fire Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases Fire damage dealt. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases Fire damage dealt.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1337,7 +1337,7 @@ var data = {
     "Ice Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases Ice damage dealt. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases Ice damage dealt.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1382,7 +1382,7 @@ var data = {
     "Volt Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases Volt damage dealt. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases Volt damage dealt.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1504,7 +1504,7 @@ var data = {
     "Wild Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases infliction chances of your summoned Beasts. This is a flat bonus added after applying resistances. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases infliction chances of your summoned Beasts. This is a flat bonus added after applying resistances.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1755,7 +1755,7 @@ var data = {
     "Bolt Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Crossbow's normal attacks. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt with Crossbow's normal attacks.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -1873,7 +1873,7 @@ var data = {
     "Double Action":{
         "Usage": "Passive",
         "Unlock": "Front Mortar (Lv 4), Armor Piercer (Lv 4)",
-        "Description": "When using a single-target attack skill, there's a chance to perform it a second time.",
+        "Description": "When using a single-target attack skill, there's a chance for it to perform an additional hit.",
         "Max Level": "10",
         "Data": {
             "Activation Chance": ["10%", "12%", "14%", "16%", "18%", "20%", "22%", "24%", "27%", "30%"],
@@ -1903,7 +1903,7 @@ var data = {
     "Extend":{
         "Usage": "Passive",
         "Unlock": "Proper Form (Lv 3)",
-        "Description": "Recover HP each time you kill an enemy.",
+        "Description": "Recover HP each time you kill an enemy. (This effect is increased by 50% if the killing blow was a Critical Hit)",
         "Max Level": "10",
         "Data": {
             "HP Gain": ["10", "20", "30", "40", "50", "60", "70", "80", "90", "100"],
@@ -2161,7 +2161,7 @@ var data = {
     "Katana Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases damage dealt with Katana's normal attacks. (Automatically unlocks other skills that require this one)",
+        "Description": "Increases damage dealt with Katana's normal attacks.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2460,7 +2460,7 @@ var data = {
     "HP Cannon":{
         "Usage": "Active (STR)",
         "Unlock": "Overheat (Lv 10), Core Dump (Lv 5)",
-        "Description": "Requires having 3 binds: Deal Almighty damage to one enemy. The base damage is a fixed value that's multiplied by your amount of missing HP.",
+        "Description": "Requires having 3 binds: Deal Almighty damage to one enemy. This attack's base damage is equal to a flat value multiplied by your amount of missing HP.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
