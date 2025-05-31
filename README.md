@@ -2,6 +2,8 @@
 
 Apps for browsing detailed skill data for Etrian Odyssey games, available through Github Pages (https://navr33.github.io/).
 
+EO1 data compiled from the data files by Terence ([Link](https://drive.google.com/file/d/1uG7RcGmASRFgQTjLlivQIvF8pV0JL1kU/view))
+
 EO3 data compiled from the Skill Data Viewer by violentlycar ([Link](https://viocar.github.io/))
 
 EO4 data compiled from the Data Dump by Acea Ivalia ([Link](https://docs.google.com/spreadsheets/d/1XSnae5BOvkIXdG5PgZXDALy4_IimnrB5K6N1IDP5j2Y/))
