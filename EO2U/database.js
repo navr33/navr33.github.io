@@ -710,7 +710,7 @@ var data = {
     },
     "Keep Guard":{
         "Usage": "Active (Arms)",
-        "Unlock": "Front/Rear Guard (Lv 3)",
+        "Unlock": "Front Guard (Lv 3), Rear Guard (Lv 3)",
         "Description": "(Guard) Shield: Protect one ally until the end of next turn, which decreases physical/elemental damage taken. While active, you cannot use Guard skills.",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1749,7 +1749,7 @@ var data = {
     },
     "Riot Formula":{
         "Usage": "Active (Head, TEC)",
-        "Unlock": "Flame/Freeze/Spark Formula (Lv 3)",
+        "Unlock": "Flame Formula (Lv 3), Freeze Formula (Lv 3), Spark Formula (Lv 3)",
         "Description": "(Formula) Deal 5 hits of a random elemental damage type to random enemies. TP cost goes down as you spend TP: Cost is multiplied by [1 - SpentTP/TPtoMin]. (Minimum cost of 1 TP. Cost resets when used. Animation changes based on the chosen element)",
         "Max Level": "20",
         "Natural Level": "10",
@@ -1802,7 +1802,7 @@ var data = {
     },
     "Compression":{
         "Usage": "Active (Head)",
-        "Unlock": "Inferno/Cocytus/Thor formula (Lv 3)",
+        "Unlock": "Inferno Formula (Lv 3), Cocytus Formula (Lv 3), Thor Formula (Lv 3)",
         "Description": "Place a buff on yourself for 3 turns, which increases damage dealt with elemental all-target attacks but changes them to single-target.",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2022,7 +2022,7 @@ var data = {
     },
     "Energy Ensemble":{
         "Usage": "Active (Head)",
-        "Unlock": "Warrior/Shelter Song (Lv 3)",
+        "Unlock": "Warrior Song (Lv 3), Shelter Song (Lv 3)",
         "Description": "(Song) Empower allies with Song buffs for this turn, which makes them recover TP when spending TP. Healing is based on the TP spent.",
         "Max Level": "10",
         "Natural Level": "5",
@@ -2059,7 +2059,7 @@ var data = {
     },
     "Skanda Ensemble":{
         "Usage": "Active (Head)",
-        "Unlock": "Lightfoot/Insight Melody (Lv 3)",
+        "Unlock": "Lightfoot Melody (Lv 3), Insight Melody (Lv 3)",
         "Description": "(Song) Empower allies with Song buffs for this turn, which increases their action speed.",
         "Max Level": "10",
         "Natural Level": "5",
@@ -2175,7 +2175,7 @@ var data = {
     },
     "Reverb":{
         "Usage": "Active (Head)",
-        "Unlock": "Energy/Skanda/Life Ensemble (Lv 3)",
+        "Unlock": "Energy Ensemble (Lv 3), Skanda Ensemble (Lv 3), Life Ensemble (Lv 3)",
         "Description": "(Song) Copy all buffs from one ally onto another, with increased duration.",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2687,7 +2687,7 @@ var data = {
     },
     "Weakening Curse":{
         "Usage": "Active (Head)",
-        "Unlock": "Sapping/Frailty Curse (Lv 5)",
+        "Unlock": "Sapping Curse (Lv 5), Frailty Curse (Lv 5)",
         "Description": "Place a debuff on all enemies for several turns, which decreases bind/ailment resistance.",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2737,7 +2737,7 @@ var data = {
     },
     "Torpor Curse":{
         "Usage": "Active (Head, LUC)",
-        "Unlock": "Blinding/Venom Curse (Lv 2)",
+        "Unlock": "Blinding Curse (Lv 2), Venom Curse (Lv 2)",
         "Description": "(Curse) Attempt to inflict Sleep on an enemy line.",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2749,7 +2749,7 @@ var data = {
     },
     "Corrupt Curse":{
         "Usage": "Active (Head, LUC)",
-        "Unlock": "Venom/Madness Curse (Lv 2)",
+        "Unlock": "Venom Curse (Lv 2), Madness Curse (Lv 2)",
         "Description": "(Curse) Attempt to inflict Curse on an enemy line.",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3070,7 +3070,7 @@ var data = {
     },
     "Burst Shot":{
         "Usage": "Active (Arms, AGI)",
-        "Unlock": "Charged Fire/Ice/Volt (Lv 2)",
+        "Unlock": "Charged Fire (Lv 2), Charged Ice (Lv 2), Charged Volt (Lv 2)",
         "Description": "Gun: Deal ranged Stab+Fire+Ice+Volt damage to one enemy. Increases damage taken by 50% until it activates. Afterwards, this skill becomes disabled for 3 turns.",
         "Max Level": "20",
         "Natural Level": "10",
@@ -3988,7 +3988,7 @@ var data = {
     },
     "Dauntless Order":{
         "Usage": "Active (Head)",
-        "Unlock": "Attack/Guard Order (Lv 3)",
+        "Unlock": "Attack Order (Lv 3), Guard Order (Lv 3)",
         "Description": "(Order) Place a buff on an ally line for several turns, which gives them a chance to survive lethal damage, restoring HP if it activates. (Buff is consumed when activated)",
         "Max Level": "20",
         "Natural Level": "10",
@@ -5493,15 +5493,15 @@ var descriptions = {
     "Survivalist":  "Archers with great agility and exploration knowledge.",
     "Protector":    "Sturdy knights that defend the party and keep them safe.",
     "Dark Hunter":  "Ruthless fighters that immobilize then finish off enemies.",
-    "Medic":        "Healers that effectively treat any injuries and afflictions.",
+    "Medic":        "Healers that effectively treat any injury and affliction.",
     "Alchemist":    "Elemental casters that exploit the enemy's weakness.",
-    "Troubadour":   "Musicians that grant various buffs to bolster the party.",
-    "Ronin":        "Katana users who gain strength from different stances.",
+    "Troubadour":   "Musicians that grant various stat boosts to the party.",
+    "Ronin":        "Katana users that gain strength from different stances.",
     "Hexer":        "Sorcerers that can weaken, disable and control enemies.",
     "Gunner":       "Versatile marksmen that can attack, immobilize and heal.",
-    "War Magus":    "Witch doctors who treat ally injuries and worsen the enemy's.",
-    "Beast":        "Animal companions whose body acts as a shield and a weapon.",
-    "Sovereign":    "Commanders that use buffs to empower and heal the party.",
+    "War Magus":    "Witch doctors with healing magic and weakening attacks.",
+    "Beast":        "Animal companions that shelter allies and maul enemies.",
+    "Sovereign":    "Commanders that raise the party's strength and vitality.",
     "Highlander":   "Warriors that control life force and can turn it into power.",
     "Fafnir":       "A swordsman that gains power by entering a monstrous form.",
 

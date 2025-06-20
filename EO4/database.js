@@ -1661,7 +1661,7 @@ var data = {
         "Wide Dance":{
             "Usage": "Active (Legs)",
             "Unlock": "Energy Tango (Lv 2)",
-            "Description": "Requires a Tango buff: Empower your Dance buffs for this turn, which makes them affect the whole party instead of only your line.",
+            "Description": "Requires a Tango buff: Enhance your Dance buffs for this turn, which makes them affect the whole party instead of only your line.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["8", "6", "4", "2"],
@@ -2901,16 +2901,16 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht":  "Frontline warriors that encourage allies to follow them up.",
-    "Nightseeker":  "Assassins that weaken enemies before closing in for the kill.",
-    "Fortress":     "Knights that put themselves on the line to protect the party.",
+    "Landsknecht":  "Frontline warriors that encourage allies to follow them.",
+    "Nightseeker":  "Assassins that weaken enemies then close in for the kill.",
+    "Fortress":     "Knights that put themselves on the line to cover the party.",
     "Sniper":       "Archers that aim at weak spots to hurt and incapacitate.",
     "Medic":        "Healers that effectively treat any injuries and afflictions.",
-    "Runemaster":   "Elemental casters that exploit the enemy's weakness.",
-    "Dancer":       "Performers who use buffs to strengthen, heal and attack.",
-    "Arcanist":     "Sorcerers that summon magic circles to restrain enemies.",
-    "Bushi":        "Fierce attackers that enter a bloody rage to gain power.",
-    "Imperial":     "Heavy knights that wield destructive mechanized blades.",
+    "Runemaster":   "Spellcasters with control over the power of the elements.",
+    "Dancer":       "Performers who inspire allies while fighting along them.",
+    "Arcanist":     "Sorcerers who summon magic circles to restrain enemies.",
+    "Bushi":        "Fierce warriors that enter a bloody rage to gain power.",
+    "Imperial":     "Heavy knights that wield destructive mechanical blades.",
 
     "Burst Skills":"Powerful skills available through the Burst system.",
     "Battle Items":"Consumable items meant to aid you in battle.",

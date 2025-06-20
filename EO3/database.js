@@ -3,7 +3,7 @@ var data = {
     "Royal Lineage":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Recover TP each time you receive a buff.",
+        "Description": "Recover TP each time you receive a buff. (Unless it cancelled a debuff)",
         "Max Level": "10",
         "Data": {
             "TP Gain": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
@@ -40,7 +40,7 @@ var data = {
     "Nobility Proof":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "When one or more buffs on yourself wear off or are dispelled at once, recover TP.",
+        "Description": "When one or more buffs on yourself wear off or are dispelled/cancelled at once, recover TP.",
         "Starter": "1",
         "Max Level": "10",
         "Data":{
@@ -93,7 +93,7 @@ var data = {
     "Reinforce":{
         "Usage": "Passive",
         "Unlock": "Guard Order (Lv 1)",
-        "Description": "When you apply a buff, the targets recover HP.",
+        "Description": "When you grant a buff, the targets recover HP. (Unless it cancelled a debuff)",
         "Max Level": "10",
         "Data": {
             "HP Gain": ["6", "10", "14", "18", "22", "26", "30", "34", "38", "42"],
@@ -398,7 +398,7 @@ var data = {
     "Wolf Howl":{
         "Usage": "Active (Head)",
         "Unlock": "N/A",
-        "Description": "Place a debuff on all enemies for 4 turns, which increases all damage taken. Stronger effect on enemies with an ailment.",
+        "Description": "Place a debuff on all enemies for 4 turns, which increases all damage taken. Stronger effect while the holder has an ailment.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -455,7 +455,7 @@ var data = {
     "Bodyguard":{
         "Usage": "Active (Arms)",
         "Unlock": "Shield Mastery (Lv 3)",
-        "Description": "Shield: Protect one ally for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
+        "Description": "Shield: Protect another ally for this turn, which makes you take attacks in their place. Decrease damage taken from those redirected attacks.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["4", "4", "5", "5", "6", "6", "7", "7", "8", "8"],
@@ -588,12 +588,12 @@ var data = {
     "Provoke":{
         "Usage": "Active (Head)",
         "Unlock": "N/A",
-        "Description": "Place a buff on yourself for 3 turns, which increases enemy aggro. Actual increase on each attack is a random value between 3 and this skill's bonus. (For reference, natural aggro is a random value from 0 to 4, plus a bonus from 0 to 6 to one random ally)",
+        "Description": "Place a buff on yourself for 3 turns, which increases enemy aggro. (For reference, natural aggro is a random value from 0 to 4, plus a bonus from 0 to 6 to one random ally)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["3", "3", "4", "4", "5", "5", "6", "6", "7", "7"],
-            "Max. Aggro Bonus": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "15"],
+            "Aggro Bonus": ["3~5", "3~6", "3~7", "3~8", "3~9", "3~10", "3~11", "3~12", "3~13", "3~15"],
             "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
         }
     },
@@ -632,7 +632,7 @@ var data = {
     "Trickster":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Recover TP each time you use a direct attack skill.",
+        "Description": "Recover TP each time you use a direct attack skill(including Limit skills).",
         "Max Level": "10",
         "Data": {
             "TP Gain": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
@@ -814,7 +814,7 @@ var data = {
     "Eagle Eye":{
         "Usage": "Active (Head)",
         "Unlock": "N/A",
-        "Description": "Place a debuff on all enemies for 3 turns, which increases all damage taken.",
+        "Description": "Place a debuff on all enemies for 3 turns, which increases physical damage taken.",
         "Starter": "1",
         "Max Level": "5",
         "Data": {
@@ -858,7 +858,7 @@ var data = {
     "Mystic Calm":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Decreases the TP cost of all skills (to a minimum of 1). Removes the back row penalty for melee attacks.",
+        "Description": "Decreases the TP cost of all skills(capped at a minimum of 1). Removes the back row penalty for melee attacks.",
         "Max Level": "10",
         "Data": {
             "TP Cost↓": ["-0", "-1", "-2", "-3", "-4", "-5", "-6", "-7", "-8", "-9"],
@@ -1022,17 +1022,18 @@ var data = {
         "Data": {
             "TP Cost": ["10", "9", "8", "7", "6"],
             "Decoy's HP": ["1", "10", "20", "40", "80"],
+            "Aggro Bonus": ["3~5", "3~5", "3~5", "3~5", "3~5"],
             "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
         }
     },
     "Otori":{
         "Usage": "Active (Head)",
         "Unlock": "Ninpo:Mirage (Lv 1)",
-        "Description": "Place a buff on one ally for 3 turns, which increases enemy aggro. Actual increase on each attack is a random value between 3 and this skill's bonus. (For reference, natural aggro is a random value from 0 to 4, plus a bonus from 0 to 6 to one random ally)",
+        "Description": "Place a buff on one ally for 3 turns, which increases enemy aggro. (For reference, natural aggro is a random value from 0 to 4, plus a bonus from 0 to 6 to one random ally)",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["5", "5", "6", "6", "7", "7", "8", "8", "9", "9"],
-            "Max. Aggro Bonus": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "15"],
+            "Aggro Bonus": ["3~5", "3~6", "3~7", "3~8", "3~9", "3~10", "3~11", "3~12", "3~13", "3~15"],
             "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
         }
     },
@@ -1082,7 +1083,7 @@ var data = {
     "Fist Mastery":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Removes the ATK penalty when using bare Fists, and instead applies an ATK increase.",
+        "Description": "Removes the ATK penalty when using bare Fists, and instead applies an ATK increase.<br>(<b>Exploit</b>: Leaving a character's first armor slot empty enables using Fist skills with their main weapon)",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2011,7 +2012,7 @@ var data = {
     "Rotten Egg":{
         "Usage": "Active (Arms)",
         "Unlock": "Lullaby (Lv 3)",
-        "Description": "Place a debuff on all enemies for 4 turns, which decreases damage dealt. Stronger effect on enemies afflicted with ailments.",
+        "Description": "Place a debuff on all enemies for 4 turns, which decreases all damage dealt. Stronger effect on enemies afflicted with ailments.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["5", "5", "6", "6", "7", "7", "8", "8", "9", "9"],
@@ -2052,10 +2053,10 @@ var data = {
     "Keen Nose":{
         "Usage": "Passive (Field)",
         "Unlock": "Harvestry (Lv 3)",
-        "Description": "Chance of finding additional, rare items when gathering.",
+        "Description": "Chance to find a rare material(without risking a battle) when gathering. (Stacks additively)",
         "Max Level": "10",
         "Data": {
-            "Rare Chance↑": ["+1%", "+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+9%", "+10%"],
+            "Activation Chance": ["1%", "2%", "3%", "4%", "5%", "6%", "7%", "8%", "9%", "10%"],
         }
     },
     "Double Crop":{
@@ -2131,7 +2132,7 @@ var data = {
     "Safe Stroll":{
         "Usage": "Active (Field)",
         "Unlock": "Keen Eye (Lv 5)",
-        "Description": "Temporarily prevent enemy encounters.",
+        "Description": "Temporarily prevent random enemy encounters.",
         "Max Level": "5",
         "Data": {
             "TP Cost": ["12", "12", "13", "13", "14"],
@@ -2153,7 +2154,7 @@ var data = {
     "Second Sword":{
         "Usage": "Passive (Unique)",
         "Unlock": "N/A",
-        "Description": "Allows you to equip a second weapon (occupies an armor slot), and normal attacks will hit twice if you do. The second hit has reduced power.",
+        "Description": "Allows you to equip a second weapon using the first armor slot, which grants the following bonuses:<br>-Normal attacks will perform a second hit using that weapon, with reduced power.<br>-Allows using skills that require that weapon. Their damage and range will be based on the main weapon.",
         "Max Level": "10",
         "Data": {
             "Attack Power\n(Second Hit)": ["20%", "23%", "26%", "29%", "32%", "35%", "38%", "41%", "45%", "50%"],
@@ -2182,7 +2183,7 @@ var data = {
             "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
         }
     },
-    "Myoujou":{
+    "Morning Star":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Katana Mastery (Lv 5)",
         "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Stronger during the day.",
@@ -2196,7 +2197,7 @@ var data = {
             "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
         }
     },
-    "Magatoki":{
+    "Twilight Hour":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Katana Mastery (Lv 5)",
         "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Stronger during the night.",
@@ -2213,7 +2214,7 @@ var data = {
     "5-Ring Sword":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Katana Mastery (Lv 10), Daifuhensha (Lv 3)",
-        "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Maximum hits are doubled if two weapons are equipped.",
+        "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Maximum hits are doubled if you have two weapons equipped.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["15", "16", "17", "18", "20", "22", "24", "26", "28", "30"],
@@ -2221,6 +2222,72 @@ var data = {
             "Hits": ["2~3", "2~3", "2~3", "2~3", "2~4", "2~4", "2~4", "2~4", "2~5", "2~5"],
             "Accuracy": ["-10%", "-9%", "-8%", "-7%", "-6%", "-5%", "-4%", "-3%", "-2%", "-1%"],
             "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
+        }
+    },
+    "Endure":{
+        "Usage": "Passive",
+        "Unlock": "N/A",
+        "Description": "Chance to survive lethal damage with 1 HP. (Only once per battle)",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "Activation Chance": ["40%", "50%", "60%", "70%", "80%"],
+        }
+    },
+    "Bloody Lance":{
+        "Usage": "Passive",
+        "Unlock": "Endure (Lv 3)",
+        "Description": "Gain an increase to damage dealt each time an ally or enemy dies. (Resets to 0 upon dying)",
+        "Max Level": "10",
+        "Data": {
+            "Damage Dealt↑": ["+10%", "+13%", "+16%", "+19%", "+22%", "+25%", "+28%", "+31%", "+35%", "+40%"],
+        }
+    },
+    "Unified Spirit":{
+        "Usage": "Active (Head)",
+        "Unlock": "Endure (Lv 3)",
+        "Description": "Place a buff on yourself for 3 turns, which makes you immune to bind inflictions.",
+        "Max Level": "5",
+        "Data": {
+            "TP Cost": ["12", "10", "8", "6", "4"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Warrior Might":{
+        "Usage": "Active (Legs, STR)",
+        "Unlock": "Bloody Lance (Lv 3), Unified Spirit (Lv 3)",
+        "Description": "Prepare to follow up after all of your allies' attacks for this turn, dealing weapon-based damage to the same targets. However, also increases damage taken for the turn.",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["10", "11", "12", "13", "14", "16", "18", "20", "22", "24"],
+            "Attack Power": ["85%", "93%", "102%", "111%", "120%", "129%", "138%", "147%", "156%", "165%"],
+            "Damage Taken↑": ["+50%", "+58%", "+66%", "+74%", "+82%", "+90%", "+98%", "+107%", "+116%", "+125%"],
+            "Accuracy": ["-5%", "-5%", "-4%", "-4%", "-3%", "-3%", "-2%", "-2%", "-1%", "-1%"],
+            "Action Speed": ["+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60"],
+        }
+    },
+    "Great Warrior":{
+        "Usage": "Active (Head)",
+        "Unlock": "Endure (Lv 5)",
+        "Description": "Place a buff on yourself for 3 turns, which increases physical damage dealt, decreases physical damage taken and increases enemy aggro.",
+        "Max Level": "10",
+        "Data": {
+            "TP Cost": ["8", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
+            "Damage Dealt↑": ["+15%", "+18%", "+21%", "+24%", "+27%", "+30%", "+33%", "+37%", "+41%", "+45%"],
+            "Damage Taken↓": ["-15%", "-17%", "-19%", "-22%", "-25%", "-28%", "-31%", "-34%", "-37%", "-40%"],
+            "Aggro Bonus": ["3~5", "3~6", "3~7", "3~8", "3~9", "3~10", "3~11", "3~12", "3~13", "3~15"],
+            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
+        }
+    },
+    "Execution":{
+        "Usage": "Passive (Arms)",
+        "Unlock": "Endure (Lv 1), Morale Boost (Lv 1)",
+        "Description": "If another unit (ally or enemy) is below a certain HP threshold after being attacked, there's a chance to inflict Instant Death on them. (Ignores Death resistance but not immunity)",
+        "Starter": "1",
+        "Max Level": "5",
+        "Data": {
+            "HP Threshold": ["10%", "11%", "12%", "13%", "15%"],
+            "Infliction Rate": ["30%", "35%", "40%", "50%", "60%"],
         }
     },
     "Morale Boost":{
@@ -2260,7 +2327,7 @@ var data = {
     "Ambush Stance":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Fore Honor (Lv 3), Rear Dignity (Lv 3)",
-        "Description": "Command an ally row to prepare to counterattack against attacks received this turn, dealing weapon-based damage to the attacker.",
+        "Description": "Command an ally row to counterattack each time they take attack damage this turn, dealing weapon-based damage to the attacker.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["10", "10", "11", "12", "13", "14", "15", "16", "17", "18"],
@@ -2272,7 +2339,7 @@ var data = {
     "Fusillade":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Morale Boost (Lv 5)",
-        "Description": "Command other allies equipped with a Gun or Crossbow to deal weapon-based damage to target enemy.",
+        "Description": "Command all party members equipped with a Gun or Crossbow to deal weapon-based damage to target enemy.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["8", "8", "9", "9", "10", "11", "12", "13", "14", "15"],
@@ -2284,78 +2351,13 @@ var data = {
     "Blitz Command":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Fusillade (Lv 3)",
-        "Description": "Command all allies to deal weapon-based damage to target enemy.",
+        "Description": "Command all party members to deal weapon-based damage to target enemy.",
         "Max Level": "10",
         "Data": {
             "TP Cost": ["14", "15", "16", "17", "18", "19", "20", "22", "24", "26"],
             "Attack Power": ["100%", "104%", "108%", "112%", "116%", "120%", "125%", "130%", "135%", "140%"],
             "Accuracy": ["-10%", "-9%", "-8%", "-7%", "-6%", "-5%", "-4%", "-3%", "-2%", "-1%"],
             "Action Speed": ["+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
-        }
-    },
-    "Endure":{
-        "Usage": "Passive",
-        "Unlock": "N/A",
-        "Description": "Chance to survive lethal damage with 1 HP. (Only once per battle)",
-        "Starter": "1",
-        "Max Level": "5",
-        "Data": {
-            "Activation Chance": ["40%", "50%", "60%", "70%", "80%"],
-        }
-    },
-    "Kaishaku":{
-        "Usage": "Passive",
-        "Unlock": "Endure (Lv 1)",
-        "Description": "If another unit (ally or enemy) is below a certain HP threshold after being targetted by an action, there's a chance to inflict Instant Death on them. (Ignores Death resistance but not immunity)",
-        "Max Level": "5",
-        "Data": {
-            "HP Threshold": ["10%", "11%", "12%", "13%", "15%"],
-            "Infliction Rate": ["30%", "35%", "40%", "50%", "60%"],
-        }
-    },
-    "Bloody Lance":{
-        "Usage": "Passive",
-        "Unlock": "Endure (Lv 3)",
-        "Description": "Gain an increase to damage dealt each time an ally or enemy dies. (Resets to 0 upon dying)",
-        "Max Level": "10",
-        "Data": {
-            "Damage Dealt↑": ["+10%", "+13%", "+16%", "+19%", "+22%", "+25%", "+28%", "+31%", "+35%", "+40%"],
-        }
-    },
-    "Unified Spirit":{
-        "Usage": "Active (Head)",
-        "Unlock": "Endure (Lv 3)",
-        "Description": "Place a buff on yourself for 3 turns, which makes you immune to bind inflictions.",
-        "Max Level": "5",
-        "Data": {
-            "TP Cost": ["12", "10", "8", "6", "4"],
-            "Action Speed": ["+6", "+6", "+6", "+6", "+6"],
-        }
-    },
-    "Warrior Might":{
-        "Usage": "Active (Legs, STR)",
-        "Unlock": "Bloody Lance (Lv 3), Unified Spirit (Lv 3)",
-        "Description": "Prepare to follow up after all of your allies' attacks for this turn, dealing weapon-based damage to the same targets. However, also increases damage taken for the turn.",
-        "Max Level": "10",
-        "Data": {
-            "TP Cost": ["10", "11", "12", "13", "14", "16", "18", "20", "22", "24"],
-            "Attack Power": ["85%", "93%", "102%", "111%", "120%", "129%", "138%", "147%", "156%", "165%"],
-            "Damage Taken↑": ["+50%", "+58%", "+66%", "+74%", "+82%", "+90%", "+98%", "+107%", "+116%", "+125%"],
-            "Accuracy": ["-5%", "-5%", "-4%", "-4%", "-3%", "-3%", "-2%", "-2%", "-1%", "-1%"],
-            "Action Speed": ["+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60", "+60"],
-        }
-    },
-    "Daifuhensha":{
-        "Usage": "Active (Head)",
-        "Unlock": "Endure (Lv 5)",
-        "Description": "Place a buff on yourself for 3 turns, which increases physical damage dealt, decreases physical damage taken and increases enemy aggro. Actual aggro increase on each attack is a random value between 3 and this skill's bonus.",
-        "Max Level": "10",
-        "Data": {
-            "TP Cost": ["8", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
-            "Damage Dealt↑": ["+15%", "+18%", "+21%", "+24%", "+27%", "+30%", "+33%", "+37%", "+41%", "+45%"],
-            "Damage Taken↓": ["-15%", "-17%", "-19%", "-22%", "-25%", "-28%", "-31%", "-34%", "-37%", "-40%"],
-            "Max. Aggro Bonus": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "15"],
-            "Action Speed": ["+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6", "+6"],
         }
     },
     "Retreat":{
@@ -2663,7 +2665,7 @@ var data = {
 "Limit Skills":{
     "1 Unit":{
         "Indomitable":{
-            "Description": "Survive one instance of lethal damage with 1 HP.",
+            "Description": "Gain a protection effect that will let you survive one instance of lethal damage with 1 HP. (Lasts until it's spent)",
             "Max Level": "0",
             "Data": "",
         },
