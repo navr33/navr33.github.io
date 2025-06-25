@@ -2223,6 +2223,114 @@ var data = {
             "Gather Attempts": ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"]
         }
     },
+},
+"Battle Items":{
+    "Healing":{
+        "Medica / Medica II / Medica III / Medica IV / Medica V":{
+            "Usage": "20 / 150 / 500 / 1.200 / 2.000 en",
+            "Description": "Restores HP to one ally.",
+            "Max Level": "5",
+            "Data": {
+                "HP Gain": ["30", "100", "200", "350", "1000"],
+            }
+        },
+        "Soma / Soma Prime":{
+            "Usage": "1.000 / 3.000 en",
+            "Description": "Restores HP to the whole party.",
+            "Max Level": "2",
+            "Data": {
+                "HP Gain": ["144", "1200"],
+            }
+        },
+        "Amrita / Amrita II":{
+            "Usage": "200 / 900 en",
+            "Description": "Restores TP to one ally.",
+            "Max Level": "2",
+            "Data": {
+                "TP Gain": ["15", "50"],
+            }
+        },
+        "Hamao / Hamao Prime":{
+            "Usage": "1.400 / 2.500 en",
+            "Description": "Restores HP and TP to one ally.",
+            "Max Level": "2",
+            "Data": {
+                "HP Gain": ["300", "1000"],
+                "TP Gain": ["50", "1000"],
+            }
+        },
+        "Nectar / Nectar II / Nectar III":{
+            "Usage": "500 / 1.200 / 2.500 en",
+            "Description": "Revives one ally.",
+            "Max Level": "3",
+            "Data": {
+                "HP Gain": ["18", "300", "1200"],
+            }
+        },
+    },
+    "Status":{
+        "Theriaca A":{
+            "Usage": "150 en",
+            "Description": "Removes all binds from one ally.",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Theriaca B":{
+            "Usage": "500 en",
+            "Description": "Removes ailments from the whole party.",
+            "Max Level": "0",
+            "Data": ""
+        },
+    },
+    "Power Up":{
+        "Bravant / Bravant II":{
+            "Usage": "600 / 1.200 en",
+            "Description": "Places a buff on one ally for 4 turns, which increases base damage dealt but also increases base damage taken.",
+            "Max Level": "2",
+            "Data": {
+                "Damage Dealt↑": ["+10%", "+25%"],
+                "Damage Taken↑": ["+20%", "+20%"]
+            }
+        },
+        "Stonard / Stonard II":{
+            "Usage": "600 / 1.200 en",
+            "Description": "Places a buff on one ally for 4 turns, which decreases base physical damage taken.",
+            "Max Level": "2",
+            "Data": {
+                "Damage Taken↓": ["-20%", "-26%"],
+            }
+        },
+        "Axcela / Axcela II / Axcela III":{
+            "Usage": "1.200 en",
+            "Description": "Refills the Boost Gauge of one ally.",
+            "Max Level": "3",
+            "Data": {
+                "Boost Gain": ["10", "30", "100"],
+            }
+        },
+        "Blaze/Freeze/Shock Oil":{
+            "Usage": "600 en",
+            "Description": "Places a buff on one ally (lasts indefinitely), which adds bonus Fire/Ice/Volt damage to their normal attacks.",
+            "Max Level": "0",
+            "Data": ""
+        },
+        "Fire/Ice/Volt Mist":{
+            "Usage": "800 en",
+            "Description": "Grants a protection effect to the whole party for this turn, which decreases damage taken from the first Fire/Ice/Volt attack that hits it.",
+            "Max Level": "1",
+            "Data": {
+                "Damage Taken↓": ["-60%"],
+            }
+        },
+        "All Mist":{
+            "Usage": "2.000 en",
+            "Description": "Places a buff on the whole party for 4 turns, which decreases base physical/elemental damage taken.",
+            "Max Level": "1",
+            "Data": {
+                "Damage Taken↓": ["-25%"],
+            }
+        },
+    }
 }
 }
 
