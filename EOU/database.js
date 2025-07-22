@@ -365,7 +365,7 @@ var data = {
     "Sagittarius Shot":{
         "Usage": "Active (Arms, STR, LUC)",
         "Unlock": "Bow Mastery (Lv 10)",
-        "Description": "Bow: Prepare an attack that will hit in 2 more turns, at the start of the turn. Deals ranged Stab damage to one enemy, with a chance to inflict Stun.",
+        "Description": "Bow: Prepare an attack that will hit in 2 more turns, at the start of the turn. On activation, deal ranged Stab damage to one enemy, with a chance to inflict Stun.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -465,7 +465,7 @@ var data = {
     "Quick Step":{
         "Usage": "Active (Legs)",
         "Unlock": "AGI Up (Lv 10)",
-        "Description": "Chance to empower one ally, making it act at the start of this turn.",
+        "Description": "Make one ally act at the start of this turn. Before level 10 it has a chance to fail.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3273,7 +3273,6 @@ var data = {
         "Medica / Medica II / Medica III / Medica IV":{
             "Usage": "20 / 100 / 500 / 2.500 en",
             "Description": "Restores HP to one ally.",
-
             "Max Level": "4",
             "Data": {
                 "HP Gain": ["50", "100", "200", "All"],
@@ -3282,7 +3281,6 @@ var data = {
         "Soma / Somaprime":{
             "Usage": "700 / 1.500 en",
             "Description": "Restores HP to the whole party.",
-
             "Max Level": "2",
             "Data": {
                 "HP Gain": ["80", "160"],
@@ -3291,7 +3289,6 @@ var data = {
         "Amrita / Amrita II":{
             "Usage": "800 / 2.000 en",
             "Description": "Restores TP to one ally.",
-
             "Max Level": "2",
             "Data": {
                 "TP Gain": ["50", "100"],
@@ -3300,7 +3297,6 @@ var data = {
         "Hamao / Hamaoprime / Shilleka's SP Potion":{
             "Usage": "600 / 1.500 en",
             "Description": "Restores HP and TP to one ally.",
-
             "Max Level": "3",
             "Data": {
                 "HP Gain": ["100", "200", "50"],
@@ -3310,7 +3306,6 @@ var data = {
         "Nectar / Nectar II":{
             "Usage": "300 / 3.500 en",
             "Description": "Revives one dead ally.",
-
             "Max Level": "2",
             "Data": {
                 "HP Gain": ["20", "All"],
@@ -3321,21 +3316,18 @@ var data = {
         "Theriaca A / Theriaca B":{
             "Usage": "150 / 400 en",
             "Description": "Respectively removes binds or ailments from one ally.",
-
             "Max Level": "0",
             "Data": ""
         },
         "Metopon":{
             "Usage": "1.800 en",
             "Description": "Removes all buffs and debuffs on one enemy.",
-
             "Max Level": "0",
             "Data": ""
         },
         "Unihorn":{
             "Usage": "1.100 en",
             "Description": "Removes all buffs and debuffs on the party.",
-
             "Max Level": "0",
             "Data": ""
         },
@@ -3344,7 +3336,6 @@ var data = {
         "Bravant":{
             "Usage": "400 en",
             "Description": "Places a buff on one ally for 5 turns, which increases physical damage dealt.",
-
             "Max Level": "1",
             "Data": {
                 "Damage Dealt↑": ["+30%"],
@@ -3353,7 +3344,6 @@ var data = {
         "Stonard":{
             "Usage": "400 en",
             "Description": "Places a buff on one ally for 5 turns, which decreases physical damage taken.",
-
             "Max Level": "1",
             "Data": {
                 "Damage Taken↓": ["-30%"],
@@ -3362,7 +3352,6 @@ var data = {
         "Axcela":{
             "Usage": "1.200 en",
             "Description": "Restores the Boost Gauge of one ally.",
-
             "Max Level": "1",
             "Data": {
                 "Boost Gain": ["10"],
@@ -3371,14 +3360,12 @@ var data = {
         "Blaze/Freeze/Shock Oil":{
             "Usage": "150 en",
             "Description": "Places a buff on one ally for 5 turns, which imbues their weapon with Fire/Ice/Volt damage.",
-
             "Max Level": "0",
             "Data": ""
         },
         "Heat/Chill/Spark Mist":{
             "Usage": "1.000 en",
             "Description": "Places a buff on all allies for 5 turns, which increases resistance to Fire/Ice/Volt.",
-
             "Max Level": "1",
             "Data": {
                 "Resistance↑": ["+50%"],
@@ -3387,7 +3374,6 @@ var data = {
         "All Mist":{
             "Usage": "2.000 en",
             "Description": "Places a buff on all allies for 5 turns, which increases resistance to Fire, Ice and Volt.",
-
             "Max Level": "1",
             "Data": {
                 "Resistance↑": ["+20%"],
@@ -3398,7 +3384,6 @@ var data = {
         "Fire/Ice/Volt Talisman":{
             "Usage": "150 en",
             "Description": "Deals ranged Fire/Ice/Volt damage to one enemy.",
-
             "Max Level": "1",
             "Data": {
                 "Attack Power": ["180%"],
@@ -3408,7 +3393,6 @@ var data = {
         "Flame/Frost/Storm Talisman":{
             "Usage": "1.000 en",
             "Description": "Deals ranged Fire/Ice/Volt damage to all enemies.",
-
             "Max Level": "1",
             "Data": {
                 "Attack Power": ["220%"],
@@ -3420,7 +3404,6 @@ var data = {
         "Blind/Poison/Nerve/Confuse/Curse/Sleep Gas":{
             "Usage": "250 / 950 / 250 / 450 / 1.250 / 650 en",
             "Description": "Respectively attempts to inflict Blind, Poison, Paralysis, Panic, Curse or Sleep on all enemies.",
-
             "Max Level": "1",
             "Data": {
                 "Infliction Chance": ["50%"],
@@ -3431,7 +3414,6 @@ var data = {
         "Tangler: Head/Arms/Legs":{
             "Usage": "400 en",
             "Description": "Respectively attempts to inflict Head Bind, Arm Bind or Leg Bind on all enemies.",
-
             "Max Level": "1",
             "Data": {
                 "Infliction Chance": ["50%"],
@@ -3443,14 +3425,12 @@ var data = {
         "Flash Bomb":{
             "Usage": "20 en",
             "Description": "Stuns FOEs outside the battle that are chasing you, which prevents them from moving for 1 turn.",
-
             "Max Level": "0",
             "Data": ""
         },
         "Sonic Bomb":{
             "Usage": "100 en",
             "Description": "Cancels the action of all enemies that are in a charge state.",
-
             "Max Level": "0",
             "Data": ""
         },
@@ -3459,14 +3439,12 @@ var data = {
         "Formaldehyde":{
             "Usage": "3.000 en",
             "Description": "Until the end of turn, enemies killed will drop all their materials regardless of conditions.",
-
             "Max Level": "0",
             "Data": ""
         },
         "Divine Gift":{
             "Usage": "2.100 en",
             "Description": "Increases EXP earned this battle. (Repeated uses don't stack)",
-
             "Max Level": "1",
             "Data": {
                 "EXP Gain↑": ["+40%"],
@@ -3477,21 +3455,18 @@ var data = {
         "Lucky Scarab":{
             "Usage": "700 en",
             "Description": "If used during a Grimoire chance, grants 100% chance to create a Grimoire Stone.",
-
             "Max Level": "0",
             "Data": ""
         },
         "Hunting Horn":{
             "Usage": "2.500 en",
             "Description": "Grants a chance to create a Grimoire Stone.",
-
             "Max Level": "0",
             "Data": ""
         },
         "Four-Leaf Clover":{
             "Usage": "10.000 en",
             "Description": "If you create a Grimoire Stone this turn, increase the chance of it being high level.",
-
             "Max Level": "0",
             "Data": ""
         },
@@ -3597,12 +3572,12 @@ var data = {
 var descriptions = {
     "Landsknecht":  "Frontline warriors boasting high strength and durability.",
     "Survivalist":  "Archers with great agility and exploration knowledge.",
-    "Protector":    "Sturdy knights that defend the party and keep them safe.",
+    "Protector":    "Sturdy knights that defend and safeguard their allies.",
     "Dark Hunter":  "Ruthless fighters that immobilize then finish off enemies.",
     "Medic":        "Healers that effectively treat any injury and affliction.",
     "Alchemist":    "Elemental casters that exploit the enemy's weakness.",
     "Troubadour":   "Musicians that grant various stat boosts to the party.",
-    "Ronin":        "Katana users that gain strength from different stances.",
+    "Ronin":        "Bold warriors that gain strength from different stances.",
     "Hexer":        "Sorcerers that can weaken, disable and control enemies.",
     "Highlander":   "A Spear user that controls life force and turns it into power.",
     "Gunner":       "A versatile Gun user that can attack, immobilize and heal.",

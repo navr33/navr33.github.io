@@ -444,10 +444,10 @@ var data = {
                 "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10"],
                 "Action Speed": ["125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%", "125%"],
                 "Separator":[],
-                "Bunker HP": ["10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
-                "Bunker DEF/MDF": ["35", "55", "75", "95", "95", "135", "175", "205", "255", "255"],
-                "Bunker Vulnerability": ["6%", "6%", "6%", "6%", "4%", "4%", "4%", "4%", "4%", "1%"],
-                "Aggro Bonus": ["+2000%", "+2000%", "+2000%", "+2000%", "+2750%", "+2750%", "+2750%", "+2750%", "+2750%", "+3500%"],
+                "HP": ["10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+                "DEF/MDF": ["35", "55", "75", "95", "95", "135", "175", "205", "255", "255"],
+                "Resistances↑": ["+94%", "+94%", "+94%", "+94%", "+96%", "+96%", "+96%", "+96%", "+96%", "+99%"],
+                "Aggro↑": ["+2000%", "+2000%", "+2000%", "+2000%", "+2750%", "+2750%", "+2750%", "+2750%", "+2750%", "+3500%"],
             }
         },
         "Defense Form":{
@@ -671,11 +671,11 @@ var data = {
                 "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "16"],
                 "Action Speed": ["100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
                 "Separator": [],
-                "Turret HP": ["10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
-                "Turret ATK": ["205", "230", "255", "280", "280", "335", "390", "445", "500", "500"],
-                "Turret DEF/MDF": ["75", "90", "105", "120", "120", "140", "160", "180", "200", "200"],
-                "Turret Vulnerability": ["6%", "6%", "6%", "6%", "4%", "4%", "4%", "4%", "4%", "1%"],
-                "Aggro Bonus": ["+1500%", "+1500%", "+1500%", "+1500%", "+2000%", "+2000%", "+2000%", "+2000%", "+2000%", "+2500%"],
+                "HP": ["10", "10", "10", "10", "10", "10", "10", "10", "10", "10"],
+                "ATK": ["205", "230", "255", "280", "280", "335", "390", "445", "500", "500"],
+                "DEF/MDF": ["75", "90", "105", "120", "120", "140", "160", "180", "200", "200"],
+                "Resistances↑": ["+94%", "+94%", "+94%", "+94%", "+96%", "+96%", "+96%", "+96%", "+96%", "+99%"],
+                "Aggro↑": ["+1500%", "+1500%", "+1500%", "+1500%", "+2000%", "+2000%", "+2000%", "+2000%", "+2000%", "+2500%"],
                 "Attack Power": ["50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%", "50%"],
                 "Accuracy": ["-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%", "-4%"],
             }
@@ -2587,7 +2587,7 @@ var data = {
         "Hell Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Swallow Soar (Lv 3)",
-            "Description": "Katana: Prepare to follow up after all attacks performed by allies or enemies this turn. Maximum amount of follow ups is multiplied by your number of equipped Katana.",
+            "Description": "Katana: Prepare to follow up after all attacks performed by allies or enemies this turn, dealing weapon-based damage to the same targets. Maximum amount of follow ups is multiplied by your number of equipped Katana.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "12", "12", "12", "12", "12", "35"],
@@ -2601,7 +2601,7 @@ var data = {
         "Reblossom":{
             "Usage": "Passive",
             "Unlock": "Hell Slash (Lv 3)",
-            "Description": "Chance to perform Katana skills a second time. Chance is multiplied by your number of equipped Katana minus one.",
+            "Description": "Chance to perform Katana skills a second time. This chance is multiplied by your number of equipped Katana minus one.",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["15%", "16%", "17%", "18%", "24%", "25%", "26%", "27%", "28%", "34%"],
@@ -2634,7 +2634,7 @@ var data = {
         "Vast Flourish":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Sacred Tetrad (Lv 3), Layered Bloom (Lv 3)",
-            "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. Hits equal to number of enemies times number of equipped Katana.",
+            "Description": "Katana: Deal multiple hits of melee Cut damage to random enemies. The amount of hits is equal to the number of enemies times the number of equipped Katana.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["14", "14", "14", "14", "21", "21", "21", "21", "21", "30"],
@@ -3452,7 +3452,6 @@ var data = {
     "Healing":{
         "Medica / Medica II / Medica III / Medica IV":{
             "Usage": "20 / 100 / 800 / 3.000 en",
-            "Unlock": "N/A / Lotus Fruit / Bane Weed / Vortex Flower",
             "Description": "Restores HP to one ally.",
             "Max Level": "4",
             "Levels": ["1", "2", "3", "4"],
@@ -3462,7 +3461,6 @@ var data = {
         },
         "Soma / Soma Prime":{
             "Usage": "800 / 4.000 en",
-            "Unlock": "Igneous Herb / Space Cartilage",
             "Description": "Restores HP to all allies.",
             "Max Level": "2",
             "Levels": ["1", "2"],
@@ -3472,7 +3470,6 @@ var data = {
         },
         "Amrita / Amrita II":{
             "Usage": "1.000 / 8.000 en",
-            "Unlock": "Inert Sugarcore / Starstruck Sugar",
             "Description": "Restores TP to one ally.",
             "Max Level": "2",
             "Levels": ["1", "2"],
@@ -3482,7 +3479,6 @@ var data = {
         },
         "Hamao / Hamao Prime":{
             "Usage": "400 / 5.000 en",
-            "Unlock": "Cecidium / Ambrosia",
             "Description": "Restores HP and TP to one ally.",
             "Max Level": "2",
             "Levels": ["1", "2"],
@@ -3493,7 +3489,6 @@ var data = {
         },
         "Nectar / Nectar II":{
             "Usage": "300 / 6.000 en",
-            "Unlock": "Skunk Cabbage / Starfall Fruit",
             "Description": "Revives one ally.",
             "Max Level": "2",
             "Levels": ["1", "2"],
@@ -3505,7 +3500,6 @@ var data = {
     "Status":{
         "Theriaca A / Theriaca B":{
             "Usage": "150 en",
-            "Unlock": "Brown Tuber",
             "Description": "Respectively removes binds or ailments from one ally.",
             "Max Level": "0",
             "Levels": ["1"],
@@ -3513,7 +3507,6 @@ var data = {
         },
         "Laudanum":{
             "Usage": "2.500 en",
-            "Unlock": "Thick Stalk",
             "Description": "Removes all buffs and debuffs on one enemy.",
             "Max Level": "0",
             "Levels": ["1"],
@@ -3521,7 +3514,6 @@ var data = {
         },
         "Unihorn":{
             "Usage": "2.500 en",
-            "Unlock": "Ooze Mushroom",
             "Description": "Removes all buffs and debuffs on the whole party.",
             "Max Level": "0",
             "Levels": ["1"],
@@ -3531,7 +3523,6 @@ var data = {
     "Power Up":{
         "Bravant":{
             "Usage": "500 en",
-            "Unlock": "Aromatic Moss",
             "Description": "Places a buff on one ally for 5 turns, which increases physical damage dealt.",
             "Max Level": "1",
             "Levels": ["1"],
@@ -3541,7 +3532,6 @@ var data = {
         },
         "Stonard":{
             "Usage": "500 en",
-            "Unlock": "Zombie Shroom",
             "Description": "Places a buff on one ally for 5 turns, which decreases physical damage taken.",
             "Max Level": "1",
             "Levels": ["1"],
@@ -3551,7 +3541,6 @@ var data = {
         },
         "Blaze/Freeze/Shock Oil":{
             "Usage": "200 en",
-            "Unlock": "Cracked Nut",
             "Description": "Places a buff on one ally for 5 turns, which imbues their weapon with Fire/Ice/Volt damage.",
             "Max Level": "0",
             "Levels": ["1"],
@@ -3559,7 +3548,6 @@ var data = {
         },
         "Fire/Ice/Volt Mist":{
             "Usage": "1.200 en",
-            "Unlock": "Mist Blossom",
             "Description": "Places a buff on all allies for 5 turns, which increases resistance to Fire/Ice/Volt.",
             "Max Level": "1",
             "Levels": ["1"],
@@ -3569,7 +3557,6 @@ var data = {
         },
         "All Mist":{
             "Usage": "3.000 en",
-            "Unlock": "Coriander",
             "Description": "Places a buff on all allies for 5 turns, which increases resistance to Fire, Ice and Volt.",
             "Max Level": "1",
             "Levels": ["1"],
@@ -3581,7 +3568,6 @@ var data = {
     "Attack (INT)":{
         "Fire/Ice/Volt Jar":{
             "Usage": "200 en",
-            "Unlock": "Rainbow Fruit",
             "Description": "Deals ranged Fire/Ice/Volt damage to one enemy.",
             "Max Level": "1",
             "Levels": ["1"],
@@ -3592,7 +3578,6 @@ var data = {
         },
         "Flame/Frost/Storm Jar":{
             "Usage": "1.300 en",
-            "Unlock": "Clock Flower",
             "Description": "Deals ranged Fire/Ice/Volt damage to all enemies.",
             "Max Level": "1",
             "Levels": ["1"],
@@ -3603,7 +3588,6 @@ var data = {
         },
         "Cut/Bash/Stab Jar":{
             "Usage": "700 en",
-            "Unlock": "Crystal Flower",
             "Description": "Deals ranged Cut/Bash/Stab damage to all enemies.",
             "Max Level": "1",
             "Levels": ["1"],
@@ -3616,10 +3600,9 @@ var data = {
     "Infliction (LUC)":{
         "Poison/Sleep/Blind/Stun/Curse/Confuse/Petrify Gas":{
             "Usage": "250 en",
-            "Unlock": "-",
             "Description": "Respectively attempts to inflict Poison, Sleep, Blind, Paralysis, Curse, Panic or Petrify on all enemies.",
             "Max Level": "7",
-            "Levels": ["Poi", "Sle", "Bli", "Par", "Cur", "Pan", "Pet"],
+            "Levels": ["PSN", "SLP", "BLD", "PAR", "CUR", "PNC", "PTR"],
             "Data": {
                 "Infliction Rate": ["70%", "70%", "60%", "60%", "60%", "50%", "30%"],
                 "Poison Power": ["150", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"],
@@ -3628,7 +3611,6 @@ var data = {
         },
         "Head/Arm/Leg Binder":{
             "Usage": "250 en",
-            "Unlock": "Flying Tailfin",
             "Description": "Respectively attempts to inflict Head Bind, Arm Bind or Leg Bind on all enemies.",
             "Max Level": "1",
             "Levels": ["1"],
@@ -3641,7 +3623,6 @@ var data = {
     "Rewards":{
         "Formaldehyde":{
             "Usage": "4.000 en",
-            "Unlock": "Stupefied Orb",
             "Description": "Until the end of turn, enemies killed will drop all their materials regardless of conditions.",
             "Max Level": "0",
             "Levels": ["1"],
@@ -3649,7 +3630,6 @@ var data = {
         },
         "Heavenly Gift":{
             "Usage": "3.000 en",
-            "Unlock": "Burnt Pauldron",
             "Description": "Increases EXP earned this battle. (Repeated uses do not stack)",
             "Max Level": "1",
             "Levels": ["1"],

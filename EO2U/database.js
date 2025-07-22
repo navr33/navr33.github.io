@@ -334,7 +334,7 @@ var data = {
 "Survivalist":{
     "Illusion Step":{
         "Usage": "Force Boost",
-        "Description": "Drastically increases evasion. If you hit enemies with a Bow-based attack or weapon-based attack while using a Bow, perform a weapon-based follow up against the same targets.",
+        "Description": "Drastically increases evasion. If you hit enemies with an attack using your Bow, perform a weapon-based follow up against the same targets.",
         "Max Level": "3",
         "Levels": ["1", "60", "99"],
         "Data": {
@@ -535,7 +535,7 @@ var data = {
     "Swap Step":{
         "Usage": "Active (Legs)",
         "Unlock": "Speed Up (Lv 10)",
-        "Description": "Chance to empower one ally, making it act at the start of this turn.",
+        "Description": "Make one ally act at the start of this turn. At low levels it has a chance to fail.",
         "Max Level": "10",
         "Natural Level": "5",
         "Data": {
@@ -1969,7 +1969,7 @@ var data = {
 "Troubadour":{
     "War Song":{
         "Usage": "Force Boost",
-        "Description": "Remaining duration of buffs on the party will not go down. Buffs on the party cannot be cancelled by opposing debuffs.",
+        "Description": "Prevents remaining duration of buffs on the party from going down, and prevents them from being cancelled by opposing debuffs.",
         "Max Level": "0",
         "Data": ""
     },
@@ -2292,7 +2292,7 @@ var data = {
 "Ronin":{
     "Immovable":{
         "Usage": "Force Boost",
-        "Description": "Decreases the TP cost of Katana skills. Stance duration will not go down, and Peerless Stance is not removed by Peerless Combo.",
+        "Description": "Decreases the TP cost of Katana skills. Prevents Stance duration from going down, and prevents Peerless Combo from removing Peerless Stance.",
         "Max Level": "1",
         "Data": {
             "TP Cost↓": ["x0.5"],
@@ -2636,7 +2636,7 @@ var data = {
 "Hexer":{
     "Creeping Curse":{
         "Usage": "Force Boost",
-        "Description": "Drastically increases bind/ailment infliction rates. Remaining duration of debuffs on enemies will not go down.",
+        "Description": "Drastically increases bind/ailment infliction rates, and prevents remaining duration of debuffs on enemies from going down.",
         "Max Level": "1",
         "Data": {
             "Inflictions↑": ["x3.0"],
@@ -3932,11 +3932,9 @@ var data = {
 "Sovereign":{
     "Victory Vow":{
         "Usage": "Force Boost",
-        "Description": "Order skills will target the whole party, and their TP cost is decreased.",
+        "Description": "Increases the area of effect of Order skills (Line → Party), and halves their TP cost.",
         "Max Level": "1",
-        "Data": {
-            "TP Cost↓": ["x0.5"],
-        }
+        "Data": ""
     },
     "Proof of Nobility":{
         "Usage": "Force Break (Head)",
@@ -4029,7 +4027,7 @@ var data = {
     "Ad Nihilo":{
         "Usage": "Active (Arms, TEC)",
         "Unlock": "Order Mastery (Lv 5)",
-        "Description": "Dispel one buff and debuff from an enemy. Deal Almighty damage to the target if at least one modifier was removed. Cannot miss.",
+        "Description": "Dispel one buff and debuff from an enemy. Deal Almighty damage to the target (cannot miss) if at least one modifier was removed.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -5491,12 +5489,12 @@ var data = {
 var descriptions = {
     "Landsknecht":  "Frontline warriors boasting high strength and durability.",
     "Survivalist":  "Archers with great agility and exploration knowledge.",
-    "Protector":    "Sturdy knights that defend the party and keep them safe.",
+    "Protector":    "Sturdy knights that defend and safeguard their allies.",
     "Dark Hunter":  "Ruthless fighters that immobilize then finish off enemies.",
     "Medic":        "Healers that effectively treat any injury and affliction.",
     "Alchemist":    "Elemental casters that exploit the enemy's weakness.",
     "Troubadour":   "Musicians that grant various stat boosts to the party.",
-    "Ronin":        "Katana users that gain strength from different stances.",
+    "Ronin":        "Bold warriors that gain strength from different stances.",
     "Hexer":        "Sorcerers that can weaken, disable and control enemies.",
     "Gunner":       "Versatile marksmen that can attack, immobilize and heal.",
     "War Magus":    "Witch doctors with healing magic and weakening attacks.",
@@ -5681,6 +5679,90 @@ function populate_list_categorized(class_name){
     }
     final_line = document.createElement("p")
     skill_list.appendChild(final_line)
+}
+
+function populate_table_categorized(class_name){
+    var skill_list = document.getElementById("skill_list")
+    //Clear list and reset class name and description
+    reset_list(skill_list, class_name)
+
+    //Add category headers
+    var current_class = data[class_name]
+    for (const category in current_class){
+        category_name = document.createElement("h3")
+        category_name.innerText = category
+        skill_list.appendChild(category_name)
+
+        //Fill in the skill entries
+        for (const skill in current_class[category]){
+            add_table_entry(skill_list, current_class[category], skill)
+        }
+    }
+    final_line = document.createElement("p")
+    skill_list.appendChild(final_line)
+}
+
+function add_table_entry(skill_list, current_class, skill){
+    var current_skill = current_class[skill]
+    skill_table = document.createElement("table")
+    skill_table.classList.add("skill_entry")
+    skill_list.appendChild(skill_table)
+    
+    //Row for name
+    first_row = document.createElement("tr")
+    skill_table.appendChild(first_row)
+
+    skill_name = document.createElement("th")
+    first_row.appendChild(skill_name)
+    skill_name.classList.add("skill_name")
+    skill_name.innerText = skill
+    skill_name.colSpan = 2
+
+    //Row for the description and level up table
+    third_row = document.createElement("tr")
+    skill_table.appendChild(third_row)
+    data_block = document.createElement("td")
+    third_row.appendChild(data_block)
+
+    //Make toggable
+    data_block.classList.add("hide_table")
+    data_block.style.textAlign = "left"
+    data_block.colSpan = 2
+    data_block.id = skill
+    first_row.addEventListener("click", function(){
+        toggle_data(skill)
+    })
+
+    //Table with level up data
+    levels_table = document.createElement("table")
+    data_block.appendChild(levels_table)
+    levels_table.classList.add("levels_table")
+    levels_row = document.createElement("tr")
+    levels_table.appendChild(levels_row)
+    
+    //Add each row of skill data
+    for (const effect in current_skill["Data"]){
+        effect_row = document.createElement("tr")
+        levels_table.appendChild(effect_row)
+
+        effect_name = document.createElement("th")
+        effect_name.innerText = effect
+        effect_row.appendChild(effect_name)
+        current_effect = current_skill["Data"][effect]
+        var latest = ""
+        for (const value in current_effect){
+            if (current_effect[value] == latest.innerText) {
+                latest.colSpan = latest.colSpan+1
+                continue
+            }
+            effect_value = document.createElement("td")
+            
+            effect_value.style.textAlign = "left"
+            effect_value.innerText = current_effect[value]
+            effect_row.appendChild(effect_value)
+            latest = effect_value
+        }
+    }
 }
 
 //Initiate page with the first class on the list

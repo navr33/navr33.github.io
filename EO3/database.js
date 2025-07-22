@@ -72,7 +72,7 @@ var data = {
     "Knighthood":{
         "Usage": "Active (Head)",
         "Unlock": "Nobility Proof (Lv 5)",
-        "Description": "Empower one ally to make it act at the start of this turn.",
+        "Description": "Make one ally act at the start of this turn. (Goes after start-of-turn Limit Skills)",
         "Max Level": "5",
         "Data":{
             "TP Cost": ["12", "10", "8", "6", "4"],

@@ -1076,7 +1076,7 @@ var data = {
         "Quick Step":{
             "Usage": "Active (Legs)",
             "Unlock": "Speed Up (Lv 2)",
-            "Description": "Empower one ally to make it act at the start of this turn.",
+            "Description": "Make one ally act at the start of this turn.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["35", "30", "25", "15"],
@@ -1154,7 +1154,7 @@ var data = {
     "Force":{
         "Musou":{
             "Usage": "Force Boost",
-            "Description": "Grants the effects of the 3 Stances at level 1, on top of your active Stance. Your active Stance's duration does not go down, and your skills don't decrease its duration nor remove it.",
+            "Description": "Grants the effects of the 3 Stances at level 1, on top of your active Stance. Prevents your active Stance's duration from going down, and your skills cannot remove it.",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -2339,7 +2339,7 @@ var data = {
     "Force":{
         "Victory Vow":{
             "Usage": "Force Boost",
-            "Description": "Order skills affect the whole party, and their TP cost is cut in half.",
+            "Description": "Increases the area of effect of Order skills (Line → Party), and halves their TP cost.",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -4352,7 +4352,7 @@ var data = {
     "Force":{
         "Circle Paradise":{
             "Usage": "Force Boost",
-            "Description": "Increases bind/ailment infliction chances. Circle duration does not go down, and they don't get removed by Dismiss skills.",
+            "Description": "Increases bind/ailment infliction chances. Prevents Circle duration from going down, and using Dismiss skills won't actually remove them.",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -4924,7 +4924,7 @@ var data = {
     "Force":{
         "Bind Rush":{
             "Usage": "Force Boost",
-            "Description": "Increases bind infliction rate. For each attack you land against an enemy afflicted by a bind/ailment/stun, perform a follow up attack.",
+            "Description": "Increases bind infliction rate. For each attack that you land against an enemy afflicted by a bind/ailment/stun, perform a follow up attack.",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -6867,7 +6867,7 @@ var descriptions = {
     "Ronin":      "Katana users focused on strong offense. They change to different Stances to adjust their combat style.",
     "War Magus":  "Witch doctors trained in combat and healing. They switch between treating and aggravating afflictions.",
     "Highlander": "Warriors from a clan skilled in combat with Spears. They control life force and convert it into power.",
-    "Gunner":     "Versatile Gun users with a large variety of attack types. They can attack, immobilize or heal as needed.",
+    "Gunner":     "Versatile marksmen with a large variety of attack types. They can attack, immobilize or heal as needed.",
     "Sovereign":  "Commanders whose orders grant and control buffs, using them to strengthen, protect and heal the party.",
     "Ninja":      "Assassins proficient in diversion and ailments. They can create shadow clones to boost their capabilities.",
     "Zodiac":     "Offensive casters with high control of energy. They use elemental magic to exploit the enemy's weakness.",

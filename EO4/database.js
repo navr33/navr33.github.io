@@ -354,11 +354,11 @@ var data = {
         "Decoy Sign":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on one ally for 3 turns, which increases enemy aggro. The actual increase on each attack is a random value between 3 and this skill's bonus.",
+            "Description": "Place a buff on one ally for 3 turns, which increases enemy aggro.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4"],
-                "Max. Aggro Bonus": ["4", "6", "8", "9"],
+                "Max. Aggro Bonus": ["3~4", "3~6", "3~8", "3~9"],
                 "Action Speed": ["+6", "+6", "+6", "+6"],
             }
         },
@@ -597,11 +597,11 @@ var data = {
         "Taunt":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Place a buff on yourself for 4 turns, which increases enemy aggro. The actual increase on each attack is a random value between 3 and this skill's bonus.",
+            "Description": "Place a buff on yourself for 4 turns, which increases enemy aggro.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2"],
-                "Max. Aggro Bonus": ["4", "6", "8", "9"],
+                "Max. Aggro Bonus": ["3~4", "3~6", "3~8", "3~9"],
                 "Action Speed": ["+20", "+20", "+20", "+20"],
             }
         },
@@ -1731,7 +1731,7 @@ var data = {
         "Quick Step":{
             "Usage": "Active (Legs)",
             "Unlock": "N/A",
-            "Description": "Empower one ally to make it act at the start of this turn.",
+            "Description": "Make one ally act at the start of this turn.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["12", "10", "8", "6"],
