@@ -26,6 +26,12 @@ function reset_list(skill_list, class_name, description_text){
 }
 
 function add_skill_entry(skill_list, current_class, skill){
+    if (skill == 'None'){
+        var par = document.createElement("p")
+        par.innerHTML = "<ul><li>This class has no passive skills</li></ul>"
+        skill_list.appendChild(par)
+        return
+    }
     var current_skill = current_class[skill]
     var skill_table = document.createElement("table")
     skill_table.classList.add("skill_entry")

@@ -2130,15 +2130,76 @@
         "Description": "A support role that can inflict ailments onto enemies and use buffs to help allies.",
         "Skills":{
             "Passive Skills":{
-                "":{
+                "None":{
                     "Description": "",
                     "Data": ""
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Hypno Burst":{
+                    "Description": "Deal Neutral damage to all enemies, with a chance to inflict Sleep.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["22", "22", "22", "22", "22"],
+                        "Attack Power": ["75%", "83%", "90", "100", "110"],
+                        "Infliction Rate": ["30%", "35%", "40%", "45%", "50%"]
+                    }
+                },
+                "Stun Burst":{
+                    "Description": "Deal Neutral damage to all enemies, with a chance to inflict Stun.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["22", "22", "22", "22", "22"],
+                        "Attack Power": ["75%", "83%", "90", "100", "110"],
+                        "Infliction Rate": ["10%", "15%", "20%", "25%", "30%"]
+                    }
+                },
+                "Darkness Bullet":{
+                    "Description": "Deal Magical Neutral damage to one enemy, with a chance to inflict Darkness.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["22", "22", "22", "22", "22"],
+                        "Attack Power": ["90%", "100%", "110%", "120%", "130%"],
+                        "Infliction Rate": ["?", "?", "?", "?", "?"]
+                    }
+                },
+                "Healia":{
+                    "Description": "Restore HP to all allies.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["14", "14", "14"],
+                        "Healing Power": ["13%", "17%", "20%"]
+                    }
+                },
+                "Bleed Recovery":{
+                    "Description": "Remove Bleed from Jack.",
+                    "Max Level": "1",
+                    "Data": {
+                        "SP Cost": ["18"]
+                    }
+                },
+                "Attack Block":{
+                    "Description": "Place a buff on one ally (lasts indefinitely), which gives them a shield that blocks a certain amount of Physical damage. The shield's HP is equal to <b>[BaseHP*(UserLevel+1)]</b>.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Base HP": ["13", "15", "17"]
+                    }
+                },
+                "Skill Block":{
+                    "Description": "Place a buff on one ally (lasts indefinitely), which gives them a shield that blocks a certain amount of Magical damage. The shield's HP is equal to <b>[BaseHP*(UserLevel+1)]</b>.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Base HP": ["13", "15", "17"]
+                    }
+                },
+                "Hollow Vision":{
+                    "Description": "Place a buff on all allies for several turns, which increases accuracy and evasion.",
+                    "Max Level": "3",
+                    "Data": {
+                        "Accuracy↑": ["+5%", "+10%", "+15%"],
+                        "Evasion↑": ["+5%", "+10%", "+15%"],
+                        "Duration": ["2", "3", "4"]
+                    }
                 }
             }
         }
@@ -2147,14 +2208,30 @@
         "Description": "A specialist in using Skills and items to change the course of battle.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
+                "Item Meister Skill":{
+                    "Description": "Increases the potency of items used in battle by 50%.",
+                    "Data": ""
+                },
+                "Treasure Hunt":{
+                    "Description": "Increases drop rates.",
                     "Data": ""
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
+                "Item":{
+                    "Description": "Allows you to use items in battle.",
+                    "Data": ""
+                },
+                "Offering":{
+                    "Description": "Sacrifice 1 to 3 items, then deal Physical Neutral damage to one enemy. Each item spent adds to the power of the attack. (Every item gives a different bonus)",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["19", "19", "19"],
+                        "Attack Power": ["100%", "120%", "150%"]
+                    }
+                },
+                "Item Steal":{
+                    "Description": "Attempt to steal an item from one enemy. (Max once per enemy)",
                     "Data": ""
                 }
             }
@@ -2164,15 +2241,321 @@
         "Description": "A specialist that can analyze enemies and take on the skills of those they defeat.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
+                "Mimic Skill":{
+                    "Description": "Increases the level of Scholar skills by 1.",
+                    "Data": ""
+                },
+                "Analyze":{
+                    "Description": "Display enemy health bars during battle. (Visible during target selection)",
                     "Data": ""
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
+                "Scholar":{
+                    "Description": "Allows you to use certain skills learned from enemies. The list of available skills grows as you add enemies to the Jail Creature Manual.",
                     "Data": ""
+                }
+            },
+            "Scholar Skills":{
+                "Heavy Claws":{
+                    "Description": "Deal Magical Neutral damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["7", "7"],
+                        "Attack Power": ["120%", "135%"]
+                    }
+                },
+                "Aerial Kick":{
+                    "Description": "Deal Magical Neutral damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["17", "17"],
+                        "Attack Power": ["148%", "168%"]
+                    }
+                },
+                "Warhammer Strike":{
+                    "Description": "Deal Magical Neutral damage to one enemy.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["31", "31"],
+                        "Attack Power": ["160%", "180%"]
+                    }
+                },
+                "Sacrifice":{
+                    "Description": "Deal Magical Neutral damage to one enemy, then spend Max HP.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["11", "11"],
+                        "Attack Power": ["205%", "245%"],
+                        "HP Loss": ["25%", "40%"]
+                    }
+                },
+                "Sweep":{
+                    "Description": "Deal Magical Neutral damage to all enemies.",
+                    "Max Level": "2",
+                    "Starter": "",
+                    "Data": {
+                        "SP Cost": ["14", "14"],
+                        "Attack Power": ["103%", "123%"]
+                    }
+                },
+                "Sword Flash":{
+                    "Description": "Deal Magical Neutral damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["31", "31"],
+                        "Attack Power": ["120%", "140%"]
+                    }
+                },
+                "Pressure Strike":{
+                    "Description": "Deal Magical Neutral damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["65", "65"],
+                        "Attack Power": ["140%", "163%"]
+                    }
+                },
+                "Absorb Water":{
+                    "Description": "Deal Magical Water damage to one enemy, with a chance to drain part of the damage dealt.",
+                    "Max Level": "2",
+                    "Starter": "",
+                    "Data": {
+                        "SP Cost": ["8", "8"],
+                        "Attack Power": ["140%", "160%"],
+                        "Drain Rate": ["30%", "40%"]
+                    }
+                },
+                "Absorb Fire":{
+                    "Description": "Deal Magical Fire damage to one enemy, with a chance to drain part of the damage dealt.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["8", "8"],
+                        "Attack Power": ["140%", "160%"],
+                        "Drain Rate": ["30%", "40%"]
+                    }
+                },
+                "Absorb Air":{
+                    "Description": "Deal Magical Air damage to one enemy, with a chance to drain part of the damage dealt.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["8", "8"],
+                        "Attack Power": ["140%", "160%"],
+                        "Drain Rate": ["30%", "40%"]
+                    }
+                },
+                "Absorb Lightning":{
+                    "Description": "Deal Magical Lightning damage to one enemy, with a chance to drain part of the damage dealt.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["8", "8"],
+                        "Attack Power": ["140%", "160%"],
+                        "Drain Rate": ["30%", "40%"]
+                    }
+                },
+                "Absorb Earth":{
+                    "Description": "Deal Magical Earth damage to one enemy, with a chance to drain part of the damage dealt.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["8", "8"],
+                        "Attack Power": ["140%", "160%"],
+                        "Drain Rate": ["30%", "40%"]
+                    }
+                },
+                "Genbu - Jo":{
+                    "Description": "Deal Magical Water damage to all enemies.",
+                    "Max Level": "2",
+                    "Starter": "",
+                    "Data": {
+                        "SP Cost": ["18", "18"],
+                        "Attack Power": ["75%", "100%"]
+                    }
+                },
+                "Suzaku - Jo":{
+                    "Description": "Deal Magical Fire damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["18", "18"],
+                        "Attack Power": ["75%", "100%"]
+                    }
+                },
+                "Seiryu - Jo":{
+                    "Description": "Deal Magical Air damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["18", "18"],
+                        "Attack Power": ["75%", "100%"]
+                    }
+                },
+                "Byakko - Jo":{
+                    "Description": "Deal Magical Lightning damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["18", "18"],
+                        "Attack Power": ["75%", "100%"]
+                    }
+                },
+                "Qilin - Jo":{
+                    "Description": "Deal Magical Earth damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["18", "18"],
+                        "Attack Power": ["75%", "100%"]
+                    }
+                },
+                "Genbu - Ha":{
+                    "Description": "Deal Magical Water damage to all enemies.",
+                    "Max Level": "2",
+                    "Starter": "",
+                    "Data": {
+                        "SP Cost": ["31", "31"],
+                        "Attack Power": ["105%", "125%"]
+                    }
+                },
+                "Suzaku - Ha":{
+                    "Description": "Deal Magical Fire damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["31", "31"],
+                        "Attack Power": ["105%", "125%"]
+                    }
+                },
+                "Seiryu - Ha":{
+                    "Description": "Deal Magical Air damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["31", "31"],
+                        "Attack Power": ["105%", "125%"]
+                    }
+                },
+                "Byakko - Ha":{
+                    "Description": "Deal Magical Lightning damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["31", "31"],
+                        "Attack Power": ["105%", "125%"]
+                    }
+                },
+                "Qilin - Ha":{
+                    "Description": "Deal Magical Earth damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["31", "31"],
+                        "Attack Power": ["105%", "125%"]
+                    }
+                },
+                "Genbu - Ri":{
+                    "Description": "Deal Magical Water damage to all enemies.",
+                    "Max Level": "2",
+                    "Starter": "",
+                    "Data": {
+                        "SP Cost": ["65", "65"],
+                        "Attack Power": ["125%", "145%"]
+                    }
+                },
+                "Suzaku - Ri":{
+                    "Description": "Deal Magical Fire damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["65", "65"],
+                        "Attack Power": ["125%", "145%"]
+                    }
+                },
+                "Seiryu - Ri":{
+                    "Description": "Deal Magical Air damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["65", "65"],
+                        "Attack Power": ["125%", "145%"]
+                    }
+                },
+                "Byakko - Ri":{
+                    "Description": "Deal Magical Lightning damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["65", "65"],
+                        "Attack Power": ["125%", "145%"]
+                    }
+                },
+                "Qilin - Ri":{
+                    "Description": "Deal Magical Earth damage to all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["65", "65"],
+                        "Attack Power": ["125%", "145%"]
+                    }
+                },
+                "Skanda":{
+                    "Description": "Place a buff on one ally for 5 turns, which increases turn speed.",
+                    "Max Level": "2",
+                    "Starter": "",
+                    "Data": {
+                        "SP Cost": ["22", "22"]
+                    }
+                },
+                "Immobilize":{
+                    "Description": "Place a debuff on one ally for 1 turn, which decreases turn speed.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["22", "22"]
+                    }
+                },
+                "Pacify":{
+                    "Description": "Place a debuff on one enemy for 3 turns, which decreases ATK.",
+                    "Starter": "",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["8", "8"],
+                        "ATK Stat↓": ["-25%", "-35%"]
+                    }
+                },
+                "Weaken":{
+                    "Description": "Place a debuff on one enemy for 3 turns, which decreases DEF.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["8", "8"],
+                        "ATK Stat↓": ["-25%", "-35%"]
+                    }
+                },
+                "Incapacitate":{
+                    "Description": "Place a debuff on one enemy for 3 turns, which decreases TEC.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["8", "8"],
+                        "ATK Stat↓": ["-25%", "-35%"]
+                    }
+                },
+                "Subdue":{
+                    "Description": "Place a debuff on one enemy for 3 turns, which decreases MEN.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["8", "8"],
+                        "ATK Stat↓": ["-25%", "-35%"]
+                    }
+                },
+                "Dubious Blessing":{
+                    "Description": "Attempt to inflict Stun on all enemies.",
+                    "Starter": "",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["18", "18"],
+                        "Infliction Rate": ["?", "?"]
+                    }
+                },
+                "Dormant Blessing":{
+                    "Description": "Attempt to inflict Sleep on all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["18", "18"],
+                        "Infliction Rate": ["?", "?"]
+                    }
+                },
+                "Shadowy Blessing":{
+                    "Description": "Attempt to inflict Darkness on all enemies.",
+                    "Max Level": "2",
+                    "Data": {
+                        "SP Cost": ["18", "18"],
+                        "Infliction Rate": ["?", "?"]
+                    }
                 }
             }
         }
@@ -2181,14 +2564,40 @@
         "Description": "A Jail specialist who utilizes Jail Bonuses to bring a number of benefits to the party.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
+                "Jail Rate Up":{
+                    "Description": "Jail Bonuses that grant buffs will grant 1 more buff than what's listed. (Doesn't apply to Bonuses for all allies)",
                     "Data": ""
+                },
+                "Jail Blessing Up":{
+                    "Description": "Jail Bonuses will affect 1 more unit than what's listed. (If there's only 1 target, single target effects will be applied to them an additional time)",
+                    "Data": ""
+                },
+                "Jail Effect Up":{
+                    "Description": "Increases the potency of damaging and healing Jail Bonuses. (Doesn't stack)",
+                    "Max Level": "3",
+                    "Data": {
+                        "Effect↑": ["+10%", "+25%", "+35%"]
+                    }
+                },
+                "MEN Up":{
+                    "Description": "Increase base MEN.",
+                    "Max Level": "3",
+                    "Data": {
+                        "MEN Stat↑": ["+5%", "+10%", "+15%"]
+                    }
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
+                "Volley":{
+                    "Description": "Deal Physical Earth damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["7", "7", "7", "7", "7"],
+                        "Attack Power": ["110%", "120%", "130%", "140%", "150%"]
+                    }
+                },
+                "Lure":{
+                    "Description": "Increase the chance of enemy encounters for 80 steps.",
                     "Data": ""
                 }
             }
@@ -2198,15 +2607,53 @@
         "Description": "A job that experiments with powerful blood-based Skills to deal heavy damage to enemies.",
         "Skills":{
             "Passive Skills":{
-                "":{
-                    "Description": "",
+                "Blood Chemist Skill":{
+                    "Description": "Marchen blood splattered on walls upon damage. (Exact effect is unknown)",
                     "Data": ""
                 }
             },
             "Active Skills":{
-                "":{
-                    "Description": "",
-                    "Data": ""
+                "Invisible Slash":{
+                    "Description": "Deal Physical Neutral damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["7", "7", "7", "7", "7"],
+                        "Attack Power": ["117%", "125%", "132%", "142%", "150%"]
+                    }
+                },
+                "Lunacy":{
+                    "Description": "Deal Magical Random-Element damage to one enemy.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["38", "38", "38", "38", "38"],
+                        "Attack Power": ["150%", "160%", "170%", "180%", "200%"]
+                    }
+                },
+                "Disaster Rune":{
+                    "Description": "Deal Magical Multi-Elemental damage to all enemies.",
+                    "Max Level": "5",
+                    "Data": {
+                        "SP Cost": ["72", "72", "72", "72", "72"],
+                        "Attack Power": ["140%", "155%", "165%", "180%", "200%"]
+                    }
+                },
+                "Positive Blood":{
+                    "Description": "Place a buff on one ally for several turns, which increases the Bleed caused by their attacks.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["14", "14", "14"],
+                        "Bleed↑": ["+15%", "+20%", "+25%"],
+                        "Duration": ["1", "2", "3"]
+                    }
+                },
+                "Negative Blood":{
+                    "Description": "Place a buff on one ally for several turns, which decreases the Bleed caused by their attacks.",
+                    "Max Level": "3",
+                    "Data": {
+                        "SP Cost": ["14", "14", "14"],
+                        "Bleed↓": ["-20%", "-30%", "-40%"],
+                        "Duration": ["3", "4", "5"]
+                    }
                 }
             }
         }
