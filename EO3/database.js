@@ -79,7 +79,7 @@ var data = {
         }
     },
     "Guard Order":{
-        "Usage": "Active (Head)",   
+        "Usage": "Active (Head)",
         "Unlock": "N/A",
         "Description": "Place a buff on an ally row for 3 turns, which decreases physical damage taken.",
         "Starter": "1",
@@ -2976,13 +2976,13 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Sovereign":    "Commanders that raise the party's strength and vitality.",
+    "Sovereign":    "Royal commanders that enhance and revitalize the party.",
     "Gladiator":    "Aggressive warriors focused on strong physical offense.",
     "Hoplite":      "Sturdy knights that weaken and deflect enemy attacks.",
     "Buccaneer":    "Agile fighters that strike rapidly in tandem with allies.",
-    "Ninja":        "Stealthy assassins proficient in evasion and ailments.",
+    "Ninja":        "Stealthy assassins proficient in diversion and hindrance.",
     "Monk":         "Martial artists trained in healing and combat techniques.",
-    "Zodiac":       "Spellcasters with control over energy and the elements.",
+    "Zodiac":       "Elemental magicians that exploit the enemy's weakness.",
     "Wildling":     "Summoners that call beasts to attack and incapacitate.",
     "Arbalist":     "Crossbowmen that deal heavy damage from any distance.",
     "Farmer":       "Specialists in improving exploration and resource gain.",

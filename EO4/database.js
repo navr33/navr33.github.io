@@ -1740,7 +1740,7 @@ var data = {
         "Beat Dance":{
             "Usage": "Active (Legs, STR)",
             "Unlock": "N/A",
-            "Description": "Requires a Waltz, Tango and Samba buff: Command all party members to deal weapon-based damage to one enemy.",
+            "Description": "Requires a Waltz, Tango and Samba buff: Command all party members to each deal weapon-based damage to one enemy.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["12", "12", "14", "14", "14", "16"],
@@ -2696,7 +2696,6 @@ var data = {
     "Healing":{
         "Medica / Medica II / Medica III / Medica IV":{
             "Usage": "20 / 500 / 2.000 / 8.000 en",
-            "Unlock": "N/A / Luminous Moss / Aloe / Ambrosia",
             "Description": "Restores HP to one ally.",
             "Max Level": "4",
             "Data": {
@@ -2705,7 +2704,6 @@ var data = {
         },
         "Nectar / Nectar II":{
             "Usage": "200 / 7.000 en",
-            "Unlock": "Small Flower / Raptor Claw",
             "Description": "Revives one ally.",
             "Max Level": "2",
             "Data": {
@@ -2714,7 +2712,6 @@ var data = {
         },
         "Amrita / Amrita II / Amrita III":{
             "Usage": "1.000 / 8.000 / 20.000 en",
-            "Unlock": "Crane Ginseng / Waterlily Leaf / Eerie Scales",
             "Description": "Restores TP to one ally.",
             "Max Level": "3",
             "Data": {
@@ -2723,7 +2720,6 @@ var data = {
         },
         "Hamao / Hamao II":{
             "Usage": "2.000 / 10.000 en",
-            "Unlock": "Scarlet Sage / Deathly Bud",
             "Description": "Restores HP and TP to one ally.",
             "Max Level": "2",
             "Data": {
@@ -2733,7 +2729,6 @@ var data = {
         },
         "Madora / Madora II":{
             "Usage": "1.500 / 15.000 en",
-            "Unlock": "Flame Fruit / Grub Mold",
             "Description": "Restores HP to an ally line.",
             "Max Level": "2",
             "Data": {
@@ -2744,7 +2739,6 @@ var data = {
     "Status":{
         "Theriaca A / Theriaca B":{
             "Usage": "100 / 90 en",
-            "Unlock": "Osmunda Frond / Forest Aloe",
             "Description": "Respectively removes binds or ailments from one ally.",
             "Max Level": "0",
             "Levels": ["1"],
@@ -2752,14 +2746,12 @@ var data = {
         },
         "Metopon":{
             "Usage": "1.000 en",
-            "Unlock": "Myrciaria Fruit, Sealed Cap",
             "Description": "Removes all buffs on one enemy.",
             "Max Level": "0",
             "Data": ""
         },
         "Unihorn":{
             "Usage": "500 en",
-            "Unlock": "Valerian",
             "Description": "Removes all debuffs on an ally line.",
             "Max Level": "0",
             "Data": ""
@@ -2768,7 +2760,6 @@ var data = {
     "Power Up":{
         "Bravant":{
             "Usage": "300 en",
-            "Unlock": "Stunned Tongue",
             "Description": "Places a buff on one ally for 3 turns, which increases physical damage dealt.",
             "Max Level": "1",
             "Data": {
@@ -2777,7 +2768,6 @@ var data = {
         },
         "Stonard":{
             "Usage": "150 en",
-            "Unlock": "Moss Strawberry",
             "Description": "Places a buff on one ally for 3 turns, which decreases physical damage taken.",
             "Max Level": "1",
             "Data": {
@@ -2786,7 +2776,6 @@ var data = {
         },
         "Fire/Ice/Volt Mist":{
             "Usage": "150 en",
-            "Unlock": "Monks Cress",
             "Description": "Places a buff on all allies for 3 turns, which increases resistance to Fire/Ice/Volt.",
             "Max Level": "1",
             "Data": {
@@ -2795,7 +2784,6 @@ var data = {
         },
         "Cut/Bash/Stab Mist":{
             "Usage": "300 en",
-            "Unlock": "Life Honey",
             "Description": "Places a buff on all allies for 3 turns, which increases resistance to Cut/Bash/Stab.",
             "Max Level": "1",
             "Data": {
@@ -2804,7 +2792,6 @@ var data = {
         },
         "Blaze/Freeze/Shock Oil":{
             "Usage": "75 en",
-            "Unlock": "Dragon's Blood",
             "Description": "Places a buff on one ally for 3 turns, which imbues their weapon with Fire/Ice/Volt damage.",
             "Max Level": "0",
             "Data": ""
@@ -2813,7 +2800,6 @@ var data = {
     "Attack (TEC)":{
         "Fire Jar":{
             "Usage": "100 en",
-            "Unlock": "Mint",
             "Description": "Deals ranged Fire damage to one enemy, with splash effect.",
             "Max Level": "1",
             "Data": {
@@ -2823,7 +2809,6 @@ var data = {
         },
         "Blast Jar":{
             "Usage": "500 en",
-            "Unlock": "Hyacinth Petal",
             "Description": "Deals ranged Fire damage to all enemies.",
             "Max Level": "1",
             "Data": {
@@ -2833,7 +2818,6 @@ var data = {
         },
         "Ice Jar":{
             "Usage": "100 en",
-            "Unlock": "Mint",
             "Description": "Deals ranged Ice damage to one enemy, with pierce effect.",
             "Max Level": "1",
             "Data": {
@@ -2843,7 +2827,6 @@ var data = {
         },
         "Frost Jar":{
             "Usage": "500 en",
-            "Unlock": "Hyacinth Petal",
             "Description": "Deals 2~4 hits of ranged Ice damage to random enemies.",
             "Max Level": "1",
             "Data": {
@@ -2853,7 +2836,6 @@ var data = {
         },
         "Volt Jar":{
             "Usage": "100 en",
-            "Unlock": "Mint",
             "Description": "Deals ranged Volt damage to an enemy line.",
             "Max Level": "1",
             "Data": {
@@ -2863,7 +2845,6 @@ var data = {
         },
         "Thunderbolt Jar":{
             "Usage": "500 en",
-            "Unlock": "Hyacinth Petal",
             "Description": "Deals ranged Volt damage to one enemy.",
             "Max Level": "1",
             "Data": {
@@ -2875,7 +2856,6 @@ var data = {
     "Infliction (LUC)":{
         "Poison/Nerve/Blind/Sleep/Curse/Addle Gas":{
             "Usage": "100 / 200 / 150 / 300 / 800 / 800 en",
-            "Unlock": "Shea Fruit / Glove Grass / Gritty Scales / White Apple / Cursed Durian / Evil Copal",
             "Description": "Respectively attempts to inflict Poison, Paralysis, Blind, Sleep, Curse or Panic on all enemies.",
             "Max Level": "6",
             "Levels": ["Poi", "Par", "Bli", "Sle", "Cur", "Pan"],
@@ -2889,7 +2869,6 @@ var data = {
     "Rewards":{
         "Formaldehyde":{
             "Usage": "500 en",
-            "Unlock": "Horrific Breath",
             "Description": "Until the end of turn, enemies killed will drop all their materials.",
             "Max Level": "0",
             "Data": ""
@@ -2903,9 +2882,9 @@ var data = {
 var descriptions = {
     "Landsknecht":  "Frontline warriors that encourage allies to follow them.",
     "Nightseeker":  "Assassins that weaken enemies then close in for the kill.",
-    "Fortress":     "Knights that put themselves on the line to cover the party.",
+    "Fortress":     "Sturdy knights that weaken and intercept enemy attacks.",
     "Sniper":       "Archers that aim at weak spots to hurt and incapacitate.",
-    "Medic":        "Healers that effectively treat any injuries and afflictions.",
+    "Medic":        "Healers that can effectively treat any injury or affliction.",
     "Runemaster":   "Spellcasters with control over the power of the elements.",
     "Dancer":       "Performers who inspire allies while fighting along them.",
     "Arcanist":     "Sorcerers who summon magic circles to restrain enemies.",

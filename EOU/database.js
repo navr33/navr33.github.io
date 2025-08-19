@@ -2782,7 +2782,7 @@ var data = {
     "Delayed Charge":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 10)",
-        "Description": "Spear: Spend 15% of current HP to prepare an attack that will activate several turns later, at the end of the turn, dealing ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage dealt receives a reduction multiplier for each remaining charge turn.",
+        "Description": "Spear: Spend 15% of current HP to prepare an attack that will activate several turns later, at the end of the turn. On activation, deal ranged Stab damage to one enemy. Cross Charge can activate it early, but damage dealt receives a reduction multiplier for each remaining charge turn.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2834,7 +2834,7 @@ var data = {
     "Bloody Offense":{
         "Usage": "Active (Head)",
         "Unlock": "ATK Up (Lv 3)",
-        "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but makes targets lose 10% of current HP when they act.",
+        "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but makes the holder lose 10% of current HP upon acting.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2940,7 +2940,7 @@ var data = {
     "Limitless":{
         "Usage": "Active (Arms)",
         "Unlock": "HP Up (Lv 1)",
-        "Description": "Enter a charge state until the end of next turn, which increases damage dealt and lets you use weapon-locked skills without equipping the required weapon.",
+        "Description": "Enter a charge state until the end of next turn, which increases damage dealt and lets you ignore equipment requirements on skills.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3574,12 +3574,12 @@ var descriptions = {
     "Survivalist":  "Archers with great agility and exploration knowledge.",
     "Protector":    "Sturdy knights that defend and safeguard their allies.",
     "Dark Hunter":  "Ruthless fighters that immobilize then finish off enemies.",
-    "Medic":        "Healers that effectively treat any injury and affliction.",
-    "Alchemist":    "Elemental casters that exploit the enemy's weakness.",
-    "Troubadour":   "Musicians that grant various stat boosts to the party.",
+    "Medic":        "Healers that keep the party safe and in good condition.",
+    "Alchemist":    "Elemental magicians that exploit the enemy's weakness.",
+    "Troubadour":   "Musicians that grant various enhancements to the party.",
     "Ronin":        "Bold warriors that gain strength from different stances.",
     "Hexer":        "Sorcerers that can weaken, disable and control enemies.",
-    "Highlander":   "A Spear user that controls life force and turns it into power.",
+    "Highlander":   "A Spearman that turns life force into power and blessings.",
     "Gunner":       "A versatile Gun user that can attack, immobilize and heal.",
 
     "Battle Items": "Consumable items that can be used in battle.",

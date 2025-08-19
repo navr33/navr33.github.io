@@ -2538,8 +2538,7 @@ var data = {
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2", "5"],
-                "Min. Battles": ["1", "1", "1", "1", "3"],
-                "Max. Battles": ["3", "4", "5", "6", "10"],
+                "Battles": ["1~3", "1~4", "1~5", "1~6", "3~10"],
                 "Rare Chance↑": ["+1%", "+2%", "+3%", "+4%", "+10%"],
             }
         },
@@ -3650,7 +3649,7 @@ var data = {
         },
         "Double Attack":{
             "Usage": "Union (2 Units, STR)",
-            "Description": "Both participants will deal one hit of weapon-based damage to one enemy.",
+            "Description": "Make each participant deal weapon-based damage to one enemy.",
             "Max Level": "3",
             "Levels": ["1", "40", "99"],
             "Data": {
@@ -3711,7 +3710,7 @@ var data = {
     "Level 5":{
         "Resuscitate":{
             "Usage": "Union (2 Units)",
-            "Description": "Revive and heal one ally.",
+            "Description": "Revive one ally.",
             "Max Level": "10",
             "Levels": ["1", "11", "21", "31", "41", "51", "61", "71", "81", "91"],
             "Data": {
@@ -3845,7 +3844,7 @@ var data = {
         },
         "Double Attack":{
             "Usage": "Union (2 Units, STR)",
-            "Description": "Both participants will deal one hit of weapon-based damage to one enemy.",
+            "Description": "Make each participant deal weapon-based damage to one enemy.",
             "Max Level": "3",
             "Levels": ["1", "40", "99"],
             "Data": {
@@ -4046,7 +4045,7 @@ var data = {
         },
         "Double Attack":{
             "Usage": "Union (2 Units, STR)",
-            "Description": "Both participants will deal one hit of weapon-based damage to one enemy.",
+            "Description": "Make each participant deal weapon-based damage to one enemy.",
             "Max Level": "3",
             "Levels": ["1", "40", "99"],
             "Data": {
@@ -4213,7 +4212,7 @@ var data = {
     "Level 20":{
         "All-Out Attack":{
             "Usage": "Union (5 Units, STR, LUC)",
-            "Description": "All party members will deal weapon-based damage to one enemy, with a chance to inflict Stun.",
+            "Description": "Make each participant deal weapon-based damage to one enemy, with a chance to inflict Stun.",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -4258,7 +4257,7 @@ var data = {
         },
         "Double Attack":{
             "Usage": "Union (2 Units, STR)",
-            "Description": "Both participants will deal one hit of weapon-based damage to one enemy.",
+            "Description": "Make each participant deal weapon-based damage to one enemy.",
             "Max Level": "3",
             "Levels": ["1", "40", "99"],
             "Data": {
@@ -4420,7 +4419,7 @@ var data = {
         },
         "Haggle":{
             "Usage": "Passive",
-            "Description": "Decrease the cost of items in the shop by 5%(doesn't stack). Increases WIS,",
+            "Description": "Decrease the cost of items in the shop by 5%(doesn't stack). Increases WIS.",
             "Max Level": "7",
             "Levels": ["20~25", "26~38", "39~51", "52~64", "65~77", "78~90", "91~99"],
             "Data": {
@@ -5120,7 +5119,7 @@ var descriptions = {
     "Harbinger":["Reapers who use noxious Miasma to weaken the enemy.",
                     "<b>Deathbringer</b>: Inflicts ailments and cuts down afflicted enemies.",
                     "<b>Deathguard</b>: Inflicts debuffs and wards off against afflictions."],
-    "Warlock":  ["Spellcasters with knowledge to control the elements.",
+    "Warlock":  ["Spellcasters that can control and enhance the elements.",
                     "<b>Omnimancer</b>: Hits any weakness with elemental and physical magic.",
                     "<b>Elemancer</b>: Bursts down enemies with powerful elemental magic."],
     "Necromancer":["Summoners who call forth Wraiths to assist the party.",

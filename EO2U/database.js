@@ -972,7 +972,7 @@ var data = {
 "Dark Hunter":{
     "Trance":{
         "Usage": "Force Boost",
-        "Description": "Increases damage dealt if the target has a bind/ailment.",
+        "Description": "Drastically increases damage dealt if the target has a bind/ailment.",
         "Max Level": "1",
         "Data": {
             "Damage Dealt↑": ["x2.0"],
@@ -1969,7 +1969,7 @@ var data = {
 "Troubadour":{
     "War Song":{
         "Usage": "Force Boost",
-        "Description": "Prevents remaining duration of buffs on the party from going down, and prevents them from being cancelled by opposing debuffs.",
+        "Description": "Prevents the remaining duration of buffs on the party from going down, and prevents them from being cancelled by opposing debuffs.",
         "Max Level": "0",
         "Data": ""
     },
@@ -2636,7 +2636,7 @@ var data = {
 "Hexer":{
     "Creeping Curse":{
         "Usage": "Force Boost",
-        "Description": "Drastically increases bind/ailment infliction rates, and prevents remaining duration of debuffs on enemies from going down.",
+        "Description": "Drastically increases bind/ailment infliction rates, and prevents the remaining duration of debuffs on enemies from going down.",
         "Max Level": "1",
         "Data": {
             "Inflictions↑": ["x3.0"],
@@ -3282,7 +3282,7 @@ var data = {
 "War Magus":{
     "War Edge Power":{
         "Usage": "Force Boost",
-        "Description": "War Edge skills will apply their secondary effect even if the target doesn't have an ailment.",
+        "Description": "Allows War Edge skills to apply their secondary effect even if the target doesn't have an ailment.",
         "Max Level": "0",
         "Data": ""
     },
@@ -3933,7 +3933,7 @@ var data = {
     "Victory Vow":{
         "Usage": "Force Boost",
         "Description": "Increases the area of effect of Order skills (Line → Party), and halves their TP cost.",
-        "Max Level": "1",
+        "Max Level": "0",
         "Data": ""
     },
     "Proof of Nobility":{
@@ -4113,61 +4113,61 @@ var data = {
     "Link Order":{
         "Usage": "Active (Arms, TEC)",
         "Unlock": "TP Up (Lv 1)",
-        "Description": "Target one enemy and prepare to follow up after the first elemental attack to them this turn. When activated, deal ranged damage of the same element (cannot miss) to the target. Also repeats up to a certain percentage of the triggering attack's damage, but without exceeding this attack's own damage.",
+        "Description": "Target one enemy and prepare to follow up after the first elemental attack to them this turn. When activated, deal ranged damage of the same element (cannot miss) to the target. Also repeats up to a certain percentage of the triggering attack's damage. The repeated damage cannot exceed this attack's own damage.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["5", "5", "5", "5", "10", "10", "10", "10", "10", "20", "20", "20", "20", "20", "22", "22", "22", "22", "22", "24"],
             "Attack Power": ["100%", "104%", "108%", "112%", "160%", "164%", "168%", "172%", "176%", "230%", "232%", "234%", "236%", "238%", "255%", "257%", "259%", "261%", "263%", "290%"],
-            "Inherited Damage": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "50%"],
+            "Repeated Damage": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "50%"],
         }
     },
     "Link Order II":{
         "Usage": "Active (Arms, TEC)",
         "Unlock": "Link Order (Lv 5)",
-        "Description": "Target one enemy and prepare to follow up after the first elemental attack to them this turn. When activated, deal ranged damage of the same element (cannot miss) to all enemies. Also repeats up to a certain percentage of the triggering attack's damage, but without exceeding this attack's own damage.",
+        "Description": "Target one enemy and prepare to follow up after the first elemental attack to them this turn. When activated, deal ranged damage of the same element (cannot miss) to all enemies. Also repeats up to a certain percentage of the triggering attack's damage. The repeated damage cannot exceed this attack's own damage.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["10", "10", "10", "10", "20", "20", "20", "20", "20", "40", "40", "40", "40", "40", "44", "44", "44", "44", "44", "48"],
             "Attack Power": ["100%", "104%", "108%", "112%", "160%", "164%", "168%", "172%", "176%", "230%", "232%", "234%", "236%", "238%", "255%", "257%", "259%", "261%", "263%", "290%"],
-            "Inherited Damage": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "50%"],
+            "Repeated Damage": ["40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "40%", "50%"],
         }
     },
     "Fire Circle":{
         "Usage": "Active (Arms)",
         "Unlock": "TP Up (Lv 5)",
-        "Description": "For this turn, decrease Fire damage taken by allies and increase Fire damage taken by enemies. (Doesn't stack)",
+        "Description": "Enhance the party for this turn, which increases Fire damage dealt and decreases Fire damage taken. (Doesn't stack)",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
-            "Damage Taken↓\n(Allies)": ["x0.85", "x0.83", "x0.8", "x0.78", "x0.7", "x0.68", "x0.67", "x0.65", "x0.64", "x0.6", "x0.59", "x0.58", "x0.57", "x0.56", "x0.55", "x0.54", "x0.53", "x0.52", "x0.51", "x0.5"],
-            "Damage Taken↑\n(Enemies)": ["x1.15", "x1.15", "x1.15", "x1.15", "x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.3"],
+            "Damage Dealt↑": ["x1.15", "x1.15", "x1.15", "x1.15", "x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.3"],
+            "Damage Taken↓": ["x0.85", "x0.83", "x0.8", "x0.78", "x0.7", "x0.68", "x0.67", "x0.65", "x0.64", "x0.6", "x0.59", "x0.58", "x0.57", "x0.56", "x0.55", "x0.54", "x0.53", "x0.52", "x0.51", "x0.5"],
         }
     },
     "Freeze Circle":{
         "Usage": "Active (Arms)",
         "Unlock": "TP Up (Lv 5)",
-        "Description": "For this turn, decrease Ice damage taken by allies and increase Ice damage taken by enemies. (Doesn't stack)",
+        "Description": "Enhance the party for this turn, which increases Ice damage dealt and decreases Ice damage taken. (Doesn't stack)",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
-            "Damage Taken↓\n(Allies)": ["x0.85", "x0.83", "x0.8", "x0.78", "x0.7", "x0.68", "x0.67", "x0.65", "x0.64", "x0.6", "x0.59", "x0.58", "x0.57", "x0.56", "x0.55", "x0.54", "x0.53", "x0.52", "x0.51", "x0.5"],
-            "Damage Taken↑\n(Enemies)": ["x1.15", "x1.15", "x1.15", "x1.15", "x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.3"],
+            "Damage Dealt↑": ["x1.15", "x1.15", "x1.15", "x1.15", "x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.3"],
+            "Damage Taken↓": ["x0.85", "x0.83", "x0.8", "x0.78", "x0.7", "x0.68", "x0.67", "x0.65", "x0.64", "x0.6", "x0.59", "x0.58", "x0.57", "x0.56", "x0.55", "x0.54", "x0.53", "x0.52", "x0.51", "x0.5"],
         }
     },
     "Shock Circle":{
         "Usage": "Active (Arms)",
         "Unlock": "TP Up (Lv 5)",
-        "Description": "For this turn, decrease Volt damage taken by allies and increase Volt damage taken by enemies. (Doesn't stack)",
+        "Description": "Enhance the party for this turn, which increases Volt damage dealt and decreases Volt damage taken. (Doesn't stack)",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["5", "5", "5", "5", "8", "8", "8", "8", "8", "12", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
-            "Damage Taken↓\n(Allies)": ["x0.85", "x0.83", "x0.8", "x0.78", "x0.7", "x0.68", "x0.67", "x0.65", "x0.64", "x0.6", "x0.59", "x0.58", "x0.57", "x0.56", "x0.55", "x0.54", "x0.53", "x0.52", "x0.51", "x0.5"],
-            "Damage Taken↑\n(Enemies)": ["x1.15", "x1.15", "x1.15", "x1.15", "x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.3"],
+            "Damage Dealt↑": ["x1.15", "x1.15", "x1.15", "x1.15", "x1.2", "x1.2", "x1.2", "x1.2", "x1.2", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.25", "x1.3"],
+            "Damage Taken↓": ["x0.85", "x0.83", "x0.8", "x0.78", "x0.7", "x0.68", "x0.67", "x0.65", "x0.64", "x0.6", "x0.59", "x0.58", "x0.57", "x0.56", "x0.55", "x0.54", "x0.53", "x0.52", "x0.51", "x0.5"],
         }
     },
     "Cheer":{
@@ -4196,7 +4196,7 @@ var data = {
     "Royal Veil":{
         "Usage": "Passive",
         "Unlock": "HP Up (Lv 5)",
-        "Description": "At the end of turn, if your HP is full, restore HP to the whole party. Healing is based on each unit's Max HP.",
+        "Description": "At the end of each turn, if your HP is full, restore HP to the whole party. Healing is based on each unit's Max HP.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -4627,7 +4627,7 @@ var data = {
     "Weapon Free":{
         "Usage": "Passive",
         "Unlock": "Phys ATK Up (Lv 3), Elem ATK Up (Lv 3)",
-        "Description": "Allows you to use weapon-locked skills without equipping the required weapon, but they deal less damage if you do.",
+        "Description": "Allows you to ignore equipment requirements on skills, but damage dealt is decreased if you don't meet the requirement.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -4794,7 +4794,7 @@ var data = {
     "Delayed Charge":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Spear Mastery (Lv 10)",
-        "Description": "Spear: Spend 15% of current HP to prepare an attack that will activate several turns later, at the end of the turn. Deals ranged Stab damage to one enemy. Using Cross Charge activates it early, but damage dealt receives a reduction multiplier for each remaining charge turn.",
+        "Description": "Spear: Spend 15% of current HP to prepare an attack that will activate several turns later, at the end of the turn. On activation, deal ranged Stab damage to one enemy. Cross Charge can activate it early, but damage dealt receives a reduction multiplier for each remaining charge turn.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -4845,7 +4845,7 @@ var data = {
     "Bloody Offense":{
         "Usage": "Active (Head)",
         "Unlock": "Phys ATK Up (Lv 3)",
-        "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but makes targets lose 10% of current HP when they act.",
+        "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but makes the holder spend 10% of current HP upon acting.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -4951,7 +4951,7 @@ var data = {
     "Limitless":{
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 1)",
-        "Description": "Enter a charge state until the end of next turn, which increases damage dealt and lets you use weapon-locked skills without equipping the required weapon.",
+        "Description": "Enter a charge state until the end of next turn, which increases damage dealt and lets you ignore equipment requirements on skills.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -5491,17 +5491,17 @@ var descriptions = {
     "Survivalist":  "Archers with great agility and exploration knowledge.",
     "Protector":    "Sturdy knights that defend and safeguard their allies.",
     "Dark Hunter":  "Ruthless fighters that immobilize then finish off enemies.",
-    "Medic":        "Healers that effectively treat any injury and affliction.",
+    "Medic":        "Healers that keep the party safe and in good condition.",
     "Alchemist":    "Elemental casters that exploit the enemy's weakness.",
-    "Troubadour":   "Musicians that grant various stat boosts to the party.",
+    "Troubadour":   "Musicians that grant various enhancements to the party.",
     "Ronin":        "Bold warriors that gain strength from different stances.",
     "Hexer":        "Sorcerers that can weaken, disable and control enemies.",
     "Gunner":       "Versatile marksmen that can attack, immobilize and heal.",
     "War Magus":    "Witch doctors with healing magic and weakening attacks.",
     "Beast":        "Animal companions that shelter allies and maul enemies.",
-    "Sovereign":    "Commanders that raise the party's strength and vitality.",
-    "Highlander":   "Warriors that control life force and can turn it into power.",
-    "Fafnir":       "A swordsman that gains power by entering a monstrous form.",
+    "Sovereign":    "Royal commanders that enhance and revitalize the party.",
+    "Highlander":   "Warriors that convert life force into power and blessings.",
+    "Fafnir":       "A swordsman that enters a monstrous form to gain power.",
 
     "Battle Items": "Consumable items that can be used in battle.",
     "Food Effects": "Bonuses granted by food in the Cafe.",
