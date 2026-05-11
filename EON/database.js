@@ -27,7 +27,7 @@ const data = {
         "Afterimage":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Attack skills gain a chance to create an Afterimage when they hit. Afterimages are clones of the user with their same stats and passive skills, but decreased HP and without their buffs/debuffs. After the turn where they are created, Afterimages use the skill that created them then vanish at the end of the turn.",
+            "Description": "Attack skills gain a chance to create an Afterimage when they hit. Afterimages are clones of the user with decreased Max HP and without their buffs/debuffs. After the turn where they are created, Afterimages use the skill that created them then vanish at the end of the turn.",
             "Max Level": "10",
             "Data": {
                 "Creation Rate": ["13%", "16%", "19%", "22%", "25%", "28%", "31%", "34%", "37%", "50%"],
@@ -127,7 +127,7 @@ const data = {
         "Charge Image":{
             "Usage": "Active (Head)",
             "Unlock": "Mirage Sword (Lv 2)",
-            "Description": "Dispel your Afterimages to enter a charge state until the end of next turn, which increases all damage dealt and chance to create Afterimages.",
+            "Description": "Dispel your Afterimages to enter a charge state until the end of the next turn, which increases all damage dealt and chance to create Afterimages.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "7"],
@@ -254,7 +254,7 @@ const data = {
         "Regiment Rave":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Act Breaker (Lv 3)",
-            "Description": "Sword: Deal melee Cut+Fire damage to one enemy at the end of turn. Also repeats up to 40% of the damage your allies have done this turn. The repeated damage cannot exceed a certain percentage of this attack's own damage.",
+            "Description": "Sword: Deal melee Cut+Fire damage to one enemy at the end of the turn. Also repeats up to 40% of the damage your allies have done this turn. The repeated damage cannot exceed a certain percentage of this attack's own damage.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["18", "18", "18", "25", "25", "25", "25", "32"],
@@ -452,7 +452,7 @@ const data = {
         "Keep Guard":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "(Guard) Shield: Protect one ally until the end of next turn, which decreases physical/elemental damage taken. While active, you cannot use Guard skills.",
+            "Description": "(Guard) Shield: Protect one ally until the end of the next turn, which decreases physical/elemental damage taken. While active, you cannot use Guard skills.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "7"],
@@ -554,7 +554,7 @@ const data = {
         "Shield Flare":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Shield Bash (Lv 3)",
-            "Description": "Shield: Prepare to counterattack each time you're hit until the end of next turn. On each activation, deal ranged Fire damage to the attacker. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
+            "Description": "Shield: Prepare to counterattack each time you're hit until the end of the next turn. On each activation, deal ranged Fire damage to the attacker. (Damage is based on your Shield's DEF multiplied by 3 instead of your weapon's ATK)",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "16"],
@@ -579,7 +579,7 @@ const data = {
     "Force":{
         "Intensive Care":{
             "Usage": "Force Boost",
-            "Description": "Increases action speed, increases HP restored by First Aid skills and decreases their TP costs. (Also powers up TP restoration from items)",
+            "Description": "Increases action speed, increases HP restored by First Aid skills and decreases their TP costs. (Also powers up TP restoration from skills and items)",
             "Max Level": "1",
             "Levels": ["1"],
             "Data": {
@@ -1291,7 +1291,7 @@ const data = {
         "Helm Splitter":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Upward Slash (Lv 1)",
-            "Description": "Katana, Stance: Deal melee Cut damage (critical during Upper Stance) to one enemy. Highly innacurate but ignores Cut vulnerability. Decreases Stance duration by 2 turns.",
+            "Description": "Katana, Stance: Deal melee Cut damage (critical during Upper Stance) to one enemy. Highly inaccurate but ignores Cut vulnerability. Decreases Stance duration by 2 turns.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "15", "15", "15", "15", "15", "20"],
@@ -1466,7 +1466,7 @@ const data = {
         },
         "Fairy Robe":{
             "Usage": "Force Break (Head, WIS)",
-            "Description": "Restore HP and remove binds/ailments for the whole party. Until the end of turn, prevent all types of negative inflictions (bind/ailment/stun/instakill/debuff) to the party.",
+            "Description": "Restore HP and remove binds/ailments for the whole party. Until the end of the turn, prevent all types of negative inflictions (bind/ailment/stun/instakill/debuff) to the party.",
             "Max Level": "3",
             "Levels": ["1", "60", "130"],
             "Data": {
@@ -1777,7 +1777,7 @@ const data = {
         "Spear Assist":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Long Thrust (Lv 2)",
-            "Description": "Spear: Deal melee Stab damage to one enemy at the end of turn. If any allies have used elemental attacks this turn, add the element of the most recent one and increase damage dealt by 100%.",
+            "Description": "Spear: Deal melee Stab damage to one enemy at the end of the turn. If any allies have used elemental attacks this turn, add the element of the most recent one and increase damage dealt by 100%.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "16"],
@@ -2011,7 +2011,7 @@ const data = {
         "Allied Bonds":{
             "Usage": "Passive",
             "Unlock": "Legion Charge (Lv 2)",
-            "Description": "If one of your skills consumes HP of other allies in your line, restore TP to them at the end of turn.",
+            "Description": "If one of your skills consumes HP of other allies in your line, restore TP to them at the end of the turn.",
             "Max Level": "4",
             "Data": {
                 "TP Gain": ["2+1%", "3+1%", "4+1%", "6+2%"],
@@ -2207,7 +2207,7 @@ const data = {
         "Act Quick":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Enter a charge state until the end of next turn, which increases action speed and decreases TP costs.",
+            "Description": "Enter a charge state until the end of the next turn, which increases action speed and decreases TP costs.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["2", "2", "2", "2"],
@@ -2530,7 +2530,7 @@ const data = {
         "Tactical Decree":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Empower allies with buffs for this turn, which makes them recover TP based on their damage taken.",
+            "Description": "Enhance allies with buffs for this turn, which makes them recover TP based on their damage taken.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "4", "6"],
@@ -2540,7 +2540,7 @@ const data = {
         "Healing Decree":{
             "Usage": "Active (Head)",
             "Unlock": "N/A",
-            "Description": "Empower allies with buffs for this turn, which makes them recover HP based on their damage dealt.",
+            "Description": "Enhance allies with buffs for this turn, which makes them recover HP based on their damage dealt.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "5"],
@@ -2597,7 +2597,7 @@ const data = {
         "Final Decree":{
             "Usage": "Active (Head)",
             "Unlock": "Tactical Decree (Lv 2), Healing Decree (Lv 2)",
-            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself to empower the party for this turn, which increases physical/elemental damage dealt and decreases physical/elemental damage taken.",
+            "Description": "Only usable if you have 3 buffs. Dispel all buffs on yourself to enhance the party for this turn, which increases physical/elemental damage dealt and decreases physical/elemental damage taken.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20", "35"],
@@ -2793,7 +2793,7 @@ const data = {
         "Ninpo: Double":{
             "Usage": "Active (Head)",
             "Unlock": "Revenge Bomb (Lv 2)",
-            "Description": "Spend part of your current HP and TP, then summon a fully controllable clone of yourself. (Cannot be used while Force Boost is active, and vice versa)",
+            "Description": "Spend part of your current HP and TP to summon a fully controllable clone of yourself. (Cannot be used while Force Boost is active, and vice versa)",
             "Max Level": "10",
             "Data": {
                 "HP/TP Cost": ["70%", "69%", "68%", "67%", "63%", "62%", "61%", "60%", "59%", "55%"],
@@ -2812,7 +2812,7 @@ const data = {
         "Ninpo: Flight":{
             "Usage": "Active (Legs)",
             "Unlock": "N/A",
-            "Description": "Drastically increase evasion against physical attacks until the end of turn. Bonus goes down each time you evade an attack.",
+            "Description": "Drastically increase evasion against physical attacks until the end of the turn. Bonus goes down each time you evade an attack.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "7", "7", "7", "7", "7", "13"],
@@ -2992,7 +2992,7 @@ const data = {
         "Etheric Charge":{
             "Usage": "Active (Head)",
             "Unlock": "Singularity (Lv 3)",
-            "Description": "Enter a charge state until the end of next turn, which strongly increases damage dealt with Astrology skills but turns them into single-target attacks.",
+            "Description": "Enter a charge state until the end of the next turn, which strongly increases damage dealt with Astrology skills but turns them into single-target attacks.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "3", "15"],
@@ -3104,7 +3104,7 @@ const data = {
         "Dark Ether":{
             "Usage": "Active (Head)",
             "Unlock": "Etheric Return (Lv 2)",
-            "Description": "Empower one ally line for this turn, which decreases their TP spent.",
+            "Description": "Enhance one ally line for this turn, which decreases their TP spent.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20", "30"],
@@ -3129,7 +3129,7 @@ const data = {
         "Fire Prophecy":{
             "Usage": "Active (Head)",
             "Unlock": "Binary Fire (Lv 2)",
-            "Description": "Target one enemy and prepare to nullify any Fire attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases all damage dealt.",
+            "Description": "Target one enemy and prepare to nullify any Fire attack they might use this turn. If this activates, enter a charge state until the end of the next turn, which increases all damage dealt.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25"],
@@ -3140,7 +3140,7 @@ const data = {
         "Ice Prophecy":{
             "Usage": "Active (Head)",
             "Unlock": "Binary Ice (Lv 2)",
-            "Description": "Target one enemy and prepare to nullify any Ice attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases all damage dealt.",
+            "Description": "Target one enemy and prepare to nullify any Ice attack they might use this turn. If this activates, enter a charge state until the end of the next turn, which increases all damage dealt.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25"],
@@ -3151,7 +3151,7 @@ const data = {
         "Volt Prophecy":{
             "Usage": "Active (Head)",
             "Unlock": "Binary Volt (Lv 2)",
-            "Description": "Target one enemy and prepare to nullify any Volt attack they might use this turn. If this activates, enter a charge state until the end of next turn, which increases all damage dealt.",
+            "Description": "Target one enemy and prepare to nullify any Volt attack they might use this turn. If this activates, enter a charge state until the end of the next turn, which increases all damage dealt.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["25", "25", "25", "25"],
@@ -3171,7 +3171,7 @@ const data = {
         "Multi-Strike Ether":{
             "Usage": "Active (Head)",
             "Unlock": "Anti-Ether (Lv 2)",
-            "Description": "Enter a charge state until the end of next turn, which decreases damage dealt with Astrology skills but turns them into random-target multi-hit attacks (2~5 hits). In the case of Meteor, instead of changing target type it triples the minimum and maximum hits.",
+            "Description": "Enter a charge state until the end of the next turn, which decreases damage dealt with Astrology skills but turns them into random-target multi-hit attacks (2~5 hits). In the case of Meteor, instead of changing target type it triples the minimum and maximum hits.",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["10", "10", "10", "10", "10", "35"],
@@ -3225,7 +3225,7 @@ const data = {
         "Strange Seeds":{
             "Usage": "Active (Arms, LUC)",
             "Unlock": "Sympathy Pain (Lv 1)",
-            "Description": "Plant seeds on all enemies, which will attempt to inflict a random bind on each one at the end of turn.",
+            "Description": "Plant seeds on all enemies, which will attempt to inflict a random bind on each one at the end of the turn. (Prioritizes binds not already on the target)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "14"],
@@ -3467,7 +3467,7 @@ const data = {
         },
         "Decoy Party":{
             "Usage": "Force Break (Head)",
-            "Description": "Empower all party members for this turn, which lets them block the first enemy action (attack or any infliction type) that targets them.",
+            "Description": "Enhance all party members for this turn, which lets them block the first enemy action (attack or any infliction type) that targets them.",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -3775,17 +3775,17 @@ const data = {
         "Proficiency":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "After you perform an attack, all party members deal more damage and have more accuracy against its targets until the end of turn.",
+            "Description": "Enemies hit by your attacks are weakened until the end of turn, which increases damage taken and decreases evasion.",
             "Max Level": "4",
             "Data": {
-                "Damage Dealt↑": ["+3%", "+4%", "+5%", "+10%"],
-                "Accuracy↑": ["+5%", "+6%", "+7%", "+10%"],
+                "Damage Taken": ["+3%", "+4%", "+5%", "+10%"],
+                "Evasion↓": ["-5%", "-6%", "-7%", "-10%"],
             }
         },
         "Falcon Slash":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "N/A",
-            "Description": "Sword/Rapier: Deal weapon-based damage to one enemy. Hits at the start of turn.",
+            "Description": "Sword/Rapier: Deal weapon-based damage to one enemy. Hits at the start of the turn.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["4", "4", "4", "7", "7", "7", "7", "15"],
@@ -4271,7 +4271,7 @@ const data = {
         "Spread Throw":{
             "Usage": "Active (Arms)",
             "Unlock": "N/A",
-            "Description": "Enter a charge state until the end of next turn, which makes Throw skills hit all enemies and increases their infliction rate.",
+            "Description": "Enter a charge state until the end of the next turn, which makes Throw skills hit all enemies and increases their infliction rate.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "7"],
@@ -4856,7 +4856,7 @@ const data = {
         "Charge Edge":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Cool Edge (Lv 2)",
-            "Description": "(Final) Drive Blade: Deal melee Cut damage to one enemy. Enter a charge state until the end of next turn, which increases all damage dealt. (Only usable right after a Starter or Combo skill)",
+            "Description": "(Final) Drive Blade: Deal melee Cut damage to one enemy. Enter a charge state until the end of the next turn, which increases all damage dealt. (Only usable right after a Starter or Combo skill)",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["20", "20", "20", "20", "20", "40"],
@@ -4953,7 +4953,7 @@ const data = {
                 "TP Cost": ["3", "3", "3", "6", "6", "6", "6", "10"],
                 "Attack Power": ["115%", "120%", "125%", "140%", "145%", "150%", "155%", "180%"],
                 "Infliction Rate": ["30%", "30%", "30%", "37%", "37%", "37%", "37%", "45%"],
-                "Follow Up Chance": ["40%", "43%", "46%", "55%", "58%", "61%", "64%", "75%"],
+                "Follow Up Chance\n(One-Two Punch)": ["40%", "43%", "46%", "55%", "58%", "61%", "64%", "75%"],
                 "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
                 "Action Speed": ["65%", "65%", "65%", "65%", "65%", "65%", "65%", "65%"],
             }
@@ -4967,7 +4967,7 @@ const data = {
                 "TP Cost": ["3", "3", "3", "6", "6", "6", "6", "10"],
                 "Attack Power": ["115%", "120%", "125%", "140%", "145%", "150%", "155%", "180%"],
                 "Infliction Rate": ["30%", "30%", "30%", "37%", "37%", "37%", "37%", "45%"],
-                "Follow Up Chance": ["40%", "43%", "46%", "55%", "58%", "61%", "64%", "75%"],
+                "Follow Up Chance\n(One-Two Punch)": ["40%", "43%", "46%", "55%", "58%", "61%", "64%", "75%"],
                 "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
                 "Action Speed": ["65%", "65%", "65%", "65%", "65%", "65%", "65%", "65%"],
             }
@@ -4988,7 +4988,7 @@ const data = {
         "One-Two Punch":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Concussion (Lv 2), Arm Breaker (Lv 2), Low Blow (Lv 2)",
-            "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to follow up with Concussion, Arm Breaker and/or Low Blow (with decreased damage and infliction rate) if the target does not have the corresponding bind. (This skill's follow up chance is only for the first successful follow up, after which the chance will depend on the level of the latest follow up skill performed)",
+            "Description": "Fist: Deal melee Bash damage to one enemy, with a chance to follow up with Concussion, Arm Breaker and/or Low Blow (with decreased damage and infliction rate) if the target does not have the corresponding bind.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["6", "6", "6", "6", "10", "10", "10", "10", "10", "16"],
@@ -5024,7 +5024,7 @@ const data = {
         "Double Punch":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "When a single-hit Fist skill fails to inflict its bind/ailment, there's a chance to perform it a second time. (Works with Cross Counter despite the in-game description. Does not work on One-Two Punch follow ups. Does not work if infliction fails because the target was already afllicted)",
+            "Description": "When a single-hit Fist skill fails to inflict its bind/ailment, there's a chance to perform it a second time. (Works with Cross Counter despite the in-game description. Does not work on One-Two Punch follow ups. Does not work if the infliction fails because the target was already afflicted)",
             "Max Level": "10",
             "Data": {
                 "Activation Chance": ["13%", "16%", "19%", "22%", "25%", "28%", "31%", "34%", "37%", "50%"],
@@ -5064,7 +5064,7 @@ const data = {
         "Fighting Spirit":{
             "Usage": "Passive",
             "Unlock": "Devil's Fist (Lv 3)",
-            "Description": "Increases all damage dealt if you lost HP on the previous turn.",
+            "Description": "Increases all damage dealt until the end of the turn if you lost HP on the previous turn.",
             "Max Level": "6",
             "Data": {
                 "Damage Dealt↑": ["+10%", "+12%", "+14%", "+16%", "+18%", "+30%"],
@@ -5082,7 +5082,7 @@ const data = {
         "Leading Blow":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Following Strike (Lv 2)",
-            "Description": "Fist: Deal melee Bash damage to one enemy, then follow up with Concussion, Arm Breaker, Low Blow and/or Corkscrew (with decreased damage) if the target is afflicted by the corresponding bind/ailment. (Corkscrew activates for any ailment)",
+            "Description": "Fist: Deal melee Bash damage to one enemy, then follow up with Concussion, Arm Breaker, Low Blow and/or Corkscrew (with decreased damage) if the target is already afflicted by the corresponding bind/ailment. (Corkscrew activates for any ailment)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["14", "14", "14", "14", "19", "19", "19", "19", "19", "25"],
@@ -5095,7 +5095,7 @@ const data = {
         "Breather":{
             "Usage": "Active (No Parts)",
             "Unlock": "N/A",
-            "Description": "Only usable if afflicted with a bind/ailment. Remove binds and ailment on yourself, then enter a charge state until the end of next turn, which increases all damage dealt.",
+            "Description": "Only usable if you're afflicted with a bind/ailment. Remove binds and ailment on yourself, then enter a charge state until the end of the next turn, which increases all damage dealt.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["3", "3", "3", "8"],
@@ -5139,7 +5139,7 @@ const data = {
         "Cross Counter":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "N/A",
-            "Description": "Fist: Prepare to counterattack when your line is first hit by a physical attack this turn. If it activates, deal melee Bash damage to the attacker, with a chance to bind the part that was used to attack. (For normal attacks, attempts to inflict Arm Bind)",
+            "Description": "Fist: Prepare to counterattack when your line is first hit by a physical attack this turn. If it activates, deal melee Bash damage to the attacker, with a chance to bind the part that was used to attack. (For normal attacks, it attempts to inflict Arm Bind)",
             "Max Level": "6",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "5", "9"],
@@ -5153,7 +5153,7 @@ const data = {
         "Thunder Fist":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Fighting Spirit (Lv 2)",
-            "Description": "Fist: Deal melee Bash+Volt damage to one enemy. If it doesn't kill, lose part of your current HP.",
+            "Description": "Fist: Deal melee Bash+Volt damage to one enemy. If it doesn't kill, spend part of your current HP.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["6", "6", "6", "10", "10", "10", "10", "14"],
@@ -5178,7 +5178,7 @@ const data = {
         "Meditation":{
             "Usage": "Active (Head)",
             "Unlock": "Clinch (Lv 3)",
-            "Description": "Enter a charge state until the end of next turn, which increases bind/ailment infliction rate.",
+            "Description": "Enter a charge state until the end of the next turn, which increases bind/ailment infliction rates.",
             "Max Level": "4",
             "Data": {
                 "TP Cost": ["5", "5", "5", "10"],
@@ -5189,7 +5189,7 @@ const data = {
         "Raging Billows":{
             "Usage": "Passive",
             "Unlock": "Meditation (Lv 2)",
-            "Description": "Increases all damage dealt to enemies with binds/ailments. Stronger the more afflictions the target has: Bonus is multiplied by 2 for 2 afflictions, by 3 for 3 afflictions, and by 5 for 4 afflictions.",
+            "Description": "Increases all damage dealt to enemies with binds/ailments. Becomes stronger the more afflictions the target has: The bonus is multiplied by 2 for 2 afflictions, by 3 for 3 afflictions, and by 5 for 4 afflictions.",
             "Max Level": "10",
             "Data": {
                 "Damage Dealt↑": ["+6%", "+7%", "+8%", "+9%", "+10%", "+11%", "+12%", "+13%", "+14%", "+20%"],
@@ -5198,7 +5198,7 @@ const data = {
         "Million Rush":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If you have two weapons equipped, normal attacks have a chance to hit 2~4 times.",
+            "Description": "Allows you to equip a sub-weapon (uses an armor slot). If you have two weapons equipped, normal attacks have a chance to hit 2~4 times, alternating between both weapons. (When one hit becomes Critical, the remaining ones will also be Critical)",
             "Max Level": "8",
             "Data": {
                 "Activation Chance": ["11%", "13%", "15%", "17%", "19%", "21%", "23%", "34%"],
@@ -5222,7 +5222,7 @@ const data = {
     "Force":{
         "Endless Armor":{
             "Usage": "Force Boost",
-            "Description": "Miasma Armor's duration does not go down and your skills do not remove it.",
+            "Description": "Prevents Miasma Armor's duration from going down, and your dispelling skills won't actually remove it.",
             "Max Level": "0",
             "Levels": ["1"],
             "Data": ""
@@ -5432,7 +5432,7 @@ const data = {
         "Spirit Absorb":{
             "Usage": "Passive (WIS)",
             "Unlock": "N/A",
-            "Description": "Recover HP each time you inflict a debuff on one or more targets. Excess healing increases your Max HP until the end of turn.",
+            "Description": "Recover HP each time you inflict a debuff on one or more targets. Excess healing increases your Max HP until the end of the turn.",
             "Max Level": "6",
             "Data": {
                 "Healing Power": ["80%", "95%", "110%", "125%", "140%", "220%"],
@@ -5578,7 +5578,7 @@ const data = {
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["7", "7", "7", "7", "7"],
-                "Resistance↑": ["+20%", "+23%", "+26%", "+29%", "+33%"],
+                "Inflictions↓": ["x0.8", "x0.77", "x0.74", "x0.71", "x0.67"],
                 "Action Speed": ["100%", "100%", "100%", "100%", "100%"],
             }
         },
@@ -6192,7 +6192,6 @@ const data = {
             "Data": {
                 "TP Cost": ["17", "17", "17", "17", "17"],
                 "Attack Power": ["360%", "380%", "400%", "420%", "440%"],
-                "Infliction Rate": ["35%", "37%", "40%", "42%", "45%"],
                 "Accuracy": ["-5%", "-5%", "-5%", "-5%", "-5%"],
                 "Action Speed": ["250%", "250%", "250%", "250%", "250%"],
             }
@@ -6246,7 +6245,7 @@ const data = {
         "Delta Block":{
             "Usage": "Active (Arms)",
             "Unlock": "Warped Mechablade",
-            "Description": "Place a buff on an ally line for 3 turns, which increases physical resistances.",
+            "Description": "Place a buff on an ally line for 3 turns, which increases Cut, Bash and Stab resistances.",
             "Max Level": "1",
             "Data": {
                 "TP Cost": ["12"],
@@ -6860,26 +6859,26 @@ const data = {
 //End of database
 
 const descriptions = {
-    "Hero":       "Brave knights of Sword and Shield. They fight as more than one person to attack and defend at once.",
-    "Protector":  "Sturdy knights sworn to defend others. They weaken enemy attacks and keep allies in good condition.",
-    "Medic":      "Healers that keep allies safe and sound. They can treat any affliction or strike the enemy's weak spots.",
-    "Survivalist":"Archers skilled in careful exploration. Their agility and sharp senses turn the tide in and out of battle.",
-    "Ronin":      "Katana users focused on strong offense. They change to different Stances to adjust their combat style.",
-    "War Magus":  "Witch doctors trained in combat and healing. They switch between treating and aggravating afflictions.",
-    "Highlander": "Warriors trained in combat with Spears. They control life force and convert it into power and blessings.",
-    "Gunner":     "Versatile marksmen with a large variety of attack types. They can attack, immobilize or heal as needed.",
-    "Sovereign":  "Royal commanders that inspire their allies. They grant and manage buffs to strengthen, protect or heal.",
-    "Ninja":      "Assassins skilled in diversion and hindrance. They can create shadow clones to boost their capabilities.",
-    "Zodiac":     "Magicians with high control of energy. They exploit and enhance the elements to overpower enemies.",
-    "Farmer":     "Specialists in exploration and resource gathering. Their battle skills can be awkward but quite effective.",
-    "Shogun":     "Warrior generals wielding dual Katanas. They coordinate the offensive by issuing buffs and commands.",
-    "Landsknecht":"Frontline warriors with solid offense and defense. They lead the charge, encouraging others to follow up.",
-    "Nightseeker":"Assassins that lurk in the shadows. They weaken enemies from a distance before closing in for the kill.",
-    "Arcanist":   "Sorcerers that cast magic circles onto the field. Their energy weakens enemies and brings life to allies.",
-    "Imperial":   "Heavy knights wielding mechanical blades. Their energy attacks are powerful but overload the weapon.",
-    "Pugilist":   "Brawlers who fight with their own Fists. They use combos of precise punches to quickly disable enemies.",
-    "Harbinger":  "Reapers who control noxious Miasma. They spread it to weaken enemies or ward off against afflictions.",
-    "Vampire":    "Night-dwellers with control over life and death. This pseudo-class alters Force and grants passive effects.",
+    "Hero":       "Knights that attack and defend as more than one person.",
+    "Protector":  "Sturdy knights that weaken and deflect enemy attacks.",
+    "Medic":      "Expert healers that can treat any injury and affliction.",
+    "Survivalist":"Archers with great agility and exploration knowledge.",
+    "Ronin":      "Bold warriors that gain strength from different stances.",
+    "War Magus":  "Witch doctors with healing magic and weakening attacks.",
+    "Highlander": "Warriors that convert life force into power and blessings.",
+    "Gunner":     "Versatile marksmen that can attack, immobilize and heal.",
+    "Sovereign":  "Royal commanders that enhance and revitalize the party.",
+    "Ninja":      "Stealthy assassins proficient in diversion and hindrance.",
+    "Zodiac":     "Elemental magicians that exploit the enemy's weakness.",
+    "Farmer":     "Gatherers that facilitate exploration and resource gain.",
+    "Shogun":     "Warrior generals that inspire and command their allies.",
+    "Landsknecht":"Warriors that strike first and encourage allies to follow.",
+    "Nightseeker":"Assassins that disable enemies then close in for the kill.",
+    "Arcanist":   "Sorcerers that cast magic circles to restrain and heal.",
+    "Imperial":   "Heavy knights wielding destructive mechanical blades.",
+    "Pugilist":   "Brawlers that use rapid punches to incapacitate enemies.",
+    "Harbinger":  "Reapers that use miasma to spread or ward off disease.",
+    "Vampire":    "Creatures of the night with control over life and death.",
 
     "Weapon Skills":"Skills borrowed from certain weapons.",
     "Battle Items":"Consumable items meant to aid you in battle.",

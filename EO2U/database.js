@@ -2023,7 +2023,7 @@ var data = {
     "Energy Ensemble":{
         "Usage": "Active (Head)",
         "Unlock": "Warrior Song (Lv 3), Shelter Song (Lv 3)",
-        "Description": "(Song) Empower allies with Song buffs for this turn, which makes them recover TP when spending TP. Healing is based on the TP spent.",
+        "Description": "(Song) Enhance allies with Song buffs for this turn, which makes them recover TP when spending TP. Healing is based on the TP spent.",
         "Max Level": "10",
         "Natural Level": "5",
         "Data": {
@@ -2060,7 +2060,7 @@ var data = {
     "Skanda Ensemble":{
         "Usage": "Active (Head)",
         "Unlock": "Lightfoot Melody (Lv 3), Insight Melody (Lv 3)",
-        "Description": "(Song) Empower allies with Song buffs for this turn, which increases their action speed.",
+        "Description": "(Song) Enhance allies with Song buffs for this turn, which increases their action speed.",
         "Max Level": "10",
         "Natural Level": "5",
         "Data": {
@@ -2165,7 +2165,7 @@ var data = {
     "Life Ensemble":{
         "Usage": "Active (Head, TEC+VIT)",
         "Unlock": "Barbaric March (Lv 3)",
-        "Description": "(Song) Empower allies with Song buffs for this turn, which makes them recover HP upon taking damage (once per ally).",
+        "Description": "(Song) Enhance allies with Song buffs for this turn, which makes them recover HP upon taking damage (once per ally).",
         "Max Level": "10",
         "Natural Level": "5",
         "Data": {
@@ -2523,7 +2523,7 @@ var data = {
     "Peerless Stance":{
         "Usage": "Active (No Parts)",
         "Unlock": "Swallow Strike (Lv 1), Moon Shadow (Lv 1), Ground Strike (Lv 1)",
-        "Description": "Katana, any Stance: Enter a special Stance that improves offense, defense and agility, and enables all other skills that require a Stance. The bonuses of the other Stances are added to this one's but at half effectiveness. (Cannot recast to extend duration)",
+        "Description": "Katana, any Stance: Enter a special Stance that improves offense, defense and agility, and enables all other skills that require a Stance. The bonuses of the other Stances are added to this one's but at half effectiveness. (Cannot recast it to extend its duration)",
         "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
@@ -2702,6 +2702,7 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 3)",
         "Description": "(Curse) Attempt to inflict Blind on an enemy line.",
+        "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2763,6 +2764,7 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 5)",
         "Description": "(Curse) Attempt to inflict Head Bind on one enemy.",
+        "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2799,6 +2801,7 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 10)",
         "Description": "(Curse) Attempt to inflict Fear on an enemy line.",
+        "Starter": "1",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -2881,7 +2884,7 @@ var data = {
     "Life Trade":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "HP Up (Lv 10)",
-        "Description": "Deal ranged Almighty damage to all enemies. Restore HP to the party equal to 25% of damage dealt. Stronger the less HP the party has:<br>-The average of the party's flat missing HP grants a damage multiplier of <b>1 + FlatHP/2000</b>.<br>-The average of the party's fraction of missing HP grants a damage multiplier of <b>FracHP*(1+FracHP)/2 + 0.01</b>.",
+        "Description": "Deal ranged Almighty damage to all enemies. Restore HP to the party equal to 25% of damage dealt. Becomes stronger the less HP the party has:<br>-From the average of the party's flat missing HP, it applies a damage multiplier of <b>[1 + MissingHP/2000]</b>.<br>-From the average of the party's percentage of missing HP, it applies a damage multiplier of <b>[MissingHP%*(1+MissingHP%)/2 + 0.01</b>].",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3762,7 +3765,7 @@ var data = {
     "Wolf Fang":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Tiger Blow (Lv 5)",
-        "Description": "Claw: Deal 3 hits of melee Cut damage to one enemy. Stronger the more remaining HP you have:<br>-Your flat current HP grants a damage multiplier of <b>1 + FlatHP/5000</b>.<br>-Your fraction of current HP grants a damage multiplier of <b>FracHP*(1+FracHP)/2 + 0.01</b>.",
+        "Description": "Claw: Deal 3 hits of melee Cut damage to one enemy. Becomes stronger the more HP you have:<br>-From your flat current HP, it applies a damage multiplier of <b>[1 + CurrentHP/5000]</b>.<br>-From your percentage of current HP, it applies a damage multiplier of <b>[CurrentHP%*(1+CurrentHP%)/2 + 0.01]</b>.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -3788,7 +3791,7 @@ var data = {
     "Wildblow":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Comet Drop (Lv 5)",
-        "Description": "Claw: Deal melee Bash damage to one enemy. Stronger the more missing HP you have:<br>-Your flat missing HP grants a damage multiplier of <b>1 + FlatHP/5000</b>.<br>-Your fraction of missing HP grants a damage multiplier of <b>FracHP*(1+FracHP)/2 + 0.01</b>.",
+        "Description": "Claw: Deal melee Bash damage to one enemy. Becomes stronger the more missing HP you have:<br>-From your flat missing HP, it applies a damage multiplier of <b>[1 + MissingHP/5000]</b>.<br>-From your percentage of missing HP, it applies a damage multiplier of <b>[MissingHP%*(1+MissingHP%)/2 + 0.01]</b>.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -4845,7 +4848,7 @@ var data = {
     "Bloody Offense":{
         "Usage": "Active (Head)",
         "Unlock": "Phys ATK Up (Lv 3)",
-        "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but makes the holder spend 10% of current HP upon acting.",
+        "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but spends 10% of the holder's current HP upon acting.",
         "Max Level": "20",
         "Natural Level": "10",
         "Data": {
@@ -5489,16 +5492,16 @@ var data = {
 var descriptions = {
     "Landsknecht":  "Frontline warriors boasting high strength and durability.",
     "Survivalist":  "Archers with great agility and exploration knowledge.",
-    "Protector":    "Sturdy knights that defend and safeguard their allies.",
+    "Protector":    "Sturdy knights that draw in and block enemy attacks.",
     "Dark Hunter":  "Ruthless fighters that immobilize then finish off enemies.",
-    "Medic":        "Healers that keep the party safe and in good condition.",
+    "Medic":        "Expert healers that can treat any injury and affliction.",
     "Alchemist":    "Elemental casters that exploit the enemy's weakness.",
     "Troubadour":   "Musicians that grant various enhancements to the party.",
     "Ronin":        "Bold warriors that gain strength from different stances.",
     "Hexer":        "Sorcerers that can weaken, disable and control enemies.",
     "Gunner":       "Versatile marksmen that can attack, immobilize and heal.",
     "War Magus":    "Witch doctors with healing magic and weakening attacks.",
-    "Beast":        "Animal companions that shelter allies and maul enemies.",
+    "Beast":        "Animal companions that fight while defending the party.",
     "Sovereign":    "Royal commanders that enhance and revitalize the party.",
     "Highlander":   "Warriors that convert life force into power and blessings.",
     "Fafnir":       "A swordsman that enters a monstrous form to gain power.",
@@ -5539,6 +5542,7 @@ function add_skill_entry(current_class, skill_name){
     var skill = current_class[skill_name]
     var entry = document.createElement("table")
     entry.classList.add("skill_entry")
+    entry.style.width = "1000px"
     
     //Separator for more visual clarity
     if (skill.hasOwnProperty("Starter")){

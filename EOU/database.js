@@ -246,7 +246,7 @@ var data = {
     "Triple Charge":{
         "Usage": "Active (Arms)",
         "Unlock": "HP Up (Lv 2), TP Up (Lv 2)",
-        "Description": "Enter a charge state until the end of next turn, which increases damage dealt, accuracy and ailment infliction rates.",
+        "Description": "Enter a charge state until the end of the next turn, which increases all damage dealt, accuracy and ailment infliction rates.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -940,7 +940,7 @@ var data = {
     "Ecstasy":{
         "Usage": "Active (Arms, STR)",
         "Unlock": "Gag (Lv 7), Shackles (Lv 7), Cuffs (Lv 7)",
-        "Description": "Whip: Deal melee Cut damage to one enemy. Stronger for each bind on the target: Damage dealt is multiplied by 2 for 1 bind, by 3.15 for 2 binds, and by 5.6225 for all 3 binds. (<b>Bug</b>: The 0-bind version is receiving a damage multiplier that grows with the skill's level)",
+        "Description": "Whip: Deal melee Cut damage to one enemy. Becomes stronger for each bind on the target: Damage dealt is multiplied by 2 for 1 bind, by 3.15 for 2 binds, and by 5.6225 for all 3 binds. (<b>Bug</b>: The 0-bind version is receiving a damage multiplier that grows with the skill's level)",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -969,7 +969,7 @@ var data = {
     "Climax":{
         "Usage": "Active (Arms)",
         "Unlock": "Whip Mastery (Lv 10), Viper (Lv 3)",
-        "Description": "Whip: Attempt to instantly kill one enemy. Only works on non-boss enemies at 40% HP or less. If successful, heal by a percentage of the target's remaining HP. (Does not count as Instant Death, but it is affected by Instant Death resistance)",
+        "Description": "Whip: Attempt to instantly kill one enemy. Only works on non-boss enemies at 40% HP or less. If successful, heal by a percentage of the target's remaining HP. (Does not count as inflicting Instant Death, but it is affected by Instant Death resistance)",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -1100,7 +1100,7 @@ var data = {
     "Wrath's Might":{
         "Usage": "Passive",
         "Unlock": "ATK Up (Lv 5)",
-        "Description": "Increases physical/elemental damage dealt if your HP is below a certain threshold. (Stacks with its own Grimoire)",
+        "Description": "Increases all damage dealt if your HP is below a certain threshold. (Stacks with its own Grimoire)",
         "Max Level": "10",
         "Natural Level": "10",
         "Data": {
@@ -2000,7 +2000,7 @@ var data = {
         "Natural Level": "10",
         "Data": {
             "TP Cost": ["20", "17", "13", "10", "30", "25", "21", "18", "15", "30", "30", "30", "30", "30", "30"],
-            "Duration↑": ["+1", "+1", "+1", "+1", "+2", "+2", "+2", "+2", "+2", "+3", "+3", "+3", "+3", "+3", "+3"],
+            "Duration↑": ["+1", "+1", "+1", "+1", "+2", "+2", "+2", "+2", "+3", "+3", "+3", "+3", "+3", "+3", "+3"],
             "Action Speed": ["60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%", "60%"],
         }
     },
@@ -2186,7 +2186,7 @@ var data = {
     "Razor Dodge":{
         "Usage": "Active (Legs)",
         "Unlock": "Clear Stance (Lv 1)",
-        "Description": "Katana, Clear Stance: Chance to evade hits received (rolled before the standard accuracy check). Activation chance starts at 100% and goes down with each activation.",
+        "Description": "Katana, Clear Stance: Gain a chance to evade hits received (rolled before the standard accuracy check) until the end of the turn. Activation chance starts at 100% and goes down with each activation.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2281,7 +2281,7 @@ var data = {
     "Peerless Stance":{
         "Usage": "Active (Arms)",
         "Unlock": "Katana Mastery (Lv 10)",
-        "Description": "Katana: Only usable if you have another Stance buff. Gain the Peerless Stance buff for 3 turns, which improves offense, defense and agility and enables all other skills that require a Stance. (Overrides other Stances)",
+        "Description": "Katana: Only usable if you have another Stance buff. Gain the Peerless Stance buff for 3 turns, which improves offense, defense and agility and enables all other skills that require a Stance. Becomes stronger based on the level of the other Stance skills. (Overrides other Stances. Cannot recast it to extend its duration)",
         "Starter": "1",
         "Max Level": "15",
         "Natural Level": "10",
@@ -2453,7 +2453,7 @@ var data = {
     "Revenge Curse":{
         "Usage": "Active (Head, TEC)",
         "Unlock": "Leaden Curse (Lv 5), Deceit Curse (Lv 5)",
-        "Description": "Deal ranged Almighty damage to one enemy. Deals more damage the more missing HP you have:<br>-Your missing HP grants a damage multiplier of [1 + MissingHP/500].<br>-Your missing HP% grants a damage multiplier of [MissingHP%*(1+MissingHP%)/2 + 0.01].",
+        "Description": "Deal ranged Almighty damage to one enemy. Becomes stronger the more missing HP you have:<br>-From your flat missing HP, it applies a damage multiplier of <b>[1 + MissingHP/500]</b>.<br>-From your percentage of missing HP, it applies a damage multiplier of <b>[MissingHP%*(1+MissingHP%)/2 + 0.01]</b>.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2467,6 +2467,7 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 3)",
         "Description": "(Curse) Attempt to inflict Blind on an enemy line.",
+        "Starter": "1",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2540,6 +2541,7 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 5)",
         "Description": "(Curse) Attempt to inflict Head Bind on one enemy.",
+        "Starter": "1",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2576,6 +2578,7 @@ var data = {
         "Usage": "Active (Head, LUC)",
         "Unlock": "Curse Mastery (Lv 10)",
         "Description": "(Curse) Attempt to inflict Fear on an enemy line.",
+        "Starter": "1",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2834,7 +2837,7 @@ var data = {
     "Bloody Offense":{
         "Usage": "Active (Head)",
         "Unlock": "ATK Up (Lv 3)",
-        "Description": "Place a buff on an ally line for several turns, which increases physical/elemental damage dealt but makes the holder lose 10% of current HP upon acting.",
+        "Description": "Place a buff on an ally line for several turns, which increases all damage dealt but spends 10% of the holder's current HP upon acting.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2940,7 +2943,7 @@ var data = {
     "Limitless":{
         "Usage": "Active (Arms)",
         "Unlock": "HP Up (Lv 1)",
-        "Description": "Enter a charge state until the end of next turn, which increases damage dealt and lets you ignore equipment requirements on skills.",
+        "Description": "Enter a charge state until the end of the next turn, which increases all damage dealt and lets you ignore equipment requirements on skills.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -2952,7 +2955,7 @@ var data = {
     "Black Sabbath":{
         "Usage": "Active (Head)",
         "Unlock": "HP Up (Lv 10)",
-        "Description": "Deal typeless damage to all enemies. Restore HP to the party equal to the damage dealt split amongst party members. Damage dealt cannot exceed the party's total missing HP. Removes binds/ailments on enemies and inflicts them onto the party.",
+        "Description": "Deal typeless damage to all enemies. Restore HP to the party equal to the damage dealt, but split amongst party members. Damage dealt cannot exceed the party's total missing HP. Removes binds/ailments on enemies and inflicts them onto the party.",
         "Max Level": "15",
         "Natural Level": "10",
         "Data": {
@@ -3572,9 +3575,9 @@ var data = {
 var descriptions = {
     "Landsknecht":  "Frontline warriors boasting high strength and durability.",
     "Survivalist":  "Archers with great agility and exploration knowledge.",
-    "Protector":    "Sturdy knights that defend and safeguard their allies.",
+    "Protector":    "Sturdy knights that draw in and block enemy attacks.",
     "Dark Hunter":  "Ruthless fighters that immobilize then finish off enemies.",
-    "Medic":        "Healers that keep the party safe and in good condition.",
+    "Medic":        "Expert healers that can treat any injury and affliction.",
     "Alchemist":    "Elemental magicians that exploit the enemy's weakness.",
     "Troubadour":   "Musicians that grant various enhancements to the party.",
     "Ronin":        "Bold warriors that gain strength from different stances.",
@@ -3618,6 +3621,7 @@ function add_skill_entry(current_class, skill_name){
     var skill = current_class[skill_name]
     var entry = document.createElement("table")
     entry.classList.add("skill_entry")
+    entry.style.width = "1000px"
     
     //Separator for more visual clarity
     if (skill.hasOwnProperty("Starter")){

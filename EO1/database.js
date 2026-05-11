@@ -1241,7 +1241,7 @@ var data = {
         "Starter": "1",
         "Max Level": "10",
         "Data": {
-            "TEC Bonus↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+            "Spell ATK↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
         }
     },
     "Fire":{
@@ -1293,7 +1293,7 @@ var data = {
         "Starter": "1",
         "Max Level": "10",
         "Data": {
-            "TEC Bonus↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+            "Spell ATK↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
         }
     },
     "Ice":{
@@ -1345,7 +1345,7 @@ var data = {
         "Starter": "1",
         "Max Level": "10",
         "Data": {
-            "TEC Bonus↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
+            "Spell ATK↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"]
         }
     },
     "Volt":{
@@ -2297,7 +2297,7 @@ var data = {
             "Description": "Places a buff on one ally for 4 turns, which increases physical damage resistances.",
             "Max Level": "2",
             "Data": {
-                "Damage Taken↓": ["x0.8", "x0.74"],
+                "Vulnerability↓": ["x0.8", "x0.74"],
             }
         },
         "Axcela / Axcela II / Axcela III":{
@@ -2327,7 +2327,7 @@ var data = {
             "Description": "Places a buff on the whole party for 4 turns, which increases physical/elemental damage resistances.",
             "Max Level": "1",
             "Data": {
-                "Damage Taken↓": ["x0.75"],
+                "Vulnerability↓": ["x0.75"],
             }
         },
     }

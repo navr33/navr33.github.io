@@ -776,7 +776,7 @@ var data = {
     "Class Proficiency":{
         "Proficiency / Expertise / Enlightment":{
             "Usage": "Passive (Unique)",
-            "Description": "Allows Bow skills to perform Critical Hits, and increases the Critical damage bonus.",
+            "Description": "Allows Bow skills to perform Critical Hits, and increases the Critical damage bonus. (On multi-hit or multi-target attacks, when one of the hits becomes Critical, the remaining ones will also be Critical)",
             "Max Level": "3",
             "Data": {
                 "Crit Bonus↑": ["+20%", "+35%", "+50%"],
@@ -921,7 +921,7 @@ var data = {
         "Squall Volley":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Flank Shot (Lv 2)",
-            "Description": "Bow: Deal multiple hits of ranged Stab damage to random enemies. Highly innacurate. (Once one hit becomes Critical, all remaining hits will also be Critical)",
+            "Description": "Bow: Deal multiple hits of ranged Stab damage to random enemies. Highly innacurate.",
             "Max Level": "8",
             "Data": {
                 "TP Cost": ["14", "14", "14", "17", "17", "17", "17", "22"],
@@ -2880,16 +2880,16 @@ var data = {
 //End of database
 
 var descriptions = {
-    "Landsknecht":  "Frontline warriors that encourage allies to follow them.",
-    "Nightseeker":  "Assassins that weaken enemies then close in for the kill.",
+    "Landsknecht":  "Warriors that strike first and encourage allies to follow.",
+    "Nightseeker":  "Assassins that disable enemies then close in for the kill.",
     "Fortress":     "Sturdy knights that weaken and intercept enemy attacks.",
-    "Sniper":       "Archers that aim at weak spots to hurt and incapacitate.",
-    "Medic":        "Healers that can effectively treat any injury or affliction.",
-    "Runemaster":   "Spellcasters with control over the power of the elements.",
+    "Sniper":       "Archers that immobilize enemies and hit critical spots.",
+    "Medic":        "Expert healers that can treat any injury and affliction.",
+    "Runemaster":   "Elemental magicians that exploit the enemy's weakness.",
     "Dancer":       "Performers who inspire allies while fighting along them.",
-    "Arcanist":     "Sorcerers who summon magic circles to restrain enemies.",
+    "Arcanist":     "Sorcerers that cast magic circles to restrain and heal.",
     "Bushi":        "Fierce warriors that enter a bloody rage to gain power.",
-    "Imperial":     "Heavy knights that wield destructive mechanical blades.",
+    "Imperial":     "Heavy knights wielding destructive mechanical blades.",
 
     "Burst Skills":"Powerful skills available through the Burst system.",
     "Battle Items":"Consumable items meant to aid you in battle.",

@@ -1,7 +1,7 @@
 .sidebar {
     background-color: white;
     height: 100%;
-    width: 250px;
+    width: 200px;
     padding: 0px;
     position: fixed;
     left: 0px;
@@ -11,8 +11,9 @@
 
 .skill_list {
     position: fixed;
-
+    height: 100%;
     left: 200px;
+    right: 0px;
     top: 0px;
     padding: 0px;
     overflow: auto;
@@ -33,6 +34,10 @@
 }
 
 .page_link:hover {
+    background-color: #a6a6a6;
+}
+
+.page_link:focus {
     background-color: #a6a6a6;
 }
 
@@ -96,3 +101,31 @@ h3 {
     text-decoration-line: underline;
 }
 
+.spoiler{
+    color: black;
+    background-color: black;
+}
+
+.spoiler:hover{
+    background-color: transparent;
+}
+
+.stat {
+    border: none;
+    padding: 1px;
+    text-align: center;
+}
+
+.stat-background {
+  border: 1px #c4c4c4 solid;
+  width: 100px;
+  height: 10px;
+  background-color: #c4c4c4;
+  float: left;
+  clear: both;
+}
+
+.stat-bar {
+   height: 100%;
+   float: left;
+}

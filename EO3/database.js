@@ -1429,7 +1429,7 @@ var data = {
     "Dark Ether":{
         "Usage": "Active (Head)",
         "Unlock": "N/A",
-        "Description": "Empower an ally row for this turn, which makes their skills not spend TP.",
+        "Description": "Enhance an ally row for this turn, which makes their skills not spend TP.",
         "Starter": "1",
         "Max Level": "5",
         "Data": {
@@ -2577,7 +2577,7 @@ var data = {
     "Virus Scanner":{
         "Usage": "Passive",
         "Unlock": "N/A",
-        "Description": "Increases resistance to all ailments.",
+        "Description": "Increases resistance to all ailments, Stun, and Instant Death.",
         "Starter": "1",
         "Max Level": "10",
         "Data": {
@@ -2978,16 +2978,16 @@ var data = {
 var descriptions = {
     "Sovereign":    "Royal commanders that enhance and revitalize the party.",
     "Gladiator":    "Aggressive warriors focused on strong physical offense.",
-    "Hoplite":      "Sturdy knights that weaken and deflect enemy attacks.",
+    "Hoplite":      "Sturdy knights that draw in and block enemy attacks.",
     "Buccaneer":    "Agile fighters that strike rapidly in tandem with allies.",
     "Ninja":        "Stealthy assassins proficient in diversion and hindrance.",
     "Monk":         "Martial artists trained in healing and combat techniques.",
     "Zodiac":       "Elemental magicians that exploit the enemy's weakness.",
-    "Wildling":     "Summoners that call beasts to attack and incapacitate.",
+    "Wildling":     "Tamers that call beasts to attack and disable enemies.",
     "Arbalist":     "Crossbowmen that deal heavy damage from any distance.",
-    "Farmer":       "Specialists in improving exploration and resource gain.",
-    "Shogun":       "Warrior generals that command and fight along the party.",
-    "Yggdroid":     "Strong and resilient robots made to support the offensive.",
+    "Farmer":       "Gatherers that facilitate exploration and resource gain.",
+    "Shogun":       "Warrior generals that inspire and command their allies.",
+    "Yggdroid":     "Mechanical soldiers made to steadily assist the offensive.",
 
     "Common Skills":"Skills available to all classes.",
     "Limit Skills":"Powerful skills available through the Limit system.",

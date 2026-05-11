@@ -720,7 +720,7 @@ var data = {
                 "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
                 "Attack Power": ["150%", "159%", "168%", "177%", "177%", "189%", "201%", "213%", "225%", "225%"],
                 "Infliction Rate": ["30%", "30%", "30%", "30%", "40%", "40%", "40%", "40%", "40%", "50%"],
-                "Follow Up Chance": ["34%", "34%", "34%", "34%", "50%", "50%", "50%", "50%", "50%", "66%"],
+                "Follow Up Chance\n(One-Two Punch)": ["34%", "34%", "34%", "34%", "50%", "50%", "50%", "50%", "50%", "66%"],
                 "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
                 "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
             }
@@ -734,7 +734,7 @@ var data = {
                 "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
                 "Attack Power": ["150%", "159%", "168%", "177%", "177%", "189%", "201%", "213%", "225%", "225%"],
                 "Infliction Rate": ["30%", "30%", "30%", "30%", "40%", "40%", "40%", "40%", "40%", "50%"],
-                "Follow Up Chance": ["34%", "34%", "34%", "34%", "50%", "50%", "50%", "50%", "50%", "66%"],
+                "Follow Up Chance\n(One-Two Punch)": ["34%", "34%", "34%", "34%", "50%", "50%", "50%", "50%", "50%", "66%"],
                 "Accuracy": ["+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%", "+5%"],
                 "Action Speed": ["90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%", "90%"],
             }
@@ -755,7 +755,7 @@ var data = {
         "One-Two Punch":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Concussion (Lv 3), Arm Crusher (Lv 3), Low Blow (Lv 3)",
-            "Description": "Cestus: Deal melee Bash damage to one enemy, with a chance to follow up with Concussion, Arm Crusher and/or Low Blow (with decreased damage) if the target does not have the corresponding bind. (This skill's follow up chance is only for the first successful follow up, after which the chance will depend on the level of the latest follow up skill performed)",
+            "Description": "Cestus: Deal melee Bash damage to one enemy, with a chance to follow up with Concussion, Arm Crusher and/or Low Blow (with decreased damage) if the target does not have the corresponding bind.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "5", "5", "5", "9", "9", "9", "9", "9", "13"],
@@ -1003,7 +1003,7 @@ var data = {
         "Death's Edge":{
             "Usage": "Active (Arms, STR)",
             "Unlock": "Overexertion (Lv 3)",
-            "Description": "Cestus: Deal melee Bash damage to one enemy. Becomes stronger the less HP the party has:<br>-The average of the party's flat missing HP grants a damage multiplier of <b>1 + FlatHP/100</b>.<br>-The average of the party's fraction of missing HP grants a damage multiplier of <b>FracHP*(1+FracHP)/2 + 0.01</b>.",
+            "Description": "Cestus: Deal melee Bash damage to one enemy. Becomes stronger the more missing HP the party has:<br>-From the average of the party's flat missing HP, it applies a damage multiplier of <b>[1 + MissingHP/100]</b>.<br>-From the average of the party's percentage of missing HP, it applies a damage multiplier of <b>[MissingHP%*(1+MissingHP%)/2 + 0.01]</b>.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["4", "4", "4", "4", "8", "8", "8", "8", "8", "14"],
@@ -1903,7 +1903,7 @@ var data = {
         "Wraith Dance":{
             "Usage": "Active (Head)",
             "Unlock": "Grave (Lv 5)",
-            "Description": "Empower all Wraiths for this turn, which makes their attacks deal 3 hits with modified damage. (Also gives Wraiths a 100% chance to use a normal attack)",
+            "Description": "Enhance all Wraiths for this turn, which makes their attacks deal 3 hits with modified damage. (Also gives Wraiths a 100% chance to use a normal attack)",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["13", "13", "13", "13", "19", "19", "19", "19", "19", "24"],
@@ -2668,7 +2668,7 @@ var data = {
         "Sword God":{
             "Usage": "Passive",
             "Unlock": "N/A",
-            "Description": "Increases Critical Hit chance and damage. Allows Katana skills to perform Critical Hits.",
+            "Description": "Increases Critical Hit chance and damage. Allows Katana skills to perform Critical Hits. (On multi-hit or multi-target attacks, when one of the hits becomes Critical, the remaining ones will also be Critical)",
             "Max Level": "10",
             "Data": {
                 "Crit Rate↑": ["+10%", "+11%", "+12%", "+13%", "+19%", "+20%", "+21%", "+22%", "+23%", "+30%"],
@@ -2759,7 +2759,7 @@ var data = {
         "Triple Strike":{
             "Usage": "Active (Arms, STR, LUC)",
             "Unlock": "Spirit Sword (Lv 5)",
-            "Description": "Katana: Deal multiple hits of melee Cut damage to one enemy, with a chance to inflict Head Bind, Arm Bind and Leg Bind. Hits up to 3 times, but stops prematurely if it inflicts a bind.",
+            "Description": "Katana: Deal melee Cut damage to one enemy, with a chance to inflict Head Bind, Arm Bind and Leg Bind. Hits up to 3 times, but stops prematurely if it inflicts a bind.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["12", "12", "12", "12", "16", "16", "16", "16", "16", "24"],
@@ -3062,7 +3062,7 @@ var data = {
         "Sanctuary":{
             "Usage": "Active (Head)",
             "Unlock": "Exorcism Prayer (Lv 5), Haste Prayer (Lv 5), Vitality Prayer (Lv 5)",
-            "Description": "Empower allies with buffs for this turn, which gives them a chance to nullify bind/ailment inflictions received in exchange for losing a buff.",
+            "Description": "Enhance allies with buffs for this turn, which gives them a chance to nullify bind/ailment inflictions received in exchange for losing a buff.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "5", "5", "5", "5", "5", "8"],
@@ -3082,7 +3082,7 @@ var data = {
         "Split Spirits":{
             "Usage": "Active (Head)",
             "Unlock": "Dance Oracle (Lv 3)",
-            "Description": "Empower allies with buffs for this turn, which makes them recover HP based on their damage dealt.",
+            "Description": "Enhance allies with buffs for this turn, which makes them recover HP based on their damage dealt.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["3", "3", "3", "3", "6", "6", "6", "6", "6", "10"],
@@ -5113,22 +5113,22 @@ var descriptions = {
     "Dragoon":  ["Sturdy knights skilled in both protection and artillery.",
                     "<b>Shield Bearer</b>: Specializes in blocking and diverting attacks.",
                     "<b>Cannon Bearer</b>: Assists the offensive while maintaining defense."],
-    "Pugilist": ["Brawlers who take down enemies with their own fists.",
+    "Pugilist": ["Brawlers that take down enemies using their own fists.",
                     "<b>Barrage Brawler</b>: Performs combos of punches that can disable the enemy.",
                     "<b>Impact Brawler</b>: Throws destructive punches by risking their own health."],
-    "Harbinger":["Reapers who use noxious Miasma to weaken the enemy.",
+    "Harbinger":["Reapers that use noxious Miasma to weaken enemies.",
                     "<b>Deathbringer</b>: Inflicts ailments and cuts down afflicted enemies.",
                     "<b>Deathguard</b>: Inflicts debuffs and wards off against afflictions."],
     "Warlock":  ["Spellcasters that can control and enhance the elements.",
                     "<b>Omnimancer</b>: Hits any weakness with elemental and physical magic.",
                     "<b>Elemancer</b>: Bursts down enemies with powerful elemental magic."],
-    "Necromancer":["Summoners who call forth Wraiths to assist the party.",
+    "Necromancer":["Summoners that call forth Wraiths to assist the party.",
                     "<b>Spirit Evoker</b>: Controls Wraiths to provide offense, defense and ailments.",
                     "<b>Spirit Broker</b>: Constantly attacks while summoning or sacrificing Wraiths."],
     "Rover":    ["Archers who hunt enemies alongside animal companions.",
                     "<b>Flying Falcon</b>: Hunts with a Hawk that attacks multiple enemies.",
                     "<b>Hunting Hound</b>: Hunts with a Hound that protects and heals allies."],
-    "Masurao":  ["Frontline warriors focused in strong physical offense.",
+    "Masurao":  ["Frontline warriors trained in various Katana techniques.",
                     "<b>Blade Dancer</b>: Wields 4 Katanas at once for overwhelming offense.",
                     "<b>Blade Master</b>: Versatile duelists that combine power and utility."],
     "Shaman":   ["Support casters who manage buffs to assist their allies.",
