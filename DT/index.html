@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Dungeon Travelers - Skill Data</title>
+    <link href="style.css" rel="stylesheet">
+    </head>
+    <body style="background-color:powderblue; ">
+        <div id="sidebar" class="sidebar">
+            <h2 style="text-align:center;">Skills</h2>
+            <hr>
+            <button style="margin-bottom: 15px;" class="page_link fighter" onclick="populate_list('Fighter')">Fighter</button>
+            
+            <button class="page_link fighter" onclick="populate_list('Paladin')">Paladin</button>
+            <button style="margin-bottom: 15px;" class="page_link fighter" onclick="populate_list('Dark Knight')">Dark Knight</button>
+            
+            <button class="page_link fighter" onclick="populate_list('Valkyrie')">Valkyrie</button>
+            <button class="page_link fighter" onclick="populate_list('Samurai')">Samurai</button>
+            <button class="page_link fighter" onclick="populate_list('Dark Lord')">Dark Lord</button>
+            <hr>
+            <button style="margin-bottom: 15px;" class="page_link magic_user" onclick="populate_list('Magic User')">Magic User</button>
+            
+            <button class="page_link magic_user" onclick="populate_list('Sorceress')">Sorceress</button>
+            <button class="page_link magic_user" onclick="populate_list('Enchantress')">Enchantress</button>
+            <button style="margin-bottom: 15px;" class="page_link magic_user" onclick="populate_list('Priestess')">Priestess</button>
+
+            <button class="page_link magic_user" onclick="populate_list('Witch')">Witch</button>
+            <button class="page_link magic_user" onclick="populate_list('Magical Princess')">Magical Princess</button>
+            <button class="page_link magic_user" onclick="populate_list('Sage')">Sage</button>
+            <button class="page_link magic_user" onclick="populate_list('Bishop')">Bishop</button>
+            <hr>
+            <button style="margin-bottom: 15px;" class="page_link scout" onclick="populate_list('Scout')">Scout</button>
+
+            <button class="page_link scout" onclick="populate_list('Archer')">Archer</button>
+            <button style="margin-bottom: 15px;" class="page_link scout" onclick="populate_list('Assassin')">Assassin</button>
+
+            <button class="page_link scout" onclick="populate_list('Sniper')">Sniper</button>
+            <button class="page_link scout" onclick="populate_list('Treasure Hunter')">Treasure Hunter</button>
+            <button class="page_link scout" onclick="populate_list('Kunoichi')">Kunoichi</button>
+            <hr>
+            <button style="margin-bottom: 15px;" class="page_link maid" onclick="populate_list('Maid')">Maid</button>
+
+            <button class="page_link maid" onclick="populate_list('Bard')">Bard</button>
+            <button style="margin-bottom: 15px;" class="page_link maid" onclick="populate_list('Dancer')">Dancer</button>
+
+            <button class="page_link maid" onclick="populate_list('Songstress')">Songstress</button>
+            <button class="page_link maid" onclick="populate_list('Joshikosayer')">Joshikosayer</button>
+            <button class="page_link maid" onclick="populate_list('Mainstream Idol')">Mainstream Idol</button>
+            <hr>
+        </div>
+        <div id="skill_list" class="skill_list">
+        </div>
+    <script src="database.js"></script>
+    </body>
+</html>
