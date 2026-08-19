@@ -1,7 +1,7 @@
 const data = {
     "Fighter": {
         "Provoke":{
-            "Usage": "Technique",
+            "Usage": "Technique (Debuff)",
             "Description": "Place a debuff on one enemy, which increases its aggro towards you.",
             "Max Level": "5",
             "Data": {
@@ -10,7 +10,7 @@ const data = {
             }
         },
         "War Cry":{
-            "Usage": "Technique (Field OK)",
+            "Usage": "Technique (Buff, Field OK)",
             "Description": "Place a buff on the whole party, which increases ATK.",
             "Max Level": "5",
             "Data": {
@@ -20,8 +20,9 @@ const data = {
             }
         },
         "Raging Smash":{
-            "Usage": "Technique (ATK)",
-            "Description": "Short-Range Weapon: Deal damage to one enemy.",
+            "Usage": "Technique (Weapon)",
+            "Starter": "1",
+            "Description": "Short-Range: Deal damage to one enemy.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "8", "11", "14", "17", "20", "23", "26", "29", "32"],
@@ -29,6 +30,7 @@ const data = {
         },
         "Sword Mastery":{
             "Usage": "Passive",
+            "Starter": "1",
             "Description": "Increases Attack Power when a Sword is equipped.",
             "Max Level": "10",
             "Data": ""
@@ -60,7 +62,7 @@ const data = {
     },
     "Paladin": {
         "Defender":{
-            "Usage": "Technique",
+            "Usage": "Technique (Buff)",
             "Description": "Place a buff on yourself, which increases Defense Power but lowers Attack Power.",
             "Max Level": "5",
             "Data": {
@@ -69,7 +71,7 @@ const data = {
             }
         },
         "Cover":{
-            "Usage": "Technique (Field OK)",
+            "Usage": "Technique (Buff, Field OK)",
             "Description": "Place a buff on yourself, which redirects single-target attacks to you. This buff has a chance to disappear each time you're hit.",
             "Max Level": "5",
             "Data": {
@@ -78,8 +80,8 @@ const data = {
             }
         },
         "Parry":{
-            "Usage": "Technique (Field OK)",
-            "Description": "Short-Range Weapon: Place a buff on yourself, which nullifies physical attacks received. This buff has a high chance to disappear each time you're hit.",
+            "Usage": "Technique (Buff, Field OK)",
+            "Description": "Short-Range: Place a buff on yourself, which nullifies physical attacks received. This buff has a high chance to disappear each time you're hit.",
             "Max Level": "5",
             "Data": {
                 "TP Cost": ["8", "10", "12", "14", "16"],
@@ -87,7 +89,8 @@ const data = {
             }
         },
         "Shield Bash":{
-            "Usage": "Technique (ATK)",
+            "Usage": "Technique (Weapon)",
+            "Starter": "1",
             "Description": "Shield: Deal damage to one enemy, with a chance to inflict Stun.",
             "Max Level": "5",
             "Data": {
@@ -95,7 +98,7 @@ const data = {
             }
         },
         "Heal":{
-            "Usage": "Spell (RES, Field OK)",
+            "Usage": "Spell (Heal, Field OK)",
             "Description": "Restore HP to one ally.",
             "Max Level": "10",
             "Data": {
@@ -105,6 +108,7 @@ const data = {
         },
         "Mini Auto-Recovery":{
             "Usage": "Passive",
+            "Starter": "1",
             "Description": "Recover HP at the start of each turn.",
             "Max Level": "5",
             "Data": {
@@ -120,7 +124,7 @@ const data = {
     },
     "Dark Knight": {
         "Berserker":{
-            "Usage": "Technique",
+            "Usage": "Technique (Buff)",
             "Description": "Place a buff on yourself, which increases Attack Power but lowers Defense Power.",
             "Max Level": "5",
             "Data": {
@@ -129,15 +133,16 @@ const data = {
             }
         },
         "Aura Eliminate":{
-            "Usage": "Technique (ATK)",
-            "Description": "Short-Range Weapon: Deal damage to one enemy, with a chance to remove a buff on the target.",
+            "Usage": "Technique (Weapon)",
+            "Starter": "1",
+            "Description": "Short-Range: Deal damage to one enemy, with a chance to remove a buff on the target.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
             }
         },
         "Frost Slash":{
-            "Usage": "Technique (ATK)",
+            "Usage": "Technique (Weapon)",
             "Description": "Sword: Deal Water damage to one enemy, with a chance to inflict Freeze.",
             "Max Level": "10",
             "Data": {
@@ -145,7 +150,7 @@ const data = {
             }
         },
         "Geo Break":{
-            "Usage": "Technique (ATK)",
+            "Usage": "Technique (Weapon)",
             "Description": "Axe: Deal Earth damage to one enemy, with a chance to inflict Petrify.",
             "Max Level": "10",
             "Data": {
@@ -153,7 +158,8 @@ const data = {
             }
         },
         "Blood Rage":{
-            "Usage": "Spell",
+            "Usage": "Spell (Buff)",
+            "Starter": "1",
             "Description": "Place a buff on yourself, which increases Max HP.",
             "Max Level": "5",
             "Data": {
@@ -163,6 +169,7 @@ const data = {
             }
         },
         "Adaptation":{
+            "Starter": "1",
             "Usage": "Passive",
             "Description": "Increases all elemental resistances.",
             "Max Level": "10",
@@ -197,7 +204,7 @@ const data = {
     },
     "Magic User": {
         "Fireball":{
-            "Usage": "Spell (INT)",
+            "Usage": "Spell (Magic)",
             "Description": "Deal Fire damage to one enemy.",
             "Max Level": "10",
             "Data": {
@@ -205,7 +212,7 @@ const data = {
             }
         },
         "Ice Edge":{
-            "Usage": "Spell (INT)",
+            "Usage": "Spell (Magic)",
             "Description": "Deal Fire damage to one enemy.",
             "Max Level": "10",
             "Data": {
@@ -213,7 +220,7 @@ const data = {
             }
         },
         "Thunderbolt":{
-            "Usage": "Spell (INT)",
+            "Usage": "Spell (Magic)",
             "Description": "Deal Fire damage to one enemy.",
             "Max Level": "10",
             "Data": {
@@ -221,7 +228,7 @@ const data = {
             }
         },
         "Air Cutter":{
-            "Usage": "Spell (INT)",
+            "Usage": "Spell (Magic)",
             "Description": "Deal Fire damage to one enemy.",
             "Max Level": "10",
             "Data": {
@@ -229,7 +236,7 @@ const data = {
             }
         },
         "Stone Hammer":{
-            "Usage": "Spell (INT)",
+            "Usage": "Spell (Magic)",
             "Description": "Deal Fire damage to one enemy.",
             "Max Level": "10",
             "Data": {
@@ -237,7 +244,8 @@ const data = {
             }
         },
         "Heal":{
-            "Usage": "Spell (RES, Field OK)",
+            "Usage": "Spell (Heal, Field OK)",
+            "Starter": "1",
             "Description": "Restore HP to one ally.",
             "Max Level": "10",
             "Data": {
@@ -246,7 +254,8 @@ const data = {
             }
         },
         "Poison":{
-            "Usage": "Spell",
+            "Usage": "Spell (Debuff)",
+            "Starter": "1",
             "Description": "Attempt to inflict Poison on all enemies.",
             "Max Level": "5",
             "Data": {
@@ -256,7 +265,7 @@ const data = {
     },
     "Sorceress": {
         "Fire Blast":{
-            "Usage": "Spell (INT)",
+            "Usage": "Spell (Magic)",
             "Description": "Deal Fire damage to all enemies.",
             "Max Level": "10",
             "Data": {
@@ -264,7 +273,7 @@ const data = {
             }
         },
         "Ice Storm":{
-            "Usage": "Spell (INT)",
+            "Usage": "Spell (Magic)",
             "Description": "Deal Fire damage to all enemies.",
             "Max Level": "10",
             "Data": {
@@ -272,7 +281,7 @@ const data = {
             }
         },
         "Thunder Chain":{
-            "Usage": "Spell (INT)",
+            "Usage": "Spell (Magic)",
             "Description": "Deal Fire damage to all enemies.",
             "Max Level": "10",
             "Data": {
@@ -280,7 +289,7 @@ const data = {
             }
         },
         "Air Turbulence":{
-            "Usage": "Spell (INT)",
+            "Usage": "Spell (Magic)",
             "Description": "Deal Fire damage to all enemies.",
             "Max Level": "10",
             "Data": {
@@ -288,7 +297,7 @@ const data = {
             }
         },
         "Stone Shower":{
-            "Usage": "Spell (INT)",
+            "Usage": "Spell (Magic)",
             "Description": "Deal Fire damage to all enemies.",
             "Max Level": "10",
             "Data": {
@@ -296,7 +305,7 @@ const data = {
             }
         },
         "Blood Absorb":{
-            "Usage": "Spell (INT)",
+            "Usage": "Spell (Magic)",
             "Description": "Deal damage to one enemy. Recover HP equal to the damage dealt.",
             "Max Level": "10",
             "Data": {
@@ -305,6 +314,7 @@ const data = {
         },
         "Magic Mastery":{
             "Usage": "Passive",
+            "Starter": "1",
             "Description": "Increases magical Attack Power.",
             "Max Level": "10",
             "Data": ""
@@ -325,10 +335,249 @@ const data = {
         },
     },
     "Enchantress": {
-
+        "Return":{
+            "Usage": "Spell (Support, Field Only)",
+            "Starter": "1",
+            "Description": "Escape from the dungeon.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["36", "27", "18", "9", "1"],
+            }
+        },
+        "Nurse":{
+            "Usage": "Spell (Heal, Field OK)",
+            "Starter": "1",
+            "Description": "Remove ailments/debuffs on one ally. Raising skill level increases the amount of curable effects.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
+            }
+        },
+        "Stun":{
+            "Usage": "Spell (Debuff)",
+            "Starter": "1",
+            "Description": "Attempt to inflict Stun on one enemy.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["10", "12", "14", "16", "18"],
+            }
+        },
+        "Freeze":{
+            "Usage": "Spell (Debuff)",
+            "Description": "Attempt to inflict Freeze on all enemies.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "7", "8", "9", "10"],
+            }
+        },
+        "Silence":{
+            "Usage": "Spell (Debuff)",
+            "Description": "Attempt to inflict Silence on all enemies.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "7", "8", "9", "10"],
+            }
+        },
+        "Paralyze":{
+            "Usage": "Spell (Debuff)",
+            "Description": "Attempt to inflict Patalysis on all enemies.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "7", "8", "9", "10"],
+            }
+        },
+        "Fire Enchant":{
+            "Usage": "Spell (Buff, Field OK)",
+            "Starter": "1",
+            "Description": "Place a buff on one ally, which imbues their attacks with Fire.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "7", "8", "9", "10"],
+                "Duration": ["5", "6", "7", "8", "9"]
+            }
+        },
+        "Water Enchant":{
+            "Usage": "Spell (Buff, Field OK)",
+            "Description": "Place a buff on one ally, which imbues their attacks with Fire.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "7", "8", "9", "10"],
+                "Duration": ["5", "6", "7", "8", "9"]
+            }
+        },
+        "Lightning Enchant":{
+            "Usage": "Spell (Buff, Field OK)",
+            "Description": "Place a buff on one ally, which imbues their attacks with Fire.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "7", "8", "9", "10"],
+                "Duration": ["5", "6", "7", "8", "9"]
+            }
+        },
+        "Wind Enchant":{
+            "Usage": "Spell (Buff, Field OK)",
+            "Description": "Place a buff on one ally, which imbues their attacks with Fire.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "7", "8", "9", "10"],
+                "Duration": ["5", "6", "7", "8", "9"]
+            }
+        },
+        "Earth Enchant":{
+            "Usage": "Spell (Buff, Field OK)",
+            "Description": "Place a buff on one ally, which imbues their attacks with Fire.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "7", "8", "9", "10"],
+                "Duration": ["5", "6", "7", "8", "9"]
+            }
+        },
+        "Circle Brave":{
+            "Usage": "Spell (Buff, Field OK)",
+            "Starter": "1",
+            "Description": "Place a buff on the whole party, which increases ATK.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "7", "8", "9", "10"],
+                "Duration": ["3", "4", "5", "6", "7"]
+            }
+        },
+        "Circle Protect":{
+            "Usage": "Spell (Buff, Field OK)",
+            "Description": "Place a buff on the whole party, which increases DEF.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "7", "8", "9", "10"],
+                "Duration": ["3", "4", "5", "6", "7"]
+            }
+        },
+        "Divine Shield":{
+            "Usage": "Spell (Buff, Field OK)",
+            "Description": "Place a buff on yourself, which decreases damage taken.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["24", "28", "32", "36", "40"],
+                "Duration": ["3", "3", "3", "3", "3"]
+            }
+        },
+        "Heal Mastery":{
+            "Usage": "Passive",
+            "Starter": "1",
+            "Description": "Increases the effect of healing skills.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Mini Auto-Refresh":{
+            "Usage": "Passive",
+            "Description": "Recover TP at the start of each turn.",
+            "Max Level": "5",
+            "Data": ""
+        },
+        "Adaptation":{
+            "Usage": "Passive",
+            "Description": "Increases all elemental resistances.",
+            "Max Level": "10",
+            "Data": {
+                "Resistance↑": ["+6", "+7", "+8", "+9", "+10", "+11", "+12", "+13", "+14", "+15"],
+            }
+        },
+        "Fast Cast":{
+            "Usage": "Passive",
+            "Description": "Decreases Chant times.",
+            "Max Level": "5",
+            "Data": ""
+        },
     },
     "Priestess": {
-
+        "Light":{
+            "Usage": "Spell (Support, Field Only)",
+            "Description": "Temporarily illuminate the dungeon.",
+            "Max Level": "5",
+            "Data": ""
+        },
+        "Return":{
+            "Usage": "Spell (Support, Field Only)",
+            "Description": "Escape from the dungeon.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["36", "27", "18", "9", "1"],
+            }
+        },
+        "Ice Storm":{
+            "Usage": "Spell (Magic)",
+            "Starter": "1",
+            "Description": "Deal Fire damage to all enemies.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "19", "23", "27", "31", "35", "39", "43", "47", "51"],
+            }
+        },
+        "Circle Heal":{
+            "Usage": "Spell (Heal, Field OK)",
+            "Starter": "1",
+            "Description": "Restore HP to the whole party.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Nurse":{
+            "Usage": "Spell (Heal, Field OK)",
+            "Description": "Remove ailments/debuffs on one ally. Raising skill level increases the amount of curable effects.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
+            }
+        },
+        "Resurrect":{
+            "Usage": "Spell (Heal, Field OK)",
+            "Description": "Revive one ally.",
+            "Max Level": "5",
+            "Data": ""
+        },
+        "Slow":{
+            "Usage": "Spell (Debuff)",
+            "Starter": "1",
+            "Description": "Attempt to inflict Slow on all enemies.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "7", "8", "9", "10"],
+            }
+        },
+        "Divine Shield":{
+            "Usage": "Spell (Buff, Field OK)",
+            "Description": "Place a buff on yourself, which decreases damage taken.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["24", "28", "32", "36", "40"],
+                "Duration": ["3", "3", "3", "3", "3"]
+            }
+        },
+        "Heal Mastery":{
+            "Usage": "Passive",
+            "Starter": "1",
+            "Description": "Increases the effect of healing skills.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Mini Auto-Recovery":{
+            "Usage": "Passive",
+            "Description": "Recover HP at the start of each turn.",
+            "Max Level": "5",
+            "Data": {
+                "HP Gain": ["1%", "2%", "3%", "4%", "5%"],
+            }
+        },
+        "Mini Auto-Refresh":{
+            "Usage": "Passive",
+            "Description": "Recover TP at the start of each turn.",
+            "Max Level": "5",
+            "Data": ""
+        },
+        "Fast Cast":{
+            "Usage": "Passive",
+            "Description": "Decreases Chant times.",
+            "Max Level": "5",
+            "Data": ""
+        },
     },
     "Witch": {
 
@@ -343,13 +592,137 @@ const data = {
 
     },
     "Scout": {
-
+        "Evade":{
+            "Usage": "Technique (Buff, Field OK)",
+            "Description": "Place a buff on yourself, which increases evasion.",
+            "Max Level": "5",
+            "Data": ""
+        },
+        "Cleanse":{
+            "Usage": "Technique (Heal, Field OK)",
+            "Description": "Remove ailments/debuffs on one ally. Raising skill level increases the amount of curable effects.",
+            "Max Level": "5",
+            "Data": ""
+        },
+        "Gold Steal":{
+            "Usage": "Technique (Support)",
+            "Starter": "1",
+            "Description": "Attempt to steal Gold from one enemy.",
+            "Max Level": "5",
+            "Data": ""
+        },
+        "Sharp Stab":{
+            "Usage": "Technique (Weapon)",
+            "Starter": "1",
+            "Description": "Dagger: Deal damage to one enemy. Always results in a critical hit.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Poison Shot":{
+            "Usage": "Technique (Weapon)",
+            "Description": "Bow: Deal damage to one enemy, with a chance to inflict Poison.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Dagger Mastery":{
+            "Usage": "Passive",
+            "Starter": "1",
+            "Description": "Increases Attack Power when a Dagger is equipped.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Elusiveness":{
+            "Usage": "Passive",
+            "Description": "Increases the chance of successfully escaping from battle.",
+            "Max Level": "5",
+            "Data": ""
+        },
+        "Lucky Me":{
+            "Usage": "Passive",
+            "Description": "Increases Gold dropped by enemies.",
+            "Max Level": "5",
+            "Data": ""
+        },
     },
     "Archer": {
-
+        "Freeze Shot":{
+            "Usage": "Technique (Weapon)",
+            "Description": "Bow: Deal damage to one enemy, with a chance to inflict Freeze.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Paralysis Shot":{
+            "Usage": "Technique (Weapon)",
+            "Description": "Bow: Deal damage to one enemy, with a chance to inflict Paralysis.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Gravity Shot":{
+            "Usage": "Technique (Weapon)",
+            "Description": "Bow: Deal damage to one enemy, with a chance to inflict Slow.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Arrow Rain":{
+            "Usage": "Technique (Weapon)",
+            "Description": "Bow: Deal damage to all enemies.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Dagger Mastery":{
+            "Usage": "Passive",
+            "Starter": "1",
+            "Description": "Increases Attack Power when a Bow is equipped.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Caution":{
+            "Usage": "Passive",
+            "Description": "Decreases the chance of enemy preemptive attacks.",
+            "Max Level": "10",
+            "Data": ""
+        },
     },
     "Assassin": {
-
+        "Sleep Sting":{
+            "Usage": "Technique (Weapon)",
+            "Description": "Short-Range: Deal damage to one enemy, with a chance to inflict Sleep.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Silence Sting":{
+            "Usage": "Technique (Weapon)",
+            "Description": "Short-Range: Deal damage to one enemy, with a chance to inflict Silence.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Stun Sting":{
+            "Usage": "Technique (Weapon)",
+            "Description": "Short-Range: Deal damage to one enemy, with a chance to inflict Stun.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Adaptation":{
+            "Starter": "1",
+            "Usage": "Passive",
+            "Description": "Increases all elemental resistances.",
+            "Max Level": "10",
+            "Data": {
+                "Resistance↑": ["+6", "+7", "+8", "+9", "+10", "+11", "+12", "+13", "+14", "+15"],
+            }
+        },
+        "Murder":{
+            "Usage": "Passive",
+            "Description": "Critical hits gain a chance to inflict instakill.",
+            "Max Level": "5",
+            "Data": ""
+        },
+        "Awareness":{
+            "Usage": "Passive",
+            "Description": "Increases the chance of the party getting a preemtive attack.",
+            "Max Level": "5",
+            "Data": ""
+        },
     },
     "Sniper": {
 
@@ -362,7 +735,7 @@ const data = {
     },
     "Maid": {
         "First Aid":{
-            "Usage": "Technique",
+            "Usage": "Technique (Heal)",
             "Description": "Restore HP to one ally.",
             "Max Level": "5",
             "Data": {
@@ -370,7 +743,7 @@ const data = {
             }
         },
         "Cook":{
-            "Usage": "Technique",
+            "Usage": "Technique (Heal)",
             "Description": "Restore TP to one ally.",
             "Max Level": "5",
             "Data": {
@@ -378,7 +751,7 @@ const data = {
             }
         },
         "Self-Sacrifice":{
-            "Usage": "Technique",
+            "Usage": "Technique (Heal)",
             "Description": "Spend all TP, then restore TP to another ally based on the amount spent.",
             "Max Level": "5",
             "Data": {
@@ -386,7 +759,8 @@ const data = {
             }
         },
         "Clean":{
-            "Usage": "Technique",
+            "Usage": "Technique (Buff)",
+            "Starter": "1",
             "Description": "Place a buff on yourself, which increases turn speed.",
             "Max Level": "5",
             "Data": {
@@ -394,13 +768,15 @@ const data = {
             }
         },
         "Lullaby":{
-            "Usage": "Spell",
+            "Usage": "Spell (Debuff)",
+            "Starter": "1",
             "Description": "Attempt to inflict Sleep on one enemy.",
             "Max Level": "5",
             "Data": ""
         },
         "Maid Mastery":{
             "Usage": "Passive",
+            "Starter": "1",
             "Description": "Increases the effect of Maid skills.",
             "Max Level": "10",
             "Data": {
@@ -418,10 +794,76 @@ const data = {
         },
     },
     "Bard": {
-
+        "Spiritual Fantasia":{
+            "Usage": "Spell (Buff)",
+            "Description": "Start a Song that places a buff on the whole party, which increases magical Attack Power.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Sacred Hymn":{
+            "Usage": "Spell (Buff)",
+            "Description": "Start a Song that places a buff on the whole party, which increases magical Defense Power.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Replenishing Carol":{
+            "Usage": "Spell (Buff)",
+            "Description": "Start a Song that places a buff on the whole party, which restores HP at the start of each turn.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Blissful Chorale":{
+            "Usage": "Spell (Buff)",
+            "Description": "Start a Song that places a buff on the whole party, which restores TP at the start of each turn.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Experience Paean":{
+            "Usage": "Spell (Buff)",
+            "Description": "Start a Song that places a buff on the whole party, which increases EXP gain.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Song Mastery":{
+            "Usage": "Passive",
+            "Starter": "1",
+            "Description": "Increases the effect of Song skills.",
+            "Max Level": "10",
+            "Data": ""
+        },
     },
     "Dancer": {
-
+        "Fascinating Waltz":{
+            "Usage": "Technique (Debuff)",
+            "Description": "Start a Dance that places a debuff on all enemies, which decreases physical Attack Power.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Gloomy Tango":{
+            "Usage": "Technique (Debuff)",
+            "Description": "Start a Dance that places a debuff on all enemies, which decreases accuracy.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Gravitating Polka":{
+            "Usage": "Technique (Debuff)",
+            "Description": "Start a Dance that places a debuff on all enemies, which decreases evasion.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Alluring Samba":{
+            "Usage": "Technique (Debuff)",
+            "Description": "Start a Dance that places a debuff on all enemies, which decreases physical Defense Power.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Song Mastery":{
+            "Usage": "Passive",
+            "Starter": "1",
+            "Description": "Increases the effect of Dance skills.",
+            "Max Level": "10",
+            "Data": ""
+        },
     },
     "Songstress": {
 
