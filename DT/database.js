@@ -21,7 +21,7 @@ const data = {
         },
         "Raging Smash":{
             "Usage": "Technique (ATK)",
-            "Description": "Deal damage to one enemy.",
+            "Description": "Short-Range Weapon: Deal damage to one enemy.",
             "Max Level": "10",
             "Data": {
                 "TP Cost": ["5", "8", "11", "14", "17", "20", "23", "26", "29", "32"],
@@ -59,10 +59,132 @@ const data = {
         },
     },
     "Paladin": {
-
+        "Defender":{
+            "Usage": "Technique",
+            "Description": "Place a buff on yourself, which increases Defense Power but lowers Attack Power.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["8", "10", "12", "14", "16"],
+                "Duration": ["3", "4", "5", "6", "7"]
+            }
+        },
+        "Cover":{
+            "Usage": "Technique (Field OK)",
+            "Description": "Place a buff on yourself, which redirects single-target attacks to you. This buff has a chance to disappear each time you're hit.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "8", "10", "12", "14"],
+                "Duration": ["3", "4", "5", "6", "7"]
+            }
+        },
+        "Parry":{
+            "Usage": "Technique (Field OK)",
+            "Description": "Short-Range Weapon: Place a buff on yourself, which nullifies physical attacks received. This buff has a high chance to disappear each time you're hit.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["8", "10", "12", "14", "16"],
+                "Duration": ["3", "4", "5", "6", "7"]
+            }
+        },
+        "Shield Bash":{
+            "Usage": "Technique (ATK)",
+            "Description": "Shield: Deal damage to one enemy, with a chance to inflict Stun.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["6", "8", "10", "12", "14"],
+            }
+        },
+        "Heal":{
+            "Usage": "Spell (RES, Field OK)",
+            "Description": "Restore HP to one ally.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "5", "7", "9", "11", "13", "15", "17", "19", "21"],
+                "Healing Power": ["100%", "125%", "150%", "175%", "200%", "225%", "250%", "275%", "300%", "325%"],
+            }
+        },
+        "Mini Auto-Recovery":{
+            "Usage": "Passive",
+            "Description": "Recover HP at the start of each turn.",
+            "Max Level": "5",
+            "Data": {
+                "HP Gain": ["1%", "2%", "3%", "4%", "5%"],
+            }
+        },
+        "Auto-Guard":{
+            "Usage": "Passive",
+            "Description": "If you're not Defending, there's a chance to automatically Defend against physical attacks.",
+            "Max Level": "5",
+            "Data": ""
+        },
     },
     "Dark Knight": {
-
+        "Berserker":{
+            "Usage": "Technique",
+            "Description": "Place a buff on yourself, which increases Attack Power but lowers Defense Power.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["8", "10", "12", "14", "16"],
+                "Duration": ["3", "4", "5", "6", "7"]
+            }
+        },
+        "Aura Eliminate":{
+            "Usage": "Technique (ATK)",
+            "Description": "Short-Range Weapon: Deal damage to one enemy, with a chance to remove a buff on the target.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "14"],
+            }
+        },
+        "Frost Slash":{
+            "Usage": "Technique (ATK)",
+            "Description": "Sword: Deal Water damage to one enemy, with a chance to inflict Freeze.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["7", "10", "13", "16", "19", "22", "25", "28", "31", "34"],
+            }
+        },
+        "Geo Break":{
+            "Usage": "Technique (ATK)",
+            "Description": "Axe: Deal Earth damage to one enemy, with a chance to inflict Petrify.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["9", "12", "15", "18", "21", "24", "27", "30", "33", "36"],
+            }
+        },
+        "Blood Rage":{
+            "Usage": "Spell",
+            "Description": "Place a buff on yourself, which increases Max HP.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["27", "31", "35", "39", "43"],
+                "Max HP↑": ["+20%", "+28%", "+36%", "?", "?"],
+                "Duration": ["5", "6", "7", "8", "9"]
+            }
+        },
+        "Adaptation":{
+            "Usage": "Passive",
+            "Description": "Increases all elemental resistances.",
+            "Max Level": "10",
+            "Data": {
+                "Resistance↑": ["+6", "+7", "+8", "+9", "+10", "+11", "+12", "+13", "+14", "+15"],
+            }
+        },
+        "Preparation":{
+            "Usage": "Passive",
+            "Description": "Increases turn speed based on your missing HP.",
+            "Max Level": "5",
+            "Data": ""
+        },
+        "Dark Aura":{
+            "Usage": "Passive",
+            "Description": "When you're hit by a Short-Range attack, place multiple stat debuffs on the attacker. Raising skill level increases the amount of debuffs inflicted.",
+            "Max Level": "5",
+            "Data": {
+                "Inflicted Debuffs": ["ATK", "DEF", "INT", "?", "?"],
+                "Stats↓": ["-10%", "-10%", "-10%", "-10%", "-10%"]
+            }
+        },
     },
     "Valkyrie": {
 
@@ -74,10 +196,133 @@ const data = {
 
     },
     "Magic User": {
-
+        "Fireball":{
+            "Usage": "Spell (INT)",
+            "Description": "Deal Fire damage to one enemy.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "7", "9", "11", "13", "15", "17", "19", "21", "23"],
+            }
+        },
+        "Ice Edge":{
+            "Usage": "Spell (INT)",
+            "Description": "Deal Fire damage to one enemy.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "7", "9", "11", "13", "15", "17", "19", "21", "23"],
+            }
+        },
+        "Thunderbolt":{
+            "Usage": "Spell (INT)",
+            "Description": "Deal Fire damage to one enemy.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "7", "9", "11", "13", "15", "17", "19", "21", "23"],
+            }
+        },
+        "Air Cutter":{
+            "Usage": "Spell (INT)",
+            "Description": "Deal Fire damage to one enemy.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "7", "9", "11", "13", "15", "17", "19", "21", "23"],
+            }
+        },
+        "Stone Hammer":{
+            "Usage": "Spell (INT)",
+            "Description": "Deal Fire damage to one enemy.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["5", "7", "9", "11", "13", "15", "17", "19", "21", "23"],
+            }
+        },
+        "Heal":{
+            "Usage": "Spell (RES, Field OK)",
+            "Description": "Restore HP to one ally.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["3", "5", "7", "9", "11", "13", "15", "17", "19", "21"],
+                "Healing Power": ["100%", "125%", "150%", "175%", "200%", "225%", "250%", "275%", "300%", "325%"],
+            }
+        },
+        "Poison":{
+            "Usage": "Spell",
+            "Description": "Attempt to inflict Poison on all enemies.",
+            "Max Level": "5",
+            "Data": {
+                "TP Cost": ["4", "5", "6", "7", "8"],
+            }
+        },
     },
     "Sorceress": {
-
+        "Fire Blast":{
+            "Usage": "Spell (INT)",
+            "Description": "Deal Fire damage to all enemies.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "19", "23", "27", "31", "35", "39", "43", "47", "51"],
+            }
+        },
+        "Ice Storm":{
+            "Usage": "Spell (INT)",
+            "Description": "Deal Fire damage to all enemies.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "19", "23", "27", "31", "35", "39", "43", "47", "51"],
+            }
+        },
+        "Thunder Chain":{
+            "Usage": "Spell (INT)",
+            "Description": "Deal Fire damage to all enemies.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "19", "23", "27", "31", "35", "39", "43", "47", "51"],
+            }
+        },
+        "Air Turbulence":{
+            "Usage": "Spell (INT)",
+            "Description": "Deal Fire damage to all enemies.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "19", "23", "27", "31", "35", "39", "43", "47", "51"],
+            }
+        },
+        "Stone Shower":{
+            "Usage": "Spell (INT)",
+            "Description": "Deal Fire damage to all enemies.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["15", "19", "23", "27", "31", "35", "39", "43", "47", "51"],
+            }
+        },
+        "Blood Absorb":{
+            "Usage": "Spell (INT)",
+            "Description": "Deal damage to one enemy. Recover HP equal to the damage dealt.",
+            "Max Level": "10",
+            "Data": {
+                "TP Cost": ["9", "10", "11", "12", "13", "14", "15", "16", "17", "18"],
+            }
+        },
+        "Magic Mastery":{
+            "Usage": "Passive",
+            "Description": "Increases magical Attack Power.",
+            "Max Level": "10",
+            "Data": ""
+        },
+        "Auto-Refresh":{
+            "Usage": "Passive",
+            "Description": "Recover TP at the start of each turn.",
+            "Max Level": "10",
+            "Data": {
+                "TP Gain": ["2%", "4%", "6%", "8%", "10%"]
+            }
+        },
+        "Concentrate":{
+            "Usage": "Passive",
+            "Description": "Decrease the chance of Chants, Songs and Dances being interrupted by taking damage.",
+            "Max Level": "5",
+            "Data": ""
+        },
     },
     "Enchantress": {
 
@@ -224,8 +469,11 @@ function toggle_data(table_id){
 
 function reset_list(class_name){
     var skill_list = document.getElementById("skill_list")
+    var sidebar = document.getElementById("sidebar")
 
     //Remove all elements in the list container
+    sidebar.focus()
+    sidebar.blur()
     skill_list.focus()
     skill_list.blur()
     while(skill_list.hasChildNodes()){
